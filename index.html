@@ -28,6 +28,9 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .tile.mist-clearing{transition:opacity 6200ms cubic-bezier(.22,1,.36,1),filter 6200ms cubic-bezier(.22,1,.36,1)!important;filter:blur(0)}
 .tile.mist-clearing .tile-inner{transform:scale(1);}
 .tile.open{cursor:default}
+@media (hover:hover) and (pointer:fine){.tile:not(.open):not(.mist):not([data-empty="true"]):hover .front img{transform:scale(1.012);filter:brightness(1.025)}}
+.tile.opening .front img{opacity:1;transform:scale(1);transition-duration:700ms,900ms}
+@media (hover:none){.tile:not(.open):not(.mist):not([data-empty="true"]):active .front img{transform:scale(1.01);filter:brightness(1.02)}}
 .tile[data-empty="true"]{cursor:default}
 .tile[data-empty="true"] .front img{opacity:0}
 .controls{position:fixed;left:28px;bottom:25px;z-index:100;display:flex;align-items:center;gap:18px;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.78;user-select:none;background:rgba(255,255,255,.82);padding:3px 0}.controls button,.controls .subscribe{appearance:none;border:0;background:transparent;padding:7px 0;color:inherit;font:inherit;cursor:pointer;text-decoration:none}.controls button:hover,.controls .subscribe:hover{color:#111}.controls .recompose{padding-left:0}.controls .subscribe{padding-right:0}@media (max-width:700px){.controls{left:17px;bottom:17px;font-size:9px;gap:13px}}
@@ -55,7 +58,7 @@ const tiles=slides.map(s=>{
  if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); }
  wall.appendChild(el); el.querySelectorAll('.copy a').forEach((a,i)=>a.style.setProperty('--link-delay',(-i*.7)+'s')); return el;
 });
-let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null;
+let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null;
 function cols(){
  const w=wall.clientWidth,h=wall.clientHeight;
  if(w<700) return Math.max(4,Math.min(5,Math.floor(w/110)));
@@ -241,7 +244,8 @@ async function recompose(){
 }
 function closeTile(el){
  if(!el || openId!==el.dataset.id) return;
- clearTimeout(returnTimer);
+ clearTimeout(returnTimer); clearTimeout(openRevealTimer);
+ el.classList.remove('opening');
  paused=true;
  el.classList.add('closing');
  el.classList.remove('open');
@@ -268,10 +272,19 @@ function openTile(el){
    try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
    layout(false);
  }
- clearTimeout(clickTimer); clearTimeout(returnTimer); imageReadyId=null;
+ clearTimeout(clickTimer); clearTimeout(returnTimer); clearTimeout(openRevealTimer); imageReadyId=null;
  if(openId && openId!==el.dataset.id) closeTile(document.querySelector(`.tile[data-id="${openId}"]`));
  if(openId===el.dataset.id){ closeTile(el); return; }
- openId=el.dataset.id; paused=true; pause.textContent='Resume'; layout(true); el.classList.add('open');
+ openId=el.dataset.id; paused=true; pause.textContent='Resume'; layout(true);
+ el.classList.add('opening');
+ let revealDelay=650;
+ try{revealDelay=window.localStorage.getItem('mural40FirstClickSeen')==='1'?650:1400;}catch(e){}
+ openRevealTimer=setTimeout(()=>{
+   if(openId!==el.dataset.id || !el.classList.contains('opening')) return;
+   el.classList.remove('opening');
+   el.classList.add('open');
+   try{window.localStorage.setItem('mural40FirstClickSeen','1');}catch(e){}
+ },revealDelay);
 }
 tiles.forEach(el=>{
  el.addEventListener('click',e=>{

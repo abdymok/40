@@ -55,7 +55,7 @@ const tiles=slides.map(s=>{
  if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); }
  wall.appendChild(el); el.querySelectorAll('.copy a').forEach((a,i)=>a.style.setProperty('--link-delay',(-i*.7)+'s')); return el;
 });
-let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, autoHeroId=null, autoHeroTimer=null;
+let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null;
 function cols(){
  const w=wall.clientWidth,h=wall.clientHeight;
  if(w<700) return Math.max(4,Math.min(5,Math.floor(w/110)));
@@ -153,12 +153,12 @@ function layout(animate=true){
  slotMap=map;
 }
 function showAutoHero(el, hold=1500){
-  if(paused || openId || !el || el.dataset.empty==='true') return Promise.resolve();
+  if(paused || openId || teachingMoment || !el || el.dataset.empty==='true') return Promise.resolve();
   autoHeroId=el.dataset.id;
   layout(true);
   return new Promise(resolve=>{
     autoHeroTimer=setTimeout(()=>{
-      if(paused || openId || autoHeroId!==el.dataset.id){ autoHeroId=null; layout(true); resolve(); return; }
+      if(paused || openId || teachingMoment || autoHeroId!==el.dataset.id){ autoHeroId=null; layout(true); resolve(); return; }
       autoHeroId=null;
       layout(true);
       setTimeout(resolve,3400);
@@ -166,8 +166,34 @@ function showAutoHero(el, hold=1500){
   });
 }
 
+function startTeachingMoment(){
+  if(teachingMoment || paused || openId) return;
+  if(window.localStorage.getItem('mural40TeachingSeen')==='1') return;
+  const candidates=tiles.filter(t=>t.dataset.empty!=='true');
+  if(!candidates.length) return;
+  const el=candidates[Math.floor(Math.random()*candidates.length)];
+  teachingMoment=true;
+  paused=true;
+  pause.textContent='Pause';
+  clearTimeout(autoHeroTimer);
+  autoHeroId=el.dataset.id;
+  layout(true);
+  teachingTimer=setTimeout(()=>{
+    if(!teachingMoment || openId) return;
+    autoHeroId=null;
+    layout(true);
+    teachingTimer=setTimeout(()=>{
+      teachingMoment=false;
+      paused=false;
+      pause.textContent='Pause';
+      try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
+      layout(true);
+    },3300);
+  },6500);
+}
+
 async function recompose(){
- if(paused || openId || morphing) return;
+ if(paused || openId || morphing || teachingMoment) return;
  const active=tiles.filter(t=>t.dataset.empty!=='true');
  if(active.length<6 || slotMap.size<active.length) return;
  morphing=true;
@@ -233,6 +259,15 @@ function closeTile(el){
 }
 function openTile(el){
  if(el.dataset.empty==='true') return;
+ if(teachingMoment){
+   clearTimeout(teachingTimer);
+   teachingMoment=false;
+   autoHeroId=null;
+   paused=false;
+   pause.textContent='Pause';
+   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
+   layout(false);
+ }
  clearTimeout(clickTimer); clearTimeout(returnTimer); imageReadyId=null;
  if(openId && openId!==el.dataset.id) closeTile(document.querySelector(`.tile[data-id="${openId}"]`));
  if(openId===el.dataset.id){ closeTile(el); return; }
@@ -265,7 +300,18 @@ document.addEventListener('keydown',e=>{
 window.addEventListener('resize',()=>layout(false));
 const pause=document.getElementById('pause');
 const recomposeBtn=document.getElementById('recompose');
-pause.addEventListener('click',()=>{paused=!paused;pause.textContent=paused?'Resume':'Pause'; if(!paused) { layout(true); setTimeout(recompose,900); }});
+pause.addEventListener('click',()=>{
+ if(teachingMoment){
+   clearTimeout(teachingTimer);
+   teachingMoment=false; autoHeroId=null; paused=false; pause.textContent='Pause';
+   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
+   layout(true); setTimeout(recompose,900);
+   return;
+ }
+ paused=!paused;
+ pause.textContent=paused?'Resume':'Pause';
+ if(!paused) { layout(true); setTimeout(recompose,900); }
+});
 recomposeBtn.addEventListener('click',()=>{ if(openId) return; morphing=false; recompose(); });
 
 // The wall is already laid out underneath the opening, but begins as a mist.
@@ -290,7 +336,8 @@ function beginMuralOpening(){
   // Start the first real recomposition while the last tiles are still emerging.
   setTimeout(()=>recompose(),4300);
   setTimeout(()=>recompose(),9800);
-  setTimeout(()=>recompose(),15400);
+  // After the wall has settled, quietly demonstrate the 3×3 interaction once.
+  setTimeout(startTeachingMoment,20500);
 }
 setTimeout(beginMuralOpening,5000);
 timer=setInterval(recompose,18000);

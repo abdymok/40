@@ -326,8 +326,9 @@ function beginMuralOpening(){
       setTimeout(()=>t.classList.remove('mist-clearing'),6200);
     },delay);
   });
-  setTimeout(()=>{if(!paused && !openId) recompose();},4300);
-  setTimeout(()=>{if(!paused && !openId) recompose();},9800);
+  // Let the full 8×5 wall settle as small images before any hero/recomposition movement begins.
+  // The final tile finishes its 6.2s fade at roughly 12.7s, so the first recompose waits until 13.8s.
+  setTimeout(()=>{if(!paused && !openId) recompose();},13800);
   setTimeout(()=>{if(!paused && !openId) startTeachingMoment();},20500);
 }
 setTimeout(beginMuralOpening,2200);

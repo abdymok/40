@@ -31,7 +31,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 @media (hover:hover) and (pointer:fine){.tile:not(.open):not(.mist):not([data-empty="true"]):hover .front img{transform:scale(1.012);filter:brightness(1.025)}}
 .tile.opening .front img{opacity:1;transform:scale(1);transition-duration:700ms,900ms}
 @media (hover:none){.tile:not(.open):not(.mist):not([data-empty="true"]):active .front img{transform:scale(1.01);filter:brightness(1.02)}}
-.tile[data-empty="true"]{cursor:default}
+.tile[data-empty="true"]{cursor:default}.tile:focus-visible{outline:1px solid rgba(0,0,0,.28);outline-offset:3px}
 .tile[data-empty="true"] .front img{opacity:0}
 .controls{position:fixed;left:28px;bottom:25px;z-index:100;display:flex;align-items:center;gap:18px;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.78;user-select:none;background:rgba(255,255,255,.82);padding:3px 0}.controls .hint{opacity:.72;transition:opacity 700ms ease}.controls .hint.hidden{opacity:0;pointer-events:none;width:0;margin:0;overflow:hidden}.controls button,.controls .subscribe{appearance:none;border:0;background:transparent;padding:7px 0;color:inherit;font:inherit;cursor:pointer;text-decoration:none}.controls button:hover,.controls .subscribe:hover{color:#111}.controls .recompose{padding-left:0}.controls .subscribe{padding-right:0}@media (max-width:700px){.controls{left:17px;bottom:17px;font-size:9px;gap:13px}}.hint{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:101;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.72;transition:opacity 700ms ease;white-space:nowrap;pointer-events:none}.controls .hint{position:static;transform:none}.hint.hidden{opacity:0!important;pointer-events:none!important;width:0;margin:0;overflow:hidden}
 @media (max-width:700px){
@@ -54,7 +54,7 @@ const wall=document.getElementById('wall');
 const tiles=slides.map(s=>{
  const el=document.createElement('article'); el.className='tile'; el.dataset.id=s.id; el.dataset.empty=(!s.back?'true':'false');
  el.innerHTML=`<div class="tile-inner"><div class="face front"><img src="${s.image}" alt="Slide ${s.id}"></div><div class="face back"><span class="post-year">${s.year || ""}</span><div class="copy">${s.back}</div><button class="image-back" type="button" aria-label="Return to image">← image</button></div></div>`;
- if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); }
+ if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); } el.tabIndex=0;
  wall.appendChild(el); el.querySelectorAll('.copy a').forEach((a,i)=>a.style.setProperty('--link-delay',(-i*.7)+'s')); return el;
 });
 let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null;
@@ -260,10 +260,40 @@ tiles.forEach(el=>{
  });
 });
 document.addEventListener('keydown',e=>{
+ const active=document.activeElement;
+ const editing=active && (active.tagName==='INPUT' || active.tagName==='TEXTAREA' || active.isContentEditable);
+ if(editing) return;
  if(e.key==='Escape' && openId){
+   e.preventDefault();
    const el=document.querySelector(`.tile[data-id="${openId}"]`);
    if(el) closeTile(el);
+   return;
  }
+ const key=e.key;
+ if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' '].includes(key)) return;
+ const visible=tiles.filter(t=>t.dataset.empty!=='true');
+ if(!visible.length) return;
+ if(openId){
+   if(key==='Enter' || key===' '){
+     e.preventDefault();
+     const el=document.querySelector(`.tile[data-id="${openId}"]`);
+     if(el) closeTile(el);
+   }
+   return;
+ }
+ let current=visible.indexOf(active);
+ if(current<0) current=0;
+ if(key==='Enter' || key===' '){
+   e.preventDefault();
+   openTile(visible[current]);
+   visible[current].focus();
+   return;
+ }
+ e.preventDefault();
+ let next=current;
+ if(key==='ArrowRight' || key==='ArrowDown') next=(current+1)%visible.length;
+ if(key==='ArrowLeft' || key==='ArrowUp') next=(current-1+visible.length)%visible.length;
+ visible[next].focus();
 });
 window.addEventListener('resize',()=>layout(false));
 const hint=document.getElementById('hint'); try{if(window.localStorage.getItem('mural40HintSeen')==='1') hint.classList.add('hidden');}catch(e){}

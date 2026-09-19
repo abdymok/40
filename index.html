@@ -56,7 +56,7 @@ const tiles=slides.map(s=>{
  if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); } el.tabIndex=0;
  wall.appendChild(el); el.setAttribute("aria-label",`Slide ${s.id}${s.year ? ", "+s.year : ""}. Click to read.`); el.setAttribute("aria-expanded","false"); el.querySelectorAll('.copy a').forEach((a,i)=>a.style.setProperty('--link-delay',(-i*.7)+'s')); return el;
 });
-let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null;
+let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null, openingTimers=[], recompositionTimers=[];
 function cols(){
  const w=wall.clientWidth,h=wall.clientHeight;
  if(w<700) return 5;
@@ -116,6 +116,11 @@ function layout(animate=true){
  });
  slotMap=map;
 }
+function clearOpeningTimers(){ openingTimers.forEach(clearTimeout); openingTimers=[]; }
+function clearRecompositionTimers(){ recompositionTimers.forEach(clearTimeout); recompositionTimers=[]; clearTimeout(autoHeroTimer); autoHeroTimer=null; }
+function scheduleOpening(fn,delay){ const id=setTimeout(()=>{ openingTimers=openingTimers.filter(x=>x!==id); fn(); },delay); openingTimers.push(id); return id; }
+function scheduleRecomposition(fn,delay){ const id=setTimeout(()=>{ recompositionTimers=recompositionTimers.filter(x=>x!==id); fn(); },delay); recompositionTimers.push(id); return id; }
+
 function showAutoHero(el, hold=1500){
   if(paused || openId || teachingMoment || !el || el.dataset.empty==='true') return Promise.resolve();
   autoHeroId=el.dataset.id;
@@ -159,20 +164,20 @@ async function recompose(){
  const active=tiles.filter(t=>t.dataset.empty!=='true');
  if(active.length<6 || slotMap.size<active.length) return;
  morphing=true;
+ clearRecompositionTimers();
  const count=Math.min(active.length,6+Math.floor(Math.random()*4));
  const chosen=active.slice().sort(()=>Math.random()-.5).slice(0,count);
  const oldSlots=chosen.map(el=>slotMap.get(el)?.slot).filter(s=>s!=null);
  const rotated=oldSlots.slice(1).concat(oldSlots[0]);
  const assignments=new Map(chosen.map((el,i)=>[el,rotated[i]]));
  chosen.forEach((el,i)=>{
-   const delay=i*420+Math.random()*380;
-   setTimeout(()=>{
-     if(paused || openId){ return; }
+   scheduleRecomposition(()=>{
+     if(paused || openId){ morphing=false; return; }
      el.classList.add('dissolving');
      el.style.transition='opacity 1800ms ease, transform 4800ms cubic-bezier(.22,1,.36,1)';
      el.style.opacity='0';
-     setTimeout(()=>{
-       if(paused || openId){ el.classList.remove('dissolving'); el.style.opacity='1'; return; }
+     scheduleRecomposition(()=>{
+       if(paused || openId){ el.classList.remove('dissolving'); el.style.opacity='1'; morphing=false; return; }
        const target=assignments.get(el);
        if(target==null){ el.classList.remove('dissolving'); el.style.opacity='1'; return; }
        slotMap.set(el,{slot:target,hero:false});
@@ -181,20 +186,21 @@ async function recompose(){
        el.style.transform=`translate3d(${x}px,${y}px,0)`;
        requestAnimationFrame(()=>requestAnimationFrame(()=>{
          el.style.opacity='1';
-         setTimeout(()=>el.classList.remove('dissolving'),3000);
+         scheduleRecomposition(()=>el.classList.remove('dissolving'),3000);
        }));
      },1850);
-   },delay);
+   },i*420+Math.random()*380);
  });
  const heroCandidates=active.filter(el=>!chosen.includes(el)).sort(()=>Math.random()-.5).slice(0,3);
- const heroStart=900;
- setTimeout(async()=>{
+ scheduleRecomposition(async()=>{
+   if(paused || openId){ morphing=false; return; }
    for(const hero of heroCandidates){
      if(paused || openId) break;
      await showAutoHero(hero,1200);
    }
- },heroStart);
- setTimeout(()=>{morphing=false;},14500);
+   if(!paused && !openId) morphing=false;
+ },900);
+ scheduleRecomposition(()=>{if(!paused && !openId) morphing=false;},14500);
 }
 function closeTile(el){
  if(!el || openId!==el.dataset.id) return;
@@ -301,16 +307,25 @@ const recomposeBtn=document.getElementById('recompose');
 pause.addEventListener('click',()=>{
  if(teachingMoment){
    clearTimeout(teachingTimer);
-   teachingMoment=false; autoHeroId=null; paused=false; pause.textContent='Pause';
+   teachingMoment=false; autoHeroId=null;
+   clearRecompositionTimers();
+   paused=false; pause.textContent='Pause';
    try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-   layout(true); setTimeout(recompose,900);
+   layout(true);
    return;
  }
  paused=!paused;
  pause.textContent=paused?'Resume':'Pause';
- if(!paused) { layout(true); setTimeout(recompose,900); }
+ if(paused){
+   clearOpeningTimers();
+   clearRecompositionTimers();
+   morphing=false; autoHeroId=null;
+   layout(false);
+ }else{
+   layout(true);
+ }
 });
-recomposeBtn.addEventListener('click',()=>{ if(openId) return; morphing=false; recompose(); });
+recomposeBtn.addEventListener('click',()=>{ if(openId || paused) return; morphing=false; recompose(); });
 layout(false);
 const intro=document.getElementById('intro');
 const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');
@@ -319,18 +334,17 @@ function beginMuralOpening(){
   intro.classList.add('fade');
   activeTiles.forEach((t,i)=>{
     const delay=200 + i*95 + Math.random()*600;
-    setTimeout(()=>{
-      if(openId) return;
+    scheduleOpening(()=>{
+      if(openId || paused) return;
       t.classList.add('mist-clearing');
       t.classList.remove('mist');
-      setTimeout(()=>t.classList.remove('mist-clearing'),6200);
+      scheduleOpening(()=>t.classList.remove('mist-clearing'),6200);
     },delay);
   });
-  // Let the full 8×5 wall settle as small images before any hero/recomposition movement begins.
-  // The final tile finishes its 6.2s fade at roughly 12.7s, so the first recompose waits until 13.8s.
-  setTimeout(()=>{if(!paused && !openId) recompose();},13800);
-  setTimeout(()=>{if(!paused && !openId) startTeachingMoment();},20500);
+  // Give the complete small-image wall time to settle before the first movement.
+  scheduleOpening(()=>{if(!paused && !openId) recompose();},13800);
+  scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},20500);
 }
 setTimeout(beginMuralOpening,2200);
-timer=setInterval(recompose,18000);
+timer=setInterval(()=>{if(!paused && !openId) recompose();},18000);
 </script></body></html>

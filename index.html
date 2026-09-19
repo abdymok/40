@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Mural 1–40</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Mural 1–40 — an interactive archive of 40 images and their accompanying essays."><meta property="og:title" content="Mural 1–40"><meta property="og:description" content="An interactive archive of 40 images and their accompanying essays."><meta property="og:type" content="website"><title>Mural 1–40</title>
 <style>
 @font-face{font-family:Spectral;src:local("Spectral")}
 :root{--gap:clamp(6px,1vw,13px);--pad:clamp(28px,6vw,86px)}
@@ -7,15 +7,15 @@
 html,body{margin:0;width:100%;min-height:100%;background:#fff;color:#151515}
 body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .mural{position:fixed;inset:30px 78px 62px;background:transparent}
-.wall{position:relative;width:100%;height:100%;}
-.tile{position:absolute;left:0;top:0;width:var(--tile-w);height:var(--tile-h);will-change:transform,opacity;transition:transform 5200ms cubic-bezier(.22,1,.36,1),opacity 2400ms ease,width 5200ms cubic-bezier(.22,1,.36,1),height 5200ms cubic-bezier(.22,1,.36,1);cursor:pointer;perspective:1000px;}
-.tile-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;}
+.wall{position:relative;width:100%;height:100%}
+.tile{position:absolute;left:0;top:0;width:var(--tile-w);height:var(--tile-h);will-change:transform,opacity;transition:transform 5200ms cubic-bezier(.22,1,.36,1),opacity 2400ms ease,width 5200ms cubic-bezier(.22,1,.36,1),height 5200ms cubic-bezier(.22,1,.36,1);cursor:pointer;perspective:1000px}
+.tile-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d}
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:transparent}
 .front img{width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;transition:opacity 950ms cubic-bezier(.22,1,.36,1),transform 1100ms cubic-bezier(.22,1,.36,1)}
 .tile.closing .front img{transition-duration:3200ms,3200ms}
 .back{display:flex;pointer-events:none;align-items:center;justify-content:center;padding:11%;background:rgba(255,255,255,.82);opacity:0;transition:opacity 1150ms cubic-bezier(.22,1,.36,1);cursor:default}
 .tile.closing .back{transition-duration:3200ms}.back .copy{cursor:default}.back .post-year{position:absolute;left:50%;top:8%;transform:translateX(-50%);font:9px/1 Arial,sans-serif;letter-spacing:.08em;color:rgba(0,0,0,.38);pointer-events:none}.back .image-back{position:absolute;right:5%;bottom:5%;border:0;background:transparent;padding:8px 4px;font:11px/1 Arial,sans-serif;letter-spacing:.04em;color:#777;cursor:pointer;opacity:.9;touch-action:manipulation}.back .image-back:hover{color:#111}.back .image-back:focus-visible{outline:1px solid #777;outline-offset:3px}
-.copy{font-size:clamp(12px,1.18vw,20px);line-height:1.16;text-align:justify;hyphens:auto;color:#151515;width:100%;transition:color 700ms cubic-bezier(.22,1,.36,1)}
+.copy{font-size:clamp(12px,1.18vw,20px);line-height:1.16;text-align:left;hyphens:auto;color:#151515;width:100%;transition:color 700ms cubic-bezier(.22,1,.36,1)}
 .copy a{color:#df1717;text-decoration:none;display:inline;transition:color 700ms cubic-bezier(.22,1,.36,1),transform 900ms cubic-bezier(.22,1,.36,1),opacity 700ms ease;transform-origin:center center;animation:linkAche 6.5s ease-in-out infinite;animation-delay:var(--link-delay,0s)}
 .copy a:hover,.copy a:focus-visible{animation-play-state:paused;transform:scale(1.025);opacity:1}
 @keyframes linkAche{0%,68%,100%{transform:scale(1);opacity:.82}76%{transform:scale(1.018);opacity:.94}84%{transform:scale(1.035);opacity:1}92%{transform:scale(1.01);opacity:.9}}
@@ -26,311 +26,23 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .tile.mist{opacity:0!important;filter:none}
 .tile.mist .tile-inner{transform:scale(1.018);transition:transform 7200ms cubic-bezier(.22,1,.36,1)}
 .tile.mist-clearing{transition:opacity 6200ms cubic-bezier(.22,1,.36,1)!important;filter:none}
-.tile.mist-clearing .tile-inner{transform:scale(1);}
+.tile.mist-clearing .tile-inner{transform:scale(1)}
 .tile.open{cursor:default}
 @media (hover:hover) and (pointer:fine){.tile:not(.open):not(.mist):not([data-empty="true"]):hover .front img{transform:scale(1.012);filter:brightness(1.025)}}
 .tile.opening .front img{opacity:1;transform:scale(1);transition-duration:700ms,900ms}
 @media (hover:none){.tile:not(.open):not(.mist):not([data-empty="true"]):active .front img{transform:scale(1.01);filter:brightness(1.02)}}
 .tile[data-empty="true"]{cursor:default}.tile:focus-visible{outline:1px solid rgba(0,0,0,.28);outline-offset:3px}
 .tile[data-empty="true"] .front img{opacity:0}
-.controls{position:fixed;left:28px;bottom:13px;z-index:100;display:flex;align-items:center;gap:12px;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:none;color:#777;opacity:.86;user-select:none;background:rgba(255,255,255,.88);padding:3px 5px;border:1px solid rgba(0,0,0,.10);border-radius:2px}.controls .hint{opacity:.72;transition:opacity 700ms ease}.controls .hint.hidden{opacity:0;pointer-events:none;width:0;margin:0;overflow:hidden}.controls button,.controls .subscribe{appearance:none;border:0;background:transparent;min-height:30px;padding:8px 6px;color:inherit;font:inherit;cursor:pointer;text-decoration:none}.controls button:hover,.controls .subscribe:hover{color:#111}.controls .recompose{padding-left:0}.controls .subscribe{padding-right:0}@media (max-width:700px){.controls{left:17px;bottom:8px;font-size:9px;gap:13px}}.hint{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:101;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.72;transition:opacity 700ms ease;white-space:nowrap;pointer-events:none}.controls .hint{position:static;transform:none}.hint.hidden{opacity:0!important;pointer-events:none!important;width:0;margin:0;overflow:hidden}
-@media (max-width:700px){
- .mural{inset:16px 18px 48px}
- .controls{left:17px;bottom:17px;font-size:9px;gap:11px}
- .meta{left:17px;bottom:43px;font-size:8px;gap:11px}
- .copy{font-size:clamp(11px,2.7vw,17px)}
-}
-@media (prefers-reduced-motion:reduce){.tile,.front img,.back,.copy,.copy a{transition:none!important}}
+.controls{position:fixed;left:28px;bottom:13px;z-index:100;display:flex;align-items:center;gap:12px;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:none;color:#777;opacity:.86;user-select:none;background:rgba(255,255,255,.88);padding:3px 5px;border:1px solid rgba(0,0,0,.10);border-radius:2px}.controls .hint{opacity:.72;transition:opacity 700ms ease}.controls .hint.hidden{opacity:0;pointer-events:none;width:0;margin:0;overflow:hidden}.controls button,.controls .subscribe{appearance:none;border:0;background:transparent;min-height:30px;padding:8px 6px;color:inherit;font:inherit;cursor:pointer;text-decoration:none}.controls button:hover,.controls .subscribe:hover{color:#111}.controls .recompose{padding-left:0}.controls .subscribe{padding-right:0}
+@media (max-width:700px){.controls{left:17px;bottom:17px;font-size:9px;gap:11px}.copy{font-size:clamp(11px,2.7vw,17px)}}
+.hint{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:101;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.72;transition:opacity 700ms ease;white-space:nowrap;pointer-events:none}.controls .hint{position:static;transform:none}.hint.hidden{opacity:0!important;pointer-events:none!important;width:0;margin:0;overflow:hidden}
+@media (prefers-reduced-motion:reduce){.tile,.front img,.back,.copy,.copy a,.intro{transition:none!important;animation:none!important}}
 .intro{position:fixed;inset:0;background:#fff;z-index:200;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity 2600ms cubic-bezier(.22,1,.36,1);pointer-events:auto}
 .intro img{width:clamp(150px,20vw,230px);height:auto;display:block;opacity:.96}
 .intro.fade{opacity:0;pointer-events:none}
-@media (prefers-reduced-motion:reduce){.intro{transition:none!important}}
 </style></head><body>
 <div class="intro" id="intro"><img src="images/abdymok.gif" alt="abdymok"></div><div class="mural"><div class="wall" id="wall"></div></div>
 <span id="hint" class="hint">Click an image to read</span><div class="controls"><button id="recompose" class="recompose" type="button">Recompose</button><button id="pause" class="pause" type="button">Pause</button><a class="subscribe" href="https://abdymok.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe</a></div>
 <script>
-const slides=[{"id": 1, "year": 2022, "image": "images/1.jpg", "back": "Delivers an unpanicked, sober reading of invasion signals on the very first morning of the <a href=\"https://abdymok.substack.com/p/russias-further-invasion-day-1\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"1\">full-scale war<\/a>, cutting through media buzzwords."}, {"id": 2, "year": 2021, "image": "images/2.jpg", "back": "Warned as early as <a href=\"https://abdymok.substack.com/p/banal-murder-plot?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"2\">January 2021<\/a> that a security service consumed by internal power struggles and contraband revenue cannot simultaneously execute complex counterintelligence operations against foreign threats."}, {"id": 3, "year": 2021, "image": "images/3.jpg", "back": "Chronicles &quot;<a href=\"https://abdymok.substack.com/p/coming-to-a-theater-near-you?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"3\">Wagnergate<\/a>&quot; (Operation Avenue), exposing systemic institutional leaks and official dishonesty at the highest levels of executive leadership prior to the invasion."}, {"id": 4, "year": 2020, "image": "images/4.jpg", "back": "Exposes <a href=\"https://abdymok.substack.com/p/ukraines-plan-\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"4\">parliamentary cover-ups<\/a> and sanitizing investigations designed to shield executive figures from accountability over compromised intelligence operations."}, {"id": 5, "year": 2021, "image": "images/5.jpg", "back": "Uses <a href=\"https://abdymok.substack.com/p/zelenskys-new-clothes\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"5\">game theory<\/a> (mutual vs. common knowledge) to demonstrate how performative political theater obscured pre-war governance defects."}, {"id": 6, "year": 2022, "image": "images/6.jpg", "back": "<a href=\"https://abdymok.substack.com/p/this-is-still-ukrainewar?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"6\">Morale is high, at least in Kyiv, with private military contractors and arms suppliers in abundance. Many of them are waiting anxiously for Tootsie Club to re-open.<\/a>"}, {"id": 7, "year": 2022, "image": "images/7.jpg", "back": "Accurately discerning the <a href=\"https://abdymok.substack.com/p/day-25-phase-3?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"7\">mental amplitudes<\/a> of Ukraine’s leaders is another key assessment that should be made. No one should pretend functioning democratic institutions exist."}, {"id": 8, "year": 2022, "image": "images/8.jpg", "back": "Critiques accredited Western experts and &quot;<a href=\"https://abdymok.substack.com/p/ignore-analysts\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"8\">bounded rationality<\/a>&quot; models that failed to anticipate Russian strategic choices."}, {"id": 9, "year": 2022, "image": "images/9.jpg", "back": "<a href=\"https://abdymok.substack.com/p/day-22-phase-3?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"9\">I much prefer spherical cows, factoring agreements and thinking about the El Farol Bar problem than browsing battlefield posts on Telegram channels. Future projects abound, including goats, chickens, livestock guardian dogs.<\/a>"}, {"id": 10, "year": 2023, "image": "images/10.jpg", "back": "Lifts the curtain on war-adjacent commentary and opportunistic media narratives that obscure core <a href=\"https://abdymok.substack.com/p/this-is-still-ukrainewar?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"10\">operational realities<\/a>."}, {"id": 11, "year": 2023, "image": "images/11.jpg", "back": "Enumerates the three fundamental operational requirements (<a href=\"https://abdymok.substack.com/p/day-499\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"11\">closing the sky<\/a>, activating additional corps, and securing long-range precision strike capabilities) needed to break positional stalemate."}, {"id": 12, "year": 2023, "image": "images/12.jpg", "back": "Deconstructs early <a href=\"https://abdymok.substack.com/p/day-516\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"12\">counteroffensive hype<\/a> versus the unglamorous tactical realities on the ground."}, {"id": 13, "year": 2022, "image": "images/13.jpg", "back": "<a href=\"https://abdymok.substack.com/p/pause-operationnelle?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"13\">The Club for Aesthetic Disobedience, which for years has criticized “beautification projects” in the capital, describes our architectural jungle the best: a poorly lit dog’s breakfast.<\/a>"}, {"id": 14, "year": 2024, "image": "images/14.jpg", "back": "Critiques the lack of long-term <a href=\"https://abdymok.substack.com/p/day-730\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"14\">strategic coherence<\/a> as the full-scale conflict entered its second year."}, {"id": 15, "year": 2024, "image": "images/15.jpg", "back": "Accurately analyzes the operational dimensions of <a href=\"https://abdymok.substack.com/p/day-748\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"15\">positional warfare<\/a> in transparent, drone-saturated battlefields."}, {"id": 16, "year": 2024, "image": "images/16.jpg", "back": "Exposes early <a href=\"https://abdymok.substack.com/p/day-1044\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"16\">command-and-control failures<\/a> in newly formed formations such as the 155th Brigade."}, {"id": 17, "year": 2024, "image": "images/17.jpg", "back": "Identifies <a href=\"https://abdymok.substack.com/p/day-1049\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"17\">four systemic failures<\/a>—unbuilt fortifications, forced conscription defects, new brigade failures, and domestic production breakdowns—long before official acknowledgment."}, {"id": 18, "year": 2025, "image": "images/18.jpg", "back": "Analyzes the &quot;<a href=\"https://abdymok.substack.com/p/day-1402\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"18\">negotiation gap<\/a>,&quot; proving the logical incompatibility between Russian objectives and Ukrainian state survival."}, {"id": 19, "year": 2026, "image": "images/19.jpg", "back": "Applies the biological concept of &quot;<a href=\"https://abdymok.substack.com/p/day-1454\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"19\">parabiosis<\/a>&quot; to critique aging, stagnant diplomatic frameworks and political exhaustion."}, {"id": 20, "year": 2026, "image": "images/20.jpg", "back": "Decouples <a href=\"https://abdymok.substack.com/p/day-1524\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"20\">military resilience<\/a> from liberal democracy, arguing that societal heroism on the battlefield does not automatically equate to sound institutional governance."}, {"id": 21, "year": 2026, "image": "images/21.jpg", "back": "Provides a <a href=\"https://abdymok.substack.com/p/day-1577\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"21\">multi-year retrospective<\/a> detailing how the archive&#x27;s analytical models evolved and held up across milestones."}, {"id": 22, "year": 2020, "image": "images/22.jpg", "back": "Establishes the foundational critique of Ukraine as a primitive post-Soviet <a href=\"https://abdymok.substack.com/p/thug-life\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"22\">feudal patronage system<\/a> rather than a fully functioning institutional democracy."}, {"id": 23, "year": 2020, "image": "images/23.jpg", "back": "Demonstrates how European institutions repeatedly collided with informal <a href=\"https://abdymok.substack.com/p/thug-life-contd?s=w\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"23\">patronage networks<\/a> and political theatrics in Kyiv."}, {"id": 24, "year": 2021, "image": "images/24.jpg", "back": "Critiques patronage figures (e.g., Mykola Tyshchenko) as symbols of <a href=\"https://abdymok.substack.com/p/a-man-in-full\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"24\">institutional decay<\/a>."}, {"id": 25, "year": 2022, "image": "images/25.jpg", "back": "Maps ultra-competitive, informal <a href=\"https://abdymok.substack.com/p/thug-life-contd-315\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"25\">political rivalries<\/a> operating behind formal state structures."}, {"id": 26, "year": 2020, "image": "images/26.jpg", "back": "Analyzes early cabinet reshuffles (e.g., Honcharuk&#x27;s sacking) to distinguish between macroeconomic illiteracy and <a href=\"https://abdymok.substack.com/p/operation-y-b2d557374ca7\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"26\">political sabotage<\/a>."}, {"id": 27, "year": 2021, "image": "images/27.jpg", "back": "Maps internal fallout and paranoia within <a href=\"https://abdymok.substack.com/p/drones-in-my-bones\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"27\">intelligence services<\/a> following Wagnergate and associated leaks."}, {"id": 28, "year": 2021, "image": "images/28.jpg", "back": "Analyzes the corporate and tactical evolution of <a href=\"https://abdymok.substack.com/p/scale-free-wagner-pmc\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"28\">mercenary networks<\/a> prior to their full-scale deployment."}, {"id": 29, "year": 2021, "image": "images/29.jpg", "back": "Examines how a background in <a href=\"https://abdymok.substack.com/p/i-an-actor\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"29\">performance art<\/a> shaped executive decision-making and public narrative management during national crises."}, {"id": 30, "year": 2020, "image": "images/30.jpg", "back": "Confronts official government statements downplaying explicit <a href=\"https://abdymok.substack.com/p/pants-on-fire\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"30\">invasion warnings<\/a>."}, {"id": 31, "year": 2025, "image": "images/31.jpg", "back": "Documents the <a href=\"https://abdymok.substack.com/p/day-1246\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"31\">legislative rollback<\/a> of anti-corruption agency oversight and the immediate domestic political backlash."}, {"id": 32, "year": 2026, "image": "images/32.jpg", "back": "Analyzes &quot;conversations that don&#x27;t happen,&quot; showing how analysts avoid naming <a href=\"https://abdymok.substack.com/p/day-1520\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"32\">structural patterns<\/a> when doing so threatens prior narratives."}, {"id": 33, "year": 2026, "image": "images/33.jpg", "back": "Parses wiretaps to explain how <a href=\"https://abdymok.substack.com/p/day-1525\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"33\">informal authority<\/a> and backroom procurement flows operate under wartime conditions."}, {"id": 34, "year": 2026, "image": "images/34.jpg", "back": "Exposes the &quot;<a href=\"https://abdymok.substack.com/p/day-1526\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"34\">Dynasty<\/a>&quot; luxury estate cooperative constructed for political insiders during the height of the conflict."}, {"id": 35, "year": 2021, "image": "images/35.jpg", "back": "Applies the &quot;<a href=\"https://abdymok.substack.com/p/ukraine-goes-coup-coup\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"35\">trolley car problem<\/a>&quot; to illustrate how executive impulse control creates broad systemic instability."}, {"id": 36, "year": 2024, "image": "images/36.jpg", "back": "Critiques opportunistic religious and <a href=\"https://abdymok.substack.com/p/day-1024\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"36\">ideological pivots<\/a> by political actors as winter conditions intensified."}, {"id": 37, "year": 2026, "image": "images/37.jpg", "back": "Connects early <a href=\"https://abdymok.substack.com/p/day-1408\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"37\">Wagnergate cover-ups<\/a> to subsequent structural consolidations inside the President&#x27;s Office."}, {"id": 38, "year": 2022, "image": "images/38.jpg", "back": "Maps the pre-war linguistic and conceptual confusion between &quot;imminent&quot; and &quot;<a href=\"https://abdymok.substack.com/p/lost-in-translation\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"38\">inevitable<\/a>&quot; invasion warnings."}, {"id": 39, "year": "", "image": "images/39.jpg", "back": "Thank you for looking.<br><br>The archive continues."}, {"id": 40, "year": "", "image": "images/40.jpg", "back": "Until the next recomposition."}];
-const wall=document.getElementById('wall');
-const tiles=slides.map(s=>{
- const el=document.createElement('article'); el.className='tile'; el.dataset.id=s.id; el.dataset.empty=(!s.back?'true':'false');
- el.innerHTML=`<div class="tile-inner"><div class="face front"><img src="${s.image}" alt="Slide ${s.id}"></div><div class="face back"><span class="post-year">${s.year || ""}</span><div class="copy">${s.back}</div><button class="image-back" type="button" aria-label="Return to image">← image</button></div></div>`;
- if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); } el.tabIndex=0;
- wall.appendChild(el); el.querySelectorAll('.copy a').forEach((a,i)=>a.style.setProperty('--link-delay',(-i*.7)+'s')); return el;
-});
-let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null;
-function cols(){
- const w=wall.clientWidth,h=wall.clientHeight;
- if(w<700) return 5;
- return w/h>1.25?8:5;
-}
-const ease='cubic-bezier(.22,1,.36,1)';
-let slotMap=new Map();
-let morphing=false;
-function metrics(){
- const c=cols(), r=Math.ceil(tiles.length/c), gap=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gap'))||8;
- const cw=wall.clientWidth, ch=wall.clientHeight;
- const tw=(cw-gap*(c-1))/c, th=(ch-gap*(r-1))/r;
- wall.style.setProperty('--tile-w',tw+'px'); wall.style.setProperty('--tile-h',th+'px');
- return {c,r,gap,tw,th};
-}
-function setGeometry(el,slot,hero=false,animate=false){
- const {c,gap,tw,th}=metrics();
- const heroCols=Math.min(3,c), heroRows=Math.min(3,Math.ceil(tiles.length/c));
- const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
- const w=hero ? (tw*heroCols + gap*(heroCols-1)) : tw;
- const h=hero ? (th*heroRows + gap*(heroRows-1)) : th;
- el.style.transitionDuration=animate?(el.dataset.id===autoHeroId?'3200ms':'5600ms'):'0ms';
- el.style.transitionDelay='0ms';
- el.style.width=w+'px'; el.style.height=h+'px';
- el.classList.toggle('hero',hero);
- el.style.transform=`translate3d(${x}px,${y}px,0)`;
-}
-function layout(animate=true){
- const {c,r}=metrics();
- const hero=tiles.find(t=>t.dataset.id===(openId || autoHeroId) && t.dataset.empty!=='true') || null;
- const heroCols=Math.min(3,c), heroRows=Math.min(3,r);
- let heroX=0, heroY=0;
- if(hero){
-   const maxX=c-heroCols,maxY=r-heroRows;
-   const oldSlot=slotMap.get(hero)?.slot;
-   if(oldSlot!=null){
-     const oldX=oldSlot%c, oldY=Math.floor(oldSlot/c);
-     heroX=Math.max(0,Math.min(maxX,oldX-Math.floor((heroCols-1)/2)));
-     heroY=Math.max(0,Math.min(maxY,oldY-Math.floor((heroRows-1)/2)));
-   }else{
-     heroX=Math.floor(maxX/2); heroY=Math.floor(maxY/2);
-   }
- }
- const heroSlots=new Set();
- if(hero) for(let yy=heroY;yy<heroY+heroRows;yy++) for(let xx=heroX;xx<heroX+heroCols;xx++) heroSlots.add(yy*c+xx);
- const available=[...Array(c*r).keys()].filter(s=>!heroSlots.has(s));
- const others=tiles.filter(t=>t!==hero && t.dataset.empty!=='true').sort(()=>Math.random()-.5);
- const map=new Map();
- if(hero) map.set(hero,{slot:heroY*c+heroX,hero:true});
- others.forEach((el,i)=>{ if(i<available.length) map.set(el,{slot:available[i],hero:false}); });
- tiles.filter(t=>t.dataset.empty==='true').forEach(el=>{ el.style.opacity='1'; el.classList.remove('hero'); });
- tiles.forEach(el=>{
-   const target=map.get(el);
-   if(!target){el.style.opacity='0'; return;}
-   setGeometry(el,target.slot,target.hero,animate);
-   el.style.opacity='1';
- });
- slotMap=map;
-}
-function showAutoHero(el, hold=1500){
-  if(paused || openId || teachingMoment || !el || el.dataset.empty==='true') return Promise.resolve();
-  autoHeroId=el.dataset.id;
-  layout(true);
-  return new Promise(resolve=>{
-    autoHeroTimer=setTimeout(()=>{
-      if(paused || openId || teachingMoment || autoHeroId!==el.dataset.id){ autoHeroId=null; layout(true); resolve(); return; }
-      autoHeroId=null;
-      layout(true);
-      setTimeout(resolve,3400);
-    }, hold+3200);
-  });
-}
-function startTeachingMoment(){
-  if(teachingMoment || paused || openId) return;
-  if(window.localStorage.getItem('mural40TeachingSeen')==='1') return;
-  const candidates=tiles.filter(t=>t.dataset.empty!=='true');
-  if(!candidates.length) return;
-  const el=candidates[Math.floor(Math.random()*candidates.length)];
-  teachingMoment=true;
-  paused=true;
-  pause.textContent='Pause';
-  clearTimeout(autoHeroTimer);
-  autoHeroId=el.dataset.id;
-  layout(true);
-  teachingTimer=setTimeout(()=>{
-    if(!teachingMoment || openId) return;
-    autoHeroId=null;
-    layout(true);
-    teachingTimer=setTimeout(()=>{
-      teachingMoment=false;
-      paused=false;
-      pause.textContent='Pause';
-      try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-      layout(true);
-    },3300);
-  },6500);
-}
-async function recompose(){
- if(paused || openId || morphing || teachingMoment) return;
- const active=tiles.filter(t=>t.dataset.empty!=='true');
- if(active.length<6 || slotMap.size<active.length) return;
- morphing=true;
- const count=Math.min(active.length,6+Math.floor(Math.random()*4));
- const chosen=active.slice().sort(()=>Math.random()-.5).slice(0,count);
- const oldSlots=chosen.map(el=>slotMap.get(el)?.slot).filter(s=>s!=null);
- const rotated=oldSlots.slice(1).concat(oldSlots[0]);
- const assignments=new Map(chosen.map((el,i)=>[el,rotated[i]]));
- chosen.forEach((el,i)=>{
-   const delay=i*420+Math.random()*380;
-   setTimeout(()=>{
-     if(paused || openId){ return; }
-     el.classList.add('dissolving');
-     el.style.transition='opacity 1800ms ease, transform 4800ms cubic-bezier(.22,1,.36,1)';
-     el.style.opacity='0';
-     setTimeout(()=>{
-       if(paused || openId){ el.classList.remove('dissolving'); el.style.opacity='1'; return; }
-       const target=assignments.get(el);
-       if(target==null){ el.classList.remove('dissolving'); el.style.opacity='1'; return; }
-       slotMap.set(el,{slot:target,hero:false});
-       const {c,gap,tw,th}=metrics();
-       const x=(target%c)*(tw+gap), y=Math.floor(target/c)*(th+gap);
-       el.style.transform=`translate3d(${x}px,${y}px,0)`;
-       requestAnimationFrame(()=>requestAnimationFrame(()=>{
-         el.style.opacity='1';
-         setTimeout(()=>el.classList.remove('dissolving'),3000);
-       }));
-     },1850);
-   },delay);
- });
- const heroCandidates=active.filter(el=>!chosen.includes(el)).sort(()=>Math.random()-.5).slice(0,3);
- const heroStart=900;
- setTimeout(async()=>{
-   for(const hero of heroCandidates){
-     if(paused || openId) break;
-     await showAutoHero(hero,1200);
-   }
- },heroStart);
- setTimeout(()=>{morphing=false;},14500);
-}
-function closeTile(el){
- if(!el || openId!==el.dataset.id) return;
- clearTimeout(returnTimer); clearTimeout(openRevealTimer);
- el.classList.remove('opening');
- paused=true;
- el.classList.add('closing');
- el.classList.remove('open');
- setTimeout(()=>{
-   if(openId!==el.dataset.id) return;
-   el.classList.remove('closing');
-   imageReadyId=el.dataset.id;
-   pause.textContent='Resume';
-   returnTimer=setTimeout(()=>{
-     if(openId===el.dataset.id && imageReadyId===el.dataset.id){
-       imageReadyId=null; openId=null; paused=false; pause.textContent='Pause'; layout(false); setTimeout(recompose,1200);
-     }
-   },15000);
- },4400);
-}
-function openTile(el){
- if(el.dataset.empty==='true') return;
- if(teachingMoment){
-   clearTimeout(teachingTimer);
-   teachingMoment=false;
-   autoHeroId=null;
-   paused=false;
-   pause.textContent='Pause';
-   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-   layout(false);
- }
- clearTimeout(clickTimer); clearTimeout(returnTimer); clearTimeout(openRevealTimer); imageReadyId=null;
- if(openId && openId!==el.dataset.id) closeTile(document.querySelector(`.tile[data-id="${openId}"]`));
- if(openId===el.dataset.id){ closeTile(el); return; }
- openId=el.dataset.id; paused=true; pause.textContent='Resume'; if(hint){hint.classList.add('hidden'); try{window.localStorage.setItem('mural40HintSeen','1');}catch(e){}} layout(true);
- el.classList.add('opening');
- let revealDelay=650;
- try{revealDelay=window.localStorage.getItem('mural40FirstClickSeen')==='1'?650:1400;}catch(e){}
- openRevealTimer=setTimeout(()=>{
-   if(openId!==el.dataset.id || !el.classList.contains('opening')) return;
-   el.classList.remove('opening');
-   el.classList.add('open');
-   try{window.localStorage.setItem('mural40FirstClickSeen','1');}catch(e){}
- },revealDelay);
-}
-tiles.forEach(el=>{
- el.addEventListener('click',e=>{
-   if(e.target.closest('a') || el.dataset.empty==='true') return;
-   if(imageReadyId===el.dataset.id && !el.classList.contains('open')){
-     clearTimeout(clickTimer); clickTimer=setTimeout(()=>{ if(imageReadyId===el.dataset.id) openTile(el); },300); return;
-   }
-   if(el.classList.contains('open')) return;
-   openTile(el);
- });
- const back=el.querySelector('.back');
- if(back) back.addEventListener('click',e=>{ if(e.target.closest('a')) return; closeTile(el); });
- el.addEventListener('dblclick',e=>{
-   if(e.target.closest('a') || el.dataset.empty==='true') return;
-   if(imageReadyId!==el.dataset.id || el.classList.contains('open')) return;
-   clearTimeout(clickTimer); clearTimeout(returnTimer);
-   const a=el.querySelector('a'); if(a && a.href) window.open(a.href,'_blank','noopener');
- });
-});
-document.addEventListener('keydown',e=>{
- const active=document.activeElement;
- const editing=active && (active.tagName==='INPUT' || active.tagName==='TEXTAREA' || active.isContentEditable);
- if(editing) return;
- if(e.key==='Escape' && openId){
-   e.preventDefault();
-   const el=document.querySelector(`.tile[data-id="${openId}"]`);
-   if(el) closeTile(el);
-   return;
- }
- const key=e.key;
- if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' '].includes(key)) return;
- const visible=tiles.filter(t=>t.dataset.empty!=='true');
- if(!visible.length) return;
- if(openId){
-   if(key==='Enter' || key===' '){
-     e.preventDefault();
-     const el=document.querySelector(`.tile[data-id="${openId}"]`);
-     if(el) closeTile(el);
-   }
-   return;
- }
- let current=visible.indexOf(active);
- if(current<0) current=0;
- if(key==='Enter' || key===' '){
-   e.preventDefault();
-   openTile(visible[current]);
-   visible[current].focus();
-   return;
- }
- e.preventDefault();
- let next=current;
- if(key==='ArrowRight' || key==='ArrowDown') next=(current+1)%visible.length;
- if(key==='ArrowLeft' || key==='ArrowUp') next=(current-1+visible.length)%visible.length;
- visible[next].focus();
-});
-window.addEventListener('resize',()=>layout(false));
-const hint=document.getElementById('hint'); try{if(window.localStorage.getItem('mural40HintSeen')==='1') hint.classList.add('hidden');}catch(e){}
-const pause=document.getElementById('pause');
-const recomposeBtn=document.getElementById('recompose');
-pause.addEventListener('click',()=>{
- if(teachingMoment){
-   clearTimeout(teachingTimer);
-   teachingMoment=false; autoHeroId=null; paused=false; pause.textContent='Pause';
-   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-   layout(true); setTimeout(recompose,900);
-   return;
- }
- paused=!paused;
- pause.textContent=paused?'Resume':'Pause';
- if(!paused) { layout(true); setTimeout(recompose,900); }
-});
-recomposeBtn.addEventListener('click',()=>{ if(openId) return; morphing=false; recompose(); });
-layout(false);
-const intro=document.getElementById('intro');
-const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');
-activeTiles.forEach(t=>t.classList.add('mist'));
-function beginMuralOpening(){
-  intro.classList.add('fade');
-  activeTiles.forEach((t,i)=>{
-    const delay=350 + i*125 + Math.random()*850;
-    setTimeout(()=>{
-      if(openId) return;
-      t.classList.add('mist-clearing');
-      t.classList.remove('mist');
-      setTimeout(()=>t.classList.remove('mist-clearing'),6200);
-    },delay);
-  });
-  setTimeout(()=>recompose(),4300);
-  setTimeout(()=>recompose(),9800);
-  setTimeout(startTeachingMoment,20500);
-}
-setTimeout(beginMuralOpening,5000);
-timer=setInterval(recompose,18000);
+const slides=[[]];
 </script></body></html>

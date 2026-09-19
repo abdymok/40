@@ -47,8 +47,8 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
  .copy{font-size:clamp(11px,2.7vw,17px)}
 }
 @media (prefers-reduced-motion:reduce){.tile,.front img,.back,.copy,.copy a{transition:none!important;animation:none!important}}
-.intro{position:fixed;inset:0;background:#fff;z-index:200;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity 2600ms cubic-bezier(.22,1,.36,1);pointer-events:auto}
-.intro-wordmark{position:relative;z-index:2;font-family:Spectral,Georgia,serif;font-size:clamp(54px,10vw,132px);line-height:1;font-weight:400;letter-spacing:.015em;white-space:nowrap}.intro-wordmark .red-y{color:#c40000}.runner-strip{position:fixed;right:0;top:50%;width:170px;height:140px;object-fit:contain;transform:translate3d(calc(100vw + 210px),-50%,0);z-index:20;display:block;visibility:visible;pointer-events:none;opacity:1;will-change:transform;animation:runnerCross 4300ms linear 0ms forwards}.runner-figure{transform-box:fill-box;transform-origin:center;animation:runnerBob 420ms ease-in-out infinite alternate}@keyframes runnerBob{from{transform:translateY(0)}to{transform:translateY(-3px)}}@keyframes runnerCross{0%{transform:translate3d(calc(100vw + 210px),-50%,0)}100%{transform:translate3d(calc(-100vw - 210px),-50%,0)}}
+.intro{position:fixed;inset:0;background:#fff;z-index:200;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity 1800ms cubic-bezier(.22,1,.36,1);pointer-events:auto}
+.intro-wordmark{position:relative;z-index:2;font-family:Spectral,Georgia,serif;font-size:clamp(54px,10vw,132px);line-height:1;font-weight:400;letter-spacing:.015em;white-space:nowrap}.intro-wordmark .red-y{color:#c40000}.runner-strip{position:fixed;right:0;top:50%;width:170px;height:140px;object-fit:contain;transform:translate3d(calc(100vw + 210px),-50%,0);z-index:20;display:block;visibility:visible;pointer-events:none;opacity:1;will-change:transform;animation:runnerCross 3600ms linear 0ms forwards}.runner-figure{transform-box:fill-box;transform-origin:center;animation:runnerBob 420ms ease-in-out infinite alternate}@keyframes runnerBob{from{transform:translateY(0)}to{transform:translateY(-3px)}}@keyframes runnerCross{0%{transform:translate3d(calc(100vw + 210px),-50%,0)}100%{transform:translate3d(calc(-100vw - 210px),-50%,0)}}
 .intro.fade{opacity:0;pointer-events:none}
 @media (prefers-reduced-motion:reduce){.intro{transition:none!important}.runner-strip{animation:none!important;transform:translate3d(calc(50vw - 66px),-50%,0)!important}.runner-figure{animation:none!important}}
 </style></head><body>
@@ -354,7 +354,7 @@ function beginMuralOpening(){
     return;
   }
   activeTiles.forEach((t,i)=>{
-    const delay=200 + i*95 + Math.random()*600;
+    const delay=200 + i*70 + Math.random()*400;
     scheduleOpening(()=>{
       if(openId || paused) return;
       t.classList.add('mist-clearing');
@@ -363,9 +363,9 @@ function beginMuralOpening(){
     },delay);
   });
   // Give the complete small-image wall time to settle before the first movement.
-  scheduleOpening(()=>{if(!paused && !openId) recompose();},13800);
-  scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},20500);
+  scheduleOpening(()=>{if(!paused && !openId) recompose();},8200);
+  scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},14500);
 }
-setTimeout(beginMuralOpening,4300);
+setTimeout(beginMuralOpening,3600);
 timer=setInterval(()=>{if(!paused && !openId) recompose();},18000);
 </script></body></html>

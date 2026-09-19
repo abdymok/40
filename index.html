@@ -10,7 +10,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .wall{position:relative;width:100%;height:100%;}
 .tile{position:absolute;left:0;top:0;width:var(--tile-w);height:var(--tile-h);will-change:transform,opacity;transition:transform 5200ms cubic-bezier(.22,1,.36,1),opacity 2400ms ease,width 5200ms cubic-bezier(.22,1,.36,1),height 5200ms cubic-bezier(.22,1,.36,1);cursor:pointer;perspective:1000px;}
 .tile-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:rgba(255,255,255,.82)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:transparent}
 .front img{width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;transition:opacity 950ms cubic-bezier(.22,1,.36,1),transform 1100ms cubic-bezier(.22,1,.36,1)}
 .tile.closing .front img{transition-duration:3200ms,3200ms}
 .back{display:flex;pointer-events:none;align-items:center;justify-content:center;padding:11%;background:rgba(255,255,255,.82);opacity:0;transition:opacity 1150ms cubic-bezier(.22,1,.36,1);cursor:default}
@@ -22,7 +22,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .copy a:visited{color:#df1717}
 .tile.open .front img{opacity:0;transform:scale(.985)}
 .tile.open .back{opacity:1;pointer-events:auto}
-.tile.open .front{background:rgba(255,255,255,.82)}
+.tile.open .front{background:transparent}
 .tile.mist{opacity:0!important;filter:none}
 .tile.mist .tile-inner{transform:scale(1.018);transition:transform 7200ms cubic-bezier(.22,1,.36,1)}
 .tile.mist-clearing{transition:opacity 6200ms cubic-bezier(.22,1,.36,1)!important;filter:none}

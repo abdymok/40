@@ -61,7 +61,10 @@ const tiles=slides.map(s=>{
  const el=document.createElement('article'); el.className='tile'; el.dataset.id=s.id; el.dataset.empty=(!s.back?'true':'false');
  el.innerHTML=`<div class="tile-inner"><div class="face front"><img src="${s.image}" alt="Mural image ${s.id}"></div><div class="face back"><span class="post-year">${s.year || ""}</span><div class="copy">${s.back}</div><button class="image-back" type="button" aria-label="Return to image">← image</button></div></div>`;
  if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); } el.tabIndex=0;
- wall.appendChild(el); el.setAttribute("aria-label",`Slide ${s.id}${s.year ? ", "+s.year : ""}. Click to read.`); el.setAttribute("aria-expanded","false"); el.querySelectorAll('.copy a').forEach((a,i)=>a.style.setProperty('--link-delay',(-i*.7)+'s')); return el;
+ wall.appendChild(el); el.setAttribute("aria-label",`Slide ${s.id}${s.year ? ", "+s.year : ""}. Click to read.`); el.setAttribute("aria-expanded","false"); el.querySelectorAll('.copy a').forEach((a,i)=>{
+   a.style.setProperty('--link-delay',(-i*.7)+'s');
+   a.addEventListener('click',()=>{ if(typeof gtag==='function') gtag('event','substack_click',{mural_id:String(s.id),mural_year:String(s.year||''),destination:a.href}); });
+ }); return el;
 });
 let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, autoHeroResolve=null, teachingMoment=false, teachingTimer=null, openingTimers=[], recompositionTimers=[];
 function cols(){
@@ -233,6 +236,7 @@ function closeTile(el){
 }
 function openTile(el){
  if(el.dataset.empty==='true') return;
+ if(typeof gtag==='function') gtag('event','mural_open',{mural_id:String(el.dataset.id),mural_year:String(slides.find(s=>String(s.id)===String(el.dataset.id))?.year||'')});
  if(teachingMoment){
    clearTimeout(teachingTimer);
    teachingMoment=false;

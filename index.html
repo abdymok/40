@@ -266,7 +266,8 @@ document.addEventListener('keydown',e=>{
  }
 });
 window.addEventListener('resize',()=>layout(false));
-const hint=document.getElementById('hint'); try{if(window.localStorage.getItem('mural40HintSeen')==='1') hint.classList.add('hidden');}catch(e){}\nconst pause=document.getElementById('pause');
+const hint=document.getElementById('hint'); try{if(window.localStorage.getItem('mural40HintSeen')==='1') hint.classList.add('hidden');}catch(e){}
+const pause=document.getElementById('pause');
 const recomposeBtn=document.getElementById('recompose');
 pause.addEventListener('click',()=>{
  if(teachingMoment){

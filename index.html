@@ -6,14 +6,14 @@
 *{box-sizing:border-box}
 html,body{margin:0;width:100%;min-height:100%;background:#fff;color:#151515}
 body{font-family:Spectral,Georgia,serif;overflow:hidden}
-.mural{position:fixed;inset:30px 78px 62px;background:#fff}
+.mural{position:fixed;inset:30px 78px 62px;background:transparent}
 .wall{position:relative;width:100%;height:100%;}
 .tile{position:absolute;left:0;top:0;width:var(--tile-w);height:var(--tile-h);will-change:transform,opacity;transition:transform 5200ms cubic-bezier(.22,1,.36,1),opacity 2400ms ease,width 5200ms cubic-bezier(.22,1,.36,1),height 5200ms cubic-bezier(.22,1,.36,1);cursor:pointer;perspective:1000px;}
 .tile-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:#fff;}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:rgba(255,255,255,.82)}
 .front img{width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;transition:opacity 950ms cubic-bezier(.22,1,.36,1),transform 1100ms cubic-bezier(.22,1,.36,1)}
 .tile.closing .front img{transition-duration:3200ms,3200ms}
-.back{display:flex;pointer-events:none;align-items:center;justify-content:center;padding:11%;background:#fff;opacity:0;transition:opacity 1150ms cubic-bezier(.22,1,.36,1);cursor:default}
+.back{display:flex;pointer-events:none;align-items:center;justify-content:center;padding:11%;background:rgba(255,255,255,.82);opacity:0;transition:opacity 1150ms cubic-bezier(.22,1,.36,1);cursor:default}
 .tile.closing .back{transition-duration:3200ms}.back .copy{cursor:default}.back .post-year{position:absolute;left:50%;top:8%;transform:translateX(-50%);font:9px/1 Arial,sans-serif;letter-spacing:.08em;color:rgba(0,0,0,.38);pointer-events:none}.back .image-back{position:absolute;right:5%;bottom:5%;border:0;background:transparent;padding:5px 2px;font:10px/1 Arial,sans-serif;letter-spacing:.04em;color:#777;cursor:pointer;opacity:.72}.back .image-back:hover{color:#111}.back .image-back:focus-visible{outline:1px solid #777;outline-offset:3px}
 .copy{font-size:clamp(12px,1.18vw,20px);line-height:1.16;text-align:justify;hyphens:auto;color:#151515;width:100%;transition:color 700ms cubic-bezier(.22,1,.36,1)}
 .copy a{color:#df1717;text-decoration:none;display:inline;transition:color 700ms cubic-bezier(.22,1,.36,1),transform 900ms cubic-bezier(.22,1,.36,1),opacity 700ms ease;transform-origin:center center;animation:linkAche 6.5s ease-in-out infinite;animation-delay:var(--link-delay,0s)}
@@ -22,7 +22,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .copy a:visited{color:#df1717}
 .tile.open .front img{opacity:0;transform:scale(.985)}
 .tile.open .back{opacity:1;pointer-events:auto}
-.tile.open .front{background:#fff}
+.tile.open .front{background:rgba(255,255,255,.82)}
 .tile.mist{opacity:0!important;filter:none}
 .tile.mist .tile-inner{transform:scale(1.018);transition:transform 7200ms cubic-bezier(.22,1,.36,1)}
 .tile.mist-clearing{transition:opacity 6200ms cubic-bezier(.22,1,.36,1)!important;filter:none}

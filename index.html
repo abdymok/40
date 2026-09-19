@@ -56,7 +56,7 @@ const tiles=slides.map(s=>{
  if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); } el.tabIndex=0;
  wall.appendChild(el); el.setAttribute("aria-label",`Slide ${s.id}${s.year ? ", "+s.year : ""}. Click to read.`); el.setAttribute("aria-expanded","false"); el.querySelectorAll('.copy a').forEach((a,i)=>a.style.setProperty('--link-delay',(-i*.7)+'s')); return el;
 });
-let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, teachingMoment=false, teachingTimer=null, openingTimers=[], recompositionTimers=[];
+let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, autoHeroResolve=null, teachingMoment=false, teachingTimer=null, openingTimers=[], recompositionTimers=[];
 function cols(){
  const w=wall.clientWidth,h=wall.clientHeight;
  if(w<700) return 5;
@@ -117,7 +117,7 @@ function layout(animate=true){
  slotMap=map;
 }
 function clearOpeningTimers(){ openingTimers.forEach(clearTimeout); openingTimers=[]; }
-function clearRecompositionTimers(){ recompositionTimers.forEach(clearTimeout); recompositionTimers=[]; clearTimeout(autoHeroTimer); autoHeroTimer=null; }
+function clearRecompositionTimers(){ recompositionTimers.forEach(clearTimeout); recompositionTimers=[]; clearTimeout(autoHeroTimer); autoHeroTimer=null; if(autoHeroResolve){const resolve=autoHeroResolve; autoHeroResolve=null; resolve();} }
 function scheduleOpening(fn,delay){ const id=setTimeout(()=>{ openingTimers=openingTimers.filter(x=>x!==id); fn(); },delay); openingTimers.push(id); return id; }
 function scheduleRecomposition(fn,delay){ const id=setTimeout(()=>{ recompositionTimers=recompositionTimers.filter(x=>x!==id); fn(); },delay); recompositionTimers.push(id); return id; }
 
@@ -126,11 +126,14 @@ function showAutoHero(el, hold=1500){
   autoHeroId=el.dataset.id;
   layout(true);
   return new Promise(resolve=>{
+    autoHeroResolve=resolve;
     autoHeroTimer=setTimeout(()=>{
+      autoHeroTimer=null;
+      autoHeroResolve=null;
       if(paused || openId || teachingMoment || autoHeroId!==el.dataset.id){ autoHeroId=null; layout(true); resolve(); return; }
       autoHeroId=null;
       layout(true);
-      setTimeout(resolve,3400);
+      setTimeout(()=>resolve(),3400);
     }, hold+3200);
   });
 }
@@ -143,7 +146,7 @@ function startTeachingMoment(){
   teachingMoment=true;
   paused=true;
   pause.textContent='Pause';
-  clearTimeout(autoHeroTimer);
+  clearRecompositionTimers();
   autoHeroId=el.dataset.id;
   layout(true);
   teachingTimer=setTimeout(()=>{
@@ -301,12 +304,14 @@ document.addEventListener('keydown',e=>{
  visible[next].focus();
 });
 window.addEventListener('resize',()=>layout(false));
-const hint=document.getElementById('hint'); try{if(window.localStorage.getItem('mural40HintSeen')==='1') hint.classList.add('hidden');}catch(e){}
+const hint=document.getElementById('hint');
 const pause=document.getElementById('pause');
 const recomposeBtn=document.getElementById('recompose');
 pause.addEventListener('click',()=>{
  if(teachingMoment){
    clearTimeout(teachingTimer);
+   teachingTimer=null;
+   clearRecompositionTimers();
    teachingMoment=false; autoHeroId=null;
    clearRecompositionTimers();
    paused=false; pause.textContent='Pause';
@@ -332,6 +337,11 @@ const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');
 activeTiles.forEach(t=>t.classList.add('mist'));
 function beginMuralOpening(){
   intro.classList.add('fade');
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    activeTiles.forEach(t=>{t.classList.remove('mist');t.classList.remove('mist-clearing');});
+    layout(false);
+    return;
+  }
   activeTiles.forEach((t,i)=>{
     const delay=200 + i*95 + Math.random()*600;
     scheduleOpening(()=>{

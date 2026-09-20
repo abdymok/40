@@ -47,7 +47,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .exception41 .back{background:#fff;padding:10%;opacity:0;pointer-events:none}
 .exception41.sound .back{opacity:1;pointer-events:auto}
 .exception41 .exception-audio{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;opacity:1;transition:opacity 1000ms ease}
-.exception41.poem .exception-audio{opacity:0;pointer-events:none}
+.exception41.poem .exception-audio{opacity:1;pointer-events:auto;background:transparent}
 .exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px;position:absolute;left:8%;bottom:8%;transition:opacity 900ms ease}.exception41.silent .volume-ui{opacity:0;pointer-events:none}
 .exception41 .volume-toggle{border:0;background:transparent;padding:2px;font:18px/1 Arial,sans-serif;color:#222;cursor:pointer}
 .exception41 .volume-toggle:focus-visible{outline:1px solid #777;outline-offset:3px}
@@ -63,7 +63,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 @keyframes volumePulse{from{transform:scaleY(.45);opacity:.35}to{transform:scaleY(1);opacity:.9}}
 .exception41 .exception-credit{position:absolute;right:5%;bottom:8%;font:8px/1 Arial,sans-serif;letter-spacing:.04em;color:rgba(0,0,0,.42);text-decoration:none}
 .exception41 .exception-credit:hover{color:#111}
-.exception41 .poem-copy{opacity:0;transition:opacity 900ms ease;pointer-events:none}
+.exception41 .poem-copy{position:relative;z-index:2;opacity:0;transition:opacity 900ms ease;pointer-events:none}
 .exception41.poem.hero .poem-copy{opacity:1;pointer-events:auto}
 .exception41 .poem-copy a{color:#df1717;text-decoration:none}
 .exception41 .exception-image-back{position:absolute;right:5%;bottom:5%;border:0;background:transparent;padding:8px 4px;font:11px/1 Arial,sans-serif;letter-spacing:.04em;color:#777;cursor:pointer}
@@ -153,37 +153,23 @@ function makeException41(){
   }
   toggle.addEventListener('click',e=>{e.stopPropagation(); if(siren41.paused) playSiren(); else stopSiren(false);});
   range.addEventListener('input',e=>{siren41.volume=parseFloat(e.target.value)||0; if(siren41.volume>0&&siren41.paused) playSiren();});
-  if(test41){
-    let stagedHoverTimer=null;
-    exception41.addEventListener('mouseenter',()=>{
-      clearTimeout(stagedHoverTimer);
-      stagedHoverTimer=setTimeout(()=>{
-        if(!exception41.classList.contains('visible') || exception41.classList.contains('hero')) return;
-        exception41._expand();
-        video.pause();
-        paused=true;
-        pause.textContent='Resume';
-        exception41.classList.add('sound','poem');
-        playSiren();
-      },220);
-    });
-    exception41.addEventListener('mouseleave',()=>clearTimeout(stagedHoverTimer));
-  }
-  front.addEventListener('click',e=>{
+    front.addEventListener('click',e=>{
     e.stopPropagation();
     if(exception41.classList.contains('poem')) return;
     if(!exception41.classList.contains('hero')) exception41._expand();
     video.pause();
     paused=true;
     pause.textContent='Resume';
-    exception41.classList.add('sound');
+    exception41.classList.add('sound','poem');
     playSiren();
   });
   btn.addEventListener('click',e=>{
     e.stopPropagation();
     if(exception41.classList.contains('poem')){
-      exception41.classList.add('silent');
       stopSiren(true);
+      exception41.classList.remove('silent','poem','sound');
+      video.currentTime=0;
+      video.play().catch(()=>{});
       return;
     }
     exception41.classList.add('poem','sound');
@@ -250,7 +236,7 @@ function makeException41(){
     const sx=(slot%c)*(tw+gap)+(tw-square)/2, sy=Math.floor(slot/c)*(th+gap)+(th-square)/2;
     exception41.style.width=square+'px'; exception41.style.height=square+'px';
     if(test41){
-      exception41.style.opacity='0';
+      exception41.style.opacity='1';
       exception41.style.transition='none';
       layout(false);
       const {gap:gg,tw:ww,th:hh}=metrics();

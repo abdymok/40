@@ -185,6 +185,7 @@ function makeException41(){
   });
   back.addEventListener('click',e=>{ if(e.target.closest('a')) return; });
   exception41._expand=()=>{
+    exception41.style.transition='opacity 1100ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)';
     const {c,r,gap,tw,th}=metrics();
     const heroCols=Math.min(3,c), heroRows=Math.min(3,r);
     const slot=exception41._slot;
@@ -252,7 +253,7 @@ function makeException41(){
       exception41.style.width=ss+'px'; exception41.style.height=ss+'px';
       exception41.style.transform=`translate3d(${xx}px,${yy}px,0)`;
       void exception41.offsetWidth;
-      requestAnimationFrame(()=>{exception41.style.opacity='1';});
+      requestAnimationFrame(()=>{exception41.style.transition='opacity 1100ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)'; exception41.style.opacity='1';});
     } else {
       exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
     }
@@ -607,13 +608,33 @@ const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');
 activeTiles.forEach(t=>t.classList.add('mist'));
 function beginMuralOpening(){
   intro.classList.add('fade');
-  if(test41){ scheduleOpening(()=>maybeException41(true), 1500); }
+  if(test41){
+    scheduleOpening(()=>{
+      maybeException41(true);
+      const targets=[...slotMap.entries()].filter(([el])=>el.dataset.empty!=='true');
+      const {tw,th}=metrics();
+      const cx=(wall.clientWidth-tw)/2, cy=(wall.clientHeight-th)/2;
+      targets.forEach(([el],i)=>{
+        if(el.dataset.id==='41') return;
+        el.classList.remove('mist');
+        el.style.opacity='0';
+        el.style.transition='transform 3600ms cubic-bezier(.22,1,.36,1),opacity 1800ms ease';
+        el.style.transform=`translate3d(${cx}px,${cy}px,0)`;
+        scheduleOpening(()=>{
+          const target=slotMap.get(el);
+          if(!target) return;
+          setGeometry(el,target.slot,false,true);
+          el.style.opacity='1';
+        }, i*115 + Math.random()*450);
+      });
+    },1500);
+  }
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     activeTiles.forEach(t=>{t.classList.remove('mist');t.classList.remove('mist-clearing');});
     layout(false);
     return;
   }
-  activeTiles.forEach((t,i)=>{
+  if(!test41) activeTiles.forEach((t,i)=>{
     const delay=300 + i*110 + Math.random()*500;
     scheduleOpening(()=>{
       if(openId || paused) return;

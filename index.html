@@ -153,6 +153,21 @@ function makeException41(){
   }
   toggle.addEventListener('click',e=>{e.stopPropagation(); if(siren41.paused) playSiren(); else stopSiren(false);});
   range.addEventListener('input',e=>{siren41.volume=parseFloat(e.target.value)||0; if(siren41.volume>0&&siren41.paused) playSiren();});
+  if(test41){
+    let stagedHoverTimer=null;
+    exception41.addEventListener('mouseenter',()=>{
+      clearTimeout(stagedHoverTimer);
+      stagedHoverTimer=setTimeout(()=>{
+        if(!exception41.classList.contains('visible') || exception41.classList.contains('hero')) return;
+        exception41._expand();
+        paused=true;
+        pause.textContent='Resume';
+        exception41.classList.add('sound');
+        playSiren();
+      },220);
+    });
+    exception41.addEventListener('mouseleave',()=>clearTimeout(stagedHoverTimer));
+  }
   front.addEventListener('click',e=>{
     e.stopPropagation();
     if(exception41.classList.contains('poem')) return;
@@ -218,13 +233,17 @@ function makeException41(){
     const slots=[...Array(c*Math.ceil(tiles.length/c)).keys()];
     const occupied=[...slotMap.values()].map(v=>v.slot);
     const candidates=slots.filter(s=>!occupied.includes(s));
-    const slot=test41 ? (c*Math.ceil(tiles.length/c)-1) : (candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2)));
+    const testRows=Math.ceil((tiles.length)/c);
+    const testCenterSlot=Math.floor(testRows/2)*c+Math.floor(c/2);
+    const slot=test41 ? testCenterSlot : (candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2)));
     const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
     exception41._slot=slot;
     const square=Math.min(tw,th);
     const sx=(slot%c)*(tw+gap)+(tw-square)/2, sy=Math.floor(slot/c)*(th+gap)+(th-square)/2;
     exception41.style.width=square+'px'; exception41.style.height=square+'px';
     if(test41){
+      exception41.style.opacity='0';
+      exception41.style.transition='opacity 6200ms cubic-bezier(.22,1,.36,1),transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)';
       exception41.style.transition='none';
       layout(false);
       const {gap:gg,tw:ww,th:hh}=metrics();
@@ -233,6 +252,7 @@ function makeException41(){
       exception41.style.width=ss+'px'; exception41.style.height=ss+'px';
       exception41.style.transform=`translate3d(${xx}px,${yy}px,0)`;
       void exception41.offsetWidth;
+      requestAnimationFrame(()=>{exception41.style.opacity='1';});
     } else {
       exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
     }
@@ -297,10 +317,12 @@ function setGeometry(el,slot,hero=false,animate=false){
 function layout(animate=true){
  const {c,r}=metrics();
  if(test41 && exception41Visible && !openId){
-   const lastSlot=c*r-1;
+   const testRows=Math.ceil(tiles.length/c);
+   const centerSlot=Math.floor(testRows/2)*c+Math.floor(c/2);
    const normal=tiles.filter(t=>t.dataset.empty!=='true').slice(0,-1);
+   const available=[...Array(c*testRows).keys()].filter(s=>s!==centerSlot);
    const map=new Map();
-   normal.forEach((el,i)=>map.set(el,{slot:i,hero:false}));
+   normal.forEach((el,i)=>map.set(el,{slot:available[i],hero:false}));
    tiles.forEach(el=>{
      const target=map.get(el);
      if(!target){el.style.opacity='0'; return;}
@@ -309,10 +331,10 @@ function layout(animate=true){
    });
    const {gap,tw,th}=metrics();
    const side=Math.min(tw,th);
-   const x=(lastSlot%c)*(tw+gap)+(tw-side)/2, y=Math.floor(lastSlot/c)*(th+gap)+(th-side)/2;
+   const x=(centerSlot%c)*(tw+gap)+(tw-side)/2, y=Math.floor(centerSlot/c)*(th+gap)+(th-side)/2;
    exception41.style.width=side+'px'; exception41.style.height=side+'px';
    exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
-   exception41._slot=lastSlot;
+   exception41._slot=centerSlot;
    slotMap=map;
    return;
  }
@@ -585,14 +607,14 @@ const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');
 activeTiles.forEach(t=>t.classList.add('mist'));
 function beginMuralOpening(){
   intro.classList.add('fade');
-  if(test41){ setTimeout(()=>maybeException41(true), 1900); }
+  if(test41){ scheduleOpening(()=>maybeException41(true), 1500); }
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     activeTiles.forEach(t=>{t.classList.remove('mist');t.classList.remove('mist-clearing');});
     layout(false);
     return;
   }
   activeTiles.forEach((t,i)=>{
-    const delay=200 + i*70 + Math.random()*400;
+    const delay=300 + i*110 + Math.random()*500;
     scheduleOpening(()=>{
       if(openId || paused) return;
       t.classList.add('mist-clearing');
@@ -601,7 +623,7 @@ function beginMuralOpening(){
     },delay);
   });
   // Give the complete small-image wall time to settle before the first movement.
-  if(!test41) scheduleOpening(()=>{if(!paused && !openId) recompose();},8200);
+  if(!test41) scheduleOpening(()=>{if(!paused && !openId) recompose();},12500);
   if(!test41) scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},14500);
 }
 setTimeout(beginMuralOpening,3600);

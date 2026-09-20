@@ -244,7 +244,6 @@ function makeException41(){
     exception41.style.width=square+'px'; exception41.style.height=square+'px';
     if(test41){
       exception41.style.opacity='0';
-      exception41.style.transition='opacity 6200ms cubic-bezier(.22,1,.36,1),transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)';
       exception41.style.transition='none';
       layout(false);
       const {gap:gg,tw:ww,th:hh}=metrics();
@@ -253,7 +252,7 @@ function makeException41(){
       exception41.style.width=ss+'px'; exception41.style.height=ss+'px';
       exception41.style.transform=`translate3d(${xx}px,${yy}px,0)`;
       void exception41.offsetWidth;
-      requestAnimationFrame(()=>{exception41.style.transition='opacity 1100ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)'; exception41.style.opacity='1';});
+      requestAnimationFrame(()=>{exception41.style.transition='opacity 2800ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)'; exception41.style.opacity='1';});
     } else {
       exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
     }
@@ -618,14 +617,14 @@ function beginMuralOpening(){
         if(el.dataset.id==='41') return;
         el.classList.remove('mist');
         el.style.opacity='0';
-        el.style.transition='transform 3600ms cubic-bezier(.22,1,.36,1),opacity 1800ms ease';
+        el.style.transition='transform 3600ms cubic-bezier(.22,1,.36,1),opacity 2800ms ease';
         el.style.transform=`translate3d(${cx}px,${cy}px,0)`;
         scheduleOpening(()=>{
           const target=slotMap.get(el);
           if(!target) return;
           setGeometry(el,target.slot,false,true);
           el.style.opacity='1';
-        }, i*115 + Math.random()*450);
+        }, i*150 + Math.random()*650);
       });
     },1500);
   }

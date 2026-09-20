@@ -43,7 +43,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .exception41.visible{opacity:1;pointer-events:auto}
 .exception41 .front{background:#000;transition:opacity 900ms cubic-bezier(.22,1,.36,1);cursor:pointer}
 .exception41.sound .front{opacity:0;pointer-events:none}
-.exception41 .front video{width:100%;height:100%;display:block;object-fit:cover;background:#000}
+.exception41 .front video{width:101%;height:101%;margin:-.5%;display:block;object-fit:cover;background:#000}
 .exception41 .back{background:#fff;padding:10%;opacity:0;pointer-events:none}
 .exception41.sound .back{opacity:1;pointer-events:auto}
 .exception41 .exception-audio{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;opacity:1;transition:opacity 1000ms ease}
@@ -250,9 +250,14 @@ function makeException41(){
       const ss=Math.min(ww,hh);
       const xx=(slot%c)*(ww+gg)+(ww-ss)/2, yy=Math.floor(slot/c)*(hh+gg)+(hh-ss)/2;
       exception41.style.width=ss+'px'; exception41.style.height=ss+'px';
-      exception41.style.transform=`translate3d(${xx}px,${yy}px,0)`;
+      const centerX=(wall.clientWidth-ss)/2, centerY=(wall.clientHeight-ss)/2;
+      exception41.style.transform=`translate3d(${centerX}px,${centerY}px,0)`;
       void exception41.offsetWidth;
-      requestAnimationFrame(()=>{exception41.style.transition='opacity 2800ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)'; exception41.style.opacity='1';});
+      requestAnimationFrame(()=>{
+        exception41.style.transition='opacity 2800ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1)';
+        exception41.style.opacity='1';
+        requestAnimationFrame(()=>{ exception41.style.transform=`translate3d(${xx}px,${yy}px,0)`; });
+      });
     } else {
       exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
     }

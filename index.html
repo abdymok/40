@@ -156,6 +156,8 @@ function makeException41(){
     e.stopPropagation();
     if(exception41.classList.contains('poem')) return;
     if(!exception41.classList.contains('hero')) exception41._expand();
+    paused=true;
+    pause.textContent='Resume';
     exception41.classList.add('sound');
     playSiren();
   });
@@ -174,12 +176,26 @@ function makeException41(){
     const maxX=c-heroCols, maxY=r-heroRows;
     const heroX=Math.max(0,Math.min(maxX,oldX-Math.floor((heroCols-1)/2)));
     const heroY=Math.max(0,Math.min(maxY,oldY-Math.floor((heroRows-1)/2)));
-    const x=heroX*(tw+gap), y=heroY*(th+gap);
+    const heroSlot=heroY*c+heroX;
+    const x=heroX*(tw+gap), y=heroY*(tw*0+th+gap);
     const w=tw*heroCols+gap*(heroCols-1), h=th*heroRows+gap*(heroRows-1);
+    exception41._heroSlot=heroSlot;
     exception41.style.width=w+'px';
     exception41.style.height=h+'px';
     exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
     exception41.classList.add('hero');
+    const heroSlots=new Set();
+    for(let yy=heroY;yy<heroY+heroRows;yy++) for(let xx=heroX;xx<heroX+heroCols;xx++) heroSlots.add(yy*c+xx);
+    const available=[...Array(c*r).keys()].filter(s=>!heroSlots.has(s));
+    const others=tiles.slice().sort((a,b)=>(slotMap.get(a)?.slot??999)-(slotMap.get(b)?.slot??999));
+    const nextMap=new Map();
+    others.forEach((el,i)=>{
+      const target=available[i];
+      if(target==null) return;
+      nextMap.set(el,target);
+      setGeometry(el,target,false,true);
+    });
+    nextMap.forEach((slot,el)=>slotMap.set(el,{slot,hero:false}));
   };
   exception41._shrink=()=>{
     const {gap,tw,th}=metrics();
@@ -212,6 +228,11 @@ function makeException41(){
     video.pause(); video.currentTime=0;
     exception41.classList.remove('visible','sound','poem','hero');
     exception41._shrink();
+    if(!openId){
+      paused=false;
+      pause.textContent='Pause';
+      layout(true);
+    }
   };
   return exception41;
 }

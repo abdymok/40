@@ -218,7 +218,18 @@ function makeException41(){
     const slot=test41 ? (c*Math.ceil(tiles.length/c)-1) : (candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2)));
     const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
     exception41._slot=slot;
-    exception41.style.width=tw+'px'; exception41.style.height=th+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
+    exception41.style.width=tw+'px'; exception41.style.height=th+'px';
+    if(test41){
+      exception41.style.transition='none';
+      layout(false);
+      const {gap:gg,tw:ww,th:hh}=metrics();
+      const xx=(slot%c)*(ww+gg), yy=Math.floor(slot/c)*(hh+gg);
+      exception41.style.width=ww+'px'; exception41.style.height=hh+'px';
+      exception41.style.transform=`translate3d(${xx}px,${yy}px,0)`;
+      void exception41.offsetWidth;
+    } else {
+      exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
+    }
     exception41.classList.remove('hero','sound','poem');
     exception41.classList.add('visible');
     video.currentTime=0; video.play().catch(()=>{});

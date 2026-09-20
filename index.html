@@ -41,13 +41,14 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .tile[data-empty="true"]{cursor:default}.tile:focus-visible{outline:1px solid rgba(0,0,0,.28);outline-offset:3px}
 .exception41{z-index:40;opacity:0;pointer-events:none;transition:opacity 1100ms ease,transform 1100ms cubic-bezier(.22,1,.36,1);background:#000}
 .exception41.visible{opacity:1;pointer-events:auto}
-.exception41 .front{background:#000}
+.exception41 .front{background:#000;transition:opacity 900ms cubic-bezier(.22,1,.36,1);cursor:pointer}
+.exception41.sound .front{opacity:0;pointer-events:none}
 .exception41 .front video{width:100%;height:100%;display:block;object-fit:cover;background:#000}
 .exception41 .back{background:#fff;padding:10%;opacity:0;pointer-events:none}
 .exception41.sound .back{opacity:1;pointer-events:auto}
 .exception41 .exception-audio{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;opacity:1;transition:opacity 1000ms ease}
 .exception41.poem .exception-audio{opacity:0;pointer-events:none}
-.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px}
+.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px;position:relative}
 .exception41 .volume-toggle{border:0;background:transparent;padding:2px;font:18px/1 Arial,sans-serif;color:#222;cursor:pointer}
 .exception41 .volume-toggle:focus-visible{outline:1px solid #777;outline-offset:3px}
 .exception41 .volume-bars{display:flex;align-items:center;gap:2px;width:100%;height:28px;cursor:pointer}
@@ -58,7 +59,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .exception41 .volume-bars i:nth-child(4){height:22px;animation-delay:-540ms}
 .exception41 .volume-bars i:nth-child(5){height:16px;animation-delay:-720ms}
 .exception41 .volume-bars i:nth-child(6){height:11px;animation-delay:-240ms}
-.exception41 .volume-range{position:absolute;opacity:0;width:100%;height:100%;inset:0;cursor:pointer}
+.exception41 .volume-range{position:absolute;left:32px;right:0;top:50%;transform:translateY(-50%);width:calc(100% - 32px);height:28px;opacity:0;cursor:pointer;z-index:2}
 @keyframes volumePulse{from{transform:scaleY(.45);opacity:.35}to{transform:scaleY(1);opacity:.9}}
 .exception41 .exception-credit{position:absolute;right:5%;bottom:8%;font:8px/1 Arial,sans-serif;letter-spacing:.04em;color:rgba(0,0,0,.42);text-decoration:none}
 .exception41 .exception-credit:hover{color:#111}
@@ -121,6 +122,7 @@ function makeException41(){
   </div>`;
   wall.appendChild(exception41);
   const video=exception41.querySelector('video');
+  const front=exception41.querySelector('.front');
   const back=exception41.querySelector('.back');
   const btn=exception41.querySelector('.exception-image-back');
   const toggle=exception41.querySelector('.volume-toggle');
@@ -150,6 +152,12 @@ function makeException41(){
   }
   toggle.addEventListener('click',e=>{e.stopPropagation(); if(siren41.paused) playSiren(); else stopSiren(false);});
   range.addEventListener('input',e=>{siren41.volume=parseFloat(e.target.value)||0; if(siren41.volume>0&&siren41.paused) playSiren();});
+  front.addEventListener('click',e=>{
+    e.stopPropagation();
+    if(exception41.classList.contains('poem')) return;
+    exception41.classList.add('sound');
+    playSiren();
+  });
   btn.addEventListener('click',e=>{
     e.stopPropagation();
     if(exception41.classList.contains('poem')){ exception41.classList.remove('poem','sound'); stopSiren(false); video.currentTime=0; video.play().catch(()=>{}); return; }
@@ -169,7 +177,6 @@ function makeException41(){
     exception41.style.width=tw+'px'; exception41.style.height=th+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
     exception41.classList.add('visible');
     video.currentTime=0; video.play().catch(()=>{});
-    setTimeout(()=>{exception41.classList.add('sound');playSiren();},450);
   };
   exception41._hide=()=>{
     clearTimeout(exception41Timer);

@@ -98,6 +98,7 @@ const tiles=slides.map(s=>{
 });
 let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, autoHeroResolve=null, teachingMoment=false, teachingTimer=null, openingTimers=[], recompositionTimers=[];
 let exception41=null, exception41Visible=false, exception41Timer=null, exception41Debug=new URLSearchParams(location.search).get('41')==='1';
+const test41=new URLSearchParams(location.search).get('41test')==='1';
 const siren41=document.getElementById('siren41');
 function makeException41(){
   if(exception41) return exception41;
@@ -214,7 +215,7 @@ function makeException41(){
     const slots=[...Array(c*Math.ceil(tiles.length/c)).keys()];
     const occupied=[...slotMap.values()].map(v=>v.slot);
     const candidates=slots.filter(s=>!occupied.includes(s));
-    const slot=candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2));
+    const slot=test41 ? (c*Math.ceil(tiles.length/c)-1) : (candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2)));
     const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
     exception41._slot=slot;
     exception41.style.width=tw+'px'; exception41.style.height=th+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
@@ -240,6 +241,10 @@ function makeException41(){
 function maybeException41(force=false){
   const e=makeException41();
   if(exception41Visible) return;
+  if(test41){
+    e._show();
+    return;
+  }
   if(!force && !exception41Debug && Math.random()>0.20) return;
   e._show();
   exception41Timer=setTimeout(()=>e._hide(),28000+Math.random()*18000);
@@ -274,6 +279,25 @@ function setGeometry(el,slot,hero=false,animate=false){
 }
 function layout(animate=true){
  const {c,r}=metrics();
+ if(test41 && exception41Visible && !openId){
+   const lastSlot=c*r-1;
+   const normal=tiles.filter(t=>t.dataset.empty!=='true').slice(0,-1);
+   const map=new Map();
+   normal.forEach((el,i)=>map.set(el,{slot:i,hero:false}));
+   tiles.forEach(el=>{
+     const target=map.get(el);
+     if(!target){el.style.opacity='0'; return;}
+     setGeometry(el,target.slot,false,animate);
+     el.style.opacity='1';
+   });
+   const {gap,tw,th}=metrics();
+   const x=(lastSlot%c)*(tw+gap), y=Math.floor(lastSlot/c)*(th+gap);
+   exception41.style.width=tw+'px'; exception41.style.height=th+'px';
+   exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
+   exception41._slot=lastSlot;
+   slotMap=map;
+   return;
+ }
  const hero=tiles.find(t=>t.dataset.id===(openId || autoHeroId) && t.dataset.empty!=='true') || null;
  const heroCols=Math.min(3,c), heroRows=Math.min(3,r);
  let heroX=0, heroY=0;
@@ -351,6 +375,7 @@ function startTeachingMoment(){
   },6500);
 }
 async function recompose(){
+ if(test41) return;
  if(paused || openId || morphing || teachingMoment) return;
  maybeException41();
  const active=tiles.filter(t=>t.dataset.empty!=='true');
@@ -542,6 +567,7 @@ const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');
 activeTiles.forEach(t=>t.classList.add('mist'));
 function beginMuralOpening(){
   intro.classList.add('fade');
+  if(test41){ setTimeout(()=>maybeException41(true), 1900); }
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     activeTiles.forEach(t=>{t.classList.remove('mist');t.classList.remove('mist-clearing');});
     layout(false);
@@ -557,9 +583,9 @@ function beginMuralOpening(){
     },delay);
   });
   // Give the complete small-image wall time to settle before the first movement.
-  scheduleOpening(()=>{if(!paused && !openId) recompose();},8200);
-  scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},14500);
+  if(!test41) scheduleOpening(()=>{if(!paused && !openId) recompose();},8200);
+  if(!test41) scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},14500);
 }
 setTimeout(beginMuralOpening,3600);
-timer=setInterval(()=>{if(!paused && !openId) recompose();},60000);
+timer=setInterval(()=>{if(!test41 && !paused && !openId) recompose();},60000);
 </script></body></html>

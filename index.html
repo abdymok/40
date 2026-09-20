@@ -191,9 +191,10 @@ function makeException41(){
     const nextMap=new Map();
     others.forEach((el,i)=>{
       const target=available[i];
-      if(target==null) return;
+      if(target==null){ el.style.opacity='0'; return; }
       nextMap.set(el,target);
       setGeometry(el,target,false,true);
+      el.style.opacity='1';
     });
     nextMap.forEach((slot,el)=>slotMap.set(el,{slot,hero:false}));
   };

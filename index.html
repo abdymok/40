@@ -316,9 +316,9 @@ function layout(animate=true){
  const {c,r}=metrics();
  if(test41 && exception41Visible && !openId){
    const testRows=Math.ceil(tiles.length/c);
-   const centerSlot=Math.floor(testRows/2)*c+Math.floor(c/2);
+   const testSlot=Math.min(c*testRows-1,Math.max(0,Math.floor(c*0.72)));
    const normal=tiles.filter(t=>t.dataset.empty!=='true').slice(0,-1);
-   const available=[...Array(c*testRows).keys()].filter(s=>s!==centerSlot);
+   const available=[...Array(c*testRows).keys()].filter(s=>s!==testSlot);
    const map=new Map();
    normal.forEach((el,i)=>map.set(el,{slot:available[i],hero:false}));
    tiles.forEach(el=>{
@@ -329,10 +329,10 @@ function layout(animate=true){
    });
    const {gap,tw,th}=metrics();
    const side=Math.min(tw,th);
-   const x=(centerSlot%c)*(tw+gap)+(tw-side)/2, y=Math.floor(centerSlot/c)*(th+gap)+(th-side)/2;
+   const x=(testSlot%c)*(tw+gap)+(tw-side)/2, y=Math.floor(testSlot/c)*(th+gap)+(th-side)/2;
    exception41.style.width=side+'px'; exception41.style.height=side+'px';
    exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
-   exception41._slot=centerSlot;
+   exception41._slot=testSlot;
    slotMap=map;
    return;
  }

@@ -190,7 +190,7 @@ function makeException41(){
 function maybeException41(force=false){
   const e=makeException41();
   if(exception41Visible) return;
-  if(!force && !exception41Debug && Math.random()>0.035) return;
+  if(!force && !exception41Debug && Math.random()>0.20) return;
   e._show();
   exception41Timer=setTimeout(()=>e._hide(),28000+Math.random()*18000);
 }

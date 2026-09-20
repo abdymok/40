@@ -631,7 +631,7 @@ function beginMuralOpening(){
     layout(false);
     return;
   }
-  if(!test41) activeTiles.forEach((t,i)=>{
+  activeTiles.forEach((t,i)=>{
     const delay=300 + i*110 + Math.random()*500;
     scheduleOpening(()=>{
       if(openId || paused) return;

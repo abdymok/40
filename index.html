@@ -39,6 +39,34 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .tile.opening .front img{opacity:1;transform:scale(1);transition-duration:700ms,900ms}
 @media (hover:none){.tile:not(.open):not(.mist):not([data-empty="true"]):active .front img{transform:scale(1.01);filter:brightness(1.02)}}
 .tile[data-empty="true"]{cursor:default}.tile:focus-visible{outline:1px solid rgba(0,0,0,.28);outline-offset:3px}
+.exception41{z-index:40;opacity:0;pointer-events:none;transition:opacity 1100ms ease,transform 1100ms cubic-bezier(.22,1,.36,1);background:#000}
+.exception41.visible{opacity:1;pointer-events:auto}
+.exception41 .front{background:#000}
+.exception41 .front video{width:100%;height:100%;display:block;object-fit:cover;background:#000}
+.exception41 .back{background:#fff;padding:10%;opacity:0;pointer-events:none}
+.exception41.sound .back{opacity:1;pointer-events:auto}
+.exception41 .exception-audio{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;opacity:1;transition:opacity 1000ms ease}
+.exception41.poem .exception-audio{opacity:0;pointer-events:none}
+.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px}
+.exception41 .volume-toggle{border:0;background:transparent;padding:2px;font:18px/1 Arial,sans-serif;color:#222;cursor:pointer}
+.exception41 .volume-toggle:focus-visible{outline:1px solid #777;outline-offset:3px}
+.exception41 .volume-bars{display:flex;align-items:center;gap:2px;width:100%;height:28px;cursor:pointer}
+.exception41 .volume-bars i{display:block;width:2px;height:8px;background:#222;opacity:.72;transform-origin:center;animation:volumePulse 900ms ease-in-out infinite alternate;animation-play-state:paused}
+.exception41.playing .volume-bars i{animation-play-state:running}
+.exception41 .volume-bars i:nth-child(2){height:13px;animation-delay:-180ms}
+.exception41 .volume-bars i:nth-child(3){height:18px;animation-delay:-360ms}
+.exception41 .volume-bars i:nth-child(4){height:22px;animation-delay:-540ms}
+.exception41 .volume-bars i:nth-child(5){height:16px;animation-delay:-720ms}
+.exception41 .volume-bars i:nth-child(6){height:11px;animation-delay:-240ms}
+.exception41 .volume-range{position:absolute;opacity:0;width:100%;height:100%;inset:0;cursor:pointer}
+@keyframes volumePulse{from{transform:scaleY(.45);opacity:.35}to{transform:scaleY(1);opacity:.9}}
+.exception41 .exception-credit{position:absolute;right:5%;bottom:8%;font:8px/1 Arial,sans-serif;letter-spacing:.04em;color:rgba(0,0,0,.42);text-decoration:none}
+.exception41 .exception-credit:hover{color:#111}
+.exception41 .poem-copy{opacity:0;transition:opacity 900ms ease;pointer-events:none}
+.exception41.poem .poem-copy{opacity:1;pointer-events:auto}
+.exception41 .poem-copy a{color:#df1717;text-decoration:none}
+.exception41 .exception-image-back{position:absolute;right:5%;bottom:5%;border:0;background:transparent;padding:8px 4px;font:11px/1 Arial,sans-serif;letter-spacing:.04em;color:#777;cursor:pointer}
+.exception41 .exception-image-back:hover{color:#111}
 .tile[data-empty="true"] .front img{opacity:0}
 .controls{position:fixed;left:28px;bottom:13px;z-index:100;display:flex;align-items:center;gap:12px;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:none;color:#777;opacity:.86;user-select:none;background:rgba(255,255,255,.88);padding:3px 5px;border:1px solid rgba(0,0,0,.10);border-radius:2px}.controls .hint{opacity:.72;transition:opacity 700ms ease}.controls .hint.hidden{opacity:0;pointer-events:none;width:0;margin:0;overflow:hidden}.controls button,.controls .subscribe{appearance:none;border:0;background:transparent;min-height:30px;padding:8px 6px;color:inherit;font:inherit;cursor:pointer;text-decoration:none}.controls button:hover,.controls .subscribe:hover{color:#111}.controls .recompose{padding-left:0}.controls .subscribe{padding-right:0}@media (max-width:700px){.controls{left:17px;bottom:8px;font-size:9px;gap:13px}}.hint{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:101;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.72;transition:opacity 700ms ease;white-space:nowrap;pointer-events:none}.controls .hint{position:static;transform:none}.hint.hidden{opacity:0!important;pointer-events:none!important;width:0;margin:0;overflow:hidden}
 @media (max-width:700px){
@@ -53,6 +81,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 @media (prefers-reduced-motion:reduce){.intro{transition:none!important}.runner-strip{animation:none!important;transform:translate3d(calc(50vw - 66px),-50%,0)!important}.runner-figure{animation:none!important}}
 </style></head><body>
 <div class="intro" id="intro"><div class="intro-wordmark" aria-label="abdymok"><span>abd</span><span class="red-y">y</span><span>mok</span></div><img class="runner-strip" src="images/intro_suitcase_runner.svg?v=2" alt="" aria-hidden="true"></div><div class="mural"><div class="wall" id="wall"></div></div>
+<audio id="siren41" preload="auto" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Air_Raid_Alert_-_Ukraine_during_russian_invasion_2022.ogg" crossorigin="anonymous"></audio>
 <span id="hint" class="hint">Click an image to read</span><div class="controls"><button id="recompose" class="recompose" type="button">Recompose</button><button id="pause" class="pause" type="button">Pause</button><a class="subscribe" href="https://abdymok.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe</a></div>
 <script>
 const slides=[{"id": 1, "year": 2022, "image": "images/1.jpg", "back": "Delivers an unpanicked, sober reading of invasion signals on the very first morning of the <a href=\"https://abdymok.substack.com/p/russias-further-invasion-day-1\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"1\">full-scale war<\/a>, cutting through media buzzwords."}, {"id": 2, "year": 2021, "image": "images/2.jpg", "back": "Warned as early as <a href=\"https://abdymok.substack.com/p/banal-murder-plot?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"2\">January 2021<\/a> that a security service consumed by internal power struggles and contraband revenue cannot simultaneously execute complex counterintelligence operations against foreign threats."}, {"id": 3, "year": 2021, "image": "images/3.jpg", "back": "Chronicles &quot;<a href=\"https://abdymok.substack.com/p/coming-to-a-theater-near-you?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"3\">Wagnergate<\/a>&quot; (Operation Avenue), exposing systemic institutional leaks and official dishonesty at the highest levels of executive leadership prior to the invasion."}, {"id": 4, "year": 2020, "image": "images/4.jpg", "back": "Exposes <a href=\"https://abdymok.substack.com/p/ukraines-plan-\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"4\">parliamentary cover-ups<\/a> and sanitizing investigations designed to shield executive figures from accountability over compromised intelligence operations."}, {"id": 5, "year": 2021, "image": "images/5.jpg", "back": "Uses <a href=\"https://abdymok.substack.com/p/zelenskys-new-clothes\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"5\">game theory<\/a> (mutual vs. common knowledge) to demonstrate how performative political theater obscured pre-war governance defects."}, {"id": 6, "year": 2022, "image": "images/6.jpg", "back": "<a href=\"https://abdymok.substack.com/p/this-is-still-ukrainewar?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"6\">Morale is high, at least in Kyiv, with private military contractors and arms suppliers in abundance. Many of them are waiting anxiously for Tootsie Club to re-open.<\/a>"}, {"id": 7, "year": 2022, "image": "images/7.jpg", "back": "Accurately discerning the <a href=\"https://abdymok.substack.com/p/day-25-phase-3?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"7\">mental amplitudes<\/a> of Ukraine’s leaders is another key assessment that should be made. No one should pretend functioning democratic institutions exist."}, {"id": 8, "year": 2022, "image": "images/8.jpg", "back": "Critiques accredited Western experts and &quot;<a href=\"https://abdymok.substack.com/p/ignore-analysts\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"8\">bounded rationality<\/a>&quot; models that failed to anticipate Russian strategic choices."}, {"id": 9, "year": 2022, "image": "images/9.jpg", "back": "I much prefer spherical cows, factoring agreements and thinking about the <a href=\"https://abdymok.substack.com/p/day-22-phase-3?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"9\">El Farol Bar problem<\/a> than browsing battlefield posts on Telegram channels. Future projects abound, including goats, chickens, livestock guardian dogs."}, {"id": 10, "year": 2023, "image": "images/10.jpg", "back": "Lifts the curtain on war-adjacent commentary and opportunistic media narratives that obscure core <a href=\"https://abdymok.substack.com/p/this-is-still-ukrainewar?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"10\">operational realities<\/a>."}, {"id": 11, "year": 2023, "image": "images/11.jpg", "back": "Enumerates the three fundamental operational requirements (<a href=\"https://abdymok.substack.com/p/day-499\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"11\">closing the sky<\/a>, activating additional corps, and securing long-range precision strike capabilities) needed to break positional stalemate."}, {"id": 12, "year": 2023, "image": "images/12.jpg", "back": "Deconstructs early <a href=\"https://abdymok.substack.com/p/day-516\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"12\">counteroffensive hype<\/a> versus the unglamorous tactical realities on the ground."}, {"id": 13, "year": 2022, "image": "images/13.jpg", "back": "<a href=\"https://abdymok.substack.com/p/pause-operationnelle?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"13\">The Club for Aesthetic Disobedience, which for years has criticized “beautification projects” in the capital, describes our architectural jungle the best: a poorly lit dog’s breakfast.<\/a>"}, {"id": 14, "year": 2024, "image": "images/14.jpg", "back": "Critiques the lack of long-term <a href=\"https://abdymok.substack.com/p/day-730\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"14\">strategic coherence<\/a> as the full-scale conflict entered its second year."}, {"id": 15, "year": 2024, "image": "images/15.jpg", "back": "Accurately analyzes the operational dimensions of <a href=\"https://abdymok.substack.com/p/day-748\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"15\">positional warfare<\/a> in transparent, drone-saturated battlefields."}, {"id": 16, "year": 2024, "image": "images/16.jpg", "back": "Exposes early <a href=\"https://abdymok.substack.com/p/day-1044\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"16\">command-and-control failures<\/a> in newly formed formations such as the 155th Brigade."}, {"id": 17, "year": 2024, "image": "images/17.jpg", "back": "Identifies <a href=\"https://abdymok.substack.com/p/day-1049\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"17\">four systemic failures<\/a>—unbuilt fortifications, forced conscription defects, new brigade failures, and domestic production breakdowns—long before official acknowledgment."}, {"id": 18, "year": 2025, "image": "images/18.jpg", "back": "Analyzes the &quot;<a href=\"https://abdymok.substack.com/p/day-1402\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"18\">negotiation gap<\/a>,&quot; proving the logical incompatibility between Russian objectives and Ukrainian state survival."}, {"id": 19, "year": 2026, "image": "images/19.jpg", "back": "Applies the biological concept of &quot;<a href=\"https://abdymok.substack.com/p/day-1454\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"19\">parabiosis<\/a>&quot; to critique aging, stagnant diplomatic frameworks and political exhaustion."}, {"id": 20, "year": 2026, "image": "images/20.jpg", "back": "Decouples <a href=\"https://abdymok.substack.com/p/day-1524\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"20\">military resilience<\/a> from liberal democracy, arguing that societal heroism on the battlefield does not automatically equate to sound institutional governance."}, {"id": 21, "year": 2026, "image": "images/21.jpg", "back": "Provides a <a href=\"https://abdymok.substack.com/p/day-1577\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"21\">multi-year retrospective<\/a> detailing how the archive&#x27;s analytical models evolved and held up across milestones."}, {"id": 22, "year": 2020, "image": "images/22.jpg", "back": "Establishes the foundational critique of Ukraine as a primitive post-Soviet <a href=\"https://abdymok.substack.com/p/thug-life\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"22\">feudal patronage system<\/a> rather than a fully functioning institutional democracy."}, {"id": 23, "year": 2020, "image": "images/23.jpg", "back": "Demonstrates how European institutions repeatedly collided with informal <a href=\"https://abdymok.substack.com/p/thug-life-contd?s=w\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"23\">patronage networks<\/a> and political theatrics in Kyiv."}, {"id": 24, "year": 2021, "image": "images/24.jpg", "back": "Critiques patronage figures (e.g., Mykola Tyshchenko) as symbols of <a href=\"https://abdymok.substack.com/p/a-man-in-full\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"24\">institutional decay<\/a>."}, {"id": 25, "year": 2022, "image": "images/25.jpg", "back": "Maps ultra-competitive, informal <a href=\"https://abdymok.substack.com/p/thug-life-contd-315\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"25\">political rivalries<\/a> operating behind formal state structures."}, {"id": 26, "year": 2020, "image": "images/26.jpg", "back": "Analyzes early cabinet reshuffles (e.g., Honcharuk&#x27;s sacking) to distinguish between macroeconomic illiteracy and <a href=\"https://abdymok.substack.com/p/operation-y-b2d557374ca7\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"26\">political sabotage<\/a>."}, {"id": 27, "year": 2021, "image": "images/27.jpg", "back": "Maps internal fallout and paranoia within <a href=\"https://abdymok.substack.com/p/drones-in-my-bones\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"27\">intelligence services<\/a> following Wagnergate and associated leaks."}, {"id": 28, "year": 2021, "image": "images/28.jpg", "back": "Analyzes the corporate and tactical evolution of <a href=\"https://abdymok.substack.com/p/scale-free-wagner-pmc\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"28\">mercenary networks<\/a> prior to their full-scale deployment."}, {"id": 29, "year": 2021, "image": "images/29.jpg", "back": "Examines how a background in <a href=\"https://abdymok.substack.com/p/i-an-actor\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"29\">performance art<\/a> shaped executive decision-making and public narrative management during national crises."}, {"id": 30, "year": 2020, "image": "images/30.jpg", "back": "Confronts official government statements downplaying explicit <a href=\"https://abdymok.substack.com/p/pants-on-fire\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"30\">invasion warnings<\/a>."}, {"id": 31, "year": 2025, "image": "images/31.jpg", "back": "Documents the <a href=\"https://abdymok.substack.com/p/day-1246\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"31\">legislative rollback<\/a> of anti-corruption agency oversight and the immediate domestic political backlash."}, {"id": 32, "year": 2026, "image": "images/32.jpg", "back": "Analyzes &quot;conversations that don&#x27;t happen,&quot; showing how analysts avoid naming <a href=\"https://abdymok.substack.com/p/day-1520\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"32\">structural patterns<\/a> when doing so threatens prior narratives."}, {"id": 33, "year": 2026, "image": "images/33.jpg", "back": "Parses wiretaps to explain how <a href=\"https://abdymok.substack.com/p/day-1525\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"33\">informal authority<\/a> and backroom procurement flows operate under wartime conditions."}, {"id": 34, "year": 2026, "image": "images/34.jpg", "back": "Exposes the &quot;<a href=\"https://abdymok.substack.com/p/day-1526\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"34\">Dynasty<\/a>&quot; luxury estate cooperative constructed for political insiders during the height of the conflict."}, {"id": 35, "year": 2021, "image": "images/35.jpg", "back": "Applies the &quot;<a href=\"https://abdymok.substack.com/p/ukraine-goes-coup-coup\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"35\">trolley car problem<\/a>&quot; to illustrate how executive impulse control creates broad systemic instability."}, {"id": 36, "year": 2024, "image": "images/36.jpg", "back": "Critiques opportunistic religious and <a href=\"https://abdymok.substack.com/p/day-1024\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"36\">ideological pivots<\/a> by political actors as winter conditions intensified."}, {"id": 37, "year": 2026, "image": "images/37.jpg", "back": "Connects early <a href=\"https://abdymok.substack.com/p/day-1408\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"37\">Wagnergate cover-ups<\/a> to subsequent structural consolidations inside the President&#x27;s Office."}, {"id": 38, "year": 2022, "image": "images/38.jpg", "back": "Maps the pre-war linguistic and conceptual confusion between &quot;imminent&quot; and &quot;<a href=\"https://abdymok.substack.com/p/lost-in-translation\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"38\">inevitable<\/a>&quot; invasion warnings."}, {"id": 39, "year": "", "image": "images/39.jpg", "back": "Thank you for looking.<br><br>The archive continues."}, {"id": 40, "year": "", "image": "images/40.jpg", "back": "Until the next recomposition."}];
@@ -67,6 +96,98 @@ const tiles=slides.map(s=>{
  }); return el;
 });
 let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, autoHeroResolve=null, teachingMoment=false, teachingTimer=null, openingTimers=[], recompositionTimers=[];
+let exception41=null, exception41Visible=false, exception41Timer=null, exception41Debug=new URLSearchParams(location.search).get('41')==='1';
+const siren41=document.getElementById('siren41');
+function makeException41(){
+  if(exception41) return exception41;
+  exception41=document.createElement('article');
+  exception41.className='tile exception41';
+  exception41.dataset.id='41';
+  exception41.tabIndex=0;
+  exception41.setAttribute('aria-label','41. Shahed video and air-raid siren.');
+  exception41.innerHTML=`<div class="tile-inner">
+    <div class="face front"><video playsinline muted preload="metadata" src="images/41-shahed.mp4"></video></div>
+    <div class="face back">
+      <div class="exception-audio" title="Air-raid alert recording: Lystopad, Wikimedia Commons, CC BY-SA 4.0">
+        <div class="volume-ui">
+          <button class="volume-toggle" type="button" aria-label="Play siren">◖</button>
+          <div class="volume-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <input class="volume-range" type="range" min="0" max="1" step="0.01" value="0.62" aria-label="Siren volume">
+        </div>
+      </div>
+      <div class="copy poem-copy">You can kill one, but another is born.<br>The words are written down, the deed, the date.<br><br><a href="https://www.poetryfoundation.org/poems/49482/you-who-wronged" target="_blank" rel="noopener noreferrer">Milosz (1950)</a></div>
+      <button class="exception-image-back" type="button" aria-label="Return to image">← image</button>
+    </div>
+  </div>`;
+  wall.appendChild(exception41);
+  const video=exception41.querySelector('video');
+  const back=exception41.querySelector('.back');
+  const btn=exception41.querySelector('.exception-image-back');
+  const toggle=exception41.querySelector('.volume-toggle');
+  const range=exception41.querySelector('.volume-range');
+  function stopSiren(fade=false){
+    if(!siren41) return;
+    if(fade){
+      const start=siren41.volume, t0=performance.now();
+      const step=t=>{
+        const p=Math.min(1,(t-t0)/2200);
+        siren41.volume=start*(1-p);
+        if(p<1) requestAnimationFrame(step);
+        else {siren41.pause();siren41.currentTime=0;siren41.volume=parseFloat(range.value)||.62;exception41.classList.remove('playing');toggle.textContent='◖';toggle.setAttribute('aria-label','Play siren');}
+      };
+      requestAnimationFrame(step);
+    }else{
+      siren41.pause();siren41.currentTime=0;siren41.volume=parseFloat(range.value)||.62;exception41.classList.remove('playing');toggle.textContent='◖';toggle.setAttribute('aria-label','Play siren');
+    }
+  }
+  function playSiren(){
+    if(!siren41) return;
+    siren41.volume=parseFloat(range.value)||.62;
+    siren41.currentTime=0;
+    const p=siren41.play();
+    if(p&&p.catch)p.catch(()=>{});
+    exception41.classList.add('playing');toggle.textContent='Ⅱ';toggle.setAttribute('aria-label','Pause siren');
+  }
+  toggle.addEventListener('click',e=>{e.stopPropagation(); if(siren41.paused) playSiren(); else stopSiren(false);});
+  range.addEventListener('input',e=>{siren41.volume=parseFloat(e.target.value)||0; if(siren41.volume>0&&siren41.paused) playSiren();});
+  btn.addEventListener('click',e=>{
+    e.stopPropagation();
+    if(exception41.classList.contains('poem')){ exception41.classList.remove('poem','sound'); stopSiren(false); video.currentTime=0; video.play().catch(()=>{}); return; }
+    exception41.classList.add('poem');
+    stopSiren(true);
+  });
+  back.addEventListener('click',e=>{ if(e.target.closest('a')) return; });
+  exception41._show=()=>{
+    clearTimeout(exception41Timer);
+    exception41Visible=true;
+    const {c,gap,tw,th}=metrics();
+    const slots=[...Array(c*Math.ceil(tiles.length/c)).keys()];
+    const occupied=[...slotMap.values()].map(v=>v.slot);
+    const candidates=slots.filter(s=>!occupied.includes(s));
+    const slot=candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2));
+    const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
+    exception41.style.width=tw+'px'; exception41.style.height=th+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
+    exception41.classList.add('visible');
+    video.currentTime=0; video.play().catch(()=>{});
+    setTimeout(()=>{exception41.classList.add('sound');playSiren();},450);
+  };
+  exception41._hide=()=>{
+    clearTimeout(exception41Timer);
+    exception41Visible=false;
+    stopSiren(true);
+    video.pause(); video.currentTime=0;
+    exception41.classList.remove('visible','sound','poem');
+  };
+  return exception41;
+}
+function maybeException41(force=false){
+  const e=makeException41();
+  if(exception41Visible) return;
+  if(!force && !exception41Debug && Math.random()>0.035) return;
+  e._show();
+  exception41Timer=setTimeout(()=>e._hide(),28000+Math.random()*18000);
+}
+makeException41();
 function cols(){
  const w=wall.clientWidth,h=wall.clientHeight;
  if(w<700) return 5;
@@ -174,6 +295,7 @@ function startTeachingMoment(){
 }
 async function recompose(){
  if(paused || openId || morphing || teachingMoment) return;
+ maybeException41();
  const active=tiles.filter(t=>t.dataset.empty!=='true');
  if(active.length<6 || slotMap.size<active.length) return;
  morphing=true;
@@ -289,6 +411,7 @@ document.addEventListener('keydown',e=>{
    return;
  }
  const key=e.key;
+ if(exception41Visible && key==='Escape'){ e.preventDefault(); makeException41()._hide(); return; }
  if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' '].includes(key)) return;
  const visible=tiles.filter(t=>t.dataset.empty!=='true');
  if(!visible.length) return;
@@ -314,7 +437,8 @@ document.addEventListener('keydown',e=>{
  if(key==='ArrowLeft' || key==='ArrowUp') next=(current-1+visible.length)%visible.length;
  visible[next].focus();
 });
-window.addEventListener('resize',()=>layout(false));
+window.addEventListener('resize',()=>{layout(false); if(exception41Visible && exception41){const {c,gap,tw,th}=metrics(); exception41.style.width=tw+'px'; exception41.style.height=th+'px';}});
+
 const hint=document.getElementById('hint');
 const pause=document.getElementById('pause');
 const recomposeBtn=document.getElementById('recompose');

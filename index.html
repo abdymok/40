@@ -48,7 +48,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .exception41.sound .back{opacity:1;pointer-events:auto}
 .exception41 .exception-audio{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;opacity:1;transition:opacity 1000ms ease}
 .exception41.poem .exception-audio{opacity:0;pointer-events:none}
-.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px;position:relative}
+.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px;position:absolute;left:8%;bottom:8%}
 .exception41 .volume-toggle{border:0;background:transparent;padding:2px;font:18px/1 Arial,sans-serif;color:#222;cursor:pointer}
 .exception41 .volume-toggle:focus-visible{outline:1px solid #777;outline-offset:3px}
 .exception41 .volume-bars{display:flex;align-items:center;gap:2px;width:100%;height:28px;cursor:pointer}
@@ -64,7 +64,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .exception41 .exception-credit{position:absolute;right:5%;bottom:8%;font:8px/1 Arial,sans-serif;letter-spacing:.04em;color:rgba(0,0,0,.42);text-decoration:none}
 .exception41 .exception-credit:hover{color:#111}
 .exception41 .poem-copy{opacity:0;transition:opacity 900ms ease;pointer-events:none}
-.exception41.poem .poem-copy{opacity:1;pointer-events:auto}
+.exception41.poem.hero .poem-copy{opacity:1;pointer-events:auto}
 .exception41 .poem-copy a{color:#df1717;text-decoration:none}
 .exception41 .exception-image-back{position:absolute;right:5%;bottom:5%;border:0;background:transparent;padding:8px 4px;font:11px/1 Arial,sans-serif;letter-spacing:.04em;color:#777;cursor:pointer}
 .exception41 .exception-image-back:hover{color:#111}
@@ -178,8 +178,11 @@ function makeException41(){
     const heroX=Math.max(0,Math.min(maxX,oldX-Math.floor((heroCols-1)/2)));
     const heroY=Math.max(0,Math.min(maxY,oldY-Math.floor((heroRows-1)/2)));
     const heroSlot=heroY*c+heroX;
-    const x=heroX*(tw+gap), y=heroY*(tw*0+th+gap);
-    const w=tw*heroCols+gap*(heroCols-1), h=th*heroRows+gap*(heroRows-1);
+    const side=Math.min(tw,th);
+    const cellW=tw*heroCols+gap*(heroCols-1), cellH=th*heroRows+gap*(heroRows-1);
+    const x=heroX*(tw+gap)+(cellW-side*heroCols-gap*(heroCols-1))/2;
+    const y=heroY*(th+gap)+(cellH-side*heroRows-gap*(heroRows-1))/2;
+    const w=side*heroCols+gap*(heroCols-1), h=side*heroRows+gap*(heroRows-1);
     exception41._heroSlot=heroSlot;
     exception41.style.width=w+'px';
     exception41.style.height=h+'px';
@@ -218,13 +221,16 @@ function makeException41(){
     const slot=test41 ? (c*Math.ceil(tiles.length/c)-1) : (candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2)));
     const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
     exception41._slot=slot;
-    exception41.style.width=tw+'px'; exception41.style.height=th+'px';
+    const square=Math.min(tw,th);
+    const sx=(slot%c)*(tw+gap)+(tw-square)/2, sy=Math.floor(slot/c)*(th+gap)+(th-square)/2;
+    exception41.style.width=square+'px'; exception41.style.height=square+'px';
     if(test41){
       exception41.style.transition='none';
       layout(false);
       const {gap:gg,tw:ww,th:hh}=metrics();
-      const xx=(slot%c)*(ww+gg), yy=Math.floor(slot/c)*(hh+gg);
-      exception41.style.width=ww+'px'; exception41.style.height=hh+'px';
+      const ss=Math.min(ww,hh);
+      const xx=(slot%c)*(ww+gg)+(ww-ss)/2, yy=Math.floor(slot/c)*(hh+gg)+(hh-ss)/2;
+      exception41.style.width=ss+'px'; exception41.style.height=ss+'px';
       exception41.style.transform=`translate3d(${xx}px,${yy}px,0)`;
       void exception41.offsetWidth;
     } else {
@@ -302,8 +308,9 @@ function layout(animate=true){
      el.style.opacity='1';
    });
    const {gap,tw,th}=metrics();
-   const x=(lastSlot%c)*(tw+gap), y=Math.floor(lastSlot/c)*(th+gap);
-   exception41.style.width=tw+'px'; exception41.style.height=th+'px';
+   const side=Math.min(tw,th);
+   const x=(lastSlot%c)*(tw+gap)+(tw-side)/2, y=Math.floor(lastSlot/c)*(th+gap)+(th-side)/2;
+   exception41.style.width=side+'px'; exception41.style.height=side+'px';
    exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
    exception41._slot=lastSlot;
    slotMap=map;
@@ -543,7 +550,7 @@ document.addEventListener('keydown',e=>{
  if(key==='ArrowLeft' || key==='ArrowUp') next=(current-1+visible.length)%visible.length;
  visible[next].focus();
 });
-window.addEventListener('resize',()=>{layout(false); if(exception41Visible && exception41){ if(exception41.classList.contains('hero')) exception41._expand(); else { const {gap,tw,th}=metrics(); const slot=exception41._slot; const c=cols(); const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap); exception41.style.width=tw+'px'; exception41.style.height=th+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`; } }});
+window.addEventListener('resize',()=>{layout(false); if(exception41Visible && exception41){ if(exception41.classList.contains('hero')) exception41._expand(); else { const {gap,tw,th}=metrics(); const slot=exception41._slot; const c=cols(); const side=Math.min(tw,th); const x=(slot%c)*(tw+gap)+(tw-side)/2, y=Math.floor(slot/c)*(th+gap)+(th-side)/2; exception41.style.width=side+'px'; exception41.style.height=side+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`; } }});
 
 const hint=document.getElementById('hint');
 const pause=document.getElementById('pause');

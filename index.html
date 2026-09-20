@@ -48,7 +48,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .exception41.sound .back{opacity:1;pointer-events:auto}
 .exception41 .exception-audio{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;opacity:1;transition:opacity 1000ms ease}
 .exception41.poem .exception-audio{opacity:0;pointer-events:none}
-.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px;position:absolute;left:8%;bottom:8%}
+.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px;position:absolute;left:8%;bottom:8%;transition:opacity 900ms ease}.exception41.silent .volume-ui{opacity:0;pointer-events:none}
 .exception41 .volume-toggle{border:0;background:transparent;padding:2px;font:18px/1 Arial,sans-serif;color:#222;cursor:pointer}
 .exception41 .volume-toggle:focus-visible{outline:1px solid #777;outline-offset:3px}
 .exception41 .volume-bars{display:flex;align-items:center;gap:2px;width:100%;height:28px;cursor:pointer}
@@ -160,6 +160,7 @@ function makeException41(){
       stagedHoverTimer=setTimeout(()=>{
         if(!exception41.classList.contains('visible') || exception41.classList.contains('hero')) return;
         exception41._expand();
+        video.pause();
         paused=true;
         pause.textContent='Resume';
         exception41.classList.add('sound','poem');
@@ -172,6 +173,7 @@ function makeException41(){
     e.stopPropagation();
     if(exception41.classList.contains('poem')) return;
     if(!exception41.classList.contains('hero')) exception41._expand();
+    video.pause();
     paused=true;
     pause.textContent='Resume';
     exception41.classList.add('sound');
@@ -179,9 +181,14 @@ function makeException41(){
   });
   btn.addEventListener('click',e=>{
     e.stopPropagation();
-    if(exception41.classList.contains('poem')){ exception41.classList.remove('poem','sound'); stopSiren(false); video.currentTime=0; video.play().catch(()=>{}); return; }
-    exception41.classList.add('poem');
-    stopSiren(true);
+    if(exception41.classList.contains('poem')){
+      exception41.classList.add('silent');
+      stopSiren(true);
+      return;
+    }
+    exception41.classList.add('poem','sound');
+    video.pause();
+    playSiren();
   });
   back.addEventListener('click',e=>{ if(e.target.closest('a')) return; });
   exception41._expand=()=>{

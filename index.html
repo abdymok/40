@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Mural 1–40 — an interactive archive of 40 images and their accompanying essays."><meta property="og:title" content="Mural 1–40"><meta property="og:description" content="An interactive archive of 40 images and their accompanying essays."><meta property="og:type" content="website"><title>Mural 1–40</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="ukraine@war — Mural 1–40, an interactive archive of 40 images and their accompanying essays."><meta property="og:title" content="ukraine@war — Mural 1–40"><meta property="og:description" content="ukraine@war — an interactive archive of 40 images and their accompanying essays."><meta property="og:type" content="website"><title>Mural 1–40</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FJQWFFPBM"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -440,21 +440,34 @@ function openTile(el){
  },revealDelay);
 }
 tiles.forEach(el=>{
+ let hoverTimer=null;
+ el.addEventListener('mouseenter',()=>{
+   if(el.dataset.empty==='true' || paused && openId!==el.dataset.id) return;
+   clearTimeout(hoverTimer);
+   hoverTimer=setTimeout(()=>{
+     if(!openId && !paused) openTile(el);
+   },220);
+ });
+ el.addEventListener('mouseleave',()=>{
+   clearTimeout(hoverTimer);
+ });
  el.addEventListener('click',e=>{
    if(e.target.closest('a') || el.dataset.empty==='true') return;
+   if(e.target.closest('.image-back')) return;
    if(imageReadyId===el.dataset.id && !el.classList.contains('open')){
      clearTimeout(clickTimer); clickTimer=setTimeout(()=>{ if(imageReadyId===el.dataset.id) openTile(el); },300); return;
    }
-   if(el.classList.contains('open')) return;
+   if(el.classList.contains('open')){
+     const a=el.querySelector('.copy a');
+     if(a && a.href) window.location.href=a.href;
+     return;
+   }
    openTile(el);
  });
  const back=el.querySelector('.back');
- if(back) back.addEventListener('click',e=>{ if(e.target.closest('a')) return; closeTile(el); });
- el.addEventListener('dblclick',e=>{
-   if(e.target.closest('a') || el.dataset.empty==='true') return;
-   if(imageReadyId!==el.dataset.id || el.classList.contains('open')) return;
-   clearTimeout(clickTimer); clearTimeout(returnTimer);
-   const a=el.querySelector('a'); if(a && a.href) window.open(a.href,'_blank','noopener');
+ if(back) back.addEventListener('click',e=>{
+   if(e.target.closest('a')) return;
+   if(e.target.closest('.image-back')) closeTile(el);
  });
 });
 document.addEventListener('keydown',e=>{

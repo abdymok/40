@@ -39,7 +39,7 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .tile.opening .front img{opacity:1;transform:scale(1);transition-duration:700ms,900ms}
 @media (hover:none){.tile:not(.open):not(.mist):not([data-empty="true"]):active .front img{transform:scale(1.01);filter:brightness(1.02)}}
 .tile[data-empty="true"]{cursor:default}.tile:focus-visible{outline:1px solid rgba(0,0,0,.28);outline-offset:3px}
-.exception41{z-index:40;opacity:0;pointer-events:none;transition:opacity 1100ms ease,transform 1100ms cubic-bezier(.22,1,.36,1);background:#000}
+.exception41{z-index:40;opacity:0;pointer-events:none;transition:opacity 1100ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1);background:#000}
 .exception41.visible{opacity:1;pointer-events:auto}
 .exception41 .front{background:#000;transition:opacity 900ms cubic-bezier(.22,1,.36,1);cursor:pointer}
 .exception41.sound .front{opacity:0;pointer-events:none}
@@ -155,6 +155,7 @@ function makeException41(){
   front.addEventListener('click',e=>{
     e.stopPropagation();
     if(exception41.classList.contains('poem')) return;
+    if(!exception41.classList.contains('hero')) exception41._expand();
     exception41.classList.add('sound');
     playSiren();
   });
@@ -165,6 +166,30 @@ function makeException41(){
     stopSiren(true);
   });
   back.addEventListener('click',e=>{ if(e.target.closest('a')) return; });
+  exception41._expand=()=>{
+    const {c,r,gap,tw,th}=metrics();
+    const heroCols=Math.min(3,c), heroRows=Math.min(3,r);
+    const slot=exception41._slot;
+    const oldX=slot%c, oldY=Math.floor(slot/c);
+    const maxX=c-heroCols, maxY=r-heroRows;
+    const heroX=Math.max(0,Math.min(maxX,oldX-Math.floor((heroCols-1)/2)));
+    const heroY=Math.max(0,Math.min(maxY,oldY-Math.floor((heroRows-1)/2)));
+    const x=heroX*(tw+gap), y=heroY*(th+gap);
+    const w=tw*heroCols+gap*(heroCols-1), h=th*heroRows+gap*(heroRows-1);
+    exception41.style.width=w+'px';
+    exception41.style.height=h+'px';
+    exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
+    exception41.classList.add('hero');
+  };
+  exception41._shrink=()=>{
+    const {gap,tw,th}=metrics();
+    const slot=exception41._slot;
+    const x=(slot%cols())*(tw+gap), y=Math.floor(slot/cols())*(th+gap);
+    exception41.style.width=tw+'px';
+    exception41.style.height=th+'px';
+    exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
+    exception41.classList.remove('hero');
+  };
   exception41._show=()=>{
     clearTimeout(exception41Timer);
     exception41Visible=true;
@@ -174,7 +199,9 @@ function makeException41(){
     const candidates=slots.filter(s=>!occupied.includes(s));
     const slot=candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2));
     const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
+    exception41._slot=slot;
     exception41.style.width=tw+'px'; exception41.style.height=th+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
+    exception41.classList.remove('hero','sound','poem');
     exception41.classList.add('visible');
     video.currentTime=0; video.play().catch(()=>{});
   };
@@ -183,7 +210,8 @@ function makeException41(){
     exception41Visible=false;
     stopSiren(true);
     video.pause(); video.currentTime=0;
-    exception41.classList.remove('visible','sound','poem');
+    exception41.classList.remove('visible','sound','poem','hero');
+    exception41._shrink();
   };
   return exception41;
 }

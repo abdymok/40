@@ -542,12 +542,19 @@ tiles.forEach(el=>{
  });
  el.addEventListener('click',e=>{
    if(el.dataset.empty==='true') return;
+   const touch=window.matchMedia('(hover:none) and (pointer:coarse)').matches;
+   if(touch && openId!==el.dataset.id){
+     e.preventDefault();
+     el.classList.remove('hover-open');
+     openTile(el);
+     return;
+   }
    const a=el.querySelector('.copy a');
    if(a && a.href){
      if(typeof gtag==='function') gtag('event','substack_click',{mural_id:String(el.dataset.id),mural_year:String(slides.find(s=>String(s.id)===String(el.dataset.id))?.year||''),destination:a.href});
      window.location.href=a.href;
    }
- });
+  });
 });
 document.addEventListener('keydown',e=>{
  const active=document.activeElement;

@@ -563,17 +563,28 @@ tiles.forEach(el=>{
    if(el.dataset.empty==='true') return;
    const touch=('ontouchstart' in window) || (navigator.maxTouchPoints>0);
    if(touch){
-     e.preventDefault();
-     el.classList.remove('hover-open');
-     if(openId!==el.dataset.id){
-       openTile(el);
+     const link=e.target.closest('a');
+     const back=e.target.closest('.image-back');
+     if(back){
+       e.preventDefault();
+       e.stopPropagation();
+       if(openId===el.dataset.id) closeTile(el);
        return;
      }
-     const a=el.querySelector('.copy a');
-     if(a && a.href){
-       if(typeof gtag==='function') gtag('event','substack_click',{mural_id:String(el.dataset.id),mural_year:String(slides.find(s=>String(s.id)===String(el.dataset.id))?.year||''),destination:a.href});
-       window.location.href=a.href;
+     if(openId===el.dataset.id){
+       if(link && link.href){
+         e.preventDefault();
+         if(typeof gtag==='function') gtag('event','substack_click',{mural_id:String(el.dataset.id),mural_year:String(slides.find(s=>String(s.id)===String(el.dataset.id))?.year||''),destination:link.href});
+         window.location.href=link.href;
+       }else{
+         e.preventDefault();
+         closeTile(el);
+       }
+       return;
      }
+     e.preventDefault();
+     el.classList.remove('hover-open');
+     openTile(el);
      return;
    }
    const a=el.querySelector('.copy a');
@@ -582,6 +593,14 @@ tiles.forEach(el=>{
      window.location.href=a.href;
    }
   });
+});
+tiles.forEach(el=>{
+ const back=el.querySelector('.image-back');
+ if(back) back.addEventListener('click',e=>{
+   e.preventDefault();
+   e.stopPropagation();
+   if(openId===el.dataset.id) closeTile(el);
+ });
 });
 document.addEventListener('keydown',e=>{
  const active=document.activeElement;

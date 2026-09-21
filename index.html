@@ -540,15 +540,15 @@ recomposeBtn.addEventListener('click',()=>{
  if(teachingMoment){
    clearTimeout(teachingTimer);
    teachingTimer=null;
-   clearRecompositionTimers();
    teachingMoment=false;
-   autoHeroId=null;
-   paused=false;
-   pause.textContent='Pause';
    try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-   layout(false);
  }
+ clearRecompositionTimers();
+ autoHeroId=null;
+ paused=false;
+ pause.textContent='Pause';
  morphing=false;
+ layout(false);
  recompose();
 });
 layout(false);

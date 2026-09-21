@@ -240,7 +240,7 @@ function makeException41(){
 function maybeException41(force=false){
   const e=makeException41();
   if(exception41Visible) return;
-  if(!force && !exception41Debug && Math.random()>0.20) return;
+  if(!force && !exception41Debug && Math.random()>0.03) return;
   e._show();
   exception41Timer=setTimeout(()=>e._hide(),28000+Math.random()*18000);
 }
@@ -404,13 +404,11 @@ function closeTile(el){
  setTimeout(()=>{
    if(openId!==el.dataset.id) return;
    el.classList.remove('closing');
-   imageReadyId=el.dataset.id;
+   imageReadyId=null;
+   el.setAttribute("aria-expanded","false");
+   openId=null;
    pause.textContent='Resume';
-   returnTimer=setTimeout(()=>{
-     if(openId===el.dataset.id && imageReadyId===el.dataset.id){
-       imageReadyId=null; el.setAttribute("aria-expanded","false"); openId=null; paused=false; pause.textContent='Pause'; layout(false); setTimeout(recompose,1200);
-     }
-   },15000);
+   layout(false);
  },4400);
 }
 function openTile(el){
@@ -581,5 +579,5 @@ function beginMuralOpening(){
   scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},14500);
 }
 setTimeout(beginMuralOpening,3600);
-timer=setInterval(()=>{if(!paused && !openId) recompose();},18000);
+timer=setInterval(()=>{if(!paused && !openId) recompose();},45000);
 </script></body></html>

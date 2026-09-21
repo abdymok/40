@@ -230,9 +230,10 @@ function makeException41(){
     exception41.classList.remove('visible','sound','poem','hero');
     exception41._shrink();
     if(!openId){
-      paused=false;
-      pause.textContent='Pause';
-      layout(true);
+      paused=true;
+      pause.textContent='Resume';
+      autoHeroId=null;
+      layout(false);
     }
   };
   return exception41;
@@ -350,49 +351,24 @@ function startTeachingMoment(){
     },3300);
   },6500);
 }
-async function recompose(){
- if(paused || openId || morphing || teachingMoment) return;
- maybeException41();
- const active=tiles.filter(t=>t.dataset.empty!=='true');
- if(active.length<6 || slotMap.size<active.length) return;
- morphing=true;
+function recompose(){
+ if(openId || morphing || teachingMoment) return;
  clearRecompositionTimers();
- const count=Math.min(active.length,6+Math.floor(Math.random()*4));
- const chosen=active.slice().sort(()=>Math.random()-.5).slice(0,count);
- const oldSlots=chosen.map(el=>slotMap.get(el)?.slot).filter(s=>s!=null);
- const rotated=oldSlots.slice(1).concat(oldSlots[0]);
- const assignments=new Map(chosen.map((el,i)=>[el,rotated[i]]));
- chosen.forEach((el,i)=>{
-   scheduleRecomposition(()=>{
-     if(paused || openId){ morphing=false; return; }
-     el.classList.add('dissolving');
-     el.style.transition='opacity 1800ms ease, transform 4800ms cubic-bezier(.22,1,.36,1)';
-     el.style.opacity='0';
-     scheduleRecomposition(()=>{
-       if(paused || openId){ el.classList.remove('dissolving'); el.style.opacity='1'; morphing=false; return; }
-       const target=assignments.get(el);
-       if(target==null){ el.classList.remove('dissolving'); el.style.opacity='1'; return; }
-       slotMap.set(el,{slot:target,hero:false});
-       const {c,gap,tw,th}=metrics();
-       const x=(target%c)*(tw+gap), y=Math.floor(target/c)*(th+gap);
-       el.style.transform=`translate3d(${x}px,${y}px,0)`;
-       requestAnimationFrame(()=>requestAnimationFrame(()=>{
-         el.style.opacity='1';
-         scheduleRecomposition(()=>el.classList.remove('dissolving'),3000);
-       }));
-     },1850);
-   },i*420+Math.random()*380);
- });
- const heroCandidates=active.filter(el=>!chosen.includes(el)).sort(()=>Math.random()-.5).slice(0,3);
- scheduleRecomposition(async()=>{
-   if(paused || openId){ morphing=false; return; }
-   for(const hero of heroCandidates){
-     if(paused || openId) break;
-     await showAutoHero(hero,1200);
+ clearOpeningTimers();
+ maybeException41();
+ morphing=true;
+ paused=false;
+ pause.textContent='Pause';
+ autoHeroId=null;
+ layout(true);
+ setTimeout(()=>{
+   morphing=false;
+   if(!openId){
+     paused=false;
+     pause.textContent='Pause';
+     layout(false);
    }
-   if(!paused && !openId) morphing=false;
- },900);
- scheduleRecomposition(()=>{if(!paused && !openId) morphing=false;},14500);
+ },5600);
 }
 function closeTile(el){
  if(!el || openId!==el.dataset.id) return;
@@ -574,10 +550,8 @@ function beginMuralOpening(){
       scheduleOpening(()=>t.classList.remove('mist-clearing'),6200);
     },delay);
   });
-  // Give the complete small-image wall time to settle before the first movement.
-  scheduleOpening(()=>{if(!paused && !openId) recompose();},8200);
-  scheduleOpening(()=>{if(!paused && !openId) startTeachingMoment();},14500);
+  // Once the opening arrangement is complete, leave the wall alone.
+  // From here on, recomposition is user-triggered only.
 }
 setTimeout(beginMuralOpening,3600);
-timer=setInterval(()=>{if(!paused && !openId) recompose();},45000);
 </script></body></html>

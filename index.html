@@ -413,17 +413,6 @@ function openTile(el){
  },revealDelay);
 }
 tiles.forEach(el=>{
- let hoverTimer=null;
- el.addEventListener('mouseenter',()=>{
-   if(el.dataset.empty==='true' || paused && openId!==el.dataset.id) return;
-   clearTimeout(hoverTimer);
-   hoverTimer=setTimeout(()=>{
-     if(!openId && !paused) openTile(el);
-   },220);
- });
- el.addEventListener('mouseleave',()=>{
-   clearTimeout(hoverTimer);
- });
  el.addEventListener('click',e=>{
    if(e.target.closest('a') || el.dataset.empty==='true') return;
    if(e.target.closest('.image-back')) return;

@@ -506,7 +506,9 @@ pause.addEventListener('click',()=>{
    morphing=false; autoHeroId=null;
    layout(false);
  }else{
-   layout(true);
+   // Resume interaction only; do not start another rearrangement.
+   paused=false;
+   pause.textContent='Pause';
  }
 });
 recomposeBtn.addEventListener('click',()=>{

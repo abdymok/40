@@ -535,7 +535,22 @@ pause.addEventListener('click',()=>{
    layout(true);
  }
 });
-recomposeBtn.addEventListener('click',()=>{ if(openId || paused) return; morphing=false; recompose(); });
+recomposeBtn.addEventListener('click',()=>{
+ if(openId) return;
+ if(teachingMoment){
+   clearTimeout(teachingTimer);
+   teachingTimer=null;
+   clearRecompositionTimers();
+   teachingMoment=false;
+   autoHeroId=null;
+   paused=false;
+   pause.textContent='Pause';
+   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
+   layout(false);
+ }
+ morphing=false;
+ recompose();
+});
 layout(false);
 const intro=document.getElementById('intro');
 const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');

@@ -398,17 +398,31 @@ function openTile(el){
    try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
    layout(false);
  }
- clearTimeout(clickTimer); clearTimeout(returnTimer); clearTimeout(openRevealTimer); imageReadyId=null;
+ // Opening a tile takes priority over background layout timers.
+ clearTimeout(clickTimer);
+ clearTimeout(returnTimer);
+ clearTimeout(openRevealTimer);
+ clearRecompositionTimers();
+ clearOpeningTimers();
+ morphing=false;
+ autoHeroId=null;
+ imageReadyId=null;
  if(openId && openId!==el.dataset.id) closeTile(document.querySelector(`.tile[data-id="${openId}"]`));
  if(openId===el.dataset.id){ closeTile(el); return; }
- openId=el.dataset.id; el.setAttribute("aria-expanded","true"); paused=true; pause.textContent='Resume'; if(hint){hint.classList.add('hidden'); try{window.localStorage.setItem('mural40HintSeen','1');}catch(e){}} layout(true);
+ openId=el.dataset.id;
+ el.setAttribute("aria-expanded","true");
+ paused=true;
+ pause.textContent='Resume';
+ if(hint){hint.classList.add('hidden'); try{window.localStorage.setItem('mural40HintSeen','1');}catch(e){}}
+ layout(true);
  el.classList.add('opening');
  let revealDelay=650;
  try{revealDelay=window.localStorage.getItem('mural40FirstClickSeen')==='1'?650:1400;}catch(e){}
  openRevealTimer=setTimeout(()=>{
-   if(openId!==el.dataset.id || !el.classList.contains('opening')) return;
+   if(openId!==el.dataset.id) return;
    el.classList.remove('opening');
    el.classList.add('open');
+   layout(false);
    try{window.localStorage.setItem('mural40FirstClickSeen','1');}catch(e){}
  },revealDelay);
 }

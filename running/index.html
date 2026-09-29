@@ -2,74 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#000000">
-<title>running</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Running</title>
 <style>
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    background: #000;
-    overflow: hidden;
-  }
-  body { min-height: 100dvh; }
-  video {
-    position: fixed;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: #000;
-    object-fit: cover;
-    object-position: center center;
-  }
-  #sound {
-    position: fixed;
-    right: max(18px, env(safe-area-inset-right));
-    bottom: max(18px, env(safe-area-inset-bottom));
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    background: rgba(0,0,0,.28);
-    color: rgba(255,255,255,.82);
-    font: 18px/38px system-ui, sans-serif;
-    text-align: center;
-    cursor: pointer;
-    opacity: .72;
-    -webkit-tap-highlight-color: transparent;
-    transition: opacity .35s ease, background .35s ease;
-  }
-  #sound:hover, #sound:focus-visible {
-    opacity: 1;
-    background: rgba(0,0,0,.45);
-    outline: none;
-  }
-  @media (hover: none) {
-    #sound { opacity: .6; }
-  }
+html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center}
+video{display:block;width:100vw;height:100vh;object-fit:contain;background:#000}
 </style>
 </head>
 <body>
-<video id="film" autoplay muted loop playsinline preload="auto">
-  <source src="running.mp4" type="video/mp4">
+<video autoplay muted loop playsinline preload="auto">
+  <source src="./running.mp4" type="video/mp4">
 </video>
-<button id="sound" type="button" aria-label="Turn sound on" title="Sound off">⌁</button>
 <script>
-  const film = document.getElementById('film');
-  const sound = document.getElementById('sound');
-  sound.addEventListener('click', () => {
-    film.muted = !film.muted;
-    sound.textContent = film.muted ? '⌁' : '♪';
-    sound.setAttribute('aria-label', film.muted ? 'Turn sound on' : 'Turn sound off');
-    sound.title = film.muted ? 'Sound off' : 'Sound on';
-    if (!film.muted) film.play().catch(() => {});
-  });
-  document.addEventListener('keydown', event => {
-    if (event.key.toLowerCase() === 'm') sound.click();
-  });
+const v=document.querySelector('video');
+v.play().catch(()=>{});
+document.addEventListener('click',()=>v.play().catch(()=>{}),{once:true});
 </script>
 </body>
 </html>

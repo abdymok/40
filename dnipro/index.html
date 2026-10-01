@@ -3,30 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>dnipro — Kyiv</title>
+<title>dnipro</title>
 <style>
   html,body{margin:0;background:#111;color:#eee;font-family:Georgia,serif}
   body{min-height:100vh}
   .frame{height:100vh;position:relative;overflow:hidden}
-  .photo{position:absolute;inset:0;background:url('./dnipro.jpg') center center/cover no-repeat;transform:scale(1.015);transition:transform 12s ease,filter 4s ease}
+  .photo{position:absolute;inset:0;background:url('./dnipro.jpg') center center/cover no-repeat;transform:scale(1.015);transition:transform 12s ease}
   .frame:hover .photo{transform:scale(1.035)}
   .veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.16) 55%,rgba(0,0,0,.42))}
   .caption{position:absolute;left:5vw;bottom:5vh;font-size:14px;letter-spacing:.08em}
   .caption span{display:block;margin-top:9px;font-size:12px;letter-spacing:.03em;opacity:.72}
   .enter{position:absolute;right:5vw;bottom:5vh;color:#fff;text-decoration:none;font-size:12px;letter-spacing:.08em;opacity:.72;transition:opacity .3s}
   .enter:hover{opacity:1}
-  @media(max-width:700px){.caption{left:6vw;bottom:6vh}.enter{right:6vw;bottom:3vh}.photo{background-position:center}}
+  .sound{position:absolute;right:5vw;top:5vh;border:0;background:rgba(0,0,0,.18);color:#fff;padding:7px 9px;font:12px Georgia,serif;letter-spacing:.08em;cursor:pointer;opacity:.7;transition:opacity .3s,background .3s}
+  .sound:hover,.sound.playing{opacity:1}
+  .sound:hover{background:rgba(0,0,0,.3)}
+  @media(max-width:700px){.caption{left:6vw;bottom:6vh}.enter{right:6vw;bottom:3vh}.sound{right:6vw;top:4vh}.photo{background-position:center}}
 </style>
 </head>
 <body>
 <main class="frame">
   <div class="photo" aria-label="dnipro in Kyiv"></div>
   <div class="veil"></div>
-  <div class="caption">Kyiv. dnipro.<span>Somewhere behind the mist is the city.</span></div>
+  <button class="sound" id="sound" type="button" aria-label="Play Reitarska Street recording">sound</button>
+  <audio id="audio" preload="metadata"><source src="./Reitarska%20Street.m4a" type="audio/mp4"></audio>
+  <div class="caption">dnipro<span>Somewhere behind the mist is the city.</span></div>
   <a class="enter" href="../">enter the archive →</a>
 </main>
 <script>
-  window.addEventListener('load',()=>document.querySelector('.photo').style.transform='scale(1.035)');
+const audio=document.getElementById('audio');
+const sound=document.getElementById('sound');
+sound.addEventListener('click',()=>{
+  if(audio.paused){
+    audio.play().then(()=>{sound.textContent='sound on';sound.classList.add('playing')}).catch(()=>{});
+  }else{
+    audio.pause();sound.textContent='sound';sound.classList.remove('playing');
+  }
+});
+audio.addEventListener('ended',()=>{sound.textContent='sound';sound.classList.remove('playing')});
+window.addEventListener('load',()=>document.querySelector('.photo').style.transform='scale(1.035)');
 </script>
 </body>
 </html>

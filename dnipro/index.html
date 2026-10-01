@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Dnipro — Kyiv</title>
+<style>
+  html,body{margin:0;background:#111;color:#eee;font-family:Georgia,serif}
+  body{min-height:100vh}
+  .frame{height:100vh;position:relative;overflow:hidden}
+  .photo{position:absolute;inset:0;background:url('./dnipro.jpg') center center/cover no-repeat;transform:scale(1.015);transition:transform 12s ease,filter 4s ease}
+  .frame:hover .photo{transform:scale(1.035)}
+  .veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.16) 55%,rgba(0,0,0,.42))}
+  .caption{position:absolute;left:5vw;bottom:5vh;font-size:14px;letter-spacing:.08em}
+  .caption span{display:block;margin-top:9px;font-size:12px;letter-spacing:.03em;opacity:.72}
+  .enter{position:absolute;right:5vw;bottom:5vh;color:#fff;text-decoration:none;font-size:12px;letter-spacing:.08em;opacity:.72;transition:opacity .3s}
+  .enter:hover{opacity:1}
+  @media(max-width:700px){.caption{left:6vw;bottom:6vh}.enter{right:6vw;bottom:3vh}.photo{background-position:center}}
+</style>
+</head>
+<body>
+<main class="frame">
+  <div class="photo" aria-label="The Dnipro in Kyiv"></div>
+  <div class="veil"></div>
+  <div class="caption">Kyiv. The Dnipro.<span>Somewhere behind the mist is the city.</span></div>
+  <a class="enter" href="../">enter the archive →</a>
+</main>
+<script>
+  window.addEventListener('load',()=>document.querySelector('.photo').style.transform='scale(1.035)');
+</script>
+</body>
+</html>

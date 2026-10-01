@@ -1,0 +1,33 @@
+name: Trim dnipro audio
+
+on:
+  push:
+    paths:
+      - ".github/workflows/trim-dnipro.yml"
+
+jobs:
+  trim:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Trim 10 seconds from each end
+        shell: bash
+        run: |
+          duration=$(ffprobe -v error -show_entries format=duration -of csv=p=0 dnipro/dnipro.m4a)
+          end=$(awk -v d="$duration" 'BEGIN { printf "%.3f", d-10 }')
+          ffmpeg -y -i dnipro/dnipro.m4a -ss 10 -to "$end" -c:a aac -b:a 128k dnipro/dnipro-trimmed.m4a
+          mv dnipro/dnipro-trimmed.m4a dnipro/dnipro.m4a
+
+      - name: Commit trimmed audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dnipro/dnipro.m4a
+          git commit -m "Trim dnipro recording"
+          git push

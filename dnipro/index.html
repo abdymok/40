@@ -8,7 +8,7 @@ html,body{margin:0;background:#111;color:#eee;font-family:Georgia,serif}body{min
 <div class="verse v3">It is to remain capable<br>of being surprised.</div>
 <div class="verse v4">And when the world contradicts us,</div>
 <div class="verse v5 final">to listen.</div>
-<button class="sound" id="sound">sound</button><audio id="audio" preload="metadata"><source src="./dnipro.m4a" type="audio/mp4"></audio><div class="caption">dnipro<span>Somewhere behind the mist is the city.</span></div><a class="enter" href="../">enter the archive →</a></main><script>
+<button class="sound" id="sound">sound</button><audio id="audio" preload="metadata"><source src="./dnipromp3.mp3" type="audio/mpeg"></audio><div class="caption">dnipro<span>Somewhere behind the mist is the city.</span></div><a class="enter" href="../">enter the archive →</a></main><script>
 const a=document.getElementById('audio'),s=document.getElementById('sound'),verses=[...document.querySelectorAll('.verse:not(.final)')],final=document.querySelector('.final');
 s.onclick=()=>{if(a.paused){a.play().then(()=>s.textContent='sound on').catch(()=>{});}else{a.pause();s.textContent='sound'}};a.onended=()=>s.textContent='sound';
 window.onload=()=>{document.querySelector('.photo').style.transform='scale(1.035)';let i=0;function show(){if(i>0)verses[i-1].classList.remove('active');if(i<verses.length){verses[i].classList.add('active');i++;setTimeout(show,5200)}else{final.classList.add('active')}}show()};

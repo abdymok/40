@@ -18,13 +18,36 @@
   .sound{position:absolute;right:5vw;top:5vh;border:0;background:rgba(0,0,0,.18);color:#fff;padding:7px 9px;font:12px Georgia,serif;letter-spacing:.08em;cursor:pointer;opacity:.7;transition:opacity .3s,background .3s}
   .sound:hover,.sound.playing{opacity:1}
   .sound:hover{background:rgba(0,0,0,.3)}
-  @media(max-width:700px){.caption{left:6vw;bottom:6vh}.enter{right:6vw;bottom:3vh}.sound{right:6vw;top:4vh}.photo{background-position:center}}
+  .verse{position:absolute;max-width:360px;font-size:15px;line-height:1.55;letter-spacing:.025em;text-shadow:0 1px 10px rgba(0,0,0,.7);opacity:0;transition:opacity 2.5s ease}
+  .verse.show{opacity:.82}
+  .v1{left:9vw;top:18vh}
+  .v2{right:11vw;top:25vh}
+  .v3{left:18vw;top:52vh}
+  .v4{right:16vw;top:58vh}
+  .v5{left:42vw;top:38vh;max-width:230px;text-align:center}
+  @media(max-width:700px){
+    .caption{left:6vw;bottom:6vh}
+    .enter{right:6vw;bottom:3vh}
+    .sound{right:6vw;top:4vh}
+    .photo{background-position:center}
+    .verse{font-size:13px;max-width:245px;line-height:1.45}
+    .v1{left:7vw;top:17vh}.v2{right:7vw;top:28vh}
+    .v3{left:10vw;top:47vh}.v4{right:9vw;top:57vh}
+    .v5{left:50%;top:38vh;transform:translateX(-50%)}
+  }
 </style>
 </head>
 <body>
 <main class="frame">
   <div class="photo" aria-label="dnipro in Kyiv"></div>
   <div class="veil"></div>
+
+  <div class="verse v1">We wake each morning<br>inside the experiment.</div>
+  <div class="verse v2">The siren speaks first.<br>Then smoke,<br>then the names of places.</div>
+  <div class="verse v3">We write down what we see.</div>
+  <div class="verse v4">Leave fingerprints.</div>
+  <div class="verse v5">Let reality<br>change the meaning of yesterday.</div>
+
   <button class="sound" id="sound" type="button" aria-label="Play dnipro recording">sound</button>
   <audio id="audio" preload="metadata"><source src="./dnipro.m4a" type="audio/mp4"></audio>
   <div class="caption">dnipro<span>Somewhere behind the mist is the city.</span></div>
@@ -41,7 +64,20 @@ sound.addEventListener('click',()=>{
   }
 });
 audio.addEventListener('ended',()=>{sound.textContent='sound';sound.classList.remove('playing')});
-window.addEventListener('load',()=>document.querySelector('.photo').style.transform='scale(1.035)');
+
+const verses=[...document.querySelectorAll('.verse')];
+let order=[0,1,2,3,4];
+let step=0;
+function showNext(){
+  verses.forEach(v=>v.classList.remove('show'));
+  verses[order[step%order.length]].classList.add('show');
+  step++;
+  setTimeout(showNext,5200);
+}
+window.addEventListener('load',()=>{
+  document.querySelector('.photo').style.transform='scale(1.035)';
+  setTimeout(showNext,900);
+});
 </script>
 </body>
 </html>

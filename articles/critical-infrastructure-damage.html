@@ -31,6 +31,43 @@
     color: var(--muted);
     font-size: 15px;
   }
+
+  .alert-summary {
+    margin: 42px 0 48px;
+    padding: 20px 0 22px;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    max-width: 430px;
+  }
+  .alert-rule { display:none; }
+  .alert-kicker {
+    margin: 0 0 10px;
+    font-size: 11px;
+    letter-spacing: .16em;
+    color: var(--muted);
+  }
+  .alert-number {
+    font-size: 72px;
+    line-height: .9;
+    font-weight: 400;
+    letter-spacing: -.04em;
+  }
+  .alert-label {
+    margin-top: 7px;
+    font-size: 17px;
+  }
+  .alert-hours {
+    margin-top: 13px;
+    font-size: 15px;
+    color: var(--muted);
+  }
+  .alert-hours span { color: var(--ink); }
+  .alert-note {
+    margin: 14px 0 0;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -99,6 +136,16 @@
 <main>
   <h1>Kyiv critical infrastructure and energy generation damage</h1>
   <p class="dek">Confirmed, operator-reported, or attributed reports, October 1–30, 2026</p>
+
+
+  <section class="alert-summary" aria-label="Kyiv air raid alerts">
+    <div class="alert-rule"></div>
+    <p class="alert-kicker">KYIV / THE WEEK</p>
+    <div class="alert-number">56</div>
+    <div class="alert-label">air raid alerts</div>
+    <div class="alert-hours">more than <span>87 hours</span> under alert</div>
+    <p class="alert-note">26 September–1 October 2026 · Kyiv City Administration</p>
+  </section>
 
   <table>
     <thead>

@@ -14,196 +14,73 @@
 <meta property="og:url" content="https://abdymok.github.io/40/articles/critical-infrastructure-damage.html">
 <meta property="og:site_name" content="abdymok / 40">
 <style>
-  :root {
-    --ink: #171717;
-    --muted: #6b6b6b;
-    --rule: #d9d9d9;
-    --paper: #fff;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
-  body {
-    font-family: "Spectral", Georgia, "Times New Roman", serif;
-    line-height: 1.58;
-    padding: 64px 28px 84px;
-  }
-  main { max-width: 980px; margin: 0 auto; }
-  h1 {
-    margin: 0 0 10px;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-  }
-  .updated { margin: 0 0 16px; color: var(--muted); font-size: 13px; }
-  .tracker-nav { margin: 0 0 22px; font-size: 13px; letter-spacing: .01em; }
-  .status-key { margin: 0 0 36px; padding: 11px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-size: 11px; color: var(--muted); letter-spacing: .015em; }
-  .source { margin-top: 9px; font-size: 12px; color: var(--muted); }
-  .source a { margin-left: 4px; }
-  .status { display:block; margin-bottom:5px; font-size:10px; letter-spacing:.04em; text-transform:uppercase; color:var(--muted); }
-  details { margin-top: 10px; font-size: 13px; color: var(--muted); }
-  summary { cursor: pointer; color: var(--ink); }
-  .corrections { margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 13px; }
-  .dek {
-    margin: 0 0 8px;
-    color: var(--muted);
-    font-size: 16px;
-  }
-  .alert-summary {
-    margin: 38px 0 54px;
-    padding: 18px 0 20px;
-    border-top: 1px solid var(--ink);
-    border-bottom: 1px solid var(--rule);
-    max-width: 500px;
-  }
-  .alert-rule { display:none; }
-  .alert-kicker {
-    margin: 0 0 10px;
-    font-size: 11px;
-    letter-spacing: .16em;
-    color: var(--muted);
-  }
-  .alert-number {
-    font-size: 84px;
-    line-height: .9;
-    font-weight: 400;
-    letter-spacing: -.04em;
-  }
-  .alert-label {
-    margin-top: 7px;
-    font-size: 18px;
-  }
-  .alert-hours {
-    margin-top: 13px;
-    font-size: 14px;
-    color: var(--muted);
-  }
-  .alert-hours span { color: var(--ink); }
-  .alert-note {
-    margin: 14px 0 0;
-    font-size: 12px;
-    color: var(--muted);
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 15px;
-  }
-  th {
-    text-align: left;
-    font-weight: 500;
-    padding: 0 18px 11px 0;
-    border-bottom: 1px solid var(--ink);
-    vertical-align: bottom;
-  }
-  td {
-    padding: 17px 18px 18px 0;
-    border-bottom: 1px solid var(--rule);
-    vertical-align: top;
-  }
-  th:first-child, td:first-child { width: 96px; white-space: nowrap; color: var(--muted); }
-  th:nth-child(2), td:nth-child(2) { width: 205px; }
-  td:nth-child(2) { font-weight: 500; }
-  .brand-y { color: #d00; }
-  a { color: inherit; }
-  h2 {
-    margin: 56px 0 18px;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-  }
-  .nuclear-section p {
-    margin: 0 0 17px;
-    font-size: 15px;
-  }
-  .nuclear-section .source-note {
-    margin-top: 20px;
-    color: var(--muted);
-    font-size: 13px;
-  }
-  .note {
-    margin-top: 32px;
-    padding-top: 14px;
-    border-top: 1px solid var(--rule);
-    color: var(--muted);
-    font-size: 14px;
-  }
-  @media (max-width: 680px) {
-    body { padding: 38px 18px 54px; }
-    h1 { font-size: 29px; }
-    table, thead, tbody, tr, th, td { display: block; }
-    thead { display: none; }
-    tr { padding: 18px 0; border-bottom: 1px solid var(--rule); }
-    td { border: 0; padding: 2px 0; }
-    td:first-child { width: auto; color: var(--muted); font-size: 12px; letter-spacing: .02em; }
-    td:nth-child(2) { width: auto; margin-bottom: 4px; }
-  }
+  :root { --ink:#171717; --muted:#6b6b6b; --rule:#d9d9d9; --paper:#fff; }
+  *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--paper);color:var(--ink)}
+  body{font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.58;padding:64px 28px 84px}
+  main{max-width:980px;margin:0 auto} h1{margin:0 0 10px;font-size:36px;font-weight:400;line-height:1.15;letter-spacing:-.02em}
+  .updated{margin:0 0 16px;color:var(--muted);font-size:13px}.tracker-nav{margin:0 0 22px;font-size:13px;letter-spacing:.01em}
+  .status-key{margin:0 0 36px;padding:11px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:11px;color:var(--muted);letter-spacing:.015em}
+  .source{margin-top:9px;font-size:12px;color:var(--muted)}.source a{margin-left:4px}
+  .status{display:block;margin-bottom:5px;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+  details{margin-top:10px;font-size:13px;color:var(--muted)}summary{cursor:pointer;color:var(--ink)}
+  .corrections{margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
+  .dek{margin:0 0 8px;color:var(--muted);font-size:16px}.alert-summary{margin:38px 0 54px;padding:18px 0 20px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:500px}
+  .alert-rule{display:none}.alert-kicker{margin:0 0 10px;font-size:11px;letter-spacing:.16em;color:var(--muted)}
+  .alert-number{font-size:84px;line-height:.9;font-weight:400;letter-spacing:-.04em}.alert-label{margin-top:7px;font-size:18px}
+  .alert-hours{margin-top:13px;font-size:14px;color:var(--muted)}.alert-hours span{color:var(--ink)}.alert-note{margin:14px 0 0;font-size:12px;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:15px}th{text-align:left;font-weight:500;padding:0 18px 11px 0;border-bottom:1px solid var(--ink);vertical-align:bottom}
+  td{padding:17px 18px 18px 0;border-bottom:1px solid var(--rule);vertical-align:top}th:first-child,td:first-child{width:96px;white-space:nowrap;color:var(--muted)}
+  th:nth-child(2),td:nth-child(2){width:205px}td:nth-child(2){font-weight:500}.brand-y{color:#d00}a{color:inherit}
+  h2{margin:56px 0 18px;font-size:25px;font-weight:400;line-height:1.2;letter-spacing:-.01em}.nuclear-section p{margin:0 0 17px;font-size:15px}
+  .nuclear-section .source-note{margin-top:20px;color:var(--muted);font-size:13px}.note{margin-top:32px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
+  @media(max-width:680px){body{padding:38px 18px 54px}h1{font-size:29px}table,thead,tbody,tr,th,td{display:block}thead{display:none}tr{padding:18px 0;border-bottom:1px solid var(--rule)}
+  td{border:0;padding:2px 0}td:first-child{width:auto;color:var(--muted);font-size:12px;letter-spacing:.02em}td:nth-child(2){width:auto;margin-bottom:4px}}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHP16V6HE8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VHP16V6HE8', {
-    linker: { domains: ['abdymok.substack.com'] }
-  });
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-VHP16V6HE8',{linker:{domains:['abdymok.substack.com']}});</script>
 </head>
-<body>
-<main>
-  <h1>Kyiv and selected Ukrainian critical infrastructure damage</h1>
-  <p class="dek">Confirmed, operator-reported, or attributed reports, September 26–October 6, 2026</p>
-<p class="updated">Last updated: October 6, 2026, 14:05 Kyiv time</p>
+<body><main>
+<h1>Kyiv and selected Ukrainian critical infrastructure damage</h1>
+<p class="dek">Confirmed, operator-reported, or attributed reports, September 26–October 7, 2026</p>
+<p class="updated">Last updated: October 7, 2026, early morning Kyiv time</p>
 <nav class="tracker-nav" aria-label="Trackers"><a href="/40/articles/critical-infrastructure-damage.html">Infrastructure</a> · <a href="/40/articles/data-center-damage.html">Data centers</a> · <a href="/mural/">Mural</a></nav>
 <div class="status-key"><strong>Evidence key:</strong> confirmed by officials · official claim · eyewitness · Russian MoD claim · unverified</div>
 
-  <p style="margin:0 0 22px;font-size:16px;"><strong>Oct. 7, 2026 — 03:15:</strong> A combined air assault appears to have begun. Kyiv is hearing very loud explosions in rapid succession.</p>
+<p style="margin:0 0 22px;font-size:16px;"><strong>Oct. 7, 2026 — 03:15:</strong> A combined air assault appears to have begun. Kyiv is hearing very loud explosions in rapid succession.</p>
+<p style="margin:0 0 22px;font-size:16px;"><strong>Oct. 7, 2026 — early morning:</strong> Mayor Vitali Klitschko reports impacts in <strong>Obolonskyi district</strong>, on the territory of non-residential development, and in <strong>Podilskyi district</strong>, involving warehouse premises. Emergency services are responding. No casualty information was given in this initial report.</p>
 
-  <section class="alert-summary" aria-label="Kyiv air raid alerts">
-    <div class="alert-rule"></div>
-    <p class="alert-kicker">KYIV / OCTOBER</p>
-    <div class="alert-number">44</div>
-    <div class="alert-label">air raid alerts</div>
-    <div class="alert-hours"><span>22 hours 22 minutes</span> under alert</div>
-    <p class="alert-note">October 1–6, 2026 · running month-to-date tally</p>
-  </section>
+<section class="alert-summary" aria-label="Kyiv air raid alerts">
+<div class="alert-rule"></div><p class="alert-kicker">KYIV / OCTOBER</p><div class="alert-number">44</div><div class="alert-label">air raid alerts</div>
+<div class="alert-hours"><span>22 hours 22 minutes</span> under alert</div><p class="alert-note">October 1–6, 2026 · running month-to-date tally</p>
+</section>
 
-  <table>
-    <thead>
-      <tr><th>Date</th><th>Facility</th><th>What happened</th></tr>
-    </thead>
-    <tbody>
-      <tr id="2026-10-06-paton-bridge"><td>Oct. 6</td><td>Paton Bridge / structural condition</td><td><span class="status">petition, expert warnings</span><br>A Kyiv City Council petition calling for major repairs and restoration of the Paton Bridge had received about 1,000 of the 6,000 votes required for consideration as of Oct. 6. The petition cites deterioration of the bridge's load-bearing structures and calls for immediate anti-emergency and restoration work. It follows repeated expert warnings about the bridge's condition. On Feb. 25, First Vice President of the National Academy of Sciences Vyacheslav Bohdanov said specialists had serious concerns about its technical condition and that scientists assessed the structure's residual life as zero. A Kyiv City State Administration statement on March 5 said the bridge could still be used, subject to previously imposed traffic restrictions. <div class="source">Source: <a href="https://interfax.com.ua/news/general/1215046.html" target="_blank" rel="noopener">Interfax-Ukraine</a></div></td></tr>
-      <tr id="2026-10-06-obolon-educational"><td>Oct. 6</td><td>Obolon district educational institution</td><td><span class="status">confirmed by officials</span><br>Debris from an intercepted Russian UAV struck the roof of an educational institution in Kyiv's Obolon district early on Oct. 6, starting a fire. Emergency crews responded at the scene. No casualties were reported in the initial city administration account.<div class="source">Source: <a href="https://english.nv.ua/nation/falling-drone-fragments-ignite-roof-of-educational-facility-in-kyiv-50647393.html" target="_blank" rel="noopener">Kyiv City Military Administration, via NV</a></div></td></tr>
-      <tr id="2026-10-05-pechersk-courtyard"><td>Oct. 5</td><td>Pechersk residential courtyard</td><td><span class="status">confirmed by officials</span><br>Debris from a Russian UAV fell in the courtyard of a multi-storey residential building in Pechersk after Ukrainian air defenses intercepted the drone. Two parked passenger cars burned and a third was damaged. No deaths or injuries were reported. The Air Force had separately reported a jet-powered UAV over Kyiv that evening. The authorities did not publicly identify the street or building, so this chronology does not infer a precise address.<div class="source">Sources: <a href="https://interfax.com.ua/news/general/1214780.html" target="_blank" rel="noopener">State Emergency Service, via Interfax-Ukraine</a>; <a href="https://www.pravda.com.ua/news/2026/10/05/8056605/" target="_blank" rel="noopener">Air Force / Kyiv City Military Administration, via Ukrainska Pravda</a></div></td></tr>
-      <tr id="2026-10-05-jet-uav"><td>Oct. 5</td><td>Kyiv airspace / jet-powered UAV</td><td><span class="status">official reporting</span><br>The Air Force reported a jet-powered UAV over Kyiv during the evening attack. This is recorded here because the same period saw debris damage in Pechersk and follows the documented use of jet-powered drones against Kyiv's bridge network. The entry does not infer that the Pechersk debris and the bridge strikes involved the same individual aircraft.<div class="source">Source: <a href="https://www.pravda.com.ua/news/2026/10/05/8056605/" target="_blank" rel="noopener">Ukrainska Pravda, citing the Air Force</a></div></td></tr>
-      <tr id="2026-10-05-bridge-turrets"><td>Oct. 4–5</td><td>Kyiv bridges / anti-drone defence</td><td><span class="status">official statements</span><br>On Oct. 4, President Volodymyr Zelenskyy said more than 12 automated .50-calibre anti-drone turrets had been installed in Kyiv, with another eight planned for Kyiv Oblast. On Oct. 5, Air Force spokesman Yuriy Ihnat said such robotic turrets were also being installed on bridges and had already intercepted jet-powered UAVs.<div class="source">Sources: <a href="https://www.ukrinform.net/amp/rubric-ato/4170944-zelensky-more-than-12-turrets-to-counter-jetpowered-drones-installed-in-kyiv.html" target="_blank" rel="noopener">Volodymyr Zelenskyy, via Ukrinform</a>; <a href="https://www.pravda.com.ua/eng/news/2026/10/05/8056505/" target="_blank" rel="noopener">Yuriy Ihnat, via Ukrainska Pravda</a></div>The SBU separately urged the public not to photograph or publish material showing air-defense operations, military objects or attacks on critical infrastructure, warning that such material can be monitored and analyzed by Russian forces. The warning does not publicly identify particular bridge installations, so this chronology does not infer that the restriction applies to any specific turret or bridge.<div class="source">Sources: <a href="https://www.ukrinform.net/rubric-society/4170941-sbu-urges-ukrainians-not-to-film-or-share-photos-and-videos-of-russian-strikes.html" target="_blank" rel="noopener">SBU, via Ukrinform</a>; <a href="https://ssu.gov.ua/novyny/sbu-zaklykaie-ukraintsiv-ne-znimaty-ta-ne-poshyriuvaty-foto-i-video-vorozhykh-obstriliv" target="_blank" rel="noopener">Security Service of Ukraine</a></div></td></tr>
-      <tr id="2026-10-04-desniansky-heat"><td>Oct. 4</td><td>Desniansky district heat main</td><td><span class="status">confirmed by officials</span><br>A Russian attack damaged a heating main in Kyiv's Desniansky district, temporarily interrupting hot-water supply. Kyiv Mayor Vitali Klitschko said repair crews were working to restore service.<div class="source">Source: <a href="https://www.pravda.com.ua/eng/news/2026/10/04/8056380/" target="_blank" rel="noopener">Vitali Klitschko, via Ukrainska Pravda</a></div></td></tr>
-      <tr id="2026-10-04-north-bridge"><td>Oct. 4</td><td>North Bridge (Pivnichnyi)</td><td><span class="status">confirmed by officials</span><br>A Russian drone struck the North (Pivnichnyi) Bridge again on the morning of Oct. 4, damaging the road surface, according to Kyiv Mayor Vitali Klitschko and the Kyiv city administration. Two people were injured, one hospitalized and one treated at the scene. President Volodymyr Zelenskyy later published video showing the strike. <br><a href="https://drive.google.com/file/d/1UuURQTV39l8rmDDnuKV5srWJ3aoX62Fp/view?usp=sharing&t=1.698" target="_blank" rel="noopener">VIDEO — firsthand view (Google Drive)</a><br><a href="https://drive.google.com/file/d/1kOMhRIFiWdvSb6wamiJViskgjP6Hiqn8/view?usp=sharing&t=2.793" target="_blank" rel="noopener">VIDEO — second view (Google Drive)</a>. The firsthand videos are retained as documentation from the scene. <div class="source">Sources: <a href="https://www.pravda.com.ua/eng/news/2026/10/04/8056383/" target="_blank" rel="noopener">Volodymyr Zelenskyy, via Ukrainska Pravda</a>; <a href="https://www.ukrinform.net/amp/rubric-ato/4170930-two-people-injured-in-russian-strike-on-northern-bridge-in-kyiv.html" target="_blank" rel="noopener">Vitali Klitschko, via Ukrinform</a></div></td></tr>
-      <tr id="2026-10-03-north-bridge"><td>Oct. 3</td><td>North (Pivnichnyi) Bridge</td><td><span class="status">confirmed by officials</span><br>A Russian drone struck the North (Pivnichnyi) Bridge in Kyiv at about 6:57 a.m., according to Kyiv Mayor Vitali Klitschko and the Kyiv city administration. The road surface and trolleybus overhead contact network were damaged. <details><summary>Transport details</summary>Traffic from the left bank to the right bank was initially closed, delaying buses 21, 73, 101 and 114 and trolleybuses 29, 30, 31 and 47. Bus service was later restored on adjusted routes, while replacement trolleybus services were organized on both banks. Repair work on the damaged contact network continued.</details> The strike followed repeated attacks on the South (Pivdennyi) Bridge on Oct. 1 and 2.<div class="source">Source: <a href="https://www.pravda.com.ua/eng/news/2026/10/03/8056256/index.amp" target="_blank" rel="noopener">Vitali Klitschko, via Ukrainska Pravda</a></div></td></tr>
-      <tr id="2026-10-02-south-bridge"><td>Oct. 2</td><td>South Bridge / Kyiv bridge network</td><td><span class="status">confirmed by officials</span><br>At about 5 a.m., a Russian UAV struck the South (Pivdennyi) Bridge again — the fourth reported hit in two days. Kyiv Mayor Vitali Klitschko said emergency services were heading to the site. The Kyiv City Military Administration later reported that the South Bridge was fully closed to traffic in both directions. <details><summary>Traffic restrictions</summary>Police reported partial restriction to one lane on Metro Bridge from the left bank toward the right bank, and a complete restriction on Paton Bridge for traffic from the right bank toward the left bank.</details> Later on Oct. 2, a further strike produced a fresh smoke plume over the bridge area. The photograph is firsthand documentation and does not by itself establish the precise impact point. The renewed strikes followed three reported UAV strikes on the South Bridge on Oct. 1.<div class="source">Source: <a href="https://en.interfax.com.ua/news/general/1213703.html" target="_blank" rel="noopener">Vitali Klitschko, via Interfax-Ukraine</a></div></td></tr>
-      <tr id="2026-10-03-bridge-traffic-rules"><td>Oct. 3</td><td>Kyiv bridge traffic rules</td><td><span class="status">confirmed by officials</span><br>The Kyiv city administration revised alert-time traffic rules: South Bridge traffic from the left bank to the right bank is unrestricted during an alert, while right-to-left traffic is restricted for 15 minutes after the alert begins, then resumes. Podilsko-Voskresensky Bridge traffic stops in both directions for 15 minutes when an alert begins or ends, then resumes in full. North, Darnytsky and Paton bridges, and Metro Bridge, operate without alert-related restrictions.<div class="source">Source: <a href="https://en.interfax.com.ua/news/general/1213569.html" target="_blank" rel="noopener">Vitali Klitschko, via Interfax-Ukraine</a></div></td></tr>
-      <tr id="2026-10-02-holosiivsky"><td>Oct. 2</td><td>Holosiivsky district</td><td><span class="status">confirmed by officials</span><br>Debris fell in Holosiivsky district, damaging windows in a non-residential building and several cars. No fire or casualties were initially reported there.<div class="source">Source: <a href="https://censor.net/en/news/4026495/finland-s-foreign-minister-condemned-russian-strikes-on-kyiv" target="_blank" rel="noopener">Kyiv city authorities, via Censor.NET</a></div></td></tr>
-      <tr id="2026-10-02-energy"><td>Oct. 2</td><td>Ukrainian energy facilities — several regions</td><td><span class="status">official claim</span><br>According to Ukraine's Ministry of Energy, some consumers were temporarily without electricity in Donetsk, Dnipropetrovsk, Zaporizhia, Mykolaiv, Kharkiv and Chernihiv oblasts as a result of hostilities and Russian shelling of energy infrastructure on the morning of Oct. 2. Emergency restoration work was under way where security conditions allowed. The ministry did not publicly identify individual generating plants or substations in this update, so no specific facility is named here.<div class="source">Source: <a href="https://unn.ua/en/amp/power-outage-schedules-are-not-currently-planned-the-situation-may-change-the-ministry-of-energy" target="_blank" rel="noopener">Ministry of Energy update, via UNN</a></div></td></tr>
-      <tr id="2026-10-01-south-bridge"><td>Oct. 1</td><td>South Bridge / Green Line metro</td><td><span class="status">confirmed by officials</span><br>Russian drones struck the South (Pivdennyi) Bridge area repeatedly. Two impacts were reported near the support structure, followed later by a strike on the roadway. The Kyiv City Military Administration reported damage to a bridge support, crash barrier, roadway and metro fence. <details><summary>Inspection and transport details</summary>Metro and surface transport across the bridge were halted during inspections. Surface public transport later resumed, while metro-related inspections continued. Initial reporting said specialists found no critical structural damage in the preliminary inspection; this did not establish the status after the further strike or the renewed attack on Oct. 2.</details> Reports identifying the drones as Geran-5 were not officially confirmed.<div class="source">Source: <a href="https://en.interfax.com.ua/news/general/1212833.html" target="_blank" rel="noopener">Vitali Klitschko, via Interfax-Ukraine</a></div></td></tr>
-      <tr id="2026-09-30-nuclear-institute"><td>Sept. 30</td><td>Institute for Nuclear Research</td><td><span class="status">confirmed by officials</span><br>A Russian UAV struck the grounds of the Institute for Nuclear Research of the National Academy of Sciences in Kyiv at 18:18 on Sept. 30, according to Ukraine's State Nuclear Regulatory Inspectorate. A fire broke out, but the VVR-M research reactor and safety-important systems were not damaged, according to Ukraine's State Nuclear Regulatory Inspectorate. Radiation readings and reactor status are detailed in the nuclear and scientific infrastructure section below.<div class="source">Source: <a href="https://uatom.org/en/2026/10/01/russia-attacked-the-institute-for-nuclear-research-in-kyiv.html" target="_blank" rel="noopener">State Nuclear Regulatory Inspectorate information, via UATOM</a></div></td></tr>
-      <tr id="2026-09-30-kyiv-energy"><td>Sept. 30</td><td>Kyiv energy infrastructure</td><td><span class="status">official claim</span><br>President Volodymyr Zelenskyy said critical infrastructure was hit in five regions, while Prime Minister Serhiy Koretsky described the attack as a massive escalation against Ukraine's energy infrastructure. Ukrenergo said it imposed emergency power cuts in Kyiv and three surrounding regions. The attack caused power outages and disrupted other critical services in the capital. The full extent of damage to individual Kyiv generation facilities was not publicly identified.<div class="source">Source: <a href="https://www.reuters.com/world/europe/russian-air-strikes-kill-one-injure-five-around-kyiv-officials-say-2026-09-30/" target="_blank" rel="noopener">Reuters</a></div></td></tr>
-      
-    </tbody>
-  </table>
+<table><thead><tr><th>Date</th><th>Facility</th><th>What happened</th></tr></thead><tbody>
+<tr id="2026-10-07-obolon-podil"><td>Oct. 7</td><td>Obolon and Podil districts</td><td><span class="status">confirmed by Kyiv mayor</span><br>Mayor Vitali Klitschko reported impacts in Obolonskyi district on the territory of non-residential development and in Podilskyi district involving warehouse premises. Emergency services were dispatched to both locations. This is the first officially reported physical damage from the Oct. 7 attack entered in this chronology. The precise facilities and extent of damage remain to be established.<div class="source">Source: <a href="https://t.me/vitaliy_klitschko/7775" target="_blank" rel="noopener">Vitali Klitschko, Telegram</a></div></td></tr>
 
-  <section class="nuclear-section">
-    <h2>Nuclear and scientific infrastructure</h2>
-    <p><strong>Sept. 30 — Institute for Nuclear Research, Kyiv.</strong> A Russian UAV struck the grounds of the National Academy of Sciences' Institute for Nuclear Research, where the VVR-M research reactor is located. The State Nuclear Regulatory Inspectorate reported a fire but no damage to the reactor or safety-important systems, and no change in radiation levels; readings remained within the natural-background range of 0.16–0.20 μSv/h. The reactor has been shut down with its core fully unloaded since February 2022.</p>
-    <p><strong>Sept. 28 — National Academy of Sciences Presidium, Kyiv.</strong> A Russian drone struck the building of the NAS Presidium, causing significant damage and killing two people, according to Ukraine's Ministry of Foreign Affairs. The MFA subsequently described the Institute for Nuclear Research strike as part of a wider pattern of attacks affecting Ukrainian nuclear and scientific institutions.</p>
-    <p><strong>Earlier damage — Kharkiv Institute of Physics and Technology.</strong> The MFA notes that Russian forces repeatedly shelled the National Scientific Center "Kharkiv Institute of Physics and Technology" in 2022, damaging infrastructure of its Neutron Source nuclear facility.</p>
-    <p class="source-note">Sources: State Nuclear Regulatory Inspectorate of Ukraine; Ministry of Foreign Affairs of Ukraine.</p>
-  </section>
+<tr id="2026-10-06-paton-bridge"><td>Oct. 6</td><td>Paton Bridge / structural condition</td><td><span class="status">petition, expert warnings</span><br>A Kyiv City Council petition calling for major repairs and restoration of the Paton Bridge had received about 1,000 of the 6,000 votes required for consideration as of Oct. 6. The petition cites deterioration of the bridge's load-bearing structures and calls for immediate anti-emergency and restoration work. It follows repeated expert warnings about the bridge's condition. On Feb. 25, First Vice President of the National Academy of Sciences Vyacheslav Bohdanov said specialists had serious concerns about its technical condition and that scientists assessed the structure's residual life as zero. A Kyiv City State Administration statement on March 5 said the bridge could still be used, subject to previously imposed traffic restrictions. <div class="source">Source: <a href="https://interfax.com.ua/news/general/1215046.html" target="_blank" rel="noopener">Interfax-Ukraine</a></div></td></tr>
+<tr id="2026-10-06-obolon-educational"><td>Oct. 6</td><td>Obolon district educational institution</td><td><span class="status">confirmed by officials</span><br>Debris from an intercepted Russian UAV struck the roof of an educational institution in Kyiv's Obolon district early on Oct. 6, starting a fire. Emergency crews responded at the scene. No casualties were reported in the initial city administration account.<div class="source">Source: <a href="https://english.nv.ua/nation/falling-drone-fragments-ignite-roof-of-educational-facility-in-kyiv-50647393.html" target="_blank" rel="noopener">Kyiv City Military Administration, via NV</a></div></td></tr>
+<tr id="2026-10-05-pechersk-courtyard"><td>Oct. 5</td><td>Pechersk residential courtyard</td><td><span class="status">confirmed by officials</span><br>Debris from a Russian UAV fell in the courtyard of a multi-storey residential building in Pechersk after Ukrainian air defenses intercepted the drone. Two parked passenger cars burned and a third was damaged. No deaths or injuries were reported. The Air Force had separately reported a jet-powered UAV over Kyiv that evening. The authorities did not publicly identify the street or building, so this chronology does not infer a precise address.<div class="source">Sources: <a href="https://interfax.com.ua/news/general/1214780.html" target="_blank" rel="noopener">State Emergency Service, via Interfax-Ukraine</a>; <a href="https://www.pravda.com.ua/news/2026/10/05/8056605/" target="_blank" rel="noopener">Air Force / Kyiv City Military Administration, via Ukrainska Pravda</a></div></td></tr>
+<tr id="2026-10-05-jet-uav"><td>Oct. 5</td><td>Kyiv airspace / jet-powered UAV</td><td><span class="status">official reporting</span><br>The Air Force reported a jet-powered UAV over Kyiv during the evening attack. This is recorded here because the same period saw debris damage in Pechersk and follows the documented use of jet-powered drones against Kyiv's bridge network. The entry does not infer that the Pechersk debris and the bridge strikes involved the same individual aircraft.<div class="source">Source: <a href="https://www.pravda.com.ua/news/2026/10/05/8056605/" target="_blank" rel="noopener">Ukrainska Pravda, citing the Air Force</a></div></td></tr>
+<tr id="2026-10-05-bridge-turrets"><td>Oct. 4–5</td><td>Kyiv bridges / anti-drone defence</td><td><span class="status">official statements</span><br>On Oct. 4, President Volodymyr Zelenskyy said more than 12 automated .50-calibre anti-drone turrets had been installed in Kyiv, with another eight planned for Kyiv Oblast. On Oct. 5, Air Force spokesman Yuriy Ihnat said such robotic turrets were also being installed on bridges and had already intercepted jet-powered UAVs.<div class="source">Sources: <a href="https://www.ukrinform.net/amp/rubric-ato/4170944-zelensky-more-than-12-turrets-to-counter-jetpowered-drones-installed-in-kyiv.html" target="_blank" rel="noopener">Volodymyr Zelenskyy, via Ukrinform</a>; <a href="https://www.pravda.com.ua/eng/news/2026/10/05/8056505/" target="_blank" rel="noopener">Yuriy Ihnat, via Ukrainska Pravda</a></div>The SBU separately urged the public not to photograph or publish material showing air-defense operations, military objects or attacks on critical infrastructure, warning that such material can be monitored and analyzed by Russian forces.<div class="source">Sources: <a href="https://www.ukrinform.net/rubric-society/4170941-sbu-urges-ukrainians-not-to-film-or-share-photos-and-videos-of-russian-strikes.html" target="_blank" rel="noopener">SBU, via Ukrinform</a>; <a href="https://ssu.gov.ua/novyny/sbu-zaklykaie-ukraintsiv-ne-znimaty-ta-ne-poshyriuvaty-foto-i-video-vorozhykh-obstriliv" target="_blank" rel="noopener">Security Service of Ukraine</a></div></td></tr>
+<tr id="2026-10-04-desniansky-heat"><td>Oct. 4</td><td>Desniansky district heat main</td><td><span class="status">confirmed by officials</span><br>A Russian attack damaged a heating main in Kyiv's Desniansky district, temporarily interrupting hot-water supply. Kyiv Mayor Vitali Klitschko said repair crews were working to restore service.<div class="source">Source: <a href="https://www.pravda.com.ua/eng/news/2026/10/04/8056380/" target="_blank" rel="noopener">Vitali Klitschko, via Ukrainska Pravda</a></div></td></tr>
+<tr id="2026-10-04-north-bridge"><td>Oct. 4</td><td>North Bridge (Pivnichnyi)</td><td><span class="status">confirmed by officials</span><br>A Russian drone struck the North (Pivnichnyi) Bridge again on the morning of Oct. 4, damaging the road surface, according to Kyiv Mayor Vitali Klitschko and the Kyiv city administration. Two people were injured, one hospitalized and one treated at the scene. President Volodymyr Zelenskyy later published video showing the strike. <br><a href="https://drive.google.com/file/d/1UuURQTV39l8rmDDnuKV5srWJ3aoX62Fp/view?usp=sharing&t=1.698" target="_blank" rel="noopener">VIDEO — firsthand view (Google Drive)</a><br><a href="https://drive.google.com/file/d/1kOMhRIFiWdvSb6wamiJViskgjP6Hiqn8/view?usp=sharing&t=2.793" target="_blank" rel="noopener">VIDEO — second view (Google Drive)</a>. The firsthand videos are retained as documentation from the scene. <div class="source">Sources: <a href="https://www.pravda.com.ua/eng/news/2026/10/04/8056383/" target="_blank" rel="noopener">Volodymyr Zelenskyy, via Ukrainska Pravda</a>; <a href="https://www.ukrinform.net/amp/rubric-ato/4170930-two-people-injured-in-russian-strike-on-northern-bridge-in-kyiv.html" target="_blank" rel="noopener">Vitali Klitschko, via Ukrinform</a></div></td></tr>
+<tr id="2026-10-03-north-bridge"><td>Oct. 3</td><td>North (Pivnichnyi) Bridge</td><td><span class="status">confirmed by officials</span><br>A Russian drone struck the North (Pivnichnyi) Bridge in Kyiv at about 6:57 a.m., according to Kyiv Mayor Vitali Klitschko and the Kyiv city administration. The road surface and trolleybus overhead contact network were damaged. <details><summary>Transport details</summary>Traffic from the left bank to the right bank was initially closed, delaying buses 21, 73, 101 and 114 and trolleybuses 29, 30, 31 and 47. Bus service was later restored on adjusted routes, while replacement trolleybus services were organized on both banks. Repair work on the damaged contact network continued.</details> The strike followed repeated attacks on the South (Pivdennyi) Bridge on Oct. 1 and 2.<div class="source">Source: <a href="https://www.pravda.com.ua/eng/news/2026/10/03/8056256/index.amp" target="_blank" rel="noopener">Vitali Klitschko, via Ukrainska Pravda</a></div></td></tr>
+<tr id="2026-10-02-south-bridge"><td>Oct. 2</td><td>South Bridge / Kyiv bridge network</td><td><span class="status">confirmed by officials</span><br>At about 5 a.m., a Russian UAV struck the South (Pivdennyi) Bridge again — the fourth reported hit in two days. Kyiv Mayor Vitali Klitschko said emergency services were heading to the site. The Kyiv City Military Administration later reported that the South Bridge was fully closed to traffic in both directions. <details><summary>Traffic restrictions</summary>Police reported partial restriction to one lane on Metro Bridge from the left bank toward the right bank, and a complete restriction on Paton Bridge for traffic from the right bank toward the left bank.</details> Later on Oct. 2, a further strike produced a fresh smoke plume over the bridge area. The photograph is firsthand documentation and does not by itself establish the precise impact point. The renewed strikes followed three reported UAV strikes on the South Bridge on Oct. 1.<div class="source">Source: <a href="https://en.interfax.com.ua/news/general/1213703.html" target="_blank" rel="noopener">Vitali Klitschko, via Interfax-Ukraine</a></div></td></tr>
+<tr id="2026-10-03-bridge-traffic-rules"><td>Oct. 3</td><td>Kyiv bridge traffic rules</td><td><span class="status">confirmed by officials</span><br>The Kyiv city administration revised alert-time traffic rules: South Bridge traffic from the left bank to the right bank is unrestricted during an alert, while right-to-left traffic is restricted for 15 minutes after the alert begins, then resumes. Podilsko-Voskresensky Bridge traffic stops in both directions for 15 minutes when an alert begins or ends, then resumes in full. North, Darnytsky and Paton bridges, and Metro Bridge, operate without alert-related restrictions.<div class="source">Source: <a href="https://en.interfax.com.ua/news/general/1213569.html" target="_blank" rel="noopener">Vitali Klitschko, via Interfax-Ukraine</a></div></td></tr>
+<tr id="2026-10-02-holosiivsky"><td>Oct. 2</td><td>Holosiivsky district</td><td><span class="status">confirmed by officials</span><br>Debris fell in Holosiivsky district, damaging windows in a non-residential building and several cars. No fire or casualties were initially reported there.<div class="source">Source: <a href="https://censor.net/en/news/4026495/finland-s-foreign-minister-condemned-russian-strikes-on-kyiv" target="_blank" rel="noopener">Kyiv city authorities, via Censor.NET</a></div></td></tr>
+<tr id="2026-10-02-energy"><td>Oct. 2</td><td>Ukrainian energy facilities — several regions</td><td><span class="status">official claim</span><br>According to Ukraine's Ministry of Energy, some consumers were temporarily without electricity in Donetsk, Dnipropetrovsk, Zaporizhia, Mykolaiv, Kharkiv and Chernihiv oblasts as a result of hostilities and Russian shelling of energy infrastructure on the morning of Oct. 2. Emergency restoration work was under way where security conditions allowed. The ministry did not publicly identify individual generating plants or substations in this update, so no specific facility is named here.<div class="source">Source: <a href="https://unn.ua/en/amp/power-outage-schedules-are-not-currently-planned-the-situation-may-change-the-ministry-of-energy" target="_blank" rel="noopener">Ministry of Energy update, via UNN</a></div></td></tr>
+<tr id="2026-10-01-south-bridge"><td>Oct. 1</td><td>South Bridge / Green Line metro</td><td><span class="status">confirmed by officials</span><br>Russian drones struck the South (Pivdennyi) Bridge area repeatedly. Two impacts were reported near the support structure, followed later by a strike on the roadway. The Kyiv City Military Administration reported damage to a bridge support, crash barrier, roadway and metro fence. <details><summary>Inspection and transport details</summary>Metro and surface transport across the bridge were halted during inspections. Surface public transport later resumed, while metro-related inspections continued. Initial reporting said specialists found no critical structural damage in the preliminary inspection; this did not establish the status after the further strike or the renewed attack on Oct. 2.</details> Reports identifying the drones as Geran-5 were not officially confirmed.<div class="source">Source: <a href="https://en.interfax.com.ua/news/general/1212833.html" target="_blank" rel="noopener">Vitali Klitschko, via Interfax-Ukraine</a></div></td></tr>
+<tr id="2026-09-30-nuclear-institute"><td>Sept. 30</td><td>Institute for Nuclear Research</td><td><span class="status">confirmed by officials</span><br>A Russian UAV struck the grounds of the Institute for Nuclear Research of the National Academy of Sciences in Kyiv at 18:18 on Sept. 30, according to Ukraine's State Nuclear Regulatory Inspectorate. A fire broke out, but the VVR-M research reactor and safety-important systems were not damaged, according to Ukraine's State Nuclear Regulatory Inspectorate. Radiation readings and reactor status are detailed in the nuclear and scientific infrastructure section below.<div class="source">Source: <a href="https://uatom.org/en/2026/10/01/russia-attacked-the-institute-for-nuclear-research-in-kyiv.html" target="_blank" rel="noopener">State Nuclear Regulatory Inspectorate information, via UATOM</a></div></td></tr>
+<tr id="2026-09-30-kyiv-energy"><td>Sept. 30</td><td>Kyiv energy infrastructure</td><td><span class="status">official claim</span><br>President Volodymyr Zelenskyy said critical infrastructure was hit in five regions, while Prime Minister Serhiy Koretsky described the attack as a massive escalation against Ukraine's energy infrastructure. Ukrenergo said it imposed emergency power cuts in Kyiv and three surrounding regions. The attack caused power outages and disrupted other critical services in the capital. The full extent of damage to individual Kyiv generation facilities was not publicly identified.<div class="source">Source: <a href="https://www.reuters.com/world/europe/russian-air-strikes-kill-one-injure-five-around-kyiv-officials-say-2026-09-30/" target="_blank" rel="noopener">Reuters</a></div></td></tr>
+</tbody></table>
 
-  <p class="corrections"><strong>Corrections:</strong> Oct. 6, 2026 — added the reported protective-net installation at the North Bridge, the Paton Bridge structural-condition/petition update, the Oct. 6 Obolon educational-institution roof fire, updated the October air-alert running tally, and added the Oct. 5 Pechersk residential-courtyard debris/fire entry and the contemporaneous Air Force report of a jet-powered UAV over Kyiv; the precise building is deliberately not inferred from public reporting. Oct. 5, 2026 — added the Oct. 4–5 automated anti-drone turret development and the SBU warning against publishing air-defense imagery, upgraded the Oct. 4 North Bridge entry from eyewitness to confirmed by officials after independent confirmation, added the reported two injuries and official video source. Oct. 4, 2026 — added the Desniansky district heat-main damage entry, moved the traffic-rules entry to Oct. 3, removed duplicated traffic-rule text from the Oct. 3 North Bridge row, and rewrote the Oct. 4 eyewitness entry to distinguish firsthand observation from independent confirmation. Earlier changes — retitled the page to “Kyiv and selected Ukrainian critical infrastructure damage,” widened the chronology header to Sept. 26–Oct. 4, removed the unsupported Sept. 30 Darnytska CHP row, added source links to the Oct. 1 South Bridge and Sept. 30 Institute for Nuclear Research entries, and corrected the Oct. 2 energy entry from an earlier version that identified Sumy and Chernihiv as the worst-affected oblasts to the six oblasts documented in the Oct. 2 Ministry of Energy update: Donetsk, Dnipropetrovsk, Zaporizhia, Mykolaiv, Kharkiv and Chernihiv, and rewrote the Sept. 30 energy entry to attribute each statement to the official who made it.</p>
+<section class="nuclear-section"><h2>Nuclear and scientific infrastructure</h2>
+<p><strong>Sept. 30 — Institute for Nuclear Research, Kyiv.</strong> A Russian UAV struck the grounds of the National Academy of Sciences' Institute for Nuclear Research, where the VVR-M research reactor is located. The State Nuclear Regulatory Inspectorate reported a fire but no damage to the reactor or safety-important systems, and no change in radiation levels; readings remained within the natural-background range of 0.16–0.20 μSv/h. The reactor has been shut down with its core fully unloaded since February 2022.</p>
+<p><strong>Sept. 28 — National Academy of Sciences Presidium, Kyiv.</strong> A Russian drone struck the building of the NAS Presidium, causing significant damage and killing two people, according to Ukraine's Ministry of Foreign Affairs. The MFA subsequently described the Institute for Nuclear Research strike as part of a wider pattern of attacks affecting Ukrainian nuclear and scientific institutions.</p>
+<p><strong>Earlier damage — Kharkiv Institute of Physics and Technology.</strong> The MFA notes that Russian forces repeatedly shelled the National Scientific Center "Kharkiv Institute of Physics and Technology" in 2022, damaging infrastructure of its Neutron Source nuclear facility.</p>
+<p class="source-note">Sources: State Nuclear Regulatory Inspectorate of Ukraine; Ministry of Foreign Affairs of Ukraine.</p></section>
 
-  <p class="note">Working chronology, newest first. Compiled by abd<span class="brand-y">y</span>mok. This page tracks attacks and damage affecting Kyiv's transport, energy-generation and other critical physical infrastructure, with selected Ukrainian regional and scientific-infrastructure entries included where they materially document the same attack pattern. Individual facilities are listed only where a strike, damage, or official/credible attribution can be documented. Reported weapon types, impact locations and casualty information remain provisional where authorities have not confirmed them.</p>
-</main>
-</body>
-</html>
+<p class="corrections"><strong>Corrections:</strong> Oct. 7, 2026 — added the first officially reported physical damage from the overnight attack: impacts in Obolonskyi district on non-residential premises and in Podilskyi district involving warehouse facilities, as reported by Mayor Vitali Klitschko; precise facilities and damage extent remain unconfirmed. Oct. 6, 2026 — added the reported protective-net installation at the North Bridge, the Paton Bridge structural-condition/petition update, the Oct. 6 Obolon educational-institution roof fire, updated the October air-alert running tally, and added the Oct. 5 Pechersk residential-courtyard debris/fire entry and the contemporaneous Air Force report of a jet-powered UAV over Kyiv; the precise building is deliberately not inferred from public reporting. Oct. 5, 2026 — added the Oct. 4–5 automated anti-drone turret development and the SBU warning against publishing air-defense imagery, upgraded the Oct. 4 North Bridge entry from eyewitness to confirmed by officials after independent confirmation, added the reported two injuries and official video source. Oct. 4, 2026 — added the Desniansky district heat-main damage entry, moved the traffic-rules entry to Oct. 3, removed duplicated traffic-rule text from the Oct. 3 North Bridge row, and rewrote the Oct. 4 eyewitness entry to distinguish firsthand observation from independent confirmation.</p>
+
+<p class="note">Working chronology, newest first. Compiled by abd<span class="brand-y">y</span>mok. This page tracks attacks and damage affecting Kyiv's transport, energy-generation and other critical physical infrastructure, with selected Ukrainian regional and scientific-infrastructure entries included where they materially document the same attack pattern. Individual facilities are listed only where a strike, damage, or official/credible attribution can be documented. Reported weapon types, impact locations and casualty information remain provisional where authorities have not confirmed them.</p>
+</main></body></html>

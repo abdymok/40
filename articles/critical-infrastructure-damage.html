@@ -18,7 +18,7 @@
   *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--paper);color:var(--ink)}
   body{font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.58;padding:64px 28px 84px}
   main{max-width:980px;margin:0 auto} h1{margin:0 0 10px;font-size:36px;font-weight:400;line-height:1.15;letter-spacing:-.02em}
-  .updated{margin:0 0 16px;color:var(--muted);font-size:13px}.tracker-nav{margin:0 0 22px;font-size:13px;letter-spacing:.01em}
+  .updated{margin:0 0 16px;color:var(--muted);font-size:13px}.refresh{border:0;background:none;color:#2a7a4b;font:inherit;font-size:18px;line-height:1;cursor:pointer;padding:0 0 0 7px;vertical-align:-1px}.refresh:hover{opacity:.7}.refresh:focus-visible{outline:1px solid #2a7a4b;outline-offset:3px}.tracker-nav{margin:0 0 22px;font-size:13px;letter-spacing:.01em}
   .service-status{margin:0 0 36px;padding:14px 0 16px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);max-width:760px;font-size:13px}.service-kicker{margin:0 0 9px;font-size:11px;letter-spacing:.16em;color:var(--muted)}.service-status p:not(.service-kicker){margin:5px 0}.service-status span{color:var(--muted);font-size:12px}  .status-key{margin:0 0 36px;padding:11px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:11px;color:var(--muted);letter-spacing:.015em}
   .source{margin-top:9px;font-size:12px;color:var(--muted)}.source a{margin-left:4px}
   .status{display:block;margin-bottom:5px;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
@@ -47,6 +47,7 @@ if ('serviceWorker' in navigator) {
     }).catch(() => {});
   });
 }
+</script>
 <script>
 (function(){
   async function checkForFreshPage(){
@@ -65,11 +66,11 @@ if ('serviceWorker' in navigator) {
   });
   window.addEventListener('pageshow',checkForFreshPage);
 })();
-</script></script></head>
+</script></head>
 <body><main>
 <h1>Kyiv and selected Ukrainian critical infrastructure damage</h1>
 <p class="dek">Confirmed, operator-reported, or attributed reports, September 26–October 8, 2026</p>
-<p class="updated">Last updated: October 8, 2026, 05:10 Kyiv time</p>
+<p class="updated">Last updated: October 8, 2026, 05:10 Kyiv time <button class="refresh" type="button" aria-label="Refresh" title="Refresh" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r?r.update():null).finally(()=>location.reload())}else{location.reload()}">↻</button></p>
 
 <nav class="tracker-nav" aria-label="Trackers"><a href="/40/articles/critical-infrastructure-damage.html">Infrastructure</a> · <a href="/40/articles/data-center-damage.html">Data centers</a> · <a href="/mural/">Mural</a></nav>
 

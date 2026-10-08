@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kyiv and selected Ukrainian data center and network infrastructure damage</title>
 <meta name="description" content="Working chronology of reported damage to data centers, telecom infrastructure and related network facilities in Kyiv and selected Ukrainian locations, September 15–October 8, 2026.">
 <meta property="og:title" content="Kyiv and selected Ukrainian data center and network infrastructure damage">
-<meta property="og:description" content="Working chronology of reported damage to data centers, telecom infrastructure and related network facilities in Kyiv and selected Ukrainian locations, September 15–October 7, 2026.">
+<meta property="og:description" content="Working chronology of reported damage to data centers, telecom infrastructure and related network facilities in Kyiv and selected Ukrainian locations, September 15–October 8, 2026.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://abdymok.github.io/40/articles/data-center-damage.html">
 <meta property="og:site_name" content="abdymok / ukraine@war">
@@ -14,29 +17,29 @@
   :root { --ink:#171717; --muted:#6b6b6b; --rule:#d9d9d9; --paper:#fff; }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--paper);color:var(--ink)}
-  body{font-family:Georgia,"Times New Roman",serif;line-height:1.55;padding:56px 24px 72px}
-  main{max-width:900px;margin:0 auto}
-  h1{margin:0 0 10px;font-size:30px;font-weight:400;line-height:1.15;letter-spacing:-.02em}
-  .updated{margin:0 0 4px;color:var(--muted);font-size:13px}
-  .nav{margin:0 0 12px;font-size:14px}
+  body{font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.58;padding:64px 28px 84px}
+  main{max-width:980px;margin:0 auto}
+  h1{margin:0 0 10px;font-size:36px;font-weight:400;line-height:1.15;letter-spacing:-.02em}
+  .updated{margin:0 0 16px;color:var(--muted);font-size:13px}.refresh{border:0;background:none;color:#2a7a4b;font:inherit;font-size:18px;line-height:1;cursor:pointer;padding:0 0 0 7px;vertical-align:-1px}.refresh:hover{opacity:.7}.refresh:focus-visible{outline:1px solid #2a7a4b;outline-offset:3px}
+  .nav{margin:0 0 22px;font-size:13px;letter-spacing:.01em}
   .nav a,.source a{color:inherit}
-  .scope{margin:0 0 14px;font-size:14px}
-  .key{margin:0 0 28px;color:var(--muted);font-size:12px}
-  .status{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:10px;letter-spacing:.05em;text-transform:uppercase;border:1px solid #bdbdbd;padding:2px 5px;margin:0 0 7px;color:#444}
+  .scope{margin:0 0 16px;font-size:14px;max-width:760px}
+  .key{margin:0 0 36px;padding:11px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);color:var(--muted);font-size:11px;letter-spacing:.015em}
+  .status{display:inline-block;font-family:inherit;font-size:10px;letter-spacing:.04em;text-transform:uppercase;border:0;padding:0;margin:0 0 5px;color:var(--muted)}
   .source{margin-top:9px;font-size:12px;color:var(--muted)}
   .corrections{margin-top:24px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
-  .dek{margin:0 0 34px;color:var(--muted);font-size:15px}
+  .dek{margin:0 0 8px;color:var(--muted);font-size:15px}
   table{width:100%;border-collapse:collapse;font-size:15px}
-  th{text-align:left;font-weight:600;padding:0 14px 10px 0;border-bottom:1px solid var(--ink);vertical-align:bottom}
+  th{text-align:left;font-weight:500;padding:0 14px 10px 0;border-bottom:1px solid var(--ink);vertical-align:bottom}
   td{padding:15px 14px 16px 0;border-bottom:1px solid var(--rule);vertical-align:top}
   th:first-child,td:first-child{width:105px;white-space:nowrap}
-  th:nth-child(2),td:nth-child(2){width:155px}
-  td:nth-child(2){font-weight:600}
+  th:nth-child(2),td:nth-child(2){width:205px}
+  td:nth-child(2){font-weight:500}
   .brand-y{color:#d00}
   .note{margin-top:24px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
   @media(max-width:680px){
-    body{padding:34px 16px 48px}
-    h1{font-size:25px}
+    body{padding:38px 18px 54px}
+    h1{font-size:29px}
     table,thead,tbody,tr,th,td{display:block}
     thead{display:none}
     tr{padding:16px 0;border-bottom:1px solid var(--rule)}
@@ -52,18 +55,46 @@ function gtag(){dataLayer.push(arguments)}
 gtag('js',new Date());
 gtag('config','G-VHP16V6HE8',{linker:{domains:['abdymok.substack.com']}});
 </script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js', { updateViaCache: 'none' }).then(registration => {
+      registration.update();
+    }).catch(() => {});
+  });
+}
+</script>
+<script>
+(function(){
+  async function checkForFreshPage(){
+    try{
+      const response=await fetch(location.href,{cache:'no-store'});
+      if(!response.ok)return;
+      const html=await response.text();
+      const current=document.documentElement.outerHTML;
+      const a=(current.match(/Last updated: [^<]+/)||[])[0];
+      const b=(html.match(/Last updated: [^<]+/)||[])[0];
+      if(a && b && a!==b) location.reload();
+    }catch(e){}
+  }
+  document.addEventListener('visibilitychange',()=>{
+    if(document.visibilityState==='visible') checkForFreshPage();
+  });
+  window.addEventListener('pageshow',checkForFreshPage);
+})();
+</script>
 </head>
 <body>
 <main>
 <h1>Kyiv and selected Ukrainian data center and network infrastructure damage</h1>
-<p class="updated">Last updated: October 8, 2026</p>
+<p class="updated">Last updated: 8 October 2026, 15:35 Kyiv time <button class="refresh" type="button" aria-label="Refresh" title="Refresh" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r?r.update():null).finally(()=>location.reload())}else{location.reload()}">↻</button></p>
 <p class="dek">Confirmed, operator-reported, or attributed reports, September 15–October 8, 2026</p>
-<nav class="nav"><a href="critical-infrastructure-damage.html">Infrastructure</a> · <a href="data-center-damage.html">Data centers</a> · <a href="../">Mural</a></nav>
+<nav class="nav" aria-label="Trackers"><a href="/40/articles/critical-infrastructure-damage.html">Infrastructure</a> · <a href="/40/articles/data-center-damage.html">Data centers</a> · <a href="/mural/">Mural</a> · <a href="#chronology">Chronology</a></nav>
 <p class="scope">Scope: primarily Kyiv, with selected Ukrainian locations where the incident documents the same campaign against data centers, telecom infrastructure or network facilities. The Oct. 4 Ukrtelecom entry is in Dnipro and is included as a selected Ukrainian entry.</p>
-<p class="scope"><span class="status">At a glance</span> The chronology currently records more than 20 entries covering named companies, facilities or network systems affected, with operator-reported physical damage accounting for the largest group. Other entries document operational disruption, official or Russian claims, and attacks whose physical effect remains unverified. Several operators have moved services or customer data to backup infrastructure after damage to Kyiv facilities.</p>
-<p class="scope"><span class="status">Cybersecurity context</span> Microsoft’s Digital Defense Report 2026 ranks Ukraine third worldwide and first in Europe by the number of organizations and users affected by recorded cyberattacks in the first half of 2026. Ukraine accounted for 4.8% of those affected globally, while Russian state actors accounted for 14% of their recorded activity against Ukraine. Government agencies and services were the largest targeted sector globally, accounting for 27% of observed activity, up from 17% in 2025. <a href="https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/" target="_blank" rel="noopener">Microsoft Digital Defense Report 2026</a>.</p>
+<p class="scope"><span class="status">AT A GLANCE</span> The chronology currently records more than 20 entries covering named companies, facilities or network systems affected, with operator-reported physical damage accounting for the largest group. Other entries document operational disruption, official or Russian claims, and attacks whose physical effect remains unverified. Several operators have moved services or customer data to backup infrastructure after damage to Kyiv facilities.</p>
+<p class="scope"><span class="status">CYBERSECURITY CONTEXT</span> Microsoft’s Digital Defense Report 2026 ranks Ukraine third worldwide and first in Europe by the number of organizations and users affected by recorded cyberattacks in the first half of 2026. Ukraine accounted for 4.8% of those affected globally, while Russian state actors accounted for 14% of their recorded activity against Ukraine. Government agencies and services were the largest targeted sector globally, accounting for 27% of observed activity, up from 17% in 2025. <a href="https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/" target="_blank" rel="noopener">Microsoft Digital Defense Report 2026</a>.</p>
 <p class="key"><span class="status">confirmed by officials</span> · <span class="status">operator-reported</span> · <span class="status">official claim</span> · <span class="status">Russian claim</span> · <span class="status">unverified</span> · <span class="status">operational impact</span></p>
-<table>
+<table id="chronology">
 <thead><tr><th>Date</th><th>Company / facility</th><th>What happened</th></tr></thead>
 <tbody>
 <tr id="oct-8-yandex-sasovo"><td>Oct. 8</td><td>Yandex data center, Sasovo, Ryazan Oblast, Russia</td><td><span class="status">operator-reported / network monitoring</span><br>In what could be retaliation for Russian strikes on Ukrainian data centers, Ukrainian drones struck a Yandex data center in Sasovo, Ryazan Oblast, causing a fire and forcing the site to suspend operations. Yandex said there were problems with power supply to one Yandex Cloud availability zone. NetBlocks reported a significant disruption to Yandex's network following the attack. The company said its core consumer services remained operational. This entry records the reported physical attack and the independently observed network disruption without characterizing the incident as a broader Russian internet or .ru domain outage.<div class="source">Sources: <a href="https://www.reuters.com/world/drones-hit-yandex-data-centre-first-major-attack-russian-data-hub-2026-10-08/" target="_blank" rel="noopener">Reuters</a> · <a href="https://telemetr.me/content/netblocks" target="_blank" rel="noopener">NetBlocks</a></div></td></tr>

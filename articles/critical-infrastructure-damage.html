@@ -67,7 +67,14 @@ if ('serviceWorker' in navigator) {
   });
   window.addEventListener('pageshow',checkForFreshPage);
 })();
-</script></head>
+</script><script>
+(function(){
+  function pauseEvidenceVideos(){ document.querySelectorAll('.evidence-video video').forEach(function(video){ video.pause(); }); }
+  window.addEventListener('load', pauseEvidenceVideos);
+  document.addEventListener('DOMContentLoaded', pauseEvidenceVideos);
+})();
+</script>
+</head>
 <body><main>
 <h1>Kyiv and selected Ukrainian critical infrastructure damage</h1>
 <p class="dek">Confirmed, operator-reported, or attributed reports, September 26–October 8, 2026</p>
@@ -102,19 +109,25 @@ if ('serviceWorker' in navigator) {
 
 <figure class="evidence-video">
 <p class="evidence-kicker">VIDEO EVIDENCE / BUCHA DISTRICT WAREHOUSE FIRE</p>
-<video controls playsinline preload="metadata" src="../evidence/zhytomyr_fire.MP4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/zhytomyr_fire.MP4" target="_blank" rel="noopener">Open the original zhytomyr_fire.MP4 file</a>.</video>
+<video controls playsinline preload="metadata" poster="../evidence/poster_zhytomyr_highway.png" src="../evidence/zhytomyr_fire.MP4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/zhytomyr_fire.MP4" target="_blank" rel="noopener">Open the original zhytomyr_fire.MP4 file</a>.</video>
 <figcaption>Video supplied from the aftermath of the Russian attack shows a warehouse/logistics facility burning in Bucha district. The Kyiv Regional Military Administration reported damage to three warehouse premises in Bucha district and two people injured. Visual comparison identifies the building in the footage with the Kopyliv logistics complex, but the official account does not identify the operator. <a href="https://github.com/abdymok/40/blob/main/evidence/zhytomyr_fire.MP4" target="_blank" rel="noopener">Original file: zhytomyr_fire.MP4</a>.</figcaption>
 </figure>
 
 <figure class="evidence-video">
 <p class="evidence-kicker">VIDEO EVIDENCE / PRYLUKY</p>
-<video controls playsinline preload="metadata" src="../evidence/pryluky.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/pryluky.mp4" target="_blank" rel="noopener">Open the original pryluky.mp4 file</a>.</video>
-<figcaption>Video recorded immediately after the strike in Pryluky shows the scene at the damaged residential building. The footage is retained as contemporaneous documentary evidence and is not used to infer weapon type beyond the official reporting for the attack. <a href="https://github.com/abdymok/40/blob/main/evidence/pryluky.mp4" target="_blank" rel="noopener">Original file: pryluky.mp4</a>.</figcaption>
+<video controls playsinline preload="metadata" poster="../evidence/poster_pryluky.png" src="../evidence/pryluky.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/pryluky.mp4" target="_blank" rel="noopener">Open the original pryluky.mp4 file</a>.</video>
+<figcaption>The video appears to capture a missile approaching the strike area in Pryluky. The footage is retained as contemporaneous documentary evidence and does not by itself establish the missile type, trajectory or precise impact point. <a href="https://github.com/abdymok/40/blob/main/evidence/pryluky.mp4" target="_blank" rel="noopener">Original file: pryluky.mp4</a>.</figcaption>
+</figure>
+
+<figure class="evidence-video">
+<p class="evidence-kicker">VIDEO EVIDENCE / PRYLUKY AFTERMATH</p>
+<video controls playsinline preload="metadata" poster="../evidence/poster_new_pryluky.png" src="../evidence/new_pryluky.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/new_pryluky.mp4" target="_blank" rel="noopener">Open the original new_pryluky.mp4 file</a>.</video>
+<figcaption>Aftermath footage from Pryluky shows the scene following the strike. The video is retained as contemporaneous documentary evidence. <a href="https://github.com/abdymok/40/blob/main/evidence/new_pryluky.mp4" target="_blank" rel="noopener">Original file: new_pryluky.mp4</a>.</figcaption>
 </figure>
 
 <figure class="evidence-video">
 <p class="evidence-kicker">VIDEO EVIDENCE / NOVA ANGLIYA</p>
-<video controls playsinline preload="metadata" src="../evidence/nova_angliya.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/nova_angliya.mp4" target="_blank" rel="noopener">Open the original nova_angliya.mp4 file</a>.</video>
+<video controls playsinline preload="metadata" poster="../evidence/poster_nova_angliya.png" src="../evidence/nova_angliya.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/nova_angliya.mp4" target="_blank" rel="noopener">Open the original nova_angliya.mp4 file</a>.</video>
 <figcaption>Video circulating online appears to show a downed drone falling near the Nova Angliya residential complex in Kyiv. The footage captures the moment of the drone's fall. <a href="https://github.com/abdymok/40/blob/main/evidence/nova_angliya.mp4" target="_blank" rel="noopener">Original file: nova_angliya.mp4</a>.</figcaption>
 <p style="margin:14px 0 0;font-size:12px;color:var(--muted)">Geolocation: <a href="https://earth.google.com/web/search/50%2e394872,+30%2e474606/@50.39241944,30.47488753,186.50006104a,0d,60y,32.87568337h,114.19129845t,0r/data=CjIaBAoAGAEiJgokCea_Aq19wTdAEeK_Aq19wTfAGZEFWpsynkpAIZAFWpsynkrAQgIIASIaChZDSUhNMG9nS0VJQ0FnSUN1eU5qSE93EAU6AwoBMEICCABKDQj___________8BEAA" target="_blank" rel="noopener">50.394872, 30.474606</a>. Approximate scene area identified by matching the mural-covered residential block and the low building with the pitched roof visible in the video against Google imagery. The coordinates mark the apparent scene area, not a confirmed impact point or filming position. Exact impact location remains uncertain.</p>
 </figure>

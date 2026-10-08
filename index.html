@@ -82,7 +82,15 @@ body{font-family:Spectral,Georgia,serif;overflow:hidden}
 .intro-wordmark{position:relative;z-index:2;font-family:Spectral,Georgia,serif;font-size:clamp(54px,10vw,132px);line-height:1;font-weight:400;letter-spacing:.015em;white-space:nowrap}.intro-wordmark .red-y{color:#c40000}.runner-strip{position:fixed;right:0;top:50%;width:170px;height:140px;object-fit:contain;transform:translate3d(calc(100vw + 210px),-50%,0);z-index:20;display:block;visibility:visible;pointer-events:none;opacity:1;will-change:transform;animation:runnerCross 3600ms linear 0ms forwards}.runner-figure{transform-box:fill-box;transform-origin:center;animation:runnerBob 420ms ease-in-out infinite alternate}@keyframes runnerBob{from{transform:translateY(0)}to{transform:translateY(-3px)}}@keyframes runnerCross{0%{transform:translate3d(calc(100vw + 210px),-50%,0)}100%{transform:translate3d(calc(-100vw - 210px),-50%,0)}}
 .intro.fade{opacity:0;pointer-events:none}
 @media (prefers-reduced-motion:reduce){.intro{transition:none!important}.runner-strip{animation:none!important;transform:translate3d(calc(50vw - 66px),-50%,0)!important}.runner-figure{animation:none!important}}
-</style></head><body>
+</style><script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(registration => {
+      registration.update();
+    }).catch(() => {});
+  });
+}
+</script></head><body>
 <div class="intro" id="intro"><div class="intro-wordmark" aria-label="abdymok"><span>abd</span><span class="red-y">y</span><span>mok</span></div><img class="runner-strip" src="images/intro_suitcase_runner.svg?v=2" alt="" aria-hidden="true"></div><div class="mural"><div class="wall" id="wall"></div></div>
 <audio id="siren41" preload="auto" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Air_Raid_Alert_-_Ukraine_during_russian_invasion_2022.ogg" crossorigin="anonymous"></audio>
 <span id="hint" class="hint">Select an image to read</span><div class="controls"><button id="recompose" class="recompose" type="button">Recompose</button><button id="pause" class="pause" type="button">Pause</button><a class="subscribe" href="https://abdymok.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe</a><a class="subscribe" href="articles/critical-infrastructure-damage.html">Infrastructure</a></div>

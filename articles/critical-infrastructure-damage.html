@@ -47,7 +47,25 @@ if ('serviceWorker' in navigator) {
     }).catch(() => {});
   });
 }
-</script></head>
+<script>
+(function(){
+  async function checkForFreshPage(){
+    try{
+      const response=await fetch(location.href,{cache:'no-store'});
+      if(!response.ok)return;
+      const html=await response.text();
+      const current=document.documentElement.outerHTML;
+      const a=(current.match(/Last updated: [^<]+/)||[])[0];
+      const b=(html.match(/Last updated: [^<]+/)||[])[0];
+      if(a && b && a!==b) location.reload();
+    }catch(e){}
+  }
+  document.addEventListener('visibilitychange',()=>{
+    if(document.visibilityState==='visible') checkForFreshPage();
+  });
+  window.addEventListener('pageshow',checkForFreshPage);
+})();
+</script></script></head>
 <body><main>
 <h1>Kyiv and selected Ukrainian critical infrastructure damage</h1>
 <p class="dek">Confirmed, operator-reported, or attributed reports, September 26–October 8, 2026</p>

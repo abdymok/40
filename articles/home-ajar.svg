@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-labelledby="t">
+  <title id="t">home</title>
+  <rect x="16" y="5" width="20" height="36" fill="none" stroke="#000" stroke-width="2"/>
+  <path fill="#000" fill-rule="evenodd" d="M16 5V41L6 45V1Z M8.6 23.4a1.1 1.1 0 1 0 2.2 0a1.1 1.1 0 1 0 -2.2 0Z"/>
+</svg>

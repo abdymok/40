@@ -1,12 +1,12 @@
 {
-  "period": "SEPTEMBER 28–OCTOBER 10, 2026",
-  "updated": "10 October 2026 · working estimate",
+  "period": "OCTOBER 1–10, 2026",
+  "updated": "10 October 2026 · working estimates",
   "measures": [
     {
       "id": "alerts",
       "label": "Alerts",
       "value": "73",
-      "detail": "October 1–10 · Kyiv",
+      "detail": "October 1 onward · Kyiv",
       "status": "Mean of two live tracker readings",
       "source": "Kyiv alert trackers",
       "sourceUrl": "https://alerts.khanoff.com/en"
@@ -15,7 +15,7 @@
       "id": "alert-hours",
       "label": "Time under alert",
       "value": "2d 12h",
-      "detail": "October 1–10 · Kyiv",
+      "detail": "October 1 onward · Kyiv",
       "status": "Mean of two live tracker readings",
       "source": "Kyiv alert trackers",
       "sourceUrl": "https://chotchaev.com/en"
@@ -24,8 +24,8 @@
       "id": "facilities",
       "label": "Distinct facilities",
       "value": "Approx.",
-      "detail": "Distinct sites documented on this page",
-      "status": "Working count · updated daily",
+      "detail": "Distinct sites affected since October 1",
+      "status": "Approximate monthly count · updated daily",
       "source": "Facilities in this chronology",
       "sourceUrl": "#facilities-count-method"
     },
@@ -33,8 +33,8 @@
       "id": "civilian-deaths",
       "label": "Civilians killed",
       "value": "≈64",
-      "detail": "Approx. reported deaths in incidents logged here",
-      "status": "Working estimate · updated daily",
+      "detail": "Reported deaths in incidents since October 1",
+      "status": "Approximate monthly count · updated daily",
       "source": "Incident-level reports on this page",
       "sourceUrl": "#civilian-deaths-method"
     }

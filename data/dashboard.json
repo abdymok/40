@@ -37,6 +37,15 @@
       "status": "Approximate monthly count · updated daily",
       "source": "Incident-level reports on this page",
       "sourceUrl": "#civilian-deaths-method"
+    },
+    {
+      "id": "elections",
+      "label": "Days until U.S. midterms",
+      "value": "24",
+      "detail": "November 3, 2026",
+      "status": "U.S. midterm elections",
+      "source": "USA.gov",
+      "sourceUrl": "https://www.usa.gov/election"
     }
   ]
 }

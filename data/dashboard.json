@@ -1,6 +1,6 @@
 {
   "period": "OCTOBER 1–10, 2026",
-  "updated": "10 October 2026 · working estimates",
+  "updated": "10 October 2026 · working minimums",
   "measures": [
     {
       "id": "alerts",
@@ -23,18 +23,18 @@
     {
       "id": "facilities",
       "label": "Distinct facilities",
-      "value": "Approx.",
-      "detail": "Distinct sites affected since October 1",
-      "status": "Approximate monthly count · updated daily",
+      "value": "20+",
+      "detail": "Identified sites affected since October 1",
+      "status": "Minimum count · some sites not specified",
       "source": "Facilities in this chronology",
       "sourceUrl": "#facilities-count-method"
     },
     {
       "id": "civilian-deaths",
       "label": "Civilians killed",
-      "value": "≈64",
+      "value": "62+",
       "detail": "Reported deaths in incidents since October 1",
-      "status": "Approximate monthly count · updated daily",
+      "status": "Incident-level tally · may be revised",
       "source": "Incident-level reports on this page",
       "sourceUrl": "#civilian-deaths-method"
     },

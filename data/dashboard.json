@@ -23,11 +23,11 @@
     {
       "id": "facilities",
       "label": "Distinct facilities",
-      "value": "Count pending",
-      "detail": "Repeated strikes count once",
-      "status": "Definition in progress",
-      "source": "Infrastructure chronology",
-      "sourceUrl": "#chronology"
+      "value": "Approx.",
+      "detail": "Distinct sites documented on this page",
+      "status": "Working count · updated daily",
+      "source": "Facilities in this chronology",
+      "sourceUrl": "#facilities-count-method"
     },
     {
       "id": "civilian-deaths",

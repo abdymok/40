@@ -26,10 +26,7 @@
   .status{display:block;margin-bottom:5px;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
   details{margin-top:10px;font-size:13px;color:var(--muted)}summary{cursor:pointer;color:var(--ink)}
   .page-update-notice{padding:10px 12px;border:1px solid var(--rule);font-size:14px;margin:0 0 18px}.page-update-notice a{text-underline-offset:3px}.corrections{margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
-  .dek{margin:0 0 8px;color:var(--muted);font-size:16px}.live-label{margin:24px 0 4px;font-size:15px;letter-spacing:.02em}.live-red{color:#b00000}.live-date{margin:0 0 12px;color:var(--muted);font-size:14px}.live-intro{max-width:760px;margin:5px 0;font-size:15px}.alert-summary{margin:38px 0 54px;padding:18px 0 20px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:500px}
-  .alert-rule{display:none}.alert-kicker{margin:0 0 10px;font-size:11px;letter-spacing:.16em;color:var(--muted)}
-  .alert-number{font-size:84px;line-height:.9;font-weight:400;letter-spacing:-.04em}.alert-label{margin-top:7px;font-size:18px}
-  .alert-hours{margin-top:13px;font-size:14px;color:var(--muted)}.alert-hours span{color:var(--ink)}.alert-note{margin:14px 0 0;font-size:12px;color:var(--muted)}
+  .dek{margin:0 0 8px;color:var(--muted);font-size:16px}
   .special-close{margin:24px 0 42px;padding:16px 0 18px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:760px}.special-kicker{margin:0 0 10px;font-size:11px;letter-spacing:.16em;color:var(--muted)}.special-close p{margin:7px 0;font-size:15px}.dispatch-equation{margin:14px 0 18px;padding:12px 8px;text-align:center;font-size:25px;line-height:1.4;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:Georgia,"Times New Roman",serif}  .attack-graphic{margin:28px 0 42px;max-width:760px}.attack-graphic img{display:block;width:100%;height:auto}.attack-graphic figcaption{margin-top:3px;font-size:12px;color:var(--muted)}.attack-graphic figcaption a{text-decoration:underline;text-underline-offset:2px}
   .evidence-video{margin:28px 0 42px;max-width:760px}.evidence-kicker{margin:0 0 10px;font-size:11px;letter-spacing:.16em;color:var(--muted)}.evidence-video video{display:block;width:100%;height:auto;background:#111}.evidence-video figcaption{margin-top:8px;font-size:12px;color:var(--muted)}.evidence-video figcaption a{text-decoration:underline;text-underline-offset:2px}
   table{width:100%;border-collapse:collapse;font-size:15px}th{text-align:left;font-weight:500;padding:0 18px 11px 0;border-bottom:1px solid var(--ink);vertical-align:bottom}
@@ -50,11 +47,7 @@
   .dashboard-item:nth-child(even){padding-right:0}
   .dashboard-label{margin:0 0 7px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
   .dashboard-value{margin:0 0 5px;font-size:clamp(30px,3.5vw,46px);font-weight:400;line-height:1;letter-spacing:-.035em;overflow-wrap:break-word;font-variant-numeric:tabular-nums}
-  .dashboard-detail,.dashboard-status,.dashboard-source{margin:3px 0;font-size:12px;line-height:1.35}
-  .dashboard-detail,.dashboard-source{color:var(--muted)}
-  .dashboard-status{color:var(--ink)}
-  .dashboard-source a{text-underline-offset:2px}
-.dashboard-source a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;vertical-align:middle}.dashboard-source img{display:inline-block;width:20px;height:20px;vertical-align:middle}
+  .dashboard-detail{margin:3px 0;font-size:12px;line-height:1.35;color:var(--muted)}
   .dashboard-item.is-lead .dashboard-value{color:#b00000}
   .dashboard-value{font-variant-numeric:lining-nums tabular-nums}
   .dashboard-value .u{font-size:.5em;margin-left:.1em;letter-spacing:0}
@@ -232,31 +225,31 @@ if ('serviceWorker' in navigator) {
 <section class="special-close" id="oct8-aftermath" aria-label="Dated dispatches"><p class="special-kicker">DATED DISPATCHES</p><p><a href="2026-10-10-arithmetic.html">October 10 — The arithmetic of inconvenience</a></p><p><a href="2026-10-09-blackout.html">October 9 — Kyiv after the blackout</a></p><p><a href="2026-10-08-attack-aftermath.html">October 8 — Attack aftermath and video evidence</a></p></section>
 
 <figure class="attack-graphic">
-<img src="../evidence/oct7attack.jpg" alt="Ukrainian Air Force graphic summarizing the October 7, 2026 Russian combined attack">
+<img src="https://raw.githubusercontent.com/abdymok/40/main/evidence/oct7attack.jpg" alt="Ukrainian Air Force graphic summarizing the October 7, 2026 Russian combined attack">
 <figcaption>Ukrainian Air Force summary of the October 7 attack. Courtesy of <a href="https://t.me/operativnoZSU/222918?single" target="_blank" rel="noopener">Operativno ZSU</a>.</figcaption>
 </figure>
 
 <figure class="evidence-video">
 <p class="evidence-kicker">VIDEO EVIDENCE / BUCHA DISTRICT WAREHOUSE FIRE</p>
-<video controls playsinline preload="metadata" poster="../evidence/poster_zhytomyr_highway.png" src="../evidence/zhytomyr_fire.MP4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/zhytomyr_fire.MP4" target="_blank" rel="noopener">Open the original zhytomyr_fire.MP4 file</a>.</video>
+<video controls playsinline preload="metadata" poster="https://raw.githubusercontent.com/abdymok/40/main/evidence/poster_zhytomyr_highway.png" src="https://raw.githubusercontent.com/abdymok/40/main/evidence/zhytomyr_fire.MP4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/zhytomyr_fire.MP4" target="_blank" rel="noopener">Open the original zhytomyr_fire.MP4 file</a>.</video>
 <figcaption>Video supplied from the aftermath of the Russian attack shows a warehouse/logistics facility burning in Bucha district. The Kyiv Regional Military Administration reported damage to three warehouse premises in Bucha district and two people injured. Visual comparison identifies the building in the footage with the Kopyliv logistics complex, but the official account does not identify the operator. <a href="https://github.com/abdymok/40/blob/main/evidence/zhytomyr_fire.MP4" target="_blank" rel="noopener">Original file: zhytomyr_fire.MP4</a>.</figcaption>
 </figure>
 
 <figure class="evidence-video">
 <p class="evidence-kicker">VIDEO EVIDENCE / PRYLUKY</p>
-<video controls playsinline preload="metadata" poster="../evidence/poster_pryluky.png" src="../evidence/pryluky.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/pryluky.mp4" target="_blank" rel="noopener">Open the original pryluky.mp4 file</a>.</video>
+<video controls playsinline preload="metadata" poster="https://raw.githubusercontent.com/abdymok/40/main/evidence/poster_pryluky.png" src="https://raw.githubusercontent.com/abdymok/40/main/evidence/pryluky.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/pryluky.mp4" target="_blank" rel="noopener">Open the original pryluky.mp4 file</a>.</video>
 <figcaption>The video appears to capture a missile approaching the strike area in Pryluky. The footage is retained as contemporaneous documentary evidence and does not by itself establish the missile type, trajectory or precise impact point. <a href="https://github.com/abdymok/40/blob/main/evidence/pryluky.mp4" target="_blank" rel="noopener">Original file: pryluky.mp4</a>.</figcaption>
 </figure>
 
 <figure class="evidence-video">
 <p class="evidence-kicker">VIDEO EVIDENCE / PRYLUKY AFTERMATH</p>
-<video controls playsinline preload="metadata" poster="../evidence/poster_new_pryluky.png" src="../evidence/new_pryluky.MP4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/new_pryluky.MP4" target="_blank" rel="noopener">Open the original new_pryluky.mp4 file</a>.</video>
+<video controls playsinline preload="metadata" poster="https://raw.githubusercontent.com/abdymok/40/main/evidence/poster_new_pryluky.png" src="https://raw.githubusercontent.com/abdymok/40/main/evidence/new_pryluky.MP4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/new_pryluky.MP4" target="_blank" rel="noopener">Open the original new_pryluky.mp4 file</a>.</video>
 <figcaption>Aftermath footage from Pryluky shows the scene following the strike. The video is retained as contemporaneous documentary evidence. <a href="https://github.com/abdymok/40/blob/main/evidence/new_pryluky.MP4" target="_blank" rel="noopener">Original file: new_pryluky.mp4</a>.</figcaption>
 </figure>
 
 <figure class="evidence-video">
 <p class="evidence-kicker">VIDEO EVIDENCE / NOVA ANGLIYA</p>
-<video controls playsinline preload="metadata" poster="../evidence/poster_nova_angliya.png" src="../evidence/nova_angliya.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/nova_angliya.mp4" target="_blank" rel="noopener">Open the original nova_angliya.mp4 file</a>.</video>
+<video controls playsinline preload="metadata" poster="https://raw.githubusercontent.com/abdymok/40/main/evidence/poster_nova_angliya.png" src="https://raw.githubusercontent.com/abdymok/40/main/evidence/nova_angliya.mp4">Your browser does not support embedded video. <a href="https://github.com/abdymok/40/blob/main/evidence/nova_angliya.mp4" target="_blank" rel="noopener">Open the original nova_angliya.mp4 file</a>.</video>
 <figcaption>Video circulating online appears to show a downed drone falling near the Nova Angliya residential complex in Kyiv. The footage captures the moment of the drone's fall. <a href="https://github.com/abdymok/40/blob/main/evidence/nova_angliya.mp4" target="_blank" rel="noopener">Original file: nova_angliya.mp4</a>.</figcaption>
 <p style="margin:14px 0 0;font-size:12px;color:var(--muted)">Geolocation: <a href="https://earth.google.com/web/search/50%2e394872,+30%2e474606/@50.39241944,30.47488753,186.50006104a,0d,60y,32.87568337h,114.19129845t,0r/data=CjIaBAoAGAEiJgokCea_Aq19wTdAEeK_Aq19wTfAGZEFWpsynkpAIZAFWpsynkrAQgIIASIaChZDSUhNMG9nS0VJQ0FnSUN1eU5qSE93EAU6AwoBMEICCABKDQj___________8BEAA" target="_blank" rel="noopener">50.394872, 30.474606</a>. Approximate scene area identified by matching the mural-covered residential block and the low building with the pitched roof visible in the video against Google imagery. The coordinates mark the apparent scene area, not a confirmed impact point or filming position. Exact impact location remains uncertain.</p>
 </figure>

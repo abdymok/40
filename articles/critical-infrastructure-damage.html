@@ -39,8 +39,8 @@
   td{border:0;padding:2px 0}td:first-child{width:auto;color:var(--muted);font-size:12px;letter-spacing:.02em}td:nth-child(2){width:auto;margin-bottom:4px}}
 
   .dashboard{margin:0 0 28px;padding:12px 0 15px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
-  .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:12px;letter-spacing:.08em}
-  .dashboard-method{display:inline-flex;align-items:center;margin:0 0 12px 8px;vertical-align:middle}
+  .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:12px;letter-spacing:.08em;display:flex;align-items:center;gap:8px;flex-wrap:nowrap}
+  .dashboard-method{display:inline-flex;align-items:center;flex:0 0 auto;margin:0;vertical-align:middle}
   .dashboard-method img{display:block;width:20px;height:20px}
   .dashboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}
   .dashboard-item{min-width:0;padding:2px 16px 0;border-left:1px solid var(--rule)}
@@ -111,8 +111,7 @@ if ('serviceWorker' in navigator) {
 
 
 <section class="dashboard" aria-label="Infrastructure dashboard" aria-describedby="dashboard-meta">
-<p class="dashboard-meta" id="dashboard-meta">OCT 1–10, 2026 · WORKING FIGURES</p>
-<a class="dashboard-method" href="#facilities-count-method" aria-label="Dashboard methodology" title="Dashboard methodology"><img src="method.svg" width="20" height="20" alt="Method"></a>
+<p class="dashboard-meta" id="dashboard-meta">OCT 1–10, 2026 · WORKING FIGURES <a class="dashboard-method" href="#facilities-count-method" aria-label="Dashboard methodology" title="Dashboard methodology"><img src="method.svg" width="20" height="20" alt="Method"></a></p>
 <div class="dashboard-grid">
 <div class="dashboard-item" data-measure="sites-hit">
 <p class="dashboard-label">Sites hit</p><p class="dashboard-value">20+</p>

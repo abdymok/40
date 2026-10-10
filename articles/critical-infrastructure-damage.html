@@ -40,15 +40,16 @@
 
   .dashboard{margin:0 0 28px;padding:12px 0 15px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
   .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:12px;letter-spacing:.08em}
-  .dashboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}.dashboard-item:nth-child(3),.dashboard-item:nth-child(5){border-left:0;padding-left:0}
+  .dashboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}
   .dashboard-item{min-width:0;padding:2px 16px 0;border-left:1px solid var(--rule)}
   .dashboard-item:first-child{padding-left:0;border-left:0}
   .dashboard-label{margin:0 0 7px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  .dashboard-value{margin:0 0 5px;font-size:clamp(38px,5.2vw,58px);font-weight:400;line-height:1;letter-spacing:-.035em;overflow-wrap:break-word;font-variant-numeric:tabular-nums}
+  .dashboard-value{margin:0 0 5px;font-size:clamp(30px,3.5vw,46px);font-weight:400;line-height:1;letter-spacing:-.035em;overflow-wrap:break-word;font-variant-numeric:tabular-nums}
   .dashboard-detail,.dashboard-status,.dashboard-source{margin:3px 0;font-size:12px;line-height:1.35}
   .dashboard-detail,.dashboard-source{color:var(--muted)}
   .dashboard-status{color:var(--ink)}
   .dashboard-source a{text-underline-offset:2px}
+  @media(min-width:681px){.dashboard-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.dashboard-item:nth-child(3n+1){padding-left:0;border-left:0}}
   @media(max-width:680px){
     .dashboard{margin-bottom:26px}
     .dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:15px}
@@ -106,85 +107,46 @@ if ('serviceWorker' in navigator) {
 
 
 <section class="dashboard" aria-label="Infrastructure dashboard" aria-describedby="dashboard-meta">
-  <p class="dashboard-meta" id="dashboard-meta"><span id="dashboard-period">OCTOBER 1–10, 2026</span> · <span id="dashboard-updated">10 October 2026 · morning Kyiv time</span></p>
-  <div class="dashboard-grid">
-    <div class="dashboard-item" data-measure="alerts">
-      <p class="dashboard-label">Alerts</p>
-      <p class="dashboard-value">Under review</p>
-      <p class="dashboard-detail">Oct. 1–9 total withheld</p>
-      <p class="dashboard-status">Trackers disagree</p>
-      <p class="dashboard-source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alerts.in.ua</a></p>
-    </div>
-    <div class="dashboard-item" data-measure="alert-hours">
-      <p class="dashboard-label">Time under alert</p>
-      <p class="dashboard-value">Under review</p>
-      <p class="dashboard-detail">Oct. 8 · totals not reconciled</p>
-      <p class="dashboard-status">Under review</p>
-      <p class="dashboard-source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alert history</a></p>
-    </div>
-    <div class="dashboard-item" data-measure="facilities">
-      <p class="dashboard-label">Distinct facilities</p>
-      <p class="dashboard-value">20+</p>
-      <p class="dashboard-detail">Identified sites affected since Oct. 1</p>
-      <p class="dashboard-status">Minimum count · some sites not specified</p>
-      <p class="dashboard-source">Source: <a href="#chronology">infrastructure chronology</a></p>
-    </div>
-    <div class="dashboard-item" data-measure="elections">
-      <p class="dashboard-label">Days until U.S. midterms</p>
-      <p class="dashboard-value" id="election-countdown">24</p>
-      <p class="dashboard-detail">November 3, 2026</p>
-      <p class="dashboard-status">U.S. midterm elections</p>
-      <p class="dashboard-source">Election Day: <a href="https://www.usa.gov/election" target="_blank" rel="noopener">USA.gov</a></p>
-    </div>
-    <div class="dashboard-item" data-measure="civilian-deaths">
-      <p class="dashboard-label">Civilians killed</p>
-      <p class="dashboard-value">62+</p>
-      <p class="dashboard-detail">Reported deaths since Oct. 1</p>
-      <p class="dashboard-status">Incident-level tally · may be revised</p>
-      <p class="dashboard-source">Source: <a href="#chronology">reported entries on this page</a></p>
-    </div>
-  </div>
+<p class="dashboard-meta" id="dashboard-meta">OCTOBER 1–10, 2026 · WORKING MINIMUMS</p>
+<div class="dashboard-grid">
+<div class="dashboard-item" data-measure="alerts">
+<p class="dashboard-label">Alerts</p><p class="dashboard-value">Under review</p>
+<p class="dashboard-detail">October 1 onward · Kyiv</p>
+<p class="dashboard-status">Month-to-date total withheld pending reconciliation</p>
+<p class="dashboard-source">Source: <a href="#alert-statistics-method">alert-count method</a></p>
+</div>
+<div class="dashboard-item" data-measure="alert-hours">
+<p class="dashboard-label">Time under alert</p><p class="dashboard-value">Under review</p>
+<p class="dashboard-detail">October 1 onward · Kyiv</p>
+<p class="dashboard-status">Duration withheld pending reconciliation</p>
+<p class="dashboard-source">Source: <a href="#alert-statistics-method">alert-count method</a></p>
+</div>
+<div class="dashboard-item" data-measure="sites-hit">
+<p class="dashboard-label">Sites hit</p><p class="dashboard-value">20+</p>
+<p class="dashboard-detail">Identified sites affected since Oct. 1</p>
+<p class="dashboard-status">Residential and commercial sites included · repeats counted once</p>
+<p class="dashboard-source">Source: <a href="#facilities-count-method">counting method</a></p>
+</div>
+<div class="dashboard-item" data-measure="bridge-strikes">
+<p class="dashboard-label">Bridge strikes</p><p class="dashboard-value">6+</p>
+<p class="dashboard-detail">Two bridges since Oct. 1</p>
+<p class="dashboard-status">South Bridge ×4 · North Bridge ×2</p>
+<p class="dashboard-source">Sources: <a href="#2026-10-02-south-bridge">South Bridge</a> · <a href="#2026-10-04-north-bridge">North Bridge</a></p>
+</div>
+<div class="dashboard-item" data-measure="civilian-deaths">
+<p class="dashboard-label">Civilians killed</p><p class="dashboard-value">61+</p>
+<p class="dashboard-detail">6+ in Kyiv · 55 elsewhere</p>
+<p class="dashboard-status">Provisional minimum · possible overlap under review</p>
+<p class="dashboard-source">Source: <a href="#civilian-deaths-method">counting method</a></p>
+</div>
+<div class="dashboard-item" data-measure="open-threads">
+<p class="dashboard-label">Open threads</p><p class="dashboard-value">7</p>
+<p class="dashboard-detail">Items awaiting verification or follow-up</p>
+<p class="dashboard-status">Working list · not a severity score</p>
+<p class="dashboard-source">Source: <a href="#open-threads">open threads</a></p>
+</div>
+</div>
 </section>
-<script>
-(function(){
-  fetch('../data/dashboard.json',{cache:'no-store'})
-    .then(function(response){if(!response.ok)throw new Error('Dashboard data unavailable');return response.json();})
-    .then(function(data){
-      var updated=document.getElementById('dashboard-updated');
-      var period=document.getElementById('dashboard-period');
-      if(updated && typeof data.updated === 'string') updated.textContent=data.updated;
-      if(period && typeof data.period === 'string') period.textContent=data.period;
-      (data.measures||[]).forEach(function(item){
-        var card=document.querySelector('[data-measure="'+item.id+'"]');
-        if(!card)return;
-        var value=card.querySelector('.dashboard-value');
-        var detail=card.querySelector('.dashboard-detail');
-        var status=card.querySelector('.dashboard-status');
-        var source=card.querySelector('.dashboard-source a');
-        if(value && typeof item.value === 'string') value.textContent=item.value;
-        if(detail && typeof item.detail === 'string') detail.textContent=item.detail;
-        if(status && typeof item.status === 'string') status.textContent=item.status;
-        if(source && typeof item.source === 'string' && typeof item.sourceUrl === 'string' && item.sourceUrl){
-          source.textContent=item.source;
-          source.href=item.sourceUrl;
-          var external=new URL(item.sourceUrl,location.href).origin!==location.origin;
-          if(external){source.target='_blank';source.rel='noopener';}
-          else{source.removeAttribute('target');source.removeAttribute('rel');}
-        }
-      });
-    }).catch(function(error){console.warn('Infrastructure dashboard data could not be loaded.',error);});
-})();
-</script>
-<script>
-(function(){
-  var output=document.getElementById('election-countdown');
-  if(!output)return;
-  var now=new Date();
-  var today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
-  var electionDay=Date.UTC(2026,10,3);
-  output.textContent=String(Math.max(0,Math.ceil((electionDay-today)/86400000)));
-})();
-</script>
 
 <section class="special-close" id="oct10-arithmetic" aria-label="October 10 dispatch: The arithmetic of inconvenience">
 <figure class="attack-graphic" style="margin:0 0 18px;max-width:760px">
@@ -195,6 +157,7 @@ if ('serviceWorker' in navigator) {
 <p class="live-date">October 10, 2026 · Kyiv</p>
 
 <p>Trump has announced his <a href="https://www.nytimes.com/2026/10/09/us/politics/trump-russia-diesel-putin.html" target="_blank" rel="noopener">diesel deal with Putin</a>. Let the gentlemen enjoy their arithmetic.</p>
+<p class="note">The U.S. midterm elections are 24 days away, on November 3, 2026. That is part of the political calendar, not an infrastructure measurement.</p>
 
 <p>In Kyiv, the lights went out around noon yesterday and returned at 05:30 this morning. About seventeen and a half hours. The water is back, though under protest. Drones have been flying for hours.</p>
 
@@ -487,13 +450,13 @@ if ('serviceWorker' in navigator) {
 <p><strong>Earlier damage — Kharkiv Institute of Physics and Technology.</strong> The MFA notes that Russian forces repeatedly shelled the National Scientific Center "Kharkiv Institute of Physics and Technology" in 2022, damaging infrastructure of its Neutron Source nuclear facility.</p>
 <p class="source-note">Sources: State Nuclear Regulatory Inspectorate of Ukraine; Ministry of Foreign Affairs of Ukraine.</p></section>
 
-<section class="corrections"><p>Updates</p><p>Oct. 10, 2026 — morning: added “The arithmetic of inconvenience,” a personal dispatch on the return of power, low water pressure and the household calculations of staying connected.</p><p>Oct. 9, 2026 — after 10:59 Kyiv time: updated the alert snapshot to the 10:47 reading from alerts.in.ua; added Kyivpastrans' route-specific power disruptions, resumptions and delays; clarified that planned Oct. 10–11 market diversions are separate from outage-related disruption. Withdrew the Oct. 8 interval list after finding that the trackers' eight-alert, 11-hour-34-minute total does not match the seven intervals previously listed (12 hours 30 minutes). Kyiv's published historical open-data file ends on Oct. 5, so the Oct. 8–9 count remains unresolved.</p><p>Oct. 9, 2026 — 08:09 Kyiv time: added the morning-after blackout dispatch with firsthand observations, official energy statements, Kyiv governance context, the Obolon water-supply report and winter-preparation questions. Recorded a 06:50–08:17 alert interval. The running count entered at the time was 62, but the month-to-date tally is now under review.</p><p>Oct. 8, 2026 — evening: added the firsthand account of a roughly 75-minute walk from Reitarska through Pechersk to Zvyrinetska metro and then home. The contemporaneous messages record observations along the route. No single clock time is assigned to the whole walk.</p><p>Oct. 8, 2026 — 17:58 Kyiv time: recorded the new Kyiv air-alert interval beginning at 17:11. Four earlier Oct. 8 alerts remain complete, totalling 6 hours 9 minutes; the fifth alert was ongoing at the time of update.</p>
+<section class="corrections"><p>Updates</p><p>Oct. 10, 2026 — dashboard review: replaced the five-card layout with six chronology-linked measures; moved the U.S. midterm countdown out of the dashboard; removed the live JSON fetch so the HTML is the single source of dashboard values. Alert count and duration remain withheld pending reconciliation. Relabelled the 20+ count as sites hit and specified that separately identified residential and commercial premises are included. Adjusted the civilian-death working minimum to 61+ pending possible overlap between the Oct. 8 citywide report and the Oct. 7 Desniansky toll. Added a bridge-strike count and links to the counting notes.</p><p>Oct. 10, 2026 — morning: added “The arithmetic of inconvenience,” a personal dispatch on the return of power, low water pressure and the household calculations of staying connected.</p><p>Oct. 9, 2026 — after 10:59 Kyiv time: updated the alert snapshot to the 10:47 reading from alerts.in.ua; added Kyivpastrans' route-specific power disruptions, resumptions and delays; clarified that planned Oct. 10–11 market diversions are separate from outage-related disruption. Withdrew the Oct. 8 interval list after finding that the trackers' eight-alert, 11-hour-34-minute total does not match the seven intervals previously listed (12 hours 30 minutes). Kyiv's published historical open-data file ends on Oct. 5, so the Oct. 8–9 count remains unresolved.</p><p>Oct. 9, 2026 — 08:09 Kyiv time: added the morning-after blackout dispatch with firsthand observations, official energy statements, Kyiv governance context, the Obolon water-supply report and winter-preparation questions. Recorded a 06:50–08:17 alert interval. The running count entered at the time was 62, but the month-to-date tally is now under review.</p><p>Oct. 8, 2026 — evening: added the firsthand account of a roughly 75-minute walk from Reitarska through Pechersk to Zvyrinetska metro and then home. The contemporaneous messages record observations along the route. No single clock time is assigned to the whole walk.</p><p>Oct. 8, 2026 — 17:58 Kyiv time: recorded the new Kyiv air-alert interval beginning at 17:11. Four earlier Oct. 8 alerts remain complete, totalling 6 hours 9 minutes; the fifth alert was ongoing at the time of update.</p>
 <p>Oct. 8, 2026 — 12:00 Kyiv time: added the 11:32 Solomiansky district report of a UAV strike on a four-storey shop building, an 11:36 attributed report of smoke visible from multiple parts of Kyiv, the Kramatorsk casualty report current at 11:00, and the continuing Kyiv air-raid alert.</p>
 <p>Oct. 8, 2026 — 10:52 Kyiv time: added Kyiv Mayor Vitali Klitschko's 09:31 report of drone debris falling on an open area in Holosiivsky district and his 10:52 citywide casualty update: one killed, 11 injured, nine hospitalized.</p><p>Oct. 8, 2026 — 10:00 Kyiv time: added the new Kyiv air-raid alert, bringing the running October count to 56, and recorded a firsthand report of anti-aircraft booms. The alert was ongoing at the time of update.</p><p>Earlier on Oct. 8: updated the latest completed Kyiv air-raid alert to 04:07–05:07 and the running count to 55. Updated the late-evening Oct. 7 UAV strike on a Desniansky district residential building: the initial four-injured report was superseded by a State Emergency Service update reporting two deaths. The earlier rescue total of 22 residents remains recorded. Added the early Oct. 8 attack affecting a non-residential building, a residential building and Lukianivska metro station.</p><p>Oct. 7, 2026: corrected the 16:28 Kyiv drone alert to 16:28–17:42, recorded the new 18:01 Kyiv drone alert, and recorded a firsthand eyewitness report of multiple explosions and what sounded like anti-aircraft fire during the alert. Added a local Telegram report and accompanying video showing an apparent UAV roof impact and explosion in the Obolon / Minskyi massif area, with location and consequences not independently established. Updated the Pryluky casualty toll: 22 killed, including five children, and 54 injured, including seven children. The search-and-rescue operation remains ongoing. Updated the Solomiansky district casualty and rescue report: eight injured citywide, including seven at the five-storey residential building, 12 people rescued from upper floors, and one additional injured person at another address. Added partial roof destruction at a four-storey administrative building in Sviatoshynsky district. The October running alert count is 51. Added Ukrenergo's Oct. 7 announcement that hourly outage schedules will apply in several regions on Oct. 8 for the full day, subject to change.</p></section>
 
-<p class="note" id="facilities-count-method">The facilities figure is a working monthly minimum, starting October 1, of distinct physical facilities or separately identified sites documented in this chronology as struck, damaged, or credibly reported as affected. Each facility is counted once regardless of repeated strikes. Reports that identify only a district or general area are not treated as a separate facility unless a site can be identified. Multi-site reports may name several affected premises without identifying every address, so the true total may be higher. Entries may be added, merged, or removed as reporting is clarified.</p>
-<p class="note" id="civilian-deaths-method">The civilian-death figure is a working monthly tally, starting October 1, of reported deaths in distinct incidents documented in this chronology, not a comprehensive count for Ukraine. It uses the latest available official or otherwise credible incident-level tolls, counts each incident once, and does not add broader aggregate totals where they may overlap with listed incidents. The current displayed figure is a minimum because some reports remain incomplete or may be revised. It is updated as the chronology changes.</p>
-<p class="note" id="alert-statistics-method">Air-alert figures cover Kyiv from October 1 through the latest tracker update. The displayed count and time under alert are the arithmetic means of two live tracker readings (<a href="https://alerts.khanoff.com/en" target="_blank" rel="noopener">Khanoff</a> and <a href="https://chotchaev.com/en" target="_blank" rel="noopener">Chotchaev</a>). Both currently report 73 alerts and about 2 days 12 hours under alert. The trackers use Kyiv Digital alert-history data for alert boundaries, so they are useful cross-checks but not fully independent sources. Small differences are averaged and the time is shown at the precision available on the trackers.</p>
+<p class="note" id="facilities-count-method">The sites-hit figure is a working monthly minimum, starting October 1, of distinct physical facilities or separately identified sites documented in this chronology as struck, damaged, or credibly reported as affected. It includes separately identified residential and commercial premises as well as infrastructure sites, so it is not limited to critical infrastructure. Each site is counted once regardless of repeated strikes. Reports that identify only a district or general area are not treated as a separate site unless a location can be identified. Multi-site reports may name several affected premises without identifying every address, so the true total may be higher. Entries may be added, merged, or removed as reporting is clarified.</p>
+<p class="note" id="civilian-deaths-method">The civilian-death figure is a working monthly tally, starting October 1, of reported deaths in distinct incidents documented in this chronology, not a comprehensive count for Ukraine. It uses the latest available official or otherwise credible incident-level tolls, counts each incident once, and does not add broader aggregate totals where they may overlap with listed incidents. The displayed 61+ is a provisional minimum: the October 8 citywide report of one death may overlap with the October 7 Desniansky toll. The working split is 6+ in Kyiv and 55 elsewhere, pending confirmation of reporting windows and incident-level overlap. The tally may be revised as the chronology changes.</p>
+<p class="note" id="alert-statistics-method">Air-alert count and time under alert cover Kyiv from October 1 through the latest comparable tracker update. Both month-to-date figures are withheld until conflicting October 8 intervals and the underlying records can be reconciled. <a href="https://alerts.khanoff.com/en" target="_blank" rel="noopener">Khanoff</a> and <a href="https://chotchaev.com/en" target="_blank" rel="noopener">Chotchaev</a> are cross-checks, not fully independent sources, because both use Kyiv Digital alert-history data for alert boundaries. No average is published.</p>
 <p class="note">Working chronology, newest first by date. Entries without a verified time are not necessarily ordered within the day. Compiled by abd<span class="brand-y">y</span>mok. This page tracks attacks and damage affecting Kyiv's transport, energy-generation and other critical physical infrastructure, with selected Ukrainian regional and scientific-infrastructure entries included where they materially document the same attack pattern. Individual facilities are listed only where a strike, damage, or official/credible attribution can be documented. Reported weapon types, impact locations and casualty information remain provisional where authorities have not confirmed them.</p>
 </main>
 

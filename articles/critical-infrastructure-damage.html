@@ -37,28 +37,6 @@
   .nuclear-section .source-note{margin-top:20px;color:var(--muted);font-size:13px}.note{margin-top:32px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
   @media(max-width:680px){body{padding:38px 18px 54px}h1{font-size:29px}table,thead,tbody,tr,th,td{display:block}thead{display:none}tr{padding:18px 0;border-bottom:1px solid var(--rule)}
   td{border:0;padding:2px 0}td:first-child{width:auto;color:var(--muted);font-size:12px;letter-spacing:.02em}td:nth-child(2){width:auto;margin-bottom:4px}}
-
-  .dashboard{margin:0 0 28px;padding:12px 0 15px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
-  .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:11px;letter-spacing:.08em}
-  .dashboard-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-  .dashboard-item{min-width:0;padding:2px 16px 0;border-left:1px solid var(--rule)}
-  .dashboard-item:first-child{padding-left:0;border-left:0}
-  .dashboard-label{margin:0 0 7px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  .dashboard-value{margin:0 0 5px;font-size:clamp(20px,2.2vw,29px);font-weight:400;line-height:1.12;letter-spacing:-.025em;overflow-wrap:anywhere}
-  .dashboard-detail,.dashboard-status,.dashboard-source{margin:3px 0;font-size:12px;line-height:1.35}
-  .dashboard-detail,.dashboard-source{color:var(--muted)}
-  .dashboard-status{color:var(--ink)}
-  .dashboard-source a{text-underline-offset:2px}
-  @media(max-width:680px){
-    .dashboard{margin-bottom:26px}
-    .dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:15px}
-    .dashboard-item{padding:0 12px}
-    .dashboard-item:nth-child(odd){padding-left:0;border-left:0}
-    .dashboard-item:nth-child(even){padding-right:0}
-    .dashboard-value{font-size:23px}
-  }
-  @media(max-width:360px){.dashboard-grid{grid-template-columns:1fr}.dashboard-item{padding:0;border-left:0}.dashboard-value{font-size:25px}}
-
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHP16V6HE8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-VHP16V6HE8',{linker:{domains:['abdymok.substack.com']}});</script>
@@ -103,63 +81,6 @@ if ('serviceWorker' in navigator) {
 <p class="updated">Last updated: 10 October 2026, morning Kyiv time <button class="refresh" type="button" aria-label="Refresh" title="Refresh" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r?r.update():null).finally(()=>location.reload())}else{location.reload()}">↻</button></p>
 
 <nav class="tracker-nav" aria-label="Trackers"><a href="/40/articles/critical-infrastructure-damage.html">Infrastructure</a> · <a href="/40/articles/data-center-damage.html">Data centers</a> · <a href="/mural/">Mural</a> · <a href="#oct10-arithmetic">Dispatch</a> · <a href="#chronology">Chronology</a> · <a href="#open-threads">Open threads</a> · <a href="#nuclear">Nuclear</a></nav>
-
-
-<section class="dashboard" aria-label="Infrastructure dashboard" aria-describedby="dashboard-meta">
-  <p class="dashboard-meta" id="dashboard-meta">OCTOBER 1–10, 2026 · <span id="dashboard-updated">10 October 2026 · morning Kyiv time</span></p>
-  <div class="dashboard-grid">
-    <div class="dashboard-item" data-measure="alerts">
-      <p class="dashboard-label">Alerts</p>
-      <p class="dashboard-value">Under review</p>
-      <p class="dashboard-detail">Oct. 1–9 total withheld</p>
-      <p class="dashboard-status">Trackers disagree</p>
-      <p class="dashboard-source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alerts.in.ua</a></p>
-    </div>
-    <div class="dashboard-item" data-measure="alert-hours">
-      <p class="dashboard-label">Time under alert</p>
-      <p class="dashboard-value">11h 34m–12h 30m</p>
-      <p class="dashboard-detail">Oct. 8 · competing totals</p>
-      <p class="dashboard-status">Under review</p>
-      <p class="dashboard-source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alert history</a></p>
-    </div>
-    <div class="dashboard-item" data-measure="facilities">
-      <p class="dashboard-label">Distinct facilities</p>
-      <p class="dashboard-value">Count pending</p>
-      <p class="dashboard-detail">Repeated strikes count once</p>
-      <p class="dashboard-status">Definition in progress</p>
-      <p class="dashboard-source">Source: <a href="#chronology">infrastructure chronology</a></p>
-    </div>
-    <div class="dashboard-item" data-measure="civilian-deaths">
-      <p class="dashboard-label">Civilians killed</p>
-      <p class="dashboard-value">Reconciliation pending</p>
-      <p class="dashboard-detail">Kyiv and elsewhere to be separated</p>
-      <p class="dashboard-status">Not a national total</p>
-      <p class="dashboard-source">Source: <a href="#chronology">reported entries on this page</a></p>
-    </div>
-  </div>
-</section>
-<script>
-(function(){
-  fetch('../data/dashboard.json',{cache:'no-store'})
-    .then(function(response){if(!response.ok)throw new Error('Dashboard data unavailable');return response.json();})
-    .then(function(data){
-      var updated=document.getElementById('dashboard-updated');
-      if(updated && data.updated) updated.textContent=data.updated;
-      (data.measures||[]).forEach(function(item){
-        var card=document.querySelector('[data-measure="'+item.id+'"]');
-        if(!card)return;
-        var value=card.querySelector('.dashboard-value');
-        var detail=card.querySelector('.dashboard-detail');
-        var status=card.querySelector('.dashboard-status');
-        var source=card.querySelector('.dashboard-source a');
-        if(value && item.value) value.textContent=item.value;
-        if(detail && item.detail) detail.textContent=item.detail;
-        if(status && item.status) status.textContent=item.status;
-        if(source && item.source){source.textContent=item.source;if(item.sourceUrl)source.href=item.sourceUrl;}
-      });
-    }).catch(function(){});
-})();
-</script>
 
 <section class="special-close" id="oct10-arithmetic" aria-label="October 10 dispatch: The arithmetic of inconvenience">
 <figure class="attack-graphic" style="margin:0 0 18px;max-width:760px">

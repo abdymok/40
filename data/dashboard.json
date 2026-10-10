@@ -1,0 +1,42 @@
+{
+  "period": "OCTOBER 1–10, 2026",
+  "updated": "10 October 2026 · morning Kyiv time",
+  "measures": [
+    {
+      "id": "alerts",
+      "label": "Alerts",
+      "value": "Under review",
+      "detail": "Oct. 1–9 total withheld",
+      "status": "Trackers disagree",
+      "source": "alerts.in.ua",
+      "sourceUrl": "https://alerts.in.ua/"
+    },
+    {
+      "id": "alert-hours",
+      "label": "Time under alert",
+      "value": "11h 34m–12h 30m",
+      "detail": "Oct. 8 · competing totals",
+      "status": "Under review",
+      "source": "Alert-history notes",
+      "sourceUrl": "#air-alert-history"
+    },
+    {
+      "id": "facilities",
+      "label": "Distinct facilities",
+      "value": "Count pending",
+      "detail": "Repeated strikes count once",
+      "status": "Definition in progress",
+      "source": "Infrastructure chronology",
+      "sourceUrl": "#chronology"
+    },
+    {
+      "id": "civilian-deaths",
+      "label": "Civilians killed",
+      "value": "Reconciliation pending",
+      "detail": "Kyiv and elsewhere to be separated",
+      "status": "Not a national total",
+      "source": "Reported entries on this page",
+      "sourceUrl": "#chronology"
+    }
+  ]
+}

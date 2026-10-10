@@ -1,6 +1,6 @@
 {
-  "period": "OCTOBER 1–10, 2026",
-  "updated": "10 October 2026 · live tracker check",
+  "period": "SEPTEMBER 28–OCTOBER 10, 2026",
+  "updated": "10 October 2026 · working estimate",
   "measures": [
     {
       "id": "alerts",
@@ -32,11 +32,11 @@
     {
       "id": "civilian-deaths",
       "label": "Civilians killed",
-      "value": "Reconciliation pending",
-      "detail": "Kyiv and elsewhere to be separated",
-      "status": "Not a national total",
-      "source": "Reported entries on this page",
-      "sourceUrl": "#chronology"
+      "value": "≈64",
+      "detail": "Approx. reported deaths in incidents logged here",
+      "status": "Working estimate · updated daily",
+      "source": "Incident-level reports on this page",
+      "sourceUrl": "#civilian-deaths-method"
     }
   ]
 }

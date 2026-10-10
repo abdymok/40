@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter">
+  <title>Method</title>
+  <!-- four counted strokes -->
+  <path d="M2.5 2 V14"/>
+  <path d="M6 2 V14"/>
+  <path d="M9.5 2 V14"/>
+  <path d="M13 2 V14"/>
+  <!-- the fifth: crosses the four, closing the count -->
+  <path d="M1 11 L15 5"/>
+</svg>

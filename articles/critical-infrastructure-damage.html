@@ -40,7 +40,7 @@
 
   .dashboard{margin:0 0 28px;padding:12px 0 15px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
   .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:12px;letter-spacing:.08em}
-  .dashboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}.dashboard-item:nth-child(3){border-left:0;padding-left:0}
+  .dashboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}.dashboard-item:nth-child(3),.dashboard-item:nth-child(5){border-left:0;padding-left:0}
   .dashboard-item{min-width:0;padding:2px 16px 0;border-left:1px solid var(--rule)}
   .dashboard-item:first-child{padding-left:0;border-left:0}
   .dashboard-label{margin:0 0 7px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
@@ -129,6 +129,13 @@ if ('serviceWorker' in navigator) {
       <p class="dashboard-status">Definition in progress</p>
       <p class="dashboard-source">Source: <a href="#chronology">infrastructure chronology</a></p>
     </div>
+    <div class="dashboard-item" data-measure="elections">
+      <p class="dashboard-label">Days until U.S. midterms</p>
+      <p class="dashboard-value" id="election-countdown">24</p>
+      <p class="dashboard-detail">November 3, 2026</p>
+      <p class="dashboard-status">U.S. midterm elections</p>
+      <p class="dashboard-source">Election Day: <a href="https://www.usa.gov/election" target="_blank" rel="noopener">USA.gov</a></p>
+    </div>
     <div class="dashboard-item" data-measure="civilian-deaths">
       <p class="dashboard-label">Civilians killed</p>
       <p class="dashboard-value">Reconciliation pending</p>
@@ -166,6 +173,16 @@ if ('serviceWorker' in navigator) {
         }
       });
     }).catch(function(error){console.warn('Infrastructure dashboard data could not be loaded.',error);});
+})();
+</script>
+<script>
+(function(){
+  var output=document.getElementById('election-countdown');
+  if(!output)return;
+  var now=new Date();
+  var today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
+  var electionDay=Date.UTC(2026,10,3);
+  output.textContent=String(Math.max(0,Math.ceil((electionDay-today)/86400000)));
 })();
 </script>
 

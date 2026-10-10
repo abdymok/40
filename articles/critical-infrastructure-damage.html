@@ -25,7 +25,7 @@
   .source{margin-top:9px;font-size:12px;color:var(--muted)}.source a{margin-left:4px}
   .status{display:block;margin-bottom:5px;font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
   details{margin-top:10px;font-size:13px;color:var(--muted)}summary{cursor:pointer;color:var(--ink)}
-  .open-threads{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--rule)}.open-threads p{margin:6px 0;font-size:14px;color:var(--muted)}  .corrections{margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
+  .open-threads{margin:56px 0 0;padding-top:18px;border-top:1px solid var(--rule)}.open-threads p{margin:6px 0;font-size:14px;color:var(--muted)}  .page-update-notice{padding:10px 12px;border:1px solid var(--rule);font-size:14px;margin:0 0 18px}.page-update-notice a{text-underline-offset:3px}.corrections{margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
   .dek{margin:0 0 8px;color:var(--muted);font-size:16px}.live-label{margin:24px 0 4px;font-size:15px;letter-spacing:.02em}.live-red{color:#b00000}.live-date{margin:0 0 12px;color:var(--muted);font-size:14px}.live-intro{max-width:760px;margin:5px 0;font-size:15px}.alert-summary{margin:38px 0 54px;padding:18px 0 20px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:500px}
   .alert-rule{display:none}.alert-kicker{margin:0 0 10px;font-size:11px;letter-spacing:.16em;color:var(--muted)}
   .alert-number{font-size:84px;line-height:.9;font-weight:400;letter-spacing:-.04em}.alert-label{margin-top:7px;font-size:18px}
@@ -84,23 +84,19 @@ if ('serviceWorker' in navigator) {
     try{
       const response=await fetch(location.href,{cache:'no-store'});
       if(!response.ok)return;
-      const html=await response.text();
-      const current=document.documentElement.outerHTML;
-      const a=(current.match(/Last updated: [^<]+/)||[])[0];
-      const b=(html.match(/Last updated: [^<]+/)||[])[0];
-      if(a && b && a!==b) location.reload();
+      const fresh=await response.text();
+      const currentStamp=(document.documentElement.outerHTML.match(/Last updated: [^<]+/)||[])[0];
+      const freshStamp=(fresh.match(/Last updated: [^<]+/)||[])[0];
+      if(currentStamp && freshStamp && currentStamp!==freshStamp && !document.getElementById('page-update-notice')){
+        const notice=document.createElement('p');
+        notice.id='page-update-notice';notice.className='page-update-notice';
+        notice.innerHTML='This page has been updated. <a href="'+location.href+'">Reload to see the latest version</a>.';
+        document.querySelector('main').prepend(notice);
+      }
     }catch(e){}
   }
-  document.addEventListener('visibilitychange',()=>{
-    if(document.visibilityState==='visible') checkForFreshPage();
-  });
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')checkForFreshPage()});
   window.addEventListener('pageshow',checkForFreshPage);
-})();
-</script><script>
-(function(){
-  function pauseEvidenceVideos(){ document.querySelectorAll('.evidence-video video').forEach(function(video){ video.pause(); }); }
-  window.addEventListener('load', pauseEvidenceVideos);
-  document.addEventListener('DOMContentLoaded', pauseEvidenceVideos);
 })();
 </script>
 </head>

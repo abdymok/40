@@ -35,16 +35,16 @@
   th:nth-child(2),td:nth-child(2){width:205px}td:nth-child(2){font-weight:500}.brand-y{color:#d00}a{color:inherit}
   h2{margin:56px 0 18px;font-size:25px;font-weight:400;line-height:1.2;letter-spacing:-.01em}.nuclear-section p{margin:0 0 17px;font-size:15px}
   .nuclear-section .source-note{margin-top:20px;color:var(--muted);font-size:13px}.note{margin-top:32px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
-  @media(max-width:680px){body{padding:38px 18px 54px}h1{font-size:29px}table,thead,tbody,tr,th,td{display:block}thead{display:none}tr{padding:18px 0;border-bottom:1px solid var(--rule)}
+  @media(max-width:900px){body{padding:38px 18px 54px}h1{font-size:29px}table,thead,tbody,tr,th,td{display:block}thead{display:none}tr{padding:18px 0;border-bottom:1px solid var(--rule)}
   td{border:0;padding:2px 0}td:first-child{width:auto;color:var(--muted);font-size:12px;letter-spacing:.02em}td:nth-child(2){width:auto;margin-bottom:4px}}
 
   .dashboard{margin:0 0 28px;padding:12px 0 15px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
-  .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:11px;letter-spacing:.08em}
+  .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:12px;letter-spacing:.08em}
   .dashboard-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
   .dashboard-item{min-width:0;padding:2px 16px 0;border-left:1px solid var(--rule)}
   .dashboard-item:first-child{padding-left:0;border-left:0}
-  .dashboard-label{margin:0 0 7px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  .dashboard-value{margin:0 0 5px;font-size:clamp(20px,2.2vw,29px);font-weight:400;line-height:1.12;letter-spacing:-.025em;overflow-wrap:anywhere}
+  .dashboard-label{margin:0 0 7px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .dashboard-value{margin:0 0 5px;font-size:clamp(20px,2.2vw,29px);font-weight:400;line-height:1.12;letter-spacing:-.025em;overflow-wrap:break-word}
   .dashboard-detail,.dashboard-status,.dashboard-source{margin:3px 0;font-size:12px;line-height:1.35}
   .dashboard-detail,.dashboard-source{color:var(--muted)}
   .dashboard-status{color:var(--ink)}
@@ -57,7 +57,7 @@
     .dashboard-item:nth-child(even){padding-right:0}
     .dashboard-value{font-size:23px}
   }
-  @media(max-width:360px){.dashboard-grid{grid-template-columns:1fr}.dashboard-item{padding:0;border-left:0}.dashboard-value{font-size:25px}}
+  @media(max-width:360px){.dashboard-grid{grid-template-columns:1fr;row-gap:0}.dashboard-item{padding:12px 0;border-left:0;border-top:1px solid var(--rule)}.dashboard-item:first-child{padding-top:0;border-top:0}.dashboard-value{font-size:25px}}
 
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHP16V6HE8"></script>
@@ -106,7 +106,7 @@ if ('serviceWorker' in navigator) {
 
 
 <section class="dashboard" aria-label="Infrastructure dashboard" aria-describedby="dashboard-meta">
-  <p class="dashboard-meta" id="dashboard-meta">OCTOBER 1–10, 2026 · <span id="dashboard-updated">10 October 2026 · morning Kyiv time</span></p>
+  <p class="dashboard-meta" id="dashboard-meta"><span id="dashboard-period">OCTOBER 1–10, 2026</span> · <span id="dashboard-updated">10 October 2026 · morning Kyiv time</span></p>
   <div class="dashboard-grid">
     <div class="dashboard-item" data-measure="alerts">
       <p class="dashboard-label">Alerts</p>
@@ -117,8 +117,8 @@ if ('serviceWorker' in navigator) {
     </div>
     <div class="dashboard-item" data-measure="alert-hours">
       <p class="dashboard-label">Time under alert</p>
-      <p class="dashboard-value">11h 34m–12h 30m</p>
-      <p class="dashboard-detail">Oct. 8 · competing totals</p>
+      <p class="dashboard-value">Under review</p>
+      <p class="dashboard-detail">Oct. 8 · totals not reconciled</p>
       <p class="dashboard-status">Under review</p>
       <p class="dashboard-source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alert history</a></p>
     </div>
@@ -144,7 +144,9 @@ if ('serviceWorker' in navigator) {
     .then(function(response){if(!response.ok)throw new Error('Dashboard data unavailable');return response.json();})
     .then(function(data){
       var updated=document.getElementById('dashboard-updated');
-      if(updated && data.updated) updated.textContent=data.updated;
+      var period=document.getElementById('dashboard-period');
+      if(updated && typeof data.updated === 'string') updated.textContent=data.updated;
+      if(period && typeof data.period === 'string') period.textContent=data.period;
       (data.measures||[]).forEach(function(item){
         var card=document.querySelector('[data-measure="'+item.id+'"]');
         if(!card)return;
@@ -152,12 +154,18 @@ if ('serviceWorker' in navigator) {
         var detail=card.querySelector('.dashboard-detail');
         var status=card.querySelector('.dashboard-status');
         var source=card.querySelector('.dashboard-source a');
-        if(value && item.value) value.textContent=item.value;
-        if(detail && item.detail) detail.textContent=item.detail;
-        if(status && item.status) status.textContent=item.status;
-        if(source && item.source){source.textContent=item.source;if(item.sourceUrl)source.href=item.sourceUrl;}
+        if(value && typeof item.value === 'string') value.textContent=item.value;
+        if(detail && typeof item.detail === 'string') detail.textContent=item.detail;
+        if(status && typeof item.status === 'string') status.textContent=item.status;
+        if(source && typeof item.source === 'string' && typeof item.sourceUrl === 'string' && item.sourceUrl){
+          source.textContent=item.source;
+          source.href=item.sourceUrl;
+          var external=new URL(item.sourceUrl,location.href).origin!==location.origin;
+          if(external){source.target='_blank';source.rel='noopener';}
+          else{source.removeAttribute('target');source.removeAttribute('rel');}
+        }
       });
-    }).catch(function(){});
+    }).catch(function(error){console.warn('Infrastructure dashboard data could not be loaded.',error);});
 })();
 </script>
 

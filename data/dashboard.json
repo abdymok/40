@@ -1,24 +1,24 @@
 {
   "period": "OCTOBER 1–10, 2026",
-  "updated": "10 October 2026 · morning Kyiv time",
+  "updated": "10 October 2026 · live tracker check",
   "measures": [
     {
       "id": "alerts",
       "label": "Alerts",
-      "value": "Under review",
-      "detail": "Oct. 1–9 total withheld",
-      "status": "Trackers disagree",
-      "source": "alerts.in.ua",
-      "sourceUrl": "https://alerts.in.ua/"
+      "value": "73",
+      "detail": "October 1–10 · Kyiv",
+      "status": "Mean of two live tracker readings",
+      "source": "Kyiv alert trackers",
+      "sourceUrl": "https://alerts.khanoff.com/en"
     },
     {
       "id": "alert-hours",
       "label": "Time under alert",
-      "value": "Under review",
-      "detail": "Oct. 8 · totals not reconciled",
-      "status": "Under review",
-      "source": "Alert-history notes",
-      "sourceUrl": "https://alerts.in.ua/"
+      "value": "2d 12h",
+      "detail": "October 1–10 · Kyiv",
+      "status": "Mean of two live tracker readings",
+      "source": "Kyiv alert trackers",
+      "sourceUrl": "https://chotchaev.com/en"
     },
     {
       "id": "facilities",

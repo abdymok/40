@@ -42,8 +42,8 @@
 
   .dashboard{margin:0 0 28px;padding:12px 0 15px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
   .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:13px;letter-spacing:.04em;display:flex;align-items:center;gap:8px;flex-wrap:wrap;overflow-wrap:anywhere}
-  .dashboard-method{display:inline-flex;align-items:center;flex:0 0 auto;margin:0;vertical-align:middle;color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:0;text-transform:none}
-  .dashboard-method{min-height:44px;justify-content:center}.dashboard-method:hover,.dashboard-method:focus-visible{color:var(--ink);text-decoration:underline}
+  .dashboard-method{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;margin:0;vertical-align:middle;text-decoration:none;min-width:24px;min-height:24px}
+  .dashboard-method img{display:block;width:20px;height:20px}.dashboard-method:hover,.dashboard-method:focus-visible{opacity:.65}
   .dashboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}
   .dashboard-item{min-width:0;padding:2px 16px 0;border-left:1px solid var(--rule)}
   .dashboard-item:nth-child(odd){padding-left:0;border-left:0}
@@ -109,7 +109,7 @@ if ('serviceWorker' in navigator) {
 
 
 <section class="dashboard" aria-label="Infrastructure dashboard" aria-describedby="dashboard-meta">
-<p class="dashboard-meta" id="dashboard-meta">OCT 1–10, 2026 · WORKING FIGURES <a class="dashboard-method" href="#facilities-count-method" aria-label="Dashboard methodology" title="Dashboard methodology">Method</a></p>
+<p class="dashboard-meta" id="dashboard-meta">OCT 1–10, 2026 · WORKING FIGURES <a class="dashboard-method" href="#facilities-count-method" aria-label="Dashboard methodology" title="Dashboard methodology"><img src="method.svg" alt="" width="20" height="20"></a></p>
 <div class="dashboard-grid">
 <div class="dashboard-item" data-measure="sites-hit">
 <p class="dashboard-label">Sites hit</p><p class="dashboard-value">20+</p>

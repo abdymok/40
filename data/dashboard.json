@@ -14,11 +14,11 @@
     {
       "id": "alert-hours",
       "label": "Time under alert",
-      "value": "11h 34m–12h 30m",
-      "detail": "Oct. 8 · competing totals",
+      "value": "Under review",
+      "detail": "Oct. 8 · totals not reconciled",
       "status": "Under review",
       "source": "Alert-history notes",
-      "sourceUrl": "#air-alert-history"
+      "sourceUrl": "https://alerts.in.ua/"
     },
     {
       "id": "facilities",

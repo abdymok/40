@@ -83,6 +83,7 @@
   #chronology .entry-body .evidence-video{width:min(100%,720px);max-width:720px}
   #chronology .entry-body video{display:block;width:auto!important;max-width:100%;max-height:min(78vh,720px);height:auto;background:#111}
   #chronology .entry-body img{max-width:100%;height:auto}
+  #chronology .entry-body img.landscape-evidence{display:block;width:min(100%,720px);max-width:720px;height:auto}
   .chronology-supporting-material{margin:36px 0 0;padding-top:22px;border-top:1px solid var(--ink)}
   .chronology-supporting-material .special-close{max-width:720px}
   .chronology-supporting-material .video-archive{max-width:980px}
@@ -830,6 +831,17 @@ Your browser does not support embedded video. <a href="../evidence/metro_medium_
 <p class="note">Working chronology, newest first by date. Entries without a verified time are not necessarily ordered within the day. Compiled by abd<span class="brand-y">y</span>mok. This page tracks attacks and damage affecting Kyiv's transport, energy-generation and other critical physical infrastructure, with selected Ukrainian regional and scientific-infrastructure entries included where they materially document the same attack pattern. Individual facilities are listed only where a strike, damage, or official/credible attribution can be documented. Reported weapon types, impact locations and casualty information remain provisional where authorities have not confirmed them.</p>
 <footer class="evidence-key-footer" id="evidence-and-source-labels"><strong>Evidence and source labels:</strong> official report · official statement · operator notice(s) · operator-reported · company-reported · media report · eyewitness / eyewitness report · attributed report · attributed local report · local Telegram report · municipal statement · video evidence · Russian MoD claim · unverified · tracker comparison · alert-history record · petition / expert warnings · editorial estimate / our inference · related dispatch. Compound labels combine these categories. An official report records a specific event or figure attributed to an authority. An official statement records a broader official assessment or claim not independently established in this chronology. “Editorial estimate / our inference” identifies a synthesis made by this project rather than a single source’s reported figure. Labels identify the source or evidentiary basis of an entry and do not by themselves imply independent confirmation.</footer>
 </main>
+<script>
+(function(){
+  function sizeLandscapeImage(img){
+    if(img.naturalWidth > img.naturalHeight) img.classList.add('landscape-evidence');
+  }
+  document.querySelectorAll('#chronology .entry-body img').forEach(function(img){
+    if(img.complete) sizeLandscapeImage(img);
+    else img.addEventListener('load',function(){sizeLandscapeImage(img)},{once:true});
+  });
+})();
+</script>
 
 
 

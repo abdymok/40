@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infrastructure chronology — maintenance SOP | abdymok / 40</title>
+<meta name="description" content="Standard operating procedure for maintaining the abdymok / 40 infrastructure chronology, dashboard, evidence and house style.">
+<style>
+:root{color-scheme:light;--ink:#171717;--muted:#666;--rule:#d7d7d7}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Spectral",Georgia,serif;font-size:18px;line-height:1.55}
+main{width:min(850px,calc(100% - 36px));margin:36px auto 80px}
+h1{font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.1;margin:0 0 10px}
+h2{font-size:1.55rem;font-weight:500;line-height:1.2;margin:2.1em 0 .45em;padding-top:.45em;border-top:1px solid var(--rule)}
+h3{font-size:1.12rem;font-weight:600;margin:1.25em 0 .3em}
+p{margin:.55em 0 .85em}
+.dek{font-size:1.1rem;color:var(--muted);margin:0 0 1.2em}
+nav{font-size:.94rem;margin:1.2em 0 2em}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+.rule{border-left:2px solid var(--ink);padding:.25em 0 .25em 1em;margin:1.2em 0}
+ul,ol{padding-left:1.35em}
+li{margin:.3em 0}
+strong{font-weight:600}
+code{font-size:.88em;overflow-wrap:anywhere}
+footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var(--muted);font-size:.9rem}
+@media(max-width:600px){main{margin-top:24px}body{font-size:17px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Infrastructure chronology: maintenance SOP</h1>
+<p class="dek">Standard operating procedure · abdymok / 40</p>
+<nav aria-label="Project links"><a href="/40/articles/critical-infrastructure-damage.html">Infrastructure chronology</a> · <a href="/40/articles/data-center-damage.html">Data centers</a> · <a href="/40/">40 home</a></nav>
+
+<p>This is the operating manual for updating the infrastructure HTML. It applies to every new chronology entry, correction, media change and dashboard revision. The public chronology remains the live record. This SOP governs how that record is maintained.</p>
+<div class="rule"><strong>Governing principle:</strong> the record accumulates. Add what the evidence supports, preserve what remains relevant, correct what is wrong, mark what is uncertain. Restraint trumps flourish.</div>
+
+<h2>1. The mandatory update cycle</h2>
+<ol>
+<li><strong>Inspect the current source.</strong> Fetch the latest version from the repository before editing. Do not assume a local or previously fetched copy is current.</li>
+<li><strong>Establish the evidence.</strong> Check the event date, location, source, consequences and any available photograph, recording, video or primary document. Distinguish a reported claim from independently established fact.</li>
+<li><strong>Add the chronology entry.</strong> Use the existing HTML structure and classes. Put the newest item first. Keep older entries unless a correction or removal is justified.</li>
+<li><strong>Reconcile the entire dashboard.</strong> This is mandatory for every new entry, correction or material revision. Check every metric against the chronology and its defined scope. Update affected figures, periods and explanatory notes in the same change. If a metric is unaffected, confirm that. The entry and dashboard check are one unit of work.</li>
+<li><strong>Reconcile methodology.</strong> Ensure that the dashboard’s notes, source labels and counting rules still explain the displayed values. Do not let the number and its caveat contradict each other.</li>
+<li><strong>Check media and links.</strong> Confirm image paths, captions, alt text, provenance, video playback and source URLs. A replacement must update the media, caption and attribution together.</li>
+<li><strong>Inspect the whole page.</strong> Check chronology order, prior entries, dashboard consistency, HTML structure, mobile presentation and accidental unrelated changes.</li>
+<li><strong>Commit and verify.</strong> Commit to the intended branch. Confirm the repository change, then check the published GitHub Pages page when available. A commit and a successful live publication are separate facts.</li>
+<li><strong>Report the result.</strong> State what changed, which metrics were reconciled, what remains provisional, and provide the commit and live-page links. Never claim a step succeeded before verifying it.</li>
+</ol>
+<p><strong>No chronology update without a dashboard check. No dashboard change without a defensible basis in the record.</strong> Do not leave the dashboard stale while waiting for perfect information. Where a figure is not yet verifiable, label it provisional and say what remains outstanding.</p>
+
+<h2>2. Evidence and attribution</h2>
+<ul>
+<li>Prefer relevant primary sources: emergency services, municipal or regional authorities, utility operators and identifiable original statements. Use reputable reporting to corroborate and contextualise.</li>
+<li>Attribute claims precisely. A source establishes that a claim was made; it does not automatically establish every detail in that claim.</li>
+<li>Separate observed facts, attributed reports, corroborated findings, working estimates and unresolved questions.</li>
+<li>Do not invent sources, URLs, times, casualty totals, alert durations or damage assessments.</li>
+<li>Do not infer damage to an entire facility from evidence of a strike on one component. Distinguish a strike, damage, service interruption and a confirmed operational consequence.</li>
+<li>When evidence changes, revise the relevant entry and any dashboard or methodology text affected by it. Preserve the history unless there is a clear reason to remove material.</li>
+</ul>
+
+<h2>3. Dashboard: definitions and reconciliation</h2>
+<p>The dashboard summarises the chronology; it is not an independent source of truth. Every metric must have a defined meaning, reporting period and counting method. Keep those definitions stable. If a definition changes, document the change instead of silently comparing unlike totals.</p>
+<h3>Deaths and injuries</h3>
+<ul>
+<li>Specify the population counted and the reporting period. Keep deaths distinct from injuries.</li>
+<li>Avoid counting the same person more than once as reports are updated.</li>
+<li>Attribute revised figures. Make clear when a changed total rests on a new report not yet linked or independently corroborated.</li>
+<li>Do not imply that a selected-incident chronology captures every direct or indirect death, or that its subtotal is a national total.</li>
+</ul>
+<h3>Sites, facilities and infrastructure categories</h3>
+<ul>
+<li>Define what counts as an entry, site, facility, strike or incident. A chronology-entry count is not necessarily a count of physical sites.</li>
+<li>Do not count one facility multiple times unless the published methodology explicitly allows it. Do not merge distinct incidents merely because they affect the same city or system.</li>
+<li>Keep category definitions consistent. An attempted strike, a confirmed hit, physical damage and loss of service are different claims.</li>
+</ul>
+<h3>Air alerts and alert-hours</h3>
+<ul>
+<li>Treat alert counts and elapsed alert-hours as separate metrics.</li>
+<li>State which geography and tracker or counting method the figure covers. Region-wide, city-level and overlapping alerts may not be comparable.</li>
+<li>Firsthand observations may precede or conflict with tracker records. Record the observation accurately and investigate the discrepancy; do not force it to fit the tracker.</li>
+<li>A newly reported alert may be included provisionally before the public aggregate refreshes, but label the count and explain the pending reconciliation.</li>
+<li>Never guess a start time, end time or duration. Keep the last verified aggregate identified as a dated snapshot until the new interval can be checked.</li>
+</ul>
+<p>Provisional figures are acceptable when their basis and limits are visible. False precision is not. Every metric affected by an update must be reconciled before the change is committed.</p>
+
+<h2>4. Chronology structure and writing</h2>
+<ul>
+<li>Order entries newest first. Use the most precise date or time the evidence supports, no more.</li>
+<li>Give each entry a location or infrastructure label, concise status/source label, specific heading, short factual account and direct source links.</li>
+<li>Keep paragraphs short and concrete. Prefer specific nouns and verbs to broad characterisations.</li>
+<li>Do not make every incident read like a dispatch. The HTML is an ongoing, evidence-led record that complements the regular Ukraine@war Substack dispatches.</li>
+<li>Do not delete older entries to make room for new ones. Do not rewrite history silently.</li>
+<li>When correcting a consequential figure or interpretation, update the relevant explanatory note as well as the entry.</li>
+</ul>
+
+<h2>5. Media and evidence files</h2>
+<h3>Photographs</h3>
+<ul>
+<li>Use the appropriate original or working copy. Establish what the image shows and who supplied or published it.</li>
+<li>Write a factual cutline that does not exceed what is known. Add meaningful alt text and clear source attribution.</li>
+<li>When provenance is established, identify the State Emergency Service of Ukraine (ДСНС) as the source of its photographs.</li>
+<li>Do not treat a photograph alone as proof of an unshown casualty count, exact location or full extent of damage.</li>
+</ul>
+<h3>Audio and video</h3>
+<ul>
+<li>Record time, location and circumstances when known. Describe what is audible or visible without automatically assigning a specific cause to an ambiguous sound.</li>
+<li>Use media when it adds evidence or context. Check playback on mobile as well as desktop.</li>
+<li>The lead media window may rotate between suitable images and video. Replace it intentionally, updating the caption, alt text and source together.</li>
+<li>Before removing or replacing media, check current uses and dependencies. Do not archive every clip merely because it was once embedded, and do not remove an asset that the page still relies on.</li>
+</ul>
+
+<h2>6. House style: standing corrections</h2>
+<p>These are project-wide rules. Apply them on every pass; do not reintroduce spellings the editor has already corrected.</p>
+<ul>
+<li><strong>Transliteration:</strong> the ending <code>-yi</code> becomes <code>-y</code>. Use <strong>Darnytsky</strong>, never Darnytskyi. Apply the same rule consistently to the relevant Ukrainian place and district names.</li>
+<li><strong>City:</strong> Kyiv, never Kiev.</li>
+<li><strong>Region/city:</strong> Zaporizhia, never Zaporizhzhia.</li>
+<li><strong>President:</strong> Zelensky, not Zelenskyy. Use <strong>President Z</strong> on first reference when needed, then <strong>Z</strong>. Do not use “Vova.”</li>
+<li><strong>Language:</strong> direct, economical, unsentimental. Attribute statements. Avoid repetitive “official report” labels when the source is already identified.</li>
+<li>Do not use “resilience” in public-facing Ukraine infrastructure copy.</li>
+<li>Do not add a “bright side” or an upbeat gloss to reports of death, damage or disruption.</li>
+<li>Do not use decorative language to make events sound more dramatic. Restraint trumps flourish.</li>
+</ul>
+<h3>Interfax-Ukraine copy, when specifically requested</h3>
+<ul>
+<li>No bold text.</li>
+<li>Slug in ALL CAPS with hyphens.</li>
+<li>Dateline format: <code>KYIV. Oct 2 (Interfax-Ukraine) -</code></li>
+<li>No semicolons.</li>
+<li>Use house currency style, for example <code>EUR 45 bln</code>.</li>
+<li>Apply the editor’s preferred spellings, including Zelensky and the relevant <code>-y</code> endings.</li>
+</ul>
+<p>Do not impose Interfax dispatch formatting on the infrastructure HTML. The HTML has its own established structure.</p>
+
+<h2>7. Visual and technical rules</h2>
+<ul>
+<li>Preserve the existing restrained design: white background, Spectral serif, black-and-white or minimal colour, quiet hover treatment.</li>
+<li>No decorative cards, gradients, gratuitous animation or new visual systems during routine updates.</li>
+<li>Dashboard numerals should remain easy to scan. Keep icons aligned with the existing layout.</li>
+<li>Use the dashboard method graphic once, in its intended position beneath the dashboard title. Do not duplicate it in multiple boxes.</li>
+<li>Check mobile rendering and media sizing. Do not redesign unrelated sections to accommodate one new item.</li>
+<li>Make targeted edits. Preserve existing HTML structure, IDs, anchors, source links and historical entries unless a change is intentional and checked.</li>
+</ul>
+
+<h2>8. Links and publication</h2>
+<ul>
+<li>Link directly to the relevant report, statement, recording or project page where possible. Avoid unnecessary redirects and tracking parameters.</li>
+<li>Open each new link and confirm it supports the attached claim. Distinguish the date of publication from the date of the event.</li>
+<li>A general institutional homepage is not equivalent to the specific report. If it is the only available reference, make that limitation clear.</li>
+<li>If a source disappears, preserve the historical entry and seek accessible corroboration. Do not pretend a broken link remains useful.</li>
+<li>After the commit, inspect the changed repository file and the live page when publication has propagated. Check image paths and the full page, not just the new paragraph.</li>
+</ul>
+
+<h2>9. Pre-commit checklist</h2>
+<ul>
+<li>Current repository version inspected.</li>
+<li>Event, date, location, attribution and source claims checked.</li>
+<li>Uncertainty and provisional values labelled.</li>
+<li>New entry placed first; older entries preserved.</li>
+<li><strong>Every dashboard metric checked against the new or revised entry.</strong></li>
+<li>Affected dashboard values, reporting periods and methodology notes reconciled in the same change.</li>
+<li>Images, audio, video, cutlines, alt text and source attribution checked.</li>
+<li>Links, relative paths, anchors and HTML structure checked.</li>
+<li>Standing spellings and house style applied.</li>
+<li>No unrelated redesign or accidental regression.</li>
+<li>Commit confirmed; live publication checked or explicitly marked pending.</li>
+</ul>
+
+<h2>10. Handover to the editor</h2>
+<p>Keep the update report short and factual: what changed, which dashboard metrics were checked or changed, what remains provisional, whether media or links changed, the commit link, and the live-page link with its verification status.</p>
+<div class="rule"><strong>Final rule:</strong> the chronology and dashboard are one maintained record. Every entry triggers a dashboard check. Every figure must be defensible. Every update must leave the record more useful without making it less reliable.</div>
+
+<footer>abdymok / 40 · Infrastructure chronology maintenance SOP · The public chronology remains the authority for current entries and figures; this document governs the maintenance process.</footer>
+</main>
+</body>
+</html>

@@ -143,6 +143,7 @@ footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var
 <p>Do not impose Interfax dispatch formatting on the infrastructure HTML. The HTML has its own established structure.</p>
 
 <h2>7. Visual and technical rules</h2>
+<div class="rule"><strong>Branding invariant:</strong> every visible occurrence of <code>abdymok</code> in every HTML file on every branch must render with only the <code>y</code> red. Do not leave plain-text branding in a footer, heading, cutline, caption, navigation item, attribution or other visible HTML. Use a dedicated span such as <code>&lt;span class="brand-y"&gt;y&lt;/span&gt;</code> and ensure its CSS renders the letter red. Audit branch variants as well as the published branch. This is a standing rule, not an optional design choice.</div>
 <ul>
 <li>Preserve the existing restrained design: white background, Spectral serif, black-and-white or minimal colour, quiet hover treatment.</li>
 <li>No decorative cards, gradients, gratuitous animation or new visual systems during routine updates.</li>
@@ -172,6 +173,7 @@ footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var
 <li>Images, audio, video, cutlines, alt text and source attribution checked.</li>
 <li>Links, relative paths, anchors and HTML structure checked.</li>
 <li>Standing spellings and house style applied.</li>
+<li>Every visible <code>abdymok</code> occurrence in HTML checked for the red-<code>y</code> branding invariant, including all branches in scope.</li>
 <li>No unrelated redesign or accidental regression.</li>
 <li>Commit confirmed; live publication checked or explicitly marked pending.</li>
 </ul>

@@ -1,0 +1,53 @@
+/* Shared chronology design tokens and components. */
+:root{--ink:#171717;--muted:#6b6b6b;--rule:#d9d9d9;--paper:#fff;--brand:#d00;--track:.07em;--ok:#2a7a4b;--rep:#a06a00;color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--ink:#ededed;--muted:#b3b3b3;--rule:#414141;--paper:#111;--ok:#8fc7a2;--rep:#d9a441}a{color:inherit}}
+html,body{background:var(--paper);color:var(--ink)}
+body{font-size:17px}
+main{max-width:720px}
+#chronology .entry-body>p,#chronology .entry-body>h3,#chronology .entry-body>.status,#chronology .entry-body>.source-note,#chronology .entry-body details,#chronology .entry-body .source{max-width:38em}
+#chronology .entry-body h3,.entry-body h3{font-size:21px;font-weight:400;text-wrap:balance}
+.day-heading,h2.day-heading{font-size:24px;font-weight:500;line-height:1.2;text-wrap:balance}
+p{ text-wrap:pretty }
+h1,h2,h3,figcaption{ text-wrap:balance }
+.special-kicker,.evidence-kicker,.dashboard-label,.status,.evidence-category{letter-spacing:var(--track)}
+.brand-y,.dashboard-item.is-lead .dashboard-value{color:var(--brand)}
+.refresh{color:var(--ok);min-width:44px;min-height:44px;padding:10px;display:inline-flex;align-items:center;justify-content:center}
+.refresh:focus-visible{outline:1px solid var(--ok);outline-offset:2px}
+.dashboard-method{min-width:44px;min-height:44px}
+.dashboard-method img{width:24px;height:24px}
+.dashboard-detail{max-width:32em}
+.dashboard-item.is-lead .dashboard-detail{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.evidence-category{display:inline-flex;align-items:center;gap:.4em}
+.evidence-category::before{content:"";display:inline-block;flex:0 0 .55em;width:.55em;height:.55em;border-radius:50%;background:var(--tier,var(--muted))}
+.is-official,.is-operator,.is-tracker{--tier:var(--ok)}
+.is-media,.is-eyewitness,.is-attributed{--tier:var(--rep)}
+.is-unverified{--tier:var(--muted)}
+.is-unverified::before{background:none;box-shadow:inset 0 0 0 1.5px var(--muted)}
+.is-editorial{--tier:var(--ink)}
+figure{width:fit-content;max-width:100%}
+figcaption{font-size:14px;line-height:1.45;color:var(--ink)}
+figcaption .credit{display:block;margin-top:2px;font-size:11px;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
+blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);text-indent:0;hanging-punctuation:first}
+.source a{display:inline;text-decoration:none;mask:none}
+.source a::after{content:" ↗";font-size:.9em}
+.source a:hover{text-decoration:underline;text-underline-offset:3px}
+.source a+br{display:none}
+.chronology-day{border-top:0}
+.chronology-day>summary{position:relative;min-height:44px;padding:10px 34px 10px 0;display:flex;align-items:center;gap:.5em;cursor:pointer}
+.chronology-day>summary::after{content:"";position:absolute;right:7px;top:50%;width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg);transition:transform .15s}
+.chronology-day[open]>summary::after{transform:translateY(-25%) rotate(225deg)}
+.day-jump{position:sticky;top:0;z-index:5;background:var(--paper);padding:8px 0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:6px}
+.day-jump a{display:inline-flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;text-decoration:none;font-size:13px}
+.day-jump a[aria-current=location],.tracker-nav a[aria-current=page]{color:var(--brand);border-color:var(--brand)}
+.update-history{border:0;margin:0 0 14px}
+.update-history-heading{margin:0}
+.update-history-list{margin:8px 0 0;padding-left:1.2em}
+.update-history:not([open]) .update-history-list{display:none}
+.update-history summary{min-height:44px}
+.update-history summary::after{content:none}
+.update-history summary svg{width:16px;height:16px}
+.evidence-video figcaption,.attack-graphic figcaption{margin-top:8px}
+.evidence-video{width:fit-content;max-width:100%}
+.evidence-video video{max-width:100%}
+.entry-meta{font-size:12px;letter-spacing:normal}
+@media(max-width:680px){body{font-size:17px}#chronology .entry-body h3,.entry-body h3{font-size:20px}}

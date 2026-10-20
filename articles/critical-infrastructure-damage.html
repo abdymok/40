@@ -783,7 +783,30 @@ if ('serviceWorker' in navigator) {
   });
 })();
 </script>
-<script>(function(){document.querySelectorAll('.day-jump a').forEach(function(link){link.addEventListener('click',function(event){var target=document.getElementById(link.getAttribute('href').slice(1));if(!target)return;var group=target.matches('h2.day-heading')?target.nextElementSibling:target.closest('details.chronology-day');while(group&&!group.matches('details.chronology-day')&&!group.matches('h2.day-heading'))group=group.nextElementSibling;if(group&&group.matches('details.chronology-day'))group.open=true;target.scrollIntoView({behavior:'smooth',block:'start'});});});})();</script>
+<script>(function(){
+ var nav=document.querySelector('.day-jump');
+ if(!nav)return;
+ var parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Kyiv',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+ var p={};parts.forEach(function(x){p[x.type]=x.value;});
+ var inOctober=p.year==='2026'&&p.month==='10';
+ var today=inOctober?Number(p.day):(p.year>'2026'||(p.year==='2026'&&p.month>'10')?31:0);
+ Array.from(nav.querySelectorAll('a, .day-jump-inactive')).forEach(function(item){
+  var m=(item.getAttribute('aria-label')||'').match(/October (\d+)/);
+  var day=m?Number(m[1]):Number(item.textContent.trim());
+  if(!day)return;
+  if(day>today){
+   if(!item.classList.contains('day-jump-inactive')){
+    var span=document.createElement('span');span.className='day-jump-inactive';span.setAttribute('aria-disabled','true');span.setAttribute('aria-label','October '+day+', future date');span.textContent=day;item.replaceWith(span);
+   }
+  }else if(item.classList.contains('day-jump-inactive')){
+   var a=document.createElement('a');a.href='#day-oct-'+day;a.textContent=day;item.replaceWith(a);item=a;
+  }
+  if(item.tagName==='A'){
+   if(inOctober&&day===today)item.setAttribute('aria-current','location');else item.removeAttribute('aria-current');
+  }
+ });
+ nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){var target=document.getElementById(link.getAttribute('href').slice(1));if(!target)return;var group=target.matches('h2.day-heading')?target.nextElementSibling:target.closest('details.chronology-day');while(group&&!group.matches('details.chronology-day')&&!group.matches('h2.day-heading'))group=group.nextElementSibling;if(group&&group.matches('details.chronology-day'))group.open=true;target.scrollIntoView({behavior:'smooth',block:'start'});});});
+})();</script>
 <script>
 document.querySelectorAll(".chronology-day").forEach(function(day){var summary=day.querySelector(":scope > summary");if(!summary)return;var count=day.querySelectorAll(":scope > article").length;var label="Show "+count+" entr"+(count===1?"y":"ies");function update(){summary.textContent=day.open?"Hide "+count+" entr"+(count===1?"y":"ies"):label;}update();day.addEventListener("toggle",update);});
 </script>

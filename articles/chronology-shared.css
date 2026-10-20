@@ -283,7 +283,6 @@ figcaption{ text-wrap:balance }
 .status,
 .evidence-category{letter-spacing:var(--track)}
 .brand-y,
-.dashboard-item.is-lead .dashboard-value{color:var(--brand)}
 .refresh{color:var(--ok);min-width:44px;min-height:44px;padding:10px;display:inline-flex;align-items:center;justify-content:center}
 .refresh:focus-visible{outline:1px solid var(--ok);outline-offset:2px}
 .dashboard-method{min-width:44px;min-height:44px}
@@ -317,10 +316,8 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .tracker-nav a[aria-current=page]{color:var(--brand);border-color:var(--brand)}
 .update-history{border:0;margin:0 0 14px}
 .update-history-list{margin:8px 0 0;padding-left:1.2em}
-.update-history:not([open]) .update-history-list{display:none}
 .update-history summary{min-height:44px}
 .update-history summary::after{content:none}
-.update-history summary svg{width:16px;height:16px}
 .evidence-video figcaption,
 .attack-graphic figcaption{margin-top:8px}
 .evidence-video{width:fit-content;max-width:100%}
@@ -335,7 +332,6 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .archive-day>summary::after{content:"";position:absolute;right:7px;top:50%;width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg);transition:transform .15s}
 .archive-day[open]>summary::after{transform:translateY(-25%) rotate(225deg)}
 .day-summary a{display:inline-flex;align-items:center;gap:.35em;text-decoration:none}
-.archive-day-link::after{content:"";display:inline-block;width:12px;height:12px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 12 12 4M5 4h7v7' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E") center/contain no-repeat}
 .tracker-nav a[aria-current=page]{color:var(--brand);text-decoration:underline;text-underline-offset:4px}
 .tracker-nav a[aria-current=location]{text-decoration:underline;text-underline-offset:4px}
 .source a::after{content:"";display:inline-block;width:10px;height:10px;margin-left:3px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 12 12 4M5 4h7v7' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E") center/contain no-repeat}

@@ -458,3 +458,10 @@ body.archive-page main{max-width:100%}
 body.archive-page .archive-day>summary::after{transition:none}
 }
 body.archive-page .entry-body video{display:block;width:auto;height:auto;max-width:100%;max-height:80vh;background:#111}
+
+/* Eliminate duplicate day rules and keep lead tiles level. */
+body.infrastructure-page .chronology-day{margin:22px 0 0;padding-top:0;border-top:0;scroll-margin-top:20px}
+body.infrastructure-page .chronology-day .day-heading{display:block;margin:0 0 5px;padding-top:0;border-top:0;font-size:24px;font-weight:500}
+body.archive-page .archive-day{margin:0 0 12px;padding-top:0;border-top:0}
+body.archive-page .archive-day .day-heading{margin:0 0 5px;padding-top:0;border-top:0;font-size:24px;font-weight:500}
+body.infrastructure-page .dashboard-leads .dashboard-detail{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

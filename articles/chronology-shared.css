@@ -84,3 +84,10 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 #chronology .entry-body figure,#chronology .entry-body .evidence-video,#chronology .entry-body .attack-graphic{width:fit-content;max-width:100%}
 #chronology .entry-body .evidence-video{width:fit-content;max-width:100%}
 #chronology .entry-body video{width:auto;max-width:100%}
+
+.tracker-nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.tracker-pages,.tracker-sections{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.tracker-sections{border-left:1px solid var(--rule);padding-left:12px}
+.tracker-nav a{text-decoration:none}
+.tracker-nav a:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:520px){.tracker-sections{border-left:0;padding-left:0}}

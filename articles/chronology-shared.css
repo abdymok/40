@@ -99,3 +99,7 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .timeline-history{margin:12px 0 16px}
 .timeline-history>summary{min-height:44px;padding:10px 30px 10px 0;cursor:pointer;list-style:none}
 .timeline-history>summary::-webkit-details-marker{display:none}
+
+.entry-times{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 6px}
+.entry-times .entry-time{display:block;white-space:nowrap;font-size:11px;line-height:1.4}
+.entry-summary{font-size:17px;line-height:1.5;color:var(--ink)}

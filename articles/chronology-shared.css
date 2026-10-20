@@ -410,7 +410,15 @@ body.archive-page figcaption .credit{display:block;margin-top:2px;font-size:11px
 body.infrastructure-page blockquote,
 body.archive-page blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);text-indent:0;hanging-punctuation:first}
 body.infrastructure-page .day-jump,
-body.archive-page .day-jump{position:sticky;top:0;z-index:5;background:var(--paper);padding:8px 0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+body.archive-page .day-jump{position:sticky;top:0;z-index:5;display:flex;flex-wrap:nowrap;align-items:center;gap:6px;width:100%;max-width:100%;min-width:0;box-sizing:border-box;white-space:nowrap;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x;-webkit-overflow-scrolling:touch;background:var(--paper);padding:8px 0;border-bottom:1px solid var(--rule)}
+body.infrastructure-page .day-jump>span,
+body.archive-page .day-jump>span,
+body.infrastructure-page .day-jump>a,
+body.archive-page .day-jump>a{flex:0 0 auto}
+body.infrastructure-page .day-jump::-webkit-scrollbar,
+body.archive-page .day-jump::-webkit-scrollbar{height:4px}
+body.infrastructure-page .day-jump::-webkit-scrollbar-thumb,
+body.archive-page .day-jump::-webkit-scrollbar-thumb{background:var(--rule);border-radius:4px}
 body.infrastructure-page .day-jump a,
 body.archive-page .day-jump a{display:inline-flex;align-items:center;min-height:36px;padding:4px 12px;border:1px solid var(--rule);border-radius:999px;text-decoration:none;font-size:13px}
 body.infrastructure-page .tracker-nav a[aria-current=page],

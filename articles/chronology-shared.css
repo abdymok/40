@@ -70,3 +70,11 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .timeline-update .entry-time{display:block;margin:0 0 5px;font-size:11px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
 .timeline-update .entry-time::before{content:"Latest";display:inline-block;margin-right:8px;padding:2px 6px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font-size:10px;letter-spacing:var(--track)}
 .timeline-update p{margin:0 0 10px}
+
+.meta-icon{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:5px;flex:0 0 16px}
+#chronology .entry-meta,.entry-meta{font-size:12px;line-height:1.5}
+.dashboard-item.is-lead .dashboard-value{color:var(--ink)}
+.dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value{color:var(--brand)}
+.evidence-media{width:fit-content;max-width:100%;margin:28px 0 36px}
+.evidence-media video{display:block;width:auto;max-width:100%;max-height:min(78vh,720px);height:auto;background:#111}
+.evidence-media figcaption{margin-top:8px}

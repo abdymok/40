@@ -65,3 +65,8 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .source a+br{display:none}
 .method-mark{width:24px;height:24px}
 @media(prefers-reduced-motion:reduce){.chronology-day>summary::after,.archive-day>summary::after{transition:none}}
+
+.timeline-update{margin:14px 0 16px 4px;padding:10px 0 10px 14px;border-left:1px solid var(--rule)}
+.timeline-update .entry-time{display:block;margin:0 0 5px;font-size:11px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
+.timeline-update .entry-time::before{content:"Latest";display:inline-block;margin-right:8px;padding:2px 6px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font-size:10px;letter-spacing:var(--track)}
+.timeline-update p{margin:0 0 10px}

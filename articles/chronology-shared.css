@@ -10,9 +10,9 @@ body.infrastructure-page .update-history summary{display:inline-flex;align-items
 body.infrastructure-page .update-history summary::-webkit-details-marker{display:none}
 body.infrastructure-page .update-history summary::after{content:"⌄";display:inline-block;font-size:16px;line-height:1}
 body.infrastructure-page .update-history[open] summary{margin-bottom:8px}
-body.infrastructure-page .refresh{border:0;background:none;color:#2a7a4b;font:inherit;font-size:18px;line-height:1;cursor:pointer;padding:0 0 0 7px;vertical-align:-1px}
+body.infrastructure-page .refresh{border:0;background:none;color:var(--ok);font:inherit;font-size:18px;line-height:1;cursor:pointer;padding:0 0 0 7px;vertical-align:-1px}
 body.infrastructure-page .refresh:hover{opacity:.7}
-body.infrastructure-page .refresh:focus-visible{outline:1px solid #2a7a4b;outline-offset:3px}
+body.infrastructure-page .refresh:focus-visible{outline:1px solid var(--ok);outline-offset:3px}
 body.infrastructure-page .tracker-nav{margin:0 0 22px;font-size:13px;letter-spacing:.01em}
 body.infrastructure-page .evidence-key-footer{margin:48px 0 0;padding:18px 0 0;border-top:1px solid var(--ink);font-size:12px;line-height:1.6;color:var(--muted)}
 body.infrastructure-page .evidence-key-footer strong{font-weight:500;color:var(--ink)}
@@ -38,7 +38,7 @@ body.infrastructure-page .evidence-kicker{margin:0 0 10px;font-size:11px;letter-
 body.infrastructure-page .evidence-video video{display:block;width:100%;height:auto;background:#111}
 body.infrastructure-page .evidence-video figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
 body.infrastructure-page .evidence-video figcaption a{text-decoration:underline;text-underline-offset:2px}
-body.infrastructure-page .brand-y{color:#d00}
+body.infrastructure-page .brand-y{color:var(--brand)}
 body.infrastructure-page a{color:inherit}
 body.infrastructure-page h2{margin:56px 0 18px;font-size:25px;font-weight:400;line-height:1.2;letter-spacing:-.01em}
 body.infrastructure-page .nuclear-section p{margin:0 0 17px;font-size:15px}
@@ -62,7 +62,7 @@ body.infrastructure-page .dashboard-value{margin:0 0 7px;font-size:clamp(30px,3.
 body.infrastructure-page .dashboard-detail{margin:3px 0 0;font-size:12px;line-height:1.35;color:var(--muted);min-width:0;overflow-wrap:anywhere}
 body.infrastructure-page .dashboard-value{font-variant-numeric:lining-nums tabular-nums}
 body.infrastructure-page .dashboard-value .u{font-size:.5em;margin-left:.1em;letter-spacing:0}
-body.infrastructure-page .dashboard-item.is-lead .dashboard-value{color:#b00000}
+body.infrastructure-page .dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value{color:var(--brand)}
 @media(max-width:680px){body.infrastructure-page .dashboard{margin-bottom:26px}
 body.infrastructure-page .dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:minmax(190px,1fr);row-gap:15px}
 body.infrastructure-page .dashboard-item{padding:0 12px}

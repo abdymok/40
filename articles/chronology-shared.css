@@ -476,3 +476,23 @@ body.infrastructure-page .dashboard-method .method-mark{display:block;width:24px
 
 body.infrastructure-page #chronology .entry-body,body.archive-page .entry-body{font-size:17px;line-height:1.6}
 body.infrastructure-page .dek{font-size:17px}
+
+/* The October 12–7 archive-pointer disclosures must span the chronology column. */
+body.infrastructure-page #chronology #day-oct-12 + .day-summary + details.archive-pointers,
+body.infrastructure-page #chronology #day-oct-11 + .day-summary + details.archive-pointers,
+body.infrastructure-page #chronology #day-oct-10 + .day-summary + details.archive-pointers,
+body.infrastructure-page #chronology #day-oct-9 + .day-summary + details.archive-pointers,
+body.infrastructure-page #chronology #day-oct-8 + .day-summary + details.archive-pointers,
+body.infrastructure-page #chronology #day-oct-7 + .day-summary + details.archive-pointers{display:block;grid-column:1 / -1;width:100%;max-width:100%;min-width:0;justify-self:stretch}
+body.infrastructure-page #chronology #day-oct-12 + .day-summary + details.archive-pointers>.archive-pointer,
+body.infrastructure-page #chronology #day-oct-11 + .day-summary + details.archive-pointers>.archive-pointer,
+body.infrastructure-page #chronology #day-oct-10 + .day-summary + details.archive-pointers>.archive-pointer,
+body.infrastructure-page #chronology #day-oct-9 + .day-summary + details.archive-pointers>.archive-pointer,
+body.infrastructure-page #chronology #day-oct-8 + .day-summary + details.archive-pointers>.archive-pointer,
+body.infrastructure-page #chronology #day-oct-7 + .day-summary + details.archive-pointers>.archive-pointer{display:block;grid-column:1 / -1;width:100%;max-width:100%;min-width:0}
+body.infrastructure-page #chronology #day-oct-12 + .day-summary + details.archive-pointers>.archive-pointer>.entry-body,
+body.infrastructure-page #chronology #day-oct-11 + .day-summary + details.archive-pointers>.archive-pointer>.entry-body,
+body.infrastructure-page #chronology #day-oct-10 + .day-summary + details.archive-pointers>.archive-pointer>.entry-body,
+body.infrastructure-page #chronology #day-oct-9 + .day-summary + details.archive-pointers>.archive-pointer>.entry-body,
+body.infrastructure-page #chronology #day-oct-8 + .day-summary + details.archive-pointers>.archive-pointer>.entry-body,
+body.infrastructure-page #chronology #day-oct-7 + .day-summary + details.archive-pointers>.archive-pointer>.entry-body{display:block;width:100%;max-width:100%;min-width:0;grid-column:1 / -1}

@@ -10,7 +10,6 @@ body.infrastructure-page .update-history summary{display:inline-flex;align-items
 body.infrastructure-page .update-history summary::-webkit-details-marker{display:none}
 body.infrastructure-page .update-history summary::after{content:"⌄";display:inline-block;font-size:16px;line-height:1}
 body.infrastructure-page .update-history[open] summary{margin-bottom:8px}
-body.infrastructure-page .update-history-text{margin:0 0 16px;line-height:1.55}
 body.infrastructure-page .refresh{border:0;background:none;color:#2a7a4b;font:inherit;font-size:18px;line-height:1;cursor:pointer;padding:0 0 0 7px;vertical-align:-1px}
 body.infrastructure-page .refresh:hover{opacity:.7}
 body.infrastructure-page .refresh:focus-visible{outline:1px solid #2a7a4b;outline-offset:3px}
@@ -25,8 +24,6 @@ body.infrastructure-page summary{cursor:pointer;color:var(--ink)}
 body.infrastructure-page .video-archive{margin:34px 0 40px;padding-top:12px;border-top:1px solid var(--rule)}
 body.infrastructure-page .video-archive summary{font-size:14px}
 body.infrastructure-page .video-archive[open]>summary{margin-bottom:14px}
-body.infrastructure-page .page-update-notice{padding:10px 12px;border:1px solid var(--rule);font-size:14px;margin:0 0 18px}
-body.infrastructure-page .page-update-notice a{text-underline-offset:3px}
 body.infrastructure-page .corrections{margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
 body.infrastructure-page .dek{margin:0 0 8px;color:var(--muted);font-size:16px}
 body.infrastructure-page .special-close{margin:24px 0 42px;padding:16px 0 18px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:760px}
@@ -76,16 +73,12 @@ body.infrastructure-page .dashboard-item{padding:12px 0;border-left:0;border-top
 body.infrastructure-page .dashboard-item:first-child{padding-top:0;border-top:0}
 body.infrastructure-page .dashboard-value{font-size:30px}
 }
-body.infrastructure-page .alert-status,
 body.infrastructure-page .nuclear-section,
 body.infrastructure-page .corrections{max-width:720px}
 body.infrastructure-page .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 body.infrastructure-page .corrections h2{margin:0 0 12px;font-size:18px;line-height:1.3}
 body.infrastructure-page #chronology.chronology-list{display:block;width:100%;border:0;border-collapse:collapse}
 body.infrastructure-page #chronology .chronology-entry{display:flex;flex-direction:column;gap:0;margin:0;padding:18px 0 22px;border-bottom:1px solid var(--rule);scroll-margin-top:24px}
-body.infrastructure-page #chronology .entry-date{order:1;margin:0 0 5px;color:var(--muted);font-size:13px;letter-spacing:.02em;line-height:1.45}
-body.infrastructure-page #chronology .entry-date a{text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
-body.infrastructure-page #chronology .entry-date a:hover{text-decoration-color:currentColor}
 body.infrastructure-page #chronology .entry-body{order:3;min-width:0;font-size:16px;line-height:1.62}
 body.infrastructure-page #chronology .entry-body>p,
 body.infrastructure-page #chronology .entry-body>h3,
@@ -97,14 +90,12 @@ body.infrastructure-page #chronology .entry-body details{max-width:720px}
 body.infrastructure-page #chronology .entry-body .source{max-width:720px}
 body.infrastructure-page #chronology .entry-body p:last-child{margin-bottom:0}
 body.infrastructure-page #chronology .entry-body .status{display:block;margin:0 0 8px;font-size:12px;line-height:1.45;letter-spacing:.025em}
-body.infrastructure-page #chronology .entry-site{order:2;margin:0 0 6px;color:var(--muted);font-size:13px;line-height:1.45;max-width:720px}
 body.infrastructure-page #chronology .entry-body figure,
 body.infrastructure-page #chronology .entry-body .evidence-video,
 body.infrastructure-page #chronology .entry-body .attack-graphic{width:min(100%,980px);max-width:980px;margin-left:0;margin-right:0}
 body.infrastructure-page #chronology .entry-body .evidence-video{width:min(100%,720px);max-width:720px}
 body.infrastructure-page #chronology .entry-body video{display:block;width:auto;max-width:100%;max-height:min(78vh,720px);height:auto;background:#111}
 body.infrastructure-page #chronology .entry-body img{max-width:100%;height:auto}
-body.infrastructure-page #chronology .entry-body img.landscape-evidence{display:block;width:min(100%,720px);max-width:720px;height:auto}
 body.infrastructure-page .chronology-supporting-material{margin:36px 0 0;padding-top:22px;border-top:1px solid var(--ink)}
 body.infrastructure-page .chronology-supporting-material .special-close{max-width:720px}
 body.infrastructure-page .chronology-supporting-material .video-archive{max-width:980px}
@@ -119,11 +110,7 @@ body.infrastructure-page #chronology .entry-body .source{width:100%;max-width:72
 body.infrastructure-page #chronology .entry-body .evidence-video{width:100%;max-width:720px}
 body.infrastructure-page .chronology-supporting-material{width:100%;max-width:720px}
 body.infrastructure-page .chronology-supporting-material>.entry-body{width:100%;max-width:720px}
-body.infrastructure-page .energy-ceasefire-update,
-body.infrastructure-page .water-dispatch{width:100%;max-width:720px}
 @media(max-width:900px){body.infrastructure-page #chronology .chronology-entry{padding:18px 0;border-bottom:1px solid var(--rule)}
-body.infrastructure-page #chronology .entry-date{order:1;width:auto;font-size:13px;margin-bottom:3px}
-body.infrastructure-page #chronology .entry-site{order:2;margin:0 0 6px;font-size:13px}
 body.infrastructure-page #chronology .entry-body{order:3;font-size:16px;line-height:1.58}
 body.infrastructure-page #chronology .entry-body h3{font-size:21px}
 }
@@ -135,10 +122,6 @@ body.infrastructure-page .chronology-day>summary::-webkit-details-marker{display
 body.infrastructure-page .chronology-day .day-heading{display:block;font-size:19px;font-weight:400}
 body.infrastructure-page .chronology-day .day-summary{display:block;margin:2px 0 10px;color:var(--muted);font-size:13px}
 body.infrastructure-page .archive-pointer{display:grid;grid-template-columns:6.5em minmax(0,1fr);column-gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--rule)}
-body.infrastructure-page .archive-pointer .entry-date{display:block;margin:0;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
-body.infrastructure-page .archive-pointer:has(.entry-date:empty){grid-template-columns:minmax(0,1fr)}
-body.infrastructure-page .archive-pointer .entry-date:empty{display:none}
-body.infrastructure-page .archive-pointer .entry-site{display:none}
 body.infrastructure-page .archive-pointer .entry-body{font-size:15px;line-height:1.4}
 body.infrastructure-page .archive-pointer .entry-body p{margin:0}
 body.infrastructure-page .archive-pointer a,
@@ -162,8 +145,6 @@ body.infrastructure-page .evidence-video figcaption{font-size:13px}
 body.infrastructure-page #chronology .entry-meta{margin:0 0 13px;color:var(--muted);font-size:12px;line-height:1.45}
 body.infrastructure-page #chronology .entry-meta .evidence-category{font-weight:500;text-transform:uppercase;letter-spacing:.025em}
 body.infrastructure-page #chronology .entry-meta .meta-separator{padding:0 2px;color:var(--muted)}
-body.infrastructure-page #chronology .entry-date,
-body.infrastructure-page #chronology .entry-site{display:none}
 body.infrastructure-page .day-jump{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0 0 24px;padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:13px;color:var(--muted)}
 body.infrastructure-page .day-jump a{text-decoration:none;border-bottom:1px solid var(--rule);padding:1px 2px}
 body.infrastructure-page .day-jump a:hover,
@@ -213,7 +194,6 @@ body.infrastructure-page .refresh:focus-visible{outline-color:#8fc7a2}
 body.infrastructure-page .evidence-video video{background:#090909}
 body.infrastructure-page ::selection{background:#5c2525;color:#fff}
 }
-body.infrastructure-page .update-history-heading{margin:0 0 5px;color:var(--muted);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
 body.infrastructure-page .update-history-list{margin:0 0 18px;padding-left:20px;color:var(--muted);font-size:12px;line-height:1.5}
 body.infrastructure-page .update-history-list li{margin:0 0 5px}
 body.infrastructure-page .timeline-update{display:grid;grid-template-columns:140px minmax(0,1fr);gap:14px;align-items:start;margin:0 0 13px}
@@ -230,7 +210,6 @@ body.infrastructure-page .dashboard-leads .dashboard-detail{font-size:12px;line-
 }
 @media(prefers-color-scheme:dark){body.infrastructure-page .timeline-update .entry-time{color:var(--muted)}
 }
-
 @media(prefers-color-scheme:dark){body.archive-page a{color:inherit}
 }
 body.archive-page *{box-sizing:border-box}
@@ -248,8 +227,6 @@ body.archive-page .archive-day summary::-webkit-details-marker{display:none}
 body.archive-page .day-heading{font-size:19px;font-weight:400;margin:32px 0 5px;padding-top:10px;border-top:1px solid var(--rule);scroll-margin-top:20px}
 body.archive-page .day-summary{display:block;color:var(--muted);font-size:13px;margin:0 0 14px}
 body.archive-page .chronology-entry{padding:18px 0 22px;border-bottom:1px solid var(--rule)}
-body.archive-page .entry-date{font-size:13px;color:var(--muted);margin-bottom:3px}
-body.archive-page .entry-site{font-size:13px;color:var(--muted);margin-bottom:6px}
 body.archive-page .status{display:block;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
 body.archive-page .entry-body{font-size:16px;line-height:1.58}
 body.archive-page .entry-body h3{font-size:21px;font-weight:400;line-height:1.25;margin:0 0 8px}
@@ -277,20 +254,36 @@ body.archive-page h1{font-size:27px}
 body.archive-page .evidence-category{font-weight:500}
 body.archive-page .source a{display:block;margin:0 0 2px}
 body.archive-page figcaption{font-size:13px}
-
-/* Shared chronology design tokens and components. */
 :root{--ink:#171717;--muted:#6b6b6b;--rule:#d9d9d9;--paper:#fff;--brand:#d00;--track:.07em;--ok:#2a7a4b;--rep:#a06a00;color-scheme:light dark}
-@media(prefers-color-scheme:dark){:root{--ink:#ededed;--muted:#b3b3b3;--rule:#414141;--paper:#111;--ok:#8fc7a2;--rep:#d9a441}a{color:inherit}}
-html,body{background:var(--paper);color:var(--ink)}
+@media(prefers-color-scheme:dark){:root{--ink:#ededed;--muted:#b3b3b3;--rule:#414141;--paper:#111;--ok:#8fc7a2;--rep:#d9a441}
+a{color:inherit}
+}
+html,
+body{background:var(--paper);color:var(--ink)}
 body{font-size:17px}
 main{max-width:720px}
-#chronology .entry-body>p,#chronology .entry-body>h3,#chronology .entry-body>.status,#chronology .entry-body>.source-note,#chronology .entry-body details,#chronology .entry-body .source{max-width:38em}
-#chronology .entry-body h3,.entry-body h3{font-size:21px;font-weight:400;text-wrap:balance}
-.day-heading,h2.day-heading{font-size:24px;font-weight:500;line-height:1.2;text-wrap:balance}
+#chronology .entry-body>p,
+#chronology .entry-body>h3,
+#chronology .entry-body>.status,
+#chronology .entry-body>.source-note,
+#chronology .entry-body details,
+#chronology .entry-body .source{max-width:38em}
+#chronology .entry-body h3,
+.entry-body h3{font-size:21px;font-weight:400;text-wrap:balance}
+.day-heading,
+h2.day-heading{font-size:24px;font-weight:500;line-height:1.2;text-wrap:balance}
 p{ text-wrap:pretty }
-h1,h2,h3,figcaption{ text-wrap:balance }
-.special-kicker,.evidence-kicker,.dashboard-label,.status,.evidence-category{letter-spacing:var(--track)}
-.brand-y,.dashboard-item.is-lead .dashboard-value{color:var(--brand)}
+h1,
+h2,
+h3,
+figcaption{ text-wrap:balance }
+.special-kicker,
+.evidence-kicker,
+.dashboard-label,
+.status,
+.evidence-category{letter-spacing:var(--track)}
+.brand-y,
+.dashboard-item.is-lead .dashboard-value{color:var(--brand)}
 .refresh{color:var(--ok);min-width:44px;min-height:44px;padding:10px;display:inline-flex;align-items:center;justify-content:center}
 .refresh:focus-visible{outline:1px solid var(--ok);outline-offset:2px}
 .dashboard-method{min-width:44px;min-height:44px}
@@ -299,8 +292,12 @@ h1,h2,h3,figcaption{ text-wrap:balance }
 .dashboard-item.is-lead .dashboard-detail{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .evidence-category{display:inline-flex;align-items:center;gap:.4em}
 .evidence-category::before{content:"";display:inline-block;flex:0 0 .55em;width:.55em;height:.55em;border-radius:50%;background:var(--tier,var(--muted))}
-.is-official,.is-operator,.is-tracker{--tier:var(--ok)}
-.is-media,.is-eyewitness,.is-attributed{--tier:var(--rep)}
+.is-official,
+.is-operator,
+.is-tracker{--tier:var(--ok)}
+.is-media,
+.is-eyewitness,
+.is-attributed{--tier:var(--rep)}
 .is-unverified{--tier:var(--muted)}
 .is-unverified::before{background:none;box-shadow:inset 0 0 0 1.5px var(--muted)}
 .is-editorial{--tier:var(--ink)}
@@ -318,21 +315,23 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .chronology-day[open]>summary::after{transform:translateY(-25%) rotate(225deg)}
 .day-jump{position:sticky;top:0;z-index:5;background:var(--paper);padding:8px 0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:6px}
 .day-jump a{display:inline-flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;text-decoration:none;font-size:13px}
-.day-jump a[aria-current=location],.tracker-nav a[aria-current=page]{color:var(--brand);border-color:var(--brand)}
+.day-jump a[aria-current=location],
+.tracker-nav a[aria-current=page]{color:var(--brand);border-color:var(--brand)}
 .update-history{border:0;margin:0 0 14px}
-.update-history-heading{margin:0}
 .update-history-list{margin:8px 0 0;padding-left:1.2em}
 .update-history:not([open]) .update-history-list{display:none}
 .update-history summary{min-height:44px}
 .update-history summary::after{content:none}
 .update-history summary svg{width:16px;height:16px}
-.evidence-video figcaption,.attack-graphic figcaption{margin-top:8px}
+.evidence-video figcaption,
+.attack-graphic figcaption{margin-top:8px}
 .evidence-video{width:fit-content;max-width:100%}
 .evidence-video video{max-width:100%}
 .entry-meta{font-size:12px;letter-spacing:normal}
-@media(max-width:680px){body{font-size:17px}#chronology .entry-body h3,.entry-body h3{font-size:20px}}
-
-/* Archive and navigation parity */
+@media(max-width:680px){body{font-size:17px}
+#chronology .entry-body h3,
+.entry-body h3{font-size:20px}
+}
 .archive-day{border-top:0;padding-top:0}
 .archive-day>summary{min-height:44px;padding:10px 34px 10px 0;position:relative;display:flex;align-items:center;cursor:pointer}
 .archive-day>summary::after{content:"";position:absolute;right:7px;top:50%;width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg);transition:transform .15s}
@@ -344,34 +343,36 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .source a::after{content:"";display:inline-block;width:10px;height:10px;margin-left:3px;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 12 12 4M5 4h7v7' fill='none' stroke='black' stroke-width='1.5'/%3E%3C/svg%3E") center/contain no-repeat}
 .source a+br{display:none}
 .method-mark{width:24px;height:24px}
-@media(prefers-reduced-motion:reduce){.chronology-day>summary::after,.archive-day>summary::after{transition:none}}
-
+@media(prefers-reduced-motion:reduce){.chronology-day>summary::after,
+.archive-day>summary::after{transition:none}
+}
 .timeline-update{margin:14px 0 16px 4px;padding:10px 0 10px 14px;border-left:1px solid var(--rule)}
 .timeline-update .entry-time{display:block;margin:0 0 5px;font-size:11px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
 .timeline-update .entry-time::before{content:"Latest";display:inline-block;margin-right:8px;padding:2px 6px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font-size:10px;letter-spacing:var(--track)}
 .timeline-update p{margin:0 0 10px}
-
 .meta-icon{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:5px;flex:0 0 16px}
-#chronology .entry-meta,.entry-meta{font-size:12px;line-height:1.5}
+#chronology .entry-meta,
+.entry-meta{font-size:12px;line-height:1.5}
 .dashboard-item.is-lead .dashboard-value{color:var(--ink)}
 .dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value{color:var(--brand)}
 .evidence-media{width:fit-content;max-width:100%;margin:28px 0 36px}
 .evidence-media video{display:block;width:auto;max-width:100%;max-height:min(78vh,720px);height:auto;background:#111}
 .evidence-media figcaption{margin-top:8px}
-
 .timeline-update .entry-time{font-size:0}
 .timeline-update .entry-time::before{background:var(--rule);border-color:var(--rule)}
-#chronology .entry-body figure,#chronology .entry-body .evidence-video,#chronology .entry-body .attack-graphic{width:fit-content;max-width:100%}
+#chronology .entry-body figure,
+#chronology .entry-body .evidence-video,
+#chronology .entry-body .attack-graphic{width:fit-content;max-width:100%}
 #chronology .entry-body .evidence-video{width:fit-content;max-width:100%}
 #chronology .entry-body video{width:auto;max-width:100%}
-
 .tracker-nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
-.tracker-pages,.tracker-sections{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.tracker-pages,
+.tracker-sections{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
 .tracker-sections{border-left:1px solid var(--rule);padding-left:12px}
 .tracker-nav a{text-decoration:none}
 .tracker-nav a:hover{text-decoration:underline;text-underline-offset:3px}
-@media(max-width:520px){.tracker-sections{border-left:0;padding-left:0}}
-
+@media(max-width:520px){.tracker-sections{border-left:0;padding-left:0}
+}
 .timeline-update:not(.is-latest) .entry-time::before{content:none}
 .timeline-update:not(.is-latest) .entry-time{font-size:11px}
 .timeline-update.is-latest .entry-time{font-size:0}
@@ -379,46 +380,81 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .timeline-history{margin:12px 0 16px}
 .timeline-history>summary{min-height:44px;padding:10px 30px 10px 0;cursor:pointer;list-style:none}
 .timeline-history>summary::-webkit-details-marker{display:none}
-
 .entry-times{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 6px}
 .entry-times .entry-time{display:block;white-space:nowrap;font-size:11px;line-height:1.4}
 .entry-summary{font-size:17px;line-height:1.5;color:var(--ink)}
-
 .brand-y{color:var(--brand)}
 .evidence-kicker{margin:0 0 10px;font-size:11px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
 #chronology .entry-body .status{letter-spacing:var(--track)}
-
-
-/* Final shared rules: one hierarchy and one component system across both pages. */
-body.infrastructure-page,body.archive-page{font-size:17px;color:var(--ink);background:var(--paper)}
-body.infrastructure-page main,body.archive-page main{max-width:720px}
-body.infrastructure-page h2.day-heading,body.archive-page h2.day-heading,body.infrastructure-page .chronology-day .day-heading{font-size:24px;font-weight:500;line-height:1.2;text-wrap:balance}
-body.infrastructure-page #chronology .entry-body h3,body.archive-page .entry-body h3{font-size:21px;font-weight:400;line-height:1.3;text-wrap:balance}
-body.infrastructure-page #chronology .entry-body p:not(.entry-meta):not(.source):not(.entry-summary),body.archive-page .entry-body p:not(.entry-meta):not(.source){max-width:38em;text-wrap:pretty}
+body.infrastructure-page,
+body.archive-page{font-size:17px;color:var(--ink);background:var(--paper)}
+body.infrastructure-page main,
+body.archive-page main{max-width:720px}
+body.infrastructure-page h2.day-heading,
+body.archive-page h2.day-heading,
+body.infrastructure-page .chronology-day .day-heading{font-size:24px;font-weight:500;line-height:1.2;text-wrap:balance}
+body.infrastructure-page #chronology .entry-body h3,
+body.archive-page .entry-body h3{font-size:21px;font-weight:400;line-height:1.3;text-wrap:balance}
+body.infrastructure-page #chronology .entry-body p:not(.entry-meta):not(.source):not(.entry-summary),
+body.archive-page .entry-body p:not(.entry-meta):not(.source){max-width:38em;text-wrap:pretty}
 body.infrastructure-page #chronology .entry-body .entry-summary{max-width:38em;font-size:17px;line-height:1.5}
-body.infrastructure-page .source a,body.archive-page .source a{display:inline;margin:0}
-body.infrastructure-page .source a+br,body.archive-page .source a+br{display:none}
+body.infrastructure-page .source a,
+body.archive-page .source a{display:inline;margin:0}
+body.infrastructure-page .source a+br,
+body.archive-page .source a+br{display:none}
 body.infrastructure-page .refresh{color:var(--ok);min-width:44px;min-height:44px;padding:10px;display:inline-flex;align-items:center;justify-content:center}
-body.infrastructure-page .brand-y,body.archive-page .brand-y{color:var(--brand)}
-body.infrastructure-page .evidence-kicker,body.archive-page .evidence-kicker{margin:0 0 10px;font-size:11px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
-body.infrastructure-page .dashboard-item.is-lead .dashboard-value,body.archive-page .dashboard-item.is-lead .dashboard-value{color:var(--ink)}
-body.infrastructure-page .dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value,body.archive-page .dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value{color:var(--brand)}
-body.infrastructure-page .dashboard-label,body.archive-page .dashboard-label,body.infrastructure-page .status,body.archive-page .status,body.infrastructure-page .evidence-category,body.archive-page .evidence-category{letter-spacing:var(--track)}
-body.infrastructure-page figure,body.archive-page figure{width:fit-content;max-width:100%}
-body.infrastructure-page figcaption,body.archive-page figcaption,body.infrastructure-page .attack-graphic figcaption,body.infrastructure-page .evidence-video figcaption{font-size:14px;line-height:1.45;color:var(--ink);text-wrap:balance}
-body.infrastructure-page figcaption .credit,body.archive-page figcaption .credit{display:block;margin-top:2px;font-size:11px;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
-body.infrastructure-page blockquote,body.archive-page blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);text-indent:0;hanging-punctuation:first}
-body.infrastructure-page .day-jump,body.archive-page .day-jump{position:sticky;top:0;z-index:5;background:var(--paper);padding:8px 0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:6px}
-body.infrastructure-page .day-jump a,body.archive-page .day-jump a{display:inline-flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;text-decoration:none;font-size:13px}
-body.infrastructure-page .tracker-nav a[aria-current=page],body.archive-page .tracker-nav a[aria-current=page]{color:var(--brand);text-decoration:underline;text-underline-offset:4px}
-body.infrastructure-page .chronology-day>summary,body.archive-page .archive-day>summary{min-height:44px;padding:10px 34px 10px 0;position:relative;display:flex;align-items:center;cursor:pointer}
-body.infrastructure-page .chronology-day>summary::after,body.archive-page .archive-day>summary::after{content:"";position:absolute;right:7px;top:50%;width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg);transition:transform .15s}
-body.infrastructure-page .chronology-day[open]>summary::after,body.archive-page .archive-day[open]>summary::after{transform:translateY(-25%) rotate(225deg)}
-body.infrastructure-page .timeline-update .entry-time,body.archive-page .timeline-update .entry-time{white-space:nowrap}
-body.infrastructure-page .entry-times,body.archive-page .entry-times{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 6px}
-body.infrastructure-page .entry-times .entry-time,body.archive-page .entry-times .entry-time{display:block;white-space:nowrap;font-size:11px;line-height:1.4}
-body.infrastructure-page .meta-icon,body.archive-page .meta-icon{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:5px;flex:0 0 16px}
-@media(max-width:680px){body.infrastructure-page,body.archive-page{font-size:17px}body.infrastructure-page #chronology .entry-body h3,body.archive-page .entry-body h3{font-size:20px}body.infrastructure-page main,body.archive-page main{max-width:100%}}
-@media(prefers-reduced-motion:reduce){body.infrastructure-page .chronology-day>summary::after,body.archive-page .archive-day>summary::after{transition:none}}
-
+body.infrastructure-page .brand-y,
+body.archive-page .brand-y{color:var(--brand)}
+body.infrastructure-page .evidence-kicker,
+body.archive-page .evidence-kicker{margin:0 0 10px;font-size:11px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
+body.infrastructure-page .dashboard-item.is-lead .dashboard-value,
+body.archive-page .dashboard-item.is-lead .dashboard-value{color:var(--ink)}
+body.infrastructure-page .dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value,
+body.archive-page .dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value{color:var(--brand)}
+body.infrastructure-page .dashboard-label,
+body.archive-page .dashboard-label,
+body.infrastructure-page .status,
+body.archive-page .status,
+body.infrastructure-page .evidence-category,
+body.archive-page .evidence-category{letter-spacing:var(--track)}
+body.infrastructure-page figure,
+body.archive-page figure{width:fit-content;max-width:100%}
+body.infrastructure-page figcaption,
+body.archive-page figcaption,
+body.infrastructure-page .attack-graphic figcaption,
+body.infrastructure-page .evidence-video figcaption{font-size:14px;line-height:1.45;color:var(--ink);text-wrap:balance}
+body.infrastructure-page figcaption .credit,
+body.archive-page figcaption .credit{display:block;margin-top:2px;font-size:11px;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
+body.infrastructure-page blockquote,
+body.archive-page blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);text-indent:0;hanging-punctuation:first}
+body.infrastructure-page .day-jump,
+body.archive-page .day-jump{position:sticky;top:0;z-index:5;background:var(--paper);padding:8px 0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:6px}
+body.infrastructure-page .day-jump a,
+body.archive-page .day-jump a{display:inline-flex;align-items:center;min-height:44px;padding:7px 12px;border:1px solid var(--rule);border-radius:999px;text-decoration:none;font-size:13px}
+body.infrastructure-page .tracker-nav a[aria-current=page],
+body.archive-page .tracker-nav a[aria-current=page]{color:var(--brand);text-decoration:underline;text-underline-offset:4px}
+body.infrastructure-page .chronology-day>summary,
+body.archive-page .archive-day>summary{min-height:44px;padding:10px 34px 10px 0;position:relative;display:flex;align-items:center;cursor:pointer}
+body.infrastructure-page .chronology-day>summary::after,
+body.archive-page .archive-day>summary::after{content:"";position:absolute;right:7px;top:50%;width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg);transition:transform .15s}
+body.infrastructure-page .chronology-day[open]>summary::after,
+body.archive-page .archive-day[open]>summary::after{transform:translateY(-25%) rotate(225deg)}
+body.infrastructure-page .timeline-update .entry-time,
+body.archive-page .timeline-update .entry-time{white-space:nowrap}
+body.infrastructure-page .entry-times,
+body.archive-page .entry-times{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 6px}
+body.infrastructure-page .entry-times .entry-time,
+body.archive-page .entry-times .entry-time{display:block;white-space:nowrap;font-size:11px;line-height:1.4}
+body.infrastructure-page .meta-icon,
+body.archive-page .meta-icon{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:5px;flex:0 0 16px}
+@media(max-width:680px){body.infrastructure-page,
+body.archive-page{font-size:17px}
+body.infrastructure-page #chronology .entry-body h3,
+body.archive-page .entry-body h3{font-size:20px}
+body.infrastructure-page main,
+body.archive-page main{max-width:100%}
+}
+@media(prefers-reduced-motion:reduce){body.infrastructure-page .chronology-day>summary::after,
+body.archive-page .archive-day>summary::after{transition:none}
+}
 body.archive-page .entry-body video{display:block;width:auto;height:auto;max-width:100%;max-height:80vh;background:#111}

@@ -48,7 +48,6 @@
   .dashboard-label{margin:0 0 7px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);overflow-wrap:anywhere}
   .dashboard-value{margin:0 0 7px;font-size:clamp(30px,3.5vw,46px);font-weight:400;line-height:1;letter-spacing:-.035em;overflow-wrap:anywhere;word-break:normal;font-variant-numeric:tabular-nums;flex:0 0 auto}
   .dashboard-detail{margin:3px 0 0;font-size:12px;line-height:1.35;color:var(--muted);min-width:0;overflow-wrap:anywhere}
-  .dashboard-item.is-lead .dashboard-value{color:#b00000}
   .dashboard-value{font-variant-numeric:lining-nums tabular-nums}
   .dashboard-value .u{font-size:.5em;margin-left:.1em;letter-spacing:0}
   @media(max-width:680px){
@@ -64,8 +63,6 @@
   .alert-status,.nuclear-section,.corrections{max-width:720px}
   .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
   .corrections h2{margin:0 0 12px;font-size:18px;line-height:1.3}
-
-  #chronology .alert-reconciliation .entry-body, #chronology .alert-reconciliation .status{color:#b00000}
 
 /* Prototype: semantic entries, restrained single-column reading flow. */
   #chronology.chronology-list{display:block;width:100%;border:0;border-collapse:collapse}
@@ -146,7 +143,6 @@
   .dashboard-secondary-item .dashboard-value{grid-column:2;grid-row:1 / span 2;margin:0;font-size:17px;line-height:1.3;text-align:right;white-space:nowrap}
   .dashboard-secondary-detail{grid-column:1;grid-row:2;color:var(--muted);overflow-wrap:anywhere}
   .dashboard-secondary-detail a{text-underline-offset:2px}
-  .dashboard-item.is-lead .dashboard-value{color:#b00000}
   @media(max-width:680px){
     body{padding:30px 17px 48px}
     #chronology .entry-body,#chronology .entry-body p{font-size:17px;line-height:1.6}
@@ -171,7 +167,7 @@
     :root{--ink:#ece9e3;--muted:#b6b2aa;--rule:#45433f;--paper:#171817}
     html,body{background:var(--paper);color:var(--ink)}
     a{color:inherit}
-    .dashboard-item.is-lead .dashboard-value,#chronology .alert-reconciliation .entry-body,#chronology .alert-reconciliation .status,tr.alert-reconciliation td,tr.alert-reconciliation .status{color:#ff7777}
+    .dashboard-item.is-lead .dashboard-value{color:#ff7777}
     .dashboard-leads .dashboard-item.is-lead .dashboard-value{color:#ff7777}
     .refresh{color:#8fc7a2}.refresh:focus-visible{outline-color:#8fc7a2}
     .evidence-video video{background:#090909}

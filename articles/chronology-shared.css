@@ -91,3 +91,11 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .tracker-nav a{text-decoration:none}
 .tracker-nav a:hover{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:520px){.tracker-sections{border-left:0;padding-left:0}}
+
+.timeline-update:not(.is-latest) .entry-time::before{content:none}
+.timeline-update:not(.is-latest) .entry-time{font-size:11px}
+.timeline-update.is-latest .entry-time{font-size:0}
+.timeline-update.is-latest .entry-time::before{content:"Latest";font-size:10px;background:var(--rule);border-color:var(--rule)}
+.timeline-history{margin:12px 0 16px}
+.timeline-history>summary{min-height:44px;padding:10px 30px 10px 0;cursor:pointer;list-style:none}
+.timeline-history>summary::-webkit-details-marker{display:none}

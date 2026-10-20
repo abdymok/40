@@ -472,3 +472,6 @@ body.infrastructure-page .source a::after,body.archive-page .source a::after{con
 
 body.infrastructure-page .dashboard-method{min-width:44px;min-height:44px}
 body.infrastructure-page .dashboard-method .method-mark{display:block;width:24px;height:24px}
+
+body.infrastructure-page #chronology .entry-body,body.archive-page .entry-body{font-size:17px;line-height:1.6}
+body.infrastructure-page .dek{font-size:17px}

@@ -103,3 +103,7 @@ blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);t
 .entry-times{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 6px}
 .entry-times .entry-time{display:block;white-space:nowrap;font-size:11px;line-height:1.4}
 .entry-summary{font-size:17px;line-height:1.5;color:var(--ink)}
+
+.brand-y{color:var(--brand)}
+.evidence-kicker{margin:0 0 10px;font-size:11px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
+#chronology .entry-body .status{letter-spacing:var(--track)}

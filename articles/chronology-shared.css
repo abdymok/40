@@ -120,8 +120,9 @@ body.infrastructure-page .chronology-day>summary{list-style:none;cursor:pointer;
 body.infrastructure-page .chronology-day>summary::-webkit-details-marker{display:none}
 body.infrastructure-page .chronology-day .day-heading{display:block;font-size:19px;font-weight:400}
 body.infrastructure-page .chronology-day .day-summary{display:block;margin:2px 0 10px;color:var(--muted);font-size:13px}
-body.infrastructure-page .archive-pointer{display:grid;grid-template-columns:6.5em minmax(0,1fr);column-gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--rule)}
-body.infrastructure-page .archive-pointer .entry-body{font-size:15px;line-height:1.4}
+body.infrastructure-page .archive-pointer{display:block;width:100%;padding:9px 0;border-bottom:1px solid var(--rule)}
+body.infrastructure-page .archive-pointer .entry-body{display:block;width:100%;min-width:0;font-size:15px;line-height:1.5}
+body.infrastructure-page .archive-pointer .entry-body p{margin:0}
 body.infrastructure-page .archive-pointer .entry-body p{margin:0}
 body.infrastructure-page .archive-pointer a,
 body.infrastructure-page .day-summary a{text-decoration:none;color:inherit}

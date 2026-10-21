@@ -22,6 +22,17 @@
 <meta property="og:image:type" content="image/png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="chronology-shared.css">
+<style>
+/* Desktop infrastructure page: restore white type on black; mobile is unchanged. */
+@media (min-width:681px) {
+  html:has(body.infrastructure-page) { background:#111 !important; color-scheme:dark; }
+  body.infrastructure-page {
+    --ink:#ededed; --muted:#b3b3b3; --rule:#414141;
+    --paper:#111; --brand:#ff6b6b; --ok:#8fc7a2; --rep:#d9a441;
+    background:#111 !important; color:#ededed !important; color-scheme:dark;
+  }
+}
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHP16V6HE8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-VHP16V6HE8',{linker:{domains:['abdymok.substack.com']}});</script>
 <script>

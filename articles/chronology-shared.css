@@ -519,7 +519,6 @@ body.infrastructure-page .dashboard-item[data-measure="alert-hours"] .dashboard-
 /* Align the three headline measures on a shared label and value baseline. */
 body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item{
   display:grid;
-  grid-template-rows:min-height;
   grid-template-rows:auto auto 1fr;
   align-content:start;
 }

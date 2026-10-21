@@ -512,3 +512,5 @@ body.infrastructure-page .day-heading,body.archive-page .day-heading,body.infras
 body.infrastructure-page .entry-body details,body.archive-page .entry-body details,body.infrastructure-page .entry-body .source,body.archive-page .entry-body .source,body.infrastructure-page .entry-body h3,body.archive-page .entry-body h3,body.infrastructure-page .entry-body blockquote,body.archive-page .entry-body blockquote,body.infrastructure-page .entry-body .entry-meta,body.archive-page .entry-body .entry-meta{max-width:38em}
 
 body.infrastructure-page #chronology .entry-meta{max-width:38em}
+/* Keep the cumulative alert-duration label on one line. */
+body.infrastructure-page .dashboard-item[data-measure="alert-hours"] .dashboard-label{white-space:nowrap;}

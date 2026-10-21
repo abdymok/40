@@ -28,7 +28,7 @@
 
 ## Landing-page parity — hard requirement
 
-- `https://abdymok.github.io/index.html` must always be byte-for-byte identical to the canonical landing-page HTML at `abdymok/40/articles/landing_page.html` (published as `https://abdymok.github.io/40/articles/landing_page.html`). The root page is not a separate design and must not be replaced with a redirect.
+- `https://abdymok.github.io/index.html` must always be byte-for-byte identical to the canonical landing-page HTML at `abdymok/landing_page/index.html` (published as `https://abdymok.github.io/`). The root page is not a separate design and must not be replaced with a redirect.
 - Whenever either copy is changed, check both files and restore exact parity in the same work session. Compare the actual file contents; do not assume parity from appearance or from a prior check.
 - Before editing, locate and fetch the real canonical file path and confirm the current contents. If the path cannot be found or fetched, stop and report that obstacle rather than guessing, recreating the file, or editing one copy alone.
 - Preserve the approved landing-page design and existing desktop/iPhone layout and display behavior unless the user explicitly requests a change. When investigating a missing video or other media, diagnose the cause before changing layout or playback behavior.

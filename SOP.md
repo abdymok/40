@@ -1,5 +1,9 @@
 # 40 / Kyiv infrastructure chronology — publishing SOP
 
+## House style
+
+- For Ukrainian place names, use the project's preferred transliteration: write `-y`, not `-yi`. Examples: `Solomiansky`, `Darnytsky`, `Sviatoshynsky`, `Holosiivsky`. Do not “correct” these to forms ending in `-yi`.
+
 ## Chronology
 
 - Add the newest item at the top of the chronology. Preserve older entries and anchors; do not delete or silently regress earlier material.

@@ -531,3 +531,21 @@ body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
   min-height:1em;
   margin-bottom:7px;
 }
+
+
+/* Desktop infrastructure chronology: white type on a black field. Mobile remains unchanged. */
+@media(min-width:901px){
+  html:has(body.infrastructure-page){background:#111;color-scheme:dark}
+  body.infrastructure-page{
+    --ink:#ededed;
+    --muted:#b3b3b3;
+    --rule:#414141;
+    --paper:#111;
+    --brand:#ff6b6b;
+    --ok:#8fc7a2;
+    --rep:#d9a441;
+    color-scheme:dark;
+    background:#111;
+    color:#ededed;
+  }
+}

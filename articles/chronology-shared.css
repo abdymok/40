@@ -514,3 +514,21 @@ body.infrastructure-page .entry-body details,body.archive-page .entry-body detai
 body.infrastructure-page #chronology .entry-meta{max-width:38em}
 /* Keep the cumulative alert-duration label on one line. */
 body.infrastructure-page .dashboard-item[data-measure="alert-hours"] .dashboard-label{white-space:nowrap;}
+
+
+/* Align the three headline measures on a shared label and value baseline. */
+body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item{
+  display:grid;
+  grid-template-rows:min-height;
+  grid-template-rows:auto auto 1fr;
+  align-content:start;
+}
+body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{
+  min-height:2.8em;
+  margin-bottom:7px;
+  line-height:1.35;
+}
+body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
+  min-height:1em;
+  margin-bottom:7px;
+}

@@ -525,6 +525,7 @@ body.infrastructure-page .source a::after{content:none;}
 body.infrastructure-page .day-jump,body.archive-page .day-jump{width:100%;max-width:720px;}
 
 /* Evidence captions use the full chronology column, independently of the displayed media width. Do not balance-wrap captions or hyphenated words. */
+body.infrastructure-page #chronology .entry-body figure.evidence-media{width:100%;max-width:720px;}
 body.infrastructure-page .evidence-media figcaption,
 body.infrastructure-page .evidence-video figcaption,
 body.archive-page .evidence-video figcaption{width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}

@@ -179,15 +179,7 @@ body.infrastructure-page .dashboard-leads .dashboard-item:last-child{border-bott
 body.infrastructure-page .dashboard-leads .dashboard-value{font-size:30px}
 body.infrastructure-page .dashboard-leads .dashboard-label{font-size:12px}
 }
-@media(prefers-color-scheme:dark){html,
-body.infrastructure-page{background:var(--paper);color:var(--ink)}
-body.infrastructure-page a{color:inherit}
-body.infrastructure-page .dashboard-item.is-lead[data-measure="civilian-deaths"] .dashboard-value{color:var(--brand)}
-body.infrastructure-page .refresh{color:#8fc7a2}
-body.infrastructure-page .refresh:focus-visible{outline-color:#8fc7a2}
-body.infrastructure-page .evidence-video video{background:#090909}
-body.infrastructure-page ::selection{background:#5c2525;color:#fff}
-}
+
 body.infrastructure-page .update-history-list{margin:0 0 18px;padding-left:20px;color:var(--muted);font-size:12px;line-height:1.5}
 body.infrastructure-page .timeline-update{display:grid;grid-template-columns:140px minmax(0,1fr);gap:14px;align-items:start;margin:0 0 13px}
 body.infrastructure-page .timeline-update .entry-time{display:block;color:var(--muted);font-size:13px;line-height:1.5;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -201,10 +193,8 @@ body.infrastructure-page .timeline-update .entry-time{white-space:normal;font-si
 body.infrastructure-page .dashboard-leads .dashboard-label{font-size:12px;letter-spacing:var(--track)}
 body.infrastructure-page .dashboard-leads .dashboard-detail{font-size:12px;line-height:1.45;white-space:normal}
 }
-@media(prefers-color-scheme:dark){body.infrastructure-page .timeline-update .entry-time{color:var(--muted)}
-}
-@media(prefers-color-scheme:dark){body.archive-page a{color:inherit}
-}
+
+
 body.archive-page *{box-sizing:border-box}
 html,
 body.archive-page{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.58;font-size:16px}
@@ -279,7 +269,7 @@ figcaption{ text-wrap:balance }
 .dashboard-detail{max-width:32em}
 
 .evidence-category{display:inline-flex;align-items:center;gap:.4em}
-.evidence-category::before{content:"";display:inline-block;flex:0 0 .55em;width:.55em;height:.55em;border-radius:50%;background:var(--tier,var(--muted))}
+
 
 figure{display:block;max-width:100%}
 figcaption{display:block;font-size:14px;line-height:1.45;color:var(--ink)}
@@ -326,7 +316,7 @@ body.infrastructure-page a:hover{text-decoration-color:var(--ink)}
 .timeline-update .entry-time{display:block;margin:0 0 5px;font-size:12px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
 
 .timeline-update p{margin:0 0 10px}
-.meta-icon{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:5px;flex:0 0 16px}
+
 #chronology .entry-meta,
 .entry-meta{font-size:12px;line-height:1.5}
 .dashboard-item.is-lead .dashboard-value{color:var(--ink)}
@@ -421,7 +411,7 @@ body.archive-page .entry-times{display:flex;flex-direction:column;align-items:fl
 body.infrastructure-page .entry-times .entry-time,
 body.archive-page .entry-times .entry-time{display:block;white-space:nowrap;font-size:12px;line-height:1.4}
 body.infrastructure-page .meta-icon,
-body.archive-page .meta-icon{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:5px;flex:0 0 16px}
+body.archive-page 
 
 
 /* Future dates are made inactive by the date-navigation script above. */
@@ -456,7 +446,7 @@ body.infrastructure-page .update-history-older>summary{position:relative}
 body.infrastructure-page .update-history-older>summary::after{content:"";position:absolute;right:7px;top:17px;width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .15s}
 body.infrastructure-page .update-history-older[open]>summary::after{transform:rotate(225deg)}
 
-body.infrastructure-page .source a::after,body.archive-page .source a::after{content:"";display:inline-block;width:.8em;height:.8em;margin-left:.4em;vertical-align:-.05em;background:currentColor;opacity:.55;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3H3v10h10v-3M9 2h5v5M14 2 7 9'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 3H3v10h10v-3M9 2h5v5M14 2 7 9'/%3E%3C/svg%3E") center/contain no-repeat}
+
 
 body.infrastructure-page .dashboard-method{min-width:44px;min-height:44px}
 body.infrastructure-page .dashboard-method .method-mark{display:block;width:24px;height:24px}
@@ -501,7 +491,7 @@ body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
 body.infrastructure-page .source a,body.archive-page .source a{display:inline !important;margin:0 !important;}
 body.infrastructure-page .source,body.archive-page .source{font-size:12px;line-height:1.45;}
 /* Source links are already signalled by their text and underline; omit redundant external-link glyphs. */
-body.infrastructure-page .source a::after{content:none;}
+
 
 
 /* The date pagination spans the full 720px chronology column; on mobile it remains swipeable within the viewport. */
@@ -557,14 +547,14 @@ body.infrastructure-page h2.day-heading{font-size:28px;font-weight:500;line-heig
 body.infrastructure-page #chronology .entry-body h3{font-size:19px;font-weight:500;line-height:1.3;margin-top:0}
 body.infrastructure-page .source a{display:inline!important;margin:0!important}
 body.infrastructure-page .source br{display:none}
-body.infrastructure-page .source a+a::before{content:"·";display:inline-block;margin:0 .55em 0 .15em;color:var(--muted);text-decoration:none}
+
 body.infrastructure-page .day-summary{max-width:38em;margin:0 0 16px;color:var(--muted);font-size:14px;line-height:1.5;text-wrap:pretty}
 body.infrastructure-page .refresh,body.infrastructure-page .refresh:focus-visible{color:var(--muted);outline-color:var(--muted)}
-.evidence-category::before{content:"";display:inline-block;vertical-align:middle;margin-right:.55em;width:.55em;height:.55em;border-radius:50%;background:var(--ink);box-shadow:none}
-.is-official::before,.is-operator::before,.is-tracker::before,.is-editorial::before{background:var(--ink)}
-.is-media::before,.is-eyewitness::before,.is-attributed::before{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%);box-shadow:inset 0 0 0 1px var(--ink)}
-.is-unverified::before{background:transparent;box-shadow:inset 0 0 0 1px var(--muted)}
-.chronology-entry:target{box-shadow:-3px 0 0 var(--brand);padding-left:12px;margin-left:-15px}
+
+
+
+
+.chronology-entry:target{box-shadow:inset 3px 0 0 var(--brand)}
 .chronology-entry,.chronology-day{content-visibility:auto;contain-intrinsic-size:auto 400px}
 body.infrastructure-page .timeline-update{grid-template-columns:4.5rem minmax(0,1fr);gap:12px}
 body.infrastructure-page .timeline-update .entry-time{white-space:normal;overflow-wrap:anywhere}
@@ -584,3 +574,18 @@ body.infrastructure-page .timeline-update .entry-time{white-space:normal;overflo
 }
 /* Source notes use the full chronology column, independently of body-copy measure. */
 body.infrastructure-page #chronology .entry-body p.source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
+
+
+/* Shared chronology rules: consistent source links, focus and evidence treatment. */
+:root{--measure:38em;--column:720px}
+.source{font-size:13px;line-height:1.5;color:var(--muted)}
+.source a,.source a:has(~ a),.source a ~ a{display:inline;margin:0;text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:2px}
+.source a ~ a::before{content:" · ";color:var(--muted);text-decoration:none;white-space:pre}
+.source br{display:none}
+.source a::after{content:none}
+.evidence-category::before{content:none}
+.meta-icon{display:none}
+.day-heading,h2.day-heading{font-size:28px;font-weight:500;line-height:1.15}
+:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
+.archive-day>summary::before,.chronology-day>summary::before{content:"Show "}
+.archive-day[open]>summary::before,.chronology-day[open]>summary::before{content:"Hide "}

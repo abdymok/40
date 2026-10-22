@@ -69,19 +69,22 @@ if ('serviceWorker' in navigator) {
 </script>
 <!-- Pages rebuild: chronology-first layout, 2026-10-13 -->
 <style>
-/* Keep the lead commuting video and its caption within the chronology's 720px content column. */
-body.infrastructure-page figure#kyiv-rush-hour-oct-22 {
+/* Keep lead media and its caption within the chronology's 720px content column. */
+body.infrastructure-page figure#kyiv-rush-hour-oct-22,
+body.infrastructure-page figure#rocket-attack-map-oct-22 {
   display: block;
   width: 100%;
   max-width: 720px;
 }
-body.infrastructure-page figure#kyiv-rush-hour-oct-22 video {
+body.infrastructure-page figure#kyiv-rush-hour-oct-22 video,
+body.infrastructure-page figure#rocket-attack-map-oct-22 img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
 }
-body.infrastructure-page figure#kyiv-rush-hour-oct-22 figcaption {
+body.infrastructure-page figure#kyiv-rush-hour-oct-22 figcaption,
+body.infrastructure-page figure#rocket-attack-map-oct-22 figcaption {
   display: block;
   width: 100%;
   max-width: 100%;

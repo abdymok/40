@@ -58,7 +58,7 @@ body.infrastructure-page .dashboard-item{display:flex;flex-direction:column;min-
 body.infrastructure-page .dashboard-item:nth-child(odd){padding-left:0;border-left:0}
 body.infrastructure-page .dashboard-item:nth-child(even){padding-right:0}
 body.infrastructure-page .dashboard-label{margin:0 0 7px;font-size:12px;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted);overflow-wrap:anywhere}
-body.infrastructure-page .dashboard-value{margin:0 0 7px;font-size:clamp(30px,3.5vw,46px);font-weight:400;line-height:1;letter-spacing:-.035em;overflow-wrap:anywhere;word-break:normal;font-variant-numeric:tabular-nums;flex:0 0 auto}
+body.infrastructure-page .dashboard-value{margin:0 0 7px;font-size:clamp(26px,5.2vw,45px);font-weight:400;line-height:1;letter-spacing:-.035em;white-space:nowrap;overflow-wrap:normal;word-break:normal;font-variant-numeric:tabular-nums;flex:0 0 auto}
 body.infrastructure-page .dashboard-detail{margin:3px 0 0;font-size:12px;line-height:1.35;color:var(--muted);min-width:0;overflow-wrap:anywhere}
 body.infrastructure-page .dashboard-value{font-variant-numeric:lining-nums tabular-nums}
 body.infrastructure-page .dashboard-value .u{font-size:.5em;margin-left:.1em;letter-spacing:0}
@@ -300,7 +300,8 @@ figure{display:table;width:fit-content;max-width:100%}
 figcaption{display:table-caption;caption-side:bottom;font-size:14px;line-height:1.45;color:var(--ink)}
 figcaption .credit{display:block;margin-top:2px;font-size:11px;letter-spacing:var(--track);text-transform:none;color:var(--muted)}
 blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);text-indent:0;hanging-punctuation:first}
-.source a{display:inline;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:2px;mask:none}
+.source a{display:inline;text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:2px;mask:none}
+body.infrastructure-page a:hover{text-decoration-color:var(--ink)}
 .source br{display:none}
 .source a:has(~ a),.source a ~ a{display:block;margin:0 0 2px}
 .source a:hover{text-decoration:underline;text-underline-offset:3px}

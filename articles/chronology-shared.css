@@ -469,7 +469,7 @@ body.infrastructure-page .update-history-content{padding:0 0 0 12px;border-left:
 body.infrastructure-page .update-history-text{margin:0 0 12px;color:var(--muted)}
 body.infrastructure-page .update-history-older>summary{min-height:44px;padding:10px 24px 10px 0;cursor:pointer;list-style:none}
 
-body.infrastructure-page .update-history-older>summary{position:relative;padding-right:24px}
+body.infrastructure-page .update-history-older>summary{position:relative}
 body.infrastructure-page .update-history-older>summary::after{content:"";position:absolute;right:7px;top:17px;width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .15s}
 body.infrastructure-page .update-history-older[open]>summary::after{transform:rotate(225deg)}
 

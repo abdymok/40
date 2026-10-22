@@ -549,6 +549,8 @@ body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
 /* Source notes stay compact: one continuous paragraph, with inline links on desktop and mobile. */
 body.infrastructure-page .source a,body.archive-page .source a{display:inline !important;margin:0 !important;}
 body.infrastructure-page .source,body.archive-page .source{font-size:12px;line-height:1.45;}
+/* Source links are already signalled by their text and underline; omit redundant external-link glyphs. */
+body.infrastructure-page .source a::after{content:none;}
 
 
 /* The date pagination spans the full 720px chronology column; on mobile it remains swipeable within the viewport. */

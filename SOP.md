@@ -13,6 +13,9 @@
 
 ## Video evidence and cutlines
 
+- Every photo or video evidence window must carry an explicit visible date, including the year where appropriate. Spell out the month in full (for example, `KYIV · OCTOBER 22, 2026`); never abbreviate it in the visible caption.
+- Verify the actual rendered-caption source for every evidence window before publishing. Do not rely on surrounding chronology text, file metadata, or a commit message to establish the date; check that the date is visibly present in the caption itself.
+
 - Let the video lead. Keep the caption close to the video, with tight spacing.
 - Use small, muted caption type (normally 12px) and restrained line spacing.
 - Write one concise cutline: identify the place or subject, state only the necessary context, and include a direct source link where available.

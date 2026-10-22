@@ -567,3 +567,8 @@ body.infrastructure-page .entry-body .source,body.archive-page .entry-body .sour
 
 /* Override the narrower legacy chronology-body rule: source notes span the full 720px column. */
 body.infrastructure-page #chronology .entry-body .source,body.archive-page #chronology .entry-body .source{width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
+
+/* Dashboard lead video: make the figure itself fill the 720px column, and let its caption wrap naturally. */
+body.infrastructure-page figure#kyiv-rush-hour-oct-22{display:block;width:100%;max-width:720px;box-sizing:border-box;}
+body.infrastructure-page figure#kyiv-rush-hour-oct-22 video{display:block;width:100%;max-width:100%;height:auto;}
+body.infrastructure-page figure#kyiv-rush-hour-oct-22 figcaption{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}

@@ -4,6 +4,12 @@
 
 - For Ukrainian place names, use the project's preferred transliteration: write `-y`, not `-yi`. Examples: `Solomiansky`, `Darnytsky`, `Sviatoshynsky`, `Holosiivsky`. Do not “correct” these to forms ending in `-yi`.
 
+## Images, figures, and captions
+
+- Before publishing an image swap or caption edit, inspect the specific figure and its shared CSS; prefer a targeted fix over broad stylesheet changes.
+- Check the actual line breaks, not merely the caption's width or CSS declarations. Keep short, meaningful phrases together with non-breaking spaces where appropriate when a word is stranded at a line end.
+- After committing, fetch the file again to verify the exact change landed. Then inspect the rendered live page on desktop and mobile where possible. If live rendering cannot be checked, say so plainly; do not claim visual verification.
+
 ## Chronology
 
 - Add the newest item at the top of the chronology. Preserve older entries and anchors; do not delete or silently regress earlier material.

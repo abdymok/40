@@ -372,7 +372,6 @@ body.infrastructure-page a:hover{text-decoration-color:var(--ink)}
 .entry-times{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 6px}
 .entry-times .entry-time{display:block;white-space:nowrap;font-size:12px;line-height:1.4}
 .entry-summary{font-size:17px;line-height:1.5;color:var(--ink)}
-.brand-y{color:var(--brand)}
 .evidence-kicker{margin:0 0 10px;font-size:12px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
 #chronology .entry-body .status{letter-spacing:var(--track)}
 body.infrastructure-page,
@@ -462,7 +461,6 @@ body.infrastructure-page .chronology-day{margin:8px 0 0;padding-top:0;border-top
 body.archive-page .archive-day{margin:0 0 12px;padding-top:0;border-top:0}
 
 
-body.infrastructure-page .update-history{margin:0 0 16px;color:var(--muted);font-size:13px}
 body.infrastructure-page .update-history>summary{position:relative;display:block;cursor:pointer;list-style:none;color:var(--muted);max-width:38em;min-height:44px;padding:8px 26px 8px 0;text-wrap:pretty}
 body.infrastructure-page .update-history>summary::-webkit-details-marker,body.infrastructure-page .update-history-older>summary::-webkit-details-marker{display:none}
 body.infrastructure-page .update-history>summary::after{content:"";position:absolute;right:8px;top:17px;width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .15s}

@@ -49,7 +49,7 @@ body.infrastructure-page .note{margin-top:32px;padding-top:14px;border-top:1px s
 body.infrastructure-page h1{font-size:29px}
 }
 body.infrastructure-page .dashboard{margin:0 0 28px;padding:12px 0 15px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
-body.infrastructure-page .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:13px;letter-spacing:var(--track);display:flex;align-items:center;gap:8px;flex-wrap:wrap;overflow-wrap:anywhere}
+body.infrastructure-page .dashboard-meta{margin:0 0 12px;color:var(--muted);font-size:13px;letter-spacing:var(--track);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 body.infrastructure-page .dashboard-method{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;margin:0;vertical-align:middle;text-decoration:none;min-width:24px;min-height:24px}
 body.infrastructure-page .dashboard-method:hover,
 body.infrastructure-page .dashboard-method:focus-visible{opacity:.65}

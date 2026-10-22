@@ -579,6 +579,7 @@ body.infrastructure-page #chronology .entry-body p.source{display:block;width:10
 
 
 /* Shared chronology rules: consistent source links, focus and evidence treatment. */
+.entry-meta{font-size:13px}
 :root{--measure:38em;--column:720px}
 .source{font-size:13px;line-height:1.5;color:var(--muted)}
 .source a,.source a:has(~ a),.source a ~ a{display:inline;margin:0;text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:2px}

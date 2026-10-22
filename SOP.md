@@ -39,6 +39,8 @@
 
 - Keep dashboard tiles equal-sized and symmetrical, with large, legible numerals.
 - Update dashboard figures and the latest chronology item as part of the same publishing workflow when relevant. Label estimates and provisional counts as such.
+- The `Dead civilians` figure is a nationwide, provisional documented minimum of officially reported civilian deaths attributed to Russian attacks; exclude military deaths and check existing entries to avoid double-counting. It is not a complete national total, and the actual toll is likely higher.
+- We are not running a national casualty-monitoring service. Record deaths when they come to our attention and can be attributed to reliable official reporting; make a good-faith effort, but do not imply exhaustive coverage or treat gaps in our tally as evidence that deaths did not occur. Correct the count when better information arrives.
 - Keep the visual treatment restrained: white background, editorial typography, minimal decoration, no unnecessary cards, gradients or animation.
 - Use concise labels and avoid redundant explanatory copy.
 

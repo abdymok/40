@@ -554,3 +554,7 @@ body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
 /* Source notes stay compact: one continuous paragraph, with inline links on desktop and mobile. */
 body.infrastructure-page .source a,body.archive-page .source a{display:inline !important;margin:0 !important;}
 body.infrastructure-page .source,body.archive-page .source{font-size:11px;line-height:1.45;}
+
+
+/* The date pagination spans the full 720px chronology column; on mobile it remains swipeable within the viewport. */
+body.infrastructure-page .day-jump,body.archive-page .day-jump{width:100%;max-width:720px;}

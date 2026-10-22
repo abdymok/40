@@ -508,13 +508,13 @@ body.infrastructure-page .attack-graphic figcaption{ text-wrap:wrap; }
 body.infrastructure-page .entry-body .source,body.archive-page .entry-body .source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
 
 /* On desktop, keep a single source citation together when it fits; allow wrapping on narrow screens. */
-@media(min-width:681px){body.infrastructure-page .entry-body .source a:only-of-type,body.archive-page .entry-body .source a:only-of-type{white-space:nowrap;}}
+@media(min-width:681px){}
 
 
 /* Air-alert interval records are deliberately quieter than incident reports. */
 body.infrastructure-page #chronology .chronology-entry.is-tracker{padding:7px 0 9px}
 body.infrastructure-page #chronology .chronology-entry.is-tracker .entry-body{order:0;font-size:14px;line-height:1.45}
-body.infrastructure-page #chronology .tracker-row{margin:0!important;color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+body.infrastructure-page #chronology .tracker-row{margin:0color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
 body.infrastructure-page #chronology .tracker-row a{text-decoration:none;text-decoration-color:var(--muted)}
 body.infrastructure-page #chronology .tracker-row a:hover{text-decoration:underline;text-decoration-color:var(--ink)}
 body.infrastructure-page #chronology .tracker-details{margin-top:5px;font-size:12px}
@@ -576,19 +576,6 @@ body.infrastructure-page .timeline-update .entry-time{white-space:normal;overflo
 body.infrastructure-page #chronology .entry-body p.source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
 
 
-/* Shared chronology rules: consistent source links, focus and evidence treatment. */
-:root{--measure:38em;--column:720px}
-.source{font-size:13px;line-height:1.5;color:var(--muted)}
-
-
-
-
-
-
-.day-heading,h2.day-heading{font-size:28px;font-weight:500;line-height:1.15}
-:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
-.archive-day>summary::before,.chronology-day>summary::before{content:"Show "}
-.archive-day[open]>summary::before,.chronology-day[open]>summary::before{content:"Hide "}
 
 
 /* Shared chronology rules: consistent source links, focus and evidence treatment. */
@@ -598,6 +585,7 @@ body.infrastructure-page #chronology .entry-body p.source{display:block;width:10
 .source a ~ a::before{content:" · ";color:var(--muted);text-decoration:none;white-space:pre}
 .source br{display:none}
 .source a::after{content:none}
+.entry-body .source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap}
 .evidence-category::before{content:none}
 .meta-icon{display:none}
 .day-heading,h2.day-heading{font-size:28px;font-weight:500;line-height:1.15}

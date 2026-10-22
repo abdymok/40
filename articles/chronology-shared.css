@@ -1,7 +1,6 @@
 body.infrastructure-page *{box-sizing:border-box}
 html,
-body.infrastructure-page{margin:0;padding:0;background:var(--paper);color:var(--ink)}
-body.infrastructure-page{font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.6;padding:64px 28px 84px}
+body.infrastructure-page{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.6;padding:64px 28px 84px}
 body.infrastructure-page main{max-width:720px;margin:0 auto}
 body.infrastructure-page h1{margin:0 0 10px;font-size:36px;font-weight:400;line-height:1.15;letter-spacing:-.02em}
 body.infrastructure-page .updated{margin:0 0 8px;color:var(--muted);font-size:13px}
@@ -212,8 +211,7 @@ body.infrastructure-page .dashboard-leads .dashboard-detail{font-size:12px;line-
 }
 body.archive-page *{box-sizing:border-box}
 html,
-body.archive-page{margin:0;padding:0;background:var(--paper);color:var(--ink)}
-body.archive-page{font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.58;padding:48px 22px 70px;font-size:16px}
+body.archive-page{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:"Spectral",Georgia,"Times New Roman",serif;line-height:1.58;padding:48px 22px 70px;font-size:16px}
 body.archive-page main{max-width:720px;margin:0 auto}
 body.archive-page h1{font-size:32px;font-weight:400;line-height:1.18;margin:0 0 8px}
 body.archive-page p{margin:0 0 14px}

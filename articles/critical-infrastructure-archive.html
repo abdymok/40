@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="https://abdymok.github.io/40/evidence/chronology-favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="https://abdymok.github.io/40/evidence/chronology-touch.png">
@@ -23,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <meta name="description" content="Archived source-attributed entries from the Kyiv and selected Ukrainian critical infrastructure chronology, October 7–13, 2026.">
-<link rel="stylesheet" href="chronology-shared.css">
+<link rel="stylesheet" href="chronology-shared.css?v=20261022v">
 </head>
 <body class="archive-page"><main>
 <h1>Kyiv infrastructure chronology archive</h1>
@@ -431,6 +430,22 @@
 <li>Oct. 1–12 — Earlier entries document attacks, alert observations, electricity and water disruption, bridge strikes, casualty revisions and dashboard methodology.</li>
 </ul></details>
 </main><script>
-document.querySelectorAll(".archive-day").forEach(function(day){var summary=day.querySelector(":scope > summary");if(!summary)return;var count=day.querySelectorAll(":scope > article").length;function update(){summary.textContent=(day.open?"Hide ":"Show ")+count+" entr"+(count===1?"y":"ies");}update();day.addEventListener("toggle",update);});
+document.querySelectorAll(".archive-day").forEach(function(day){var summary=day.querySelector(":scope > summary");if(!summary)return;var heading=day.previousElementSibling;while(heading&&!heading.matches(".day-heading"))heading=heading.previousElementSibling;var date=heading?heading.textContent.trim():"";var count=day.querySelectorAll(":scope > article, :scope > section.archive-dispatch").length;function update(){summary.textContent=(day.open?"Hide ":"Show ")+count+" entr"+(count===1?"y":"ies")+(date?" for "+date:"");}update();day.addEventListener("toggle",update);});
+</script>
+<script>
+(function(){
+  function revealHashTarget(){
+    if(!location.hash)return;
+    var id;
+    try{id=decodeURIComponent(location.hash.slice(1));}catch(e){id=location.hash.slice(1);}
+    var target=document.getElementById(id);
+    if(!target)return;
+    var parent=target.parentElement;
+    while(parent){if(parent.tagName==="DETAILS")parent.open=true;parent=parent.parentElement;}
+    target.scrollIntoView({block:"start"});
+  }
+  window.addEventListener("hashchange",revealHashTarget);
+  if(location.hash)requestAnimationFrame(revealHashTarget);
+})();
 </script>
 </body></html>

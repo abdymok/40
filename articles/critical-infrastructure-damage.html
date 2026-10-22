@@ -7,8 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
 <title>Kyiv and selected Ukrainian critical infrastructure damage</title>
 <meta name="description" content="A working chronology of confirmed, officially reported, attributed and eyewitness reports of damage to Kyiv and selected Ukrainian critical infrastructure.">
 <meta property="og:title" content="Kyiv critical infrastructure damage">
@@ -21,7 +20,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="chronology-shared.css?v=20261022u">
+<link rel="stylesheet" href="chronology-shared.css?v=20261022v">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHP16V6HE8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-VHP16V6HE8',{linker:{domains:['abdymok.substack.com']}});</script>
 <script>
@@ -1126,4 +1125,20 @@ if ('serviceWorker' in navigator) {
 <script>
 document.querySelectorAll(".chronology-day").forEach(function(day){var summary=day.querySelector(":scope > summary");if(!summary)return;var count=day.querySelectorAll(":scope > article").length;var label="Show "+count+" entr"+(count===1?"y":"ies");function update(){summary.textContent=day.open?"Hide "+count+" entr"+(count===1?"y":"ies"):label;}update();day.addEventListener("toggle",update);});
 </script>
-<script>(function(){const links=Array.from(document.querySelectorAll('.day-jump a[href^="#day-oct-"]'));const headings=links.map(a=>document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);if(!('IntersectionObserver'in window)||!headings.length)return;const visible=new Set();function update(){const candidates=headings.filter(x=>visible.has(x));if(!candidates.length)return;candidates.sort((a,b)=>Math.abs(a.getBoundingClientRect().top-120)-Math.abs(b.getBoundingClientRect().top-120));links.forEach(a=>a.removeAttribute('aria-current'));const active=links.find(a=>a.getAttribute('href')==='#'+candidates[0].id);if(active)active.setAttribute('aria-current','location');}const observer=new IntersectionObserver(entries=>{entries.forEach(e=>e.isIntersecting?visible.add(e.target):visible.delete(e.target));update();},{rootMargin:'-12% 0px -72% 0px',threshold:0});headings.forEach(x=>observer.observe(x));})();</script></body></html>
+<script>(function(){const links=Array.from(document.querySelectorAll('.day-jump a[href^="#day-oct-"]'));const headings=links.map(a=>document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);if(!('IntersectionObserver'in window)||!headings.length)return;const visible=new Set();function update(){const candidates=headings.filter(x=>visible.has(x));if(!candidates.length)return;candidates.sort((a,b)=>Math.abs(a.getBoundingClientRect().top-120)-Math.abs(b.getBoundingClientRect().top-120));links.forEach(a=>a.removeAttribute('aria-current'));const active=links.find(a=>a.getAttribute('href')==='#'+candidates[0].id);if(active)active.setAttribute('aria-current','location');}const observer=new IntersectionObserver(entries=>{entries.forEach(e=>e.isIntersecting?visible.add(e.target):visible.delete(e.target));update();},{rootMargin:'-12% 0px -72% 0px',threshold:0});headings.forEach(x=>observer.observe(x));})();</script><script>
+(function(){
+  function revealHashTarget(){
+    if(!location.hash)return;
+    var id;
+    try{id=decodeURIComponent(location.hash.slice(1));}catch(e){id=location.hash.slice(1);}
+    var target=document.getElementById(id);
+    if(!target)return;
+    var parent=target.parentElement;
+    while(parent){if(parent.tagName==="DETAILS")parent.open=true;parent=parent.parentElement;}
+    target.scrollIntoView({block:"start"});
+  }
+  window.addEventListener("hashchange",revealHashTarget);
+  if(location.hash)requestAnimationFrame(revealHashTarget);
+})();
+</script>
+</body></html>

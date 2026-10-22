@@ -444,13 +444,7 @@ body.archive-page .meta-icon{display:inline-block;width:16px;height:16px;vertica
 body.infrastructure-page .day-jump .day-jump-inactive{display:inline-flex;justify-self:center;justify-content:center;align-items:center;box-sizing:border-box;width:30px;height:30px;min-height:30px;padding:0;border:1px solid var(--rule);border-radius:50%;font-size:11px;line-height:1;color:#888;background:#e5e5e5;cursor:default;user-select:none}
 @media(prefers-color-scheme:dark){body.infrastructure-page .day-jump .day-jump-inactive{color:#999;background:#333;border-color:#555}}
 
-/* Desktop: show all 31 dates in two evenly spaced rows; retain swipe navigation on mobile. */
-@media(min-width:901px){
- body.infrastructure-page .day-jump{position:sticky;top:0;display:grid;grid-template-columns:repeat(16,minmax(0,1fr));justify-content:stretch;align-items:center;gap:7px 0;width:100%;max-width:100%;box-sizing:border-box;padding:9px 0;margin-bottom:24px;overflow:visible;white-space:normal;touch-action:auto}
- body.infrastructure-page .day-jump>span:first-child{grid-column:1/-1;font-size:11px;line-height:1.2}
- body.infrastructure-page .day-jump>span.day-jump-inactive{grid-column:auto;justify-self:center;font-size:11px;line-height:1}
- body.infrastructure-page .day-jump>a{display:inline-flex;justify-self:center;justify-content:center;align-items:center;box-sizing:border-box;width:30px;height:30px;min-height:30px;padding:0;border:1px solid var(--rule);border-radius:50%;font-size:11px;line-height:1;text-decoration:none}
-}
+/* The date navigator remains one horizontal, scrollable row at every viewport width. */
 @media(max-width:680px){body.infrastructure-page,
 body.archive-page{font-size:17px}
 body.infrastructure-page #chronology .entry-body h3,

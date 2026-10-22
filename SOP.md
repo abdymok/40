@@ -19,6 +19,12 @@
 - Do not repeat the cutline in a second paragraph below the video. No duplicate prose.
 - Retain a usable poster/cover image and a direct link to the original video when appropriate. Do not change surrounding page structure merely to rotate or replace media.
 
+## Media sizing and page margins
+
+- Keep every chronology image, video, poster frame and caption within the same content-column margins as the surrounding text. On the infrastructure chronology, the maximum width is the 720px main column; do not let media expand to a wider archive or figure maximum.
+- Set video and poster display to scale responsively within the column (`width: 100%; max-width: 100%; height: auto`). Keep the caption inside the same figure and aligned to the same margins.
+- After changing media sizing, check the live page on desktop and mobile when possible. Confirm both the pre-play poster and the playing video stay within the text margins; do not claim visual verification unless actually checked.
+
 ## Dashboard and page restraint
 
 - Keep dashboard tiles equal-sized and symmetrical, with large, legible numerals.

@@ -599,3 +599,5 @@ body.infrastructure-page .timeline-update .entry-time{white-space:normal;overflo
  body.infrastructure-page #chronology .chronology-entry.is-tracker{display:flex;flex-direction:column}
  body.infrastructure-page #chronology .chronology-entry.is-tracker>.entry-gutter{position:static;width:auto;text-align:left;padding:0 0 4px}
 }
+/* Source notes use the full chronology column, independently of body-copy measure. */
+body.infrastructure-page #chronology .entry-body p.source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}

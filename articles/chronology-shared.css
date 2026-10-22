@@ -572,3 +572,6 @@ body.infrastructure-page #chronology .entry-body .source,body.archive-page #chro
 body.infrastructure-page figure#kyiv-rush-hour-oct-22{display:block;width:100%;max-width:720px;box-sizing:border-box;}
 body.infrastructure-page figure#kyiv-rush-hour-oct-22 video{display:block;width:100%;max-width:100%;height:auto;}
 body.infrastructure-page figure#kyiv-rush-hour-oct-22 figcaption{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
+
+/* On desktop, keep a single source citation together when it fits; allow wrapping on narrow screens. */
+@media(min-width:681px){body.infrastructure-page .entry-body .source a:only-of-type,body.archive-page .entry-body .source a:only-of-type{white-space:nowrap;}}

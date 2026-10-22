@@ -588,3 +588,21 @@ body.infrastructure-page #chronology .tracker-details{margin-top:5px;font-size:1
 body.infrastructure-page #chronology .tracker-details summary{color:var(--muted);font-size:12px}
 body.infrastructure-page #chronology .tracker-details[open]>summary{margin-bottom:8px}
 body.infrastructure-page #chronology .tracker-details p{margin-bottom:9px}
+
+
+/* Chronology ledger: date/time in a quiet left gutter on desktop. */
+body.infrastructure-page #chronology .chronology-entry:not(.is-tracker){display:grid;grid-template-columns:5.5rem minmax(0,1fr);column-gap:1.25rem;align-items:start}
+body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-gutter{grid-column:1;grid-row:1;padding-top:5px;min-width:0}
+body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-body{grid-column:2;grid-row:1;order:initial;min-width:0;width:100%;max-width:100%}
+body.infrastructure-page #chronology .entry-gutter .entry-time{display:block;color:var(--muted);font-size:12px;line-height:1.45;font-variant-numeric:tabular-nums;text-decoration:none;overflow-wrap:normal}
+body.infrastructure-page #chronology .entry-gutter .entry-time:hover{text-decoration:underline;text-decoration-color:var(--ink)}
+body.infrastructure-page #chronology .entry-meta{display:flex;flex-wrap:wrap;gap:2px 1em;min-width:0}
+body.infrastructure-page #chronology .entry-meta .meta-separator{display:none}
+body.infrastructure-page #chronology .entry-meta>a:first-child{white-space:normal;font-variant-numeric:tabular-nums}
+body.infrastructure-page #chronology .entry-body h3{margin-top:0}
+@media(max-width:680px){
+  body.infrastructure-page #chronology .chronology-entry:not(.is-tracker){grid-template-columns:minmax(0,1fr);row-gap:0}
+  body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-gutter{grid-column:1;grid-row:1;padding:0 0 4px}
+  body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-body{grid-column:1;grid-row:2}
+  body.infrastructure-page #chronology .entry-gutter .entry-time{font-size:12px}
+}

@@ -558,3 +558,6 @@ body.infrastructure-page .source,body.archive-page .source{font-size:11px;line-h
 
 /* The date pagination spans the full 720px chronology column; on mobile it remains swipeable within the viewport. */
 body.infrastructure-page .day-jump,body.archive-page .day-jump{width:100%;max-width:720px;}
+
+/* Evidence captions use the full chronology column; do not balance-wrap hyphenated words. */
+body.infrastructure-page .evidence-video figcaption,body.archive-page .evidence-video figcaption{width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}

@@ -99,6 +99,7 @@ footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var
 <ul>
 <li>Order entries newest first. Use the most precise date or time the evidence supports, no more.</li>
 <li>Give each entry a location or infrastructure label, concise status/source label, specific heading, short factual account and direct source links.</li>
+<li><strong>Permanent deep link for every item:</strong> give every chronology item a unique, stable HTML <code>id</code> that can be used as a fragment link. Every item with a headline must make that headline clickable and link it to its own ID. A timestamp or gutter link alone does not satisfy this rule. Preserve existing IDs so previously shared links do not break; do not reuse an ID for a different item. Apply the same rule to archive items where they have headlines.</li>
 <li>Keep paragraphs short and concrete. Prefer specific nouns and verbs to broad characterisations.</li>
 <li>Do not make every incident read like a dispatch. The HTML is an ongoing, evidence-led record that complements the regular Ukraine@war Substack dispatches.</li>
 <li>Do not delete older entries to make room for new ones. Do not rewrite history silently.</li>
@@ -179,6 +180,7 @@ footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var
 <li>Images, audio, video, cutlines, alt text and source attribution checked.</li>
 <li>Photo and video cutlines use the same 12px muted typography and 8px top margin, except for a deliberate, layout-specific reason.</li>
 <li>Links, relative paths, anchors and HTML structure checked.</li>
+<li>Every chronology and archive item has a unique, stable anchor; every item with a headline links from that headline to its own anchor. Existing IDs remain unchanged unless a deliberate, verified migration is necessary.</li>
 <li>Standing spellings and house style applied.</li>
 <li>Every visible <code>abdymok</code> occurrence in HTML checked for the red-<code>y</code> branding invariant, including all branches in scope.</li>
 <li>No unrelated redesign or accidental regression.</li>

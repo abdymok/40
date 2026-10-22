@@ -7,7 +7,7 @@ body.infrastructure-page .updated{margin:0 0 8px;color:var(--muted);font-size:13
 body.infrastructure-page .update-history{margin:0 0 16px;color:var(--muted);font-size:13px}
 body.infrastructure-page .update-history summary{display:inline-flex;align-items:center;gap:7px;cursor:pointer;list-style:none;color:var(--muted);text-decoration:none}
 body.infrastructure-page .update-history summary::-webkit-details-marker{display:none}
-body.infrastructure-page .update-history summary::after{content:"⌄";display:inline-block;font-size:16px;line-height:1}
+
 body.infrastructure-page .update-history[open] summary{margin-bottom:8px}
 body.infrastructure-page .refresh{border:0;background:none;color:var(--ok);font:inherit;font-size:18px;line-height:1;cursor:pointer;padding:0 0 0 7px;vertical-align:-1px}
 body.infrastructure-page .refresh:hover{opacity:.7}
@@ -24,7 +24,7 @@ body.infrastructure-page summary{cursor:pointer;color:var(--ink)}
 body.infrastructure-page .video-archive{margin:34px 0 40px;padding-top:12px;border-top:1px solid var(--rule)}
 body.infrastructure-page .video-archive summary{font-size:14px}
 body.infrastructure-page .video-archive[open]>summary{margin-bottom:14px}
-body.infrastructure-page .corrections{margin-top:26px;padding-top:14px;border-top:1px solid var(--rule);color:var(--muted);font-size:13px}
+
 body.infrastructure-page .dek{margin:0 0 8px;color:var(--muted);font-size:16px}
 body.infrastructure-page .special-close{margin:24px 0 42px;padding:16px 0 18px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:760px}
 body.infrastructure-page .special-kicker{margin:0 0 10px;font-size:12px;letter-spacing:var(--track);color:var(--muted)}
@@ -73,7 +73,7 @@ body.infrastructure-page .dashboard-item:first-child{padding-top:0;border-top:0}
 body.infrastructure-page .dashboard-value{font-size:30px}
 }
 body.infrastructure-page .nuclear-section,
-body.infrastructure-page .corrections{max-width:720px}
+
 body.infrastructure-page .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 body.infrastructure-page .corrections h2{margin:0 0 12px;font-size:18px;line-height:1.3}
 body.infrastructure-page #chronology.chronology-list{display:block;width:100%;border:0;border-collapse:collapse}
@@ -195,8 +195,8 @@ body.infrastructure-page .timeline-update .entry-time{display:block;color:var(--
 body.infrastructure-page .timeline-update>div{min-width:0}
 body.infrastructure-page .timeline-update p{margin:0}
 body.infrastructure-page .entry-summary{margin:0 0 17px;font-size:17px;line-height:1.6}
-body.infrastructure-page .historical-update-log{margin-top:28px;padding-top:10px;border-top:1px solid var(--rule)}
-body.infrastructure-page .historical-update-log summary{font-size:12px;color:var(--muted)}
+
+
 @media(max-width:600px){body.infrastructure-page .timeline-update{grid-template-columns:112px minmax(0,1fr);gap:10px}
 body.infrastructure-page .timeline-update .entry-time{white-space:normal;font-size:12px}
 body.infrastructure-page .dashboard-leads .dashboard-label{font-size:12px;letter-spacing:var(--track)}
@@ -247,10 +247,8 @@ body.archive-page h1{font-size:27px}
 body.archive-page .evidence-category{font-weight:500}
 body.archive-page .source a{display:block;margin:0 0 2px}
 body.archive-page figcaption{font-size:13px}
-:root{--ink:#171717;--muted:#6b6b6b;--rule:#d9d9d9;--paper:#fff;--brand:#d00;--track:.07em;--ok:#2a7a4b;--rep:#a06a00;color-scheme:light dark}
-@media(prefers-color-scheme:dark){:root{--ink:#ededed;--muted:#b3b3b3;--rule:#414141;--paper:#111;--brand:#ff6b6b;--ok:#8fc7a2;--rep:#d9a441}
+:root{--ink:#ededed;--muted:#b3b3b3;--rule:#414141;--paper:#111;--brand:#ff6b6b;--track:.07em;--ok:#b3b3b3;--rep:#b3b3b3;color-scheme:dark}
 a{color:inherit}
-}
 html,body{background:var(--paper);color:var(--ink);-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{font-size:17px}
 main{max-width:720px}
@@ -282,17 +280,9 @@ figcaption{ text-wrap:balance }
 
 .evidence-category{display:inline-flex;align-items:center;gap:.4em}
 .evidence-category::before{content:"";display:inline-block;flex:0 0 .55em;width:.55em;height:.55em;border-radius:50%;background:var(--tier,var(--muted))}
-.is-official,
-.is-operator,
-.is-tracker{--tier:var(--ok)}
-.is-media,
-.is-eyewitness,
-.is-attributed{--tier:var(--rep)}
-.is-unverified{--tier:var(--muted)}
-.is-unverified::before{background:none;box-shadow:inset 0 0 0 1.5px var(--muted)}
-.is-editorial{--tier:var(--ink)}
-figure{display:table;width:fit-content;max-width:100%}
-figcaption{display:table-caption;caption-side:bottom;font-size:14px;line-height:1.45;color:var(--ink)}
+
+figure{display:block;max-width:100%}
+figcaption{display:block;font-size:14px;line-height:1.45;color:var(--ink)}
 figcaption .credit{display:block;margin-top:2px;font-size:12px;letter-spacing:var(--track);text-transform:none;color:var(--muted)}
 blockquote{margin:0 0 18px;padding:0 0 0 16px;border-left:2px solid var(--ink);text-indent:0;hanging-punctuation:first}
 .source a{display:inline;text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:2px;mask:none}
@@ -334,7 +324,7 @@ body.infrastructure-page a:hover{text-decoration-color:var(--ink)}
 }
 .timeline-update{margin:14px 0 16px 4px;padding:10px 0 10px 14px;border-left:1px solid var(--rule)}
 .timeline-update .entry-time{display:block;margin:0 0 5px;font-size:12px;line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
-.timeline-update .entry-time::before{content:"Latest";display:inline-block;margin-right:8px;padding:2px 6px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font-size:11px;letter-spacing:var(--track)}
+
 .timeline-update p{margin:0 0 10px}
 .meta-icon{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:5px;flex:0 0 16px}
 #chronology .entry-meta,
@@ -344,8 +334,8 @@ body.infrastructure-page a:hover{text-decoration-color:var(--ink)}
 .evidence-media{width:fit-content;max-width:100%;margin:28px 0 36px}
 .evidence-media video{display:block;width:auto;max-width:100%;max-height:min(78vh,720px);height:auto;background:#111}
 .evidence-media figcaption{margin-top:8px}
-.timeline-update .entry-time{font-size:0}
-.timeline-update .entry-time::before{background:var(--rule);border-color:var(--rule)}
+
+
 #chronology .entry-body figure,
 #chronology .entry-body .evidence-video,
 #chronology .entry-body .attack-graphic{width:fit-content;max-width:100%}
@@ -398,8 +388,8 @@ body.archive-page .status,
 body.infrastructure-page .evidence-category,
 body.archive-page .evidence-category{letter-spacing:var(--track)}
 body.infrastructure-page figure,
-body.archive-page figure{display:table;width:fit-content;max-width:100%}
-body.infrastructure-page figcaption,body.archive-page figcaption,body.infrastructure-page .attack-graphic figcaption,body.infrastructure-page .evidence-video figcaption{display:table-caption;caption-side:bottom;font-size:14px;line-height:1.45;color:var(--ink);text-wrap:balance}
+body.archive-page figure{display:block;max-width:100%}
+body.infrastructure-page figcaption,body.archive-page figcaption,body.infrastructure-page .attack-graphic figcaption,body.infrastructure-page .evidence-video figcaption{display:block;font-size:14px;line-height:1.45;color:var(--ink);text-wrap:balance}
 body.infrastructure-page figcaption .credit,
 body.archive-page figcaption .credit{display:block;margin-top:2px;font-size:12px;letter-spacing:var(--track);text-transform:none;color:var(--muted)}
 body.infrastructure-page blockquote,
@@ -435,8 +425,8 @@ body.archive-page .meta-icon{display:inline-block;width:16px;height:16px;vertica
 
 
 /* Future dates are visible but inactive until that day in Kyiv. */
-body.infrastructure-page .day-jump .day-jump-inactive{display:inline-flex;justify-self:center;justify-content:center;align-items:center;box-sizing:border-box;width:30px;height:30px;min-height:30px;padding:0;border:1px solid var(--rule);border-radius:50%;font-size:11px;line-height:1;color:#888;background:#e5e5e5;cursor:default;user-select:none}
-@media(prefers-color-scheme:dark){body.infrastructure-page .day-jump .day-jump-inactive{color:#999;background:#333;border-color:#555}}
+body.infrastructure-page .day-jump 
+@media(prefers-color-scheme:dark){body.infrastructure-page .day-jump }
 
 /* The date navigator remains one horizontal, scrollable row at every viewport width. */
 @media(max-width:680px){body.infrastructure-page,
@@ -521,22 +511,7 @@ body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
 }
 
 
-/* Desktop infrastructure chronology: white type on a black field. Mobile remains unchanged. */
-@media(min-width:901px){
-  html:has(body.infrastructure-page){background:#111;color-scheme:dark}
-  body.infrastructure-page{
-    --ink:#ededed;
-    --muted:#b3b3b3;
-    --rule:#414141;
-    --paper:#111;
-    --brand:#ff6b6b;
-    --ok:#8fc7a2;
-    --rep:#d9a441;
-    color-scheme:dark;
-    background:#111;
-    color:#ededed;
-  }
-}
+
 
 
 /* Source notes stay compact: one continuous paragraph, with inline links on desktop and mobile. */
@@ -555,12 +530,6 @@ body.infrastructure-page .attack-graphic figcaption{ text-wrap:wrap; }
 
 /* Source notes also run naturally across the full chronology column; never balance-wrap them. */
 body.infrastructure-page .entry-body .source,body.archive-page .entry-body .source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
-
-
-/* Dashboard lead video: make the figure itself fill the 720px column, and let its caption wrap naturally. */
-body.infrastructure-page figure#kyiv-rush-hour-oct-22{display:block;width:100%;max-width:720px;box-sizing:border-box;}
-body.infrastructure-page figure#kyiv-rush-hour-oct-22 video{display:block;width:100%;max-width:100%;height:auto;}
-body.infrastructure-page figure#kyiv-rush-hour-oct-22 figcaption{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
 
 /* On desktop, keep a single source citation together when it fits; allow wrapping on narrow screens. */
 @media(min-width:681px){body.infrastructure-page .entry-body .source a:only-of-type,body.archive-page .entry-body .source a:only-of-type{white-space:nowrap;}}
@@ -594,4 +563,36 @@ body.infrastructure-page #chronology .entry-body h3{margin-top:0}
   body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-gutter{grid-column:1;grid-row:1;padding:0 0 4px}
   body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-body{grid-column:1;grid-row:2}
   body.infrastructure-page #chronology .entry-gutter .entry-time{font-size:12px}
+}
+
+
+/* Editorial hierarchy and restrained evidence/source treatment. */
+body.infrastructure-page h2.day-heading{font-size:28px;font-weight:500;line-height:1.15;margin:56px 0 6px;padding-top:14px;border-top:1px solid var(--ink);text-wrap:balance}
+body.infrastructure-page #chronology .entry-body h3{font-size:19px;font-weight:500;line-height:1.3;margin-top:0}
+body.infrastructure-page .source a{display:inline!important;margin:0!important}
+body.infrastructure-page .source br{display:none}
+body.infrastructure-page .source a+a::before{content:"·";display:inline-block;margin:0 .55em 0 .15em;color:var(--muted);text-decoration:none}
+body.infrastructure-page .day-summary{max-width:38em;margin:0 0 16px;color:var(--muted);font-size:14px;line-height:1.5;text-wrap:pretty}
+body.infrastructure-page .refresh,body.infrastructure-page .refresh:focus-visible{color:var(--muted);outline-color:var(--muted)}
+.evidence-category::before{content:"";display:inline-block;vertical-align:middle;margin-right:.55em;width:.55em;height:.55em;border-radius:50%;background:var(--ink);box-shadow:none}
+.is-official::before,.is-operator::before,.is-tracker::before,.is-editorial::before{background:var(--ink)}
+.is-media::before,.is-eyewitness::before,.is-attributed::before{background:linear-gradient(90deg,var(--ink) 50%,transparent 50%);box-shadow:inset 0 0 0 1px var(--ink)}
+.is-unverified::before{background:transparent;box-shadow:inset 0 0 0 1px var(--muted)}
+.chronology-entry:target{box-shadow:-3px 0 0 var(--brand);padding-left:12px;margin-left:-15px}
+.chronology-entry,.chronology-day{content-visibility:auto;contain-intrinsic-size:auto 400px}
+body.infrastructure-page .timeline-update{grid-template-columns:4.5rem minmax(0,1fr);gap:12px}
+body.infrastructure-page .timeline-update .entry-time{white-space:normal;overflow-wrap:anywhere}
+@media(min-width:1100px){
+ body.infrastructure-page #chronology .chronology-entry:not(.is-tracker){display:block;position:relative}
+ body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-gutter{position:absolute;left:-7rem;top:0;width:5.5rem;text-align:right;padding-top:6px}
+ body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-body{width:100%;max-width:100%}
+ body.infrastructure-page #chronology .chronology-entry.is-tracker{display:block;position:relative}
+ body.infrastructure-page #chronology .chronology-entry.is-tracker>.entry-gutter{position:absolute;left:-7rem;top:0;width:5.5rem;text-align:right;padding-top:6px}
+}
+@media(max-width:1099px){
+ body.infrastructure-page #chronology .chronology-entry:not(.is-tracker){display:flex;flex-direction:column;gap:0}
+ body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-gutter{position:static;width:auto;text-align:left;padding:0 0 4px}
+ body.infrastructure-page #chronology .chronology-entry:not(.is-tracker)>.entry-body{width:100%;max-width:100%}
+ body.infrastructure-page #chronology .chronology-entry.is-tracker{display:flex;flex-direction:column}
+ body.infrastructure-page #chronology .chronology-entry.is-tracker>.entry-gutter{position:static;width:auto;text-align:left;padding:0 0 4px}
 }

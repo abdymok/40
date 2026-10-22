@@ -576,3 +576,15 @@ body.infrastructure-page figure#kyiv-rush-hour-oct-22 figcaption{display:block;w
 
 /* On desktop, keep a single source citation together when it fits; allow wrapping on narrow screens. */
 @media(min-width:681px){body.infrastructure-page .entry-body .source a:only-of-type,body.archive-page .entry-body .source a:only-of-type{white-space:nowrap;}}
+
+
+/* Air-alert interval records are deliberately quieter than incident reports. */
+body.infrastructure-page #chronology .chronology-entry.is-tracker{padding:7px 0 9px}
+body.infrastructure-page #chronology .chronology-entry.is-tracker .entry-body{order:0;font-size:14px;line-height:1.45}
+body.infrastructure-page #chronology .tracker-row{margin:0!important;color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+body.infrastructure-page #chronology .tracker-row a{text-decoration:none;text-decoration-color:var(--muted)}
+body.infrastructure-page #chronology .tracker-row a:hover{text-decoration:underline;text-decoration-color:var(--ink)}
+body.infrastructure-page #chronology .tracker-details{margin-top:5px;font-size:12px}
+body.infrastructure-page #chronology .tracker-details summary{color:var(--muted);font-size:12px}
+body.infrastructure-page #chronology .tracker-details[open]>summary{margin-bottom:8px}
+body.infrastructure-page #chronology .tracker-details p{margin-bottom:9px}

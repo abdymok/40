@@ -31,7 +31,7 @@ body.infrastructure-page .special-kicker{margin:0 0 10px;font-size:12px;letter-s
 body.infrastructure-page .special-close p{margin:7px 0;font-size:15px}
 body.infrastructure-page .attack-graphic{margin:28px 0 42px;max-width:760px}
 body.infrastructure-page .attack-graphic img{display:block;width:100%;height:auto}
-body.infrastructure-page .attack-graphic figcaption{margin-top:3px;font-size:13px;color:var(--muted)}
+body.infrastructure-page .attack-graphic figcaption{margin-top:3px}
 body.infrastructure-page .attack-graphic figcaption a{text-decoration:underline;text-underline-offset:2px}
 body.infrastructure-page .evidence-video{margin:28px 0 42px;max-width:none;width:100%}
 body.infrastructure-page .evidence-kicker{margin:0 0 10px;font-size:12px;letter-spacing:var(--track);color:var(--muted)}
@@ -137,9 +137,6 @@ body.infrastructure-page .archive-pointer a:focus-visible::after,
 body.infrastructure-page .day-summary a:hover::after,
 body.infrastructure-page .day-summary a:focus-visible::after{opacity:1}
 body.infrastructure-page .evidence-category{font-weight:500}
-body.infrastructure-page figcaption,
-body.infrastructure-page .attack-graphic figcaption,
-body.infrastructure-page .evidence-video figcaption{font-size:13px}
 body.infrastructure-page #chronology .entry-meta{margin:0 0 13px;color:var(--muted);font-size:12px;line-height:1.45}
 body.infrastructure-page #chronology .entry-meta .evidence-category{font-weight:500;text-transform:uppercase;letter-spacing:var(--track)}
 body.infrastructure-page #chronology .entry-meta .meta-separator{padding:0 2px;color:var(--muted)}

@@ -37,7 +37,7 @@ body.infrastructure-page .attack-graphic figcaption a{text-decoration:underline;
 body.infrastructure-page .evidence-video{margin:28px 0 42px;max-width:none;width:100%}
 body.infrastructure-page .evidence-kicker{margin:0 0 10px;font-size:12px;letter-spacing:var(--track);color:var(--muted)}
 body.infrastructure-page .evidence-video video{display:block;width:100%;height:auto;background:#111}
-body.infrastructure-page .evidence-video figcaption{margin-top:8px;font-size:13px;color:var(--muted)}
+body.infrastructure-page .evidence-video figcaption{margin-top:8px}
 body.infrastructure-page .evidence-video figcaption a{text-decoration:underline;text-underline-offset:2px}
 body.infrastructure-page .brand-y{color:var(--brand)}
 body.infrastructure-page a{color:inherit}

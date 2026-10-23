@@ -554,7 +554,7 @@ body.infrastructure-page .refresh,body.infrastructure-page .refresh:focus-visibl
 
 
 
-.chronology-entry:target{box-shadow:inset 3px 0 0 var(--brand)}
+.chronology-entry:target{box-shadow:inset 2px 0 0 var(--rule)}
 .chronology-entry,.chronology-day{content-visibility:auto;contain-intrinsic-size:auto 400px}
 body.infrastructure-page .timeline-update{grid-template-columns:4.5rem minmax(0,1fr);gap:12px}
 body.infrastructure-page .timeline-update .entry-time{white-space:normal;overflow-wrap:anywhere}

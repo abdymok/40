@@ -548,7 +548,7 @@ body.infrastructure-page #chronology .entry-body h3{font-size:19px;font-weight:5
 
 
 
-body.infrastructure-page .day-summary{max-width:38em;margin:0 0 16px;color:var(--muted);font-size:14px;line-height:1.5;text-wrap:pretty}
+body.infrastructure-page .day-summary{max-width:38em;margin:0 0 16px;color:var(--muted);font-size:14px;line-height:1.5;text-wrap:wrap;overflow-wrap:normal;word-break:normal}
 body.infrastructure-page .refresh,body.infrastructure-page .refresh:focus-visible{color:var(--muted);outline-color:var(--muted)}
 
 

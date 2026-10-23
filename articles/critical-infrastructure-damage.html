@@ -57,6 +57,21 @@ if ('serviceWorker' in navigator) {
 })();
 </script>
 <!-- Pages rebuild: chronology-first layout, 2026-10-13 -->
+<style>
+body.infrastructure-page .front-matter-item{margin:0 0 30px;padding:18px 0 22px;border-bottom:1px solid var(--rule);max-width:720px}
+body.infrastructure-page .front-matter-item h2{margin:0 0 12px;font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.01em}
+body.infrastructure-page .front-matter-item p{margin:0 0 12px;font-size:16px;line-height:1.6}
+body.infrastructure-page .front-matter-item .front-matter-kicker{margin:0 0 5px;font-size:12px;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
+body.infrastructure-page .fun-fact-figure{margin:18px 0 8px}
+body.infrastructure-page .fun-fact-image-toggle{display:block;width:100%;padding:0;border:0;background:transparent;color:inherit;cursor:pointer;text-align:left}
+body.infrastructure-page .fun-fact-image-toggle img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain;object-position:left center}
+body.infrastructure-page .fun-fact-image-toggle:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+body.infrastructure-page #fun-fact-caption{margin-top:8px;font-size:13px;line-height:1.5;color:var(--muted)}
+body.infrastructure-page .fun-fact-toggle-hint{font-size:12px!important;color:var(--muted)}
+body.infrastructure-page .fun-fact .source{font-size:13px}
+body.infrastructure-page .alert-accounting{margin-top:0}
+@media(max-width:600px){body.infrastructure-page .front-matter-item{padding:15px 0 18px}body.infrastructure-page .front-matter-item h2{font-size:22px}body.infrastructure-page .front-matter-item p{font-size:15px}}
+</style>
 </head>
 <body class="infrastructure-page"><main>
 <h1>Kyiv and selected Ukrainian critical infrastructure damage</h1>
@@ -73,8 +88,8 @@ if ('serviceWorker' in navigator) {
 <p class="dashboard-meta" id="dashboard-meta">OCT 1–23, 2026 · WORKING FIGURES · KYIV ALERT TOTAL PROVISIONAL <a class="dashboard-method" href="#alert-statistics-method" aria-label="Dashboard methodology" title="Dashboard methodology"><svg class="method-mark" viewBox="0 0 16 16" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M2.5 2 V14 M6 2 V14 M9.5 2 V14 M13 2 V14 M1 11 L15 5"/></svg></a></p>
 <div class="dashboard-grid dashboard-leads">
 <div class="dashboard-item is-lead" data-measure="civilian-deaths"><p class="dashboard-label"><a href="#civilian-deaths-method">Dead civilians</a></p><p class="dashboard-value">≈123</p><p class="dashboard-detail">Nationwide documented minimum from officially reported civilian deaths; incomplete.</p></div>
-<div class="dashboard-item" data-measure="alerts"><p class="dashboard-label"><a href="#alert-statistics-method">Kyiv air alerts</a></p><p class="dashboard-value">153</p><p class="dashboard-detail">Provisional listed count through the new alert reported at 04:04 on Oct. 23; active interval not yet timed.</p></div>
-<div class="dashboard-item" data-measure="alert-hours"><p class="dashboard-label">Under alert</p><p class="dashboard-value">6<span class="u">d</span> 0<span class="u">h</span></p><p class="dashboard-detail">144 hours 21 minutes through Oct. 22; the Oct. 23 alert reported at 04:04 is active and not yet included in duration.</p></div>
+<div class="dashboard-item" data-measure="alerts"><p class="dashboard-label"><a href="#alert-statistics-method">Kyiv air alerts</a></p><p class="dashboard-value">156</p><p class="dashboard-detail">Provisional listed count through four reported intervals on Oct. 23.</p></div>
+<div class="dashboard-item" data-measure="alert-hours"><p class="dashboard-label">Under alert</p><p class="dashboard-value">6<span class="u">d</span> 1<span class="u">h</span></p><p class="dashboard-detail">145 hours 23 minutes through the four Oct. 23 intervals, using the durations reported by alerts.in.ua.</p></div>
 </div>
 <div class="dashboard-secondary" aria-label="Additional working measures">
 <div class="dashboard-secondary-item" data-measure="sites-hit"><span class="dashboard-secondary-label"><a href="#facilities-count-list">Sites in working list</a></span><span class="dashboard-value">47</span><span class="dashboard-secondary-detail">Entries since Oct.&nbsp;1; not a physical-site total.</span></div>
@@ -89,9 +104,9 @@ if ('serviceWorker' in navigator) {
 <p class="note" id="ballistic-warning-note">BALLISTIC WARNING TIMING: A general Kyiv air alert does not establish that a ballistic threat was identified with useful lead time. On October 18–19, the Air Force said partners gave no warning before the first ballistic strike; information for the second arrived with roughly one minute to react. <a href="https://www.pravda.com.ua/eng/news/2026/10/19/8058700/index.amp" target="_blank" rel="noopener">Air Force account, Oct. 19</a>. Follow official <a href="https://t.me/kpszsu/86369" target="_blank" rel="noopener">Air Force alerts</a>; the tracker records alert intervals, not a guarantee of advance ballistic warning.</p>
 <nav class="tracker-nav" aria-label="Trackers"><span class="tracker-pages" aria-label="Site pages"><a href="/">Home</a><a href="/40/articles/critical-infrastructure-damage.html" aria-current="page">Infrastructure</a><a href="/method/">Method</a><a href="/40/articles/kyiv-cauldron.html">Kyiv cauldron</a><a href="/40/articles/data-center-damage.html">Data centers</a><a href="/mural/">Mural</a><a href="/40/articles/infrastructure-maintenance-sop.html">Maintenance SOP</a></span><span class="tracker-sections" aria-label="On this page"><a href="#chronology" aria-current="location">Chronology</a><a href="critical-infrastructure-archive.html">Archive</a><a href="#nuclear">Nuclear</a></span></nav>
 <details class="update-history" aria-label="Recent updates">
-<summary><time datetime="2026-10-23">Oct.&nbsp;23</time> — Added the 04:04 Kyiv alert and reconciled the October 22 intervals.</summary>
+<summary><time datetime="2026-10-23">Oct.&nbsp;23</time> — Reconciled four Kyiv alerts since midnight; added Fun Fact Friday.</summary>
 <div class="update-history-content">
-<ul class="update-history-list"><li>Oct. 23 — Added the Kyiv air alert reported at 04:04; count increased provisionally to 153, with duration pending the all-clear.</li><li>Oct. 22 — Updated Kyiv casualty reporting and added the Pechersk and Lymanivka entries.</li><li>Oct. 22 — Revised the Chabany account after corroboration by regional authorities and independent media.</li><li>Oct. 23 — Reconciled the October 22 Kyiv alert intervals against the published daily list; updated provisional count and cumulative duration while retaining the 11:22/11:24 start-time discrepancy.</li><li>Oct. 22 — Reconciled provisional Kyiv alert total and nationwide documented civilian-death count.</li><li>Oct. 22 — Expanded the Method page on attribution, uncertainty and corrections.</li></ul>
+<ul class="update-history-list"><li>Oct. 23 — Reconciled four Kyiv alerts since midnight (00:15–00:26, 02:22–02:50, 04:01–04:12 and 06:08–06:22); provisional count 156, with 62 minutes added using the published durations. Added the Fun Fact Friday image toggle and alert summary.</li><li>Oct. 22 — Updated Kyiv casualty reporting and added the Pechersk and Lymanivka entries.</li><li>Oct. 22 — Revised the Chabany account after corroboration by regional authorities and independent media.</li><li>Oct. 23 — Reconciled the October 22 Kyiv alert intervals against the published daily list; updated provisional count and cumulative duration while retaining the 11:22/11:24 start-time discrepancy.</li><li>Oct. 22 — Reconciled provisional Kyiv alert total and nationwide documented civilian-death count.</li><li>Oct. 22 — Expanded the Method page on attribution, uncertainty and corrections.</li></ul>
 <details class="update-history-older"><summary>Earlier updates (2)</summary><ul class="update-history-list"><li><time datetime="2026-10-19">Oct.&nbsp;19</time> — Updated the overnight Kyiv ballistic-attack chronology with casualty, metro, building and energy reports; reconciled the alert intervals supplied by the compiler.</li>
 <li><time datetime="2026-10-18">Oct.&nbsp;18</time> — Reconciled five Kyiv air alerts recorded for Oct.&nbsp;17, added the live ballistic-alert field report and updated reporting on Starshield, Starlink and rail disruption.</li></ul></details>
 </div>
@@ -100,11 +115,39 @@ if ('serviceWorker' in navigator) {
 <h2 class="visually-hidden" id="chronology-heading">Chronology</h2>
 <nav class="day-jump" aria-label="October date navigation"><a href="#day-oct-23" aria-current="location">23</a> <a href="#day-oct-22">22</a> <a href="#day-oct-21">21</a> <a href="#day-oct-20">20</a> <a href="#day-oct-19">19</a> <a href="#day-oct-18">18</a> <a href="#day-oct-17">17</a> <a href="#day-oct-16">16</a> <a href="#day-oct-15">15</a> <a href="#day-oct-14">14</a> <a href="#day-oct-13">13</a> <a href="#day-oct-12">12</a> <a href="#day-oct-11">11</a> <a href="#day-oct-10">10</a> <a href="#day-oct-9">9</a> <a href="#day-oct-8">8</a> <a href="#day-oct-7">7</a> <a href="#day-oct-6">6</a> <a href="#day-oct-5">5</a> <a href="#day-oct-4">4</a> <a href="#day-oct-3">3</a> <a href="#day-oct-2">2</a> <a href="#day-oct-1">1</a></nav>
 
+<section class="front-matter-item fun-fact" aria-labelledby="fun-fact-title">
+  <p class="front-matter-kicker">Fun Fact Friday</p>
+  <h2 id="fun-fact-title">A wrong turn in the mud</h2>
+  <p>On October 15, Donald Trump told <a href="https://rollcall.com/factbase/trump/transcript/donald-trump-interview-rob-finnerty-newsmax-white-house-october-15-2026/" target="_blank" rel="noopener">Newsmax</a> that Russia could have taken Kyiv in hours, but a “very stupid” Russian general turned his tanks off the highway and into muddy farmland.</p>
+  <p>Seven days later, Volodymyr Zelenskyy rejected that account in a nearly two-hour conversation with Steven Bartlett on <a href="https://stevenbartlett.com/steven-bartlett-zelenskyy-interview/" target="_blank" rel="noopener">The Diary of a CEO</a>.</p>
+  <p>Neither man has visited Rusaniv or Peremoha.</p>
+  <p>So we did.</p>
+  <figure class="fun-fact-figure">
+    <button class="fun-fact-image-toggle" type="button" aria-label="Show photograph of the Trubizh River" aria-pressed="false">
+      <img src="../evidence/drainage.png" alt="Map of Rusaniv and Peremoha showing the bridge over the Trubizh River" width="1280" height="960" loading="lazy">
+    </button>
+    <figcaption id="fun-fact-caption">The bridge over the Trubizh River between Rusaniv and Peremoha was blown up in the first days of March 2022 to prevent Russian troops from advancing on Kyiv.</figcaption>
+  </figure>
+  <p class="fun-fact-toggle-hint">Click the map to reveal the photograph of the Trubizh River.</p>
+  <p class="source">Photograph by <a href="https://abdymok.github.io/">ukraine@war</a>, October 18, 2026, taken while standing on the new bridge over the river.</p>
+  <p><a href="https://abdymok.substack.com">Read the report at ukraine@war</a>.</p>
+</section>
+
+<section class="front-matter-item alert-accounting" aria-labelledby="alert-accounting-title">
+  <h2 id="alert-accounting-title">Kyiv, 23 October: four alarms before breakfast</h2>
+  <p>Since midnight, Kyiv has had four air-raid alerts, at 00:15, 02:22, 04:01 and 06:08. That is four interruptions to sleep and a total of 62 minutes under alert, according to the reported durations.</p>
+  <p>The sirens stop. The accounting continues.</p>
+  <p>For how we record, reconcile and update these intervals, see our <a href="/method/">standard operating procedure</a>.</p>
+</section>
+
 <section id="chronology" class="chronology-list" aria-labelledby="chronology-heading">
 
 <h2 class="day-heading" id="day-oct-23">Oct.&nbsp;23</h2>
-<p class="day-summary">A new Kyiv air alert was reported at 04:04. The interval remains active in the compiler's field log; no end time or associated impact is inferred.</p>
-<article id="2026-10-23-kyiv-air-alert-0404" class="chronology-entry is-tracker"><div class="entry-gutter"><span class="entry-time">04:04</span></div><div class="entry-body"><p class="tracker-row"><a href="#2026-10-23-kyiv-air-alert-0404">active at 04:04 · air alert</a></p><details class="tracker-details"><summary>Record details and source</summary><p>The compiler reported a new Kyiv air alert at 04:04 on October 23. This is recorded as one provisional interval. The all-clear time has not yet been supplied or reconciled against the public alert history, so its duration is not included in the cumulative total. No impact is inferred from the alert alone.</p><p class="source">Source: compiler field report, Oct. 23, 04:04; <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alerts.in.ua</a> for subsequent interval reconciliation.</p></details></div></article>
+<p class="day-summary">Four Kyiv air alerts were recorded before breakfast. The public tracker lists four intervals since midnight; the cumulative total uses the durations reported by the tracker.</p>
+<article id="2026-10-23-kyiv-air-alert-0015" class="chronology-entry is-tracker"><div class="entry-gutter"><span class="entry-time">00:15</span></div><div class="entry-body"><p class="tracker-row"><a href="#2026-10-23-kyiv-air-alert-0015">ended 00:26 · 11 min · air alert</a></p><details class="tracker-details"><summary>Record details and source</summary><p>The Kyiv alert history lists an interval from 00:15 to 00:26, with a reported duration of 11 minutes.</p><p class="source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alerts.in.ua</a>.</p></details></div></article>
+<article id="2026-10-23-kyiv-air-alert-0222" class="chronology-entry is-tracker"><div class="entry-gutter"><span class="entry-time">02:22</span></div><div class="entry-body"><p class="tracker-row"><a href="#2026-10-23-kyiv-air-alert-0222">ended 02:50 · 27 min · air alert</a></p><details class="tracker-details"><summary>Record details and source</summary><p>The Kyiv alert history lists an interval from 02:22 to 02:50 and reports its duration as 27 minutes. The displayed endpoints span 28 minutes by clock time; the duration total follows the source's reported figure.</p><p class="source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alerts.in.ua</a>.</p></details></div></article>
+<article id="2026-10-23-kyiv-air-alert-0401" class="chronology-entry is-tracker"><div class="entry-gutter"><span class="entry-time">04:01</span></div><div class="entry-body"><p class="tracker-row"><a href="#2026-10-23-kyiv-air-alert-0401">ended 04:12 · 11 min · air alert</a></p><details class="tracker-details"><summary>Record details and source</summary><p>The Kyiv alert history lists an interval from 04:01 to 04:12, with a reported duration of 11 minutes. This reconciles the provisional 04:04 field report with the published interval; it is counted once.</p><p class="source">Source: compiler field report, Oct. 23; <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alerts.in.ua</a>.</p></details></div></article>
+<article id="2026-10-23-kyiv-air-alert-0608" class="chronology-entry is-tracker"><div class="entry-gutter"><span class="entry-time">06:08</span></div><div class="entry-body"><p class="tracker-row"><a href="#2026-10-23-kyiv-air-alert-0608">ended 06:22 · 13 min · air alert</a></p><details class="tracker-details"><summary>Record details and source</summary><p>The Kyiv alert history lists an interval from 06:08 to 06:22 and reports its duration as 13 minutes. The displayed endpoints span 14 minutes by clock time; the duration total follows the source's reported figure.</p><p class="source">Source: <a href="https://alerts.in.ua/" target="_blank" rel="noopener">alerts.in.ua</a>.</p></details></div></article>
 
 <h2 class="day-heading" id="day-oct-22">Oct.&nbsp;22</h2>
 <p class="day-summary">A combined missile and drone attack damaged civilian buildings and transport infrastructure in Kyiv. Officials reported casualties, damage in Pechersk and disruption to metro and road operations; weapon counts and some target claims remain attributed.</p>
@@ -1091,7 +1134,7 @@ if ('serviceWorker' in navigator) {
 <p class="note" id="facilities-count-method">The working list covers reported physical facilities or separately identified sites struck, damaged or credibly affected since October 1. It includes residential and commercial premises as well as infrastructure. An entry is not necessarily one physical structure; repeated strikes on the same facility do not automatically create new entries. The dashboard count is 47 working-list entries, not 47 verified physical sites. Five broad-area reports remain excluded pending better location evidence. <a href="/method/">Full methodology and limitations.</a></p>
 <p class="note" id="facilities-count-list">Entries in the working list (an entry is not necessarily one physical structure): South Bridge; North Bridge; the Desniansky district heating main; the Desniansky residential building; the Solomiansky shop building; the Solomiansky five-storey residential building struck on October 7; the Sviatoshynsky administrative building; the ATL central warehouse; Lukianivska metro station; the Shevchenkivsky non-residential building reported on October 8; the Shevchenkivsky residential building whose windows were blown out on October 8; the Holosiivsky non-residential premises and damaged vehicles; the Obolon educational institution; the Obolon non-residential development reported on October 7; the Podil warehouse facilities reported on October 7; the Shevchenkivsky non-residential development reported on October 7; the Pechersk residential courtyard; the Bucha warehouse premises; the Pryluky residential building; the two Kramatorsk passenger buses and the damaged apartment building; DTEK Dnipro Grids; the reported energy-sector facilities in Kremenchuk; the Obolon restaurant building; the separate Obolon residential courtyard where missile debris was reported; the Solomiansky 25-storey residential building; the Solomiansky eight-storey office building; the reported Obolon business/industrial premises and not-yet-commissioned building; the Obolon preschool grounds where an intercepted munition was reported not to have detonated; the Zaporizhia residential neighborhood struck on October 10; the educational institution in central Rivne reported attacked on October 13; the Lutsk wholesale grocery premises and damaged residential building reported attacked on October 14; the severed high-voltage power-transmission tower at the Dnipro crossing in Kyiv, reported by Ukrenergo chairman Vitaliy Zaichenko on October 14; the three Kyiv CHP plants, reported attacked overnight on October 14 (damage at each not specified); the three Pechersk residential buildings damaged by drone debris on October 15; the Sviatoshynsky warehouse hit twice on October 15; the Faino Market logistics center in Kropyvnytsky, destroyed on October 14 and reported by the company on October 15; the Tavria V supermarket in Mayaky, Odesa region, struck by a jet-powered Shahed on October 14; Cosmo Multimall in Kyiv, severely damaged in the overnight attack on October 19; and the adjacent Mercure Kyiv Congress hotel, where glazing damage was reported; and three DTEK energy facilities in Odesa region, reported attacked overnight on October 20; and the Holosiivsky district site near a filling station at the Kyiv region boundary, where a UAV fell on October 20; the Chabany site near the Kyiv–Odesa highway where a drone attack was reported on October 20; and the transport-infrastructure facility in Solomiansky district struck by a drone overnight on October 20–21; the Desniansky warehouse struck on October 20; and the Sviatoshynsky garage cooperative struck on October 20; the Sviatoshynsky 24-storey residential building hit on October 21; and the Desniansky parked-car impact reported on October 21. Excluded from the count pending better location evidence: the Obolon/Minsky roof-impact video, the October 8 and October 10 Holosiivsky open-area debris reports, the reported October 10 energy facility in Kyiv region, and the Podil open-area UAV-debris report. Some entries group multiple premises or facilities, and some reports lack street-level identification. The entries in this list are a working editorial list, not an exact count of all physical structures. Broad-area reports and possible overlaps are not treated as additional entries without better location evidence.</p>
 <p class="note" id="civilian-deaths-method">The civilian-death figure is a provisional nationwide count of deaths officially reported in connection with Russian attacks, not a complete national total. Official bodies may publish different figures or revise them as rescue operations continue. We compare reports, attribute figures, and avoid adding overlapping regional or incident totals. We cannot capture every civilian death; the displayed number is a documented minimum based on reports we have recorded since October 1, and the actual toll is likely higher. <a href="/method/">Full methodology, limitations and corrections policy.</a></p>
-<p class="note" id="alert-statistics-method">Kyiv alert count and cumulative duration are provisional working figures assembled from compiler-supplied intervals and checked against alert trackers. Reconciliation on October 23 added the later October 22 intervals: 12:36–13:40, 17:14–17:51 and 20:56–21:15. The late-morning interval was recorded by the compiler as beginning at 11:22, while the published daily list gives 11:24–11:53; the dashboard retains the compiler-supplied 11:22 start and counts that as one interval, not two. Using 11:22–11:53 gives a provisional total of 152 alerts and approximately 144 hours 21 minutes under alert through October 22. The new alert reported at 04:04 on October 23 is the 153rd provisional interval and remains active; its duration is not yet included. The published daily list reports eight alerts on October 22 and gives 11:24–11:53 for the disputed interval. Older unresolved intervals remain excluded rather than guessed. Tracker sources can lag, differ and share underlying Kyiv Digital data. <a href="/method/">Full methodology and calculation notes.</a></p>
+<p class="note" id="alert-statistics-method">Kyiv alert count and cumulative duration are provisional working figures assembled from compiler-supplied intervals and checked against alert trackers. Reconciliation on October 23 added the later October 22 intervals: 12:36–13:40, 17:14–17:51 and 20:56–21:15. The late-morning interval was recorded by the compiler as beginning at 11:22, while the published daily list gives 11:24–11:53; the dashboard retains the compiler-supplied 11:22 start and counts that as one interval, not two. Using 11:22–11:53 gives a provisional total of 152 alerts and approximately 144 hours 21 minutes under alert through October 22. Four intervals are now listed for October 23: 00:15–00:26, 02:22–02:50, 04:01–04:12 and 06:08–06:22. The provisional count is 156. The four published durations sum to 62 minutes; for 02:22–02:50 and 06:08–06:22, the listed duration is one minute shorter than the difference between displayed clock endpoints. Using the reported durations, cumulative time under alert is 145 hours 23 minutes through the 06:22 all-clear. The 04:04 compiler report is reconciled to the 04:01 published start and counted once. The published daily list reports eight alerts on October 22 and gives 11:24–11:53 for the disputed interval. Older unresolved intervals remain excluded rather than guessed. Tracker sources can lag, differ and share underlying Kyiv Digital data. <a href="/method/">Full methodology and calculation notes.</a></p>
 <p class="note">Working chronology, newest first by date. Entries without a verified time are not necessarily ordered within the day. Compiled by abd<span class="brand-y">y</span>mok. <a href="/method/">Method, evidence labels, corrections and contact.</a></p>
 <footer class="evidence-key-footer" id="evidence-and-source-labels"><strong>Evidence labels:</strong> official · operator or company · media · eyewitness · attributed · tracker · unverified · editorial. <a href="/method/">Definitions and limits of each label.</a></footer>
 </main>
@@ -1162,6 +1205,36 @@ document.querySelectorAll(".chronology-day").forEach(function(day){var summary=d
   }
   window.addEventListener("hashchange",revealHashTarget);
   if(location.hash)requestAnimationFrame(revealHashTarget);
+})();
+</script>
+<script>
+(function(){
+  var button=document.querySelector('.fun-fact-image-toggle');
+  var image=button&&button.querySelector('img');
+  var caption=document.getElementById('fun-fact-caption');
+  if(!button||!image||!caption)return;
+  var map={
+    src:'../evidence/drainage.png',
+    alt:'Map of Rusaniv and Peremoha showing the bridge over the Trubizh River',
+    caption:'The bridge over the Trubizh River between Rusaniv and Peremoha was blown up in the first days of March 2022 to prevent Russian troops from advancing on Kyiv.',
+    next:'Show photograph of the Trubizh River'
+  };
+  var photo={
+    src:'../evidence/drainage_trubizh.jpg',
+    alt:'Photograph of the Trubizh River taken from the new bridge on October 18, 2026',
+    caption:'Photograph by <a href="https://abdymok.github.io/">ukraine@war</a>, October 18, 2026, taken while standing on the new bridge over the river.',
+    next:'Show map of Rusaniv and Peremoha'
+  };
+  var showingMap=true;
+  button.addEventListener('click',function(){
+    var next=showingMap?photo:map;
+    image.src=next.src;
+    image.alt=next.alt;
+    caption.innerHTML=next.caption;
+    button.setAttribute('aria-label',next.next);
+    button.setAttribute('aria-pressed',String(!showingMap));
+    showingMap=!showingMap;
+  });
 })();
 </script>
 </body></html>

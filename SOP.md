@@ -1,6 +1,10 @@
 # 40 / Kyiv infrastructure chronology — publishing SOP
 
 ## House style
+## Headlines
+
+- Headlines must be short enough to fit on one line in the intended layout. If a headline wraps onto a second line, shorten it; never accept a two-line headline.
+
 
 - For Ukrainian place names, use the project's preferred transliteration: write `-y`, not `-yi`. Examples: `Solomiansky`, `Darnytsky`, `Sviatoshynsky`, `Holosiivsky`. Do not “correct” these to forms ending in `-yi`.
 

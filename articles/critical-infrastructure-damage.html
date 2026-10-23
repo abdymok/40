@@ -61,7 +61,7 @@ if ('serviceWorker' in navigator) {
 body.infrastructure-page .front-matter-item{margin:0 0 30px;padding:18px 0 22px;border-bottom:1px solid var(--rule);max-width:720px}
 body.infrastructure-page .front-matter-item h2{margin:0 0 12px;font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.01em}
 body.infrastructure-page .front-matter-item p{margin:0 0 12px;font-size:16px;line-height:1.6}
-body.infrastructure-page .front-matter-item .front-matter-kicker{margin:0 0 5px;font-size:12px;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted)}
+body.infrastructure-page .front-matter-subtitle{margin:-5px 0 12px!important;color:var(--muted);font-size:14px!important}
 body.infrastructure-page .fun-fact-figure{margin:18px 0 8px}
 body.infrastructure-page .fun-fact-image-toggle{display:block;width:100%;padding:0;border:0;background:transparent;color:inherit;cursor:pointer;text-align:left}
 body.infrastructure-page .fun-fact-image-toggle img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain;object-position:left center}
@@ -116,8 +116,8 @@ body.infrastructure-page .alert-accounting{margin-top:0}
 <nav class="day-jump" aria-label="October date navigation"><a href="#day-oct-23" aria-current="location">23</a> <a href="#day-oct-22">22</a> <a href="#day-oct-21">21</a> <a href="#day-oct-20">20</a> <a href="#day-oct-19">19</a> <a href="#day-oct-18">18</a> <a href="#day-oct-17">17</a> <a href="#day-oct-16">16</a> <a href="#day-oct-15">15</a> <a href="#day-oct-14">14</a> <a href="#day-oct-13">13</a> <a href="#day-oct-12">12</a> <a href="#day-oct-11">11</a> <a href="#day-oct-10">10</a> <a href="#day-oct-9">9</a> <a href="#day-oct-8">8</a> <a href="#day-oct-7">7</a> <a href="#day-oct-6">6</a> <a href="#day-oct-5">5</a> <a href="#day-oct-4">4</a> <a href="#day-oct-3">3</a> <a href="#day-oct-2">2</a> <a href="#day-oct-1">1</a></nav>
 
 <section class="front-matter-item fun-fact" aria-labelledby="fun-fact-title">
-  <p class="front-matter-kicker">Fun Fact Friday</p>
-  <h2 id="fun-fact-title">A wrong turn in the mud</h2>
+  <h2 id="fun-fact-title">Fun Fact Friday</h2>
+  <p class="front-matter-subtitle">A wrong turn in the mud</p>
   <p>On October 15, Donald Trump told <a href="https://rollcall.com/factbase/trump/transcript/donald-trump-interview-rob-finnerty-newsmax-white-house-october-15-2026/" target="_blank" rel="noopener">Newsmax</a> that Russia could have taken Kyiv in hours, but a “very stupid” Russian general turned his tanks off the highway and into muddy farmland.</p>
   <p>Seven days later, Volodymyr Zelenskyy rejected that account in a nearly two-hour conversation with Steven Bartlett on <a href="https://stevenbartlett.com/steven-bartlett-zelenskyy-interview/" target="_blank" rel="noopener">The Diary of a CEO</a>.</p>
   <p>Neither man has visited Rusaniv or Peremoha.</p>
@@ -128,8 +128,7 @@ body.infrastructure-page .alert-accounting{margin-top:0}
     </button>
     <figcaption id="fun-fact-caption">The bridge over the Trubizh River between Rusaniv and Peremoha was blown up in the first days of March 2022 to prevent Russian troops from advancing on Kyiv.</figcaption>
   </figure>
-  <p class="fun-fact-toggle-hint">Click the map to reveal the photograph of the Trubizh River.</p>
-  <p class="source">Photograph by <a href="https://abdymok.github.io/">ukraine@war</a>, October 18, 2026, taken while standing on the new bridge over the river.</p>
+  <p class="fun-fact-toggle-hint" id="fun-fact-toggle-hint">Click the map to reveal the photograph of the Trubizh River.</p>
   <p><a href="https://abdymok.substack.com">Read the report at ukraine@war</a>.</p>
 </section>
 
@@ -1212,17 +1211,20 @@ document.querySelectorAll(".chronology-day").forEach(function(day){var summary=d
   var button=document.querySelector('.fun-fact-image-toggle');
   var image=button&&button.querySelector('img');
   var caption=document.getElementById('fun-fact-caption');
-  if(!button||!image||!caption)return;
+  var hint=document.getElementById('fun-fact-toggle-hint');
+  if(!button||!image||!caption||!hint)return;
   var map={
     src:'../evidence/drainage.png',
     alt:'Map of Rusaniv and Peremoha showing the bridge over the Trubizh River',
     caption:'The bridge over the Trubizh River between Rusaniv and Peremoha was blown up in the first days of March 2022 to prevent Russian troops from advancing on Kyiv.',
+    hint:'Click the map to reveal the photograph of the Trubizh River.',
     next:'Show photograph of the Trubizh River'
   };
   var photo={
     src:'../evidence/drainage_trubizh.jpg',
     alt:'Photograph of the Trubizh River taken from the new bridge on October 18, 2026',
     caption:'Photograph by <a href="https://abdymok.github.io/">ukraine@war</a>, October 18, 2026, taken while standing on the new bridge over the river.',
+    hint:'Click the photograph to return to the map.',
     next:'Show map of Rusaniv and Peremoha'
   };
   var showingMap=true;
@@ -1231,6 +1233,7 @@ document.querySelectorAll(".chronology-day").forEach(function(day){var summary=d
     image.src=next.src;
     image.alt=next.alt;
     caption.innerHTML=next.caption;
+    hint.textContent=next.hint;
     button.setAttribute('aria-label',next.next);
     button.setAttribute('aria-pressed',String(!showingMap));
     showingMap=!showingMap;

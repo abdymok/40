@@ -61,6 +61,13 @@ if ('serviceWorker' in navigator) {
 body.infrastructure-page .front-matter-item{margin:0 0 30px;padding:18px 0 22px;border-bottom:1px solid var(--rule);max-width:720px}
 body.infrastructure-page .front-matter-item h2{margin:0 0 12px;font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.01em}
 body.infrastructure-page .fun-fact h2 a{color:#b42318;text-decoration-thickness:1px;text-underline-offset:3px}
+body.infrastructure-page details.fun-fact>summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;cursor:pointer;list-style-position:outside}
+body.infrastructure-page .fun-fact-summary-title{font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.01em;color:var(--ink)}
+body.infrastructure-page .fun-fact>summary .front-matter-subtitle{margin:0!important}
+body.infrastructure-page .fun-fact-content{padding-top:14px}
+body.infrastructure-page details.ballistic-warning{margin:0 0 12px;color:var(--muted);font-size:14px;line-height:1.55}
+body.infrastructure-page details.ballistic-warning>summary{cursor:pointer}
+body.infrastructure-page details.ballistic-warning p{margin:8px 0 0}
 body.infrastructure-page .front-matter-item p{margin:0 0 12px;font-size:16px;line-height:1.6}
 body.infrastructure-page .front-matter-subtitle{margin:-5px 0 12px!important;color:var(--muted);font-size:14px!important}
 body.infrastructure-page .fun-fact-figure{margin:18px 0 8px}
@@ -71,7 +78,7 @@ body.infrastructure-page #fun-fact-caption{display:block;width:100%;max-width:72
 body.infrastructure-page .fun-fact-toggle-hint{font-size:12px!important;color:var(--muted)}
 body.infrastructure-page .fun-fact .source{font-size:13px}
 body.infrastructure-page .alert-accounting{margin-top:0}
-@media(max-width:600px){body.infrastructure-page .front-matter-item{padding:15px 0 18px}body.infrastructure-page .front-matter-item h2{font-size:22px}body.infrastructure-page .front-matter-item p{font-size:15px}}
+@media(max-width:600px){body.infrastructure-page .front-matter-item{padding:15px 0 18px}body.infrastructure-page .front-matter-item h2,body.infrastructure-page .fun-fact-summary-title{font-size:22px}body.infrastructure-page .front-matter-item p{font-size:15px}}
 </style>
 </head>
 <body class="infrastructure-page"><main>
@@ -90,7 +97,7 @@ body.infrastructure-page .alert-accounting{margin-top:0}
 <div class="dashboard-grid dashboard-leads">
 <div class="dashboard-item is-lead" data-measure="civilian-deaths"><p class="dashboard-label"><a href="#civilian-deaths-method">Dead civilians</a></p><p class="dashboard-value">≈123</p><p class="dashboard-detail">Nationwide documented minimum from officially reported civilian deaths; incomplete.</p></div>
 <div class="dashboard-item" data-measure="alerts"><p class="dashboard-label"><a href="#alert-statistics-method">Kyiv air alerts</a></p><p class="dashboard-value">159</p><p class="dashboard-detail">Provisional listed count through seven reported intervals on Oct. 23.</p></div>
-<div class="dashboard-item" data-measure="alert-hours"><p class="dashboard-label">Under alert</p><p class="dashboard-value">6<span class="u">d</span> 1<span class="u">h</span></p><p class="dashboard-detail">146 hours 7 minutes through the six completed&nbsp;Oct.&nbsp;23 intervals, using the durations reported by&nbsp;alerts.in.ua. The 11:13 alert is ongoing and not yet included.</p></div>
+<div class="dashboard-item" data-measure="alert-hours"><p class="dashboard-label">Under alert</p><p class="dashboard-value">6<span class="u">d</span> 2<span class="u">h</span>+</p><p class="dashboard-detail">At least 146 hours 7 minutes through the six completed&nbsp;Oct.&nbsp;23 intervals, using the durations reported by&nbsp;alerts.in.ua. Unresolved older intervals are excluded; the 11:13 alert is ongoing and not yet included.</p></div>
 </div>
 <div class="dashboard-secondary" aria-label="Additional working measures">
 <div class="dashboard-secondary-item" data-measure="sites-hit"><span class="dashboard-secondary-label"><a href="#facilities-count-list">Sites in working list</a></span><span class="dashboard-value">47</span><span class="dashboard-secondary-detail">Entries since Oct.&nbsp;1; not a physical-site total.</span></div>
@@ -102,7 +109,7 @@ body.infrastructure-page .alert-accounting{margin-top:0}
 
 
 
-<p class="note" id="ballistic-warning-note">BALLISTIC WARNING TIMING: A general Kyiv air alert does not establish that a ballistic threat was identified with useful lead time. On October 18–19, the Air Force said partners gave no warning before the first ballistic strike; information for the second arrived with roughly one minute to react. <a href="https://www.pravda.com.ua/eng/news/2026/10/19/8058700/index.amp" target="_blank" rel="noopener">Air Force account, Oct. 19</a>. Follow official <a href="https://t.me/kpszsu/86369" target="_blank" rel="noopener">Air Force alerts</a>; the tracker records alert intervals, not a guarantee of advance ballistic warning.</p>
+<details class="note ballistic-warning" id="ballistic-warning-note"><summary>Ballistic warning timing</summary><p>A general Kyiv air alert does not establish that a ballistic threat was identified with useful lead time. On October 18–19, the Air Force said partners gave no warning before the first ballistic strike; information for the second arrived with roughly one minute to react. <a href="https://www.pravda.com.ua/eng/news/2026/10/19/8058700/index.amp" target="_blank" rel="noopener">Air Force account, Oct. 19</a>. Follow official <a href="https://t.me/kpszsu/86369" target="_blank" rel="noopener">Air Force alerts</a>; the tracker records alert intervals, not a guarantee of advance ballistic warning.</p></details>
 <nav class="tracker-nav" aria-label="Trackers"><span class="tracker-pages" aria-label="Site pages"><a href="/">Home</a><a href="/40/articles/critical-infrastructure-damage.html" aria-current="page">Infrastructure</a><a href="/method/">Method</a><a href="/40/articles/kyiv-cauldron.html">Kyiv cauldron</a><a href="/40/articles/data-center-damage.html">Data centers</a><a href="/mural/">Mural</a><a href="/40/articles/infrastructure-maintenance-sop.html">Maintenance SOP</a></span><span class="tracker-sections" aria-label="On this page"><a href="#chronology" aria-current="location">Chronology</a><a href="critical-infrastructure-archive.html">Archive</a><a href="#nuclear">Nuclear</a></span></nav>
 <details class="update-history" aria-label="Recent updates">
 <summary><time datetime="2026-10-23">Oct.&nbsp;23</time> — Reconciled four Kyiv alerts since midnight; added Fun Fact Friday.</summary>
@@ -116,10 +123,10 @@ body.infrastructure-page .alert-accounting{margin-top:0}
 <h2 class="visually-hidden" id="chronology-heading">Chronology</h2>
 <nav class="day-jump" aria-label="October date navigation"><a href="#day-oct-23" aria-current="location">23</a> <a href="#day-oct-22">22</a> <a href="#day-oct-21">21</a> <a href="#day-oct-20">20</a> <a href="#day-oct-19">19</a> <a href="#day-oct-18">18</a> <a href="#day-oct-17">17</a> <a href="#day-oct-16">16</a> <a href="#day-oct-15">15</a> <a href="#day-oct-14">14</a> <a href="#day-oct-13">13</a> <a href="#day-oct-12">12</a> <a href="#day-oct-11">11</a> <a href="#day-oct-10">10</a> <a href="#day-oct-9">9</a> <a href="#day-oct-8">8</a> <a href="#day-oct-7">7</a> <a href="#day-oct-6">6</a> <a href="#day-oct-5">5</a> <a href="#day-oct-4">4</a> <a href="#day-oct-3">3</a> <a href="#day-oct-2">2</a> <a href="#day-oct-1">1</a></nav>
 
-<section class="front-matter-item fun-fact" aria-labelledby="fun-fact-title">
-  <h2 id="fun-fact-title"><a href="#fun-fact-title">Fun Fact Friday</a></h2>
-  <p class="front-matter-subtitle">A wrong turn in the mud</p>
-  <p>On October 15, Donald Trump told <a href="https://rollcall.com/factbase/trump/transcript/donald-trump-interview-rob-finnerty-newsmax-white-house-october-15-2026/" target="_blank" rel="noopener">Newsmax</a> that Russian tanks could have reached Kyiv, but a general he called “obviously not a very good general” turned them into muddy farmland.</p>
+<details class="front-matter-item fun-fact" aria-labelledby="fun-fact-title">
+  <summary id="fun-fact-title"><span class="fun-fact-summary-title">Fun Fact Friday</span><span class="front-matter-subtitle">A wrong turn in the mud</span></summary>
+  <div class="fun-fact-content">
+<p>On October 15, Donald Trump told <a href="https://rollcall.com/factbase/trump/transcript/donald-trump-interview-rob-finnerty-newsmax-white-house-october-15-2026/" target="_blank" rel="noopener">Newsmax</a> that Russian tanks could have reached Kyiv, but a general he called “obviously not a very good general” turned them into muddy farmland.</p>
   <p>Seven days later, Volodymyr Zelenskyy rejected that account in a nearly two-hour conversation with Steven Bartlett on <a href="https://stevenbartlett.com/steven-bartlett-zelenskyy-interview/" target="_blank" rel="noopener">The Diary of a CEO</a>.</p>
   <p>Neither man has visited Rusaniv or Peremoha.</p>
   <p>So we did.</p>
@@ -131,7 +138,8 @@ body.infrastructure-page .alert-accounting{margin-top:0}
     <figcaption id="fun-fact-caption">The bridge over the Trubizh River between Rusaniv and Peremoha was blown up in the first days of March 2022 to prevent Russian troops from advancing on Kyiv.</figcaption>
   </figure>
   <p><a href="https://abdymok.substack.com/p/day-1703">Read the report at ukraine@war</a>.</p>
-</section>
+  </div>
+</details>
 
 
 

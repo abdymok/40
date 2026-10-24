@@ -28,6 +28,30 @@ video{display:block;width:100vw;height:100vh;object-fit:cover;background:#000}
 </video>
 <script>
 const v=document.querySelector('video');
+const portrait=window.matchMedia('(orientation: portrait)');
+let startAt=0;
+
+function configurePlayback(){
+  if(!Number.isFinite(v.duration)||!v.duration)return;
+  if(portrait.matches){
+    startAt=v.duration*.8;
+    v.loop=false;
+    if(v.currentTime<startAt||v.currentTime>=v.duration) v.currentTime=startAt;
+  }else{
+    startAt=0;
+    v.loop=true;
+  }
+  v.play().catch(()=>{});
+}
+
+v.addEventListener('loadedmetadata',configurePlayback);
+v.addEventListener('ended',()=>{
+  if(portrait.matches){
+    v.currentTime=startAt;
+    v.play().catch(()=>{});
+  }
+});
+portrait.addEventListener?.('change',configurePlayback);
 v.play().catch(()=>{});
 document.addEventListener('click',()=>v.play().catch(()=>{}),{once:true});
 </script>

@@ -18,6 +18,7 @@
 ## Chronology
 
 - Add the newest item at the top of the chronology. Preserve older entries and anchors; do not delete or silently regress earlier material.
+- Give every chronology entry a unique, stable anchor ID. Every headline-bearing entry must link to its own anchor, and all existing links to entry anchors must continue to work when entries are reordered or moved to the archive.
 - Attribute reported claims to the named source. Distinguish official statements, local-channel reports, eyewitness observations and independently corroborated facts.
 - Do not infer a weapon, impact, exact location, damage or casualty figure from footage or sounds unless the evidence supports it.
 - Link sources directly. Keep uncertainty explicit and concise.

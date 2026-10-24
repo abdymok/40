@@ -1,6 +1,12 @@
 # 40 / Kyiv infrastructure chronology — publishing SOP
 
 ## House style
+## Names, monikers, and recurring motifs
+
+- `ukraine@war` and `abdymok` (with the `y` rendered red where the design calls for it) are interchangeable monikers for the same body of work, not separate brands or projects.
+- `ultra-competitive survival`, `ultra-competitive ukraine-style politics`, and `spontaeneous mass combustion` are interchangeable recurring phrases or motifs. Preserve the exact wording used in a particular context.
+- Choose the moniker or motif to suit the site, page, and piece. The wording may vary across GitHub, Substack, the Google site, and individual pages. Do not impose one universal label or “standardize” these variations unless explicitly asked.
+
 ## Headlines
 
 - Headlines must be short enough to fit on one line in the intended layout. If a headline wraps onto a second line, shorten it; never accept a two-line headline.

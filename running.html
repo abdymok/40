@@ -21,9 +21,83 @@ video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;background:
 </style>
 </head>
 <body>
-<video autoplay muted playsinline preload="auto">
+<video autoplay muted loop playsinline preload="auto">
 <source src="running/running.mp4" type="video/mp4">
 </video>
+<script>
+const v = document.querySelector('video');
+const portrait = window.matchMedia('(orientation: portrait)');
+let startAt = 0;
+let seekPending = false;
+let retryQueued = false;
+
+v.muted = true;
+v.defaultMuted = true;
+v.playsInline = true;
+v.setAttribute('muted', '');
+v.setAttribute('playsinline', '');
+v.setAttribute('webkit-playsinline', '');
+v.controls = false;
+
+function attemptPlay() {
+  if (seekPending) return;
+  v.muted = true;
+  const result = v.play();
+  if (result && typeof result.then === 'function') {
+    result.then(() => {
+      v.controls = false;
+      retryQueued = false;
+    }).catch(() => {
+      v.controls = false;
+      if (!retryQueued) {
+        retryQueued = true;
+        window.setTimeout(() => {
+          retryQueued = false;
+          if (document.visibilityState === 'visible' && v.paused) attemptPlay();
+        }, 700);
+      }
+    });
+  }
+}
+
+function configurePlayback() {
+  if (!Number.isFinite(v.duration) || !v.duration) return;
+  const target = portrait.matches ? v.duration * 0.8 : 0;
+  startAt = target;
+  v.loop = !portrait.matches;
+  if (Math.abs(v.currentTime - target) > 1.5) {
+    seekPending = true;
+    v.addEventListener('seeked', () => {
+      seekPending = false;
+      attemptPlay();
+    }, { once: true });
+    v.currentTime = target;
+  } else {
+    attemptPlay();
+  }
+}
+
+v.addEventListener('loadedmetadata', configurePlayback);
+v.addEventListener('canplay', () => { if (!seekPending && v.currentTime === 0) attemptPlay(); });
+v.addEventListener('playing', () => { v.controls = false; });
+v.addEventListener('ended', () => {
+  if (portrait.matches) {
+    seekPending = true;
+    v.addEventListener('seeked', () => {
+      seekPending = false;
+      attemptPlay();
+    }, { once: true });
+    v.currentTime = startAt;
+  }
+});
+portrait.addEventListener?.('change', configurePlayback);
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && v.paused) attemptPlay();
+});
+window.addEventListener('pageshow', () => {
+  if (v.paused) attemptPlay();
+});
+</script>
 <script>
 const v = document.querySelector('video');
 v.muted = true;

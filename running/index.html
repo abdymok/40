@@ -20,12 +20,15 @@
 html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
 body{display:block}
 video{display:block;width:100vw;height:100vh;object-fit:cover;background:#000}
+#watch{position:fixed;inset:0;display:grid;place-items:center;width:100%;height:100%;padding:0;border:0;background:transparent;color:#fff;font:italic 18px Georgia,serif;letter-spacing:.02em;text-shadow:0 1px 8px #000;cursor:pointer}
+#watch[hidden]{display:none}
 </style>
 </head>
 <body>
 <video autoplay muted loop playsinline preload="auto" poster="../evidence/monowheelers.png">
   <source src="./running.mp4" type="video/mp4">
 </video>
+<button id="watch" type="button">Tap to watch</button>
 <script>
 const v=document.querySelector('video');
 const portrait=window.matchMedia('(orientation: portrait)');
@@ -52,8 +55,17 @@ v.addEventListener('ended',()=>{
   }
 });
 portrait.addEventListener?.('change',configurePlayback);
+const watch=document.getElementById('watch');
+v.addEventListener('playing',()=>{watch.hidden=true;});
+v.addEventListener('pause',()=>{watch.hidden=false;});
+watch.addEventListener('click',()=>{
+  if(Number.isFinite(v.duration)&&v.duration){
+    if(portrait.matches){startAt=v.duration*.8;v.loop=false;if(v.currentTime<startAt||v.currentTime>=v.duration)v.currentTime=startAt;}
+    else{v.loop=true;}
+  }
+  v.play().catch(()=>{});
+});
 v.play().catch(()=>{});
-document.addEventListener('click',()=>v.play().catch(()=>{}),{once:true});
 </script>
 </body>
 </html>

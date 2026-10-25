@@ -13,6 +13,7 @@
 
 
 - For Ukrainian place names, use the project's preferred transliteration: write `-y`, not `-yi`. Examples: `Solomiansky`, `Darnytsky`, `Sviatoshynsky`, `Holosiivsky`. Do not “correct” these to forms ending in `-yi`.
+- Always write `Zaporizhia`, never `Zaporizhzhia`, in all English-language project text, including headlines, chronology entries, captions, dashboard text, and update history. This is a fixed project spelling and must not be changed to match a source's transliteration.
 
 ## Images, figures, and captions
 

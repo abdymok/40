@@ -23,7 +23,7 @@ video{display:block;width:100vw;height:100vh;object-fit:cover;background:#000}
 </style>
 </head>
 <body>
-<video autoplay muted loop playsinline preload="auto" controls>
+<video autoplay muted loop playsinline preload="auto">
   <source src="./running.mp4" type="video/mp4">
 </video>
 <script>
@@ -31,6 +31,7 @@ const v = document.querySelector('video');
 const portrait = window.matchMedia('(orientation: portrait)');
 let startAt = 0;
 let retryQueued = false;
+let seekPending = false;
 
 // Set both the HTML attributes and runtime properties for iOS Safari.
 v.muted = true;
@@ -43,18 +44,21 @@ v.controls = false;
 
 function configurePlayback() {
   if (!Number.isFinite(v.duration) || !v.duration) return;
-  if (portrait.matches) {
-    startAt = v.duration * 0.8;
-    v.loop = false;
-    if (Math.abs(v.currentTime - startAt) > 1.5 && v.currentTime < startAt) {
-      v.currentTime = startAt;
-    }
+  const target = portrait.matches ? v.duration * 0.8 : 0;
+  startAt = target;
+  v.loop = !portrait.matches;
+
+  // On iOS, wait for the seek to finish before asking playback to begin.
+  if (Math.abs(v.currentTime - target) > 1.5) {
+    seekPending = true;
+    v.addEventListener('seeked', () => {
+      seekPending = false;
+      attemptPlay();
+    }, { once: true });
+    v.currentTime = target;
   } else {
-    startAt = 0;
-    v.loop = true;
-    if (v.currentTime > 0.8 * v.duration) v.currentTime = 0;
+    attemptPlay();
   }
-  attemptPlay();
 }
 
 function attemptPlay() {
@@ -65,26 +69,30 @@ function attemptPlay() {
       v.controls = false;
       retryQueued = false;
     }).catch(() => {
-      // Only reveal native controls if the browser refuses autoplay.
-      v.controls = true;
+      // Never show controls or a custom tap overlay. Retry silently.
+      v.controls = false;
       if (!retryQueued) {
         retryQueued = true;
         window.setTimeout(() => {
           retryQueued = false;
-          if (document.visibilityState === 'visible' && v.paused) attemptPlay();
-        }, 900);
+          if (document.visibilityState === 'visible' && v.paused && !seekPending) attemptPlay();
+        }, 700);
       }
     });
   }
 }
 
 v.addEventListener('loadedmetadata', configurePlayback);
-v.addEventListener('canplay', attemptPlay);
+v.addEventListener('canplay', () => { if (!seekPending && !v.currentTime) attemptPlay(); });
 v.addEventListener('playing', () => { v.controls = false; });
 v.addEventListener('ended', () => {
   if (portrait.matches) {
+    seekPending = true;
+    v.addEventListener('seeked', () => {
+      seekPending = false;
+      attemptPlay();
+    }, { once: true });
     v.currentTime = startAt;
-    attemptPlay();
   }
 });
 portrait.addEventListener?.('change', configurePlayback);
@@ -94,7 +102,7 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pageshow', () => {
   if (v.paused) attemptPlay();
 });
-attemptPlay();
+v.controls = false;
 </script>
 </body>
 </html>

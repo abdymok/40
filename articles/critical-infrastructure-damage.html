@@ -77,6 +77,13 @@ body.infrastructure-page .fun-fact-image-toggle:focus-visible{outline:1px solid 
 body.infrastructure-page #fun-fact-caption{display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:8px;font-size:13px;line-height:1.5;color:var(--muted);text-wrap:wrap}
 body.infrastructure-page .fun-fact-toggle-hint{font-size:12px!important;color:var(--muted)}
 body.infrastructure-page .fun-fact .source{font-size:13px}
+body.infrastructure-page details.sunday-bookmarks>summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;cursor:pointer;list-style-position:outside}
+body.infrastructure-page .sunday-bookmarks .fun-fact-content{padding-top:14px}
+body.infrastructure-page .sunday-bookmarks .fun-fact-figure{margin:18px 0 8px}
+body.infrastructure-page .sunday-bookmarks .fun-fact-figure img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain;object-position:left center}
+body.infrastructure-page .sunday-bookmarks figcaption{display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:8px;font-size:13px;line-height:1.5;color:var(--muted);text-wrap:wrap}
+body.infrastructure-page .sunday-bookmarks .sunday-bookmarks-heading{margin:18px 0 12px;font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.01em}
+
 body.infrastructure-page .alert-accounting{margin-top:0}
 @media(max-width:600px){body.infrastructure-page .front-matter-item{padding:15px 0 18px}body.infrastructure-page .front-matter-item h2,body.infrastructure-page .fun-fact-summary-title{font-size:22px}body.infrastructure-page .front-matter-item p{font-size:15px}}
 </style>
@@ -123,10 +130,36 @@ body.infrastructure-page .alert-accounting{margin-top:0}
 <h2 class="visually-hidden" id="chronology-heading">Chronology</h2>
 <nav class="day-jump" aria-label="October date navigation"><a href="#day-oct-25" aria-current="location">25</a> <a href="#day-oct-24">24</a> <a href="#day-oct-23">23</a> <a href="#day-oct-22">22</a> <a href="#day-oct-21">21</a> <a href="#day-oct-20">20</a> <a href="#day-oct-19">19</a> <a href="#day-oct-18">18</a> <a href="#day-oct-17">17</a> <a href="#day-oct-16">16</a> <a href="#day-oct-15">15</a> <a href="#day-oct-14">14</a> <a href="#day-oct-13">13</a> <a href="#day-oct-12">12</a> <a href="#day-oct-11">11</a> <a href="#day-oct-10">10</a> <a href="#day-oct-9">9</a> <a href="#day-oct-8">8</a> <a href="#day-oct-7">7</a> <a href="#day-oct-6">6</a> <a href="#day-oct-5">5</a> <a href="#day-oct-4">4</a> <a href="#day-oct-3">3</a> <a href="#day-oct-2">2</a> <a href="#day-oct-1">1</a></nav>
 
-<section class="front-matter-item sunday-best-reads" aria-labelledby="sunday-best-reads-title">
-  <h2 id="sunday-best-reads-title">Sunday best reads</h2>
-  <!-- Reserved for the Sunday best reads item under development. -->
-</section>
+<details class="front-matter-item sunday-bookmarks" aria-labelledby="sunday-bookmarks-title">
+  <summary>
+    <span class="fun-fact-summary-title" id="sunday-bookmarks-title">Sunday Bookmarks</span>
+  </summary>
+  <div class="fun-fact-content">
+    <figure class="fun-fact-figure">
+      <img
+        src="../evidence/moon_fixed.jpg"
+        alt="The waning gibbous Moon over Kyiv, photographed from a balcony."
+        loading="lazy"
+      >
+      <figcaption id="sunday-bookmarks-caption">
+        KYIV · OCTOBER 25, 2026 · 03:16<br>
+        The waning gibbous Moon over Kyiv, photographed from a balcony by
+        <a href="https://abdymok.substack.com" target="_blank" rel="noopener">ukraine@war</a>
+        at 03:16 Kyiv time.
+      </figcaption>
+    </figure>
+    <h2 class="sunday-bookmarks-heading">Three reports trace the damage beyond the blast sites</h2>
+    <p>A city can lose its gas without losing a single wall. A port can remain standing and still become useless to the farmer waiting to sell his grain. And a gas station can look like an ordinary stop on the road until a drone turns it into a place where people die.</p>
+    <p>War has a talent for making the consequences of an attack travel farther than the explosion itself. These three reports, published on August 24, follow that journey through a Ukrainian city, the Black Sea grain trade and the new machinery of killing.</p>
+    <p><a href="https://www.pravda.com.ua/news/2026/08/24/8049988/" target="_blank" rel="noopener">Russia attacks Konotop with drones: most of the city left without gas, bus fleet destroyed</a> — <i>Ukrainska Pravda</i></p>
+    <p>Olha Hlushchenko reports that a Russian drone attack destroyed the Korund-S bus fleet and left most of Konotop without gas. The damage reaches beyond the immediate blast sites. Buses carry people to work, to shops and to the appointments that make up an ordinary life. Gas is one of those conveniences people notice most when it disappears. In a single attack, a city can lose both the means to move and something as basic as the ability to cook.</p>
+    <p><a href="https://netherlands.mercycorps.org/press-room/releases/Ukraine-Black-Sea-Grain-Exports-Food-Security" target="_blank" rel="noopener">Surging Black Sea Attacks Threaten Ukraine’s Harvest and Global Food Security</a> — <i>Mercy Corps</i></p>
+    <p>A harvest is not finished when the grain is gathered. It must be stored, transported, shipped and sold. Farmers must then find the money to plant again. Mercy Corps traces how attacks on ports, ships and railways put pressure on that entire chain. The paradox is plain enough: a country can grow the grain the world needs and still struggle to earn a living from it. The fields may do their part, while the roads to market become a gamble.</p>
+    <p><a href="https://www.nytimes.com/2026/08/24/world/europe/russia-drones-autonomous-ai-kill-ukraine-war.html" target="_blank" rel="noopener">A Drone Killed Three Ukrainians. It Was Guided Entirely by A.I.</a> — <i>The New York Times</i></p>
+    <p>Andrew E. Kramer examines evidence that a Russian drone that killed three people in Zaporizhia was equipped with a system capable of selecting its target autonomously. The report raises a question that is becoming harder to set aside: what happens when the machine is given not merely the ability to reach a target, but some part in deciding which target to reach? A gas station is a modest piece of infrastructure. People stop there for fuel, and then continue with their lives. The machine does not need to understand any of this to interrupt them forever.</p>
+    <p>Read these reports alongside our <a href="https://abdymok.github.io/40/articles/critical-infrastructure-damage.html">critical infrastructure damage chronology</a>. A news report catches the moment and follows its consequences. A chronology has a different task. It keeps the accumulating record, including the damage that no longer makes the news once the next explosion arrives.</p>
+  </div>
+</details>
 
 
 

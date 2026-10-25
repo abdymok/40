@@ -21,8 +21,36 @@ video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;background:
 </style>
 </head>
 <body>
-<video autoplay muted loop playsinline preload="auto" controls>
+<video autoplay muted playsinline preload="auto">
 <source src="running/running.mp4" type="video/mp4">
 </video>
+<script>
+const v = document.querySelector('video');
+v.muted = true;
+v.defaultMuted = true;
+v.playsInline = true;
+v.setAttribute('muted', '');
+v.setAttribute('playsinline', '');
+v.setAttribute('webkit-playsinline', '');
+v.controls = false;
+
+function attemptPlay() {
+  v.muted = true;
+  const result = v.play();
+  if (result && typeof result.then === 'function') {
+    result.then(() => { v.controls = false; })
+      .catch(() => { v.controls = true; });
+  }
+}
+v.addEventListener('canplay', attemptPlay);
+v.addEventListener('playing', () => { v.controls = false; });
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && v.paused) attemptPlay();
+});
+window.addEventListener('pageshow', () => {
+  if (v.paused) attemptPlay();
+});
+attemptPlay();
+</script>
 </body>
 </html>

@@ -54,13 +54,19 @@ v.addEventListener('ended',()=>{
     v.play().catch(()=>{});
   }
 });
-portrait.addEventListener?.('change',configurePlayback);
+portrait.addEventListener?.('change',()=>{
+  if(!portrait.matches&&v.currentTime>0.8*v.duration) v.currentTime=0;
+  configurePlayback();
+});
 const watch=document.getElementById('watch');
 v.addEventListener('playing',()=>{watch.hidden=true;});
 v.addEventListener('pause',()=>{watch.hidden=false;});
-watch.addEventListener('click',()=>{
+watch.addEventListener('click',async()=>{
+  if(v.readyState<1){
+    await new Promise(resolve=>v.addEventListener('loadedmetadata',resolve,{once:true}));
+  }
   if(Number.isFinite(v.duration)&&v.duration){
-    if(portrait.matches){startAt=v.duration*.8;v.loop=false;if(v.currentTime<startAt||v.currentTime>=v.duration)v.currentTime=startAt;}
+    if(portrait.matches){startAt=v.duration*.8;v.loop=false;v.currentTime=startAt;}
     else{v.loop=true;}
   }
   v.play().catch(()=>{});

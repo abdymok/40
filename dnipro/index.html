@@ -3,12 +3,23 @@
 <link rel="icon" type="image/png" href="https://abdymok.github.io/40/evidence/monowheelers.png">
 <link rel="apple-touch-icon" href="https://abdymok.github.io/40/evidence/monowheelers.png"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>dnipro</title><style>
 @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;500&display=swap');
-html,body{margin:0;background:#111;color:#eee;font-family:Georgia,serif}body{min-height:100vh}.frame{height:100vh;position:relative;overflow:hidden}.photo{position:absolute;inset:-1%;background:url('./dnipro.jpg') center/cover no-repeat;transform:scale(1.015);transition:transform 14s ease,background-position 18s ease}.frame:hover .photo{transform:scale(1.035);background-position:51% 50%}.veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.16) 55%,rgba(0,0,0,.42))}
+html,body{margin:0;background:#111;color:#eee;font-family:Georgia,serif}body{min-height:100vh}.frame{height:100vh;height:100dvh;min-height:100svh;position:relative;overflow:hidden}.photo{position:absolute;inset:-1%;background:url('./dnipro.jpg') center/cover no-repeat;transform:scale(1.015);transition:transform 14s ease,background-position 18s ease}.frame:hover .photo{transform:scale(1.035);background-position:51% 50%}.veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.08),rgba(0,0,0,.16) 55%,rgba(0,0,0,.42))}
 .verse{position:absolute;font-family:'Spectral',serif;font-size:22px;line-height:1.35;font-weight:400;letter-spacing:.015em;text-shadow:0 1px 14px rgba(0,0,0,.95),0 0 2px rgba(255,255,255,.12);pointer-events:none;opacity:0;transform:translateY(10px);transition:opacity 1.8s ease,transform 1.8s ease}.verse.active{opacity:.66;transform:translateY(0);animation:float 5s ease-in-out infinite}.verse.final{opacity:0;transform:translateY(10px);transition:opacity 2.5s ease,transform 2.5s ease}.verse.final.active{opacity:.68;transform:translateY(0);animation:finalFloat 7s ease-in-out infinite}
 .v1{left:8vw;top:20vh}.v2{right:9vw;top:31vh}.v3{left:18vw;top:58vh}.v4{right:20vw;top:59vh}.v5{left:42vw;top:39vh;text-align:center}
 @keyframes float{0%,100%{transform:translate(-5px,3px) rotate(-.25deg)}50%{transform:translate(6px,-5px) rotate(.25deg)}}@keyframes finalFloat{0%,100%{transform:translate(-2px,1px)}50%{transform:translate(3px,-3px)}}
 .sound,.enter{opacity:.15;transition:opacity 1.2s ease}.frame:hover .sound,.frame:hover .enter{opacity:.58}.sound{position:absolute;right:5vw;top:5vh;border:0;background:rgba(0,0,0,.14);color:#fff;padding:7px 9px;font:12px Georgia,serif;letter-spacing:.08em;cursor:pointer}.sound:hover{opacity:.9!important}.caption{position:absolute;left:5vw;bottom:5vh;font-size:14px;letter-spacing:.08em}.caption span{display:block;margin-top:9px;font-size:12px;letter-spacing:.03em;opacity:.72}.enter{position:absolute;right:5vw;bottom:5vh;color:#fff;text-decoration:none;font-size:12px;letter-spacing:.08em}.enter:hover{opacity:.9!important}
 @media(max-width:700px){.verse{font-size:18px;max-width:260px}.v1{left:6vw}.v2{right:6vw}.v3{left:9vw}.v4{right:8vw}.v5{left:50%;transform:translateX(-50%)}.frame:hover .photo{background-position:center}.sound,.enter{opacity:.45}}
+@media(orientation:portrait) and (max-width:700px){
+  .frame{height:100dvh;min-height:100svh}
+  .photo{inset:0;background-position:center center;background-size:cover}
+  .v1{top:14vh}
+  .v2{top:29vh}
+  .v5{top:43vh}
+  .v3{top:58vh}
+  .v4{top:72vh}
+  .caption{bottom:4vh;max-width:60vw}
+  .enter{bottom:4vh;gap:10px!important;flex-direction:column;align-items:flex-end!important}
+}
 </style><script async src="https://www.googletagmanager.com/gtag/js?id=G-VHP16V6HE8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

@@ -27,35 +27,74 @@ video{display:block;width:100vw;height:100vh;object-fit:cover;background:#000}
   <source src="./running.mp4" type="video/mp4">
 </video>
 <script>
-const v=document.querySelector('video');
-const portrait=window.matchMedia('(orientation: portrait)');
-let startAt=0;
+const v = document.querySelector('video');
+const portrait = window.matchMedia('(orientation: portrait)');
+let startAt = 0;
+let retryQueued = false;
 
-function configurePlayback(){
-  if(!Number.isFinite(v.duration)||!v.duration)return;
-  if(portrait.matches){
-    startAt=v.duration*.8;
-    v.loop=false;
-    if(v.currentTime<startAt||v.currentTime>=v.duration) v.currentTime=startAt;
-  }else{
-    startAt=0;
-    v.loop=true;
+// Set both the HTML attributes and runtime properties for iOS Safari.
+v.muted = true;
+v.defaultMuted = true;
+v.playsInline = true;
+v.setAttribute('muted', '');
+v.setAttribute('playsinline', '');
+v.setAttribute('webkit-playsinline', '');
+v.controls = false;
+
+function configurePlayback() {
+  if (!Number.isFinite(v.duration) || !v.duration) return;
+  if (portrait.matches) {
+    startAt = v.duration * 0.8;
+    v.loop = false;
+    if (Math.abs(v.currentTime - startAt) > 1.5 && v.currentTime < startAt) {
+      v.currentTime = startAt;
+    }
+  } else {
+    startAt = 0;
+    v.loop = true;
+    if (v.currentTime > 0.8 * v.duration) v.currentTime = 0;
   }
-  v.play().catch(()=>{});
+  attemptPlay();
 }
 
-v.addEventListener('loadedmetadata',configurePlayback);
-v.addEventListener('ended',()=>{
-  if(portrait.matches){
-    v.currentTime=startAt;
-    v.play().catch(()=>{});
+function attemptPlay() {
+  v.muted = true;
+  const result = v.play();
+  if (result && typeof result.then === 'function') {
+    result.then(() => {
+      v.controls = false;
+      retryQueued = false;
+    }).catch(() => {
+      // Only reveal native controls if the browser refuses autoplay.
+      v.controls = true;
+      if (!retryQueued) {
+        retryQueued = true;
+        window.setTimeout(() => {
+          retryQueued = false;
+          if (document.visibilityState === 'visible' && v.paused) attemptPlay();
+        }, 900);
+      }
+    });
+  }
+}
+
+v.addEventListener('loadedmetadata', configurePlayback);
+v.addEventListener('canplay', attemptPlay);
+v.addEventListener('playing', () => { v.controls = false; });
+v.addEventListener('ended', () => {
+  if (portrait.matches) {
+    v.currentTime = startAt;
+    attemptPlay();
   }
 });
-portrait.addEventListener?.('change',()=>{
-  if(!portrait.matches&&v.currentTime>0.8*v.duration) v.currentTime=0;
-  configurePlayback();
+portrait.addEventListener?.('change', configurePlayback);
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && v.paused) attemptPlay();
 });
-v.play().catch(()=>{});
+window.addEventListener('pageshow', () => {
+  if (v.paused) attemptPlay();
+});
+attemptPlay();
 </script>
 </body>
 </html>

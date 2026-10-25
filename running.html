@@ -18,85 +18,81 @@
 <style>
 html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
 video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+/* When iOS refuses autoplay it paints its own start glyph, even with no controls attribute. Hide it. */
+video::-webkit-media-controls,
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-overlay-play-button,
+video::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none;opacity:0}
 </style>
 </head>
 <body>
-<video autoplay muted loop playsinline preload="auto">
+<video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="evidence/monowheelers.png" disableremoteplayback x-webkit-airplay="deny">
 <source src="running/running.mp4" type="video/mp4">
 </video>
 <script>
-const v = document.querySelector('video');
-const portrait = window.matchMedia('(orientation: portrait)');
-let startAt = 0;
-let seekPending = false;
-let retryQueued = false;
+(function () {
+  var v = document.querySelector('video');
+  var portrait = window.matchMedia('(orientation: portrait)');
 
-v.muted = true;
-v.defaultMuted = true;
-v.playsInline = true;
-v.setAttribute('muted', '');
-v.setAttribute('playsinline', '');
-v.setAttribute('webkit-playsinline', '');
-v.controls = false;
-
-function attemptPlay() {
-  if (seekPending) return;
   v.muted = true;
-  const result = v.play();
-  if (result && typeof result.then === 'function') {
-    result.then(() => {
-      v.controls = false;
-      retryQueued = false;
-    }).catch(() => {
-      v.controls = false;
-      if (!retryQueued) {
-        retryQueued = true;
-        window.setTimeout(() => {
-          retryQueued = false;
-          if (document.visibilityState === 'visible' && v.paused) attemptPlay();
-        }, 700);
-      }
+  v.defaultMuted = true;
+  v.playsInline = true;
+  v.controls = false;
+
+  // Portrait: the last fifth of the film, looped by hand. Landscape: the whole film, native loop.
+  function startTime() {
+    return portrait.matches && isFinite(v.duration) ? v.duration * 0.8 : 0;
+  }
+
+  // The one place that calls play(). It records WHY a rejection happened instead of looping on it.
+  function play() {
+    v.muted = true;
+    var p = v.play();
+    if (!p || !p.then) return;
+    p.then(disarm).catch(function (e) {
+      window.__playError = e && e.name;           // read this in the Web Inspector
+      if (e && e.name === 'NotAllowedError') arm(); // browser policy, not a bug: retrying cannot help
     });
   }
-}
 
-function configurePlayback() {
-  if (!Number.isFinite(v.duration) || !v.duration) return;
-  const target = portrait.matches ? v.duration * 0.8 : 0;
-  startAt = target;
-  v.loop = !portrait.matches;
-  if (Math.abs(v.currentTime - target) > 1.5) {
-    seekPending = true;
-    v.addEventListener('seeked', () => {
-      seekPending = false;
-      attemptPlay();
-    }, { once: true });
-    v.currentTime = target;
-  } else {
-    attemptPlay();
+  // Policy fallback with no UI: the first touch anywhere starts the film. The poster stays visible meanwhile.
+  var armed = false, EVENTS = ['touchend', 'pointerup', 'click', 'keydown'];
+  function arm() {
+    if (armed) return;
+    armed = true;
+    EVENTS.forEach(function (n) { document.addEventListener(n, onGesture, true); });
   }
-}
+  function disarm() {
+    armed = false;
+    EVENTS.forEach(function (n) { document.removeEventListener(n, onGesture, true); });
+  }
+  function onGesture() { play(); }
 
-v.addEventListener('loadedmetadata', configurePlayback);
-v.addEventListener('canplay', () => { if (!seekPending && v.currentTime === 0) attemptPlay(); });
-v.addEventListener('playing', () => { v.controls = false; });
-v.addEventListener('ended', () => {
-  if (portrait.matches) {
-    seekPending = true;
-    v.addEventListener('seeked', () => {
-      seekPending = false;
-      attemptPlay();
-    }, { once: true });
-    v.currentTime = startAt;
+  function frame() {
+    if (!isFinite(v.duration) || !v.duration) return;
+    var t = startTime();
+    v.loop = !portrait.matches;
+    if (Math.abs(v.currentTime - t) > 1.5) {
+      v.addEventListener('seeked', play, { once: true }); // start only after the seek has landed
+      v.currentTime = t;
+    } else {
+      play();
+    }
   }
-});
-portrait.addEventListener?.('change', configurePlayback);
-document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'visible' && v.paused) attemptPlay();
-});
-window.addEventListener('pageshow', () => {
-  if (v.paused) attemptPlay();
-});
+
+  if (v.readyState >= 1) frame(); else v.addEventListener('loadedmetadata', frame, { once: true });
+
+  v.addEventListener('ended', function () {
+    if (!portrait.matches) return;
+    v.addEventListener('seeked', play, { once: true });
+    v.currentTime = startTime();
+  });
+  portrait.addEventListener && portrait.addEventListener('change', frame);
+  window.addEventListener('pageshow', function () { if (v.paused && !armed) play(); });
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible' && v.paused && !armed) play();
+  });
+})();
 </script>
 </body>
 </html>

@@ -57,6 +57,17 @@
 - Keep the visual treatment restrained: white background, editorial typography, minimal decoration, no unnecessary cards, gradients or animation.
 - Use concise labels and avoid redundant explanatory copy.
 
+
+## Kyiv air-alert count and time under alert
+
+- Keep the Kyiv alert count and cumulative time under alert as current as reasonably practical, using the alerts.in.ua Kyiv history and the user's firsthand observations where relevant. This is a good-faith running record, not a live monitoring service. We have other reporting, writing and site work to do, so updates may lag. Do not imply continuous monitoring or treat a delay as a failure.
+- Reconcile the tracker against the existing dashboard baseline before adding intervals. Count each distinct Kyiv alert once. Check start and end times, account for alerts that cross midnight, and avoid double-counting intervals already included in the baseline. Keep Kyiv-only alerts separate from Ukraine-wide alerts.
+- Use the durations reported by alerts.in.ua consistently for cumulative time where available. The tracker rounds durations, so its reported length may differ by a minute from subtracting the displayed start and end times. Do not mix methods silently.
+- Count an ongoing alert as a provisional alert event. For a snapshot that includes its elapsed time, calculate from the reported start time or tracker-reported elapsed duration, state the snapshot/cutoff and make clear that the total will continue to grow while the alert remains active. Do not treat an active interval as completed.
+- Exclude unresolved older intervals or intervals with uncertain duration from the cumulative total until they can be reconciled. Do not invent missing durations or silently estimate them. Where practical, retain the uncertainty in the methodology note.
+- After a reconciliation, update the alert count, cumulative duration, page date, methodology and change history together. Record the cutoff, newly included completed intervals, any active interval, and the resulting totals. Keep dashboard copy concise and provisional where appropriate; put calculation details and rounding caveats in the methodology note.
+- Work from the best available evidence at the time. Correct the figures when better information arrives, but do not delay other substantive work merely to keep the dashboard minute-perfect.
+
 ## Landing-page parity — hard requirement
 
 - `https://abdymok.github.io/index.html` must always be byte-for-byte identical to the canonical landing-page HTML at `abdymok/landing_page/index.html` (published as `https://abdymok.github.io/`). The root page is not a separate design and must not be replaced with a redirect.

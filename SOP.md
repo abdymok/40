@@ -24,6 +24,9 @@
 
 ## Chronology
 
+- **Firsthand Kyiv observations are primary evidence.** For the chronology, the user's direct observations from Kyiv — what they personally hear, see, photograph or experience, including sirens and other events — outrank conflicting official statements, trackers, media reports and other secondary accounts as evidence of what the user observed. Do not require outside corroboration to establish that a firsthand observation occurred.
+- Use other sources to add context, attribute claims, establish facts beyond the user's direct observation, or help reconcile details not directly observed. They do not automatically override the user's account. If a source conflicts with a firsthand observation, preserve the observation and investigate or explain the discrepancy rather than silently substituting the published account.
+- Keep the boundary clear between observation and inference. A firsthand report that sirens are audible establishes the user's observation and its reported time; it does not by itself establish the alert's geographic scope, cause, weapon, impact or casualties. Attribute or verify details beyond what the user directly observed.
 - Add the newest item at the top of the chronology. Preserve older entries and anchors; do not delete or silently regress earlier material.
 - Give every chronology entry a unique, stable anchor ID. Every headline-bearing entry must link to its own anchor, and all existing links to entry anchors must continue to work when entries are reordered or moved to the archive.
 - Attribute reported claims to the named source. Distinguish official statements, local-channel reports, eyewitness observations and independently corroborated facts.

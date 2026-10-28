@@ -635,3 +635,12 @@ body.infrastructure-page .fun-fact-toggle-hint{font-size:13px!important;margin:0
   .refresh,.fun-fact-image-toggle,.fun-fact-toggle-hint{display:none!important}
   details{break-inside:avoid}
 }
+
+
+/* Metadata, source lines and evidence captions share the full 720px chronology column. */
+body.infrastructure-page #chronology .entry-body>.entry-meta,
+body.archive-page .entry-body>.entry-meta{display:flex;width:100%;max-width:720px;box-sizing:border-box;}
+body.infrastructure-page #chronology .entry-body>p.entry-source,
+body.infrastructure-page #chronology .entry-body>p.source,
+body.archive-page .entry-body>p.entry-source,
+body.archive-page .entry-body>p.source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}

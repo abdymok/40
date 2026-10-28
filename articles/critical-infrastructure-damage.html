@@ -91,6 +91,10 @@ body.infrastructure-page .monday-madness .fun-fact-figure img{display:block;widt
 body.infrastructure-page .monday-madness figcaption{display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:8px;font-size:13px;line-height:1.5;color:var(--muted);text-wrap:wrap}
 body.infrastructure-page .monday-madness .monday-madness-heading{margin:18px 0 12px;font-size:24px;font-weight:400;line-height:1.25;letter-spacing:-.01em}
 
+body.infrastructure-page .chronology-list.chronology-collapsed{max-height:10.5rem;overflow:hidden;position:relative}
+body.infrastructure-page .chronology-continue{display:block;margin:12px 0 28px;padding:10px 0;border:0;border-bottom:1px solid var(--rule);background:transparent;color:var(--ink);font:inherit;font-size:14px;text-align:left;cursor:pointer}
+body.infrastructure-page .chronology-continue:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+body.infrastructure-page .chronology-list:not(.chronology-collapsed)+.chronology-continue{margin-top:12px}
 body.infrastructure-page .alert-accounting{margin-top:0}
 @media(max-width:600px){body.infrastructure-page .front-matter-item{padding:15px 0 18px}body.infrastructure-page .front-matter-item h2,body.infrastructure-page .fun-fact-summary-title{font-size:22px}body.infrastructure-page .front-matter-item p{font-size:15px}}
 </style>
@@ -170,7 +174,7 @@ body.infrastructure-page .alert-accounting{margin-top:0}
 
 
 
-<section id="chronology" class="chronology-list" aria-labelledby="chronology-heading">
+<section id="chronology" class="chronology-list chronology-collapsed" aria-labelledby="chronology-heading">
 
 <h2 class="day-heading" id="day-oct-28">Oct.&nbsp;28</h2>
 <p class="day-summary">South Bridge repairs continue after the October 27 strike damaged road, metro and utility systems. A drone strike kills a civilian in Kharkiv as reports from Donetsk region add to the nationwide toll.</p>
@@ -1480,6 +1484,7 @@ body.infrastructure-page .alert-accounting{margin-top:0}
   <p>For how we record, reconcile and update these intervals, see our <a href="/method/">standard operating procedure</a>.</p>
 </section>
 
+<button class="chronology-continue" type="button" aria-expanded="false" aria-controls="chronology">Continue reading the full chronology ↓</button>
 <section class="nuclear-section" id="nuclear"><h2>Nuclear and scientific infrastructure</h2>
 <p><strong>Sept. 30 — Institute for Nuclear Research, Kyiv.</strong> A Russian UAV struck the grounds of the National Academy of Sciences' Institute for Nuclear Research, where the VVR-M research reactor is located. The State Nuclear Regulatory Inspectorate reported a fire but no damage to the reactor or safety-important systems, and no change in radiation levels; readings remained within the natural-background range of 0.16–0.20 μSv/h. The reactor has been shut down with its core fully unloaded since February 2022.</p>
 <p><strong>Sept. 28 — National Academy of Sciences Presidium, Kyiv.</strong> A Russian drone struck the building of the NAS Presidium, causing significant damage and killing two people, according to Ukraine's Ministry of Foreign Affairs. The MFA subsequently described the Institute for Nuclear Research strike as part of a wider pattern of attacks affecting Ukrainian nuclear and scientific institutions.</p>
@@ -1496,6 +1501,28 @@ body.infrastructure-page .alert-accounting{margin-top:0}
 <p class="note">Working chronology, newest first by date. Entries without a verified time are not necessarily ordered within the day. Compiled by <a href="https://abdymok.substack.com">abd<span class="brand-y">y</span>mok</a>. <a href="/method/">Method, evidence labels, corrections and contact.</a></p>
 <footer class="evidence-key-footer" id="evidence-and-source-labels"><strong>Evidence labels:</strong> official · operator or company · media · eyewitness · attributed · tracker · unverified · editorial. <a href="/method/">Definitions and limits of each label.</a></footer>
 </main>
+<script>
+(function(){
+  var chronology=document.getElementById('chronology');
+  var toggle=document.querySelector('.chronology-continue');
+  if(!chronology||!toggle)return;
+  toggle.addEventListener('click',function(){
+    var collapsed=chronology.classList.toggle('chronology-collapsed');
+    toggle.setAttribute('aria-expanded',String(!collapsed));
+    toggle.textContent=collapsed?'Continue reading the full chronology ↓':'Collapse chronology ↑';
+  });
+  document.querySelectorAll('.day-jump a').forEach(function(link){
+    link.addEventListener('click',function(){
+      if(chronology.classList.contains('chronology-collapsed')){
+        chronology.classList.remove('chronology-collapsed');
+        toggle.setAttribute('aria-expanded','true');
+        toggle.textContent='Collapse chronology ↑';
+      }
+    });
+  });
+})();
+</script>
+
 <script>
 (function(){
   function sizeLandscapeImage(img){

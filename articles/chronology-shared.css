@@ -644,3 +644,8 @@ body.infrastructure-page #chronology .entry-body>p.entry-source,
 body.infrastructure-page #chronology .entry-body>p.source,
 body.archive-page .entry-body>p.entry-source,
 body.archive-page .entry-body>p.source{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
+
+/* Headlines use the same full 720px chronology column as the preceding entry. */
+body.infrastructure-page #chronology .entry-body>h3,
+body.infrastructure-page #chronology .entry-body h3,
+body.archive-page .entry-body h3{display:block;width:100%;max-width:720px;box-sizing:border-box}

@@ -662,3 +662,25 @@ body.infrastructure-page #chronology .entry-body > p:not(.entry-meta):not(.sourc
 body.archive-page .entry-body p:not(.entry-meta):not(.source) {
   max-width: 38em;
 }
+
+/* Final polish: separate incidents and days without adding visual noise. */
+body.infrastructure-page #chronology .chronology-entry {
+  padding: 20px 0 24px;
+}
+body.archive-page .chronology-entry {
+  padding: 20px 0 24px;
+}
+body.archive-page .day-heading {
+  margin-top: 40px;
+}
+@media (max-width: 680px) {
+  body.infrastructure-page #chronology .chronology-entry {
+    padding: 18px 0 22px;
+  }
+  body.archive-page .chronology-entry {
+    padding: 18px 0 22px;
+  }
+  body.archive-page .day-heading {
+    margin-top: 34px;
+  }
+}

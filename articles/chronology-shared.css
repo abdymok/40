@@ -649,3 +649,16 @@ body.archive-page .entry-body>p.source{display:block;width:100%;max-width:720px;
 body.infrastructure-page #chronology .entry-body>h3,
 body.infrastructure-page #chronology .entry-body h3,
 body.archive-page .entry-body h3{display:block;width:100%;max-width:720px;box-sizing:border-box}
+
+
+/* Reading-first typography, following Dean Allen: a clear measure, even rhythm, no forced spacing. */
+body.infrastructure-page #chronology .entry-body,
+body.archive-page .entry-body {
+  text-align: left;
+  letter-spacing: normal;
+  line-height: 1.65;
+}
+body.infrastructure-page #chronology .entry-body > p:not(.entry-meta):not(.source):not(.entry-summary),
+body.archive-page .entry-body p:not(.entry-meta):not(.source) {
+  max-width: 38em;
+}

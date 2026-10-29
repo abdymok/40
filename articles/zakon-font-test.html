@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111">
+<title>Zakon / Spectral — type specimen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="chronology-shared.css?v=20261028b">
+<style>
+@font-face{font-family:"Zakon Test";src:url("../Zakon-Regular.otf") format("opentype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Zakon Test";src:url("../Zakon-Italic.otf") format("opentype");font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:"Zakon Test";src:url("../Zakon-Bold.otf") format("opentype");font-style:normal;font-weight:700;font-display:swap}
+@font-face{font-family:"Zakon Test";src:url("../Zakon-BoldItalic.otf") format("opentype");font-style:italic;font-weight:700;font-display:swap}
+body.infrastructure-page .specimen-intro{margin:0 0 28px;max-width:720px;color:var(--muted);font-size:14px}
+body.infrastructure-page .specimen-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px}
+body.infrastructure-page .specimen{min-width:0;padding-top:14px;border-top:1px solid var(--ink)}
+body.infrastructure-page .specimen h2{margin:0 0 5px;font-size:24px;line-height:1.2}
+body.infrastructure-page .specimen .specimen-note{margin:0 0 20px;color:var(--muted);font:11px/1.5 Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+body.infrastructure-page .specimen .type-sample{font-size:16px;line-height:1.62}
+body.infrastructure-page .specimen .type-sample h3{margin:0 0 13px;font-size:23px;line-height:1.22;font-weight:500;letter-spacing:-.01em}
+body.infrastructure-page .specimen .type-sample p{margin:0 0 14px}
+body.infrastructure-page .specimen .headline-sample{font-size:27px;line-height:1.2;font-weight:500;letter-spacing:-.015em;margin-bottom:18px}
+body.infrastructure-page .specimen .weights{margin-top:18px;padding-top:12px;border-top:1px solid var(--rule);font-size:15px;line-height:1.7}
+body.infrastructure-page .specimen .weights p{margin:0 0 7px}
+body.infrastructure-page .zakon{font-family:"Zakon Test",Georgia,serif}
+body.infrastructure-page .spectral{font-family:"Spectral",Georgia,serif}
+body.infrastructure-page .specimen .sample-italic{font-style:italic}
+body.infrastructure-page .specimen .sample-bold{font-weight:700}
+body.infrastructure-page .specimen .sample-bold-italic{font-weight:700;font-style:italic}
+body.infrastructure-page .test-footer{margin:34px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted)}
+@media(max-width:680px){body.infrastructure-page .specimen-grid{grid-template-columns:1fr;gap:32px}body.infrastructure-page .specimen .headline-sample{font-size:25px}}
+</style>
+</head>
+<body class="infrastructure-page">
+<main>
+<p class="status">TYPE TEST · NOT THE LIVE CHRONOLOGY</p>
+<h1>Zakon or Spectral?</h1>
+<p class="dek">A side-by-side specimen using the chronology’s existing editorial scale.</p>
+<p class="specimen-intro">Compare headline shape, paragraph rhythm, italics, bold, and the Ukrainian letterforms. This page loads the four OTF files from the repository root. The production chronology’s CSS and typography remain unchanged.</p>
+<div class="specimen-grid">
+<section class="specimen spectral" aria-labelledby="spectral-title">
+<h2 id="spectral-title">Spectral Serif</h2>
+<p class="specimen-note">Current chronology typeface</p>
+<div class="type-sample">
+<p class="headline-sample">Russian drone strikes Dnipro railway station platform</p>
+<h3>Kyiv and selected Ukrainian critical infrastructure damage</h3>
+<p>Confirmed, operator-reported, attributed and eyewitness reports, September 28–October 29, 2026.</p>
+<p>Russian forces continue to attack the infrastructure that keeps cities connected and functioning. Reports are attributed to their sources, and provisional figures remain subject to reconciliation.</p>
+<p class="sample-italic">Italic sample: The city remains legible through the noise of the daily reports.</p>
+<div class="weights">
+<p>Regular — Kyiv, Dnipro, Запоріжжя, Україна</p>
+<p class="sample-italic">Italic — Kyiv, Dnipro, Запоріжжя, Україна</p>
+<p class="sample-bold">Bold — Kyiv, Dnipro, Запоріжжя, Україна</p>
+<p class="sample-bold-italic">Bold italic — Kyiv, Dnipro, Запоріжжя, Україна</p>
+</div>
+</div>
+</section>
+<section class="specimen zakon" aria-labelledby="zakon-title">
+<h2 id="zakon-title">Zakon</h2>
+<p class="specimen-note">Local OTF files · test only</p>
+<div class="type-sample">
+<p class="headline-sample">Russian drone strikes Dnipro railway station platform</p>
+<h3>Kyiv and selected Ukrainian critical infrastructure damage</h3>
+<p>Confirmed, operator-reported, attributed and eyewitness reports, September 28–October 29, 2026.</p>
+<p>Russian forces continue to attack the infrastructure that keeps cities connected and functioning. Reports are attributed to their sources, and provisional figures remain subject to reconciliation.</p>
+<p class="sample-italic">Italic sample: The city remains legible through the noise of the daily reports.</p>
+<div class="weights">
+<p>Regular — Kyiv, Dnipro, Запоріжжя, Україна</p>
+<p class="sample-italic">Italic — Kyiv, Dnipro, Запоріжжя, Україна</p>
+<p class="sample-bold">Bold — Kyiv, Dnipro, Запоріжжя, Україна</p>
+<p class="sample-bold-italic">Bold italic — Kyiv, Dnipro, Запоріжжя, Україна</p>
+</div>
+</div>
+</section>
+</div>
+<p class="test-footer">This is a visual comparison, not a licence review or a production change. Check that Zakon loads in the browser before judging the specimen; if it falls back to Georgia, inspect the font request in the browser’s developer tools.</p>
+</main>
+</body>
+</html>

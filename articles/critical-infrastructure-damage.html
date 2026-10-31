@@ -98,6 +98,15 @@ body.infrastructure-page .dashboard-detail-collapse{min-width:0;margin-top:3px}
 body.infrastructure-page .dashboard-detail-collapse>summary{cursor:pointer}
 body.infrastructure-page .dashboard-detail-expanded{margin:6px 0 0;font-size:12px;line-height:1.35;color:var(--muted);min-width:0;overflow-wrap:anywhere}
 @media(max-width:600px){body.infrastructure-page .front-matter-item{padding:15px 0 18px}body.infrastructure-page .front-matter-item h2,body.infrastructure-page .fun-fact-summary-title{font-size:22px}body.infrastructure-page .front-matter-item p{font-size:15px}}
+body.infrastructure-page .outage-clock-feature{display:block;width:100%;max-width:720px;margin:24px 0 34px}
+body.infrastructure-page .outage-clock-feature img{display:block;width:100%;max-width:100%;height:auto}
+body.infrastructure-page .outage-clock-feature figcaption{display:block;margin-top:8px;font-size:13px;line-height:1.45;color:var(--muted);text-wrap:wrap}
+body.infrastructure-page .outage-clock-date{display:block;margin-bottom:4px;font:10px/1.4 Arial,sans-serif;letter-spacing:.09em;color:var(--muted)}
+body.infrastructure-page .outage-clock-title{display:block;margin-bottom:3px;font-size:22px;line-height:1.25;color:var(--ink)}
+body.infrastructure-page .outage-clock-formula,body.infrastructure-page .outage-clock-tagline{display:block}
+body.infrastructure-page .outage-clock-tagline{color:var(--ink);font-style:italic}
+body.infrastructure-page .outage-clock-feature .credit{display:block;margin-top:3px;font-size:12px;letter-spacing:normal;color:var(--muted)}
+body.infrastructure-page .outage-clock-feature .credit a{color:var(--brand);text-decoration:none}
 </style>
 </head>
 <body class="infrastructure-page"><main>
@@ -125,6 +134,17 @@ body.infrastructure-page .dashboard-detail-expanded{margin:6px 0 0;font-size:12p
 <div class="dashboard-secondary-item" data-measure="people-without-electricity"><span class="dashboard-secondary-label">Families without electricity</span><span class="dashboard-value">550,000+</span><details class="dashboard-detail-collapse"><summary class="dashboard-secondary-detail">Nationwide figure in President Z’s Oct.&nbsp;19 statement.</summary><p class="dashboard-detail-expanded">Nationwide figure in President Z’s Oct.&nbsp;19 statement after the overnight attack.</p></details></div>
 <div class="dashboard-secondary-item" data-measure="regions-with-energy-facilities-attacked"><span class="dashboard-secondary-label">Regions with energy facilities attacked</span><span class="dashboard-value">11</span><details class="dashboard-detail-collapse"><summary class="dashboard-secondary-detail">Nationwide measure in the Energy Ministry’s Oct.&nbsp;19 briefing.</summary><p class="dashboard-detail-expanded">Nationwide measure in the Energy Ministry’s Oct.&nbsp;19 briefing. <a href="https://t.me/energyofukraine/8122" target="_blank" rel="noopener">Ministry source</a>.</p></details></div>
 </div></section>
+
+<figure class="outage-clock-feature" aria-labelledby="outage-clock-title">
+  <img src="../evidence/outage.png" alt="Kyiv outage photograph">
+  <figcaption>
+    <span class="outage-clock-date">KYIV · OCTOBER 31, 2026</span>
+    <span class="outage-clock-title" id="outage-clock-title">The Kyiv blackout clock</span>
+    <span class="outage-clock-formula">Moderate-use runway = battery remaining (%) ÷ average drain (% per hour).</span>
+    <span class="outage-clock-tagline">Battery remaining ÷ hourly appetite = hours of borrowed light.</span>
+    <span class="credit">Photo c/o abd<a href="https://abdymok.github.io/" target="_blank" rel="noopener noreferrer"><em>y</em></a>mok</span>
+  </figcaption>
+</figure>
 
 <details class="front-matter-item throwback-thursday" id="throwback-thursday" aria-labelledby="throwback-thursday-title">
   <summary>

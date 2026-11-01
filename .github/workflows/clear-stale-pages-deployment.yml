@@ -1,0 +1,20 @@
+name: Clear stale GitHub Pages deployment
+
+on:
+  push:
+    paths:
+      - ".github/workflows/clear-stale-pages-deployment.yml"
+
+permissions:
+  pages: write
+
+jobs:
+  clear:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel the stale Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          gh api --method POST "repos/${REPOSITORY}/pages/deployments/c493cc70fc7c47dcf12189d47e17ea62b18b1931/cancel"

@@ -1,4 +1,4 @@
-name: Clear stale GitHub Pages deployment
+name: Inspect stale GitHub Pages deployment
 
 on:
   push:
@@ -6,15 +6,23 @@ on:
       - ".github/workflows/clear-stale-pages-deployment.yml"
 
 permissions:
+  deployments: write
   pages: write
 
 jobs:
-  clear:
+  inspect:
     runs-on: ubuntu-latest
     steps:
-      - name: Cancel the stale Pages deployment
+      - name: Inspect the stale deployment and its latest status
         env:
           GH_TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
         run: |
-          gh api --method POST "repos/${REPOSITORY}/pages/deployments/c493cc70fc7c47dcf12189d47e17ea62b18b1931/cancel"
+          deployment_id=$(gh api "repos/${REPOSITORY}/deployments?environment=github-pages&per_page=100" --jq '.[] | select(.sha == "c493cc70fc7c47dcf12189d47e17ea62b18b1931") | .id' | head -n 1)
+          if [ -z "$deployment_id" ]; then
+            echo "No deployment found for the reported stale SHA"
+            exit 1
+          fi
+          echo "Found deployment ID: $deployment_id"
+          gh api "repos/${REPOSITORY}/deployments/$deployment_id"
+          gh api "repos/${REPOSITORY}/deployments/$deployment_id/statuses" --jq '.[0]'

@@ -1,4 +1,4 @@
-name: Inspect stale GitHub Pages deployment
+name: Clear stale GitHub Pages deployment
 
 on:
   push:
@@ -10,19 +10,15 @@ permissions:
   pages: write
 
 jobs:
-  inspect:
+  clear:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect the stale deployment and its latest status
+      - name: Retire the stale deployment record
         env:
           GH_TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
         run: |
-          deployment_id=$(gh api "repos/${REPOSITORY}/deployments?environment=github-pages&per_page=100" --jq '.[] | select(.sha == "c493cc70fc7c47dcf12189d47e17ea62b18b1931") | .id' | head -n 1)
-          if [ -z "$deployment_id" ]; then
-            echo "No deployment found for the reported stale SHA"
-            exit 1
-          fi
-          echo "Found deployment ID: $deployment_id"
-          gh api "repos/${REPOSITORY}/deployments/$deployment_id"
-          gh api "repos/${REPOSITORY}/deployments/$deployment_id/statuses" --jq '.[0]'
+          deployment_id=7470420548
+          gh api --method POST "repos/${REPOSITORY}/deployments/$deployment_id/statuses" -f state=failure -f description="Retiring stale GitHub Pages deployment record to release deployment lock"
+          gh api --method DELETE "repos/${REPOSITORY}/deployments/$deployment_id"
+          echo "Retired stale deployment $deployment_id"

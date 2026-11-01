@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-labelledby="t d">
+  <title id="t">Card-catalogue cabinet with one drawer pulled open</title>
+  <desc id="d">Line drawing of a library card-catalogue cabinet with eight drawers. One drawer in the top row is pulled open and index cards stand up out of it.</desc>
+  <rect x="60" y="44" width="520" height="200" rx="6"/>
+    <rect x="68" y="52" width="114" height="84" rx="3"/>
+  <rect x="97" y="66" width="56" height="18" rx="1.5"/><path d="M106 75h38"/>
+  <circle cx="125" cy="106" r="5"/>
+  <rect x="198" y="52" width="114" height="84" rx="3"/>
+  <rect x="227" y="66" width="56" height="18" rx="1.5"/><path d="M236 75h30"/>
+  <circle cx="255" cy="106" r="5"/>
+  <rect x="328" y="66" width="114" height="78" rx="3"/>
+  <rect x="357" y="82" width="56" height="18" rx="1.5"/><path d="M366 91h38"/>
+  <circle cx="385" cy="122" r="5"/>
+  <rect x="458" y="52" width="114" height="84" rx="3"/>
+  <rect x="487" y="66" width="56" height="18" rx="1.5"/><path d="M496 75h24"/>
+  <circle cx="515" cy="106" r="5"/>
+  <rect x="68" y="152" width="114" height="84" rx="3"/>
+  <rect x="97" y="166" width="56" height="18" rx="1.5"/><path d="M106 175h40"/>
+  <circle cx="125" cy="206" r="5"/>
+  <rect x="198" y="152" width="114" height="84" rx="3"/>
+  <rect x="227" y="166" width="56" height="18" rx="1.5"/><path d="M236 175h28"/>
+  <circle cx="255" cy="206" r="5"/>
+  <rect x="328" y="152" width="114" height="84" rx="3"/>
+  <rect x="357" y="166" width="56" height="18" rx="1.5"/><path d="M366 175h36"/>
+  <circle cx="385" cy="206" r="5"/>
+  <rect x="458" y="152" width="114" height="84" rx="3"/>
+  <rect x="487" y="166" width="56" height="18" rx="1.5"/><path d="M496 175h32"/>
+  <circle cx="515" cy="206" r="5"/>
+  <path d="M334 44V20a2 2 0 0 1 2-2h22l4 6h32a2 2 0 0 1 2 2v18"/>
+  <path d="M342 44V12a2 2 0 0 1 2-2h26l4 6h24a2 2 0 0 1 2 2v26" stroke-width="1.5" opacity=".6"/>
+  <path d="M356 31h28M356 37h18" stroke-width="1.5"/>
+  <path d="M40 244h560" stroke-width="1.5" opacity=".5"/>
+</svg>

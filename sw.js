@@ -1,4 +1,4 @@
-const CACHE = 'abdymok-40-v20261106-1';
+const CACHE = 'abdymok-40-v20261106-2';
 
 self.addEventListener('install', event => {
   self.skipWaiting();

@@ -141,6 +141,7 @@ body.infrastructure-page #chronology .entry-meta .evidence-category{font-weight:
 body.infrastructure-page #chronology .entry-meta .meta-separator{padding:0 2px;color:var(--muted)}
 body.infrastructure-page .day-jump{display:flex;align-items:center;flex-wrap:nowrap;gap:6px;margin:0 0 24px;padding:10px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:13px;color:var(--muted);overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 body.infrastructure-page .day-jump a{text-decoration:none;border-bottom:1px solid var(--rule);padding:4px 12px;min-height:36px}
+body.infrastructure-page .day-jump .month-label{flex:0 0 auto;padding:0 3px 0 8px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 body.infrastructure-page .day-jump a:hover,
 body.infrastructure-page .day-jump a:focus-visible{border-bottom-color:var(--ink)}
 body.infrastructure-page .chronology-day{scroll-margin-top:20px}

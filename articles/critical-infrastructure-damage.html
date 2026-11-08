@@ -146,6 +146,7 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <p class="dek">Confirmed, operator-reported, attributed and eyewitness reports, September 30–November 8, 2026</p>
 <p class="scope-note">The chronology includes context from September 30. Dashboard reporting begins October 1. <a href="../method/">Methodology, evidence labels and corrections policy.</a></p>
 <p class="scope-note timezone-note">All times are Kyiv local time. Clocks change from summer to standard time on October 25, 2026; entries retain local clock times.</p>
+<div class="appearance-control"><button type="button" id="appearance-toggle" aria-pressed="false" aria-label="Switch to dark mode">Dark mode</button></div>
 <div class="updated-row"><p class="updated">Updated <time datetime="2026-11-08">Nov.&nbsp;8</time>. Chronology through Nov.&nbsp;8. The documented fatality subtotal for selected incidents is approximately 261 through Nov.&nbsp;8. Kyiv air alerts total 268 provisional alerts and 236 hours 57 minutes under alert through the Nov.&nbsp;7, 16:14 all-clear in Kyiv Digital’s official interval history. Its six displayed intervals total 10 hours 51 minutes. The independent alerts.khanoff.com daily statistics, timestamped 16:49 on Nov.&nbsp;7, report 10 hours 53 minutes, a two-minute difference. The earlier cumulative alert baseline remains provisional. Other dashboard measures retain their individual source dates.</p><button class="refresh" type="button" aria-label="Refresh page" title="Refresh page" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r&&r.update()).catch(()=>{});}location.reload();"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4.9 9a7.5 7.5 0 0 1 12.4-2L20 12M4 17v-5h5"/><path d="M19.1 15a7.5 7.5 0 0 1-12.4 2L4 12"/></svg></button></div>
 
 
@@ -2310,6 +2311,30 @@ document.querySelectorAll(".chronology-day").forEach(function(day){var summary=d
     button.setAttribute('aria-pressed',String(!showingMap));
     showingMap=!showingMap;
   });
+})();
+</script>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  var body=document.body;
+  var button=document.getElementById('appearance-toggle');
+  if(!button)return;
+  var dark=false;
+  try{dark=localStorage.getItem('chrono-appearance')==='dark';}catch(e){}
+  function apply(){
+    root.classList.toggle('chrono-dark',dark);
+    body.classList.toggle('chrono-dark',dark);
+    button.textContent=dark?'Light mode':'Dark mode';
+    button.setAttribute('aria-pressed',String(dark));
+    button.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
+  }
+  button.addEventListener('click',function(){
+    dark=!dark;
+    apply();
+    try{localStorage.setItem('chrono-appearance',dark?'dark':'light');}catch(e){}
+  });
+  apply();
 })();
 </script>
 </body></html>

@@ -685,3 +685,55 @@ body.archive-page .day-heading {
     margin-top: 34px;
   }
 }
+
+
+/* Chronology appearance: light by default, with a discreet reader-controlled dark mode. */
+:root:has(body.infrastructure-page){
+  --ink:#111;
+  --muted:#595959;
+  --rule:#dedede;
+  --paper:#fff;
+  --brand:#c43b3b;
+  --track:.07em;
+  --ok:#595959;
+  --rep:#595959;
+  color-scheme:light;
+}
+:root:has(body.infrastructure-page.chrono-dark){
+  --ink:#ededed;
+  --muted:#b3b3b3;
+  --rule:#414141;
+  --paper:#111;
+  --brand:#ff6b6b;
+  --track:.07em;
+  --ok:#b3b3b3;
+  --rep:#b3b3b3;
+  color-scheme:dark;
+}
+body.infrastructure-page .appearance-control{
+  display:flex;
+  justify-content:flex-end;
+  margin:0 0 12px;
+  min-height:24px;
+}
+body.infrastructure-page .appearance-control button{
+  appearance:none;
+  border:0;
+  border-bottom:1px solid transparent;
+  padding:2px 0;
+  background:transparent;
+  color:var(--muted);
+  font:inherit;
+  font-size:12px;
+  line-height:1.4;
+  cursor:pointer;
+}
+body.infrastructure-page .appearance-control button:hover,
+body.infrastructure-page .appearance-control button:focus-visible{
+  color:var(--ink);
+  border-bottom-color:var(--muted);
+}
+body.infrastructure-page .appearance-control button:focus-visible{
+  outline:1px solid var(--ink);
+  outline-offset:3px;
+}

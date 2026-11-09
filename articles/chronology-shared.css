@@ -749,3 +749,5 @@ body.archive-page .appearance-control button[aria-pressed="true"]{color:var(--in
 body.archive-page .appearance-control button:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
 
 body.archive-page .entry-note{display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:9px;font-size:12px;line-height:1.45;color:var(--muted)}
+
+.dashboard-secondary-date{display:block;margin-top:4px;font-size:11px;line-height:1.35;color:var(--muted);font-variant-numeric:tabular-nums}

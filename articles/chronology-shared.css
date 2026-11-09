@@ -753,3 +753,6 @@ body.archive-page .entry-note{display:block;width:100%;max-width:720px;box-sizin
 .dashboard-secondary-date{display:block;margin-top:4px;font-size:11px;line-height:1.35;color:var(--muted);font-variant-numeric:tabular-nums}
 
 body.infrastructure-page .entry-source,body.archive-page .entry-source{font-size:12px;line-height:1.45;color:var(--muted)}
+
+/* Evidence labels share one quiet treatment across all source classes. */
+body.infrastructure-page #chronology .entry-meta .evidence-category,body.archive-page .entry-meta .evidence-category{font-style:normal;font-weight:500;text-transform:uppercase;letter-spacing:var(--track)}

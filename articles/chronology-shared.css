@@ -797,3 +797,14 @@ body.archive-page .entry-body h3 a:focus-visible::after{opacity:.8}
  body.infrastructure-page #chronology .entry-body h3 a::after,
  body.archive-page .entry-body h3 a::after{transition:none}
 }
+
+
+/* Labels and source notes remain legible without competing with the figures. */
+body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{
+  text-transform:none;letter-spacing:normal;font-size:13px;font-weight:400;
+}
+body.infrastructure-page .entry-source,
+body.archive-page .entry-source{font-size:13px;line-height:1.5}
+@media(max-width:680px){
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{font-size:12px}
+}

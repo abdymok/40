@@ -747,3 +747,5 @@ body.archive-page .appearance-control{display:flex;justify-content:flex-end;gap:
 body.archive-page .appearance-control button{appearance:none;border:0;border-bottom:1px solid transparent;padding:2px 0;background:transparent;color:var(--muted);font:inherit;font-size:12px;line-height:1.4;cursor:pointer}
 body.archive-page .appearance-control button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--muted)}
 body.archive-page .appearance-control button:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
+
+body.archive-page .entry-note{display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:9px;font-size:12px;line-height:1.45;color:var(--muted)}

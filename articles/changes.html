@@ -19,6 +19,11 @@
 <main>
 <p class="updated"><a href="critical-infrastructure-damage.html">← Chronology</a></p>
 <h1>Changes and corrections</h1>
+<div class="appearance-control" role="group" aria-label="Colour theme">
+<button type="button" data-theme-choice="auto" aria-pressed="true">Auto</button>
+<button type="button" data-theme-choice="white" aria-pressed="false">White</button>
+<button type="button" data-theme-choice="black" aria-pressed="false">Black</button>
+</div>
 <p class="dek">A dated record of material changes to the chronology and its working figures.</p>
 <section id="corrections">
 <h2>Corrections and reconciliations</h2>
@@ -66,5 +71,43 @@
 </section>
 <footer class="evidence-key-footer">Compiled by <a href="https://abdymok.substack.com">abd<span class="brand-y">y</span>mok</a>. <a href="../method/">Method, evidence labels and corrections policy.</a> <a href="critical-infrastructure-damage.html">Return to the chronology.</a></footer>
 </main>
+<script>
+(function(){
+  var key='ukraine-at-war-theme';
+  var root=document.documentElement;
+  var body=document.body;
+  var buttons=document.querySelectorAll('[data-theme-choice]');
+  var media=window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  var choice='auto';
+  try{
+    var saved=localStorage.getItem(key);
+    if(saved==='white'||saved==='black')choice=saved;
+  }catch(e){}
+  function apply(){
+    var dark=choice==='black'||(choice==='auto'&&media&&media.matches);
+    root.classList.toggle('chrono-dark',!!dark);
+    body.classList.toggle('chrono-dark',!!dark);
+    buttons.forEach(function(button){
+      button.setAttribute('aria-pressed',String(button.getAttribute('data-theme-choice')===choice));
+    });
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function(meta){
+      meta.setAttribute('content',dark?'#111111':'#ffffff');
+      meta.removeAttribute('media');
+    });
+  }
+  buttons.forEach(function(button){
+    button.addEventListener('click',function(){
+      choice=button.getAttribute('data-theme-choice');
+      try{
+        if(choice==='auto')localStorage.removeItem(key);
+        else localStorage.setItem(key,choice);
+      }catch(e){}
+      apply();
+    });
+  });
+  if(media&&media.addEventListener)media.addEventListener('change',function(){if(choice==='auto')apply();});
+  apply();
+})();
+</script>
 </body>
 </html>

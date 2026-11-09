@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="canonical" href="https://abdymok.github.io/40/articles/critical-infrastructure-damage.html">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#ffffff">
 <title>Kyiv infrastructure chronology through Nov. 9, 2026</title>
 <meta name="description" content="A working chronology of confirmed, officially reported, attributed and eyewitness reports of damage to Kyiv and selected Ukrainian critical infrastructure.">
 <meta property="og:title" content="Kyiv infrastructure chronology through Nov. 9, 2026">
@@ -146,7 +146,11 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <p class="dek">Confirmed, operator-reported, attributed and eyewitness reports, September 30–November 9, 2026</p>
 <p class="scope-note">The chronology includes context from September 30. Dashboard reporting begins October 1. <a href="../method/">Methodology, evidence labels and corrections policy.</a></p>
 <p class="scope-note timezone-note">All times are Kyiv local time. Clocks change from summer to standard time on October 25, 2026; entries retain local clock times.</p>
-<div class="appearance-control"><button type="button" id="appearance-toggle" aria-pressed="false" aria-label="Switch to dark mode">Dark mode</button></div>
+<div class="appearance-control" role="group" aria-label="Colour theme">
+<button type="button" data-theme-choice="auto" aria-pressed="true">Auto</button>
+<button type="button" data-theme-choice="white" aria-pressed="false">White</button>
+<button type="button" data-theme-choice="black" aria-pressed="false">Black</button>
+</div>
 <div class="updated-row"><p class="updated">Updated <time datetime="2026-11-09">Nov.&nbsp;9</time>. Chronology through Nov.&nbsp;9. The documented fatality minimum is approximately 267 through Nov.&nbsp;8. Kyiv air-alert figures are provisional through the 01:54 all-clear on Nov.&nbsp;9. <a href="../method/#alert-statistics-method">See the interval audit and unresolved differences.</a></p><button class="refresh" type="button" aria-label="Refresh page" title="Refresh page" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r&&r.update()).catch(()=>{});}location.reload();"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4.9 9a7.5 7.5 0 0 1 12.4-2L20 12M4 17v-5h5"/><path d="M19.1 15a7.5 7.5 0 0 1-12.4 2L4 12"/></svg></button></div>
 
 
@@ -2377,24 +2381,39 @@ document.querySelectorAll(".chronology-day").forEach(function(day){var summary=d
 
 <script>
 (function(){
+  var key='ukraine-at-war-theme';
   var root=document.documentElement;
   var body=document.body;
-  var button=document.getElementById('appearance-toggle');
-  if(!button)return;
-  var dark=false;
-  try{dark=localStorage.getItem('chrono-appearance')==='dark';}catch(e){}
+  var buttons=document.querySelectorAll('[data-theme-choice]');
+  var media=window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  var choice='auto';
+  try{
+    var saved=localStorage.getItem(key);
+    if(saved==='white'||saved==='black')choice=saved;
+  }catch(e){}
   function apply(){
-    root.classList.toggle('chrono-dark',dark);
-    body.classList.toggle('chrono-dark',dark);
-    button.textContent=dark?'Light mode':'Dark mode';
-    button.setAttribute('aria-pressed',String(dark));
-    button.setAttribute('aria-label',dark?'Switch to light mode':'Switch to dark mode');
+    var dark=choice==='black'||(choice==='auto'&&media&&media.matches);
+    root.classList.toggle('chrono-dark',!!dark);
+    body.classList.toggle('chrono-dark',!!dark);
+    buttons.forEach(function(button){
+      button.setAttribute('aria-pressed',String(button.getAttribute('data-theme-choice')===choice));
+    });
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function(meta){
+      meta.setAttribute('content',dark?'#111111':'#ffffff');
+      meta.removeAttribute('media');
+    });
   }
-  button.addEventListener('click',function(){
-    dark=!dark;
-    apply();
-    try{localStorage.setItem('chrono-appearance',dark?'dark':'light');}catch(e){}
+  buttons.forEach(function(button){
+    button.addEventListener('click',function(){
+      choice=button.getAttribute('data-theme-choice');
+      try{
+        if(choice==='auto')localStorage.removeItem(key);
+        else localStorage.setItem(key,choice);
+      }catch(e){}
+      apply();
+    });
   });
+  if(media&&media.addEventListener)media.addEventListener('change',function(){if(choice==='auto')apply();});
   apply();
 })();
 </script>

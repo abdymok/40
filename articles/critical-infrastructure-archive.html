@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="canonical" href="https://abdymok.github.io/40/articles/critical-infrastructure-archive.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/svg+xml" href="https://abdymok.github.io/40/evidence/chronology-favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="https://abdymok.github.io/40/evidence/chronology-touch.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,12 @@
 <link rel="stylesheet" href="chronology-shared.css?v=20261029b">
 </head>
 <body class="archive-page"><main>
-<h1>Kyiv infrastructure chronology archive</h1>
+<h1>Infrastructure chronology archive</h1>
+<div class="appearance-control" role="group" aria-label="Colour theme">
+<button type="button" data-theme-choice="auto" aria-pressed="true">Auto</button>
+<button type="button" data-theme-choice="white" aria-pressed="false">White</button>
+<button type="button" data-theme-choice="black" aria-pressed="false">Black</button>
+</div>
 <p>October 1–November 1, 2026. Entries and supporting material are grouped by date and collapsed by default. The current chronology shows the latest eight days. Original entry IDs are preserved here.</p>
 <p class="scope-note timezone-note">All times are Kyiv local time. Clocks change from summer to standard time on October 25, 2026; entries retain local clock times.</p>
 <p class="scope-note alert-tally-note">Kyiv alert entries in this archive are selected records, not an exhaustive interval tally.</p>
@@ -2024,6 +2029,24 @@ document.querySelectorAll(".archive-day").forEach(function(day){var summary=day.
   }
   window.addEventListener("hashchange",revealHashTarget);
   if(location.hash)requestAnimationFrame(revealHashTarget);
+})();
+</script>
+<script>
+(function(){
+  var key='ukraine-at-war-theme',root=document.documentElement,body=document.body;
+  var buttons=document.querySelectorAll('[data-theme-choice]');
+  var media=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
+  var choice='auto';
+  try{var saved=localStorage.getItem(key);if(saved==='white'||saved==='black')choice=saved;}catch(e){}
+  function apply(){
+    var dark=choice==='black'||(choice==='auto'&&media&&media.matches);
+    root.classList.toggle('chrono-dark',!!dark);body.classList.toggle('chrono-dark',!!dark);
+    buttons.forEach(function(button){button.setAttribute('aria-pressed',String(button.getAttribute('data-theme-choice')===choice));});
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function(meta){meta.setAttribute('content',dark?'#111111':'#ffffff');meta.removeAttribute('media');});
+  }
+  buttons.forEach(function(button){button.addEventListener('click',function(){choice=button.getAttribute('data-theme-choice');try{if(choice==='auto')localStorage.removeItem(key);else localStorage.setItem(key,choice);}catch(e){}apply();});});
+  if(media&&media.addEventListener)media.addEventListener('change',function(){if(choice==='auto')apply();});
+  apply();
 })();
 </script>
 </body></html>

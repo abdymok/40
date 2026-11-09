@@ -737,3 +737,6 @@ body.infrastructure-page .appearance-control button:focus-visible{
   outline:1px solid var(--ink);
   outline-offset:3px;
 }
+
+body.infrastructure-page .appearance-control{gap:12px}
+body.infrastructure-page .appearance-control button[data-theme-choice][aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--muted)}

@@ -756,3 +756,44 @@ body.infrastructure-page .entry-source,body.archive-page .entry-source{font-size
 
 /* Evidence labels share one quiet treatment across all source classes. */
 body.infrastructure-page #chronology .entry-meta .evidence-category,body.archive-page .entry-meta .evidence-category{font-style:normal;font-weight:500;text-transform:uppercase;letter-spacing:var(--track)}
+
+
+/* November 9 refinement: clearer metadata, consistent measure and quieter links. */
+body.infrastructure-page .appearance-control,
+body.archive-page .appearance-control{justify-content:flex-start;gap:8px;min-height:36px}
+body.infrastructure-page .appearance-control button,
+body.archive-page .appearance-control button{min-width:42px;min-height:36px;padding:7px 5px;font-size:13px;line-height:1.4}
+
+body.infrastructure-page .dashboard{width:100%;max-width:38em}
+body.infrastructure-page .dashboard-secondary-date{font-size:12px;line-height:1.4;color:var(--muted)}
+
+body.infrastructure-page #chronology .entry-body>.entry-meta,
+body.archive-page .entry-body>.entry-meta{align-items:baseline}
+body.infrastructure-page #chronology .entry-meta .evidence-category,
+body.archive-page .entry-meta .evidence-category{order:-2;color:var(--ink);font-size:11px;font-weight:600;letter-spacing:.12em}
+body.infrastructure-page #chronology .entry-meta .meta-separator,
+body.archive-page .entry-meta .meta-separator{order:-1}
+body.infrastructure-page #chronology .entry-meta .meta-location,
+body.archive-page .entry-meta .meta-location{order:0}
+
+body.infrastructure-page #chronology .entry-gutter .entry-time,
+body.archive-page .entry-gutter .entry-time{color:var(--ink);font-size:13px;font-weight:500;line-height:1.45}
+
+body.infrastructure-page .entry-source,
+body.archive-page .entry-source{max-width:38em;font-size:12px;line-height:1.55}
+body.infrastructure-page .day-jump a[aria-current=location],
+body.archive-page .day-jump a[aria-current=location]{color:var(--ink);border-color:var(--ink);font-weight:600}
+
+body.infrastructure-page #chronology .entry-body h3 a,
+body.archive-page .entry-body h3 a{color:var(--ink);text-decoration:none}
+body.infrastructure-page #chronology .entry-body h3 a::after,
+body.archive-page .entry-body h3 a::after{content:" #";font-size:.72em;color:var(--muted);opacity:0;transition:opacity 160ms ease}
+body.infrastructure-page #chronology .entry-body h3 a:hover::after,
+body.infrastructure-page #chronology .entry-body h3 a:focus-visible::after,
+body.archive-page .entry-body h3 a:hover::after,
+body.archive-page .entry-body h3 a:focus-visible::after{opacity:.8}
+
+@media(prefers-reduced-motion:reduce){
+ body.infrastructure-page #chronology .entry-body h3 a::after,
+ body.archive-page .entry-body h3 a::after{transition:none}
+}

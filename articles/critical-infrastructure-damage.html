@@ -32,7 +32,7 @@
   "@type": "Article",
   "headline": "Kyiv infrastructure chronology through Nov. 11, 2026",
   "description": "A working chronology of confirmed, officially reported, attributed and eyewitness reports of damage to Kyiv and selected Ukrainian critical infrastructure.",
-  "dateModified": "2026-11-11",
+  "dateModified": "2026-11-12",
   "author": { "@type": "Person", "name": "abdymok" },
   "datePublished": "2026-10-01",
   "mainEntityOfPage": "https://abdymok.github.io/40/articles/critical-infrastructure-damage.html",
@@ -113,12 +113,13 @@ body.infrastructure-page details.update-history:not([open])>summary .update-hist
 body.infrastructure-page details.update-history>summary{cursor:pointer}
 body.infrastructure-page .alert-accounting{margin-top:0}
 body.infrastructure-page .dashboard-detail-collapse{min-width:0;margin-top:3px}
-body.infrastructure-page .dashboard-detail-collapse>summary{cursor:pointer;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}body.infrastructure-page .dashboard-detail-collapse[open]>summary{display:block;overflow:visible}
+body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse:not([open])>summary.dashboard-detail{cursor:pointer;display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden!important;white-space:normal}
+body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse[open]>summary.dashboard-detail{display:block!important;-webkit-line-clamp:unset;line-clamp:unset;overflow:visible!important}
 
 
 @media(max-width:600px){
 body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse:not([open])>summary.dashboard-detail{display:-webkit-box!important;-webkit-box-orient:vertical;-webkit-line-clamp:4;line-clamp:4;overflow:hidden!important;white-space:normal}
-body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse[open]>summary.dashboard-detail{display:block!important;-webkit-line-clamp:unset;overflow:visible!important}
+body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse[open]>summary.dashboard-detail{display:block!important;-webkit-line-clamp:unset;line-clamp:unset;overflow:visible!important}
 body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse>summary.dashboard-detail{position:relative;padding-right:17px}
 body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse>summary.dashboard-detail::after{content:"";position:absolute;right:4px;top:50%;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-70%) rotate(45deg);pointer-events:none}
 body.infrastructure-page .dashboard-leads .dashboard-item.is-lead .dashboard-detail-collapse[open]>summary.dashboard-detail::after{top:8px;transform:rotate(225deg)}
@@ -154,7 +155,7 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <button type="button" data-theme-choice="white" aria-pressed="false">White</button>
 <button type="button" data-theme-choice="black" aria-pressed="false">Black</button>
 </div>
-<div class="updated-row"><p class="updated">Updated <time datetime="2026-11-11">Nov.&nbsp;11</time>. Chronology through Nov.&nbsp;11. The documented fatality minimum is approximately 285 through Nov.&nbsp;11. Kyiv air-alert figures are provisional through the 07:19 all-clear on Nov.&nbsp;11. <a href="../method/#alert-statistics-method">See the interval audit and unresolved differences.</a></p><button class="refresh" type="button" aria-label="Refresh page" title="Refresh page" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r&&r.update()).catch(()=>{});}location.reload();"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4.9 9a7.5 7.5 0 0 1 12.4-2L20 12M4 17v-5h5"/><path d="M19.1 15a7.5 7.5 0 0 1-12.4 2L4 12"/></svg></button></div>
+<div class="updated-row"><p class="updated">Updated <time datetime="2026-11-12">Nov.&nbsp;12</time>. Chronology through Nov.&nbsp;11. The documented fatality minimum is approximately 285 through Nov.&nbsp;11. Kyiv air-alert figures are provisional through the 07:19 all-clear on Nov.&nbsp;11. <a href="../method/#alert-statistics-method">See the interval audit and unresolved differences.</a></p><button class="refresh" type="button" aria-label="Refresh page" title="Refresh page" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r&&r.update()).catch(()=>{});}location.reload();"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4.9 9a7.5 7.5 0 0 1 12.4-2L20 12M4 17v-5h5"/><path d="M19.1 15a7.5 7.5 0 0 1-12.4 2L4 12"/></svg></button></div>
 
 
 
@@ -163,7 +164,7 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <section class="dashboard" aria-label="Infrastructure dashboard" >
 
 <div class="dashboard-grid dashboard-leads">
-<div class="dashboard-item is-lead" data-measure="civilian-deaths"><p class="dashboard-label">Deaths documented in tracked incidents</p><p class="dashboard-value">≈285</p><p class="dashboard-detail">Provisional documented minimum · through Nov. 11</p><details class="dashboard-detail-collapse"><summary class="dashboard-detail">Selected-incident subtotal since Oct.&nbsp;1, not a complete national total. Injuries and people listed as missing are excluded.</summary><p class="dashboard-detail-expanded">The dashboard figure is a provisional subtotal of reported deaths in selected incidents recorded in this project since October 1. Police officers, rescuers and other emergency personnel are included unless specifically identified as military personnel. Injuries and people listed as missing are excluded. Overlapping incident totals are checked against broader regional and citywide reports to avoid double counting. Coverage is uneven, especially in frontline and occupied areas. The figure is a documented minimum, not a complete national total. See the <a href="../method/#fatality-reconciliation">fatality audit</a> for detailed calculations and source links.</p></details><p class="dashboard-detail"><a href="../method/#fatality-reconciliation">Fatality audit</a></p></div>
+<div class="dashboard-item is-lead" data-measure="civilian-deaths"><p class="dashboard-label">Deaths documented in tracked incidents</p><p class="dashboard-value">≈285</p><p class="dashboard-detail">Provisional documented minimum · through Nov. 11</p><details class="dashboard-detail-collapse"><summary class="dashboard-detail">The dashboard figure is a provisional subtotal of reported deaths in selected incidents recorded in this project since October 1. Police officers, rescuers and other emergency personnel are included unless specifically identified as military personnel. Injuries and people listed as missing are excluded. Overlapping incident totals are checked against broader regional and citywide reports to avoid double counting. Coverage is uneven, especially in frontline and occupied areas. The figure is a documented minimum, not a complete national total.</summary></details><p class="dashboard-detail"><a href="../method/#fatality-reconciliation">Fatality audit</a></p></div>
 <div class="dashboard-item" data-measure="alerts"><p class="dashboard-label">Kyiv air alerts</p><p class="dashboard-value">290</p><p class="dashboard-detail">Provisional count · as of Nov. 11, 07:19</p><p class="dashboard-detail"><a href="../method/#alert-statistics-audit">Dated interval audit</a></p></div>
 <div class="dashboard-item" data-measure="alert-hours"><p class="dashboard-label">Under alert</p><p class="dashboard-value">10<span class="u">d</span> 10<span class="u">h</span> 11<span class="u">m</span></p><p class="dashboard-detail">Cumulative duration · as of Nov. 11, 07:19</p><p class="dashboard-detail"><a href="../method/#alert-statistics-audit">Dated interval audit</a></p></div>
 </div>
@@ -192,7 +193,7 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <details class="note ballistic-warning" id="ballistic-warning-note"><summary>Ballistic warning timing</summary><p>A general Kyiv air alert does not establish that a ballistic threat was identified with useful lead time. On October 18–19, the Air Force said partners gave no warning before the first ballistic strike, information for the second arrived with roughly one minute to react. <a href="https://www.pravda.com.ua/eng/news/2026/10/19/8058700/index.amp" target="_blank" rel="noopener">Air Force account, Oct. 19</a>. Follow official <a href="https://t.me/kpszsu/86369" target="_blank" rel="noopener">Air Force alerts</a>. The tracker records alert intervals, not a guarantee of advance ballistic warning.</p></details>
 <nav class="tracker-nav" aria-label="Navigation"><span class="tracker-pages" aria-label="Site pages"><a href="/">Home</a><a href="../articles/critical-infrastructure-damage.html" aria-current="page">Infrastructure</a><a href="../method/">Method</a><a href="../articles/data-center-damage.html">Data center</a><a href="/mural/">Mural</a><a href="https://abdymok.github.io/substack_archive/working_set/2023-2026_annotated_bibliography.html">Bibliography</a></span><span class="tracker-sections" aria-label="Chronology sections and records"><a href="#chronology" aria-current="location">Chronology</a><a href="critical-infrastructure-archive.html">Archive</a><a href="#nuclear">Nuclear</a><a href="changes.html">Changes</a></span></nav>
 <details class="update-history" aria-label="Recent updates">
-<summary><span class="update-history-preview"><time datetime="2026-11-11">Nov.&nbsp;11</time> — Added overnight Russian drone strikes on infrastructure in Zhytomyr region, with four people injured. Reconciled three completed Nov. 11 Kyiv alert intervals from alerts.in.ua (02:08–03:09, 06:19–06:47 and 06:56–07:19). Added three alerts and 1 hour 51 minutes by source-reported durations, bringing the provisional total to 290 alerts and 10 days 10 hours 11 minutes through the 07:19 all-clear. The displayed endpoints span one minute more than the reported durations. The 08:47 district-level alert is not counted as a citywide Kyiv interval. The documented fatality minimum is approximately 282 through Nov. 11. Added the prime minister’s account of overnight attacks on six major substations in four regions and damage to heating, railway and civilian infrastructure.</span></summary>
+<summary><span class="update-history-preview"><time datetime="2026-11-11">Nov.&nbsp;11</time> — Added overnight Russian drone strikes on infrastructure in Zhytomyr region, with four people injured. Reconciled three completed Nov. 11 Kyiv alert intervals from alerts.in.ua (02:08–03:09, 06:19–06:47 and 06:56–07:19). Added three alerts and 1 hour 51 minutes by source-reported durations, bringing the provisional total to 290 alerts and 10 days 10 hours 11 minutes through the 07:19 all-clear. The displayed endpoints span one minute more than the reported durations. The 08:47 district-level alert is not counted as a citywide Kyiv interval. The documented fatality minimum is approximately 285 through Nov. 11. Added the prime minister’s account of overnight attacks on six major substations in four regions and damage to heating, railway and civilian infrastructure.</span></summary>
 <div class="update-history-content">
 <ul class="update-history-list">
 <li><time datetime="2026-11-11">Nov.&nbsp;11</time> — Added overnight Russian drone strikes on energy, transport and fuel infrastructure in Zhytomyr region, with four people injured. Reconciled seven completed Nov. 10 Kyiv alert intervals using Kyiv Digital’s official history, then added three completed Nov. 11 citywide intervals from alerts.in.ua (02:08–03:09, 06:19–06:47 and 06:56–07:19). The three Nov. 11 intervals add 111 source-reported minutes; displayed endpoints span 112 minutes. The 08:47 district-level alert is excluded because it is not a citywide Kyiv interval. The provisional total is now 290 alerts and 10 days 10 hours 11 minutes under alert through the 07:19 all-clear. The accessible independent log snapshot for Nov. 10 stops at 14:21 and does not corroborate the final two intervals. The fatality minimum rises to approximately 282 through Nov. 11 after two deaths reported in Donetsk region and four in Dnipropetrovsk region. Added the prime minister’s account of attacks on six major substations in four regions and damage to heating, railway and civilian infrastructure, with at least 14 people injured.</li>
@@ -218,7 +219,8 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <h2 class="visually-hidden" id="chronology-heading">Chronology</h2>
 <nav class="day-jump" aria-label="Recent chronology dates">
 <span class="month-label">Nov</span>
-<a href="#day-nov-11" data-date="2026-11-11" aria-current="location">11</a>
+<a href="#day-nov-12" data-date="2026-11-12" aria-current="location">12</a>
+<a href="#day-nov-11" data-date="2026-11-11">11</a>
 <a href="#day-nov-10" data-date="2026-11-10">10</a>
 <a href="#day-nov-9" data-date="2026-11-09">9</a>
 <a href="#day-nov-8" data-date="2026-11-08">8</a>
@@ -244,6 +246,8 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <section id="chronology" class="chronology-list" aria-labelledby="chronology-heading">
 
 
+
+<h2 class="day-heading" id="day-nov-12">Nov.&nbsp;12</h2>
 
 <h2 class="day-heading" id="day-nov-11">Nov.&nbsp;11</h2>
 <article id="2026-11-11-yahotyn-one-killed" class="chronology-entry">

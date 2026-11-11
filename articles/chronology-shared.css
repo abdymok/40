@@ -338,6 +338,8 @@ body.infrastructure-page a:hover{text-decoration-color:var(--ink)}
 .tracker-pages,
 .tracker-sections{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
 .tracker-sections{border-left:1px solid var(--rule);padding-left:12px}
+body.infrastructure-page .tracker-nav{display:block}
+body.infrastructure-page .tracker-sections{border-left:0;padding-left:0;margin-top:7px}
 .tracker-nav a{text-decoration:none}
 .tracker-nav a:hover{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:520px){.tracker-sections{border-left:0;padding-left:0}

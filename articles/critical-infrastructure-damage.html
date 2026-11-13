@@ -143,6 +143,10 @@ body.infrastructure-page .source-cutline-y{color:#c43b3b;text-decoration:none}
 body.infrastructure-page .updated-row{display:flex;align-items:flex-start;gap:8px}
 body.infrastructure-page .updated-row .updated{flex:1;min-width:0}
 body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:20px;min-width:20px;min-height:20px;padding:0;margin:0}
+body.infrastructure-page .day-photo{display:block;width:min(720px,calc(100% - 36px));max-width:720px;margin:24px auto 36px;padding:0}
+body.infrastructure-page .day-photo img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
+body.infrastructure-page .day-photo figcaption{margin-top:9px;font:14px/1.45 Spectral,Georgia,serif;color:var(--muted)}
+body.infrastructure-page .day-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 </style>
 </head>
 <body class="infrastructure-page"><main>
@@ -169,6 +173,13 @@ body.infrastructure-page .updated-row .refresh{flex:0 0 20px;width:20px;height:2
 <div class="dashboard-item" data-measure="alert-hours"><p class="dashboard-label">Under alert</p><p class="dashboard-value">10<span class="u">d</span> 16<span class="u">h</span> 5<span class="u">m</span></p><p class="dashboard-detail">Cumulative duration · as of Nov. 13, 02:06</p><p class="dashboard-detail"><a href="../method/#alert-statistics-audit">Dated interval audit</a></p></div>
 </div>
 </section>
+
+<!-- DAILY PHOTO SLOT: replace image, alt text, cutline and source link; keep figure and styling in place. -->
+<figure class="day-photo" id="daily-photo">
+  <a href="https://abdymok.github.io/40/evidence/kramatorsk.jpg" target="_blank" rel="noopener"><img src="https://abdymok.github.io/40/evidence/kramatorsk.jpg" alt="A playground flattened by Russian strikes in Kramatorsk, Donetsk region." loading="eager"></a>
+  <figcaption>Clean-up continues today after Russian strikes killed four people and injured at least six in Kramatorsk on Nov. 12. Photo c/o <a href="https://www.facebook.com/alexander.vasilyevich.goncharenko/posts/pfbid024q8SQ7rVuDEent8VDQViwixu5Ki4z8SjWe4oFyWsoW2v4ABWJoZLnSc8n9m1rdi7l" target="_blank" rel="noopener">Oleksandr Honcharenko</a>.</figcaption>
+</figure>
+<!-- END DAILY PHOTO SLOT -->
 
 <details class="front-matter-item public-service-announcement" aria-labelledby="public-service-announcement-title">
   <summary>

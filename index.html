@@ -17,13 +17,13 @@
 *{box-sizing:border-box}
 html,body{margin:0;width:100%;min-height:100%;background:#fff;color:#151515}
 body{font-family:Spectral,Georgia,serif;overflow-x:hidden;overflow-y:auto}
-.mural{position:relative;margin:30px 78px 62px;height:calc(100svh - 92px);min-height:420px;background:transparent}
+.mural{position:relative;margin:30px 78px 34px;height:68svh;min-height:380px;max-height:680px;background:transparent}
 .wall{position:relative;width:100%;height:100%;}
-.day-photo{width:min(100% - 56px,1100px);margin:0 auto 56px;padding:0 0 24px}
+.day-photo{display:block;position:relative;z-index:2;width:calc(100% - 56px);max-width:1100px;margin:0 auto 56px;padding:0 0 24px}
 .day-photo img{display:block;width:100%;height:auto;max-height:72vh;object-fit:contain;object-position:left center}
 .day-photo figcaption{margin-top:9px;font:14px/1.45 Spectral,Georgia,serif;color:#555}
 .day-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
-@media(max-width:700px){.mural{margin:24px 18px 48px;height:calc(100svh - 72px);min-height:360px}.day-photo{width:calc(100% - 36px);margin-bottom:36px}.day-photo figcaption{font-size:13px}}
+@media(max-width:700px){.mural{margin:24px 18px 28px;height:62svh;min-height:340px;max-height:560px}.day-photo{width:calc(100% - 36px);margin-bottom:36px}.day-photo figcaption{font-size:13px}}
 .tile{position:absolute;left:0;top:0;width:var(--tile-w);height:var(--tile-h);will-change:transform,opacity;transition:transform 5200ms cubic-bezier(.22,1,.36,1),opacity 2400ms ease,width 5200ms cubic-bezier(.22,1,.36,1),height 5200ms cubic-bezier(.22,1,.36,1);cursor:pointer;perspective:1000px;}
 .tile-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;}
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:transparent}
@@ -100,7 +100,7 @@ if ('serviceWorker' in navigator) {
 </script></head><body>
 <div class="intro" id="intro"><div class="intro-wordmark" aria-label="abdymok"><span>abd</span><span class="red-y">y</span><span>mok</span></div><img decoding="async" class="runner-strip" src="images/intro_suitcase_runner.svg?v=2" alt="" aria-hidden="true"></div><div class="mural"><div class="wall" id="wall"></div></div>
 <figure class="day-photo">
-  <a href="evidence/kramatorsk.jpg" target="_blank" rel="noopener"><img src="evidence/kramatorsk.jpg" alt="A playground flattened by Russian strikes in Kramatorsk, Donetsk region." loading="eager"></a>
+  <a href="https://abdymok.github.io/40/evidence/kramatorsk.jpg" target="_blank" rel="noopener"><img src="https://abdymok.github.io/40/evidence/kramatorsk.jpg" alt="A playground flattened by Russian strikes in Kramatorsk, Donetsk region." loading="eager"></a>
   <figcaption>Clean-up continues today after Russian strikes killed four people and injured at least six in Kramatorsk on Nov. 12. Photo c/o <a href="https://www.facebook.com/alexander.vasilyevich.goncharenko/posts/pfbid024q8SQ7rVuDEent8VDQViwixu5Ki4z8SjWe4oFyWsoW2v4ABWJoZLnSc8n9m1rdi7l" target="_blank" rel="noopener">Oleksandr Honcharenko</a>.</figcaption>
 </figure>
 <audio id="siren41" preload="auto" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Air_Raid_Alert_-_Ukraine_during_russian_invasion_2022.ogg" crossorigin="anonymous"></audio>

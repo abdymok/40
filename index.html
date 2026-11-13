@@ -16,14 +16,9 @@
 :root{--gap:clamp(6px,1vw,13px);--pad:clamp(28px,6vw,86px)}
 *{box-sizing:border-box}
 html,body{margin:0;width:100%;min-height:100%;background:#fff;color:#151515}
-body{font-family:Spectral,Georgia,serif;overflow-x:hidden;overflow-y:auto}
-.mural{position:relative;margin:24px 78px 24px;height:48svh;min-height:300px;max-height:480px;background:transparent}
+body{font-family:Spectral,Georgia,serif;overflow:hidden}
+.mural{position:fixed;inset:30px 78px 62px;background:transparent}
 .wall{position:relative;width:100%;height:100%;}
-.day-photo{display:block;position:relative;z-index:2;width:min(720px,calc(100% - 36px));max-width:720px;margin:0 auto 56px;padding:0 0 24px}
-.day-photo img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;object-position:center}
-.day-photo figcaption{margin-top:9px;font:14px/1.45 Spectral,Georgia,serif;color:#555}
-.day-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:2px}
-@media(max-width:700px){.mural{margin:20px 18px 20px;height:45svh;min-height:280px;max-height:420px}.day-photo{width:calc(100% - 36px);max-width:720px;margin-bottom:36px}.day-photo figcaption{font-size:13px}}
 .tile{position:absolute;left:0;top:0;width:var(--tile-w);height:var(--tile-h);will-change:transform,opacity;transition:transform 5200ms cubic-bezier(.22,1,.36,1),opacity 2400ms ease,width 5200ms cubic-bezier(.22,1,.36,1),height 5200ms cubic-bezier(.22,1,.36,1);cursor:pointer;perspective:1000px;}
 .tile-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;}
 .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:transparent}
@@ -80,7 +75,7 @@ body{font-family:Spectral,Georgia,serif;overflow-x:hidden;overflow-y:auto}
 .tile[data-empty="true"] .front img{opacity:0}
 .controls{position:fixed;left:28px;bottom:13px;z-index:100;display:flex;align-items:center;gap:12px;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:none;color:#777;opacity:.86;user-select:none;background:rgba(255,255,255,.88);padding:3px 5px;border:1px solid rgba(0,0,0,.10);border-radius:2px}.controls .hint{opacity:.72;transition:opacity 700ms ease}.controls .hint.hidden{opacity:0;pointer-events:none;width:0;margin:0;overflow:hidden}.controls button,.controls .subscribe{appearance:none;border:0;background:transparent;min-height:30px;padding:8px 6px;color:inherit;font:inherit;cursor:pointer;text-decoration:none}.controls button:hover,.controls .subscribe:hover{color:#111}.controls .recompose{padding-left:0}.controls .subscribe{padding-right:0}@media (max-width:700px){.controls{left:17px;bottom:8px;font-size:9px;gap:13px}}.hint{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:101;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.72;transition:opacity 700ms ease;white-space:nowrap;pointer-events:none}.controls .hint{position:static;transform:none}.hint.hidden{opacity:0!important;pointer-events:none!important;width:0;margin:0;overflow:hidden}
 @media (max-width:700px){
- .mural{margin:24px 18px 28px;height:62svh;min-height:340px;max-height:560px}
+ .mural{inset:16px 18px 48px}
  .controls{left:17px;bottom:17px;font-size:9px;gap:11px}
  .copy{font-size:clamp(11px,2.7vw,17px)}
 }
@@ -99,12 +94,6 @@ if ('serviceWorker' in navigator) {
 }
 </script></head><body>
 <div class="intro" id="intro"><div class="intro-wordmark" aria-label="abdymok"><span>abd</span><span class="red-y">y</span><span>mok</span></div><img decoding="async" class="runner-strip" src="images/intro_suitcase_runner.svg?v=2" alt="" aria-hidden="true"></div><div class="mural"><div class="wall" id="wall"></div></div>
-<!-- DAILY PHOTO SLOT: replace only the image URL, alt text, cutline and source link below. Keep this figure in place directly beneath the mural slider. -->
-<figure class="day-photo">
-  <a href="https://abdymok.github.io/40/evidence/kramatorsk.jpg" target="_blank" rel="noopener"><img src="https://abdymok.github.io/40/evidence/kramatorsk.jpg" alt="A playground flattened by Russian strikes in Kramatorsk, Donetsk region." loading="eager"></a>
-  <figcaption>Clean-up continues today after Russian strikes killed four people and injured at least six in Kramatorsk on Nov. 12. Photo c/o <a href="https://www.facebook.com/alexander.vasilyevich.goncharenko/posts/pfbid024q8SQ7rVuDEent8VDQViwixu5Ki4z8SjWe4oFyWsoW2v4ABWJoZLnSc8n9m1rdi7l" target="_blank" rel="noopener">Oleksandr Honcharenko</a>.</figcaption>
-</figure>
-<!-- END DAILY PHOTO SLOT -->
 <audio id="siren41" preload="auto" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Air_Raid_Alert_-_Ukraine_during_russian_invasion_2022.ogg" crossorigin="anonymous"></audio>
 <span id="hint" class="hint">Select an image to read</span><div class="controls"><button id="recompose" class="recompose" type="button">Recompose</button><button id="pause" class="pause" type="button">Pause</button><a class="subscribe" href="https://abdymok.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe</a><a class="subscribe" href="articles/critical-infrastructure-damage.html">Infrastructure</a></div>
 <script>

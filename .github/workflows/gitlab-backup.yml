@@ -9,6 +9,12 @@ on:
 permissions:
   contents: read
 
+# Only one mirror push may run at a time. Concurrent pushes can race while
+# GitLab updates refs, causing "incorrect old value provided" rejections.
+concurrency:
+  group: gitlab-backup
+  cancel-in-progress: false
+
 jobs:
   backup:
     runs-on: ubuntu-latest
@@ -24,4 +30,17 @@ jobs:
         run: |
           git fetch origin '+refs/heads/*:refs/remotes/origin/*' --tags
           git remote add gitlab "https://oauth2:${GITLAB_TOKEN}@gitlab.com/abdymok-group/40.git"
-          git push gitlab 'refs/remotes/origin/*:refs/heads/*' --tags
+
+          # Retry transient GitLab-side storage and ref-lock errors.
+          for attempt in 1 2 3; do
+            if git push gitlab 'refs/remotes/origin/*:refs/heads/*' --tags; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              echo "GitLab push failed (attempt $attempt/3); retrying..."
+              sleep $((attempt * 10))
+            fi
+          done
+
+          echo "GitLab push failed after 3 attempts."
+          exit 1

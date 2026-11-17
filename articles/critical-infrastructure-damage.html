@@ -160,7 +160,24 @@ body.infrastructure-page .day-photo figcaption a{color:inherit;text-decoration:u
 <button type="button" data-theme-choice="white" aria-pressed="false">White</button>
 <button type="button" data-theme-choice="black" aria-pressed="false">Black</button>
 </div>
-<div class="updated-row"><p class="updated">Updated <time datetime="2026-11-17">Nov.&nbsp;17</time>. Chronology through Nov.&nbsp;16. The documented fatality minimum is at least 316 through Nov.&nbsp;16. Kyiv air-alert figures are provisional through the 00:16 snapshot on Nov.&nbsp;17, including the citywide alert underway since 23:26 on Nov.&nbsp;16. Four further alerts after the 15:02 all-clear bring the provisional count to 335 and cumulative time to 11 days, 7 hours and 7 minutes. The interval-based total is seven minutes below the daily-aggregate cross-check. <a href="../method/#alert-statistics-method">See the interval audit and unresolved differences.</a></p><button class="refresh" type="button" aria-label="Refresh page" title="Refresh page" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r&&r.update()).catch(()=>{});}location.reload();"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4.9 9a7.5 7.5 0 0 1 12.4-2L20 12M4 17v-5h5"/><path d="M19.1 15a7.5 7.5 0 0 1-12.4 2L4 12"/></svg></button></div>
+<div class="updated-row"><p class="updated">Updated <time datetime="2026-11-17">Nov.&nbsp;17</time>. Chronology through <time data-current-kyiv-date datetime="2026-11-17">Nov.&nbsp;17</time>. The documented fatality minimum is at least 316 through Nov.&nbsp;16. Kyiv air-alert figures are provisional through the 00:16 snapshot on Nov.&nbsp;17, including the citywide alert underway since 23:26 on Nov.&nbsp;16. Four further alerts after the 15:02 all-clear bring the provisional count to 335 and cumulative time to 11 days, 7 hours and 7 minutes. The interval-based total is seven minutes below the daily-aggregate cross-check. <a href="../method/#alert-statistics-method">See the interval audit and unresolved differences.</a></p><button class="refresh" type="button" aria-label="Refresh page" title="Refresh page" onclick="if('serviceWorker' in navigator){navigator.serviceWorker.getRegistration().then(r=>r&&r.update()).catch(()=>{});}location.reload();"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7v5h-5"/><path d="M4.9 9a7.5 7.5 0 0 1 12.4-2L20 12M4 17v-5h5"/><path d="M19.1 15a7.5 7.5 0 0 1-12.4 2L4 12"/></svg></button></div>
+<script>
+(() => {
+  const element = document.querySelector('[data-current-kyiv-date]');
+  if (!element) return;
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Europe/Kyiv',
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  }).formatToParts(new Date());
+  const value = Object.fromEntries(parts.map(part => [part.type, part.value]));
+  element.textContent = value.month + '. ' + value.day;
+  element.dateTime = value.year + '-' + new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Kyiv', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).format(new Date());
+})();
+</script>
 
 
 

@@ -502,6 +502,10 @@ body.infrastructure-page .source,body.archive-page .source{font-size:12px;line-h
 /* The date pagination spans the full 720px chronology column; on mobile it remains swipeable within the viewport. */
 body.infrastructure-page .day-jump,body.archive-page .day-jump{width:100%;max-width:720px;}
 
+/* Archive evidence figures and captions use the full 720px chronology column, even when the image itself is narrower. */
+body.archive-page .entry-body figure.evidence-media{width:100%;max-width:720px;box-sizing:border-box;}
+body.archive-page .entry-body figure.evidence-media figcaption{display:block;width:100%;max-width:720px;box-sizing:border-box;text-wrap:wrap;}
+
 /* Evidence captions use the full chronology column, independently of the displayed media width. Do not balance-wrap captions or hyphenated words. */
 body.infrastructure-page #chronology .entry-body figure.evidence-media,
 body.infrastructure-page #chronology .entry-body figure.fun-fact-figure{width:100%;max-width:720px;box-sizing:border-box;}

@@ -21,6 +21,32 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Set chronology cutoff from latest entry
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime
+          from pathlib import Path
+          import re
+
+          path = Path("articles/critical-infrastructure-damage.html")
+          html = path.read_text(encoding="utf-8")
+          dates = re.findall(r'<article id="(\\d{4}-\\d{2}-\\d{2})-[^"]+" class="chronology-entry"', html)
+          if not dates:
+              raise SystemExit("No dated chronology entries found")
+          latest = max(dates)
+          day = datetime.strptime(latest, "%Y-%m-%d")
+          label = f"{day.strftime('%b')}.&nbsp;{day.day}"
+          updated, count = re.subn(
+              r'Chronology through <time datetime="[^"]+">.*?</time>',
+              f'Chronology through <time datetime="{latest}">{label}</time>',
+              html,
+              count=1,
+          )
+          if count != 1:
+              raise SystemExit("Could not find the chronology cutoff label")
+          path.write_text(updated, encoding="utf-8")
+          print(f"Chronology cutoff set to {latest}")
+          PY
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

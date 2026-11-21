@@ -30,7 +30,7 @@ jobs:
 
           path = Path("articles/critical-infrastructure-damage.html")
           html = path.read_text(encoding="utf-8")
-          dates = re.findall(r'<article id="(\\d{4}-\\d{2}-\\d{2})-[^"]+" class="chronology-entry"', html)
+          dates = re.findall(r'<article id="(\d{4}-\d{2}-\d{2})-[^"]+" class="chronology-entry"', html)
           if not dates:
               raise SystemExit("No dated chronology entries found")
           latest = max(dates)

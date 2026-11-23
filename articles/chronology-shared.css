@@ -90,7 +90,7 @@ body.infrastructure-page #chronology .entry-body p:last-child{margin-bottom:0}
 body.infrastructure-page #chronology .entry-body .status{display:block;margin:0 0 8px;font-size:12px;line-height:1.45;letter-spacing:var(--track)}
 body.infrastructure-page #chronology .entry-body figure,
 body.infrastructure-page #chronology .entry-body .evidence-video,
-body.infrastructure-page #chronology .entry-body .attack-graphic{width:min(100%,980px);max-width:980px;margin-left:0;margin-right:0}
+body.infrastructure-page #chronology .entry-body .attack-graphic{width:min(100%,720px);max-width:720px;margin-left:0;margin-right:0}
 body.infrastructure-page #chronology .entry-body .evidence-video{width:min(100%,720px);max-width:720px}
 body.infrastructure-page #chronology .entry-body video{display:block;width:auto;max-width:100%;max-height:min(78vh,720px);height:auto;background:#111}
 body.infrastructure-page #chronology .entry-body img{max-width:100%;height:auto}

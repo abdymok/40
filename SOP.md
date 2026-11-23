@@ -83,7 +83,7 @@
 - Keep the dashboard as the first substantive block after navigation. Keep dashboard tiles symmetrical and their explanatory lines short; place detailed reconciliation in the linked methodology note.
 - Treat dashboard counts as the single source of truth. Methodology notes should reference the dashboard values rather than repeat independent hard-coded counts.
 - Keep the current chronology on the main page for roughly the latest week. Move older full entries to `articles/critical-infrastructure-archive.html`, preserving their IDs in the archive and anchor pointers on the main page.
-- Group entries by date. Keep the latest three days expanded and collapse older day groups with native `details` elements. Add a jump link for each day in the navigation. No animation.
+- Group entries by date. Keep the latest three days expanded and collapse older day groups with native `details` elements. The main-page jump strip covers the full days on the main page and ends with an `Earlier` link to the archive. No animation.
 - Use a consistent entry structure: date, place, normalized evidence label, headline, paragraphs, then compact source links. Normalize evidence labels to official, operator or company, media, eyewitness, attributed, unverified or editorial; retain source-specific detail after the category.
 - For developing stories, begin with a concise two-sentence summary, then present timestamped updates in a two-column layout with tabular numerals in the time column. Preserve the original sourcing and distinguish attributed claims from established facts.
 - Keep status labels at least 12px, captions at least 13px and entry body text at 16px. Source links should be compact and one per line.

@@ -73,7 +73,7 @@
 
 ## Landing-page parity — hard requirement
 
-- `https://abdymok.github.io/index.html` must always be byte-for-byte identical to the canonical landing-page HTML at `abdymok/landing_page/index.html` (published as `https://abdymok.github.io/`). The root page is not a separate design and must not be replaced with a redirect.
+- `https://abdymok.github.io/index.html` must always be byte-for-byte identical to the canonical landing-page HTML at `abdymok/new_landing_page/index.html` in the separate `abdymok/new_landing_page` repository (published as `https://abdymok.github.io/`). The root page is not a separate design and must not be replaced with a redirect.
 - Whenever either copy is changed, check both files and restore exact parity in the same work session. Compare the actual file contents; do not assume parity from appearance or from a prior check.
 - Before editing, locate and fetch the real canonical file path and confirm the current contents. If the path cannot be found or fetched, stop and report that obstacle rather than guessing, recreating the file, or editing one copy alone.
 - Preserve the approved landing-page design and existing desktop/iPhone layout and display behavior unless the user explicitly requests a change. When investigating a missing video or other media, diagnose the cause before changing layout or playback behavior.
@@ -83,8 +83,8 @@
 - Keep the dashboard as the first substantive block after navigation. Keep dashboard tiles symmetrical and their explanatory lines short; place detailed reconciliation in the linked methodology note.
 - Treat dashboard counts as the single source of truth. Methodology notes should reference the dashboard values rather than repeat independent hard-coded counts.
 - Keep the current chronology on the main page for roughly the latest week. Move older full entries to `articles/critical-infrastructure-archive.html`, preserving their IDs in the archive and anchor pointers on the main page.
-- Group entries by date. Keep the latest three days expanded and collapse older day groups with native `details` elements. The main-page jump strip covers the full days on the main page and ends with an `Earlier` link to the archive. No animation.
+- Group entries by date. Keep the latest seven full days expanded on the main page. Older dates are represented by collapsed native `details` pointer groups linking to the archive. The main-page jump strip covers the full days on the main page and ends with an `Earlier` link to the archive. No animation.
 - Use a consistent entry structure: date, place, normalized evidence label, headline, paragraphs, then compact source links. Normalize evidence labels to official, operator or company, media, eyewitness, attributed, unverified or editorial; retain source-specific detail after the category.
 - For developing stories, begin with a concise two-sentence summary, then present timestamped updates in a two-column layout with tabular numerals in the time column. Preserve the original sourcing and distinguish attributed claims from established facts.
-- Keep status labels at least 12px, captions at least 13px and entry body text at 16px. Source links should be compact and one per line.
+- Keep status labels at least 11px, captions at least 13px and entry body text at 16px. Navigation month labels may be smaller. Source links should be compact and one per line.
 - Keep CSS declarations consolidated. Avoid duplicate base and dashboard rules that can silently override the approved layout.

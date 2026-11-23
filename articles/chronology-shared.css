@@ -30,7 +30,7 @@ body.infrastructure-page .dek{margin:0 0 8px;color:var(--muted);font-size:16px}
 body.infrastructure-page .special-close{margin:24px 0 42px;padding:16px 0 18px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:720px}
 body.infrastructure-page .special-kicker{margin:0 0 10px;font-size:12px;letter-spacing:var(--track);color:var(--muted)}
 body.infrastructure-page .special-close p{margin:7px 0;font-size:15px}
-body.infrastructure-page .attack-graphic{margin:28px 0 42px;max-width:720px}
+body.infrastructure-page .attack-graphic{width:min(100%,720px);margin:28px 0 42px;max-width:720px}
 body.infrastructure-page .attack-graphic img{display:block;width:100%;height:auto}
 body.infrastructure-page .attack-graphic figcaption{margin-top:3px}
 body.infrastructure-page .attack-graphic figcaption a{text-decoration:underline;text-underline-offset:2px}
@@ -90,13 +90,12 @@ body.infrastructure-page #chronology .entry-body p:last-child{margin-bottom:0}
 body.infrastructure-page #chronology .entry-body .status{display:block;margin:0 0 8px;font-size:12px;line-height:1.45;letter-spacing:var(--track)}
 body.infrastructure-page #chronology .entry-body figure,
 body.infrastructure-page #chronology .entry-body .evidence-video,
-body.infrastructure-page #chronology .entry-body .attack-graphic{width:min(100%,720px);max-width:720px;margin-left:0;margin-right:0}
 body.infrastructure-page #chronology .entry-body .evidence-video{width:min(100%,720px);max-width:720px}
 body.infrastructure-page #chronology .entry-body video{display:block;width:auto;max-width:100%;max-height:min(78vh,720px);height:auto;background:#111}
 body.infrastructure-page #chronology .entry-body img{max-width:100%;height:auto}
 body.infrastructure-page .chronology-supporting-material{margin:36px 0 0;padding-top:22px;border-top:1px solid var(--ink)}
 body.infrastructure-page .chronology-supporting-material .special-close{max-width:720px}
-body.infrastructure-page .chronology-supporting-material .video-archive{max-width:980px}
+body.infrastructure-page .chronology-supporting-material .video-archive{max-width:720px}
 body.infrastructure-page #chronology .chronology-entry{width:100%;max-width:720px}
 body.infrastructure-page #chronology .chronology-entry>.entry-body{width:100%;max-width:720px}
 body.infrastructure-page #chronology .entry-body>p,
@@ -331,7 +330,6 @@ body.infrastructure-page a:hover{text-decoration-color:var(--ink)}
 
 #chronology .entry-body figure,
 #chronology .entry-body .evidence-video,
-#chronology .entry-body .attack-graphic{width:fit-content;max-width:100%}
 #chronology .entry-body .evidence-video{width:fit-content;max-width:100%}
 #chronology .entry-body video{width:auto;max-width:100%}
 .tracker-nav{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}

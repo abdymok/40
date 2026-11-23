@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Validate chronology HTML
+        run: python3 scripts/check_chronology.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Set chronology cutoff from latest entry

@@ -1053,7 +1053,7 @@ body.infrastructure-page .day-photo figcaption a{color:inherit;text-decoration:u
  if(monthLabel){
   var stripMonths=[];
   Array.from(nav.querySelectorAll('a[data-date]')).forEach(function(link){
-   var dateMatch=(link.getAttribute('data-date')||'').match(/^\\d{4}-(\\d{2})-\\d{2}$/);
+   var dateMatch=(link.getAttribute('data-date')||'').match(/^\d{4}-(\d{2})-\d{2}$/);
    if(!dateMatch)return;
    var month=Number(dateMatch[1])-1;
    if(month<0||month>11)return;

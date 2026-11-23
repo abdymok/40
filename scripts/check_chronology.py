@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Validate the chronology pages before the GitHub Pages build."""
 
+from datetime import datetime
 from html.parser import HTMLParser
 from pathlib import Path
+import json
 import posixpath
 import re
 from urllib.parse import unquote, urlsplit
@@ -27,6 +29,11 @@ class PageParser(HTMLParser):
         self.ids = []
         self.links = []
         self.entry_dates = []
+        self.meta = {}
+        self.title_parts = []
+        self.jsonld_parts = []
+        self.in_title = False
+        self.in_jsonld = False
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -39,6 +46,27 @@ class PageParser(HTMLParser):
             match = re.match(r"(\d{4}-\d{2}-\d{2})-", attrs.get("id", ""))
             if "chronology-entry" in classes and match:
                 self.entry_dates.append(match.group(1))
+        if tag == "meta":
+            key = attrs.get("property") or attrs.get("name")
+            if key and attrs.get("content") is not None:
+                self.meta[key.lower()] = attrs["content"]
+        if tag == "title":
+            self.in_title = True
+        if tag == "script" and attrs.get("type", "").lower() == "application/ld+json":
+            self.in_jsonld = True
+            self.jsonld_parts.append([])
+
+    def handle_endtag(self, tag):
+        if tag == "title":
+            self.in_title = False
+        if tag == "script" and self.in_jsonld:
+            self.in_jsonld = False
+
+    def handle_data(self, data):
+        if self.in_title:
+            self.title_parts.append(data)
+        if self.in_jsonld and self.jsonld_parts:
+            self.jsonld_parts[-1].append(data)
 
 
 def fail(message):
@@ -91,13 +119,42 @@ if len(matched_entries) != len(parser.entry_dates):
     )
 if not parser.entry_dates:
     fail("no dated chronology entries found")
-cutoffs = CUTOFF_PATTERN.findall(main_html)
+
 latest = max(parser.entry_dates)
+cutoffs = CUTOFF_PATTERN.findall(main_html)
 if len(cutoffs) != 1 or cutoffs[0] != latest:
-    fail(
-        f"source cutoff label must occur once and match latest entry {latest}; "
-        f"found {cutoffs}"
+    print(
+        "WARNING: source cutoff label is stale or missing; "
+        f"expected one label for {latest}, found {cutoffs}. "
+        "The Pages workflow will regenerate it before Jekyll."
     )
+
+# Keep visible, social and structured-data titles in sync with the latest entry.
+day = datetime.strptime(latest, "%Y-%m-%d")
+expected_date = f"{day.strftime('%b')}. {day.day}, {day.year}"
+required_titles = {
+    "<title>": " ".join(parser.title_parts).strip(),
+    "og:title": parser.meta.get("og:title", ""),
+    "twitter:title": parser.meta.get("twitter:title", ""),
+}
+for label, value in required_titles.items():
+    if not value or f"through {expected_date}" not in value:
+        fail(f"{label} must include 'through {expected_date}'")
+
+jsonld_objects = []
+for parts in parser.jsonld_parts:
+    try:
+        value = json.loads("".join(parts))
+    except json.JSONDecodeError as exc:
+        fail(f"invalid JSON-LD in main chronology: {exc}")
+    if isinstance(value, dict):
+        jsonld_objects.append(value)
+headlines = [obj.get("headline", "") for obj in jsonld_objects if "headline" in obj]
+if not any(f"through {expected_date}" in headline for headline in headlines):
+    fail(f"JSON-LD headline must include 'through {expected_date}'")
+modified_dates = [obj.get("dateModified") for obj in jsonld_objects if "dateModified" in obj]
+if not modified_dates or latest not in modified_dates:
+    fail(f"JSON-LD dateModified must include latest entry date {latest}")
 
 print(
     "Chronology validation passed: "

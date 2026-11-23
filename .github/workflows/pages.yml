@@ -5,6 +5,12 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      skip_validation:
+        description: 'Emergency only: bypass chronology validation for this deployment'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -20,7 +26,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Validate chronology HTML
+        if: ${{ inputs.skip_validation != true }}
         run: python3 scripts/check_chronology.py
+      - name: Record emergency validation bypass
+        if: ${{ inputs.skip_validation == true }}
+        run: echo 'WARNING: chronology validation was bypassed for this manual deployment.'
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Set chronology cutoff from latest entry

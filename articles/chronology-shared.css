@@ -166,7 +166,7 @@ body.infrastructure-page .dashboard-grid.dashboard-leads{grid-template-columns:r
 body.infrastructure-page .dashboard-leads .dashboard-item{padding:0 9px}
 body.infrastructure-page .dashboard-leads .dashboard-item:first-child{padding-left:0}
 body.infrastructure-page .dashboard-leads .dashboard-item:last-child{padding-right:0}
-body.infrastructure-page .dashboard-leads .dashboard-label{font-size:11px;letter-spacing:var(--track)}
+body.infrastructure-page .dashboard-leads .dashboard-label{font-size:12px;letter-spacing:var(--track)}
 body.infrastructure-page .dashboard-leads .dashboard-value{font-size:clamp(23px,7vw,34px);overflow-wrap:normal}
 body.infrastructure-page .dashboard-leads .dashboard-detail{font-size:12px;line-height:1.4;white-space:normal}
 body.infrastructure-page .dashboard-secondary-item{grid-template-columns:minmax(0,1fr) auto;column-gap:10px}
@@ -754,7 +754,7 @@ body.archive-page .appearance-control button:focus-visible{outline:1px solid var
 
 body.archive-page .entry-note{display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:9px;font-size:12px;line-height:1.45;color:var(--muted)}
 
-.dashboard-secondary-date{display:block;margin-top:4px;font-size:11px;line-height:1.35;color:var(--muted);font-variant-numeric:tabular-nums}
+.dashboard-secondary-date{display:block;margin-top:4px;font-size:13px;line-height:1.4;color:var(--muted);font-variant-numeric:tabular-nums}
 
 body.infrastructure-page .entry-source,body.archive-page .entry-source{font-size:12px;line-height:1.45;color:var(--muted)}
 
@@ -769,7 +769,7 @@ body.infrastructure-page .appearance-control button,
 body.archive-page .appearance-control button{min-width:42px;min-height:36px;padding:7px 5px;font-size:13px;line-height:1.4}
 
 body.infrastructure-page .dashboard{width:100%;max-width:38em}
-body.infrastructure-page .dashboard-secondary-date{font-size:12px;line-height:1.4;color:var(--muted)}
+body.infrastructure-page .dashboard-secondary-date{font-size:13px;line-height:1.4;color:var(--muted)}
 
 body.infrastructure-page #chronology .entry-body>.entry-meta,
 body.archive-page .entry-body>.entry-meta{align-items:baseline}

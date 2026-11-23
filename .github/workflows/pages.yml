@@ -30,7 +30,8 @@ jobs:
         run: python3 scripts/check_chronology.py
       - name: Record emergency validation bypass
         if: ${{ inputs.skip_validation == true }}
-        run: echo 'WARNING: chronology validation was bypassed for this manual deployment.'
+        run: |
+          echo 'WARNING: chronology validation was bypassed for this manual deployment.'
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Set chronology cutoff from latest entry

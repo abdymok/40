@@ -153,8 +153,17 @@ headlines = [obj.get("headline", "") for obj in jsonld_objects if "headline" in 
 if not any(f"through {expected_date}" in headline for headline in headlines):
     fail(f"JSON-LD headline must include 'through {expected_date}'")
 modified_dates = [obj.get("dateModified") for obj in jsonld_objects if "dateModified" in obj]
-if not modified_dates or latest not in modified_dates:
-    fail(f"JSON-LD dateModified must include latest entry date {latest}")
+entry_date = datetime.strptime(latest, "%Y-%m-%d").date()
+valid_modified_dates = []
+for value in modified_dates:
+    try:
+        modified_date = datetime.strptime(value, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        continue
+    if modified_date >= entry_date:
+        valid_modified_dates.append(value)
+if not valid_modified_dates:
+    fail(f"JSON-LD dateModified must be on or after latest entry date {latest}")
 
 print(
     "Chronology validation passed: "

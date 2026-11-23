@@ -27,10 +27,10 @@ body.infrastructure-page .video-archive summary{font-size:14px}
 body.infrastructure-page .video-archive[open]>summary{margin-bottom:14px}
 
 body.infrastructure-page .dek{margin:0 0 8px;color:var(--muted);font-size:16px}
-body.infrastructure-page .special-close{margin:24px 0 42px;padding:16px 0 18px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:760px}
+body.infrastructure-page .special-close{margin:24px 0 42px;padding:16px 0 18px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);max-width:720px}
 body.infrastructure-page .special-kicker{margin:0 0 10px;font-size:12px;letter-spacing:var(--track);color:var(--muted)}
 body.infrastructure-page .special-close p{margin:7px 0;font-size:15px}
-body.infrastructure-page .attack-graphic{margin:28px 0 42px;max-width:760px}
+body.infrastructure-page .attack-graphic{margin:28px 0 42px;max-width:720px}
 body.infrastructure-page .attack-graphic img{display:block;width:100%;height:auto}
 body.infrastructure-page .attack-graphic figcaption{margin-top:3px}
 body.infrastructure-page .attack-graphic figcaption a{text-decoration:underline;text-underline-offset:2px}

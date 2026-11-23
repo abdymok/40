@@ -14,10 +14,10 @@ PAGES = (
     "articles/changes.html",
 )
 ENTRY_PATTERN = re.compile(
-    r'<article id="(\\d{4}-\\d{2}-\\d{2})-[^"]+" class="chronology-entry"'
+    r'<article id="(\d{4}-\d{2}-\d{2})-[^"]+" class="chronology-entry"'
 )
 CUTOFF_PATTERN = re.compile(
-    r'Chronology through <time datetime="(\\d{4}-\\d{2}-\\d{2})"'
+    r'Chronology through <time datetime="(\d{4}-\d{2}-\d{2})"'
 )
 
 
@@ -36,7 +36,7 @@ class PageParser(HTMLParser):
             self.links.append(attrs["href"])
         if tag == "article":
             classes = attrs.get("class", "").split()
-            match = re.match(r"(\\d{4}-\\d{2}-\\d{2})-", attrs.get("id", ""))
+            match = re.match(r"(\d{4}-\d{2}-\d{2})-", attrs.get("id", ""))
             if "chronology-entry" in classes and match:
                 self.entry_dates.append(match.group(1))
 

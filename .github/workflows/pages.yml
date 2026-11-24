@@ -97,7 +97,7 @@ jobs:
               raise SystemExit("Could not update chronology cutoff")
 
           html, note_count = re.subn(
-              r"No Nov\.\s*\d{1,2} damage or casualty incident has been added\.",
+              r"No Nov\.(?:&nbsp;|\s)*\d{1,2} damage or casualty incident has been added\.",
               f"No {month}. {today.day} damage or casualty incident has been added.",
               html,
               count=1,

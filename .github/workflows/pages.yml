@@ -96,14 +96,8 @@ jobs:
           if cutoff_count != 1:
               raise SystemExit("Could not update chronology cutoff")
 
-          html, note_count = re.subn(
-              r"No Nov\.(?:&nbsp;|\s)*\d{1,2} damage or casualty incident has been added\.",
-              f"No {month}. {today.day} damage or casualty incident has been added.",
-              html,
-              count=1,
-          )
-          if note_count != 1:
-              raise SystemExit("Could not update current-date incident note")
+          # The update paragraph is editorial copy, not a dated template.
+          # Do not rewrite its incident summary or require obsolete wording here.
 
           path.write_text(html, encoding="utf-8")
           print(f"Page date set to {iso} ({ZoneInfo('Europe/Kyiv')})")

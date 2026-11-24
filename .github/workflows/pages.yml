@@ -27,16 +27,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Validate chronology HTML
-        if: ${{ inputs.skip_validation != true }}
-        run: python3 scripts/check_chronology.py
-      - name: Record emergency validation bypass
-        if: ${{ inputs.skip_validation == true }}
-        run: |
-          echo 'WARNING: chronology validation was bypassed for this manual deployment.'
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-      - name: Set page date from Kyiv calendar
+      - name: Set page update date from Kyiv calendar
         run: |
           python3 - <<'PY'
           from datetime import datetime
@@ -50,15 +41,6 @@ jobs:
           iso = today.isoformat()
           month = today.strftime("%b")
           label = f"{month}.&nbsp;{today.day}"
-          title = f"Kyiv infrastructure chronology through {month}. {today.day}, {today.year}"
-
-          html, title_count = re.subn(
-              r"Kyiv infrastructure chronology through [^<\"]+",
-              title,
-              html,
-          )
-          if title_count < 4:
-              raise SystemExit(f"Expected at least 4 page-title fields, updated {title_count}")
 
           html, date_count = re.subn(
               r'"dateModified"\s*:\s*"\d{4}-\d{2}-\d{2}"',
@@ -69,15 +51,6 @@ jobs:
           if date_count != 1:
               raise SystemExit("Could not update JSON-LD dateModified")
 
-          html, dek_count = re.subn(
-              r"September 30–[A-Za-z]+&nbsp;\d{1,2}, \d{4}",
-              f"September 30–{month}&nbsp;{today.day}, {today.year}",
-              html,
-              count=1,
-          )
-          if dek_count != 1:
-              raise SystemExit("Could not update chronology date range")
-
           html, updated_count = re.subn(
               r"Updated <time datetime=\"[^\"]+\">.*?</time>",
               f"Updated <time datetime=\"{iso}\">{label}</time>",
@@ -87,22 +60,19 @@ jobs:
           if updated_count != 1:
               raise SystemExit("Could not update page update date")
 
-          html, cutoff_count = re.subn(
-              r"Chronology and reporting cutoff through <time datetime=\"[^\"]+\">.*?</time>",
-              f"Chronology and reporting cutoff through <time datetime=\"{iso}\">{label}</time>",
-              html,
-              count=1,
-          )
-          if cutoff_count != 1:
-              raise SystemExit("Could not update chronology cutoff")
-
-          # The update paragraph is editorial copy, not a dated template.
-          # Do not rewrite its incident summary or require obsolete wording here.
-
           path.write_text(html, encoding="utf-8")
-          print(f"Page date set to {iso} ({ZoneInfo('Europe/Kyiv')})")
-          print("Dashboard figures retain their own verified-through dates.")
+          print(f"Page update date set to {iso} ({ZoneInfo('Europe/Kyiv')}).")
+          print("Reporting cutoff, period subtitle and titles were left unchanged.")
           PY
+      - name: Validate chronology HTML
+        if: ${{ inputs.skip_validation != true }}
+        run: python3 scripts/check_chronology.py
+      - name: Record emergency validation bypass
+        if: ${{ inputs.skip_validation == true }}
+        run: |
+          echo 'WARNING: chronology validation was bypassed for this manual deployment.'
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

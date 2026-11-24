@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '5 0 * * *'
   workflow_dispatch:
     inputs:
       skip_validation:
@@ -34,35 +36,78 @@ jobs:
           echo 'WARNING: chronology validation was bypassed for this manual deployment.'
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Set chronology cutoff from latest entry
+      - name: Set page date from Kyiv calendar
         run: |
           python3 - <<'PY'
           from datetime import datetime
           from pathlib import Path
+          from zoneinfo import ZoneInfo
           import re
 
           path = Path("articles/critical-infrastructure-damage.html")
           html = path.read_text(encoding="utf-8")
-          dates = re.findall(r'<article id="(\d{4}-\d{2}-\d{2})-[^"]+" class="chronology-entry"', html)
-          if not dates:
-              raise SystemExit("No dated chronology entries found")
-          latest_entry = max(dates)
-          metadata = re.search(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"', html)
-          if not metadata:
-              raise SystemExit("No dateModified value found in chronology metadata")
-          latest = max(latest_entry, metadata.group(1))
-          day = datetime.strptime(latest, "%Y-%m-%d")
-          label = f"{day.strftime('%b')}.&nbsp;{day.day}"
-          updated, count = re.subn(
-              r'Chronology(?: and reporting cutoff)? through <time datetime="[^"]+">.*?</time>',
-              f'Chronology and reporting cutoff through <time datetime="{latest}">{label}</time>',
+          today = datetime.now(ZoneInfo("Europe/Kyiv")).date()
+          iso = today.isoformat()
+          month = today.strftime("%b")
+          label = f"{month}.&nbsp;{today.day}"
+          title = f"Kyiv infrastructure chronology through {month}. {today.day}, {today.year}"
+
+          html, title_count = re.subn(
+              r"Kyiv infrastructure chronology through [^<\"]+",
+              title,
+              html,
+          )
+          if title_count < 4:
+              raise SystemExit(f"Expected at least 4 page-title fields, updated {title_count}")
+
+          html, date_count = re.subn(
+              r'"dateModified"\s*:\s*"\d{4}-\d{2}-\d{2}"',
+              f'"dateModified": "{iso}"',
               html,
               count=1,
           )
-          if count != 1:
-              raise SystemExit("Could not find the chronology cutoff label")
-          path.write_text(updated, encoding="utf-8")
-          print(f"Chronology cutoff set to {latest}")
+          if date_count != 1:
+              raise SystemExit("Could not update JSON-LD dateModified")
+
+          html, dek_count = re.subn(
+              r"September 30–[A-Za-z]+&nbsp;\d{1,2}, \d{4}",
+              f"September 30–{month}&nbsp;{today.day}, {today.year}",
+              html,
+              count=1,
+          )
+          if dek_count != 1:
+              raise SystemExit("Could not update chronology date range")
+
+          html, updated_count = re.subn(
+              r"Updated <time datetime=\"[^\"]+\">.*?</time>",
+              f"Updated <time datetime=\"{iso}\">{label}</time>",
+              html,
+              count=1,
+          )
+          if updated_count != 1:
+              raise SystemExit("Could not update page update date")
+
+          html, cutoff_count = re.subn(
+              r"Chronology and reporting cutoff through <time datetime=\"[^\"]+\">.*?</time>",
+              f"Chronology and reporting cutoff through <time datetime=\"{iso}\">{label}</time>",
+              html,
+              count=1,
+          )
+          if cutoff_count != 1:
+              raise SystemExit("Could not update chronology cutoff")
+
+          html, note_count = re.subn(
+              r"No Nov\.\s*\d{1,2} damage or casualty incident has been added\.",
+              f"No {month}. {today.day} damage or casualty incident has been added.",
+              html,
+              count=1,
+          )
+          if note_count != 1:
+              raise SystemExit("Could not update current-date incident note")
+
+          path.write_text(html, encoding="utf-8")
+          print(f"Page date set to {iso} ({ZoneInfo('Europe/Kyiv')})")
+          print("Dashboard figures retain their own verified-through dates.")
           PY
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1

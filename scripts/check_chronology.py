@@ -129,9 +129,32 @@ if len(cutoffs) != 1 or cutoffs[0] != latest:
         "The Pages workflow will regenerate it before Jekyll."
     )
 
-# Keep visible, social and structured-data titles in sync with the latest entry.
-day = datetime.strptime(latest, "%Y-%m-%d")
-expected_date = f"{day.strftime('%b')}. {day.day}, {day.year}"
+# Keep visible, social and structured-data titles in sync with the page's
+# declared update date. The latest incident can be earlier than the page date.
+jsonld_objects = []
+for parts in parser.jsonld_parts:
+    try:
+        value = json.loads("".join(parts))
+    except json.JSONDecodeError as exc:
+        fail(f"invalid JSON-LD in main chronology: {exc}")
+    if isinstance(value, dict):
+        jsonld_objects.append(value)
+
+entry_date = datetime.strptime(latest, "%Y-%m-%d").date()
+modified_dates = [obj.get("dateModified") for obj in jsonld_objects if "dateModified" in obj]
+valid_modified_dates = []
+for value in modified_dates:
+    try:
+        modified_date = datetime.strptime(value, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        continue
+    if modified_date >= entry_date:
+        valid_modified_dates.append(modified_date)
+if not valid_modified_dates:
+    fail(f"JSON-LD dateModified must be on or after latest entry date {latest}")
+
+page_date = max(valid_modified_dates)
+expected_date = f"{page_date.strftime('%b')}. {page_date.day}, {page_date.year}"
 required_titles = {
     "<title>": " ".join(parser.title_parts).strip(),
     "og:title": parser.meta.get("og:title", ""),
@@ -141,29 +164,9 @@ for label, value in required_titles.items():
     if not value or f"through {expected_date}" not in value:
         fail(f"{label} must include 'through {expected_date}'")
 
-jsonld_objects = []
-for parts in parser.jsonld_parts:
-    try:
-        value = json.loads("".join(parts))
-    except json.JSONDecodeError as exc:
-        fail(f"invalid JSON-LD in main chronology: {exc}")
-    if isinstance(value, dict):
-        jsonld_objects.append(value)
 headlines = [obj.get("headline", "") for obj in jsonld_objects if "headline" in obj]
 if not any(f"through {expected_date}" in headline for headline in headlines):
     fail(f"JSON-LD headline must include 'through {expected_date}'")
-modified_dates = [obj.get("dateModified") for obj in jsonld_objects if "dateModified" in obj]
-entry_date = datetime.strptime(latest, "%Y-%m-%d").date()
-valid_modified_dates = []
-for value in modified_dates:
-    try:
-        modified_date = datetime.strptime(value, "%Y-%m-%d").date()
-    except (TypeError, ValueError):
-        continue
-    if modified_date >= entry_date:
-        valid_modified_dates.append(value)
-if not valid_modified_dates:
-    fail(f"JSON-LD dateModified must be on or after latest entry date {latest}")
 
 print(
     "Chronology validation passed: "

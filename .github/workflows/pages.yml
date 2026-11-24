@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set page update date from Kyiv calendar
+      - name: Update stamp and dateModified only (Kyiv calendar)
         run: |
           python3 - <<'PY'
           from datetime import datetime

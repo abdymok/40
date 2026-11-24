@@ -46,12 +46,16 @@ jobs:
           dates = re.findall(r'<article id="(\d{4}-\d{2}-\d{2})-[^"]+" class="chronology-entry"', html)
           if not dates:
               raise SystemExit("No dated chronology entries found")
-          latest = max(dates)
+          latest_entry = max(dates)
+          metadata = re.search(r'"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"', html)
+          if not metadata:
+              raise SystemExit("No dateModified value found in chronology metadata")
+          latest = max(latest_entry, metadata.group(1))
           day = datetime.strptime(latest, "%Y-%m-%d")
           label = f"{day.strftime('%b')}.&nbsp;{day.day}"
           updated, count = re.subn(
-              r'Chronology through <time datetime="[^"]+">.*?</time>',
-              f'Chronology through <time datetime="{latest}">{label}</time>',
+              r'Chronology(?: and reporting cutoff)? through <time datetime="[^"]+">.*?</time>',
+              f'Chronology and reporting cutoff through <time datetime="{latest}">{label}</time>',
               html,
               count=1,
           )

@@ -19,7 +19,13 @@ ENTRY_PATTERN = re.compile(
     r'<article id="(\d{4}-\d{2}-\d{2})-[^"]+" class="chronology-entry"'
 )
 CUTOFF_PATTERN = re.compile(
-    r'Chronology through <time datetime="(\d{4}-\d{2}-\d{2})"'
+    r'Chronology and reporting cutoff through <time datetime="(\d{4}-\d{2}-\d{2})"'
+)
+PERIOD_PATTERN = re.compile(
+    r"September 30–([A-Za-z]+)&nbsp;(\d{1,2}), (\d{4})"
+)
+UPDATED_PATTERN = re.compile(
+    r'Updated <time datetime="(\d{4}-\d{2}-\d{2})"'
 )
 
 
@@ -121,16 +127,35 @@ if not parser.entry_dates:
     fail("no dated chronology entries found")
 
 latest = max(parser.entry_dates)
+entry_date = datetime.strptime(latest, "%Y-%m-%d").date()
 cutoffs = CUTOFF_PATTERN.findall(main_html)
-if len(cutoffs) != 1 or cutoffs[0] != latest:
-    print(
-        "WARNING: source cutoff label is stale or missing; "
-        f"expected one label for {latest}, found {cutoffs}. "
-        "The Pages workflow will regenerate it before Jekyll."
+if len(cutoffs) != 1:
+    fail(f"expected one explicit reporting cutoff, found {cutoffs}")
+try:
+    cutoff_date = datetime.strptime(cutoffs[0], "%Y-%m-%d").date()
+except ValueError:
+    fail(f"invalid reporting cutoff date: {cutoffs[0]}")
+if cutoff_date < entry_date:
+    fail(f"reporting cutoff {cutoffs[0]} is earlier than latest chronology entry {latest}")
+
+periods = PERIOD_PATTERN.findall(main_html)
+if len(periods) != 1:
+    fail(f"expected one reporting-period subtitle, found {periods}")
+try:
+    period_date = datetime.strptime(
+        f"{periods[0][0]} {periods[0][1]} {periods[0][2]}",
+        "%b %d %Y",
+    ).date()
+except ValueError:
+    fail(f"invalid reporting-period subtitle date: {periods[0]}")
+if period_date != cutoff_date:
+    fail(
+        "reporting-period subtitle does not match explicit cutoff: "
+        f"{period_date} != {cutoff_date}"
     )
 
-# Keep visible, social and structured-data titles in sync with the page's
-# declared update date. The latest incident can be earlier than the page date.
+# The page modification date may be later than the reporting cutoff.
+# Titles and the reporting-period subtitle must match the explicit cutoff.
 jsonld_objects = []
 for parts in parser.jsonld_parts:
     try:
@@ -140,7 +165,6 @@ for parts in parser.jsonld_parts:
     if isinstance(value, dict):
         jsonld_objects.append(value)
 
-entry_date = datetime.strptime(latest, "%Y-%m-%d").date()
 modified_dates = [obj.get("dateModified") for obj in jsonld_objects if "dateModified" in obj]
 valid_modified_dates = []
 for value in modified_dates:
@@ -148,13 +172,20 @@ for value in modified_dates:
         modified_date = datetime.strptime(value, "%Y-%m-%d").date()
     except (TypeError, ValueError):
         continue
-    if modified_date >= entry_date:
+    if modified_date >= cutoff_date:
         valid_modified_dates.append(modified_date)
 if not valid_modified_dates:
-    fail(f"JSON-LD dateModified must be on or after latest entry date {latest}")
+    fail(f"JSON-LD dateModified must be on or after reporting cutoff {cutoff_date}")
 
-page_date = max(valid_modified_dates)
-expected_date = f"{page_date.strftime('%b')}. {page_date.day}, {page_date.year}"
+modified_date = max(valid_modified_dates)
+updated_dates = UPDATED_PATTERN.findall(main_html)
+if len(updated_dates) != 1 or updated_dates[0] != modified_date.isoformat():
+    fail(
+        "Updated stamp must match JSON-LD dateModified: "
+        f"found {updated_dates}, expected {modified_date.isoformat()}"
+    )
+
+expected_date = f"{cutoff_date.strftime('%b')}. {cutoff_date.day}, {cutoff_date.year}"
 required_titles = {
     "<title>": " ".join(parser.title_parts).strip(),
     "og:title": parser.meta.get("og:title", ""),

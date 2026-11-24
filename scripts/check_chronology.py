@@ -141,12 +141,17 @@ if cutoff_date < entry_date:
 periods = PERIOD_PATTERN.findall(main_html)
 if len(periods) != 1:
     fail(f"expected one reporting-period subtitle, found {periods}")
-try:
-    period_date = datetime.strptime(
-        f"{periods[0][0]} {periods[0][1]} {periods[0][2]}",
-        "%b %d %Y",
-    ).date()
-except ValueError:
+period_date = None
+for month_format in ("%b %d %Y", "%B %d %Y"):
+    try:
+        period_date = datetime.strptime(
+            f"{periods[0][0]} {periods[0][1]} {periods[0][2]}",
+            month_format,
+        ).date()
+        break
+    except ValueError:
+        continue
+if period_date is None:
     fail(f"invalid reporting-period subtitle date: {periods[0]}")
 if period_date != cutoff_date:
     fail(

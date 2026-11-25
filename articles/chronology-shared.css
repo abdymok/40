@@ -1052,3 +1052,11 @@ body.infrastructure-page .dashboard-row-detail{display:none}
   }
   body.infrastructure-page .dashboard-period{display:none}
 }
+
+
+/* Mobile: leave room after the final dated chronology entry. */
+@media (max-width: 600px) {
+  body.infrastructure-page #chronology {
+    padding-bottom: clamp(120px, 18vh, 180px);
+  }
+}

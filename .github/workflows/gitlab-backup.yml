@@ -36,6 +36,10 @@ jobs:
           git log --oneline --decorate refs/remotes/gitlab/main..origin/main
           echo "=== Commits only on GitLab ==="
           git log --oneline --decorate origin/main..refs/remotes/gitlab/main
+          echo "=== GitLab tip commit ==="
+          git show -s --format=fuller refs/remotes/gitlab/main
+          echo "=== GitLab-only commits and patch-equivalence ==="
+          git cherry -v origin/main refs/remotes/gitlab/main
           echo "=== GitLab-only change summary ==="
           git diff --stat origin/main...refs/remotes/gitlab/main || true
 

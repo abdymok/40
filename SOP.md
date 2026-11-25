@@ -57,7 +57,7 @@
 - Update dashboard figures and the latest chronology item as part of the same publishing workflow when relevant. Label estimates and provisional counts as such.
 - The `Fatalities` figure is a nationwide, provisional editorial tally of reported non-combatants killed in Russian attacks. Count reported deaths unless the person is specifically identified as military personnel. This includes police officers, rescuers and other emergency personnel; exclude injuries and people merely listed as missing. Compare available official and reliable media reports, revise figures when sources update them, and avoid double-counting incident reports against broader regional or citywide subtotals.
 - This is a good-faith working tally, not an official national count, a comprehensive casualty-monitoring operation or a UN-style verification exercise. We record deaths when reports come to our attention and can be attributed to available reliable sources. Coverage is uneven and may be especially incomplete in frontline and occupied areas. Do not imply exhaustive coverage or treat gaps in our tally as evidence that deaths did not occur. Do not add an invented allowance for presumed underreporting. Label the figure provisional, explain material limitations and correct it when better information arrives.
-- Keep the visual treatment restrained: light background by default, with an optional reader-controlled black theme; editorial typography, minimal decoration, no unnecessary cards, gradients or animation.
+- Keep the visual treatment restrained: light background by default, with an optional reader-controlled dark theme; editorial typography, minimal decoration, no unnecessary cards, gradients or animation.
 - Use concise labels and avoid redundant explanatory copy.
 
 

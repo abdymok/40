@@ -1114,3 +1114,41 @@ body.archive-page .back-to-top a {
     scroll-margin-top: 16px;
   }
 }
+
+
+/* November 25 alignment correction: entry content stays flush left. */
+body.infrastructure-page #chronology .entry-body > *,
+body.archive-page .entry-body > * {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+body.infrastructure-page #chronology .entry-body > p,
+body.archive-page .entry-body > p,
+body.infrastructure-page #chronology .entry-body > h3,
+body.archive-page .entry-body > h3,
+body.infrastructure-page #chronology .entry-body > .entry-meta,
+body.archive-page .entry-body > .entry-meta,
+body.infrastructure-page #chronology .entry-body > .entry-source,
+body.archive-page .entry-body > .entry-source,
+body.infrastructure-page #chronology .entry-body > .source,
+body.archive-page .entry-body > .source,
+body.infrastructure-page #chronology .entry-body > details,
+body.archive-page .entry-body > details {
+  width: 100%;
+  max-width: none;
+}
+
+body.infrastructure-page #chronology .entry-body > h3,
+body.archive-page .entry-body > h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+body.infrastructure-page #chronology .entry-body > figure,
+body.archive-page .entry-body > figure,
+body.infrastructure-page .back-to-top,
+body.archive-page .back-to-top {
+  margin-left: 0;
+  margin-right: 0;
+}

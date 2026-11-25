@@ -590,8 +590,8 @@ body.infrastructure-page #chronology .entry-body p.source{display:block;width:10
 .meta-icon{display:none}
 .day-heading,h2.day-heading{font-size:28px;font-weight:500;line-height:1.15}
 :focus-visible{outline:1px solid var(--ink);outline-offset:3px}
-.archive-day>summary::before,.chronology-day>summary::before{content:"Show "}
-.archive-day[open]>summary::before,.chronology-day[open]>summary::before{content:"Hide "}
+.archive-day>summary::before,.chronology-day>summary::before{content:"Show";display:inline-block;margin-right:.3em}
+.archive-day[open]>summary::before,.chronology-day[open]>summary::before{content:"Hide"}
 
 
 /* 2026-10-23 appearance pass: small, deliberate overrides over legacy rules. */

@@ -12,7 +12,8 @@
 - Headlines must be short enough to fit on one line in the intended layout. If a headline wraps onto a second line, shorten it; never accept a two-line headline.
 
 
-- For Ukrainian place names, use the project's preferred transliteration: write `-y`, not `-yi`. Examples: `Solomiansky`, `Darnytsky`, `Sviatoshynsky`, `Holosiivsky`. Do not “correct” these to forms ending in `-yi`.
+- For Ukrainian place names, use the project's preferred transliteration: write `-y`, not `-yi`. Examples: `Solomiansky`, `Darnytsky`, `Sviatoshynsky`, `Holosiivsky`. Retain the established exception `Kryvyi Rih`. Do not “correct” preferred forms to mechanical `-yi` endings.
+- For Ukrainian personal names, use the project's preferred spelling rather than mechanical `-ii` or `-yi` transliteration. Write `Andriy Sadovy`, not `Andriy Sadovyi`. Preserve established exceptions such as `Andrii Tkachov`.
 - Always write `Zaporizhia`, never `Zaporizhzhia`, in all English-language project text, including headlines, chronology entries, captions, dashboard text, and update history. This is a fixed project spelling and must not be changed to match a source's transliteration.
 
 ## Images, figures, and captions

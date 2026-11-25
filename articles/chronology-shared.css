@@ -421,20 +421,6 @@ body.infrastructure-page .entry-times,
 body.archive-page .entry-times{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin:0 0 6px}
 body.infrastructure-page .entry-times .entry-time,
 body.archive-page .entry-times .entry-time{display:block;white-space:nowrap;font-size:12px;line-height:1.4}
-body.infrastructure-page .meta-icon,
-body.archive-page 
-
-
-/* Future dates are made inactive by the date-navigation script above. */
-
-/* The date navigator remains one horizontal, scrollable row at every viewport width. */
-@media(max-width:680px){body.infrastructure-page,
-body.archive-page{font-size:17px}
-body.infrastructure-page #chronology .entry-body h3,
-body.archive-page .entry-body h3{font-size:20px}
-body.infrastructure-page main,
-body.archive-page main{max-width:100%}
-}
 @media(prefers-reduced-motion:reduce){body.infrastructure-page .chronology-day>summary::after,
 body.archive-page .archive-day>summary::after{transition:none}
 }
@@ -708,7 +694,8 @@ body.archive-page .day-heading {
   --rep:#595959;
   color-scheme:light;
 }
-:root:has(body.infrastructure-page.chrono-dark){
+:root:has(body.infrastructure-page.chrono-dark),
+:root.chrono-dark:has(body.infrastructure-page){
   --ink:#ededed;
   --muted:#b3b3b3;
   --rule:#414141;
@@ -751,7 +738,8 @@ body.infrastructure-page .appearance-control{gap:12px}
 body.infrastructure-page .appearance-control button[data-theme-choice][aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--muted)}
 
 :root:has(body.archive-page){--ink:#111;--muted:#595959;--rule:#dedede;--paper:#fff;--brand:#c43b3b;--track:.07em;--ok:#595959;--rep:#595959;color-scheme:light}
-:root:has(body.archive-page.chrono-dark){--ink:#ededed;--muted:#b3b3b3;--rule:#414141;--paper:#111;--brand:#ff6b6b;--track:.07em;--ok:#b3b3b3;--rep:#b3b3b3;color-scheme:dark}
+:root:has(body.archive-page.chrono-dark),
+:root.chrono-dark:has(body.archive-page){--ink:#ededed;--muted:#b3b3b3;--rule:#414141;--paper:#111;--brand:#ff6b6b;--track:.07em;--ok:#b3b3b3;--rep:#b3b3b3;color-scheme:dark}
 body.archive-page .appearance-control{display:flex;justify-content:flex-end;gap:12px;margin:0 0 14px;min-height:24px}
 body.archive-page .appearance-control button{appearance:none;border:0;border-bottom:1px solid transparent;padding:2px 0;background:transparent;color:var(--muted);font:inherit;font-size:12px;line-height:1.4;cursor:pointer}
 body.archive-page .appearance-control button[aria-pressed="true"]{color:var(--ink);border-bottom-color:var(--muted)}

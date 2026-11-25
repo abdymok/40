@@ -176,6 +176,7 @@ body.infrastructure-page .dashboard-leads .dashboard-item:last-child{padding-rig
 body.infrastructure-page .dashboard-leads .dashboard-label{font-size:12px;letter-spacing:var(--track)}
 body.infrastructure-page .dashboard-leads .dashboard-value{font-size:clamp(23px,7vw,34px);overflow-wrap:normal}
 body.infrastructure-page .dashboard-leads .dashboard-detail{font-size:12px;line-height:1.4;white-space:normal}
+body.infrastructure-page .dashboard-leads .dashboard-item[data-measure="alert-hours"] .dashboard-value{font-size:clamp(16px,4.6vw,20px);letter-spacing:-.025em}
 body.infrastructure-page .dashboard-secondary-item{grid-template-columns:minmax(0,1fr) auto;column-gap:10px}
 }
 @media(max-width:360px){body.infrastructure-page .dashboard-grid.dashboard-leads{grid-template-columns:1fr;gap:10px}
@@ -473,9 +474,6 @@ body.infrastructure-page .day-heading,body.archive-page .day-heading,body.infras
 body.infrastructure-page .entry-body details,body.archive-page .entry-body details,body.infrastructure-page .entry-body .source,body.archive-page .entry-body .source,body.infrastructure-page .entry-body h3,body.archive-page .entry-body h3,body.infrastructure-page .entry-body blockquote,body.archive-page .entry-body blockquote,body.infrastructure-page .entry-body .entry-meta,body.archive-page .entry-body .entry-meta{max-width:38em}
 
 body.infrastructure-page #chronology .entry-meta{max-width:38em}
-/* Keep the cumulative alert-duration label on one line. */
-body.infrastructure-page .dashboard-item[data-measure="alert-hours"] .dashboard-label{white-space:nowrap;}
-
 
 /* Align the three headline measures on a shared label and value baseline. */
 body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item{

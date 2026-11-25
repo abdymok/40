@@ -1152,3 +1152,38 @@ body.archive-page .back-to-top {
   margin-left: 0;
   margin-right: 0;
 }
+
+
+/* November 25 top-of-page alignment: one flush-left content edge. */
+body.infrastructure-page main > h1,
+body.infrastructure-page main > .dek,
+body.infrastructure-page main > .scope-note,
+body.infrastructure-page main > .updated-row,
+body.infrastructure-page main > .updated-row > .updated,
+body.infrastructure-page main > .appearance-control {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+body.infrastructure-page main > .updated-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+body.infrastructure-page main > .updated-row > .updated {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+body.infrastructure-page main > .updated-row > .refresh {
+  flex: 0 0 20px;
+  margin-left: auto;
+}
+
+body.infrastructure-page main > .appearance-control {
+  justify-content: flex-start;
+}

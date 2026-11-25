@@ -5,6 +5,12 @@ body.infrastructure-page{padding:64px 28px 84px}
 body.infrastructure-page main{max-width:720px;margin:0 auto}
 body.infrastructure-page h1{margin:0 0 10px;font-size:36px;font-weight:400;line-height:1.15;letter-spacing:-.02em}
 body.infrastructure-page .updated{margin:0 0 8px;color:var(--muted);font-size:13px}
+body.infrastructure-page .updated-collapse{flex:1 1 auto;min-width:0;color:var(--muted);font-size:13px}
+body.infrastructure-page .updated-collapse summary{display:block;cursor:pointer;line-height:1.5;list-style:disclosure-closed}
+body.infrastructure-page .updated-collapse[open] summary{margin-bottom:5px;list-style:disclosure-open}
+body.infrastructure-page .updated-collapse .updated{margin:0 0 8px}
+body.infrastructure-page .updated-expand-label{margin-left:4px;text-decoration:underline;text-underline-offset:2px}
+
 body.infrastructure-page .update-history{display:block;width:100%;max-width:720px;box-sizing:border-box;margin:0 0 16px;color:var(--muted);font-size:13px}
 body.infrastructure-page .update-history summary{display:inline-flex;align-items:center;gap:7px;cursor:pointer;list-style:none;color:var(--muted);text-decoration:none}
 body.infrastructure-page .update-history summary::-webkit-details-marker{display:none}

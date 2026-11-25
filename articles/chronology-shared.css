@@ -978,6 +978,7 @@ body.infrastructure-page .dashboard-method-note > summary{
   width:fit-content;
   max-width:100%;
   color:var(--ink);
+  font-weight:400;
   cursor:pointer;
   text-decoration:underline;
   text-underline-offset:3px;

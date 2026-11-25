@@ -1,3 +1,4 @@
+:root{--jump-offset:72px}
 body.infrastructure-page *{box-sizing:border-box}
 html,
 body.infrastructure-page{margin:0;padding:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
@@ -82,7 +83,7 @@ body.infrastructure-page .dashboard-value{font-size:30px}
 body.infrastructure-page .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 body.infrastructure-page .corrections h2{margin:0 0 12px;font-size:18px;line-height:1.3}
 body.infrastructure-page #chronology.chronology-list{display:block;width:100%;border:0;border-collapse:collapse}
-body.infrastructure-page #chronology .chronology-entry{display:flex;flex-direction:column;gap:0;margin:0;padding:18px 0 22px;border-bottom:1px solid var(--rule);scroll-margin-top:64px}
+body.infrastructure-page #chronology .chronology-entry{display:flex;flex-direction:column;gap:0;margin:0;padding:18px 0 22px;border-bottom:1px solid var(--rule);scroll-margin-top:var(--jump-offset)}
 body.infrastructure-page #chronology .entry-body{order:3;min-width:0;font-size:16px;line-height:1.62}
 body.infrastructure-page #chronology .entry-body>p,
 body.infrastructure-page #chronology .entry-body>h3,
@@ -117,7 +118,7 @@ body.infrastructure-page .chronology-supporting-material>.entry-body{width:100%;
 body.infrastructure-page #chronology .entry-body{order:3;font-size:16px;line-height:1.58}
 body.infrastructure-page #chronology .entry-body h3{font-size:21px}
 }
-body.infrastructure-page .day-heading{margin:32px 0 5px;padding-top:10px;border-top:1px solid var(--rule);font-size:19px;font-weight:400;scroll-margin-top:64px}
+body.infrastructure-page .day-heading{margin:32px 0 5px;padding-top:10px;border-top:1px solid var(--rule);font-size:19px;font-weight:400;scroll-margin-top:var(--jump-offset)}
 body.infrastructure-page .day-summary{margin:0 0 14px;color:var(--muted);font-size:13px}
 body.infrastructure-page .chronology-day{margin:8px 0 0;padding-top:10px;border-top:1px solid var(--rule)}
 body.infrastructure-page .chronology-day>summary{list-style:none;cursor:pointer;display:block}
@@ -149,7 +150,7 @@ body.infrastructure-page .day-jump a{text-decoration:none;border-bottom:1px soli
 body.infrastructure-page .day-jump .month-label{flex:0 0 auto;padding:0 3px 0 8px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 body.infrastructure-page .day-jump a:hover,
 body.infrastructure-page .day-jump a:focus-visible{border-bottom-color:var(--ink)}
-body.infrastructure-page .chronology-day{scroll-margin-top:20px}
+body.infrastructure-page .chronology-day{scroll-margin-top:var(--jump-offset)}
 body.infrastructure-page .dashboard-grid.dashboard-leads{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:auto;gap:0;margin:0 0 14px}
 body.infrastructure-page .dashboard-leads .dashboard-item{min-height:0;overflow:visible;padding:0 16px;border-left:1px solid var(--rule)}
 body.infrastructure-page .dashboard-leads .dashboard-item:first-child{padding-left:0;border-left:0}
@@ -213,7 +214,7 @@ body.archive-page .nav{font-size:13px;color:var(--muted);margin:0 0 28px}
 body.archive-page .archive-day{margin:0 0 12px;border-top:1px solid var(--rule);padding-top:10px}
 body.archive-page .archive-day summary{cursor:pointer;list-style:none}
 body.archive-page .archive-day summary::-webkit-details-marker{display:none}
-body.archive-page .day-heading{font-size:19px;font-weight:400;margin:32px 0 5px;padding-top:10px;border-top:1px solid var(--rule);scroll-margin-top:64px}
+body.archive-page .day-heading{font-size:19px;font-weight:400;margin:32px 0 5px;padding-top:10px;border-top:1px solid var(--rule);scroll-margin-top:var(--jump-offset)}
 body.archive-page .day-summary{display:block;color:var(--muted);font-size:13px;margin:0 0 14px}
 body.archive-page .chronology-entry{padding:18px 0 22px;border-bottom:1px solid var(--rule)}
 body.archive-page .status{display:block;font-size:12px;letter-spacing:var(--track);text-transform:uppercase;color:var(--muted);margin-bottom:5px}
@@ -439,7 +440,7 @@ body.archive-page .archive-day>summary::after{transition:none}
 body.archive-page .entry-body video{display:block;width:auto;height:auto;max-width:100%;max-height:80vh;background:#111}
 
 /* Eliminate duplicate day rules and keep lead tiles level. */
-body.infrastructure-page .chronology-day{margin:8px 0 0;padding-top:0;border-top:0;scroll-margin-top:64px}
+body.infrastructure-page .chronology-day{margin:8px 0 0;padding-top:0;border-top:0;scroll-margin-top:var(--jump-offset)}
 body.archive-page .archive-day{margin:0 0 12px;padding-top:0;border-top:0}
 
 
@@ -468,7 +469,7 @@ body.infrastructure-page #chronology .archive-pointers{display:block;grid-column
 body.infrastructure-page #chronology .archive-pointers>.archive-pointer{display:block;grid-column:1 / -1;width:100%;max-width:100%;min-width:0}
 body.infrastructure-page #chronology .archive-pointers>.archive-pointer>.entry-body{display:block;width:100%;max-width:100%;min-width:0;grid-column:1 / -1}
 
-body.infrastructure-page .day-heading,body.archive-page .day-heading,body.infrastructure-page .chronology-entry,body.archive-page .chronology-entry,body.infrastructure-page .chronology-day,body.archive-page .archive-day{scroll-margin-top:64px}
+body.infrastructure-page .day-heading,body.archive-page .day-heading,body.infrastructure-page .chronology-entry,body.archive-page .chronology-entry,body.infrastructure-page .chronology-day,body.archive-page .archive-day{scroll-margin-top:var(--jump-offset)}
 body.infrastructure-page .entry-body details,body.archive-page .entry-body details,body.infrastructure-page .entry-body .source,body.archive-page .entry-body .source,body.infrastructure-page .entry-body h3,body.archive-page .entry-body h3,body.infrastructure-page .entry-body blockquote,body.archive-page .entry-body blockquote,body.infrastructure-page .entry-body .entry-meta,body.archive-page .entry-body .entry-meta{max-width:38em}
 
 body.infrastructure-page #chronology .entry-meta{max-width:38em}
@@ -869,7 +870,7 @@ body.archive-page .back-to-top a {
   body.infrastructure-page h2.day-heading,
   body.archive-page h2.day-heading {
     margin-top: 36px;
-    scroll-margin-top: 16px;
+    scroll-margin-top: var(--jump-offset);
   }
 }
 
@@ -947,6 +948,6 @@ body.infrastructure-page main > .appearance-control {
   body.archive-page h2.day-heading,
   body.infrastructure-page .chronology-day,
   body.archive-page .archive-day {
-    scroll-margin-top: 72px;
+    scroll-margin-top: var(--jump-offset);
   }
 }

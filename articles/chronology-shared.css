@@ -927,3 +927,26 @@ body.infrastructure-page main > .updated-row > .refresh {
 body.infrastructure-page main > .appearance-control {
   justify-content: flex-start;
 }
+
+
+/* Mobile day navigation: comfortable targets and clear anchor offsets. */
+@media (max-width: 600px) {
+  body.infrastructure-page .day-jump,
+  body.archive-page .day-jump {
+    font-size: 14px;
+  }
+
+  body.infrastructure-page .day-jump a,
+  body.archive-page .day-jump a {
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  body.infrastructure-page h2.day-heading,
+  body.archive-page h2.day-heading,
+  body.infrastructure-page .chronology-day,
+  body.archive-page .archive-day {
+    scroll-margin-top: 72px;
+  }
+}

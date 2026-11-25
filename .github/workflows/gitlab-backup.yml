@@ -48,8 +48,12 @@ jobs:
           else
             echo "The two branch trees differ; no merge or push attempted."
           fi
-          echo "=== GitLab commit's own change summary ==="
-          git show --stat --oneline --summary refs/remotes/gitlab/main
+          echo "=== GitLab and GitHub archive commit parents ==="
+          git show -s --format=fuller\nParents:%P refs/remotes/gitlab/main
+          git show -s --format=fuller\nParents:%P d6a28d09e4850672d90334bd3a734f91622afda5
+          echo "=== Difference between the two archive commits ==="
+          git diff --stat d6a28d09e4850672d90334bd3a734f91622afda5 refs/remotes/gitlab/main -- articles/critical-infrastructure-archive.html articles/critical-infrastructure-damage.html
+          git diff --unified=1 d6a28d09e4850672d90334bd3a734f91622afda5 refs/remotes/gitlab/main -- articles/critical-infrastructure-archive.html articles/critical-infrastructure-damage.html
 
           if git merge-base --is-ancestor refs/remotes/gitlab/main origin/main; then
             echo "GitLab main is an ancestor of GitHub main; a fast-forward mirror push is safe."

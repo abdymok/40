@@ -949,3 +949,54 @@ body.infrastructure-page main > .appearance-control {
     scroll-margin-top: var(--jump-offset);
   }
 }
+
+
+/* Unified dashboard: three aligned figures, followed by shared context. */
+body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item{
+  grid-template-rows:minmax(2.8em,auto) auto;
+  align-content:start;
+}
+body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{
+  min-height:2.8em;
+  margin-bottom:7px;
+  line-height:1.35;
+}
+body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
+  min-height:1em;
+  margin:0;
+}
+body.infrastructure-page .dashboard-period{
+  margin:12px 0 0;
+  padding-top:9px;
+  border-top:1px solid var(--rule);
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.45;
+}
+body.infrastructure-page .dashboard-audits{
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px 20px;
+  margin:7px 0 0;
+  font-size:12px;
+  line-height:1.45;
+}
+body.infrastructure-page .dashboard-method-note{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.5;
+}
+body.infrastructure-page .dashboard-method-note > summary{
+  display:list-item;
+  width:fit-content;
+  max-width:100%;
+  color:var(--ink);
+  cursor:pointer;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+body.infrastructure-page .dashboard-method-note > p{
+  max-width:68ch;
+  margin:7px 0 0;
+}

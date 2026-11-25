@@ -9,8 +9,6 @@ on:
 permissions:
   contents: read
 
-# Only one mirror push may run at a time. Concurrent pushes can race while
-# GitLab updates refs, causing "incorrect old value provided" rejections.
 concurrency:
   group: gitlab-backup
   cancel-in-progress: false
@@ -24,23 +22,26 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push branches and tags to GitLab
+      - name: Compare GitHub and GitLab main before syncing
         env:
           GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
         run: |
           git fetch origin '+refs/heads/*:refs/remotes/origin/*' --tags
           git remote add gitlab "https://oauth2:${GITLAB_TOKEN}@gitlab.com/abdymok-group/40.git"
+          git fetch gitlab '+refs/heads/*:refs/remotes/gitlab/*' --tags
 
-          # Retry transient GitLab-side storage and ref-lock errors.
-          for attempt in 1 2 3; do
-            if git push gitlab 'refs/remotes/origin/*:refs/heads/*' --tags; then
-              exit 0
-            fi
-            if [ "$attempt" -lt 3 ]; then
-              echo "GitLab push failed (attempt $attempt/3); retrying..."
-              sleep $((attempt * 10))
-            fi
-          done
+          echo "GitHub main: $(git rev-parse origin/main)"
+          echo "GitLab main: $(git rev-parse refs/remotes/gitlab/main)"
+          echo "=== Commits only on GitHub ==="
+          git log --oneline --decorate refs/remotes/gitlab/main..origin/main
+          echo "=== Commits only on GitLab ==="
+          git log --oneline --decorate origin/main..refs/remotes/gitlab/main
+          echo "=== GitLab-only change summary ==="
+          git diff --stat origin/main...refs/remotes/gitlab/main || true
 
-          echo "GitLab push failed after 3 attempts."
-          exit 1
+          if git merge-base --is-ancestor refs/remotes/gitlab/main origin/main; then
+            echo "GitLab main is an ancestor of GitHub main; a fast-forward mirror push is safe."
+            git push gitlab 'refs/remotes/origin/*:refs/heads/*' --tags
+          else
+            echo "::warning::GitLab main contains commits not present on GitHub. No refs were changed. Review the divergence before merging."
+          fi

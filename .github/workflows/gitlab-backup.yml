@@ -55,6 +55,8 @@ jobs:
             echo "GitLab main is an ancestor of GitHub main; a fast-forward mirror push is safe."
             git push gitlab 'refs/remotes/origin/*:refs/heads/*' --tags
           else
+            git config user.name "abdymok"
+            git config user.email "abdymok@gmail.com"
             echo "=== Dry-run merge of GitLab main into GitHub main ==="
             if git merge --no-commit --no-ff refs/remotes/gitlab/main; then
               echo "Merge is clean."
@@ -66,6 +68,6 @@ jobs:
             else
               echo "::warning::Merge has conflicts. No refs were changed."
               git status --short
-              git merge --abort
+              git merge --abort || true
             fi
           fi

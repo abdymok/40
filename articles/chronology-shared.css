@@ -1000,3 +1000,68 @@ body.infrastructure-page .dashboard-method-note > p{
   max-width:68ch;
   margin:7px 0 0;
 }
+
+
+/* Mobile headline dashboard: reuse the secondary-stat row treatment. */
+body.infrastructure-page .dashboard-row-detail{display:none}
+@media(max-width:600px){
+  body.infrastructure-page .dashboard-grid.dashboard-leads{
+    grid-template-columns:minmax(0,1fr);
+    grid-auto-rows:auto;
+    gap:0;
+    margin:0;
+  }
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item,
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item:first-child,
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item:last-child{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    grid-template-rows:auto auto;
+    column-gap:12px;
+    row-gap:1px;
+    align-items:center;
+    min-height:0;
+    padding:8px 0;
+    border:0;
+    border-bottom:1px solid var(--rule);
+  }
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item:last-child{
+    border-bottom:0;
+  }
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{
+    grid-column:1;
+    grid-row:1;
+    min-height:0;
+    margin:0;
+    font-size:12px;
+    line-height:1.35;
+    letter-spacing:var(--track);
+  }
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-row-detail{
+    display:block;
+    grid-column:1;
+    grid-row:2;
+    margin:1px 0 0;
+    color:var(--muted);
+    font-size:11px;
+    line-height:1.35;
+    white-space:nowrap;
+  }
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
+    grid-column:2;
+    grid-row:1 / span 2;
+    align-self:center;
+    min-height:0;
+    margin:0;
+    font-size:20px;
+    line-height:1.1;
+    letter-spacing:-.025em;
+    text-align:right;
+    white-space:nowrap;
+    font-variant-numeric:lining-nums tabular-nums;
+  }
+  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item[data-measure="alert-hours"] .dashboard-value{
+    font-size:18px;
+  }
+  body.infrastructure-page .dashboard-period{display:none}
+}

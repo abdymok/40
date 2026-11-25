@@ -55,5 +55,17 @@ jobs:
             echo "GitLab main is an ancestor of GitHub main; a fast-forward mirror push is safe."
             git push gitlab 'refs/remotes/origin/*:refs/heads/*' --tags
           else
-            echo "::warning::GitLab main contains commits not present on GitHub. No refs were changed. Review the divergence before merging."
+            echo "=== Dry-run merge of GitLab main into GitHub main ==="
+            if git merge --no-commit --no-ff refs/remotes/gitlab/main; then
+              echo "Merge is clean."
+              echo "MERGE_TREE=$(git write-tree)"
+              echo "=== Proposed merge result ==="
+              git diff --cached --name-status
+              git diff --cached --stat
+              git merge --abort
+            else
+              echo "::warning::Merge has conflicts. No refs were changed."
+              git status --short
+              git merge --abort
+            fi
           fi

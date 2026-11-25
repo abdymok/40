@@ -129,7 +129,7 @@ footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var
 </ul>
 <h3>Media cutline typography</h3>
 <ul>
-<li>Use consistent typography for photo and video cutlines: <code>font-size:12px</code>, <code>color:var(--muted)</code> and <code>margin-top:8px</code>.</li>
+<li>Use consistent typography for photo and video cutlines: <code>font-size:13px</code>, <code>color:var(--muted)</code> and <code>margin-top:8px</code>.</li>
 <li>Apply the same treatment to photographs and videos unless a specific layout genuinely requires an exception. Do not let captions drift into different sizes or colours as media is added or replaced.</li>
 <li>Keep the cutline subordinate to the evidence. Make attribution, date and the limits of what the media establishes precise; do not imply more than the image or recording supports.</li>
 </ul>
@@ -167,11 +167,15 @@ footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var
 <h2>7. Visual and technical rules</h2>
 <div class="rule"><strong>Branding invariant:</strong> every visible occurrence of <code>abdymok</code> in every HTML file on every branch must render with only the <code>y</code> red. Do not leave plain-text branding in a footer, heading, cutline, caption, navigation item, attribution or other visible HTML. Use a dedicated span such as <code>&lt;span class="brand-y"&gt;y&lt;/span&gt;</code> and ensure its CSS renders the letter red. Audit branch variants as well as the published branch. This is a standing rule, not an optional design choice.</div>
 <ul>
-<li>Preserve the existing restrained design: white background, Spectral serif, black-and-white or minimal colour, quiet hover treatment.</li>
+<li>Preserve the restrained editorial design: white background by default, black-and-white or minimal colour, quiet hover treatment, and a readable system sans-serif font stack. Do not load web fonts for the chronology.</li>
 <li>No decorative cards, gradients, gratuitous animation or new visual systems during routine updates.</li>
 <li>Dashboard numerals should remain easy to scan. Keep icons aligned with the existing layout.</li>
 <li>Use the dashboard method graphic once, in its intended position beneath the dashboard title. Do not duplicate it in multiple boxes.</li>
 <li>Check mobile rendering and media sizing. Do not redesign unrelated sections to accommodate one new item.</li>
+<li>Use a centered reading column of approximately 68 characters, with body text at least 17px and line height around 1.55. Keep headings modest, with more space above than below, and set scroll margins for day and entry anchors.</li>
+<li>Keep the day-jump bar non-sticky so it cannot cover headings as the number of dates grows. Navigation and day-jump links must wrap on narrow screens, have at least 44px tap targets, a visible current-page or current-day state, and a visible keyboard focus outline.</li>
+<li>End every dated chronology and archive section with a plain “Back to top” link. Keep inline links underlined and distinguishable in both themes. Use muted link colours that retain at least 4.5:1 contrast against their backgrounds.</li>
+<li>Keep title links and their descriptions on separate lines on the landing page, with the description smaller and muted.</li>
 <li>Make targeted edits. Preserve existing HTML structure, IDs, anchors, source links and historical entries unless a change is intentional and checked.</li>
 </ul>
 
@@ -197,7 +201,7 @@ footer{border-top:1px solid var(--rule);margin-top:3em;padding-top:1em;color:var
 <li>Affected dashboard values, reporting periods and methodology notes reconciled in the same change.</li>
 <li>Images, audio, video, cutlines, alt text and source attribution checked.</li>
 <li>For dashboard photographs with a source link in the cutline, the image itself links to that exact same source.</li>
-<li>Photo and video cutlines use the same 12px muted typography and 8px top margin, except for a deliberate, layout-specific reason.</li>
+<li>Photo and video cutlines use the same 13px muted typography and 8px top margin, except for a deliberate, layout-specific reason.</li>
 <li>Links, relative paths, anchors and HTML structure checked.</li>
 <li>Every chronology and archive item has a unique, stable anchor; every item with a headline links from that headline to its own anchor. Existing IDs remain unchanged unless a deliberate, verified migration is necessary.</li>
 <li>Headline checked for active voice, present tense where accurate, a concrete verb and concise wording.</li>

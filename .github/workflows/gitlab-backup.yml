@@ -40,8 +40,16 @@ jobs:
           git show -s --format=fuller refs/remotes/gitlab/main
           echo "=== GitLab-only commits and patch-equivalence ==="
           git cherry -v origin/main refs/remotes/gitlab/main
-          echo "=== GitLab-only change summary ==="
-          git diff --stat origin/main...refs/remotes/gitlab/main || true
+          echo "=== Actual tip-to-tip file differences ==="
+          git diff --name-status origin/main refs/remotes/gitlab/main
+          git diff --stat origin/main refs/remotes/gitlab/main
+          if git diff --quiet origin/main refs/remotes/gitlab/main; then
+            echo "The two branch trees are identical."
+          else
+            echo "The two branch trees differ; no merge or push attempted."
+          fi
+          echo "=== GitLab commit's own change summary ==="
+          git show --stat --oneline --summary refs/remotes/gitlab/main
 
           if git merge-base --is-ancestor refs/remotes/gitlab/main origin/main; then
             echo "GitLab main is an ancestor of GitHub main; a fast-forward mirror push is safe."

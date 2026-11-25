@@ -756,261 +756,13 @@ body.archive-page .entry-note{display:block;width:100%;max-width:720px;box-sizin
 
 .dashboard-secondary-date{display:block;margin-top:4px;font-size:13px;line-height:1.4;color:var(--muted);font-variant-numeric:tabular-nums}
 
-body.infrastructure-page .entry-source,body.archive-page .entry-source{font-size:12px;line-height:1.45;color:var(--muted)}
-
-/* Evidence labels share one quiet treatment across all source classes. */
-body.infrastructure-page #chronology .entry-meta .evidence-category,body.archive-page .entry-meta .evidence-category{font-style:normal;font-weight:500;text-transform:uppercase;letter-spacing:var(--track)}
-
-
-/* November 9 refinement: clearer metadata, consistent measure and quieter links. */
-body.infrastructure-page .appearance-control,
-body.archive-page .appearance-control{justify-content:flex-start;gap:8px;min-height:36px}
-body.infrastructure-page .appearance-control button,
-body.archive-page .appearance-control button{min-width:42px;min-height:36px;padding:7px 5px;font-size:13px;line-height:1.4}
-
-body.infrastructure-page .dashboard{width:100%;max-width:38em}
-body.infrastructure-page .dashboard-secondary-date{font-size:13px;line-height:1.4;color:var(--muted)}
-
-body.infrastructure-page #chronology .entry-body>.entry-meta,
-body.archive-page .entry-body>.entry-meta{align-items:baseline}
-body.infrastructure-page #chronology .entry-meta .evidence-category,
-body.archive-page .entry-meta .evidence-category{order:-2;color:var(--ink);font-size:12px;font-weight:600;letter-spacing:.12em}
-body.infrastructure-page #chronology .entry-meta .meta-separator,
-body.archive-page .entry-meta .meta-separator{order:-1}
-body.infrastructure-page #chronology .entry-meta .meta-location,
-body.archive-page .entry-meta .meta-location{order:0}
-
-body.infrastructure-page #chronology .entry-gutter .entry-time,
-body.archive-page .entry-gutter .entry-time{color:var(--ink);font-size:13px;font-weight:500;line-height:1.45}
-
-body.infrastructure-page .entry-source,
-body.archive-page .entry-source{max-width:38em;font-size:12px;line-height:1.55}
-body.infrastructure-page .day-jump a[aria-current=location],
-body.archive-page .day-jump a[aria-current=location]{color:var(--ink);border-color:var(--ink);font-weight:600}
-
-body.infrastructure-page #chronology .entry-body h3 a,
-body.archive-page .entry-body h3 a{color:var(--ink);text-decoration:none}
-body.infrastructure-page #chronology .entry-body h3 a::after,
-body.archive-page .entry-body h3 a::after{content:" #";font-size:.72em;color:var(--muted);opacity:0;transition:opacity 160ms ease}
-body.infrastructure-page #chronology .entry-body h3 a:hover::after,
-body.infrastructure-page #chronology .entry-body h3 a:focus-visible::after,
-body.archive-page .entry-body h3 a:hover::after,
-body.archive-page .entry-body h3 a:focus-visible::after{opacity:.8}
-
-@media(prefers-reduced-motion:reduce){
- body.infrastructure-page #chronology .entry-body h3 a::after,
- body.archive-page .entry-body h3 a::after{transition:none}
-}
-
-
-/* Labels and source notes remain legible without competing with the figures. */
-body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{
-  text-transform:none;letter-spacing:normal;font-size:13px;font-weight:400;
-}
-body.infrastructure-page .entry-source,
-body.archive-page .entry-source{font-size:13px;line-height:1.5}
-@media(max-width:680px){
-  body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{font-size:12px}
-}
-
-
-/* November 25 reading and navigation pass */
-:root:has(body.infrastructure-page),
-:root:has(body.archive-page) {
-  --link: #595959;
-}
-:root:has(body.infrastructure-page.chrono-dark),
-:root:has(body.archive-page.chrono-dark) {
-  --link: #b3b3b3;
-}
-
-html,
-body.infrastructure-page,
-body.archive-page {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 17px;
-  line-height: 1.55;
-}
-
-body.infrastructure-page main,
-body.archive-page main {
-  width: 100%;
-  max-width: 75ch;
-  margin-inline: auto;
-}
-
-body.infrastructure-page .dek,
-body.infrastructure-page .scope-note,
-body.infrastructure-page .updated,
-body.infrastructure-page #chronology .entry-body > p:not(.entry-meta):not(.entry-source),
-body.infrastructure-page #chronology .entry-body > h3,
-body.infrastructure-page #chronology .entry-body > .entry-meta,
-body.infrastructure-page #chronology .entry-body > .entry-source,
-body.archive-page .entry-body > p:not(.entry-meta):not(.entry-source),
-body.archive-page .entry-body > h3,
-body.archive-page .entry-body > .entry-meta,
-body.archive-page .entry-body > .entry-source {
-  max-width: 68ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body.infrastructure-page #chronology .entry-body,
-body.archive-page .entry-body {
-  font-size: 17px;
-  line-height: 1.55;
-}
-
-body.infrastructure-page #chronology .entry-body > p:not(.entry-meta):not(.entry-source),
-body.archive-page .entry-body > p:not(.entry-meta):not(.entry-source) {
-  margin-top: 0;
-  margin-bottom: 1em;
-  font-size: 17px;
-  line-height: 1.55;
-}
-
-body.infrastructure-page #chronology .entry-body > p:last-child,
-body.archive-page .entry-body > p:last-child {
-  margin-bottom: 0;
-}
-
-body.infrastructure-page h1,
-body.archive-page h1 {
-  font-size: clamp(28px, 3vw, 34px);
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-body.infrastructure-page h2.day-heading,
-body.archive-page h2.day-heading {
-  margin: 44px 0 7px;
-  padding-top: 12px;
-  font-size: 23px;
-  line-height: 1.25;
-  font-weight: 500;
-  scroll-margin-top: 24px;
-}
-
-body.infrastructure-page #chronology .entry-body h3,
-body.archive-page .entry-body h3 {
-  margin: 12px auto 8px;
-  font-family: inherit;
-  font-size: 19px;
-  line-height: 1.3;
-  font-weight: 600;
-  scroll-margin-top: 24px;
-}
-
-body.infrastructure-page #chronology .chronology-entry,
-body.archive-page .chronology-entry,
-body.infrastructure-page .chronology-day,
-body.archive-page .archive-day {
-  scroll-margin-top: 24px;
-}
-
-body.infrastructure-page #chronology .chronology-entry,
-body.archive-page .chronology-entry {
-  padding: 20px 0 24px;
-  border-bottom: 1px solid var(--rule);
-}
-
-body.infrastructure-page .tracker-nav,
-body.archive-page .nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 12px;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-body.infrastructure-page .tracker-pages,
-body.infrastructure-page .tracker-sections {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 10px;
-  min-width: 0;
-}
-
-body.infrastructure-page .tracker-nav a,
-body.archive-page .nav a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 6px 4px;
-}
-
-body.infrastructure-page .day-jump,
-body.archive-page .day-jump {
-  position: static;
-  top: auto;
-  z-index: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 6px;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 0 24px;
-  padding: 8px 0;
-  overflow: visible;
-  white-space: normal;
-  font-size: 14px;
-  line-height: 1.4;
-  background: var(--paper);
-}
-
-body.infrastructure-page .day-jump a,
-body.archive-page .day-jump a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
-  padding: 6px 10px;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-body.infrastructure-page .day-jump a[aria-current="location"],
-body.archive-page .day-jump a[aria-current="location"] {
-  color: var(--ink);
-  border-color: var(--ink);
-  border-width: 2px;
-  font-weight: 600;
-}
-
-body.infrastructure-page .day-jump .month-label {
-  align-self: center;
-  font-size: 12px;
-}
-
-body.infrastructure-page a,
-body.archive-page a {
-  color: var(--link);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
-
-body.infrastructure-page #chronology .entry-body h3 a,
-body.archive-page .entry-body h3 a,
-body.infrastructure-page .tracker-nav a,
-body.archive-page .nav a,
-body.infrastructure-page .day-jump a {
-  color: var(--ink);
-}
-
 body.infrastructure-page .entry-source,
 body.archive-page .entry-source,
 body.infrastructure-page .source,
 body.archive-page .source {
-  max-width: 68ch;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
   color: var(--muted);
   font-size: 13px;
   line-height: 1.5;
@@ -1039,7 +791,7 @@ body.infrastructure-page #chronology .entry-body figure,
 body.archive-page .entry-body figure {
   width: 100%;
   max-width: 68ch;
-  margin: 22px auto 28px;
+  margin: 22px 0 28px;
 }
 
 body.infrastructure-page .day-photo img,
@@ -1076,8 +828,8 @@ body.archive-page summary:focus-visible {
 
 body.infrastructure-page .back-to-top,
 body.archive-page .back-to-top {
-  max-width: 68ch;
-  margin: 8px auto 26px;
+  max-width: none;
+  margin: 8px 0 26px;
   font-size: 14px;
   line-height: 1.4;
 }
@@ -1116,43 +868,25 @@ body.archive-page .back-to-top a {
 }
 
 
-/* November 25 alignment correction: entry content stays flush left. */
-body.infrastructure-page #chronology .entry-body > *,
-body.archive-page .entry-body > * {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-body.infrastructure-page #chronology .entry-body > p,
-body.archive-page .entry-body > p,
-body.infrastructure-page #chronology .entry-body > h3,
-body.archive-page .entry-body > h3,
-body.infrastructure-page #chronology .entry-body > .entry-meta,
-body.archive-page .entry-body > .entry-meta,
-body.infrastructure-page #chronology .entry-body > .entry-source,
-body.archive-page .entry-body > .entry-source,
-body.infrastructure-page #chronology .entry-body > .source,
-body.archive-page .entry-body > .source,
-body.infrastructure-page #chronology .entry-body > details,
-body.archive-page .entry-body > details {
-  width: 100%;
+/* Dashboard disclosure: readable, flush-left collapsed methodology note. */
+body.infrastructure-page .dashboard-detail-collapse {
+  margin: 8px 0 0;
+  padding: 0;
   max-width: none;
 }
 
-body.infrastructure-page #chronology .entry-body > h3,
-body.archive-page .entry-body > h3 {
-  margin-top: 12px;
+body.infrastructure-page .dashboard-detail-collapse > summary {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+body.infrastructure-page .dashboard-detail-collapse[open] > summary {
   margin-bottom: 8px;
 }
-
-body.infrastructure-page #chronology .entry-body > figure,
-body.archive-page .entry-body > figure,
-body.infrastructure-page .back-to-top,
-body.archive-page .back-to-top {
-  margin-left: 0;
-  margin-right: 0;
-}
-
 
 /* November 25 top-of-page alignment: one flush-left content edge. */
 body.infrastructure-page main > h1,

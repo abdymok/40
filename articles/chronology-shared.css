@@ -812,3 +812,305 @@ body.archive-page .entry-source{font-size:13px;line-height:1.5}
 @media(max-width:680px){
   body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-label{font-size:12px}
 }
+
+
+/* November 25 reading and navigation pass */
+:root:has(body.infrastructure-page),
+:root:has(body.archive-page) {
+  --link: #595959;
+}
+:root:has(body.infrastructure-page.chrono-dark),
+:root:has(body.archive-page.chrono-dark) {
+  --link: #b3b3b3;
+}
+
+html,
+body.infrastructure-page,
+body.archive-page {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+body.infrastructure-page main,
+body.archive-page main {
+  width: 100%;
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
+body.infrastructure-page .dek,
+body.infrastructure-page .scope-note,
+body.infrastructure-page .updated,
+body.infrastructure-page #chronology .entry-body > p:not(.entry-meta):not(.entry-source),
+body.infrastructure-page #chronology .entry-body > h3,
+body.infrastructure-page #chronology .entry-body > .entry-meta,
+body.infrastructure-page #chronology .entry-body > .entry-source,
+body.archive-page .entry-body > p:not(.entry-meta):not(.entry-source),
+body.archive-page .entry-body > h3,
+body.archive-page .entry-body > .entry-meta,
+body.archive-page .entry-body > .entry-source {
+  max-width: 68ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.infrastructure-page #chronology .entry-body,
+body.archive-page .entry-body {
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+body.infrastructure-page #chronology .entry-body > p:not(.entry-meta):not(.entry-source),
+body.archive-page .entry-body > p:not(.entry-meta):not(.entry-source) {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+body.infrastructure-page #chronology .entry-body > p:last-child,
+body.archive-page .entry-body > p:last-child {
+  margin-bottom: 0;
+}
+
+body.infrastructure-page h1,
+body.archive-page h1 {
+  font-size: clamp(28px, 3vw, 34px);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+body.infrastructure-page h2.day-heading,
+body.archive-page h2.day-heading {
+  margin: 44px 0 7px;
+  padding-top: 12px;
+  font-size: 23px;
+  line-height: 1.25;
+  font-weight: 500;
+  scroll-margin-top: 24px;
+}
+
+body.infrastructure-page #chronology .entry-body h3,
+body.archive-page .entry-body h3 {
+  margin: 12px auto 8px;
+  font-family: inherit;
+  font-size: 19px;
+  line-height: 1.3;
+  font-weight: 600;
+  scroll-margin-top: 24px;
+}
+
+body.infrastructure-page #chronology .chronology-entry,
+body.archive-page .chronology-entry,
+body.infrastructure-page .chronology-day,
+body.archive-page .archive-day {
+  scroll-margin-top: 24px;
+}
+
+body.infrastructure-page #chronology .chronology-entry,
+body.archive-page .chronology-entry {
+  padding: 20px 0 24px;
+  border-bottom: 1px solid var(--rule);
+}
+
+body.infrastructure-page .tracker-nav,
+body.archive-page .nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body.infrastructure-page .tracker-pages,
+body.infrastructure-page .tracker-sections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  min-width: 0;
+}
+
+body.infrastructure-page .tracker-nav a,
+body.archive-page .nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 6px 4px;
+}
+
+body.infrastructure-page .day-jump,
+body.archive-page .day-jump {
+  position: static;
+  top: auto;
+  z-index: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 24px;
+  padding: 8px 0;
+  overflow: visible;
+  white-space: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  background: var(--paper);
+}
+
+body.infrastructure-page .day-jump a,
+body.archive-page .day-jump a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+body.infrastructure-page .day-jump a[aria-current="location"],
+body.archive-page .day-jump a[aria-current="location"] {
+  color: var(--ink);
+  border-color: var(--ink);
+  border-width: 2px;
+  font-weight: 600;
+}
+
+body.infrastructure-page .day-jump .month-label {
+  align-self: center;
+  font-size: 12px;
+}
+
+body.infrastructure-page a,
+body.archive-page a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+body.infrastructure-page #chronology .entry-body h3 a,
+body.archive-page .entry-body h3 a,
+body.infrastructure-page .tracker-nav a,
+body.archive-page .nav a,
+body.infrastructure-page .day-jump a {
+  color: var(--ink);
+}
+
+body.infrastructure-page .entry-source,
+body.archive-page .entry-source,
+body.infrastructure-page .source,
+body.archive-page .source {
+  max-width: 68ch;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+body.infrastructure-page #chronology .entry-meta .evidence-category,
+body.archive-page .entry-meta .evidence-category {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+body.infrastructure-page .entry-time,
+body.archive-page .entry-time,
+body.infrastructure-page .dashboard-value,
+body.infrastructure-page .dashboard-secondary-date,
+body.infrastructure-page .tracker-row,
+body.archive-page .tracker-row {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+body.infrastructure-page .day-photo,
+body.infrastructure-page #chronology .entry-body figure,
+body.archive-page .entry-body figure {
+  width: 100%;
+  max-width: 68ch;
+  margin: 22px auto 28px;
+}
+
+body.infrastructure-page .day-photo img,
+body.infrastructure-page #chronology .entry-body img,
+body.archive-page .entry-body img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+body.infrastructure-page .day-photo figcaption,
+body.infrastructure-page #chronology .entry-body figcaption,
+body.archive-page .entry-body figcaption {
+  display: block;
+  max-width: 68ch;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  font-family: inherit;
+  text-align: left;
+}
+
+body.infrastructure-page a:focus-visible,
+body.archive-page a:focus-visible,
+body.infrastructure-page button:focus-visible,
+body.archive-page button:focus-visible,
+body.infrastructure-page summary:focus-visible,
+body.archive-page summary:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+body.infrastructure-page .back-to-top,
+body.archive-page .back-to-top {
+  max-width: 68ch;
+  margin: 8px auto 26px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body.infrastructure-page .back-to-top a,
+body.archive-page .back-to-top a {
+  display: inline-block;
+  min-height: 44px;
+  padding: 10px 0;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  body.infrastructure-page,
+  body.archive-page {
+    padding: 30px 17px 48px;
+  }
+
+  body.infrastructure-page .tracker-nav,
+  body.archive-page .nav {
+    gap: 2px 8px;
+  }
+
+  body.infrastructure-page .tracker-pages,
+  body.infrastructure-page .tracker-sections {
+    gap: 2px 8px;
+  }
+
+  body.infrastructure-page h2.day-heading,
+  body.archive-page h2.day-heading {
+    margin-top: 36px;
+    scroll-margin-top: 16px;
+  }
+}

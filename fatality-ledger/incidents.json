@@ -11,7 +11,7 @@
     "incident_description": "Russian drone strike on a five-storey residential apartment building, collapsing an entrance section and causing a fire. Rescue operations recovered 11 bodies by the conclusion of the operation on Nov. 23. A 79-year-old woman rescued alive on Nov. 23 died in hospital on Nov. 24.",
     "documented_deaths": 12,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "DYMER-DSNS-2026-11-22-81212",
@@ -187,7 +187,8 @@
         "reason": "Two bodies had been recovered and confirmed by DSNS. This establishes the initial documented count used in the project subtotal.",
         "source_ids": [
           "DYMER-DSNS-2026-11-22-81212"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-002",
@@ -197,7 +198,8 @@
         "reason": "Three further bodies were recovered during the search operation.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-22-3129"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-003",
@@ -207,7 +209,8 @@
         "reason": "A sixth body was recovered.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-22-3129"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-004",
@@ -217,7 +220,8 @@
         "reason": "A seventh body was recovered.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-22-3138"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-005",
@@ -227,7 +231,8 @@
         "reason": "An eighth body was recovered.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3139"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-006",
@@ -237,7 +242,8 @@
         "reason": "A ninth body was recovered.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3140"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-007",
@@ -247,7 +253,8 @@
         "reason": "A tenth body was recovered.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3142"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-008",
@@ -258,7 +265,8 @@
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3143",
           "DYMER-UP-2026-11-23"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "DYMER-REV-009",
@@ -271,7 +279,8 @@
           "DYMER-HROMADSKE-2026-11-23-24",
           "DYMER-UP-2026-11-24",
           "DYMER-INTERFAX-2026-11-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -287,7 +296,7 @@
     "incident_description": "Russian aerial-bomb attack on several streets in Sloviansk. The National Police reported two people killed, a man and a woman, and five injured.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SLOVIANSK-NPU-2026-11-22",
@@ -326,7 +335,8 @@
         "source_ids": [
           "SLOVIANSK-NPU-2026-11-22",
           "SLOVIANSK-NPU-2026-11-23"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -342,7 +352,7 @@
     "incident_description": "One civilian death in Stepaniivka, reported retrospectively by the National Police in its Nov. 23 casualty roundup. The source does not provide a more specific strike description in that roundup.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_primary",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "STEPANIIVKA-NPU-2026-11-23",
@@ -368,7 +378,8 @@
         "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
         "source_ids": [
           "STEPANIIVKA-NPU-2026-11-23"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -384,7 +395,7 @@
     "incident_description": "Russian strike on a non-operating private clinic building. Three people were killed. A later strike on an open area in central Zaporizhia is a separate event and is not part of this record.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "CLINIC-ZOVA-2026-11-23-69242",
@@ -437,7 +448,8 @@
           "CLINIC-ZOVA-2026-11-23-69242",
           "CLINIC-INTERFAX-2026-11-23",
           "CLINIC-UP-2026-11-23"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -453,7 +465,7 @@
     "incident_description": "Russian FPV drone strike on a clearly marked civilian evacuation vehicle leaving Kramatorsk, killing a 77-year-old woman and a 68-year-old man.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KRAMATORSK-UKRINFORM-2026-11-23",
@@ -505,7 +517,8 @@
           "KRAMATORSK-UKRINFORM-2026-11-23",
           "KRAMATORSK-IFAX-2026-11-23",
           "KRAMATORSK-NPU-2026-11-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -521,7 +534,7 @@
     "incident_description": "Overnight Russian attack on a residential area in Voznesenivsky district. Two people were killed. A private house and apartment building were damaged.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_primary",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "ZAP-2026-11-24-ZOVA-69275",
@@ -561,7 +574,8 @@
         "source_ids": [
           "ZAP-2026-11-24-ZOVA-69275",
           "ZAP-2026-11-24-CHRONOLOGY"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -577,7 +591,7 @@
     "incident_description": "Russian drone strike on Korosten railway station killed a 33-year-old resident of Horschykivska community. Police and the regional administration reported three injured; injuries are excluded.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KOROSTEN-NPU-2026-11-24",
@@ -629,7 +643,8 @@
           "KOROSTEN-NPU-2026-11-24",
           "KOROSTEN-ODA-2026-11-24",
           "KOROSTEN-UZ-2026-11-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -645,7 +660,7 @@
     "incident_description": "Russian drone attack overnight on Nov. 24–25 killed a man born in 1974 and damaged commercial/logistics facilities and a vehicle parking area.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BILA-TSERKVA-TKACHENKO-2026-11-25",
@@ -697,7 +712,8 @@
           "BILA-TSERKVA-TKACHENKO-2026-11-25",
           "BILA-TSERKVA-UP-2026-11-25",
           "BILA-TSERKVA-CENSOR-2026-11-25"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -713,7 +729,7 @@
     "incident_description": "Evening Nov. 24 Russian jet-powered drone attack on civilian infrastructure in Odesa district killed a 41-year-old man. This is one of two deaths in the regional evening attack wave; the other victim in Podilsk is recorded separately because the source identifies a distinct location and strike site.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ODESA-REGION-UKRINFORM-2026-11-24",
@@ -766,7 +782,8 @@
           "ODESA-REGION-UKRINFORM-2026-11-24",
           "ODESA-REGION-UP-2026-11-24",
           "ODESA-PODILSK-EVIDENCEHUB-2026-11-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -782,7 +799,7 @@
     "incident_description": "Evening Nov. 24 Russian jet-powered drone strike in Podilsk killed a 17-year-old boy, an eleventh-grade student. This is a separate incident from the attack in Odesa district that killed a 41-year-old man.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "PODILSK-UKRINFORM-2026-11-24",
@@ -822,7 +839,8 @@
         "source_ids": [
           "PODILSK-UKRINFORM-2026-11-24",
           "PODILSK-EVIDENCEHUB-2026-11-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -838,7 +856,7 @@
     "incident_description": "Russian drone strike on a scheduled passenger minibus on a road near Fedorivka killed one person and injured seven.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "FEDORIVKA-SYNEHUBOV-2026-11-25",
@@ -890,7 +908,8 @@
           "FEDORIVKA-SYNEHUBOV-2026-11-25",
           "FEDORIVKA-UKRINFORM-2026-11-25",
           "FEDORIVKA-UP-2026-11-25"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -906,7 +925,7 @@
     "incident_description": "Russian fibre-optic FPV drone struck a civilian car, killing a 76-year-old passenger. The driver's son survived and was hospitalized.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "SUMY-NPU-2026-11-25",
@@ -959,7 +978,8 @@
           "SUMY-NPU-2026-11-25",
           "SUMY-UP-2026-11-24",
           "SUMY-INTERFAX-2026-11-25"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -975,7 +995,7 @@
     "incident_description": "A 69-year-old man died in hospital on Nov. 25 after being wounded in a Russian drone attack in Seredyno-Budska community on Nov. 23.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "SEREDYNO-BUDSKA-NPU-2026-11-25",
@@ -1016,7 +1036,8 @@
         "source_ids": [
           "SEREDYNO-BUDSKA-NPU-2026-11-25",
           "SEREDYNO-BUDSKA-INTERFAX-2026-11-25"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1032,7 +1053,7 @@
     "incident_description": "Russian attack on a vehicle parking area in Malyn community killed one man. A separate strike on a civilian enterprise injured one person and is not part of this fatality record.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "MALYN-ODA-2026-11-25",
@@ -1084,7 +1105,8 @@
           "MALYN-ODA-2026-11-25",
           "MALYN-ODA-WEB-2026-11-25",
           "MALYN-UKRINFORM-2026-11-25"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1100,7 +1122,7 @@
     "incident_description": "Russian Shahed drone struck a multi-storey residential building, setting an apartment on the 15th floor on fire. Two people were killed and three injured.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KHARKIV-TEREKHOV-2026-11-26",
@@ -1139,7 +1161,8 @@
         "source_ids": [
           "KHARKIV-TEREKHOV-2026-11-26",
           "KHARKIV-UP-2026-11-26"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1155,7 +1178,7 @@
     "incident_description": "Russian heavy-artillery attack on the shoreline of Nikopol killed a 45-year-old woman, Natalia Samoilova. Her 67-year-old mother was injured. Local reporting identifies this fatal attack separately from the death of a 62-year-old woman elsewhere in Nikopol on the same date.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "NIKOPOL-45YO-INFORMATOR-2026-11-24",
@@ -1207,7 +1230,8 @@
           "NIKOPOL-45YO-INFORMATOR-2026-11-24",
           "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-45YO",
           "NIKOPOL-REGION-IFAX-2026-11-23-45YO"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1223,7 +1247,7 @@
     "incident_description": "Russian drone and artillery attacks on Nikopol on Nov. 23 killed a 62-year-old woman, Iryna Kuznetsova. Local reporting identifies her separately from the 45-year-old woman killed in a heavy-artillery attack elsewhere in the city.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "NIKOPOL-62YO-INFORMATOR-2026-11-24",
@@ -1275,7 +1299,8 @@
           "NIKOPOL-62YO-INFORMATOR-2026-11-24",
           "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-62YO",
           "NIKOPOL-REGION-IFAX-2026-11-23-62YO"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1291,7 +1316,7 @@
     "incident_description": "Russian guided aerial bombs struck a former school in Komyshuvakha used as a humanitarian aid distribution point and shelter. A second strike hit the shelter after emergency services arrived. The final confirmed toll after a two-week search-and-rescue operation was 72 deaths. The victims included civilians, police officers, rescuers, school and administrative-services-centre staff, municipal workers and medical personnel. Four people remained missing at the conclusion of the operation and are excluded.",
     "documented_deaths": 72,
     "scope_classification": "mixed_non_combatant",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KOMYSH-UKRINFORM-2026-11-02-INITIAL",
@@ -1573,7 +1598,8 @@
         "reason": "Initial regional administration update reported one person killed in the attack.",
         "source_ids": [
           "KOMYSH-UKRINFORM-2026-11-02-INITIAL"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-002",
@@ -1584,7 +1610,8 @@
         "source_ids": [
           "KOMYSH-REUTERS-2026-11-02",
           "KOMYSH-AP-2026-11-02"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-003",
@@ -1594,7 +1621,8 @@
         "reason": "The State Emergency Service reported 24 deaths later on Nov. 2, including two rescuers and four police officers.",
         "source_ids": [
           "KOMYSH-UKRINFORM-2026-11-02-24"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-004",
@@ -1606,7 +1634,8 @@
           "KOMYSH-ZOVA-2026-11-02-68783",
           "KOMYSH-SUSPILNE-2026-11-03",
           "KOMYSH-UKRINFORM-2026-11-02-24"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-005",
@@ -1616,7 +1645,8 @@
         "reason": "Acting regional administration head Mykhailo Semikin reported 31 deaths at 11:40. This was a new higher incident count, not an additional 31 deaths.",
         "source_ids": [
           "KOMYSH-SUSPILNE-2026-11-03"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-006",
@@ -1626,7 +1656,8 @@
         "reason": "President Volodymyr Zelenskyy reported 33 deaths later on Nov. 3. This interim update is retained even though subsequent recoveries raised the count further.",
         "source_ids": [
           "KOMYSH-UP-2026-11-03-33"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-007",
@@ -1636,7 +1667,8 @@
         "reason": "Acting regional administration head Mykhailo Semikin reported 37 deaths on Nov. 4.",
         "source_ids": [
           "KOMYSH-UP-2026-11-04-37"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-008",
@@ -1647,7 +1679,8 @@
         "source_ids": [
           "KOMYSH-ZOVA-2026-11-04-68789",
           "KOMYSH-UP-2026-11-04-37"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-009",
@@ -1658,7 +1691,8 @@
         "source_ids": [
           "KOMYSH-INTERFAX-2026-11-05-42",
           "KOMYSH-UKRINFORM-2026-11-05-42"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-010",
@@ -1669,7 +1703,8 @@
         "source_ids": [
           "KOMYSH-UP-2026-11-05-43",
           "KOMYSH-ZELENSKYY-2026-11-05"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-011",
@@ -1680,7 +1715,8 @@
         "source_ids": [
           "KOMYSH-ARMYINFORM-2026-11-06-50",
           "KOMYSH-INTERFAX-2026-11-06-50-53"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-012",
@@ -1692,7 +1728,8 @@
           "KOMYSH-INTERFAX-2026-11-06-50-53",
           "KOMYSH-INTERFAX-2026-11-06-53",
           "KOMYSH-NV-2026-11-06-53"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-013",
@@ -1703,7 +1740,8 @@
         "source_ids": [
           "KOMYSH-DSNS-2026-11-07-55",
           "KOMYSH-ZOVA-2026-11-08-68891"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "KOMYSH-REV-014",
@@ -1714,7 +1752,8 @@
         "source_ids": [
           "KOMYSH-UKRINFORM-2026-11-16-72",
           "KOMYSH-UP-2026-11-16-72"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1730,7 +1769,7 @@
     "incident_description": "A Russian drone struck a police service vehicle near Komyshuvakha on Nov. 1, seriously injuring two police officers, Oleh Dubetskyi and Serhii Berezhko. Both officers died in hospital on Nov. 4. This is a separate incident from the Nov. 2 humanitarian-hub strike in Komyshuvakha and is not included in that incident's 72 deaths.",
     "documented_deaths": 2,
     "scope_classification": "non_combatant_emergency_personnel",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KOMYSH-POLICE-VEHICLE-UP-2026-11-05",
@@ -1783,7 +1822,8 @@
         "source_ids": [
           "KOMYSH-POLICE-VEHICLE-UP-2026-11-05",
           "KOMYSH-POLICE-VEHICLE-LB-2026-11-05"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1799,7 +1839,7 @@
     "incident_description": "Russian guided aerial bombs struck residential buildings in Izium, killing one man and injuring 27 people. The injuries are excluded.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "IZIUM-SYNEHUBOV-2026-11-02",
@@ -1852,7 +1892,8 @@
           "IZIUM-SYNEHUBOV-2026-11-02",
           "IZIUM-UKRINFORM-2026-11-02",
           "IZIUM-UKRINFORM-POLICE-2026-11-02"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1868,7 +1909,7 @@
     "incident_description": "Russian guided aerial bombs struck residential areas in Sloviansk, killing one woman and injuring six people.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "DON-SLOVIANSK-NPU-2026-11-03",
@@ -1894,7 +1935,8 @@
         "reason": "Initial incident record based on the cited official report and corroborating coverage.",
         "source_ids": [
           "DON-SLOVIANSK-NPU-2026-11-03"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1910,7 +1952,7 @@
     "incident_description": "Russian FPV drone attacks in Kramatorsk killed one civilian and damaged four civilian vehicles.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "DON-KRAMATORSK-NPU-2026-11-03",
@@ -1936,7 +1978,8 @@
         "reason": "Initial incident record based on the cited official report and corroborating coverage.",
         "source_ids": [
           "DON-KRAMATORSK-NPU-2026-11-03"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1952,7 +1995,7 @@
     "incident_description": "A Russian drone killed one civilian in Druzhkivka.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "DON-DRUZHKIVKA-NPU-2026-11-03",
@@ -1978,7 +2021,8 @@
         "reason": "Initial incident record based on the cited official report and corroborating coverage.",
         "source_ids": [
           "DON-DRUZHKIVKA-NPU-2026-11-03"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -1994,7 +2038,7 @@
     "incident_description": "Russian FPV drones struck near a DTEK vehicle in Bilenke, killing one person.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "DON-BILENKE-NPU-2026-11-03",
@@ -2020,7 +2064,8 @@
         "reason": "Initial incident record based on the cited official report and corroborating coverage.",
         "source_ids": [
           "DON-BILENKE-NPU-2026-11-03"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2036,7 +2081,7 @@
     "incident_description": "Russian morning attack on Dnipro damaged civilian buildings, a primary healthcare outpatient clinic and a hospital. The final official casualty update reported two people killed. The first regional update reported one death, later revised to two.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "DNIPRO-2026-11-03-HANZHA-0928",
@@ -2088,7 +2133,8 @@
         "source_ids": [
           "DNIPRO-2026-11-03-HANZHA-0928",
           "DNIPRO-2026-11-03-INTERFAX"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-DNE-DNIPRO-2026-11-03-MORNING-STRIKE-REV-002",
@@ -2098,7 +2144,8 @@
         "reason": "After the search-and-rescue operation, the regional administration reported two deaths. This later official count supersedes the initial one-death update.",
         "source_ids": [
           "DNIPRO-2026-11-03-UP-FINAL"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2114,7 +2161,7 @@
     "incident_description": "A Russian drone struck and destroyed a private house in Hotiv, killing a 14-year-old child and injuring one parent.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "HOTIV-KODA-2026-11-03",
@@ -2153,7 +2200,8 @@
         "source_ids": [
           "HOTIV-KODA-2026-11-03",
           "HOTIV-UKRINFORM-2026-11-03"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2169,7 +2217,7 @@
     "incident_description": "Russian forces dropped four guided aerial bombs on a residential area in Yasnohirka, killing a 48-year-old woman and injuring five people.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "YASNOHIRKA-DON-ODA-2026-11-03",
@@ -2208,7 +2256,8 @@
         "source_ids": [
           "YASNOHIRKA-DON-ODA-2026-11-03",
           "YASNOHIRKA-UKRINFORM-2026-11-03"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2224,7 +2273,7 @@
     "incident_description": "A Russian FPV drone killed one civilian in Kramatorsk on Nov. 3. This is separate from the Nov. 2 Kramatorsk deaths and from the four-bomb strike in Yasnohirka.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KRAMATORSK-FPV-NPU-2026-11-04",
@@ -2250,7 +2299,8 @@
         "reason": "Initial incident record based on the cited official report and corroborating coverage.",
         "source_ids": [
           "KRAMATORSK-FPV-NPU-2026-11-04"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2266,7 +2316,7 @@
     "incident_description": "Russian multiple-launch rocket system struck a private house in Bilenke, killing a 54-year-old woman.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BILENKE-ZP-NPU-2026-11-05",
@@ -2305,7 +2355,8 @@
         "source_ids": [
           "BILENKE-ZP-NPU-2026-11-05",
           "BILENKE-1NEWS-2026-11-05"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2321,7 +2372,7 @@
     "incident_description": "Two Russian drones struck a five-storey residential building in Vilniansk, killing a 52-year-old woman and a 64-year-old man and injuring another man.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "VILNIANSK-ZP-NPU-2026-11-05",
@@ -2360,7 +2411,8 @@
         "source_ids": [
           "VILNIANSK-ZP-NPU-2026-11-05",
           "VILNIANSK-1NEWS-2026-11-05"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2376,7 +2428,7 @@
     "incident_description": "A man seriously wounded in a Russian attack in Brovary district on the evening of Nov. 6 died in hospital on Nov. 7. This record uses the incident date, not the date of the hospital death.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BROVARY-TKACHENKO-2026-11-07",
@@ -2416,7 +2468,8 @@
         "source_ids": [
           "BROVARY-TKACHENKO-2026-11-07",
           "BROVARY-UKRINFORM-2026-11-07"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2432,7 +2485,7 @@
     "incident_description": "Russian drone attack in Lypova Dolyna community killed a 52-year-old man during the Nov. 6–7 reporting period.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "LYPOVA-SUSPILNE-2026-11-07",
@@ -2471,7 +2524,8 @@
         "source_ids": [
           "LYPOVA-SUSPILNE-2026-11-07",
           "LYPOVA-INTERFAX-2026-11-07"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2487,7 +2541,7 @@
     "incident_description": "Russian attacks in Kramatorsk on Nov. 7 killed three people. The regional administration's next-morning report describes six strikes in the city, including guided bombs and an FPV drone; the source does not allocate the three deaths to individual strikes.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KRAMATORSK-ODA-2026-11-08",
@@ -2526,7 +2580,8 @@
         "source_ids": [
           "KRAMATORSK-ODA-2026-11-08",
           "KRAMATORSK-UP-2026-11-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2542,7 +2597,7 @@
     "incident_description": "Russian guided-bomb strikes in Bilenke killed one person on Nov. 7 and injured two. The regional administration described two strikes in the settlement.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BILENKE-DON-ODA-2026-11-08",
@@ -2581,7 +2636,8 @@
         "source_ids": [
           "BILENKE-DON-ODA-2026-11-08",
           "BILENKE-UP-2026-11-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2597,7 +2653,7 @@
     "incident_description": "A Russian guided aerial bomb killed one person in Druzhkivka on Nov. 7.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "DRUZHKIVKA-DON-ODA-2026-11-08",
@@ -2636,7 +2692,8 @@
         "source_ids": [
           "DRUZHKIVKA-DON-ODA-2026-11-08",
           "DRUZHKIVKA-UP-2026-11-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2652,7 +2709,7 @@
     "incident_description": "Russian drone attack on infrastructure in Odesa on the evening of Nov. 7 killed one person.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "ODESA-MVA-2026-11-07-3626",
@@ -2691,7 +2748,8 @@
         "source_ids": [
           "ODESA-MVA-2026-11-07-3626",
           "ODESA-UP-2026-11-07"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2707,7 +2765,7 @@
     "incident_description": "A Russian FPV drone struck a moving car on the Derhachi–Kozacha Lopan road near Bezruky, killing a woman passenger. The driver was not injured.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BEZRUKY-PROSECUTOR-2026-11-07",
@@ -2746,7 +2804,8 @@
         "source_ids": [
           "BEZRUKY-PROSECUTOR-2026-11-07",
           "BEZRUKY-SUSPILNE-2026-11-07"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2762,7 +2821,7 @@
     "incident_description": "Russian drone attack on a residential area in a suburb of Dnipro destroyed a private house and killed one person. A later regional roundup counted this same death once in the two-death regional total.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "DNIPRO-08-UP-2026-11-08",
@@ -2801,7 +2860,8 @@
         "source_ids": [
           "DNIPRO-08-UP-2026-11-08",
           "DNIPRO-08-UKRINFORM-2026-11-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2817,7 +2877,7 @@
     "incident_description": "One person was killed in Russian attacks in Nikopol district on Nov. 8. The regional summary covers attacks across Nikopol city and several communities but does not specify the victim's exact settlement or strike site.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "NIKOPOL-08-HANZHA-2026-11-08",
@@ -2869,7 +2929,8 @@
           "NIKOPOL-08-HANZHA-2026-11-08",
           "NIKOPOL-08-UKRINFORM-2026-11-08",
           "NIKOPOL-08-UP-2026-11-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2885,7 +2946,7 @@
     "incident_description": "Russian jet-powered drone struck a warehouse storing food for local kindergartens and schools, killing three people: two women and one man. Another woman was seriously injured.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ODESA-WAREHOUSE-UP-2026-11-09",
@@ -2924,7 +2985,8 @@
         "source_ids": [
           "ODESA-WAREHOUSE-UP-2026-11-09",
           "ODESA-WAREHOUSE-IFAX-2026-11-09"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2940,7 +3002,7 @@
     "incident_description": "Russian attacks in Kramatorsk on Nov. 9 killed two people. The regional administration's next-morning report describes seven strikes, including FPV-drone attacks. The source does not allocate the two deaths to individual strikes.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KRAMATORSK-09-DON-ODA-2026-11-10",
@@ -2979,7 +3041,8 @@
         "source_ids": [
           "KRAMATORSK-09-DON-ODA-2026-11-10",
           "KRAMATORSK-09-UKRANEWS-2026-11-10"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -2995,7 +3058,7 @@
     "incident_description": "Russian attacks in Sloviansk on Nov. 9 killed one person and injured one. The regional administration's next-morning report identifies this death separately from two deaths in Kramatorsk.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "SLOVIANSK-09-DON-ODA-2026-11-10",
@@ -3034,7 +3097,8 @@
         "source_ids": [
           "SLOVIANSK-09-DON-ODA-2026-11-10",
           "SLOVIANSK-09-UKRANEWS-2026-11-10"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3050,7 +3114,7 @@
     "incident_description": "Russian attack destroyed a two-storey private house and garage in Vyshhorod district, killing an 82-year-old woman who was on the second floor. Two other people were injured.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "VYSHHOROD-TKACHENKO-2026-11-09",
@@ -3102,7 +3166,8 @@
           "VYSHHOROD-TKACHENKO-2026-11-09",
           "VYSHHOROD-UKRINFORM-2026-11-09",
           "VYSHHOROD-UP-2026-11-09"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3118,7 +3183,7 @@
     "incident_description": "Russian overnight attack on a civilian enterprise in Ladyzhyn on the night of Nov. 9–10 killed two people and damaged the facility and energy infrastructure.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "LADYZHYN-ZABOLOTNA-2026-11-10",
@@ -3158,7 +3223,8 @@
         "source_ids": [
           "LADYZHYN-ZABOLOTNA-2026-11-10",
           "LADYZHYN-UP-2026-11-10"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3174,7 +3240,7 @@
     "incident_description": "Russian attacks in Sloviansk on Nov. 10 killed one person. The Donetsk Regional Military Administration reported one death in Sloviansk and one in Kramatorsk over the preceding 24 hours.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SLOVIANSK-10-DON-ODA-2026-11-11",
@@ -3213,7 +3279,8 @@
         "source_ids": [
           "SLOVIANSK-10-DON-ODA-2026-11-11",
           "SLOVIANSK-10-FILASHKIN-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3229,7 +3296,7 @@
     "incident_description": "Russian attacks in Kramatorsk on Nov. 10 killed one person. The Donetsk Regional Military Administration reported one death in Kramatorsk and one in Sloviansk over the preceding 24 hours.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KRAMATORSK-10-DON-ODA-2026-11-11",
@@ -3268,7 +3335,8 @@
         "source_ids": [
           "KRAMATORSK-10-DON-ODA-2026-11-11",
           "KRAMATORSK-10-FILASHKIN-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3284,7 +3352,7 @@
     "incident_description": "Russian attacks on Dnipro city on Nov. 10 killed three people and injured others. National Police reported damage to enterprises, infrastructure and a private house; the available summary does not allocate the three deaths to individual strikes.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "DNIPRO-10-NPU-2026-11-11",
@@ -3323,7 +3391,8 @@
         "source_ids": [
           "DNIPRO-10-NPU-2026-11-11",
           "DNIPRO-10-UKRINFORM-2026-11-10"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3339,7 +3408,7 @@
     "incident_description": "A Russian drone-dropped munition struck a private home in a village in Marhanets community. A 43-year-old man died in hospital from severe shrapnel injuries.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "MARGANETS-NPU-2026-11-11",
@@ -3365,7 +3434,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "MARGANETS-NPU-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3381,7 +3451,7 @@
     "incident_description": "Russian strike on a crowded market in central Chornomorsk killed four people: one at the scene and three who later died in hospital. The initial casualty report recorded one death; subsequent hospital deaths raised the final toll to four.",
     "documented_deaths": 4,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "CHORNOMORSK-IFAX-2026-11-11-INITIAL",
@@ -3445,7 +3515,8 @@
         "reason": "Initial regional administration update reported one person killed at the scene.",
         "source_ids": [
           "CHORNOMORSK-IFAX-2026-11-11-INITIAL"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-002",
@@ -3456,7 +3527,8 @@
         "source_ids": [
           "CHORNOMORSK-UP-2026-11-11-FINAL",
           "CHORNOMORSK-KI-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-003",
@@ -3467,7 +3539,8 @@
         "source_ids": [
           "CHORNOMORSK-UP-2026-11-11-FINAL",
           "CHORNOMORSK-EVIDENCEHUB-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3483,7 +3556,7 @@
     "incident_description": "Russian drone strike in Saltivsky district killed two people and set a car on fire. The mayor first reported one death, then updated the toll to two.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "SALTIVSKY-TEREKHOV-2026-11-11",
@@ -3535,7 +3608,8 @@
         "reason": "Initial mayoral report said one person had been killed.",
         "source_ids": [
           "SALTIVSKY-TEREKHOV-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-002",
@@ -3546,7 +3620,8 @@
         "source_ids": [
           "SALTIVSKY-IFAX-2026-11-11",
           "SALTIVSKY-UP-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3562,7 +3637,7 @@
     "incident_description": "Russian attack drones struck Yahotyn, killing one person and damaging two kindergartens, homes, a vehicle and a non-residential building. A later repeat strike during firefighting killed two rescuers and is recorded separately.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "YAHOTYN-TKACHENKO-2026-11-11",
@@ -3601,7 +3676,8 @@
         "source_ids": [
           "YAHOTYN-TKACHENKO-2026-11-11",
           "YAHOTYN-UP-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3617,7 +3693,7 @@
     "incident_description": "A repeat Russian drone strike during firefighting in Yahotyn killed two State Emergency Service rescuers, Oleksandr Bondarenko and Yurii Lytovchenko. Two other rescuers were injured. This is a separate incident from the initial attack that killed one civilian.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "YAHOTYN-DSNS-2026-11-11",
@@ -3669,7 +3745,8 @@
           "YAHOTYN-DSNS-2026-11-11",
           "YAHOTYN-SUSPILNE-2026-11-11",
           "YAHOTYN-LB-2026-11-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3685,7 +3762,7 @@
     "incident_description": "Russian drone strike hit a nine-storey residential building in Kyiv's Solomiansky district, killing one woman and injuring five people.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SOLOMIANSKY-KLYCHKO-2026-11-12-8105",
@@ -3724,7 +3801,8 @@
         "source_ids": [
           "SOLOMIANSKY-KLYCHKO-2026-11-12-8105",
           "SOLOMIANSKY-KLYCHKO-2026-11-12-8107"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3740,7 +3818,7 @@
     "incident_description": "Russian strikes across Kramatorsk during Nov. 12 killed four people and injured at least six. The city administration reported attacks involving FPV drones and FAB-250 aerial bombs; the available report does not allocate the four deaths to individual strikes.",
     "documented_deaths": 4,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KRAMATORSK-12-UKRINFORM-2026-11-12",
@@ -3766,7 +3844,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KRAMATORSK-12-UKRINFORM-2026-11-12"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3782,7 +3861,7 @@
     "incident_description": "Russian attack on a private residential area in Odesa killed two people and injured five. This is separate from the Nov. 9 warehouse strike.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "ODESA-13-ODESKAODA-2026-11-13-22676",
@@ -3821,7 +3900,8 @@
         "source_ids": [
           "ODESA-13-ODESKAODA-2026-11-13-22676",
           "ODESA-13-REUTERS-2026-11-13"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3837,7 +3917,7 @@
     "incident_description": "Two Russian strikes hit a residential area of private houses in Zaporizhia at about 06:30, killing a 17-year-old boy and injuring four people, including a 10-year-old boy.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ZAP-13-IFAX-2026-11-13",
@@ -3876,7 +3956,8 @@
         "source_ids": [
           "ZAP-13-IFAX-2026-11-13",
           "ZAP-13-UP-2026-11-13"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3892,7 +3973,7 @@
     "incident_description": "A Russian drone struck a regular passenger bus in Zaporizhia district on Nov. 12, injuring three women. One woman who was critically injured died in hospital on Nov. 13.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ZAP-BUS-IFAX-2026-11-12",
@@ -3944,7 +4025,8 @@
           "ZAP-BUS-IFAX-2026-11-12",
           "ZAP-BUS-UP-2026-11-12",
           "ZAP-BUS-UP-DEATH-2026-11-13"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -3960,7 +4042,7 @@
     "incident_description": "A Russian strike on an industrial facility in Zaporizhia's Kosmichny district caused a fire. A man was found dead under the rubble.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ZAP-KOSMICHNY-IFAX-2026-11-13",
@@ -3999,7 +4081,8 @@
         "source_ids": [
           "ZAP-KOSMICHNY-IFAX-2026-11-13",
           "ZAP-KOSMICHNY-UKRINFORM-2026-11-13"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4015,7 +4098,7 @@
     "incident_description": "Russian drone attack in Zolota Balka killed two local residents, a 56-year-old man and a woman. A separate Berislav district report confirmed the same two victims; they are counted once.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "ZOLOTA-BALKA-SUSPILNE-2026-11-13",
@@ -4054,7 +4137,8 @@
         "source_ids": [
           "ZOLOTA-BALKA-SUSPILNE-2026-11-13",
           "ZOLOTA-BALKA-BERISLAV-2026-11-14"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4070,7 +4154,7 @@
     "incident_description": "Russian attack in Yasna Polyana killed one resident on Nov. 13.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "YASNA-POLYANA-FILASHKIN-2026-11-14",
@@ -4096,7 +4180,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "YASNA-POLYANA-FILASHKIN-2026-11-14"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4112,7 +4197,7 @@
     "incident_description": "During emergency work at a five-storey residential building damaged by a Russian strike on Nov. 13, a concrete slab fell on 33-year-old Vladyslav, an employee of the Cobra rescue service, killing him. This is a responder fatality at the residential-building strike site, distinct from the man found dead at the industrial facility.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "COBRA-IFAX-2026-11-13",
@@ -4164,7 +4249,8 @@
           "COBRA-IFAX-2026-11-13",
           "COBRA-UP-2026-11-13",
           "COBRA-INFORM-2026-11-13"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4180,7 +4266,7 @@
     "incident_description": "Russian missile strike damaged apartment buildings, a school and a kindergarten in Pavlohrad, killing one person and injuring ten.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "PAVLOHRAD-ODA-2026-11-14",
@@ -4219,7 +4305,8 @@
         "source_ids": [
           "PAVLOHRAD-ODA-2026-11-14",
           "PAVLOHRAD-UKRINFORM-2026-11-14"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4235,7 +4322,7 @@
     "incident_description": "Russian drone struck a critical infrastructure facility in Mena at about 16:00, killing two local men aged 42 and 45 and injuring a 33-year-old man.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "MENA-CENSOR-2026-11-14",
@@ -4274,7 +4361,8 @@
         "source_ids": [
           "MENA-CENSOR-2026-11-14",
           "MENA-CHAUS-2026-11-15"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4290,7 +4378,7 @@
     "incident_description": "Russian strike on Borova at about 12:20 killed a 67-year-old man.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BOROVA-PROSECUTOR-2026-11-14",
@@ -4329,7 +4417,8 @@
         "source_ids": [
           "BOROVA-PROSECUTOR-2026-11-14",
           "BOROVA-UP-2026-11-14"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4345,7 +4434,7 @@
     "incident_description": "Russian FPV drone struck civilian infrastructure in Bilenke, killing a 59-year-old man.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BILENKE-ZOVA-2026-11-16-69069",
@@ -4384,7 +4473,8 @@
         "source_ids": [
           "BILENKE-ZOVA-2026-11-16-69069",
           "BILENKE-UKRINFORM-2026-11-16"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4400,7 +4490,7 @@
     "incident_description": "Russian attack on a road in Dnipro on the morning of Nov. 16 killed one person and injured three.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "DNIPRO-16-HANZHA-0819",
@@ -4426,7 +4516,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "DNIPRO-16-HANZHA-0819"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4442,7 +4533,7 @@
     "incident_description": "Russian drone strike in Khortytsky district killed a 64-year-old woman and injured two people. This was separate from the Nov. 15 strike in the same district, which injured one man.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KHORTYTSKY-PROSECUTOR-2026-11-16",
@@ -4481,7 +4572,8 @@
         "source_ids": [
           "KHORTYTSKY-PROSECUTOR-2026-11-16",
           "KHORTYTSKY-ZOVA-2026-11-16-69071"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4497,7 +4589,7 @@
     "incident_description": "Russian drone struck a local man riding a moped near Sadove at about 10:20. He died of his injuries; his identity was being established.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SADOVE-PROKUDIN-2026-11-16",
@@ -4523,7 +4615,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "SADOVE-PROKUDIN-2026-11-16"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4539,7 +4632,7 @@
     "incident_description": "Russian attacks on Druzhkivka on Nov. 15 killed three people. The regional administration's next-day update reported three deaths in Druzhkivka and one in Lvivka.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "DRUZHKIVKA-FILASHKIN-2026-11-16",
@@ -4591,7 +4684,8 @@
           "DRUZHKIVKA-FILASHKIN-2026-11-16",
           "DRUZHKIVKA-IFAX-2026-11-16",
           "DRUZHKIVKA-UKRINFORM-2026-11-16"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4607,7 +4701,7 @@
     "incident_description": "Russian attack in Lvivka killed one person on Nov. 15.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "LVIVKA-FILASHKIN-2026-11-16",
@@ -4659,7 +4753,8 @@
           "LVIVKA-FILASHKIN-2026-11-16",
           "LVIVKA-IFAX-2026-11-16",
           "LVIVKA-UKRINFORM-2026-11-16"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4675,7 +4770,7 @@
     "incident_description": "Russian attack on two businesses in Chernihiv on Nov. 16 killed two men at the scene. A third man later died in hospital on Nov. 17 from injuries sustained in the same attack.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "CHERNIHIV-SUSPILNE-2026-11-16",
@@ -4714,7 +4809,8 @@
         "source_ids": [
           "CHERNIHIV-SUSPILNE-2026-11-16",
           "CHERNIHIV-CHAUS-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4730,7 +4826,7 @@
     "incident_description": "Russian strike on the centre of Balakliia killed at least one person and injured others.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "BALAKLIIA-SUSPILNE-2026-11-16",
@@ -4756,7 +4852,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "BALAKLIIA-SUSPILNE-2026-11-16"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4772,7 +4869,7 @@
     "incident_description": "Russian FPV drone killed a 70-year-old man in Kushuhum. This is separate from the Sept. 1 attack in Kushuhum, which killed two people before the dashboard's Oct. 1 start date.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KUSHUHUM-IFAX-2026-11-16",
@@ -4824,7 +4921,8 @@
           "KUSHUHUM-IFAX-2026-11-16",
           "KUSHUHUM-UP-2026-11-16",
           "KUSHUHUM-ZOVA-2026-11-16-69096"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4840,7 +4938,7 @@
     "incident_description": "Russian FPV drone struck a car in Kosmichny district, killing the driver.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KOSMICHNY-CAR-IFAX-2026-11-17",
@@ -4866,7 +4964,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KOSMICHNY-CAR-IFAX-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4882,7 +4981,7 @@
     "incident_description": "The regional administration's Nov. 16 evening citywide update reported two people killed in Russian attacks on Dnipro. The morning road-strike fatality is recorded separately. This record preserves the additional death in the evening total; the victim and specific strike were not identified in the cited update.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "DNIPRO-16-HANZHA-1830-33400",
@@ -4921,7 +5020,8 @@
         "source_ids": [
           "DNIPRO-16-HANZHA-1830-33400",
           "DNIPRO-16-HANZHA-0629-33413"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4937,7 +5037,7 @@
     "incident_description": "A Russian drone attack killed 51-year-old water utility pump-station operator Oleksandr Soroka in Kherson.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KHERSON-SOROKA-SUSPILNE-2026-11-17",
@@ -4963,7 +5063,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KHERSON-SOROKA-SUSPILNE-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -4979,7 +5080,7 @@
     "incident_description": "Doctor Yuriy Zimin died in hospital on Nov. 16 from injuries sustained in a Russian drone attack on a car in Kherson on Oct. 6. This delayed death is assigned to the original incident date, not the date of hospital death.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KHERSON-ZIMIN-SUSPILNE-2026-11-17",
@@ -5006,7 +5107,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KHERSON-ZIMIN-SUSPILNE-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5022,7 +5124,7 @@
     "incident_description": "A Russian UAV, preliminarily identified as a Geran-2 type, struck Chervona Khvylia at about 02:00, killing a 58-year-old man and a 56-year-old woman.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "CHERVONA-KHVYLIA-PROSECUTOR-2026-11-17",
@@ -5061,7 +5163,8 @@
         "source_ids": [
           "CHERVONA-KHVYLIA-PROSECUTOR-2026-11-17",
           "CHERVONA-KHVYLIA-IFAX-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5077,7 +5180,7 @@
     "incident_description": "Russian attacks on Sloviansk on Nov. 16 killed two people. The National Police's Nov. 18 regional report identifies two deaths in Sloviansk, one in Yasnohirka and one in Shabelkivka.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "SLOVIANSK-16-NPU-2026-11-18",
@@ -5116,7 +5219,8 @@
         "source_ids": [
           "SLOVIANSK-16-NPU-2026-11-18",
           "SLOVIANSK-16-CENSOR-2026-11-18"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5132,7 +5236,7 @@
     "incident_description": "Russian attack in Yasnohirka killed one person on Nov. 16. This is separate from the earlier Nov. 3 Yasnohirka fatality.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "YASNOHIRKA-16-NPU-2026-11-18",
@@ -5158,7 +5262,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "YASNOHIRKA-16-NPU-2026-11-18"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5174,7 +5279,7 @@
     "incident_description": "Russian attack in Shabelkivka killed one person on Nov. 16.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SHABELKIVKA-16-NPU-2026-11-18",
@@ -5200,7 +5305,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "SHABELKIVKA-16-NPU-2026-11-18"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5216,7 +5322,7 @@
     "incident_description": "Russian attacks on 16 settlements in Kharkiv region killed an 81-year-old woman in Ploske on Nov. 17. Two private houses in the village were damaged.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "PLOSKE-KHARKIV-ODA-2026-11-18",
@@ -5242,7 +5348,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "PLOSKE-KHARKIV-ODA-2026-11-18"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5258,7 +5365,7 @@
     "incident_description": "A Russian combined attack on industrial facilities in three districts of Zaporizhia killed a man and a woman. The regional administration's first update at 08:35 reported one death; subsequent updates at 08:52 and 09:47 confirmed a second death and raised the injury toll to 18. The sources do not allocate the two victims to individual facilities, so this record preserves the source-defined citywide attack cluster.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "ZAP-INDUSTRIAL-SEMikin-2026-11-17-69100",
@@ -5308,7 +5415,8 @@
         "reason": "Initial regional administration update reported one man killed.",
         "source_ids": [
           "ZAP-INDUSTRIAL-SEMikin-2026-11-17-69100"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-17-INDUSTRIAL-STRIKE-CLUSTER-REV-002",
@@ -5319,7 +5427,8 @@
         "source_ids": [
           "ZAP-INDUSTRIAL-SEMikin-2026-11-17-FOLLOWUPS",
           "ZAP-INDUSTRIAL-CHANGELOG-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5335,7 +5444,7 @@
     "incident_description": "Russian attack on a non-residential building in Kyiv's Obolonsky district killed two people and injured one. Rescuers freed a person trapped under the rubble. This incident is separate from the Nov. 16 ballistic attack on Kyiv's bridges and from the later Nov. 20 ballistic strike.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "OBOLON-IFAX-2026-11-17",
@@ -5387,7 +5496,8 @@
           "OBOLON-IFAX-2026-11-17",
           "OBOLON-UP-2026-11-17",
           "OBOLON-UKRINFORM-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5403,7 +5513,7 @@
     "incident_description": "Russian drone struck a vehicle parking area in Vinnytsia, killing a 51-year-old woman driver and injuring her 23-year-old passenger. Two cars and two trucks caught fire.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "VINNYTSIA-UKRINFORM-2026-11-17",
@@ -5455,7 +5565,8 @@
           "VINNYTSIA-UKRINFORM-2026-11-17",
           "VINNYTSIA-UP-2026-11-17",
           "VINNYTSIA-IFAX-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5471,7 +5582,7 @@
     "incident_description": "Russian attack on port and industrial infrastructure in Mykolaiv killed two men: a 41-year-old man at the scene and a 46-year-old man who died in hospital on Nov. 17. Three other men were injured.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "MYKOLAIV-KORABELOV-2026-11-17",
@@ -5511,7 +5622,8 @@
         "source_ids": [
           "MYKOLAIV-KORABELOV-2026-11-17",
           "MYKOLAIV-LB-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5527,7 +5639,7 @@
     "incident_description": "Russian attacks in Kramatorsk on Nov. 16 killed one person and injured six. The regional administration reported 11 strikes, including guided bombs and FPV drones.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KRAMATORSK-16-IFAX-2026-11-17",
@@ -5566,7 +5678,8 @@
         "source_ids": [
           "KRAMATORSK-16-IFAX-2026-11-17",
           "KRAMATORSK-16-DON-ODA-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5582,7 +5695,7 @@
     "incident_description": "Russian strike on the Korolivskyi Smak food-processing enterprise in Vlasivka, Svitlovodsk community, killed one person and injured two. The victim was reported on Nov. 17; the incident date is Nov. 16.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "SVITLOVODSK-UP-2026-11-17",
@@ -5621,7 +5734,8 @@
         "source_ids": [
           "SVITLOVODSK-UP-2026-11-17",
           "SVITLOVODSK-UKRINFORM-2026-11-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5637,7 +5751,7 @@
     "incident_description": "Three waves of Russian strikes hit central Odesa on the morning of Nov. 18, killing four people and injuring nine. The initial report said three people were killed; a later update confirmed a fourth death.",
     "documented_deaths": 4,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ODESA-18-IFAX-2026-11-18-INITIAL",
@@ -5690,7 +5804,8 @@
           "ODESA-18-IFAX-2026-11-18-INITIAL",
           "ODESA-18-UP-2026-11-18",
           "ODESA-18-REUTERS-2026-11-18"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5706,7 +5821,7 @@
     "incident_description": "Russian FPV drone struck an open area in Kushuhum, killing a woman and injuring a man. This is separate from the Nov. 16 attack in Kushuhum that killed a 70-year-old man.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KUSHUHUM-18-SUSPILNE-2026-11-18",
@@ -5745,7 +5860,8 @@
         "source_ids": [
           "KUSHUHUM-18-SUSPILNE-2026-11-18",
           "KUSHUHUM-18-INFORM-2026-11-18"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5761,7 +5877,7 @@
     "incident_description": "Russian drone strike partially destroyed a private house in Horenychi. Rescuers found a woman born in 1982 dead under the rubble; a man born in 1977 was injured.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "HORENYCHI-TKACHENKO-2026-11-19",
@@ -5787,7 +5903,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "HORENYCHI-TKACHENKO-2026-11-19"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5803,7 +5920,7 @@
     "incident_description": "Russian drone attack on Kyiv's Podilsky district killed one person. The preliminary report said four people were injured, three hospitalized.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "PODILSKY-KLYCHKO-2026-11-19-8180",
@@ -5829,7 +5946,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "PODILSKY-KLYCHKO-2026-11-19-8180"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5845,7 +5963,7 @@
     "incident_description": "One person was killed in overnight Russian attacks on energy facilities, civilian businesses and residential buildings across 12 regions. Prime Minister Serhiy Koretsky's report did not identify the victim's settlement or tie the death to a specific facility.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "CHERNIHIV-ENERGY-IFAX-2026-11-19",
@@ -5871,7 +5989,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "CHERNIHIV-ENERGY-IFAX-2026-11-19"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5887,7 +6006,7 @@
     "incident_description": "Russian ballistic-missile attack on Kyiv on Nov. 20 killed seven people. The initial report said three people had been killed, Prime Minister Serhiy Koretsky's 10:32 update raised the city toll to six, and Kyiv Mayor Vitali Klitschko's 15:32 update raised it to seven. The three, six and seven figures are successive totals, not separate additions.",
     "documented_deaths": 7,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KYIV-BALLISTIC-KLYCHKO-2026-11-20-0727",
@@ -5937,7 +6056,8 @@
         "reason": "Initial Kyiv mayoral update reported three deaths in the ballistic attack.",
         "source_ids": [
           "KYIV-BALLISTIC-KLYCHKO-2026-11-20-0727"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK-REV-002",
@@ -5947,7 +6067,8 @@
         "reason": "Prime Minister's update raised the Kyiv death toll to six. The first three deaths had already been counted in the running subtotal.",
         "source_ids": [
           "KYIV-BALLISTIC-KORETSKY-2026-11-20-1032"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK-REV-003",
@@ -5957,7 +6078,8 @@
         "reason": "Kyiv Mayor Klitschko reported a seventh death. The six previously reported deaths were already counted.",
         "source_ids": [
           "KYIV-BALLISTIC-IFAX-2026-11-20-1532"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -5973,7 +6095,7 @@
     "incident_description": "Russian strike on Sknyliv railway station in Lviv killed two people and injured at least four. The strike hit the station's ticket terminal.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "LVIV-SKNYLIV-IFAX-2026-11-20",
@@ -6012,7 +6134,8 @@
         "source_ids": [
           "LVIV-SKNYLIV-IFAX-2026-11-20",
           "LVIV-SKNYLIV-UKRINFORM-2026-11-20"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6028,7 +6151,7 @@
     "incident_description": "Russian ballistic-missile strike on Kryvyi Rih killed a seven-year-old boy and a 20-year-old woman paramedic, and injured 60 people. The two deaths were counted once after reconciliation of the regional updates.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KRYVYI-RIH-IFAX-2026-11-20",
@@ -6080,7 +6203,8 @@
           "KRYVYI-RIH-IFAX-2026-11-20",
           "KRYVYI-RIH-UKRINFORM-2026-11-20",
           "KRYVYI-RIH-ODA-2026-11-21-33506"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6096,7 +6220,7 @@
     "incident_description": "Russian attacks in Nikopol district on Nov. 20 killed one person. The regional administration reported attacks on Nikopol city and the Marhanets, Myrove, Pokrovske and Chervonohryhorivka communities but did not identify the victim's exact settlement or strike site.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "NIKOPOL-20-UP-2026-11-20",
@@ -6135,7 +6259,8 @@
         "source_ids": [
           "NIKOPOL-20-UP-2026-11-20",
           "NIKOPOL-20-LB-2026-11-20"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6151,7 +6276,7 @@
     "incident_description": "Russian attacks across Zaporizhia city and Zaporizhia district during the 24 hours before the Nov. 21 regional bulletin killed two people and injured 22. The regional report covered 489 strikes on 48 settlements and did not allocate the two deaths to individual locations or strikes; this record preserves that source-defined attack cluster.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ZAP-20-21-UP-2026-11-21",
@@ -6190,7 +6315,8 @@
         "source_ids": [
           "ZAP-20-21-UP-2026-11-21",
           "ZAP-20-21-LB-2026-11-21"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6206,7 +6332,7 @@
     "incident_description": "Russian Shahed drone struck a NOVUS supermarket in Vyshneve, killing three people and injuring at least 15. Earlier updates reported one death and then two; the final reported toll was three. The incident is counted once at three deaths.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "VYSHNEVE-UP-2026-11-22",
@@ -6246,7 +6372,8 @@
         "source_ids": [
           "VYSHNEVE-UP-2026-11-22",
           "VYSHNEVE-TKACHENKO-2026-11-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6262,7 +6389,7 @@
     "incident_description": "Russian attack damaged a private house in Bila Tserkva district and killed a man whose body was recovered from beneath the rubble. Four other people were injured. This is separate from the Nov. 25 fatal drone attack elsewhere in the district.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "BILA-22-UKRINFORM-2026-11-22",
@@ -6301,7 +6428,8 @@
         "source_ids": [
           "BILA-22-UKRINFORM-2026-11-22",
           "BILA-22-TKACHENKO-2026-11-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6317,7 +6445,7 @@
     "incident_description": "Russian attacks on Dnipro on Nov. 22 killed a woman and damaged residential buildings and infrastructure. This is separate from the Nov. 3, Nov. 10 and Nov. 16 Dnipro incidents.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "DNIPRO-22-UKRINFORM-2026-11-22",
@@ -6356,7 +6484,8 @@
         "source_ids": [
           "DNIPRO-22-UKRINFORM-2026-11-22",
           "DNIPRO-22-UP-2026-11-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6372,7 +6501,7 @@
     "incident_description": "A Russian FPV drone exploded after two local residents encountered it near Mazivka, killing 15-year-old Kyrylo Kozburh at the scene. The regional administration initially reported the boy as 14; the community head later confirmed he was 15.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "MAZIVKA-UP-2026-11-22",
@@ -6412,7 +6541,8 @@
         "source_ids": [
           "MAZIVKA-UP-2026-11-22",
           "MAZIVKA-EVIDENCEHUB-2026-11-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6428,7 +6558,7 @@
     "incident_description": "Russian guided aerial bomb struck an enterprise in Zaporizhia, killing a 40-year-old man and injuring a 36-year-old man. This is the fatality reported in the separate Zavodskyi-district update and is counted once, not as an additional sixth incident.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "ZAP-ENTERPRISE-NPU-2026-11-23",
@@ -6468,7 +6598,8 @@
         "source_ids": [
           "ZAP-ENTERPRISE-NPU-2026-11-23",
           "ZAP-ENTERPRISE-UKRINFORM-2026-11-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6484,7 +6615,7 @@
     "incident_description": "Russian attacks on Sloviansk on Oct. 31 killed one person and injured two, according to the Donetsk Regional Military Administration's Nov. 1 morning report.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SLOVIANSK-31-FILASHKIN-2026-11-01",
@@ -6510,7 +6641,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "SLOVIANSK-31-FILASHKIN-2026-11-01"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6526,7 +6658,7 @@
     "incident_description": "Russian jet-powered UAV struck a platform at Dnipro railway station while passenger train No. 866 was standing there, killing 15 people. The first update reported 13 deaths, the toll rose to 14 on Oct. 29, and a 40-year-old man wounded in the attack died in hospital on Oct. 30, raising the final toll to 15.",
     "documented_deaths": 15,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "DNIPRO-STATION-HANZHA-2026-10-29-32901",
@@ -6591,7 +6723,8 @@
           "DNIPRO-STATION-REUTERS-2026-10-29",
           "DNIPRO-STATION-IFAX-2026-10-29",
           "DNIPRO-STATION-DAY-OF-MOURNING-2026-10-30"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6607,7 +6740,7 @@
     "incident_description": "Russian drone struck a multi-storey residential building in Kremenchuk, killing three people and injuring 32. The regional administration initially reported two deaths; later reports raised the toll to three.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KREMENCHUK-OVA-2026-10-29-35193",
@@ -6646,7 +6779,8 @@
         "source_ids": [
           "KREMENCHUK-OVA-2026-10-29-35193",
           "KREMENCHUK-SUSPILNE-2026-10-29"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6662,7 +6796,7 @@
     "incident_description": "Russian combat drone struck Kharkiv's Osnoviansky district, starting a fire and killing one person.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KHARKIV-OSNOVIANSKY-TEREKHOV-2026-10-28",
@@ -6701,7 +6835,8 @@
         "source_ids": [
           "KHARKIV-OSNOVIANSKY-TEREKHOV-2026-10-28",
           "KHARKIV-OSNOVIANSKY-UP-2026-10-28"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6717,7 +6852,7 @@
     "incident_description": "Russian attacks in Donetsk region killed one person in Novodonetske on Oct. 28. A separate death reported in Iverske was already included in the Oct. 27 record and is not counted again.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "NOVODONETSKE-FILASHKIN-2026-10-28-18948",
@@ -6743,7 +6878,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "NOVODONETSKE-FILASHKIN-2026-10-28-18948"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6759,7 +6895,7 @@
     "incident_description": "Russian attacks on Donetsk region killed one person in Sukhanivka on Oct. 27.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SUKHANIVKA-FILASHKIN-2026-10-27-18922",
@@ -6785,7 +6921,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "SUKHANIVKA-FILASHKIN-2026-10-27-18922"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6801,7 +6938,7 @@
     "incident_description": "Russian attacks on Donetsk region killed one person in Kramatorsk on Oct. 27.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KRAMATORSK-FILASHKIN-2026-10-27-18922",
@@ -6827,7 +6964,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KRAMATORSK-FILASHKIN-2026-10-27-18922"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6843,7 +6981,7 @@
     "incident_description": "Russian attacks on Donetsk region killed one person in Iverske on Oct. 27. A Nov. 28 regional update repeated this death in a daily roundup; it is counted once here.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "IVERSKE-FILASHKIN-2026-10-27-18922",
@@ -6869,7 +7007,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "IVERSKE-FILASHKIN-2026-10-27-18922"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6885,7 +7024,7 @@
     "incident_description": "Russian strikes across Kyiv on the evening of Oct. 26 killed one person and injured 10. One person was found dead near a supermarket; the citywide casualty update is recorded once as this incident.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KYIV-26-KLYCHKO-2026-10-26",
@@ -6924,7 +7063,8 @@
         "source_ids": [
           "KYIV-26-KLYCHKO-2026-10-26",
           "KYIV-26-REUTERS-2026-10-26"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6940,7 +7080,7 @@
     "incident_description": "Russian attacks on Kramatorsk on Oct. 26 killed one person and wounded three, according to Donetsk Regional Military Administration head Vadym Filashkin.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KRAMATORSK-26-FILASHKIN-2026-10-26-18902",
@@ -6966,7 +7106,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KRAMATORSK-26-FILASHKIN-2026-10-26-18902"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -6982,7 +7123,7 @@
     "incident_description": "Russian drone struck a residential area in Synelnykove on Oct. 24, killing four people and injuring 13. Three people died at the scene; a 62-year-old man died in hospital on Oct. 25, raising the toll to four.",
     "documented_deaths": 4,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "SYNELNYKOVE-HANZHA-2026-10-24-32827",
@@ -7034,7 +7175,8 @@
           "SYNELNYKOVE-HANZHA-2026-10-24-32827",
           "SYNELNYKOVE-HANZHA-2026-10-25-32831",
           "SYNELNYKOVE-UP-2026-10-25"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7050,7 +7192,7 @@
     "incident_description": "A Russian jet-powered drone struck a single-storey building in Novobavarsky district late on Oct. 24, killing one person and injuring four.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KHARKIV-NOVOBAVARSKY-RBC-2026-10-24",
@@ -7076,7 +7218,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KHARKIV-NOVOBAVARSKY-RBC-2026-10-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7092,7 +7235,7 @@
     "incident_description": "Russian attack killed a 42-year-old woman in Lymanivka, Lozova community, and damaged four private houses.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "LYMANIVKA-KHARKIV-ODA-2026-10-22",
@@ -7118,7 +7261,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "LYMANIVKA-KHARKIV-ODA-2026-10-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7134,7 +7278,7 @@
     "incident_description": "Russian drone struck a 24-storey residential building in Sviatoshynsky district overnight on Oct. 20–21, killing two people and injuring two. A separate drone strike on transport infrastructure in Solomiansky district is not counted as an additional death.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KYIV-SVIATOSHYNSKY-KLYCHKO-2026-10-21",
@@ -7160,7 +7304,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KYIV-SVIATOSHYNSKY-KLYCHKO-2026-10-21"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7176,7 +7321,7 @@
     "incident_description": "Russian ballistic attack on Kyiv on Oct. 21 killed one person and injured 22 across six districts. The State Emergency Service's next-morning citywide report confirmed one death.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KYIV-BALLISTIC-REUTERS-2026-10-21",
@@ -7215,7 +7360,8 @@
         "source_ids": [
           "KYIV-BALLISTIC-REUTERS-2026-10-21",
           "KYIV-BALLISTIC-DSNS-2026-10-22-78447"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7231,7 +7377,7 @@
     "incident_description": "A UAV fell near a filling station in Holosiivsky district, killing one person and injuring four. The mayor's later citywide casualty update also reported one death; it is the same fatality and is not counted again.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "HOLOSIIVSKY-KLYCHKO-2026-10-20-7914",
@@ -7257,7 +7403,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "HOLOSIIVSKY-KLYCHKO-2026-10-20-7914"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7273,7 +7420,7 @@
     "incident_description": "Russian guided aerial bombs struck Kramatorsk, killing three municipal heating-network workers who were inspecting heating infrastructure ahead of winter: Andriy Dorosh, Yuriy Biriukov and Dmytro Sidorov.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "KRAMATORSK-COUNCIL-2026-10-20-28367",
@@ -7299,7 +7446,8 @@
         "reason": "Initial incident record created from the cited official report and corroborating coverage.",
         "source_ids": [
           "KRAMATORSK-COUNCIL-2026-10-20-28367"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7315,7 +7463,7 @@
     "incident_description": "Russian overnight ballistic attack on Kyiv killed a 21-year-old woman and injured at least eight. The victim was identified by Kyiv Mayor Vitali Klitschko at 01:11 on Oct. 19.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KYIV-19-KLYCHKO-2026-10-19",
@@ -7354,7 +7502,8 @@
         "source_ids": [
           "KYIV-19-KLYCHKO-2026-10-19",
           "KYIV-19-CENSOR-2026-10-19"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7370,7 +7519,7 @@
     "incident_description": "Russian drone struck the central park in Nova Vodolaha at about 16:30 while families with children were present, killing six people: three women, a man and two girls aged 14 months and 11 years. The mother of the 14-month-old girl died in hospital. The initial report listed three deaths; later updates raised the toll to six.",
     "documented_deaths": 6,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "NOVA-VODOLAHA-UP-2026-10-19",
@@ -7423,7 +7572,8 @@
         "source_ids": [
           "NOVA-VODOLAHA-RBC-2026-10-19",
           "NOVA-VODOLAHA-UP-2026-10-19"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002",
@@ -7434,7 +7584,8 @@
         "source_ids": [
           "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
           "NOVA-VODOLAHA-UP-2026-10-19"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7450,7 +7601,7 @@
     "incident_description": "Russian strike hit the crowded central market in Lozova at lunchtime, killing two women at the scene. A third woman later died in hospital on Oct. 23, raising the final locally reported toll to three. A later OHCHR October report listed four deaths; no fourth victim has been identified in the Ukrainian regional or local reporting reviewed.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "LOZOVA-UKRINFORM-2026-10-22",
@@ -7513,7 +7664,8 @@
         "source_ids": [
           "LOZOVA-UKRINFORM-2026-10-22",
           "LOZOVA-UP-2026-10-22"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002",
@@ -7524,7 +7676,8 @@
         "source_ids": [
           "LOZOVA-IFAX-2026-10-23",
           "LOZOVA-EVIDENCEHUB-2026-10-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7540,7 +7693,7 @@
     "incident_description": "Russian guided aerial bombs struck a building housing the Izium branch of the Kharkiv Center for Disease Control and Prevention, killing five female employees and injuring 14 people.",
     "documented_deaths": 5,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "IZIUM-IFAX-2026-10-30",
@@ -7589,7 +7742,8 @@
         "reason": "The project dashboard recorded four people killed in the Oct. 29 airstrike on Izium as of Oct. 30.",
         "source_ids": [
           "IZIUM-PROJECT-CHRONOLOGY-2026-10-30-4"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002",
@@ -7600,7 +7754,8 @@
         "source_ids": [
           "IZIUM-IFAX-2026-10-30",
           "IZIUM-UKRINFORM-2026-10-30"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7616,7 +7771,7 @@
     "incident_description": "Russian aircraft carried out two strikes on the same location in Korabelnyi district within an hour. The second strike killed a 64-year-old emergency medical services driver while he was responding to the first strike. Official Ukrainian reporting confirms one death; OHCHR's October report lists two men killed in Kherson on this date, and the second death remains unallocated pending source verification.",
     "documented_deaths": 1,
     "scope_classification": "non_combatant_emergency_personnel",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KHERSON-17-UP-2026-10-17",
@@ -7668,7 +7823,8 @@
           "KHERSON-17-UP-2026-10-17",
           "KHERSON-17-UKRINFORM-2026-10-17",
           "KHERSON-17-IFAX-2026-10-17"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7684,7 +7840,7 @@
     "incident_description": "Russian FAB-250 airstrikes destroyed two five-storey residential buildings in Sloviansk on Oct. 17. After five days of rescue work, the local city administration confirmed nine deaths and 12 injured. Seven bodies were recovered from the rubble, including a State Emergency Service employee; the local administration's final toll was nine. OHCHR's October report lists 12 civilian deaths in Sloviansk on this date, a three-death discrepancy that remains open.",
     "documented_deaths": 9,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "SLOVIANSK-17-UP-2026-10-17",
@@ -7746,7 +7902,8 @@
         "reason": "Initial city administration report confirmed one person killed and 10 injured.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-17"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002",
@@ -7756,7 +7913,8 @@
         "reason": "As rescue work continued, the local city administration raised the toll to six.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-18"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-003",
@@ -7767,7 +7925,8 @@
         "source_ids": [
           "SLOVIANSK-17-IFAX-2026-10-21",
           "SLOVIANSK-17-UKRINFORM-2026-10-21"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7783,7 +7942,7 @@
     "incident_description": "Russian guided aerial bombs struck residential areas of Zaporizhia on Oct. 10. The initial rescue-operation update reported 20 deaths; later President Volodymyr Zelenskyy and the regional State Emergency Service confirmed a final toll of 23, including four children.",
     "documented_deaths": 23,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "ZAP-10-DSNS-2026-10-11",
@@ -7821,7 +7980,8 @@
         "reason": "Initial rescue-operation report counted 20 deaths.",
         "source_ids": [
           "ZAP-10-DSNS-2026-10-11"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS-REV-002",
@@ -7831,7 +7991,8 @@
         "reason": "President Zelenskyy reported 23 deaths; the regional DSNS spokesperson confirmed the final toll was 23.",
         "source_ids": [
           "ZAP-10-UP-2026-10-11"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7847,7 +8008,7 @@
     "incident_description": "Russian UMPB D-30 SN guided bomb struck a street as two passenger buses were carrying civilians in Kramatorsk, killing 33 people and injuring 18. The local State Emergency Service and regional prosecutor reported the final toll of 33. OHCHR's October report separately states that 11 civilian deaths were verified and 19 additional reported deaths remained under verification; that verification difference is retained as a source note and does not automatically replace the official local toll.",
     "documented_deaths": 33,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KRAMATORSK-BUS-UKRINFORM-2026-10-08",
@@ -7885,7 +8046,8 @@
         "reason": "Initial report at the scene confirmed 12 deaths.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-002",
@@ -7895,7 +8057,8 @@
         "reason": "Donetsk Regional Prosecutor's Office update raised the death toll to 30.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-003",
@@ -7905,7 +8068,8 @@
         "reason": "State Emergency Service reported the final local toll of 33 deaths.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7921,7 +8085,7 @@
     "incident_description": "Russian drone attacks on three districts of Kharkiv on Oct. 16 struck a market and energy and transport infrastructure. The regional administration's later update confirmed two people killed, a 71-year-old woman and a 58-year-old man. An earlier report had put the toll at three; the later official update gives two confirmed deaths.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KHARKIV-16-REUTERS-2026-10-16",
@@ -7960,7 +8124,8 @@
         "reason": "An early report relayed the regional governor's preliminary count of three deaths.",
         "source_ids": [
           "KHARKIV-16-REUTERS-2026-10-16"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE-REV-002",
@@ -7970,7 +8135,8 @@
         "reason": "The regional administration later confirmed two deaths, identifying the victims. The earlier figure of three was superseded.",
         "source_ids": [
           "KHARKIV-16-UKRINFORM-2026-10-16"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -7986,7 +8152,7 @@
     "incident_description": "Russian drone attack on Kropyvnytskyi and surrounding transport, business and logistics sites lasted more than 10 hours, killing three people and injuring six. The regional administration and State Emergency Service reported three deaths; the Faino logistics centre's statement did not specify how many of the dead were its employees.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KROPYVNYTSKYI-UP-2026-10-15",
@@ -8025,7 +8191,8 @@
         "source_ids": [
           "KROPYVNYTSKYI-UP-2026-10-15",
           "KROPYVNYTSKYI-ODA-2026-10-15"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8041,7 +8208,7 @@
     "incident_description": "Russian drone strike on a food-processing facility in Lutsk killed six people and injured 11. The regional administration initially reported three deaths, then four, before the final toll reached six.",
     "documented_deaths": 6,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "LUTSK-OVA-11356",
@@ -8092,7 +8259,8 @@
         "reason": "Initial regional administration update reported three deaths.",
         "source_ids": [
           "LUTSK-OVA-11356"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-002",
@@ -8102,7 +8270,8 @@
         "reason": "A later update raised the toll to four.",
         "source_ids": [
           "LUTSK-OVA-11357"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-003",
@@ -8112,7 +8281,8 @@
         "reason": "The final official casualty update confirmed six deaths.",
         "source_ids": [
           "LUTSK-UP-2026-10-14"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8128,7 +8298,7 @@
     "incident_description": "Russian overnight attack on Kyiv from the evening of Oct. 13 into Oct. 14 killed three people: two in a high-rise residential building in Desniansky district and one in a non-residential building in Holosiivsky district. The separate Oct. 13 evening ballistic attack is recorded in its own incident record.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KYIV-14-UP-2026-10-14",
@@ -8179,7 +8349,8 @@
         "source_ids": [
           "KYIV-14-UP-2026-10-14",
           "KYIV-14-RED-CROSS-2026-10-14"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8195,7 +8366,7 @@
     "incident_description": "Russian ballistic missiles struck Kyiv on the evening of Oct. 13, hitting a nine-storey residential building in Desniansky district and energy infrastructure. Two people were killed and 21 injured in the residential-building strike. OHCHR's October report lists three deaths in Kyiv on this date; the additional death is not identified in the local sources reviewed.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KYIV-13-REUTERS-2026-10-13",
@@ -8245,7 +8416,8 @@
         "reason": "Initial mayoral update reported one person killed.",
         "source_ids": [
           "KYIV-13-KLYCHKO-2026-10-13"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-002",
@@ -8256,7 +8428,8 @@
         "source_ids": [
           "KYIV-13-REUTERS-2026-10-13",
           "KYIV-13-IFAX-2026-10-13"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8272,7 +8445,7 @@
     "incident_description": "Russian strike on a four-storey residential building in Kharkiv's Kholodnohirsky district on the evening of Oct. 12 killed four people. The fourth body was recovered after rescue operations continued overnight.",
     "documented_deaths": 4,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KHARKIV-12-IFAX-2026-10-13",
@@ -8311,7 +8484,8 @@
         "source_ids": [
           "KHARKIV-12-IFAX-2026-10-13",
           "KHARKIV-12-SUSPILNE-2026-10-13"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8327,7 +8501,7 @@
     "incident_description": "Russian drone struck a 25-storey residential building in Kyiv's Darnytsky district on the evening of Oct. 12, killing two people, a 59-year-old woman and a person in a car near the building.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KYIV-DARNYTSKY-12-UP-2026-10-12",
@@ -8365,7 +8539,8 @@
         "reason": "Initial city update reported one death.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-002",
@@ -8375,7 +8550,8 @@
         "reason": "Kyiv City Prosecutor's Office later confirmed two deaths, including a second person in a car near the building.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8391,7 +8567,7 @@
     "incident_description": "Russian attack on Sloviansk on Oct. 11 killed one woman and injured 10 people.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "SLOVIANSK-11-FILASHKIN-2026-10-12-18660",
@@ -8417,7 +8593,8 @@
         "reason": "Regional administration confirmed one woman killed in the Oct. 11 attack.",
         "source_ids": [
           "SLOVIANSK-11-FILASHKIN-2026-10-12-18660"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8433,7 +8610,7 @@
     "incident_description": "Russian drone struck a four-storey commercial building in Kyiv's Solomiansky district, killing three people and injuring two. The initial update reported two bodies found; a third victim later died in hospital. This is separate from the one person killed in an earlier citywide attack update on the morning of Oct. 8.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "SOLOMIANSKY-SHOP-UP-2026-10-08",
@@ -8484,7 +8661,8 @@
         "source_ids": [
           "SOLOMIANSKY-SHOP-UP-2026-10-08",
           "SOLOMIANSKY-SHOP-IFAX-2026-10-08"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KYI-KYIV-SOLOMIANSKY-2026-10-08-SHOP-STRIKE-REV-002",
@@ -8494,7 +8672,8 @@
         "reason": "Kyiv police later confirmed three people killed in the shop strike.",
         "source_ids": [
           "SOLOMIANSKY-SHOP-UKRINFORM-2026-10-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8510,7 +8689,7 @@
     "incident_description": "Kyiv Mayor Vitali Klitschko's 10:52 update reported one person killed and 11 injured in attacks on the capital earlier on Oct. 8, before the later Solomiansky shop-building strike. The specific fatal incident and victim's location were not identified in the report. This death is kept separate from the three fatalities in the subsequent shop strike.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KYIV-08-MORNING-UP-2026-10-08",
@@ -8548,7 +8727,8 @@
         "reason": "Mayor's early morning update reported one death in the attacks on Kyiv; the specific incident was not identified.",
         "source_ids": [
           "KYIV-08-MORNING-UP-2026-10-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8564,7 +8744,7 @@
     "incident_description": "Russian drone strike hit a 12-storey residential building in Kyiv's Desniansky district, killing two people and injuring 11. Emergency workers rescued 14 people from the building.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "DESNIANSKY-DSNS-2026-10-07-76916",
@@ -8603,7 +8783,8 @@
         "source_ids": [
           "DESNIANSKY-DSNS-2026-10-07-76916",
           "DESNIANSKY-DSNS-2026-10-07-76920"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8619,7 +8800,7 @@
     "incident_description": "Russian attack on Kyiv overnight on Oct. 7 killed two people in Darnytsky district and injured at least nine. This is separate from the two deaths in the Desniansky district residential-building strike.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "DARNYTSKY-07-UP-2026-10-07",
@@ -8658,7 +8839,8 @@
         "source_ids": [
           "DARNYTSKY-07-UP-2026-10-07",
           "DARNYTSKY-07-UKRINFORM-2026-10-07"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8674,7 +8856,7 @@
     "incident_description": "Russian missile strike hit a residential building in Pryluky on Oct. 7, killing 22 people, including five children, and injuring 54. The death toll rose as bodies were recovered: 14, 16, 18, 19, 20 and finally 22. The 22-death final toll was confirmed by the State Emergency Service on Oct. 8.",
     "documented_deaths": 22,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "PRYLUKY-CHAUS-2026-10-07-32184",
@@ -8737,7 +8919,8 @@
         "reason": "Initial official report counted 14 deaths.",
         "source_ids": [
           "PRYLUKY-CHAUS-2026-10-07-32184"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-002",
@@ -8747,7 +8930,8 @@
         "reason": "Further bodies were recovered, raising the toll to 16.",
         "source_ids": [
           "PRYLUKY-HROMADSKE-2026-10-07"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-003",
@@ -8757,7 +8941,8 @@
         "reason": "Further recovery work raised the toll to 20.",
         "source_ids": [
           "PRYLUKY-UP-2026-10-07"
-        ]
+        ],
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-004",
@@ -8767,7 +8952,8 @@
         "reason": "The State Emergency Service confirmed the final toll of 22 deaths, including five children.",
         "source_ids": [
           "PRYLUKY-UP-2026-10-08"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8783,7 +8969,7 @@
     "incident_description": "Russian aerial bombs struck two parts of Sloviansk on Oct. 30, damaging about 30 private houses, an apartment building, a post office and a petrol station. A Russian FPV drone also struck a car carrying a 16-year-old railway-college student and his parents. Two people were killed: the boy and a 73-year-old man. Twelve people were injured.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "SLOVIANSK-30-EVIDENCEHUB-2026-10-31",
@@ -8835,7 +9021,8 @@
           "SLOVIANSK-30-EVIDENCEHUB-2026-10-31",
           "SLOVIANSK-30-UP-2026-10-31",
           "SLOVIANSK-30-LB-2026-10-31"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8851,7 +9038,7 @@
     "incident_description": "Russian strike drones attacked a civilian enterprise in Shostka on Oct. 30, killing a 43-year-old woman and injuring eight people.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "SHOSTKA-UP-2026-10-30",
@@ -8890,7 +9077,8 @@
         "source_ids": [
           "SHOSTKA-UP-2026-10-30",
           "SHOSTKA-UKRINFORM-2026-10-30"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8906,7 +9094,7 @@
     "incident_description": "Russian attacks in Nikopol district on Oct. 30 killed one person. The regional administration reported attacks on Nikopol, Marhanets, Pokrov and Chervonohryhorivka communities; the victim's exact settlement was not identified.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "NIKOPOL-30-LB-2026-10-30",
@@ -8945,7 +9133,8 @@
         "source_ids": [
           "NIKOPOL-30-LB-2026-10-30",
           "NIKOPOL-30-N911-2026-10-30"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -8961,7 +9150,7 @@
     "incident_description": "Russian overnight drone attacks on Dnipro district communities on Oct. 31 killed one person. The regional administration reported strikes on Slobozhanske, Petrykivka and Tsarychanka communities; the victim's exact settlement was not identified.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "DNIPRO-DISTRICT-UKRINFORM-2026-10-31",
@@ -8987,7 +9176,8 @@
         "reason": "Incident record entered from the cited official report and corroborating coverage.",
         "source_ids": [
           "DNIPRO-DISTRICT-UKRINFORM-2026-10-31"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9003,7 +9193,7 @@
     "incident_description": "A Russian FPV drone struck Orikhiv, killing a 53-year-old man and injuring two people in attacks on Zaporizhia and Polohy districts.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ORIKHIV-IFAX-2026-10-31",
@@ -9042,7 +9232,8 @@
         "source_ids": [
           "ORIKHIV-IFAX-2026-10-31",
           "ORIKHIV-LOCAL-2026-10-31"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9058,7 +9249,7 @@
     "incident_description": "Russian drone attack on Pavlohrad killed DTEK miner Valentyn Kotelevskyi, 41. DTEK confirmed the death on Oct. 26; the project methodology says this corresponds to the Pavlohrad death already reported by the regional administration and included in the baseline.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_only",
     "sources": [
       {
         "source_id": "PAVLOHRAD-KOTELEVSKYI-DTEK-2026-10-26",
@@ -9097,7 +9288,8 @@
         "source_ids": [
           "PAVLOHRAD-KOTELEVSKYI-DTEK-2026-10-26",
           "PAVLOHRAD-KOTELEVSKYI-DTEK-UA-2026-10-26"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9113,7 +9305,7 @@
     "incident_description": "Russian FPV drones struck ambulances and a multi-storey apartment building in Kramatorsk on the evening of Oct. 5. A 49-year-old woman was killed in the residential-building strike; three medical workers were injured while trying to save the ambulances.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KRAMATORSK-05-UKRINFORM-2026-10-06",
@@ -9165,7 +9357,8 @@
           "KRAMATORSK-05-UKRINFORM-2026-10-06",
           "KRAMATORSK-05-UP-2026-10-06",
           "KRAMATORSK-05-CENSOR-2026-10-06"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9181,7 +9374,7 @@
     "incident_description": "Falling debris from a Russian drone struck an outbuilding in Ivano-Frankivsk on the evening of Oct. 8, killing a civilian security guard, a man born in 1959, and starting a fire.",
     "documented_deaths": 1,
     "scope_classification": "non_combatant_security_personnel",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "IFR-08-UKRINFORM-2026-10-09",
@@ -9233,7 +9426,8 @@
           "IFR-08-UKRINFORM-2026-10-09",
           "IFR-08-UP-2026-10-09",
           "IFR-08-HROMADSKE-2026-10-09"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9249,7 +9443,7 @@
     "incident_description": "Russian guided aerial bombs struck civilian infrastructure in Zaporizhia from 04:50 to 05:59 on Oct. 9, killing a 48-year-old man and injuring nine people, including a 14-year-old girl.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ZAP-09-UKRINFORM-2026-10-09",
@@ -9288,7 +9482,8 @@
         "source_ids": [
           "ZAP-09-UKRINFORM-2026-10-09",
           "ZAP-09-RBC-2026-10-09"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9304,7 +9499,7 @@
     "incident_description": "Russian attacks on Zaitseve and Petropavlivka communities in Synelnykove district on Oct. 9 killed one person and damaged an agricultural business and infrastructure. The regional administration did not identify the victim's exact settlement.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "DNE-09-UP-2026-10-09",
@@ -9343,7 +9538,8 @@
         "source_ids": [
           "DNE-09-UP-2026-10-09",
           "DNE-09-UKRINFORM-2026-10-09"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9359,7 +9555,7 @@
     "incident_description": "Russian drone dropped a munition on the Pokrovske community in Nikopol district on Oct. 10, killing an 11-year-old boy and injuring two other children, aged 12 and 10.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "NIKOPOL-BOY-UP-2026-10-10",
@@ -9398,7 +9594,8 @@
         "source_ids": [
           "NIKOPOL-BOY-UP-2026-10-10",
           "NIKOPOL-BOY-UKRINFORM-2026-10-10"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9414,7 +9611,7 @@
     "incident_description": "A separate Russian attack on Izium on Oct. 29 killed a 59-year-old woman and injured a 57-year-old woman. This is distinct from the airstrike on the local public-health institution that killed five employees.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "IZIUM-UP-2026-10-31-INITIAL",
@@ -9453,7 +9650,8 @@
         "source_ids": [
           "IZIUM-UP-2026-10-31-INITIAL",
           "KHARKIV-REGION-SYNEHUBOV-2026-10-29"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9469,7 +9667,7 @@
     "incident_description": "Russian forces dropped two KAB-250 guided bombs on Yasnohirka on Nov. 4, killing two residents and injuring one. These deaths are separate from the woman killed in a separate Yasnohirka attack on Nov. 3.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "YASNOHIRKA-04-DONETSK-POLICE-2026-11-05",
@@ -9508,7 +9706,8 @@
         "source_ids": [
           "YASNOHIRKA-04-DONETSK-POLICE-2026-11-05",
           "YASNOHIRKA-04-UKRINFORM-2026-11-05"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9524,7 +9723,7 @@
     "incident_description": "Russian airstrike on Serhiivka on Nov. 4 killed two civilians and injured others. These deaths are separate from the two people killed in Yasnohirka on the same date.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "SERHIIVKA-04-DONETSK-POLICE-2026-11-05",
@@ -9563,7 +9762,8 @@
         "source_ids": [
           "SERHIIVKA-04-DONETSK-POLICE-2026-11-05",
           "SERHIIVKA-04-UKRINFORM-2026-11-05"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9579,7 +9779,7 @@
     "incident_description": "Russian strike drone hit a private house in the Putyvl community on the evening of Nov. 4, killing a 69-year-old woman and injuring her husband. The house was destroyed and caught fire; rescuers freed the injured man from the rubble.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "PUTYVL-UP-2026-11-04",
@@ -9618,7 +9818,8 @@
         "source_ids": [
           "PUTYVL-UP-2026-11-04",
           "PUTYVL-UNN-2026-11-04"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9634,7 +9835,7 @@
     "incident_description": "Russian drone attack killed a man in Antonivka at about 16:00 on Nov. 4, according to Kherson City Military Administration head Yaroslav Shanko. The man's identity was being established.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "ANTONIVKA-UKRINFORM-2026-11-04",
@@ -9660,7 +9861,8 @@
         "reason": "Incident record entered from the cited official report and corroborating coverage.",
         "source_ids": [
           "ANTONIVKA-UKRINFORM-2026-11-04"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9676,7 +9878,7 @@
     "incident_description": "Russian FPV drone attacked a civilian car in Kramatorsk at about 11:45 on Nov. 5, killing a man. The attack damaged the car and a residential apartment building.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "KRAMATORSK-05-SUSPILNE-2026-11-05",
@@ -9702,7 +9904,8 @@
         "reason": "Incident record entered from the cited official report and corroborating coverage.",
         "source_ids": [
           "KRAMATORSK-05-SUSPILNE-2026-11-05"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9718,7 +9921,7 @@
     "incident_description": "Russian drone attack on a village in Sarny district on the morning of Nov. 6 killed a man and damaged a house and a lorry.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "SARNY-06-IFAX-2026-11-06",
@@ -9757,7 +9960,8 @@
         "source_ids": [
           "SARNY-06-IFAX-2026-11-06",
           "SARNY-06-UKRINFORM-2026-11-06"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9773,7 +9977,7 @@
     "incident_description": "Russian attack on Dnipro on Oct. 23 damaged infrastructure, businesses, private homes and cars, killing one person and injuring eight. The regional administration confirmed the death in its Oct. 23 casualty update.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "DNIPRO-23-LB-2026-10-23",
@@ -9812,7 +10016,8 @@
         "source_ids": [
           "DNIPRO-23-LB-2026-10-23",
           "DNIPRO-23-LB-2026-10-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9828,7 +10033,7 @@
     "incident_description": "Russian forces dropped three FAB-250 guided aerial bombs on a residential neighbourhood in Kramatorsk at 15:44 on Oct. 23, killing one person and injuring six, including three children.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KRAMATORSK-23-UKRINFORM-2026-10-24",
@@ -9867,7 +10072,8 @@
         "source_ids": [
           "KRAMATORSK-23-UKRINFORM-2026-10-24",
           "KRAMATORSK-23-DONETSK-ODA-2026-10-23"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9883,7 +10089,7 @@
     "incident_description": "Russian shelling in the Marhanets community of Nikopol district on Oct. 22 killed a 43-year-old man in a residential area. A separate 51-year-old man was seriously injured in another attack in the region.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "NIKOPOL-22-IFAX-2026-10-22",
@@ -9922,7 +10128,8 @@
         "source_ids": [
           "NIKOPOL-22-IFAX-2026-10-22",
           "NIKOPOL-22-ZMINA-2026-10-22"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9938,7 +10145,7 @@
     "incident_description": "Russian missile strike hit a warehouse building in Lozova on Oct. 24, killing a 45-year-old man and injuring two men aged 26 and 43. A 37-year-old woman also required medical attention for an acute stress reaction.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "LOZOVA-WAREHOUSE-IFAX-2026-10-24",
@@ -9977,7 +10184,8 @@
         "source_ids": [
           "LOZOVA-WAREHOUSE-IFAX-2026-10-24",
           "LOZOVA-WAREHOUSE-UKRINFORM-2026-10-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -9993,7 +10201,7 @@
     "incident_description": "Russian drone attack struck a cattle-breeding farm in Konotop district on Oct. 24, killing a 31-year-old female farm worker and injuring four other people. The body was recovered from beneath the rubble.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "SUMY-FARM-UKRINFORM-2026-10-24",
@@ -10032,7 +10240,8 @@
         "source_ids": [
           "SUMY-FARM-UKRINFORM-2026-10-24",
           "SUMY-FARM-UP-2026-10-24"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -10048,7 +10257,7 @@
     "incident_description": "Russian shelling killed one person in Yarova, in Lyman community, on Oct. 24. Donetsk Regional Military Administration head Vadym Filashkin reported the death in his Oct. 25 morning casualty update.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
+    "evidence_classification": "media_reported",
     "sources": [
       {
         "source_id": "YAROVA-LB-2026-10-25",
@@ -10087,7 +10296,8 @@
         "source_ids": [
           "YAROVA-LB-2026-10-25",
           "YAROVA-HUA-2026-10-25"
-        ]
+        ],
+        "ledger_effective_at": null
       }
     ]
   }

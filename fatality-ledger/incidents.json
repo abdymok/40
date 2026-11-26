@@ -3862,7 +3862,7 @@
         "recorded_at": "2026-10-31T11:27:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Ukrainska Pravda first identified this separate death on Oct. 31. The Nov. 2 174 baseline's itemized Izium entries are four people killed in the Oct. 29 airstrike and one person killed in a separate Nov. 2 morning attack; this Oct. 29 death in a different attack is not named. The later 421 reconciliation identifies no separate addition for this incident. Its inclusion in a later, non-itemized subtotal is unproven; keep ledger_effective_at null.",
+        "reason": "Ukrainska Pravda first identified this separate Oct. 29 death on Oct. 31. The Oct. 28 baseline predates the incident. The 148→167 Oct. 29 increment is mapped to the 19-death Oct. 29 cohort and does not include this separate Izium attack; the 167→173 Oct. 30 increment is mapped to one Kyiv death, one delayed Dnipro railway-station death and four deaths in the public-health-institution strike; and the 173→174 Nov. 2 increment is the separate morning Izium guided-bomb death. The 174→192 update is the 18-death Komyshuvakha addition. The subsequent 192→421 sequence is fully allocated in Stages 44–52 and contains no addition for this separate Oct. 29 death. It is therefore an established exclusion from the historical 421 public subtotal. Keep ledger_effective_at null. See STAGE-106-CHECKPOINT.md.",
         "source_ids": [
           "IZIUM-UP-2026-10-31-INITIAL",
           "KHARKIV-REGION-SYNEHUBOV-2026-10-29"
@@ -3940,7 +3940,7 @@
         "recorded_at": "2026-10-30T20:16:00+02:00",
         "old_value": 4,
         "new_value": 5,
-        "reason": "The historical Oct. 30 dashboard and Nov. 2 174 baseline explicitly include four deaths in the Oct. 29 Izium airstrike. Interfax-Ukraine later reported the fifth death, raising the incident from four to five, but the 174 baseline's itemized entry remains four. The later 421 reconciliation identifies no separate addition for this fifth death. Its inclusion in a later, non-itemized subtotal is unproven; keep ledger_effective_at null.",
+        "reason": "Interfax-Ukraine and Ukrinform reported the fifth employee death after the historical dashboard had recorded four. The 167→173 Oct. 30 update is explicitly mapped to one Kyiv death, one delayed Dnipro railway-station death and four deaths in this Izium strike; the 173→174 Nov. 2 increment is a separate morning Izium guided-bomb death. The 174→192 update is the 18-death Komyshuvakha addition. Stages 44–52 account for every subsequent increment from 192 to 421, with no addition for this fifth employee death. It is therefore an established exclusion from the historical 421 public subtotal. Keep ledger_effective_at null. See STAGE-106-CHECKPOINT.md.",
         "source_ids": [
           "IZIUM-IFAX-2026-10-30",
           "IZIUM-UKRINFORM-2026-10-30"
@@ -7181,7 +7181,7 @@
         "recorded_at": "2026-11-11T14:06:00+02:00",
         "old_value": 1,
         "new_value": 3,
-        "reason": "Two people hospitalized with severe injuries died in hospital, raising the toll to three. The later hospital death is documented in the final incident count, but the 421 public subtotal's historical change log only establishes the initial death; no later inclusion date is proven.",
+        "reason": "The two hospital deaths that raised the Chornomorsk market toll from one to three are documented in the incident record, but are not included in the historical 421 public subtotal. The 282→283 increment counts the initial market death. The following 283→421 increments are fully mapped in Stages 47–52 and contain no Chornomorsk hospital-death addition. The method-to-ledger comparison independently identifies the three later Chornomorsk deaths as part of the +5 raw-ledger excess over the 229 public additions after 192. This 1→3 revision is therefore an established exclusion. Keep ledger_effective_at null. See STAGE-106-CHECKPOINT.md.",
         "source_ids": [
           "CHORNOMORSK-UP-2026-11-11-FINAL",
           "CHORNOMORSK-KI-2026-11-11"
@@ -7193,7 +7193,7 @@
         "recorded_at": "2026-11-11",
         "old_value": 3,
         "new_value": 4,
-        "reason": "A further hospitalized victim died, and Kiper confirmed the final toll of four. The later hospital death is documented in the final incident count, but the 421 public subtotal's historical change log only establishes the initial death; no later inclusion date is proven.",
+        "reason": "The fourth and final Chornomorsk death is documented in the incident record, but the three later hospital deaths are not included in the historical 421 public subtotal. The 282→283 increment counts only the initial market death. The subsequent 283→421 increments are fully mapped in Stages 47–52 and contain no Chornomorsk hospital-death addition. The method-to-ledger comparison independently identifies all three later Chornomorsk deaths as part of the +5 raw-ledger excess over the 229 public additions after 192. This 3→4 revision is therefore an established exclusion. Keep ledger_effective_at null. See STAGE-106-CHECKPOINT.md.",
         "source_ids": [
           "CHORNOMORSK-UP-2026-11-11-FINAL",
           "CHORNOMORSK-EVIDENCEHUB-2026-11-11"

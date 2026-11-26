@@ -1,11 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 20 analysis, amended at Stage 29 on Nov. 26  
-**Current ledger sum:** 438  
+**Working status:** Stage 20 analysis, amended through Stage 31 on Nov. 26  
+**Current ledger sum:** 439  
 **Published method-page minimum:** 418  
-**Current difference:** +20 in the pilot incident dataset  
+**Current difference:** +21 in the pilot incident dataset  
 
-> **Stage 29 amendment:** The Oct. 29 Chernihiv strike killing two 15-year-old girls was absent from the structured ledger and has now been added as one incident. The current dataset contains 166 incidents, 379 source records and 438 deaths. The original Stage 20 decomposition (+13 +2 +3 = +18) is superseded. The current pre-Oct. 29 inventory sums to 162 (14 above the legacy 148); the current Oct. 29 incident-date group sums to 26 (one above the historical 25-death transition to 173). The remaining post-baseline allocation must be recalculated from the latest records and historical inclusion dates.
+> **Stage 31 amendment:** The current dataset contains 167 incidents, 386 source records and 439 deaths. The missing Kyiv fatality from the late-evening Oct. 29 ballistic attack has been added. The current incident-date inventory through Oct. 28 sums to 162 (14 above the legacy 148); the Oct. 29 incident-date group sums to 27 (two above the historical 25-death transition to 173); and current post-192 additions sum to 231, five above the method's 226. The resulting arithmetic difference is +14 +2 +5 = +21. This is an incident-inventory comparison, not proof of when each death entered the public subtotal. Exact inclusion dates remain unresolved.
 
 ## What is established
 
@@ -55,9 +55,9 @@ The historical sequence is now explicit:
 - Nov. 2 Komyshuvakha opening count: 18, plus the Nov. 2 Izium death, producing the 192 opening subtotal used by the method page.
 - The Stage 20 snapshot of the current incident inventory through Oct. 28 was 161, 13 above the legacy 148. The refreshed Stage 24–29 dataset now sums to 162, 14 above the legacy 148. The exact membership of those 14 deaths in the old subtotal is still being reconstructed; incident date alone is insufficient because several deaths were reported or revised later.
 - The Stage 20 snapshot stated that Oct. 29 incident records summed to 27, two above the 25 in the 173 snapshot. That figure is not reproduced by the current dataset. After adding the omitted Chernihiv incident, the current Oct. 29 incident-date sum is 26: Dnipro railway station (15), Kremenchuk (3), Chernihiv (2), the Izium public-health institution (5) and a separate Izium attack (1). The known historical count difference is the public-health institution's 4 → 5 revision; the separate Izium death must remain a distinct incident. The current one-death excess over the historical 25 is consistent with the institution's fifth death being added after the 173 snapshot, but the exact inclusion time still requires confirmation. The older 27 figure remains unexplained and is not reproduced by the current dataset.
-- The current post-192 additions sum to 229, three above the method's 226. The clearly identified upward revisions are Chornomorsk (+3 beyond the method's one) and Dnipro on Nov. 3 (+1 beyond the method's one). One death elsewhere in the post-baseline comparison remains to be reconciled downward or identified as a missing method increment.
+- The current post-192 additions sum to 231, five above the method's 226. The five-death difference is now accounted for by three known incident-level differences: Chornomorsk (four final deaths against the method's one-death increment, +3); Dnipro on Nov. 3 (two final deaths against the method's one-death increment, +1); and Saltivsky district on Nov. 11 (two final deaths, but the first death was already in the preceding subtotal, so the method correctly adds only one; counting both as new produces +1). These explain the +5 arithmetic, subject to explicit effective-date fields still being completed.
 
-These historical components once produced a working difference of +13 +2 +3 = **+18**. That arithmetic is superseded by the Stage 29 dataset refresh: the current difference is **+20**, and the old category allocations do not reconcile to the current incident file. Reconstruct the remaining post-baseline allocation rather than forcing the old decomposition.
+The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18 and the Stage 29 +20 estimate) are superseded by the Stage 31 comparison. The current arithmetic is **+14 +2 +5 = +21**: 162 versus 148 through Oct. 28; 27 versus 25 for Oct. 29; and 231 versus 226 in post-192 additions. The +14 pre-Oct. 29 difference still requires source-by-source allocation of revisions and historical inclusion dates. The +2 Oct. 29 difference is the fifth death in the public-health institution strike plus the separately reported 59-year-old woman killed in Izium; the historical 173 snapshot listed four Izium airstrike deaths. The Kyiv fatality is now included and is part of the historical 25. Do not infer `ledger_effective_at` from incident date or report date.
 
 ## Required next work
 

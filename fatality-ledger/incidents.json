@@ -1142,12 +1142,12 @@
         "recorded_at": "2026-10-15T07:58:00+02:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Regional administration and DSNS confirmed three people killed in the overnight attack. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Kirovohrad Regional Military Administration and State Emergency Service confirmed three deaths. The Oct. 15 dashboard update explicitly raises the selected subtotal 92→95 for these three deaths; first documented inclusion date: 2026-10-15.",
         "source_ids": [
           "KROPYVNYTSKYI-UP-2026-10-15",
           "KROPYVNYTSKYI-ODA-2026-10-15"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-15"
       }
     ]
   },
@@ -1356,33 +1356,33 @@
         "recorded_at": "2026-10-14",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial regional administration update reported three deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The initial regional administration report recorded three deaths. The Oct. 14 selected-subtotal update later added the four-death Lutsk toll in the 85→89 transition; first documented inclusion date: 2026-10-14.",
         "source_ids": [
           "LUTSK-OVA-11356"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-14"
       },
       {
         "revision_id": "UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-002",
         "recorded_at": "2026-10-14",
         "old_value": 3,
         "new_value": 4,
-        "reason": "A later update raised the toll to four. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Volyn regional administration revised the Lutsk toll from three to four. The Oct. 14 selected-subtotal snapshot at approximately 89 explicitly includes four deaths in Lutsk; first documented inclusion date: 2026-10-14.",
         "source_ids": [
           "LUTSK-OVA-11357"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-14"
       },
       {
         "revision_id": "UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-003",
         "recorded_at": "2026-10-14T23:10:00+02:00",
         "old_value": 4,
         "new_value": 6,
-        "reason": "The final official casualty update confirmed six deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The final Lutsk toll rose from four to six. The Oct. 15 dashboard update history explicitly records the 90→92 increase for this two-death revision; first documented inclusion date: 2026-10-15.",
         "source_ids": [
           "LUTSK-UP-2026-10-14"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-15"
       }
     ]
   },

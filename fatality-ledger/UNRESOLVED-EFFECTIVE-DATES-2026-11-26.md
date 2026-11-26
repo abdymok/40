@@ -1,6 +1,6 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 82. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 83. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
@@ -42,6 +42,10 @@ The Oct. 21 dashboard/method update establishes inclusion of the final nine-deat
 ## Stage 82 adjudication
 
 Lymanivka REV-001 (—→1) is now dated Oct. 22. Commit `3513193d093e5166b216f9112bd25da39f8dbb41` adds the fatal incident and explicitly raises the selected subtotal 116→117; the Oct. 22 method snapshot includes the death. See `STAGE-82-CHECKPOINT.md`.
+
+## Stage 83 adjudication
+
+The Oct. 26 Uman death is not included in the Oct. 28 ≈148 baseline: the 138→141 update names three other deaths, and subsequent increments to 148 are separately itemized without Uman. The 174→192 transition on Nov. 2 is explicitly the Komyshuvakha revision; the 174 baseline's itemized additions also do not identify Uman. The current dashboard update history contains no Uman reference. Later inclusion in the 421 minimum is not proven, so Uman REV-001 remains null. See `STAGE-83-CHECKPOINT.md`.
 
 ## Adjudication rules
 

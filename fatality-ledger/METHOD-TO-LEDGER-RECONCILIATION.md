@@ -100,7 +100,7 @@ The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage
 ## Required next work
 
 1. Reconstruct membership of the legacy 148 and 192 snapshots from the original commits and change-log entries, including source publication date and the date the project actually counted each death.
-2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Thirty-six revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
+2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Thirty-eight revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
 3. Continue mapping historical subtotal increments to individual records. The post-192 +5 is now accounted for by Chornomorsk (+3), Dnipro Nov. 3 (+1) and Saltivsky (+1).
 4. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until source/duplicate questions are settled.
 5. Do not force the ledger to 418. The current total is a calculated pilot sum and may change if source-level deduplication or additional incident verification changes any record.
@@ -150,12 +150,12 @@ The incident dataset now records the historical progression rather than only the
 - Kyiv ballistic attack: one death entered on Oct. 30.
 - Izium public-health institution: four deaths entered on Oct. 30; the fifth death remains a later final-count revision with no proven dashboard inclusion date.
 
-The dataset now has 36 revision entries with non-null ledger_effective_at and 187 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
+The dataset now has 38 revision entries with non-null ledger_effective_at and 185 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
 
 ### 192 baseline interpretation
 
 The original Nov. 2 dashboard snapshot shows 192 after an increase from approximately 174 to 192 for the initial 18 deaths reported in Komyshuvakha. The 174 baseline therefore precedes that +18. The method page also identifies one further Nov. 2 death in Izium before the Komyshuvakha increment. The 192 snapshot arithmetic is consequently 173 + 1 + 18 = 192.
 
-The incident-level identity and effective date of that additional Nov. 2 Izium death must be matched to its record in the next stage. The 18 Komyshuvakha deaths are a baseline allocation, not an additional incident-date subtotal to be added again later.
+The additional Nov. 2 Izium death is matched to UA-KHA-IZIUM-2026-11-02-GUIDED-BOMBS and its ledger_effective_at is set to Nov. 2. The Komyshuvakha revision from one preliminary death to 18 is also assigned to Nov. 2; the preliminary one is not counted as a separate increment. The 18 Komyshuvakha deaths are a baseline allocation, not an additional incident-date subtotal to be added again later.
 
 No public chronology, methodology page, dashboard figure or live running total was changed.

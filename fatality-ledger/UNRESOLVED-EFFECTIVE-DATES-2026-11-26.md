@@ -188,4 +188,15 @@ Stages 100, 102 and 103 now account for all 26 pre-Oct. 29 null revisions: 12 cl
 - Incident ledger: 176 incidents, 430 sources, 452 final documented deaths, 231 revisions.
 - Public provisional minimum: 421, unchanged.
 
-The remaining seven post-Oct. 29 revisions are outside this legacy-baseline closeout and retain their separate inclusion/overlap questions. No further pre-Oct. 29 audit work is pending unless new contemporaneous evidence is recovered.
+The seven post-Oct. 29 revisions were reviewed and closed in Stage 104. Two are explicitly not included in the 421 subtotal (the first Saltivsky death and the second Dnipro death); five have no confirmed inclusion date in the carried-forward subtotal (the two additional Oct. 29 Izium deaths, Oct. 31 Sloviansk and two later Chornomorsk deaths). No further historical audit work is pending unless new contemporaneous evidence is recovered.
+
+
+## Stage 104 — post-Oct. 29 and 421-baseline closeout
+
+Stage 104 reviewed all seven post-Oct. 29 null revisions, net +8. The first Saltivsky death is not included in the 421 subtotal: the timestamped 283→284 update adds only the second death. The second Nov. 3 Dnipro death is also not included: the mapped sequence adds one Dnipro death, with the following +3 fully allocated to Komyshuvakha and Hotiv. The two additional Oct. 29 Izium deaths, Oct. 31 Sloviansk death and two later Chornomorsk hospital deaths have no confirmed inclusion date in the carried-forward subtotal. All seven remain null. See `STAGE-104-CHECKPOINT.md`.
+
+## Final audit closeout
+
+The historical reconciliation audit is complete to the limit of surviving evidence. All 33 null revisions have been reviewed: 26 pre-Oct. 29 entries, net +82, and seven later entries, net +8. Of the legacy entries, 12 are classified as interim/superseded tolls, a public-count correction not reflected in the subtotal, or separately categorized cases; 14 remain without a confirmed inclusion date, net +19. Of the seven later entries, two are established exclusions from 421 and five have unverified inclusion in a carried-forward aggregate. Null dates are retained where evidence does not establish a first public inclusion date. The arithmetic net +90 is not a correction to the public total.
+
+The ledger remains 176 incidents, 430 sources, 452 final documented deaths and 231 revisions (198 dated, 33 null). The public provisional minimum remains 421. No public-facing files or figures were changed.

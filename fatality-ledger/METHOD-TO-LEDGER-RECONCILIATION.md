@@ -1,9 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 98, updated Nov. 26, 2026  
-**Current ledger sum:** 451  
+**Working status:** Stage 99, updated Nov. 26, 2026  
+**Current ledger sum:** 452  
 **Published method-page minimum:** 421  
-**Raw difference:** +30 in the pilot incident dataset
+**Raw difference:** +31 in the pilot incident dataset
+
+> **Stage 99 amendment — DTEK driver Vitaliy Shcherbyna:** A separate incident record has been added for the driver killed when a Russian drone struck a lorry at a DTEK coal-mining enterprise in Dnipropetrovsk region overnight on Oct. 25. DTEK and Interfax-Ukraine confirm the fatality. The earlier duplicate concern conflated the DTEK strike with the regional administration's separate Synelnykove residential-strike toll; the regional post attributes its three deaths, later revised to four, to that incident. The Oct. 22 ≈123 baseline predates Shcherbyna's death, and the mapped Oct. 25–28 increments do not identify him. His death is therefore recorded in the incident ledger but is not evidenced in the historical 148 baseline or published 421 minimum. The ledger now contains 176 incidents, 430 source records, 452 final documented deaths and 231 revision entries, of which 197 have confirmed effective dates and 34 remain null. The raw ledger-to-public difference is now +31. No public page or public total changed. See `STAGE-99-CHECKPOINT.md` and `UNRESOLVED-DTEK-SHCHERBYNA-OCT25.md`.
 
 > **Stage 87 amendment:** The current dataset contains 175 incidents, 428 source records and 451 final documented deaths. The current public chronology and method page both stand at 421 through Nov. 26. The pre-Oct. 29 incident-date inventory sums to 171 (23 above the legacy 148); the Oct. 29 cohort sums to 27 (two above the historical 25); and post-192 incident-date additions sum to 234 (five above the method's 229). Raw arithmetic: +23 +2 +5 = +30. The historical 148 includes three Chabany deaths excluded from the current ledger and appears to retain three deaths in the Oct. 16 Kharkiv market incident, while the current ledger keeps the later official final count of two. Adjusting only for those two known scope differences gives a provisional like-for-like pre-Oct. 29 comparison of 175 versus 148 (+27), and a provisional like-for-like overall comparison of 455 versus 421 (+34). The Uman death's inclusion in 148 remains unestablished and could shift the comparison by one. These are comparison adjustments, not proposed public totals. The ledger has 197 revision entries with confirmed ledger_effective_at dates and 33 still null. The dated historical sequence now reconciles the public 421 as 148 + 19 (Oct. 29) + 25 (Oct. 30–Nov. 2) + 229 (Nov. 3–26).
 

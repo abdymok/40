@@ -5390,5 +5390,308 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-VIN-VINNYTSIA-2026-11-17-PARKING-LOT",
+    "incident_date": "2026-11-17",
+    "location": {
+      "settlement": "Vinnytsia",
+      "district": null,
+      "region": "Vinnytsia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck a vehicle parking area in Vinnytsia, killing a 51-year-old woman driver and injuring her 23-year-old passenger. Two cars and two trucks caught fire.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "VINNYTSIA-UKRINFORM-2026-11-17",
+        "publisher": "Ukrinform, citing Vinnytsia Regional Military Administration head Nataliia Zabolotna",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T11:06:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4185465-russian-drone-strikes-parking-lot-in-vinnytsia-killing-one-woman-and-injuring-another.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one woman killed and one injured in the parking-lot strike."
+      },
+      {
+        "source_id": "VINNYTSIA-UP-2026-11-17",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T11:09:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/17/8063235/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Identifies the victim as the 51-year-old driver, killed at the scene."
+      },
+      {
+        "source_id": "VINNYTSIA-IFAX-2026-11-17",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T11:04:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1237671.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the regional administration's one-death update."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-VIN-VINNYTSIA-2026-11-17-PARKING-LOT-REV-001",
+        "recorded_at": "2026-11-17",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "VINNYTSIA-UKRINFORM-2026-11-17",
+          "VINNYTSIA-UP-2026-11-17",
+          "VINNYTSIA-IFAX-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-MYK-MYKOLAIV-2026-11-16-PORT-INDUSTRIAL-STRIKE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Mykolaiv",
+      "district": null,
+      "region": "Mykolaiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack on port and industrial infrastructure in Mykolaiv killed two men: a 41-year-old man at the scene and a 46-year-old man who died in hospital on Nov. 17. Three other men were injured.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "MYKOLAIV-KORABELOV-2026-11-17",
+        "publisher": "Korabelov.info, citing Mykolaiv Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T08:22:00+02:00",
+        "url": "https://korabelov.info/en/2026/11/637545/after-the-strike-on-the-port-and-a-business-in-mykolaiv-the-death-toll-has-risen-to-two/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "count_revision"
+        ],
+        "notes": "Reports the toll rising from one to two after a 46-year-old man died in hospital."
+      },
+      {
+        "source_id": "MYKOLAIV-LB-2026-11-17",
+        "publisher": "LB.ua, citing acting regional administration head Heorhii Reshetilov",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T08:22:00+02:00",
+        "url": "https://en.lb.ua/news/2026/11/17/50220_two_killed_russian_strike.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports both men killed in the Nov. 16 attack on port and industrial facilities."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-MYK-MYKOLAIV-2026-11-16-PORT-INDUSTRIAL-STRIKE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "MYKOLAIV-KORABELOV-2026-11-17",
+          "MYKOLAIV-LB-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-11-16-ATTACK",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Kramatorsk on Nov. 16 killed one person and injured six. The regional administration reported 11 strikes, including guided bombs and FPV drones.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-16-IFAX-2026-11-17",
+        "publisher": "Interfax-Ukraine, citing Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T09:59:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1237628.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one civilian killed in Kramatorsk over the preceding 24 hours."
+      },
+      {
+        "source_id": "KRAMATORSK-16-DON-ODA-2026-11-17",
+        "publisher": "Donetsk Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-17T09:50:00+02:00",
+        "url": "https://dn.gov.ua/en/news/operatyvna-sytuatsiia-po-oblasti-stanom-na-ranok-17-lystopada",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official regional report identifies one person killed in Kramatorsk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-11-16-ATTACK-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-16-IFAX-2026-11-17",
+          "KRAMATORSK-16-DON-ODA-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KIR-SVITLOVODSK-2026-11-16-FOOD-PROCESSING-STRIKE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Vlasivka",
+      "district": "Svitlovodsk community",
+      "region": "Kirovohrad region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike on the Korolivskyi Smak food-processing enterprise in Vlasivka, Svitlovodsk community, killed one person and injured two. The victim was reported on Nov. 17; the incident date is Nov. 16.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SVITLOVODSK-UP-2026-11-17",
+        "publisher": "Ukrainska Pravda, citing the State Emergency Service and Kirovohrad Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T12:13:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/17/8063247/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one killed and two injured in the Nov. 16 strike on the food-processing enterprise."
+      },
+      {
+        "source_id": "SVITLOVODSK-UKRINFORM-2026-11-17",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T17:32:00+02:00",
+        "url": "https://www.ukrinform.net/amp/rubric-economy/4185664-korolivskyi-smak-plant-in-kirovohrad-region-destroyed-following-russian-strike.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the one fatality in the Nov. 16 strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KIR-SVITLOVODSK-2026-11-16-FOOD-PROCESSING-STRIKE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SVITLOVODSK-UP-2026-11-17",
+          "SVITLOVODSK-UKRINFORM-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ODE-ODESA-2026-11-18-CENTRAL-STRIKES",
+    "incident_date": "2026-11-18",
+    "location": {
+      "settlement": "Odesa",
+      "district": null,
+      "region": "Odesa region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Three waves of Russian strikes hit central Odesa on the morning of Nov. 18, killing four people and injuring nine. The initial report said three people were killed; a later update confirmed a fourth death.",
+    "documented_deaths": 4,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ODESA-18-IFAX-2026-11-18-INITIAL",
+        "publisher": "Interfax-Ukraine, citing Odesa Regional Military Administration head Oleh Kiper",
+        "source_type": "news_report",
+        "published_at": "2026-11-18T13:15:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1238488-amp.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "The 13:15 update reported four killed and nine injured, including the third wave's latest fatality."
+      },
+      {
+        "source_id": "ODESA-18-UP-2026-11-18",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-18T11:52:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/18/8063406/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports four killed and nine injured after the morning attacks; the update says the first reports had been lower."
+      },
+      {
+        "source_id": "ODESA-18-REUTERS-2026-11-18",
+        "publisher": "Reuters",
+        "source_type": "news_report",
+        "published_at": "2026-11-18T16:30:00+02:00",
+        "url": "https://www.reuters.com/world/europe/russian-attacks-ukrainian-city-odesa-kill-four-officials-say-2026-11-18/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Independent report of four killed in three waves of attacks."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ODE-ODESA-2026-11-18-CENTRAL-STRIKES-REV-001",
+        "recorded_at": "2026-11-18",
+        "old_value": null,
+        "new_value": 4,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ODESA-18-IFAX-2026-11-18-INITIAL",
+          "ODESA-18-UP-2026-11-18",
+          "ODESA-18-REUTERS-2026-11-18"
+        ]
+      }
+    ]
   }
 ]

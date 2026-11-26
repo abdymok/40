@@ -11434,5 +11434,63 @@
         "ledger_effective_at": "2026-11-26"
       }
     ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPROPETROVSK-2026-10-25-DTEK-DRIVER",
+    "incident_date": "2026-10-25",
+    "location": {
+      "settlement": null,
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck a lorry at one of DTEK Energy's coal-mining enterprises in Dnipropetrovsk region overnight on Oct. 25, killing driver Vitalii Shcherbyna while he was on duty. DTEK's public statement does not identify the settlement or district.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "DTEK-SHCHERBYNA-ENERGO-2026-10-25",
+        "publisher": "DTEK Energo",
+        "source_type": "official_company_statement",
+        "published_at": "2026-10-25",
+        "url": "https://energo.dtek.com/media-center/press/vnaslidok-ataki-na-vugledobuvne-pidpriemstvo-dtek-energo-zaginuv-pratsivnik/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "victim_status"
+        ],
+        "notes": "DTEK states that a Russian drone struck a lorry at one of its coal-mining enterprises in Dnipropetrovsk region overnight on Oct. 25, killing driver Vitalii Shcherbyna while he was on duty."
+      },
+      {
+        "source_id": "DTEK-SHCHERBYNA-INTERFAX-2026-10-25",
+        "publisher": "Interfax-Ukraine, citing DTEK",
+        "source_type": "news_report",
+        "published_at": "2026-10-25T14:38:00+03:00",
+        "url": "https://interfax.com.ua/news/general/1225739.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports DTEK's confirmation of Shcherbyna's death in the lorry strike at a coal-mining enterprise."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPROPETROVSK-2026-10-25-DTEK-DRIVER-REV-001",
+        "recorded_at": "2026-11-26",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Added as a distinct, source-backed DTEK coal-mine lorry-strike fatality. The Oct. 25 regional administration report identifies its three deaths with the separate Synelnykove residential strike; DTEK identifies a separate lorry strike at a coal-mining enterprise. The Oct. 22 baseline predates this death, and the mapped Oct. 25–28 increments identify other incidents. No historical inclusion in the 148 baseline or published 421 minimum is established. ledger_effective_at remains null because this death is not evidenced as part of the public subtotal.",
+        "source_ids": [
+          "DTEK-SHCHERBYNA-ENERGO-2026-10-25",
+          "DTEK-SHCHERBYNA-INTERFAX-2026-10-25"
+        ],
+        "ledger_effective_at": null
+      }
+    ]
   }
 ]

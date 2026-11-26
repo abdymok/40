@@ -6692,9 +6692,9 @@
       {
         "revision_id": "KOMYSH-REV-005",
         "recorded_at": "2026-11-03T07:40:00+02:00",
-        "old_value": 24,
+        "old_value": 26,
         "new_value": 29,
-        "reason": "The Nov. 3 morning update raised the incident toll from 24 to 29. The earlier Nov. 2 DSNS update had reported 24.",
+        "reason": "The Nov. 3 morning update raised the incident toll from 26 to 29. This revision follows the 18→24→26 source sequence and the Nov. 3 dashboard count of 26.",
         "source_ids": [
           "KOMYSH-ZOVA-2026-11-02-68783",
           "KOMYSH-SUSPILNE-2026-11-03",

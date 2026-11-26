@@ -23,7 +23,7 @@ This stage checks the seven current-ledger records dated on or before Oct. 11 th
 The seven records explain seven deaths in the current raw ledger sum of 93, but they do not add seven to the Oct. 11 selected subtotal:
 - One is a delayed death first reported and incorporated in November (Kherson).
 - One was reported after the Oct. 11 snapshot (Sloviansk).
-- Three other incident records were reported before Oct. 11 but do not appear in either the Oct. 10 or Oct. 11 chronology snapshot (Kramatorsk Oct. 5, Ivano-Frankivsk, Synelnykove and Zaporizhia Oct. 9 are four records, not three).
+- Four other incident records were reported before Oct. 11 but do not appear in either the Oct. 10 or Oct. 11 chronology snapshot (Kramatorsk Oct. 5, Ivano-Frankivsk, Synelnykove and Zaporizhia Oct. 9 are four records, not three).
 - The separate Kyiv citywide one-death report is visible but explicitly excluded from additive use because of overlap risk.
 
 The four pre-snapshot incident reports (Kramatorsk Oct. 5, Ivano-Frankivsk, Synelnykove and Zaporizhia Oct. 9) are source-backed current-ledger records, but their absence from the contemporaneous chronology snapshots means there is no positive evidence that they entered the selected subtotal. Do not treat them as included or assign effective dates by inference.

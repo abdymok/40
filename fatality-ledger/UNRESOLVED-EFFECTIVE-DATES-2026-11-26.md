@@ -1,18 +1,19 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 86. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 97. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
-- Null revision entries: 32
-- Net sum of count changes across these entries: 89
+- Null revision entries: 33
+- Net sum of count changes across these entries: 90
 - Legacy pre-Oct. 29 entries: 26 entries, 82 net count changes
+- Nov. 11 Saltivsky first death: 1 entry, 1 death (not included in 421)
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths (later inclusion in 421 unproven)
 - Oct. 31 Sloviansk: 1 entry, 1 death (174-baseline membership unverified)
 - Nov. 3 Dnipro second death: 1 entry, 1 death (not in mapped Nov. 3 increment)
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 26 remaining pre-Oct. 29 entries carry 82 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The six remaining post-Oct. 29 entries account for seven further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death and two later Chornomorsk revisions. Together with the 26 legacy entries, the unresolved revisions have a net arithmetic change of 89. This is not 89 additional deaths to be added to the public total as a block.
+The 26 remaining pre-Oct. 29 entries carry 82 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The seven remaining post-Oct. 29 entries account for eight further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and two later Chornomorsk revisions. Together with the 26 legacy entries, the unresolved revisions have a net arithmetic change of 90. This is not 89 additional deaths to be added to the public total as a block.
 
 ## Stage 76 adjudication
 
@@ -57,6 +58,10 @@ The Oct. 21 ≈116 method snapshot explicitly includes one death in Holosiivsky 
 ## Stage 86 adjudication
 
 The first Saltivsky death is now dated Nov. 11. The ≈282 snapshot precedes the separate Chornomorsk 282→283 increment; the subsequent 283→284 Saltivsky update explicitly says the first death was already in the preceding subtotal. The first death was therefore present by the Nov. 11 ≈282 snapshot; the second death is the later Nov. 11 increment. See `STAGE-86-CHECKPOINT.md`.
+
+## Stage 97 adjudication
+
+The ≈283 snapshot commit `9a8a5b44430108fdb04e4744a1ff2dc8a88db799` predates Terekhov's first death report (13:37 UTC) and second-death update (13:43 UTC). The 283→284 commit `26a44c4287b2429832fc9f2fc26087cfe45c7e12` adds only one and is titled “Add second Kharkiv strike death and update dashboard.” REV-002 remains dated Nov. 11; REV-001 is returned to null and is not included in the 421 subtotal. See `STAGE-97-CHECKPOINT.md`.
 
 ## Stage 88 adjudication
 
@@ -133,6 +138,7 @@ The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify the O
 | 2026-10-29 | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION` | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002` | 4 → 5 | +1 | Oct. 29 extra death; inclusion after 173 unverified |
 | 2026-10-31 | `UA-DON-SLOVIANSK-2026-10-31-ATTACK` | `UA-DON-SLOVIANSK-2026-10-31-ATTACK-REV-001` | — → 1 | +1 | Nov. 2 baseline inclusion unverified |
 | 2026-11-03 | `UA-DNE-DNIPRO-2026-11-03-MORNING-STRIKE` | `UA-DNE-DNIPRO-2026-11-03-MORNING-STRIKE-REV-002` | 1 → 2 | +1 | Second death not established in 421 subtotal |
+| 2026-11-11 | `UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE` | `UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-001` | — → 1 | +1 | First death not included in 421; no separate increment |
 | 2026-11-11 | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET` | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-002` | 1 → 3 | +2 | Later hospital deaths not established in 421 subtotal |
 | 2026-11-11 | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET` | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-003` | 3 → 4 | +1 | Later hospital deaths not established in 421 subtotal |
 

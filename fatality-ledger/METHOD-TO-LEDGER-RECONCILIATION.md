@@ -456,3 +456,13 @@ Commit: `288a47bc2ff931dcd536f7799de0c1507f0f99c3`
 Historical diffs establish 116→117 (+1) when the Oct. 22 Lymanivka fatality was added (`3513193d093e5166b216f9112bd25da39f8dbb41)); 117→118 (+1) when the later report of one person killed in the overnight Kyiv attack was added (`4ada778321c66b570c73f8d5353617a076db8ee6)); and 118→121 (+3) when the three Chabany deaths were reclassified after corroboration (`0f4dda082aba94f4f6c4a5b9279953cb4a0d17ac`). The 118 snapshot explicitly includes Lymanivka and the Kyiv death, and separately excludes Chabany before the corroboration update.
 
 Stage 57 explains the earlier 105→107 dashboard duplication and the subsequent 107→116 update: the duplicate +2 was offset by a later +9 dashboard change accompanying nine Sloviansk deaths plus two Korotych deaths in the method paragraph. The net 105→116 change is +11. Stage 63 establishes that 121→123 is a change of scope to a nationwide documented minimum, not another incident-level addition. No current incident data, effective dates or public counters changed.
+
+
+## Stage 66 — unresolved Lozova market and warehouse deaths
+
+Checkpoint: `fatality-ledger/STAGE-66-CHECKPOINT.md`  
+Commit: `e4496f8b1c7137883d17041b50a925018143221b`
+
+The Oct. 26 132→137 update explicitly itemizes two initial deaths at Lozova central market, not the third woman who died in hospital on Oct. 23. The current ledger cites an Interfax-Ukraine report of the revised market toll on Oct. 23, 09:58. The separate Oct. 24 Lozova warehouse strike killed one man, with Interfax-Ukraine and Ukrinform reports published that afternoon. Neither the Oct. 25 123→132 transition nor the Oct. 26 132→137 and later transitions mapped in Stage 54 explicitly itemize these two additional deaths.
+
+They are therefore two candidate historical inclusion gaps, not confirmed omissions: the approximate nationwide-minimum updates are not exhaustive incident-level lists, and neither death can yet be shown to have been excluded from every subtotal. Do not add +2 to a historical figure or assign effective dates by inference. Current ledger records, public subtotal 421 and chronology remain unchanged.

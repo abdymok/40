@@ -1160,8 +1160,8 @@
       "region": "Kyiv city",
       "country": "Ukraine"
     },
-    "incident_description": "Russian overnight attack on Kyiv from the evening of Oct. 13 into Oct. 14 killed three people: two in a high-rise residential building in Desniansky district and one in a non-residential building in Holosiivsky district. The separate Oct. 13 evening ballistic attack is recorded in its own incident record.",
-    "documented_deaths": 3,
+    "incident_description": "Russian overnight attack on Kyiv from the evening of Oct. 13 into the morning of Oct. 14 killed five people: three women in a high-rise residential building in Desniansky district and two people in Holosiivsky district. The Kyiv City Prosecutor's Office initially reported four deaths (three in Desniansky and one in Holosiivsky); Kyiv Police later revised the toll to five, confirming two deaths in Holosiivsky.",
+    "documented_deaths": 5,
     "scope_classification": "civilian",
     "evidence_classification": "official_and_media",
     "sources": [
@@ -1201,6 +1201,59 @@
           "corroboration"
         ],
         "notes": "Reports three killed in the overnight Oct. 13–14 attack."
+      },
+      {
+        "source_id": "KYIV-14-PROSECUTOR-UP-2026-10-14",
+        "publisher": "Ukrinform, citing the Kyiv City Prosecutor's Office",
+        "source_type": "news_report",
+        "published_at": "2026-10-14T09:19:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4174182-russian-combined-attack-on-kyiv-kills-three-injures-27.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports four deaths and 27 injured as of the prosecutor's 08:50 update: three women in Desniansky district and one person in Holosiivsky district. This was later revised by Kyiv Police to five deaths."
+      },
+      {
+        "source_id": "KYIV-14-POLICE-2026-10-14",
+        "publisher": "Kyiv Police",
+        "source_type": "official_statement",
+        "published_at": "2026-10-14T11:50:00+03:00",
+        "url": "https://kyiv.npu.gov.ua/news/kilkist-zahyblykh-vnaslidok-vorozhoho-udaru-po-stolytsi-zbilshylasia-do-piaty-osib-politsiia-kyieva",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Official police update confirms five deaths: three women aged 35, 58 and 84 in Desniansky district and two people in Holosiivsky district."
+      },
+      {
+        "source_id": "KYIV-14-IFAX-2026-10-14",
+        "publisher": "Interfax-Ukraine, citing Kyiv Police",
+        "source_type": "news_report",
+        "published_at": "2026-10-14T12:06:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1219860.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports five people killed and 36 injured in the overnight attack, citing Kyiv Police; specifies three deaths in Desniansky and two in Holosiivsky district."
+      },
+      {
+        "source_id": "KYIV-14-UP-2026-10-14-5",
+        "publisher": "Ukrinform, citing Kyiv Police",
+        "source_type": "news_report",
+        "published_at": "2026-10-14T13:18:00+03:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4174310-combined-russian-attack-five-killed-36-injured-in-kyiv-since-last-evening.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports five deaths and 36 injured, with three women killed in Desniansky district and two people in Holosiivsky district."
       }
     ],
     "last_verified_date": "2026-11-26",
@@ -1210,12 +1263,36 @@
         "recorded_at": "2026-10-14T07:31:00+03:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "State Emergency Service confirmed three people killed in the overnight attack. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The State Emergency Service and Red Cross initially reported three deaths (two in Desniansky district and one in Holosiivsky district). The Oct. 14 selected-subtotal update raised 82→85 by three deaths in this overnight Kyiv attack. First documented inclusion date: 2026-10-14.",
         "source_ids": [
           "KYIV-14-UP-2026-10-14",
           "KYIV-14-RED-CROSS-2026-10-14"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-14"
+      },
+      {
+        "revision_id": "UA-KYI-KYIV-2026-10-14-OVERNIGHT-STRIKES-REV-002",
+        "recorded_at": "2026-10-14T09:19:00+03:00",
+        "old_value": 3,
+        "new_value": 4,
+        "reason": "The Kyiv City Prosecutor's Office reported four deaths as of 08:50: three women in Desniansky district and one person in Holosiivsky district. Ukrinform published the prosecutor's update at 09:19. The Oct. 14 method paragraph subsequently recorded four deaths in Kyiv. First documented inclusion date: 2026-10-14.",
+        "source_ids": [
+          "KYIV-14-PROSECUTOR-UP-2026-10-14"
+        ],
+        "ledger_effective_at": "2026-10-14"
+      },
+      {
+        "revision_id": "UA-KYI-KYIV-2026-10-14-OVERNIGHT-STRIKES-REV-003",
+        "recorded_at": "2026-10-14T11:50:00+03:00",
+        "old_value": 4,
+        "new_value": 5,
+        "reason": "Kyiv Police later confirmed five deaths: three in Desniansky district and two in Holosiivsky district. Interfax-Ukraine and Ukrinform corroborated the police update. The Oct. 14 method paragraph records at least five deaths and the dashboard update history raises the subtotal from approximately 89 to approximately 90. First documented inclusion date: 2026-10-14.",
+        "source_ids": [
+          "KYIV-14-POLICE-2026-10-14",
+          "KYIV-14-IFAX-2026-10-14",
+          "KYIV-14-UP-2026-10-14-5"
+        ],
+        "ledger_effective_at": "2026-10-14"
       }
     ]
   },

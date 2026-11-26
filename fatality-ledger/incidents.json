@@ -634,7 +634,7 @@
     ]
   },
   {
-    "incident_id": "UA-KYI-BILA-TSERKVA-2024-2025-OVERNIGHT",
+    "incident_id": "UA-KYI-BILA-TSERKVA-2026-11-25-OVERNIGHT",
     "incident_date": "2026-11-25",
     "location": {
       "settlement": "Bila Tserkva",
@@ -688,7 +688,7 @@
     "last_verified_date": "2026-11-26",
     "revision_history": [
       {
-        "revision_id": "UA-KYI-BILA-TSERKVA-2024-2025-OVERNIGHT-REV-001",
+        "revision_id": "UA-KYI-BILA-TSERKVA-2026-11-25-OVERNIGHT-REV-001",
         "recorded_at": "2026-11-25T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,

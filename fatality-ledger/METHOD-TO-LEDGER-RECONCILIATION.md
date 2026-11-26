@@ -1,13 +1,13 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 86, updated Nov. 26, 2026  
+**Working status:** Stage 87, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
 
-> **Stage 86 amendment:** The current dataset contains 175 incidents, 428 source records and 451 final documented deaths. The current public chronology and method page both stand at 421 through Nov. 26. The pre-Oct. 29 incident-date inventory sums to 171 (23 above the legacy 148); the Oct. 29 cohort sums to 27 (two above the historical 25); and post-192 incident-date additions sum to 234 (five above the method's 229). Raw arithmetic: +23 +2 +5 = +30. The historical 148 includes three Chabany deaths excluded from the current ledger and appears to retain three deaths in the Oct. 16 Kharkiv market incident, while the current ledger keeps the later official final count of two. Adjusting only for those two known scope differences gives a provisional like-for-like pre-Oct. 29 comparison of 175 versus 148 (+27), and a provisional like-for-like overall comparison of 455 versus 421 (+34). The Uman death's inclusion in 148 remains unestablished and could shift the comparison by one. These are comparison adjustments, not proposed public totals. The ledger has 198 revision entries with confirmed ledger_effective_at dates and 32 still null. The dated historical sequence now reconciles the public 421 as 148 + 19 (Oct. 29) + 25 (Oct. 30–Nov. 2) + 229 (Nov. 3–26).
+> **Stage 87 amendment:** The current dataset contains 175 incidents, 428 source records and 451 final documented deaths. The current public chronology and method page both stand at 421 through Nov. 26. The pre-Oct. 29 incident-date inventory sums to 171 (23 above the legacy 148); the Oct. 29 cohort sums to 27 (two above the historical 25); and post-192 incident-date additions sum to 234 (five above the method's 229). Raw arithmetic: +23 +2 +5 = +30. The historical 148 includes three Chabany deaths excluded from the current ledger and appears to retain three deaths in the Oct. 16 Kharkiv market incident, while the current ledger keeps the later official final count of two. Adjusting only for those two known scope differences gives a provisional like-for-like pre-Oct. 29 comparison of 175 versus 148 (+27), and a provisional like-for-like overall comparison of 455 versus 421 (+34). The Uman death's inclusion in 148 remains unestablished and could shift the comparison by one. These are comparison adjustments, not proposed public totals. The ledger has 198 revision entries with confirmed ledger_effective_at dates and 32 still null. The dated historical sequence now reconciles the public 421 as 148 + 19 (Oct. 29) + 25 (Oct. 30–Nov. 2) + 229 (Nov. 3–26).
 
-> **Null-revision classification:** The 32 remaining null `ledger_effective_at` revisions are inventoried and classified. Twenty-six pre-Oct. 29 legacy revisions carry a net +82 count change, including one −1 correction. Seven later revisions carry a net +8 and concern two additional Oct. 29 Izium deaths, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Saltivsky death and three later Chornomorsk hospital deaths. The seven Oct. 11 baseline revisions now dated in Stage 76 are no longer in this unresolved inventory. The 32 entries are not 89 additional deaths and do not change the public 421 subtotal. See `UNRESOLVED-EFFECTIVE-DATES-2026-11-26.md`, `STAGE-53-CHECKPOINT.md` (original inventory), and `STAGE-76-CHECKPOINT.md` (seven revisions now dated).
+> **Null-revision classification:** The 32 remaining null `ledger_effective_at` revisions are inventoried and classified. Twenty-six pre-Oct. 29 legacy revisions carry a net +82 count change, including one −1 correction. Six later revisions carry a net +7 and concern two additional Oct. 29 Izium deaths, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death and three later Chornomorsk hospital deaths. The first Saltivsky death is no longer unresolved: Stage 86 established its presence in the ≈282 baseline. The seven Oct. 11 baseline revisions now dated in Stage 76 are no longer in this unresolved inventory. The 32 entries are not 89 additional deaths and do not change the public 421 subtotal. See `UNRESOLVED-EFFECTIVE-DATES-2026-11-26.md`, `STAGE-53-CHECKPOINT.md` (original inventory), and `STAGE-76-CHECKPOINT.md` (seven revisions now dated).
 
 > **Stage 54 amendment:** The Oct. 25–27 transitions are now mapped to existing incident records: 123→132 (+9), 132→137 (+5), 137→138 (+1), 138→141 (+3), and 141→146 (+5 across two updates). The Oct. 22 transition from 121→123 (+2) remains unidentified: the contemporaneous commit changes the displayed number but supplies no incident-level allocation. No ledger effective dates or public figures were changed. See `STAGE-54-CHECKPOINT.md`.
 
@@ -398,7 +398,7 @@ The remaining null revisions have been inventoried in `UNRESOLVED-EFFECTIVE-DATE
 | Two additional Oct. 29 Izium deaths, later inclusion unverified | 2 | +2 |
 | Oct. 31 Sloviansk death, Nov. 2 baseline inclusion unverified | 1 | +1 |
 | Second death in Nov. 3 Dnipro incident, not established in the 421 subtotal | 1 | +1 |
-| First Saltivsky death, possible overlap with preceding subtotal | 1 | +1 |
+| First Saltivsky death, already present by ≈282 baseline (dated Nov. 11) | 1 | +1 |
 | Three later Chornomorsk hospital deaths, not established in the 421 subtotal | 2 | +3 |
 | **Total** | **53** | **+147 net** |
 
@@ -627,3 +627,12 @@ The Oct. 21 ≈116 method snapshot explicitly includes the 21-year-old woman kil
 Checkpoint: `fatality-ledger/STAGE-86-CHECKPOINT.md`
 
 The first Saltivsky death is now dated Nov. 11. The ≈282 snapshot precedes the separate Chornomorsk 282→283 increment; the subsequent 283→284 Saltivsky update explicitly says the first death was already in the preceding subtotal. The first death was therefore present by the Nov. 11 ≈282 snapshot, while the second death is the later Nov. 11 increment. No incident count or public figure changed. The unresolved inventory falls from 33 to 32 entries: 26 pre-Oct. 29 revisions with net +82 and six later revisions with net +7. Current ledger remains 175 incidents, 428 sources and 451 final deaths; public minimum remains 421.
+
+
+## Stage 87 — reconcile the unresolved inventory after Stage 86
+
+Checkpoint: `fatality-ledger/STAGE-87-CHECKPOINT.md`
+
+A fresh pass over all 230 revision entries confirms 198 dated and 32 null. The 32 null revisions comprise 26 pre-Oct. 29 entries with net +82 and six later entries with net +7, for a combined arithmetic net of +89. The inventory summary had incorrectly retained the Saltivsky first-death revision after Stage 86 dated it, and consequently overstated the null-revision net as +100. The inventory and master classification are corrected; the incident ledger and public minimum are unchanged.
+
+The six later null revisions are the two additional Oct. 29 Izium revisions, Oct. 31 Sloviansk, the second Nov. 3 Dnipro death and two Chornomorsk hospital revisions (three deaths in total). Chornomorsk's first death is explicitly included at 282→283; the later three deaths are in the final incident toll of four but are not individually established in the 421 public subtotal. No later inclusion date is inferred.

@@ -100,7 +100,7 @@ The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage
 ## Required next work
 
 1. Reconstruct membership of the legacy 148 and 192 snapshots from the original commits and change-log entries, including source publication date and the date the project actually counted each death.
-2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Seventy-two revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
+2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Ninety revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
 3. Continue mapping historical subtotal increments to individual records. The post-192 +5 is now accounted for by Chornomorsk (+3), Dnipro Nov. 3 (+1) and Saltivsky (+1).
 4. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until source/duplicate questions are settled.
 5. Do not force the ledger to 418. The current total is a calculated pilot sum and may change if source-level deduplication or additional incident verification changes any record.
@@ -150,7 +150,7 @@ The incident dataset now records the historical progression rather than only the
 - Kyiv ballistic attack: one death entered on Oct. 30.
 - Izium public-health institution: four deaths entered on Oct. 30; the fifth death remains a later final-count revision with no proven dashboard inclusion date.
 
-The dataset now has 72 revision entries with non-null ledger_effective_at and 152 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
+The dataset now has 90 revision entries with non-null ledger_effective_at and 134 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
 
 ### 192 baseline interpretation
 
@@ -203,3 +203,27 @@ The 246→254 allocation is based on the existing Nov. 4–6 source audit, which
 The six late-reported Oct. 30 deaths were not previously in the running minimum. The Nikopol-district and Dnipro-district deaths are distinct from the nine-death Dnipro month-to-date subtotal and are not added twice. The two police officers are a separate Nov. 1 incident, not part of the 72 deaths from the Nov. 2 Komyshuvakha humanitarian-hub strike.
 
 The relevant incident revisions now carry effective dates through Nov. 6. The ledger has 173 incidents, 420 source records and 446 final deaths. Of 224 revision entries, 72 have non-null effective dates and 152 remain null. No final incident counts changed.
+
+
+## Stage 46 — Nov. 7–11 additions mapped to the 282 baseline
+
+The running subtotal from 254 to 282 is now allocated:
+
+| Historical subtotal | Increment | Incident mapping |
+|---|---:|---|
+| 254→256, Nov. 7 | +2 | Brovary district delayed hospital death (1); Lypova Dolyna (1) |
+| 256→261, Nov. 8 | +5 | Kramatorsk (3), Druzhkivka (1), Bilenke (1) |
+| 261→262, Nov. 8 | +1 | Odesa infrastructure attack (1) |
+| 262→263, Nov. 8 | +1 | Bezruky, Derhachi community (1) |
+| 263→265, Nov. 8 | +2 | Komyshuvakha 53→55 |
+| 265→267, Nov. 8 | +2 | Dnipro suburb (1), Nikopol district (1) |
+| 267→270, Nov. 9 | +3 | Odesa food warehouse (3) |
+| 270→273, Nov. 10 | +3 | Kramatorsk (2), Sloviansk (1), Nov. 9 attacks |
+| 273→274, Nov. 10 | +1 | Vyshhorod district (1) |
+| 274→276, Nov. 10 | +2 | Ladyzhyn civilian enterprise (2) |
+| 276→278, Nov. 11 | +2 | Kramatorsk (1), Sloviansk (1), Nov. 10 attacks |
+| 278→282, Nov. 11 | +4 | Dnipro (3), Marhanets community (1), Nov. 10 attacks |
+
+The Nov. 8 Donetsk-region group is separated from the four deaths reported on Nov. 3 for Nov. 2 attacks. The Brovary death is dated to the Nov. 6 incident but enters the subtotal after the victim dies in hospital on Nov. 7. The Lypova Dolyna death is assigned to the Nov. 7 update. The Komyshuvakha 53→55 revision is effective Nov. 8, when the regional administration's confirmation is reflected in the 263→265 subtotal.
+
+The current ledger remains 173 incidents, 420 source records and 446 final deaths. It now has 90 revision entries with confirmed effective dates and 134 still null. No final incident counts changed.

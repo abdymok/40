@@ -6336,13 +6336,13 @@
         "recorded_at": "2026-11-02",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "The historical pre-Kom yshuvakha subtotal was 174, including this one death reported by the regional administration on Nov. 2.",
         "source_ids": [
           "IZIUM-SYNEHUBOV-2026-11-02",
           "IZIUM-UKRINFORM-2026-11-02",
           "IZIUM-UKRINFORM-POLICE-2026-11-02"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-02"
       }
     ]
   },
@@ -6637,7 +6637,7 @@
         "recorded_at": "2026-11-02T11:31:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial regional administration update reported one person killed in the attack.",
+        "reason": "The initial one-death report was a preliminary figure and is superseded by the 18-death Nov. 2 update. It was not a separate increment in the 174 baseline.",
         "source_ids": [
           "KOMYSH-UKRINFORM-2026-11-02-INITIAL"
         ],
@@ -6648,12 +6648,12 @@
         "recorded_at": "2026-11-02T19:55:00+02:00",
         "old_value": 1,
         "new_value": 18,
-        "reason": "Later Nov. 2 regional administration update raised the incident toll to 18.",
+        "reason": "The Nov. 2 dashboard update raised the incident's preliminary toll to 18 and the nationwide minimum from approximately 174 to 192. The 18 are counted once, not as 1 + 18.",
         "source_ids": [
           "KOMYSH-REUTERS-2026-11-02",
           "KOMYSH-AP-2026-11-02"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-02"
       },
       {
         "revision_id": "KOMYSH-REV-003",

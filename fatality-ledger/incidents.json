@@ -9101,5 +9101,306 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE",
+    "incident_date": "2026-10-05",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drones struck ambulances and a multi-storey apartment building in Kramatorsk on the evening of Oct. 5. A 49-year-old woman was killed in the residential-building strike; three medical workers were injured while trying to save the ambulances.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-05-UKRINFORM-2026-10-06",
+        "publisher": "Ukrinform, citing Donetsk Regional Prosecutor's Office",
+        "source_type": "news_report",
+        "published_at": "2026-10-06T10:15:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4171431-russian-strike-hits-highrise-building-and-ambulance-in-kramatorsk-killing-one-woman-and-injuring-four-people.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one woman killed and four injured in the Oct. 5 attacks."
+      },
+      {
+        "source_id": "KRAMATORSK-05-UP-2026-10-06",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-10-06T09:03:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/06/8056649/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one woman killed and four injured."
+      },
+      {
+        "source_id": "KRAMATORSK-05-CENSOR-2026-10-06",
+        "publisher": "Censor.NET",
+        "source_type": "news_report",
+        "published_at": "2026-10-06T09:16:00+03:00",
+        "url": "https://censor.net/en/news/4026876/russia-struck-ambulances-in-kramatorsk-with-fpv-drones-one-dead-and-several-injured",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one woman killed in the high-rise strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE-REV-001",
+        "recorded_at": "2026-10-05",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-05-UKRINFORM-2026-10-06",
+          "KRAMATORSK-05-UP-2026-10-06",
+          "KRAMATORSK-05-CENSOR-2026-10-06"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-IFR-IVANO-FRANKIVSK-2026-10-08-DRONE-DEBRIS",
+    "incident_date": "2026-10-08",
+    "location": {
+      "settlement": "Ivano-Frankivsk",
+      "district": null,
+      "region": "Ivano-Frankivsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Falling debris from a Russian drone struck an outbuilding in Ivano-Frankivsk on the evening of Oct. 8, killing a civilian security guard, a man born in 1959, and starting a fire.",
+    "documented_deaths": 1,
+    "scope_classification": "non_combatant_security_personnel",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "IFR-08-UKRINFORM-2026-10-09",
+        "publisher": "Ukrinform, citing Ivano-Frankivsk Regional Military Administration head Svitlana Onyshchuk",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T06:58:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4172528-drone-attack-in-ivanofrankivsk-kills-one-man.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports a man born in 1959 killed by drone debris."
+      },
+      {
+        "source_id": "IFR-08-UP-2026-10-09",
+        "publisher": "Ukrainska Pravda, citing Ivano-Frankivsk Mayor Ruslan Martsinkiv and regional administration",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T00:18:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/09/8057142/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Identifies the victim as a civilian security guard."
+      },
+      {
+        "source_id": "IFR-08-HROMADSKE-2026-10-09",
+        "publisher": "Hromadske",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T10:18:00+03:00",
+        "url": "https://hromadske.ua/en/war/272211-falling-debris-from-intercepted-russian-drone-kills-man-in-western-ukraine",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the security guard killed by falling debris."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-IFR-IVANO-FRANKIVSK-2026-10-08-DRONE-DEBRIS-REV-001",
+        "recorded_at": "2026-10-08",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "IFR-08-UKRINFORM-2026-10-09",
+          "IFR-08-UP-2026-10-09",
+          "IFR-08-HROMADSKE-2026-10-09"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-2026-10-09-GUIDED-BOMB-STRIKE",
+    "incident_date": "2026-10-09",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian guided aerial bombs struck civilian infrastructure in Zaporizhia from 04:50 to 05:59 on Oct. 9, killing a 48-year-old man and injuring nine people, including a 14-year-old girl.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-09-UKRINFORM-2026-10-09",
+        "publisher": "Ukrinform, citing Zaporizhia Regional Prosecutor's Office",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T11:27:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4172576-russian-kab-strikes-on-zaporizhzhia-at-dawn-kill-one-person-and-injure-nine-others.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 48-year-old man killed in the guided-bomb strikes."
+      },
+      {
+        "source_id": "ZAP-09-RBC-2026-10-09",
+        "publisher": "RBC-Ukraine, citing acting regional administration head Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T08:34:00+03:00",
+        "url": "https://newsukraine.rbc.ua/news/russia-strikes-ukraine-s-zaporizhzhia-fatality-1791524072.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one death and the sequence of regional casualty updates."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-10-09-GUIDED-BOMB-STRIKE-REV-001",
+        "recorded_at": "2026-10-09",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ZAP-09-UKRINFORM-2026-10-09",
+          "ZAP-09-RBC-2026-10-09"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-SYNELNYKOVE-DISTRICT-2026-10-09-ATTACKS",
+    "incident_date": "2026-10-09",
+    "location": {
+      "settlement": null,
+      "district": "Synelnykove district",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Zaitseve and Petropavlivka communities in Synelnykove district on Oct. 9 killed one person and damaged an agricultural business and infrastructure. The regional administration did not identify the victim's exact settlement.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNE-09-UP-2026-10-09",
+        "publisher": "Ukrainska Pravda, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T19:08:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/09/8057257/index.amp",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in Synelnykove district during Oct. 9 attacks."
+      },
+      {
+        "source_id": "DNE-09-UKRINFORM-2026-10-09",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T09:30:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4172561-russian-forces-attack-dnipropetrovsk-region-more-than-30-times-since-evening-injuring-one-person.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the regional casualty update and one injured in other attacks."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-SYNELNYKOVE-DISTRICT-2026-10-09-ATTACKS-REV-001",
+        "recorded_at": "2026-10-09",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNE-09-UP-2026-10-09",
+          "DNE-09-UKRINFORM-2026-10-09"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-NIKOPOL-POKROVSKE-2026-10-10-DRONE-BOY",
+    "incident_date": "2026-10-10",
+    "location": {
+      "settlement": "Pokrovske",
+      "district": "Pokrovske community, Nikopol district",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone dropped a munition on the Pokrovske community in Nikopol district on Oct. 10, killing an 11-year-old boy and injuring two other children, aged 12 and 10.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NIKOPOL-BOY-UP-2026-10-10",
+        "publisher": "Ukrainska Pravda, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-10T16:07:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/10/8057359/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 11-year-old boy killed and two children injured."
+      },
+      {
+        "source_id": "NIKOPOL-BOY-UKRINFORM-2026-10-10",
+        "publisher": "Ukrinform, citing Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-10T15:47:00+03:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4173032-na-dnipropetrovini-cerez-vorozu-ataku-zaginuv-hlopcik-se-dvoe-ditej-poraneni.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms the boy's death in Pokrovske community."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-NIKOPOL-POKROVSKE-2026-10-10-DRONE-BOY-REV-001",
+        "recorded_at": "2026-10-10",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "NIKOPOL-BOY-UP-2026-10-10",
+          "NIKOPOL-BOY-UKRINFORM-2026-10-10"
+        ]
+      }
+    ]
   }
 ]

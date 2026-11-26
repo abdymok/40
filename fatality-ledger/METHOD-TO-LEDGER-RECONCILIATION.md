@@ -100,7 +100,7 @@ The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage
 ## Required next work
 
 1. Reconstruct membership of the legacy 148 and 192 snapshots from the original commits and change-log entries, including source publication date and the date the project actually counted each death.
-2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Thirty-eight revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
+2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Fifty-seven revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
 3. Continue mapping historical subtotal increments to individual records. The post-192 +5 is now accounted for by Chornomorsk (+3), Dnipro Nov. 3 (+1) and Saltivsky (+1).
 4. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until source/duplicate questions are settled.
 5. Do not force the ledger to 418. The current total is a calculated pilot sum and may change if source-level deduplication or additional incident verification changes any record.
@@ -150,7 +150,7 @@ The incident dataset now records the historical progression rather than only the
 - Kyiv ballistic attack: one death entered on Oct. 30.
 - Izium public-health institution: four deaths entered on Oct. 30; the fifth death remains a later final-count revision with no proven dashboard inclusion date.
 
-The dataset now has 38 revision entries with non-null ledger_effective_at and 185 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
+The dataset now has 57 revision entries with non-null ledger_effective_at and 167 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
 
 ### 192 baseline interpretation
 
@@ -159,3 +159,26 @@ The original Nov. 2 dashboard snapshot shows 192 after an increase from approxim
 The additional Nov. 2 Izium death is matched to UA-KHA-IZIUM-2026-11-02-GUIDED-BOMBS and its ledger_effective_at is set to Nov. 2. The Komyshuvakha revision from one preliminary death to 18 is also assigned to Nov. 2; the preliminary one is not counted as a separate increment. The 18 Komyshuvakha deaths are a baseline allocation, not an additional incident-date subtotal to be added again later.
 
 No public chronology, methodology page, dashboard figure or live running total was changed.
+
+
+## Stage 44 — Nov. 2–4 running subtotal mapped
+
+The 192→221 progression is now assigned to incident records and dated revisions:
+
+| Historical snapshot | Running minimum | Increment | Mapped changes |
+|---|---:|---:|---|
+| Nov. 2 | 192 | — | 174 baseline + 18 Komyshuvakha deaths |
+| Nov. 3, 02:56 | 200 | +8 | Komyshuvakha revised from 18 to 26 |
+| Nov. 3, 06:19 | 207 | +7 | Komyshuvakha 26→29 (+3); four deaths in Donetsk Oblast from Nov. 2 (+4) |
+| Nov. 3, 13:14 | 211 | +4 | Komyshuvakha 29→31 (+2); one death in Dnipro (+1); Hotiv child (+1) |
+| Nov. 3, 13:57 | 212 | +1 | One woman killed in Yasnohirka |
+| Nov. 4, 11:38 | 218 | +6 | Komyshuvakha 31→37 |
+| Nov. 4, 13:50 | 221 | +3 | Komyshuvakha 37→40 |
+
+The four Nov. 2 Donetsk-region deaths are separately represented in Bilenke, Druzhkivka, Kramatorsk and Sloviansk. They are assigned to the Nov. 3 update, not to the Nov. 2 192 baseline. The Nov. 3 Dnipro incident has two final deaths, but the historical dashboard description identifies only one; the second death remains without a confirmed inclusion date and is not included in the 192→221 mapping.
+
+The Komyshuvakha source and revision history now includes the official 26-death update (ZOVA post 68774). Its sequence is recorded as 1→18, 18→24, 24→26, 26→29, 29→31, 31→33, 33→37, 37→40 and later updates. The 24-death report is retained as an interim source update; the Nov. 3 dashboard changed from the 18-death baseline to the 26-death figure, a net increase of eight. The Nov. 3 and Nov. 4 dashboard snapshots support the subsequent 29, 31, 37 and 40 counts.
+
+The Nov. 4 page briefly displayed a stale card value of 212 while its text and update history stated 218. The next repository correction commit restored the card to 218. The later 221 snapshot is consistent.
+
+The current incident ledger remains at 173 records, 420 source records and 446 final deaths. It now has 57 revisions with confirmed effective dates and 167 still null. The validator passed after a revision-chain continuity correction. No public totals were changed in this audit.

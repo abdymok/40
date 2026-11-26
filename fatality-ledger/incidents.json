@@ -1075,23 +1075,23 @@
         "recorded_at": "2026-10-13",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial mayoral update reported one person killed. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The initial mayoral update reported one person killed in the Oct. 13 residential-building strike. The Oct. 14 dashboard update raised the selected subtotal 80→81 for this death. GitHub commit b630f05 was 23:03 UTC Oct. 13, or 02:03 Kyiv time Oct. 14. First documented inclusion date: 2026-10-14.",
         "source_ids": [
           "KYIV-13-KLYCHKO-2026-10-13"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-14"
       },
       {
         "revision_id": "UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-002",
         "recorded_at": "2026-10-13T20:00:00+03:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "Later updates confirmed a second person killed in the same residential-building strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "A second body was recovered from the same residential-building strike. The Oct. 14 dashboard update raised the selected subtotal 81→82 for this additional death. GitHub commit e394809 was 23:04 UTC Oct. 13, or 02:04 Kyiv time Oct. 14. First documented inclusion date: 2026-10-14.",
         "source_ids": [
           "KYIV-13-REUTERS-2026-10-13",
           "KYIV-13-IFAX-2026-10-13"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-14"
       }
     ]
   },

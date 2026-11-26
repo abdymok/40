@@ -1,573 +1,275 @@
 <!doctype html>
-<html lang="en"><head>
-<link rel="icon" type="image/png" href="https://abdymok.github.io/40/evidence/monowheelers.png">
-<link rel="apple-touch-icon" href="https://abdymok.github.io/40/evidence/monowheelers.png"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="ukraine@war — Mural 1–40, an interactive archive of 40 images and their accompanying essays."><meta property="og:title" content="ukraine@war — Mural 1–40"><meta property="og:description" content="ukraine@war — an interactive archive of 40 images and their accompanying essays."><meta property="og:type" content="website"><meta property="og:url" content="https://abdymok.github.io/40/"><meta property="og:image" content="https://abdymok.github.io/40/images/40.jpg"><meta property="og:image:alt" content="ukraine@war — Mural 1–40"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ukraine@war — Mural 1–40"><meta name="twitter:description" content="ukraine@war — an interactive archive of 40 images and their accompanying essays."><meta name="twitter:image" content="https://abdymok.github.io/40/images/40.jpg"><title>Mural 1–40</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VHP16V6HE8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-VHP16V6HE8', {
-    linker: { domains: ['abdymok.substack.com'] }
-  });
-</script>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://abdymok.github.io/">
+<title>ukraine@war</title>
+<meta name="description" content="Reporting, infrastructure records and an archive from Ukraine.">
+<meta property="og:title" content="ukraine@war">
+<meta property="og:description" content="Reporting, infrastructure records and an archive from Ukraine.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://abdymok.github.io/">
+<meta property="og:site_name" content="ukraine@war">
+<meta property="og:image" content="https://abdymok.github.io/monowheeler.png">
+<meta property="og:image:alt" content="Pen drawing of a runner between two electric unicycle riders on the Dnipro bank, with the Kyiv skyline behind them.">
+<meta property="og:image:width" content="1743">
+<meta property="og:image:height" content="902">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ukraine@war">
+<meta name="twitter:description" content="Reporting, infrastructure records and an archive from Ukraine.">
+<meta name="twitter:image" content="https://abdymok.github.io/monowheeler.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23111' stroke-width='3.5' stroke-linecap='square'%3E%3Cpath d='M3 32H45M7.5 32V26M18 32V26M28.5 32V26M39 32V14'/%3E%3C/svg%3E">
 <style>
-@font-face{font-family:Spectral;src:local("Spectral")}
-:root{--gap:clamp(6px,1vw,13px);--pad:clamp(28px,6vw,86px)}
-*{box-sizing:border-box}
-html,body{margin:0;width:100%;min-height:100%;background:#fff;color:#151515}
-body{font-family:Spectral,Georgia,serif;overflow:hidden}
-.mural{position:fixed;inset:30px 78px 62px;background:transparent}
-.wall{position:relative;width:100%;height:100%;}
-.tile{position:absolute;left:0;top:0;width:var(--tile-w);height:var(--tile-h);will-change:transform,opacity;transition:transform 5200ms cubic-bezier(.22,1,.36,1),opacity 2400ms ease,width 5200ms cubic-bezier(.22,1,.36,1),height 5200ms cubic-bezier(.22,1,.36,1);cursor:pointer;perspective:1000px;}
-.tile-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;background:transparent}
-.front img{width:100%;height:100%;display:block;object-fit:contain;user-select:none;-webkit-user-drag:none;transition:opacity 950ms cubic-bezier(.22,1,.36,1),transform 1100ms cubic-bezier(.22,1,.36,1)}
-.tile.closing .front img{transition-duration:3200ms,3200ms}
-.back{display:flex;pointer-events:none;align-items:center;justify-content:center;padding:11%;background:rgba(255,255,255,.82);opacity:0;transition:opacity 1150ms cubic-bezier(.22,1,.36,1);cursor:default}
-.tile.closing .back{transition-duration:3200ms}.back .copy{cursor:default}.back .post-year{position:absolute;left:50%;top:8%;transform:translateX(-50%);font:9px/1 Arial,sans-serif;letter-spacing:.08em;color:rgba(0,0,0,.38);pointer-events:none}.back .image-back{position:absolute;right:5%;bottom:5%;border:0;background:transparent;padding:8px 4px;font:11px/1 Arial,sans-serif;letter-spacing:.04em;color:#777;cursor:pointer;opacity:.9;touch-action:manipulation}.back .image-back:hover{color:#111}.back .image-back:focus-visible{outline:1px solid #777;outline-offset:3px}
-.copy{font-size:clamp(12px,1.18vw,20px);line-height:1.16;text-align:left;hyphens:auto;color:#151515;width:100%;transition:color 700ms cubic-bezier(.22,1,.36,1)}
-.copy a{color:#df1717;text-decoration:none;display:inline;transition:color 700ms cubic-bezier(.22,1,.36,1),transform 900ms cubic-bezier(.22,1,.36,1),opacity 700ms ease;transform-origin:center center;animation:linkAche 6.5s ease-in-out infinite;animation-delay:var(--link-delay,0s)}
-.copy a:hover,.copy a:focus-visible{animation-play-state:paused;transform:scale(1.025);opacity:1}
-@keyframes linkAche{0%,68%,100%{transform:scale(1);opacity:.82}76%{transform:scale(1.018);opacity:.94}84%{transform:scale(1.035);opacity:1}92%{transform:scale(1.01);opacity:.9}}
-.copy a:visited{color:#df1717}
-.tile.open .front img{opacity:0;transform:scale(.985)}
-.tile.open .back{opacity:1;pointer-events:auto;cursor:pointer;box-shadow:0 0 0 1px rgba(0,0,0,.16)}
-.tile.open .front{background:transparent}
-.tile.mist{opacity:0!important;filter:none}
-.tile.mist .tile-inner{transform:scale(1.018);transition:transform 7200ms cubic-bezier(.22,1,.36,1)}
-.tile.mist-clearing{transition:opacity 6200ms cubic-bezier(.22,1,.36,1)!important;filter:none}
-.tile.mist-clearing .tile-inner{transform:scale(1);}
-.tile.open{cursor:default}
-@media (hover:hover) and (pointer:fine){.tile:not(.open):not(.mist):not([data-empty="true"]):hover .front img{transform:scale(1.012);filter:brightness(1.025)}}
-.tile.opening .front img{opacity:1;transform:scale(1);transition-duration:700ms,900ms}
-@media (hover:none){.tile:not(.open):not(.mist):not([data-empty="true"]):active .front img{transform:scale(1.01);filter:brightness(1.02)}}
-.tile[data-empty="true"]{cursor:default}.tile:focus-visible{outline:1px solid rgba(0,0,0,.28);outline-offset:3px}
-.exception41{z-index:40;opacity:0;pointer-events:none;transition:opacity 1100ms ease,transform 5600ms cubic-bezier(.22,1,.36,1),width 5600ms cubic-bezier(.22,1,.36,1),height 5600ms cubic-bezier(.22,1,.36,1);background:#000}
-.exception41.visible{opacity:1;pointer-events:auto}
-.exception41 .front{background:#000;transition:opacity 900ms cubic-bezier(.22,1,.36,1);cursor:pointer}
-.exception41.sound .front{opacity:0;pointer-events:none}
-.exception41 .front video{width:100%;height:100%;display:block;object-fit:cover;background:#000}
-.exception41 .back{background:#fff;padding:10%;opacity:0;pointer-events:none}
-.exception41.sound .back{opacity:1;pointer-events:auto}
-.exception41 .exception-audio{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;opacity:1;transition:opacity 1000ms ease}
-.exception41.poem .exception-audio{opacity:0;pointer-events:none}
-.exception41 .volume-ui{width:min(72%,240px);display:flex;align-items:center;gap:10px;position:relative}
-.exception41 .volume-toggle{border:0;background:transparent;padding:2px;font:18px/1 Arial,sans-serif;color:#222;cursor:pointer}
-.exception41 .volume-toggle:focus-visible{outline:1px solid #777;outline-offset:3px}
-.exception41 .volume-bars{display:flex;align-items:center;gap:2px;width:100%;height:28px;cursor:pointer}
-.exception41 .volume-bars i{display:block;width:2px;height:8px;background:#222;opacity:.72;transform-origin:center;animation:volumePulse 900ms ease-in-out infinite alternate;animation-play-state:paused}
-.exception41.playing .volume-bars i{animation-play-state:running}
-.exception41 .volume-bars i:nth-child(2){height:13px;animation-delay:-180ms}
-.exception41 .volume-bars i:nth-child(3){height:18px;animation-delay:-360ms}
-.exception41 .volume-bars i:nth-child(4){height:22px;animation-delay:-540ms}
-.exception41 .volume-bars i:nth-child(5){height:16px;animation-delay:-720ms}
-.exception41 .volume-bars i:nth-child(6){height:11px;animation-delay:-240ms}
-.exception41 .volume-range{position:absolute;left:32px;right:0;top:50%;transform:translateY(-50%);width:calc(100% - 32px);height:28px;opacity:0;cursor:pointer;z-index:2}
-@keyframes volumePulse{from{transform:scaleY(.45);opacity:.35}to{transform:scaleY(1);opacity:.9}}
-.exception41 .exception-credit{position:absolute;right:5%;bottom:8%;font:8px/1 Arial,sans-serif;letter-spacing:.04em;color:rgba(0,0,0,.42);text-decoration:none}
-.exception41 .exception-credit:hover{color:#111}
-.exception41 .poem-copy{opacity:0;transition:opacity 900ms ease;pointer-events:none}
-.exception41.poem .poem-copy{opacity:1;pointer-events:auto}
-.exception41 .poem-copy a{color:#df1717;text-decoration:none}
-.exception41 .exception-image-back{position:absolute;right:5%;bottom:5%;border:0;background:transparent;padding:8px 4px;font:11px/1 Arial,sans-serif;letter-spacing:.04em;color:#777;cursor:pointer}
-.exception41 .exception-image-back:hover{color:#111}
-.tile[data-empty="true"] .front img{opacity:0}
-.controls{position:fixed;left:28px;bottom:13px;z-index:100;display:flex;align-items:center;gap:12px;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:none;color:#777;opacity:.86;user-select:none;background:rgba(255,255,255,.88);padding:3px 5px;border:1px solid rgba(0,0,0,.10);border-radius:2px}.controls .hint{opacity:.72;transition:opacity 700ms ease}.controls .hint.hidden{opacity:0;pointer-events:none;width:0;margin:0;overflow:hidden}.controls button,.controls .subscribe{appearance:none;border:0;background:transparent;min-height:30px;padding:8px 6px;color:inherit;font:inherit;cursor:pointer;text-decoration:none}.controls button:hover,.controls .subscribe:hover{color:#111}.controls .recompose{padding-left:0}.controls .subscribe{padding-right:0}@media (max-width:700px){.controls{left:17px;bottom:8px;font-size:9px;gap:13px}}.hint{position:fixed;left:50%;top:12px;transform:translateX(-50%);z-index:101;font:10px/1 Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#777;opacity:.72;transition:opacity 700ms ease;white-space:nowrap;pointer-events:none}.controls .hint{position:static;transform:none}.hint.hidden{opacity:0!important;pointer-events:none!important;width:0;margin:0;overflow:hidden}
-@media (max-width:700px){
- .mural{inset:16px 18px 48px}
- .controls{left:17px;bottom:17px;font-size:9px;gap:11px}
- .copy{font-size:clamp(11px,2.7vw,17px)}
-}
-@media (prefers-reduced-motion:reduce){.tile,.front img,.back,.copy,.copy a{transition:none!important;animation:none!important}}
-.intro{position:fixed;inset:0;background:#fff;z-index:200;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity 1800ms cubic-bezier(.22,1,.36,1);pointer-events:auto}
-.intro-wordmark{position:relative;z-index:2;font-family:Spectral,Georgia,serif;font-size:clamp(54px,10vw,132px);line-height:1;font-weight:400;letter-spacing:.015em;white-space:nowrap}.intro-wordmark .red-y{color:#c40000}.runner-strip{position:fixed;right:0;top:50%;width:170px;height:140px;object-fit:contain;transform:translate3d(calc(100vw + 210px),-50%,0);z-index:20;display:block;visibility:visible;pointer-events:none;opacity:1;will-change:transform;animation:runnerCross 3600ms linear 0ms forwards}.runner-figure{transform-box:fill-box;transform-origin:center;animation:runnerBob 420ms ease-in-out infinite alternate}@keyframes runnerBob{from{transform:translateY(0)}to{transform:translateY(-3px)}}@keyframes runnerCross{0%{transform:translate3d(calc(100vw + 210px),-50%,0)}100%{transform:translate3d(calc(-100vw - 210px),-50%,0)}}
-.intro.fade{opacity:0;pointer-events:none}
-@media (prefers-reduced-motion:reduce){.intro{transition:none!important}.runner-strip{animation:none!important;transform:translate3d(calc(50vw - 66px),-50%,0)!important}.runner-figure{animation:none!important}}
-</style><script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(registration => {
-      registration.update();
-    }).catch(() => {});
-  });
-}
-</script></head><body>
-<div class="intro" id="intro"><div class="intro-wordmark" aria-label="abdymok"><span>abd</span><span class="red-y">y</span><span>mok</span></div><img decoding="async" class="runner-strip" src="images/intro_suitcase_runner.svg?v=2" alt="" aria-hidden="true"></div><div class="mural"><div class="wall" id="wall"></div></div>
-<audio id="siren41" preload="auto" src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Air_Raid_Alert_-_Ukraine_during_russian_invasion_2022.ogg" crossorigin="anonymous"></audio>
-<span id="hint" class="hint">Select an image to read</span><div class="controls"><button id="recompose" class="recompose" type="button">Recompose</button><button id="pause" class="pause" type="button">Pause</button><a class="subscribe" href="https://abdymok.substack.com/" target="_blank" rel="noopener noreferrer">Subscribe</a><a class="subscribe" href="articles/critical-infrastructure-damage.html?v=20261113-1">Damage to critical infrastructure</a></div>
-<script>
-const slides=[{"id": 1, "year": 2022, "image": "images/1.jpg", "back": "Delivers an unpanicked, sober reading of invasion signals on the very first morning of the <a href=\"https://abdymok.substack.com/p/russias-further-invasion-day-1\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"1\">full-scale war<\/a>, cutting through media buzzwords."}, {"id": 2, "year": 2021, "image": "images/2.jpg", "back": "Warned as early as <a href=\"https://abdymok.substack.com/p/banal-murder-plot?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"2\">January 2021<\/a> that a security service consumed by internal power struggles and contraband revenue cannot simultaneously execute complex counterintelligence operations against foreign threats."}, {"id": 3, "year": 2021, "image": "images/3.jpg", "back": "Chronicles &quot;<a href=\"https://abdymok.substack.com/p/coming-to-a-theater-near-you?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"3\">Wagnergate<\/a>&quot; (Operation Avenue), exposing systemic institutional leaks and official dishonesty at the highest levels of executive leadership prior to the invasion."}, {"id": 4, "year": 2020, "image": "images/4.jpg", "back": "Exposes <a href=\"https://abdymok.substack.com/p/ukraines-plan-\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"4\">parliamentary cover-ups<\/a> and sanitizing investigations designed to shield executive figures from accountability over compromised intelligence operations."}, {"id": 5, "year": 2021, "image": "images/5.jpg", "back": "Uses <a href=\"https://abdymok.substack.com/p/zelenskys-new-clothes\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"5\">game theory<\/a> (mutual vs. common knowledge) to demonstrate how performative political theater obscured pre-war governance defects."}, {"id": 6, "year": 2022, "image": "images/6.jpg", "back": "Morale is high, at least in Kyiv, with private military contractors and arms suppliers in abundance. Many of them are waiting anxiously for <a href=\"https://abdymok.substack.com/p/this-is-still-ukrainewar?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"6\">Tootsie Club<\/a> to re-open."}, {"id": 7, "year": 2022, "image": "images/7.jpg", "back": "Accurately discerning the <a href=\"https://abdymok.substack.com/p/day-25-phase-3?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"7\">mental amplitudes<\/a> of Ukraine’s leaders is another key assessment that should be made. No one should pretend functioning democratic institutions exist."}, {"id": 8, "year": 2022, "image": "images/8.jpg", "back": "Critiques accredited Western experts and &quot;<a href=\"https://abdymok.substack.com/p/ignore-analysts\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"8\">bounded rationality<\/a>&quot; models that failed to anticipate Russian strategic choices."}, {"id": 9, "year": 2022, "image": "images/9.jpg", "back": "I much prefer spherical cows, factoring agreements and thinking about the <a href=\"https://abdymok.substack.com/p/day-22-phase-3?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"9\">El Farol Bar problem<\/a> than browsing battlefield posts on Telegram channels. Future projects abound, including goats, chickens, livestock guardian dogs."}, {"id": 10, "year": 2023, "image": "images/10.jpg", "back": "Lifts the curtain on war-adjacent commentary and opportunistic media narratives that obscure core <a href=\"https://abdymok.substack.com/p/this-is-still-ukrainewar?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"10\">operational realities<\/a>."}, {"id": 11, "year": 2023, "image": "images/11.jpg", "back": "Enumerates the three fundamental operational requirements (<a href=\"https://abdymok.substack.com/p/day-499\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"11\">closing the sky<\/a>, activating additional corps, and securing long-range precision strike capabilities) needed to break positional stalemate."}, {"id": 12, "year": 2023, "image": "images/12.jpg", "back": "Deconstructs early <a href=\"https://abdymok.substack.com/p/day-516\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"12\">counteroffensive hype<\/a> versus the unglamorous tactical realities on the ground."}, {"id": 13, "year": 2022, "image": "images/13.jpg", "back": "The Club for Aesthetic Disobedience, which for years has criticized “beautification projects” in the capital, describes our architectural jungle the best: <a href=\"https://abdymok.substack.com/p/pause-operationnelle?utm_source=publication-search\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"13\">a poorly lit dog’s breakfast.<\/a>"}, {"id": 14, "year": 2024, "image": "images/14.jpg", "back": "Critiques the lack of long-term <a href=\"https://abdymok.substack.com/p/day-730\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"14\">strategic coherence<\/a> as the full-scale conflict entered its second year."}, {"id": 15, "year": 2024, "image": "images/15.jpg", "back": "Accurately analyzes the operational dimensions of <a href=\"https://abdymok.substack.com/p/day-748\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"15\">positional warfare<\/a> in transparent, drone-saturated battlefields."}, {"id": 16, "year": 2024, "image": "images/16.jpg", "back": "Exposes early <a href=\"https://abdymok.substack.com/p/day-1044\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"16\">command-and-control failures<\/a> in newly formed formations such as the 155th Brigade."}, {"id": 17, "year": 2024, "image": "images/17.jpg", "back": "Identifies <a href=\"https://abdymok.substack.com/p/day-1049\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"17\">four systemic failures<\/a>—unbuilt fortifications, forced conscription defects, new brigade failures, and domestic production breakdowns—long before official acknowledgment."}, {"id": 18, "year": 2025, "image": "images/18.jpg", "back": "Analyzes the &quot;<a href=\"https://abdymok.substack.com/p/day-1402\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"18\">negotiation gap<\/a>,&quot; proving the logical incompatibility between Russian objectives and Ukrainian state survival."}, {"id": 19, "year": 2026, "image": "images/19.jpg", "back": "Applies the biological concept of &quot;<a href=\"https://abdymok.substack.com/p/day-1454\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"19\">parabiosis<\/a>&quot; to critique aging, stagnant diplomatic frameworks and political exhaustion."}, {"id": 20, "year": 2026, "image": "images/20.jpg", "back": "Decouples <a href=\"https://abdymok.substack.com/p/day-1524\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"20\">military resilience<\/a> from liberal democracy, arguing that societal heroism on the battlefield does not automatically equate to sound institutional governance."}, {"id": 21, "year": 2026, "image": "images/21.jpg", "back": "Provides a <a href=\"https://abdymok.substack.com/p/day-1577\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"21\">multi-year retrospective<\/a> detailing how the archive&#x27;s analytical models evolved and held up across milestones."}, {"id": 22, "year": 2020, "image": "images/22.jpg", "back": "Establishes the foundational critique of Ukraine as a primitive post-Soviet <a href=\"https://abdymok.substack.com/p/thug-life\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"22\">feudal patronage system<\/a> rather than a fully functioning institutional democracy."}, {"id": 23, "year": 2020, "image": "images/23.jpg", "back": "Demonstrates how European institutions repeatedly collided with informal <a href=\"https://abdymok.substack.com/p/thug-life-contd?s=w\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"23\">patronage networks<\/a> and political theatrics in Kyiv."}, {"id": 24, "year": 2021, "image": "images/24.jpg", "back": "Critiques patronage figures (e.g., Mykola Tyshchenko) as symbols of <a href=\"https://abdymok.substack.com/p/a-man-in-full\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"24\">institutional decay<\/a>."}, {"id": 25, "year": 2022, "image": "images/25.jpg", "back": "Maps ultra-competitive, informal <a href=\"https://abdymok.substack.com/p/thug-life-contd-315\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"25\">political rivalries<\/a> operating behind formal state structures."}, {"id": 26, "year": 2020, "image": "images/26.jpg", "back": "Analyzes early cabinet reshuffles (e.g., Honcharuk&#x27;s sacking) to distinguish between macroeconomic illiteracy and <a href=\"https://abdymok.substack.com/p/operation-y-b2d557374ca7\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"26\">political sabotage<\/a>."}, {"id": 27, "year": 2021, "image": "images/27.jpg", "back": "Maps internal fallout and paranoia within <a href=\"https://abdymok.substack.com/p/drones-in-my-bones\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"27\">intelligence services<\/a> following Wagnergate and associated leaks."}, {"id": 28, "year": 2021, "image": "images/28.jpg", "back": "Analyzes the corporate and tactical evolution of <a href=\"https://abdymok.substack.com/p/scale-free-wagner-pmc\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"28\">mercenary networks<\/a> prior to their full-scale deployment."}, {"id": 29, "year": 2021, "image": "images/29.jpg", "back": "Examines how a background in <a href=\"https://abdymok.substack.com/p/i-an-actor\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"29\">performance art<\/a> shaped executive decision-making and public narrative management during national crises."}, {"id": 30, "year": 2020, "image": "images/30.jpg", "back": "Confronts official government statements downplaying explicit <a href=\"https://abdymok.substack.com/p/pants-on-fire\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"30\">invasion warnings<\/a>."}, {"id": 31, "year": 2025, "image": "images/31.jpg", "back": "Documents the <a href=\"https://abdymok.substack.com/p/day-1246\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"31\">legislative rollback<\/a> of anti-corruption agency oversight and the immediate domestic political backlash."}, {"id": 32, "year": 2026, "image": "images/32.jpg", "back": "Analyzes &quot;conversations that don&#x27;t happen,&quot; showing how analysts avoid naming <a href=\"https://abdymok.substack.com/p/day-1520\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"32\">structural patterns<\/a> when doing so threatens prior narratives."}, {"id": 33, "year": 2026, "image": "images/33.jpg", "back": "Parses wiretaps to explain how <a href=\"https://abdymok.substack.com/p/day-1525\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"33\">informal authority<\/a> and backroom procurement flows operate under wartime conditions."}, {"id": 34, "year": 2026, "image": "images/34.jpg", "back": "Exposes the &quot;<a href=\"https://abdymok.substack.com/p/day-1526\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"34\">Dynasty<\/a>&quot; luxury estate cooperative constructed for political insiders during the height of the conflict."}, {"id": 35, "year": 2021, "image": "images/35.jpg", "back": "Applies the &quot;<a href=\"https://abdymok.substack.com/p/ukraine-goes-coup-coup\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"35\">trolley car problem<\/a>&quot; to illustrate how executive impulse control creates broad systemic instability."}, {"id": 36, "year": 2024, "image": "images/36.jpg", "back": "Critiques opportunistic religious and <a href=\"https://abdymok.substack.com/p/day-1024\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"36\">ideological pivots<\/a> by political actors as winter conditions intensified."}, {"id": 37, "year": 2026, "image": "images/37.jpg", "back": "Connects early <a href=\"https://abdymok.substack.com/p/day-1408\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"37\">Wagnergate cover-ups<\/a> to subsequent structural consolidations inside the President&#x27;s Office."}, {"id": 38, "year": 2022, "image": "images/38.jpg", "back": "Maps the pre-war linguistic and conceptual confusion between &quot;imminent&quot; and &quot;<a href=\"https://abdymok.substack.com/p/lost-in-translation\" target=\"_blank\" rel=\"noopener noreferrer\" data-slide=\"38\">inevitable<\/a>&quot; invasion warnings."}, {"id": 39, "year": "", "image": "images/39.jpg", "back": "Thank you for looking.<br><br>The archive continues."}, {"id": 40, "year": "", "image": "images/40.jpg", "back": "Until the next recomposition."}];
-const wall=document.getElementById('wall');
-const tiles=slides.map(s=>{
- const el=document.createElement('article'); el.className='tile'; el.dataset.id=s.id; el.dataset.empty=(!s.back?'true':'false');
- el.innerHTML=`<div class="tile-inner"><div class="face front"><img src="${s.image}" alt="Mural image ${s.id}" decoding="async"></div><div class="face back"><span class="post-year">${s.year || ""}</span><div class="copy">${s.back}</div><button class="image-back" type="button" aria-label="Return to image">← image</button></div></div>`;
- if(!s.back) { el.dataset.empty='true'; el.querySelector('.front img').removeAttribute('src'); } el.tabIndex=0;
- wall.appendChild(el); el.setAttribute("aria-label",`Slide ${s.id}${s.year ? ", "+s.year : ""}. Select to read.`); el.setAttribute("aria-expanded","false"); el.querySelectorAll('.copy a').forEach((a,i)=>{
-   a.style.setProperty('--link-delay',(-i*.7)+'s');
-   a.addEventListener('click',()=>{ if(typeof gtag==='function') gtag('event','substack_click',{mural_id:String(s.id),mural_year:String(s.year||''),destination:a.href}); });
- }); return el;
-});
-let paused=false, openId=null, timer=null, imageReadyId=null, clickTimer=null, returnTimer=null, openRevealTimer=null, autoHeroId=null, autoHeroTimer=null, autoHeroResolve=null, teachingMoment=false, teachingTimer=null, openingTimers=[], recompositionTimers=[];
-let exception41=null, exception41Visible=false, exception41Timer=null, exception41Debug=new URLSearchParams(location.search).get('41')==='1';
-const siren41=document.getElementById('siren41');
-function makeException41(){
-  if(exception41) return exception41;
-  exception41=document.createElement('article');
-  exception41.className='tile exception41';
-  exception41.dataset.id='41';
-  exception41.tabIndex=0;
-  exception41.setAttribute('aria-label','41. Shahed video and air-raid siren.');
-  exception41.innerHTML=`<div class="tile-inner">
-    <div class="face front"><video playsinline muted preload="metadata" src="images/41-shahed.mp4"></video></div>
-    <div class="face back">
-      <div class="exception-audio" title="Air-raid alert recording: Lystopad, Wikimedia Commons, CC BY-SA 4.0">
-        <div class="volume-ui">
-          <button class="volume-toggle" type="button" aria-label="Play siren">◖</button>
-          <div class="volume-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <input class="volume-range" type="range" min="0" max="1" step="0.01" value="0.62" aria-label="Siren volume">
-        </div>
+  :root {
+    --bg: #ffffff;
+    --fg: #111110;
+    --muted: #5e5d58;
+    --rule: #d8d6cf;
+    --red: #d00;
+    --serif: Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) { --bg: #111110; --fg: #ecebe6; --muted: #a2a19a; --rule: #34342f; --red: #ff4a3d; }
+  }
+  :root[data-theme="white"] { color-scheme: light; --bg: #ffffff; --fg: #111110; --muted: #5e5d58; --rule: #d8d6cf; --red: #d00; }
+  :root[data-theme="black"] { color-scheme: dark; --bg: #111110; --fg: #ecebe6; --muted: #a2a19a; --rule: #34342f; --red: #ff4a3d; }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.4;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+  a:focus-visible,
+  button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+  svg { display: block; flex: none; }
+
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+  /* header */
+  .bar { padding: 14px 0 6px; }
+  .home {
+    display: inline-flex; align-items: center; gap: 10px;
+    min-height: 44px; padding-right: 12px;
+    font-size: 15px; letter-spacing: 0.04em;
+  }
+  .y { color: var(--red); }
+  .home:hover span { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+
+  /* emblem: drawn on near-white, so it is blended into the page colour */
+  .emblem { margin: 4px -20px 36px; }
+  .emblem img {
+    display: block; width: 100%; height: auto;
+    aspect-ratio: 2.4 / 1; object-fit: cover; object-position: 50% 58%;
+    filter: brightness(1.03);
+    mix-blend-mode: multiply;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) .emblem img { filter: brightness(1.03) invert(1); mix-blend-mode: screen; }
+  }
+  :root[data-theme="black"] .emblem img { filter: brightness(1.03) invert(1); mix-blend-mode: screen; }
+  :root[data-theme="white"] .emblem img { filter: brightness(1.03); mix-blend-mode: multiply; }
+
+  /* title and navigation */
+  h1 {
+    margin: 0;
+    font: 400 34px/1.1 var(--serif);
+    letter-spacing: -0.01em;
+  }
+  .tagline {
+    margin: 12px 0 28px;
+    max-width: 26ch;
+    font: 400 19px/1.35 var(--serif);
+    color: var(--muted);
+  }
+
+  .intro { margin-bottom: 24px; }
+
+  nav ul { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--rule); }
+  nav li { border-top: 1px solid var(--rule); }
+  nav a {
+    display: grid; grid-template-columns: 48px 1fr auto; align-items: center; column-gap: 18px;
+    min-height: 76px; padding: 14px 0;
+  }
+  nav a:active { background: color-mix(in srgb, var(--fg) 6%, transparent); }
+  .label { display: block; font-size: 18px; line-height: 1.25; }
+  .desc { display: block; margin-top: 2px; font-size: 15px; line-height: 1.35; color: var(--muted); }
+  .arrow { font-size: 18px; color: var(--muted); padding-left: 8px; }
+  nav a:hover .label { text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  nav a:hover .arrow { color: var(--fg); }
+  nav li a .arrow { transition: transform 0.15s ease; }
+  nav li a:hover .arrow { transform: translateX(4px); }
+  @media (prefers-reduced-motion: reduce) {
+    nav li a .arrow { transition: none; }
+    nav li a:hover .arrow { transform: none; }
+  }
+
+  /* footer */
+  footer {
+    display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center;
+    margin-top: 56px; padding-bottom: 20px;
+    font-size: 15px; color: var(--muted);
+  }
+  .footer-left { display: contents; }
+  .footer-left > span { justify-self: start; }
+  .theme-switch { display: inline-flex; align-items: center; justify-self: center; gap: 9px; }
+  .theme-switch button {
+    appearance: none; border: 0; background: none; color: var(--muted);
+    padding: 10px 6px; font: inherit; font-size: 13px; cursor: pointer;
+  }
+  .theme-switch button[aria-pressed="true"] { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  .theme-switch button:hover { color: var(--fg); }
+  footer a { display: inline-block; justify-self: end; padding: 12px 0 12px 16px; }
+  footer a:hover { color: var(--fg); text-decoration: underline; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+  @media (max-width: 420px) {
+    .theme-switch { gap: 7px; }
+    footer { column-gap: 6px; }
+    footer a { padding-left: 0; font-size: 12px; }
+    .theme-switch button { font-size: 12px; min-height: 44px; padding: 13px 6px; }
+    footer a { min-height: 44px; display: flex; align-items: center; }
+    footer { font-size: 14px; }
+  }
+
+  /* wider screens: title left, navigation right */
+  @media (min-width: 860px) {
+    .wrap { padding: 0 32px; }
+    .bar { padding-top: 24px; }
+    .intro { margin-bottom: 0; }
+    .emblem { margin: 16px 0 44px; }
+    .grid { display: grid; grid-template-columns: 5fr 7fr; column-gap: 72px; align-items: start; }
+    h1 { font-size: 44px; padding-top: 22px; }
+    footer { margin-top: 56px; padding-bottom: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="bar">
+    <a class="home" href="/" aria-label="Home" aria-current="page">
+      <svg width="32" height="32" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true" focusable="false"><path d="M15 42V6H33V42M9 42H39"/></svg>
+      <span>abd<span class="y">y</span>mok</span>
+    </a>
+  </header>
+
+  <main>
+    <figure class="emblem">
+      <img src="/monowheeler.png" width="1743" height="902" fetchpriority="high" decoding="async" alt="Pen drawing of a runner between two electric unicycle riders on the Dnipro bank, with the Kyiv skyline behind them.">
+    </figure>
+
+    <div class="grid">
+      <div class="intro">
+        <h1>ukraine<span class="y">@</span>war</h1>
       </div>
-      <div class="copy poem-copy">You can kill one, but another is born.<br>The words are written down, the deed, the date.<br><br><a href="https://www.poetryfoundation.org/poems/49482/you-who-wronged" target="_blank" rel="noopener noreferrer">Milosz (1950)</a></div>
-      <button class="exception-image-back" type="button" aria-label="Return to image">← image</button>
+
+      <nav aria-label="Sections">
+        <ul>
+          <li>
+            <a href="/40/articles/critical-infrastructure-damage.html">
+              <svg class="nav-icon" width="48" height="48" viewBox="0 0 96 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true" focusable="false"><path vector-effect="non-scaling-stroke" d="M1 22 H95"/><path vector-effect="non-scaling-stroke" d="M10 22 Q48 -4 86 22"/><path vector-effect="non-scaling-stroke" d="M29 22 V12.5"/><path vector-effect="non-scaling-stroke" d="M67 22 V12.5"/><path vector-effect="non-scaling-stroke" d="M42 29 L55 15"/></svg>
+              <span><span class="label">Damage to critical infrastructure</span><span class="desc">Kyiv chronology, damage counts, and air alerts</span></span>
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/40/articles/data-center-damage.html">
+              <svg class="nav-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true" focusable="false"><rect x="4" y="4" width="10" height="10"/><rect x="19" y="4" width="10" height="10"/><path d="M19 9 H29"/><rect x="34" y="4" width="10" height="10"/><rect x="4" y="19" width="10" height="10"/><path d="M4 24 H14"/><rect x="19" y="19" width="10" height="10"/><rect x="4" y="34" width="10" height="10"/><rect x="19" y="36" width="10" height="10"/><rect x="34" y="34" width="10" height="10"/><path d="M39 34 V44"/></svg>
+              <span><span class="label">Data center</span><span class="desc">Damage to data centers</span></span>
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/40/method/">
+              <svg class="nav-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true" focusable="false"><path d="M7.5 6 V42"/><path d="M18 6 V42"/><path d="M28.5 6 V42"/><path d="M39 6 V42"/><path d="M3 33 L45 15"/></svg>
+              <span><span class="label">Method</span><span class="desc">How the numbers are counted</span></span>
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/collection/">
+              <svg class="nav-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true" focusable="false"><defs><clipPath id="fragment"><polygon points="4,3.5 44,4.5 45,44 3,45"/></clipPath></defs><g clip-path="url(#fragment)"><path d="M0 31 C11 7 24 41 49 13" stroke-width="2.8"/><path d="M17 0 C13 15 22 30 14 49" stroke-width="1.7"/><path d="M27 31 L42 35" stroke-width="3.4"/><path d="M30 9 C39 2 44 12 34 17" stroke-width="1.5"/><path d="M6 41 L12 35" stroke-width="1.4"/></g></svg>
+              <span><span class="label">Collection</span><span class="desc">Visual projects and experiments</span></span>
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+          <li>
+            <a href="/bibliography/">
+              <svg class="nav-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true" focusable="false"><rect x="9" y="5" width="30" height="38"/><path d="M14 14h6M24 14h10M14 23h6M24 23h10M14 32h6M24 32h10"/><path d="M24 17.5h7M24 26.5h7M24 35.5h7"/></svg>
+              <span><span class="label">Bibliography</span><span class="desc">An annotated guide to the ukraine@war archive.</span></span>
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </div>`;
-  wall.appendChild(exception41);
-  const video=exception41.querySelector('video');
-  const front=exception41.querySelector('.front');
-  const back=exception41.querySelector('.back');
-  const btn=exception41.querySelector('.exception-image-back');
-  const toggle=exception41.querySelector('.volume-toggle');
-  const range=exception41.querySelector('.volume-range');
-  function stopSiren(fade=false){
-    if(!siren41) return;
-    if(fade){
-      const start=siren41.volume, t0=performance.now();
-      const step=t=>{
-        const p=Math.min(1,(t-t0)/2200);
-        siren41.volume=start*(1-p);
-        if(p<1) requestAnimationFrame(step);
-        else {siren41.pause();siren41.currentTime=0;siren41.volume=parseFloat(range.value)||.62;exception41.classList.remove('playing');toggle.textContent='◖';toggle.setAttribute('aria-label','Play siren');}
-      };
-      requestAnimationFrame(step);
-    }else{
-      siren41.pause();siren41.currentTime=0;siren41.volume=parseFloat(range.value)||.62;exception41.classList.remove('playing');toggle.textContent='◖';toggle.setAttribute('aria-label','Play siren');
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <span>Kyiv</span>
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme-choice="auto" aria-pressed="true">Auto</button>
+        <button type="button" data-theme-choice="white" aria-pressed="false">White</button>
+        <button type="button" data-theme-choice="black" aria-pressed="false">Black</button>
+      </div>
+    </div>
+    <a href="https://abdymok.substack.com">Substack</a>
+  </footer>
+
+</div>
+
+<script>
+(() => {
+  const key = "ukraine-at-war-theme";
+  const root = document.documentElement;
+  const buttons = document.querySelectorAll("[data-theme-choice]");
+  const effectiveTheme = choice => {
+    if (choice !== "auto") return choice;
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "black" : "white";
+  };
+  const setTheme = choice => {
+    current = choice;
+    if (choice === "auto") {
+      delete root.dataset.theme;
+      try { localStorage.removeItem(key); } catch (_) {}
+    } else {
+      root.dataset.theme = choice;
+      try { localStorage.setItem(key, choice); } catch (_) {}
     }
-  }
-  function playSiren(){
-    if(!siren41) return;
-    siren41.volume=parseFloat(range.value)||.62;
-    siren41.currentTime=0;
-    const p=siren41.play();
-    if(p&&p.catch)p.catch(()=>{});
-    exception41.classList.add('playing');toggle.textContent='Ⅱ';toggle.setAttribute('aria-label','Pause siren');
-  }
-  toggle.addEventListener('click',e=>{e.stopPropagation(); if(siren41.paused) playSiren(); else stopSiren(false);});
-  range.addEventListener('input',e=>{siren41.volume=parseFloat(e.target.value)||0; if(siren41.volume>0&&siren41.paused) playSiren();});
-  front.addEventListener('click',e=>{
-    e.stopPropagation();
-    if(exception41.classList.contains('poem')) return;
-    if(!exception41.classList.contains('hero')) exception41._expand();
-    paused=true;
-    pause.textContent='Resume';
-    exception41.classList.add('sound');
-    playSiren();
-  });
-  btn.addEventListener('click',e=>{
-    e.stopPropagation();
-    if(exception41.classList.contains('poem')){ exception41.classList.remove('poem','sound'); stopSiren(false); video.currentTime=0; video.play().catch(()=>{}); return; }
-    exception41.classList.add('poem');
-    stopSiren(true);
-  });
-  back.addEventListener('click',e=>{ if(e.target.closest('a')) return; });
-  exception41._expand=()=>{
-    const {c,r,gap,tw,th}=metrics();
-    const heroCols=Math.min(3,c), heroRows=Math.min(3,r);
-    const slot=exception41._slot;
-    const oldX=slot%c, oldY=Math.floor(slot/c);
-    const maxX=c-heroCols, maxY=r-heroRows;
-    const heroX=Math.max(0,Math.min(maxX,oldX-Math.floor((heroCols-1)/2)));
-    const heroY=Math.max(0,Math.min(maxY,oldY-Math.floor((heroRows-1)/2)));
-    const heroSlot=heroY*c+heroX;
-    const x=heroX*(tw+gap), y=heroY*(tw*0+th+gap);
-    const w=tw*heroCols+gap*(heroCols-1), h=th*heroRows+gap*(heroRows-1);
-    exception41._heroSlot=heroSlot;
-    exception41.style.width=w+'px';
-    exception41.style.height=h+'px';
-    exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
-    exception41.classList.add('hero');
-    const heroSlots=new Set();
-    for(let yy=heroY;yy<heroY+heroRows;yy++) for(let xx=heroX;xx<heroX+heroCols;xx++) heroSlots.add(yy*c+xx);
-    const available=[...Array(c*r).keys()].filter(s=>!heroSlots.has(s));
-    const others=tiles.slice().sort((a,b)=>(slotMap.get(a)?.slot??999)-(slotMap.get(b)?.slot??999));
-    const nextMap=new Map();
-    others.forEach((el,i)=>{
-      const target=available[i];
-      if(target==null){ el.style.opacity='0'; return; }
-      nextMap.set(el,target);
-      setGeometry(el,target,false,true);
-      el.style.opacity='1';
+    buttons.forEach(button => {
+      button.setAttribute("aria-pressed", String(button.dataset.themeChoice === choice));
     });
-    nextMap.forEach((slot,el)=>slotMap.set(el,{slot,hero:false}));
+    const color = effectiveTheme(choice) === "black" ? "#111110" : "#ffffff";
+    document.querySelectorAll('meta[name="theme-color"]').forEach(meta => {
+      meta.setAttribute("content", color);
+      meta.removeAttribute("media");
+    });
   };
-  exception41._shrink=()=>{
-    const {gap,tw,th}=metrics();
-    const slot=exception41._slot;
-    const x=(slot%cols())*(tw+gap), y=Math.floor(slot/cols())*(th+gap);
-    exception41.style.width=tw+'px';
-    exception41.style.height=th+'px';
-    exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
-    exception41.classList.remove('hero');
-  };
-  exception41._show=()=>{
-    clearTimeout(exception41Timer);
-    exception41Visible=true;
-    const {c,gap,tw,th}=metrics();
-    const slots=[...Array(c*Math.ceil(tiles.length/c)).keys()];
-    const occupied=[...slotMap.values()].map(v=>v.slot);
-    const candidates=slots.filter(s=>!occupied.includes(s));
-    const slot=candidates[Math.floor(Math.random()*candidates.length)] ?? Math.floor(Math.random()*Math.max(1,c*2));
-    const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
-    exception41._slot=slot;
-    exception41.style.width=tw+'px'; exception41.style.height=th+'px'; exception41.style.transform=`translate3d(${x}px,${y}px,0)`;
-    exception41.classList.remove('hero','sound','poem');
-    exception41.classList.add('visible');
-    video.currentTime=0; video.play().catch(()=>{});
-  };
-  exception41._hide=()=>{
-    clearTimeout(exception41Timer);
-    exception41Visible=false;
-    stopSiren(true);
-    video.pause(); video.currentTime=0;
-    exception41.classList.remove('visible','sound','poem','hero');
-    exception41._shrink();
-    if(!openId){
-      paused=true;
-      pause.textContent='Resume';
-      autoHeroId=null;
-      layout(false);
-    }
-  };
-  return exception41;
-}
-function maybeException41(force=false){
-  const e=makeException41();
-  if(exception41Visible) return;
-  if(!force && !exception41Debug && Math.random()>0.03) return;
-  e._show();
-  exception41Timer=setTimeout(()=>e._hide(),28000+Math.random()*18000);
-}
-makeException41();
-function cols(){
- const w=wall.clientWidth,h=wall.clientHeight;
- if(w<700) return 5;
- return w/h>1.25?8:5;
-}
-const ease='cubic-bezier(.22,1,.36,1)';
-let slotMap=new Map();
-let morphing=false;
-function metrics(){
- const c=cols(), r=Math.ceil(tiles.length/c), gap=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--gap'))||8;
- const cw=wall.clientWidth, ch=wall.clientHeight;
- const tw=(cw-gap*(c-1))/c, th=(ch-gap*(r-1))/r;
- wall.style.setProperty('--tile-w',tw+'px'); wall.style.setProperty('--tile-h',th+'px');
- return {c,r,gap,tw,th};
-}
-function setGeometry(el,slot,hero=false,animate=false){
- const {c,gap,tw,th}=metrics();
- const heroCols=Math.min(3,c), heroRows=Math.min(3,Math.ceil(tiles.length/c));
- const x=(slot%c)*(tw+gap), y=Math.floor(slot/c)*(th+gap);
- const w=hero ? (tw*heroCols + gap*(heroCols-1)) : tw;
- const h=hero ? (th*heroRows + gap*(heroRows-1)) : th;
- el.style.transitionDuration=animate?(el.dataset.id===autoHeroId?'3200ms':'5600ms'):'0ms';
- el.style.transitionDelay='0ms';
- el.style.width=w+'px'; el.style.height=h+'px';
- el.classList.toggle('hero',hero);
- el.style.transform=`translate3d(${x}px,${y}px,0)`;
-}
-function layout(animate=true){
- const {c,r}=metrics();
- const hero=tiles.find(t=>t.dataset.id===(openId || autoHeroId) && t.dataset.empty!=='true') || null;
- const heroCols=Math.min(3,c), heroRows=Math.min(3,r);
- let heroX=0, heroY=0;
- if(hero){
-   const maxX=c-heroCols,maxY=r-heroRows;
-   const oldSlot=slotMap.get(hero)?.slot;
-   if(oldSlot!=null){
-     const oldX=oldSlot%c, oldY=Math.floor(oldSlot/c);
-     heroX=Math.max(0,Math.min(maxX,oldX-Math.floor((heroCols-1)/2)));
-     heroY=Math.max(0,Math.min(maxY,oldY-Math.floor((heroRows-1)/2)));
-   }else{
-     heroX=Math.floor(maxX/2); heroY=Math.floor(maxY/2);
-   }
- }
- const heroSlots=new Set();
- if(hero) for(let yy=heroY;yy<heroY+heroRows;yy++) for(let xx=heroX;xx<heroX+heroCols;xx++) heroSlots.add(yy*c+xx);
- const available=[...Array(c*r).keys()].filter(s=>!heroSlots.has(s));
- const others=tiles.filter(t=>t!==hero && t.dataset.empty!=='true').sort(()=>Math.random()-.5);
- const map=new Map();
- if(hero) map.set(hero,{slot:heroY*c+heroX,hero:true});
- others.forEach((el,i)=>{ if(i<available.length) map.set(el,{slot:available[i],hero:false}); });
- tiles.filter(t=>t.dataset.empty==='true').forEach(el=>{ el.style.opacity='1'; el.classList.remove('hero'); });
- tiles.forEach(el=>{
-   const target=map.get(el);
-   if(!target){el.style.opacity='0'; return;}
-   setGeometry(el,target.slot,target.hero,animate);
-   el.style.opacity='1';
- });
- slotMap=map;
-}
-function clearOpeningTimers(){ openingTimers.forEach(clearTimeout); openingTimers=[]; }
-function clearRecompositionTimers(){ recompositionTimers.forEach(clearTimeout); recompositionTimers=[]; clearTimeout(autoHeroTimer); autoHeroTimer=null; if(autoHeroResolve){const resolve=autoHeroResolve; autoHeroResolve=null; resolve();} }
-function scheduleOpening(fn,delay){ const id=setTimeout(()=>{ openingTimers=openingTimers.filter(x=>x!==id); fn(); },delay); openingTimers.push(id); return id; }
-function scheduleRecomposition(fn,delay){ const id=setTimeout(()=>{ recompositionTimers=recompositionTimers.filter(x=>x!==id); fn(); },delay); recompositionTimers.push(id); return id; }
-
-function showAutoHero(el, hold=1500){
-  if(paused || openId || teachingMoment || !el || el.dataset.empty==='true') return Promise.resolve();
-  autoHeroId=el.dataset.id;
-  layout(true);
-  return new Promise(resolve=>{
-    autoHeroResolve=resolve;
-    autoHeroTimer=setTimeout(()=>{
-      autoHeroTimer=null;
-      autoHeroResolve=null;
-      if(paused || openId || teachingMoment || autoHeroId!==el.dataset.id){ autoHeroId=null; layout(true); resolve(); return; }
-      autoHeroId=null;
-      layout(true);
-      setTimeout(()=>resolve(),3400);
-    }, hold+3200);
-  });
-}
-function startTeachingMoment(){
-  if(teachingMoment || paused || openId) return;
-  if(window.localStorage.getItem('mural40TeachingSeen')==='1') return;
-  const candidates=tiles.filter(t=>t.dataset.empty!=='true');
-  if(!candidates.length) return;
-  const el=candidates[Math.floor(Math.random()*candidates.length)];
-  teachingMoment=true;
-  paused=true;
-  pause.textContent='Pause';
-  clearRecompositionTimers();
-  autoHeroId=el.dataset.id;
-  layout(true);
-  teachingTimer=setTimeout(()=>{
-    if(!teachingMoment || openId) return;
-    autoHeroId=null;
-    layout(true);
-    teachingTimer=setTimeout(()=>{
-      teachingMoment=false;
-      paused=false;
-      pause.textContent='Pause';
-      try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-      layout(true);
-    },3300);
-  },6500);
-}
-function recompose(){
- if(openId || morphing || teachingMoment) return;
- clearRecompositionTimers();
- clearOpeningTimers();
- maybeException41();
- morphing=true;
- paused=false;
- pause.textContent='Pause';
- autoHeroId=null;
- layout(true);
- setTimeout(()=>{
-   morphing=false;
-   if(!openId){
-     paused=false;
-     pause.textContent='Pause';
-   }
- },5600);
-}
-function closeTile(el){
- if(!el || openId!==el.dataset.id) return;
- clearTimeout(returnTimer); clearTimeout(openRevealTimer);
- el.classList.remove('opening');
- paused=true;
- el.classList.add('closing');
- el.classList.remove('open');
- setTimeout(()=>{
-   if(openId!==el.dataset.id) return;
-   el.classList.remove('closing');
-   imageReadyId=null;
-   el.setAttribute("aria-expanded","false");
-   openId=null;
-   pause.textContent='Resume';
-   layout(false);
- },4400);
-}
-function openTile(el){
- if(el.dataset.empty==='true') return;
- if(typeof gtag==='function') gtag('event','mural_open',{mural_id:String(el.dataset.id),mural_year:String(slides.find(s=>String(s.id)===String(el.dataset.id))?.year||'')});
- if(teachingMoment){
-   clearTimeout(teachingTimer);
-   teachingMoment=false;
-   autoHeroId=null;
-   paused=false;
-   pause.textContent='Pause';
-   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-   layout(false);
- }
- // Opening a tile takes priority over background layout timers.
- clearTimeout(clickTimer);
- clearTimeout(returnTimer);
- clearTimeout(openRevealTimer);
- clearRecompositionTimers();
- clearOpeningTimers();
- morphing=false;
- autoHeroId=null;
- imageReadyId=null;
- if(openId && openId!==el.dataset.id) closeTile(document.querySelector(`.tile[data-id="${openId}"]`));
- if(openId===el.dataset.id){ closeTile(el); return; }
- openId=el.dataset.id;
- el.setAttribute("aria-expanded","true");
- paused=true;
- pause.textContent='Resume';
- if(hint){hint.classList.add('hidden'); try{window.localStorage.setItem('mural40HintSeen','1');}catch(e){}}
- layout(true);
- el.classList.add('opening');
- let revealDelay=650;
- try{revealDelay=window.localStorage.getItem('mural40FirstClickSeen')==='1'?650:1400;}catch(e){}
- openRevealTimer=setTimeout(()=>{
-   if(openId!==el.dataset.id) return;
-   el.classList.remove('opening');
-   el.classList.add('open');
-   layout(false);
-   try{window.localStorage.setItem('mural40FirstClickSeen','1');}catch(e){}
- },revealDelay);
-}
-tiles.forEach(el=>{
- el.addEventListener('click',e=>{
-   if(e.target.closest('a') || el.dataset.empty==='true') return;
-   if(e.target.closest('.image-back')) return;
-   if(imageReadyId===el.dataset.id && !el.classList.contains('open')){
-     clearTimeout(clickTimer); clickTimer=setTimeout(()=>{ if(imageReadyId===el.dataset.id) openTile(el); },300); return;
-   }
-   if(el.classList.contains('open')){
-     const a=el.querySelector('.copy a');
-     if(a && a.href) window.location.href=a.href;
-     return;
-   }
-   openTile(el);
- });
- const back=el.querySelector('.back');
- if(back) back.addEventListener('click',e=>{
-   if(e.target.closest('a')) return;
-   if(e.target.closest('.image-back')) closeTile(el);
- });
-});
-document.addEventListener('keydown',e=>{
- const active=document.activeElement;
- const editing=active && (active.tagName==='INPUT' || active.tagName==='TEXTAREA' || active.isContentEditable);
- if(editing) return;
- if(e.key==='Escape' && openId){
-   e.preventDefault();
-   const el=document.querySelector(`.tile[data-id="${openId}"]`);
-   if(el) closeTile(el);
-   return;
- }
- const key=e.key;
- if(exception41Visible && key==='Escape'){ e.preventDefault(); makeException41()._hide(); return; }
- if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' '].includes(key)) return;
- const visible=tiles.filter(t=>t.dataset.empty!=='true');
- if(!visible.length) return;
- if(openId){
-   if(key==='Enter' || key===' '){
-     e.preventDefault();
-     const el=document.querySelector(`.tile[data-id="${openId}"]`);
-     if(el) closeTile(el);
-   }
-   return;
- }
- let current=visible.indexOf(active);
- if(current<0) current=0;
- if(key==='Enter' || key===' '){
-   e.preventDefault();
-   openTile(visible[current]);
-   visible[current].focus();
-   return;
- }
- e.preventDefault();
- let next=current;
- if(key==='ArrowRight' || key==='ArrowDown') next=(current+1)%visible.length;
- if(key==='ArrowLeft' || key==='ArrowUp') next=(current-1+visible.length)%visible.length;
- visible[next].focus();
-});
-window.addEventListener('resize',()=>{layout(false); if(exception41Visible && exception41){const {c,gap,tw,th}=metrics(); exception41.style.width=tw+'px'; exception41.style.height=th+'px';}});
-
-const hint=document.getElementById('hint');
-const pause=document.getElementById('pause');
-const recomposeBtn=document.getElementById('recompose');
-pause.addEventListener('click',()=>{
- if(teachingMoment){
-   clearTimeout(teachingTimer);
-   teachingTimer=null;
-   clearRecompositionTimers();
-   teachingMoment=false; autoHeroId=null;
-   clearRecompositionTimers();
-   paused=false; pause.textContent='Pause';
-   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
-   layout(true);
-   return;
- }
- paused=!paused;
- pause.textContent=paused?'Resume':'Pause';
- if(paused){
-   clearOpeningTimers();
-   clearRecompositionTimers();
-   morphing=false; autoHeroId=null;
-   layout(false);
- }else{
-   // Resume interaction only; do not start another rearrangement.
-   paused=false;
-   pause.textContent='Pause';
- }
-});
-recomposeBtn.addEventListener('click',()=>{
- if(openId){
-   const el=document.querySelector(`.tile[data-id="${openId}"]`);
-   clearTimeout(returnTimer); clearTimeout(openRevealTimer); clearTimeout(clickTimer);
-   if(el){ el.classList.remove('open','closing','opening'); el.setAttribute('aria-expanded','false'); el.style.opacity='1'; }
-   openId=null; imageReadyId=null;
- }
- if(teachingMoment){
-   clearTimeout(teachingTimer);
-   teachingTimer=null;
-   teachingMoment=false;
-   try{window.localStorage.setItem('mural40TeachingSeen','1');}catch(e){}
- }
- clearRecompositionTimers();
- autoHeroId=null;
- paused=false;
- pause.textContent='Pause';
- morphing=false;
- layout(false);
- recompose();
-});
-layout(false);
-const intro=document.getElementById('intro');
-const activeTiles=tiles.filter(t=>t.dataset.empty!=='true');
-activeTiles.forEach(t=>t.classList.add('mist'));
-function beginMuralOpening(){
-  intro.classList.add('fade');
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    activeTiles.forEach(t=>{t.classList.remove('mist');t.classList.remove('mist-clearing');});
-    layout(false);
-    return;
+  let current = "auto";
+  try {
+    const saved = localStorage.getItem(key);
+    if (saved === "white" || saved === "black") current = saved;
+  } catch (_) {}
+  buttons.forEach(button => button.addEventListener("click", () => setTheme(button.dataset.themeChoice)));
+  setTheme(current);
+  if (window.matchMedia) {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => {
+      if (current === "auto") setTheme("auto");
+    });
   }
-  activeTiles.forEach((t,i)=>{
-    const delay=200 + i*70 + Math.random()*400;
-    scheduleOpening(()=>{
-      if(openId || paused) return;
-      t.classList.add('mist-clearing');
-      t.classList.remove('mist');
-      scheduleOpening(()=>t.classList.remove('mist-clearing'),6200);
-    },delay);
-  });
-  // Once the opening arrangement is complete, leave the wall alone.
-  // From here on, recomposition is user-triggered only.
-}
-setTimeout(beginMuralOpening,4600);
-</script></body></html>
+})();
+</script>
+</body>
+</html>

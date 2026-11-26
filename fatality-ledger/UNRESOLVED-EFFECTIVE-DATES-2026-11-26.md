@@ -1,6 +1,6 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 77. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 79. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
@@ -27,6 +27,10 @@ The Oct. 14 Kyiv overnight-attack record now reflects the successive official to
 
 The Oct. 14–15 method-page sequence explicitly establishes inclusion of the Lutsk revisions and the Kirovohrad incident: Lutsk's three- and four-death revisions entered the selected subtotal on Oct. 14 (85→89 adds four); the later four-to-six revision entered on Oct. 15 (90→92 adds two); and the Kirovohrad three-death incident entered on Oct. 15 (92→95 adds three). These four revisions now have `ledger_effective_at` dates of Oct. 14 or Oct. 15. See `STAGE-78-CHECKPOINT.md`.
 
+## Stage 79 adjudication
+
+For the Oct. 16 Kharkiv market incident, REV-001 (—→3) is now dated Oct. 16 because the archived dashboard update explicitly raised the selected subtotal 95→98 and named three deaths in Kharkiv. REV-002 (3→2) remains null: the regional administration later confirmed two, but the Oct. 16 dashboard snapshot continued to show ≈98 and the historical public sequence contains no documented -1 subtraction. The ledger keeps the final incident toll at two. See `STAGE-79-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -40,7 +44,7 @@ The Oct. 14–15 method-page sequence explicitly establishes inclusion of the Lu
 
 | Incident date | Incident ID | Revision | Count change | Delta | Unresolved category |
 |---|---|---|---:|---:|---|
-| 2026-10-05 | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE` | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
+| 2026-10-05 | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE` | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE-REV-001` | — → 1 | +1 | Public subtotal retained three; -1 correction not reflected |
 | 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-001` | — → 14 | +14 | Legacy 148 membership unresolved |
 | 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-002` | 14 → 16 | +2 | Legacy 148 membership unresolved |
 | 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-003` | 16 → 20 | +4 | Legacy 148 membership unresolved |

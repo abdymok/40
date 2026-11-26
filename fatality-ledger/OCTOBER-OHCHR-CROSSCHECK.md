@@ -44,3 +44,28 @@ These leads may explain much of the gap between the historical 192 baseline and 
 The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (3), Izium (5), Kherson (1), Sloviansk (9), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The differences against OHCHR remain explicit review items; no OHCHR number has been imported automatically.
 
 The Oct. 8 Kramatorsk bus record retains the local final toll of 33, with a source note that OHCHR had verified 11 and listed 19 additional reported deaths as under verification. This is a difference in verification status, not proof that the local final toll is false.
+
+
+## Additional October incidents recovered from official Ukrainian reporting
+
+The following incidents were identified while reconciling the opening 192 baseline and have now been entered in the pilot ledger:
+
+- Oct. 5, Kramatorsk: one woman killed in FPV strikes on ambulances and an apartment building.
+- Oct. 8, Ivano-Frankivsk: one civilian security guard killed by falling drone debris.
+- Oct. 9, Zaporizhia: one 48-year-old man killed in guided-bomb strikes.
+- Oct. 9, Synelnykove district: one person killed in Russian attacks on Zaitseve and Petropavlivka communities.
+- Oct. 10, Pokrovske community, Nikopol district: one 11-year-old boy killed by a drone-dropped munition.
+
+The OHCHR report also lists one man killed in Kramatorsk on Oct. 9 in FPV drone strikes on two nine-storey buildings. No distinct Ukrainian local source for this incident has yet been identified. It is held in a separate unresolved file and has not been added to the ledger.
+
+The OHCHR report describes three Ukrainian service members killed in Ivano-Frankivsk on Oct. 11. Those deaths are not included because the project ledger counts non-combatants, not military personnel.
+
+The local-source discrepancies remain open:
+- Oct. 8 Kramatorsk bus strike: local final toll 33; OHCHR says 11 verified and 19 additional reported deaths under verification.
+- Oct. 10 Zaporizhia: local final toll 23; OHCHR lists 21.
+- Oct. 13 Kyiv: local confirmed toll 2; OHCHR lists 3.
+- Oct. 17 Sloviansk: local final toll 9; OHCHR lists 12.
+- Oct. 17 Kherson: local confirmed toll 1; OHCHR lists 2.
+- Oct. 22 Lozova: local confirmed toll 3; OHCHR lists 4.
+
+No OHCHR figure has been automatically added to or substituted in the incident dataset.

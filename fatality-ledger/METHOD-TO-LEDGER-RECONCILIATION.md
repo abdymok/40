@@ -405,3 +405,17 @@ The remaining null revisions have been inventoried in `UNRESOLVED-EFFECTIVE-DATE
 The pre-Oct. 29 group includes a -1 correction in the Kharkiv market incident, hence 139 net rather than 140. These 53 null revisions are not 147 additional deaths to be added to the public total. They combine legacy-baseline candidates, known uncounted revisions and possible overlaps.
 
 The immediate remaining historical task is to reconstruct the 148 baseline's incident membership from the archived 123 baseline and Oct. 25–28 change log. The 46 legacy entries remain null until that membership is proven. No public figure or incident final count changed in this stage.
+
+
+## Stage 62 — Oct. 11 baseline versus current ledger
+
+Checkpoint: `fatality-ledger/STAGE-62-CHECKPOINT.md`  
+Commit: `78eedede057c9385b1b563218a059c24df6927de`
+
+The current ledger contains 14 records dated through Oct. 11, with a raw sum of 93. Seven records correspond to death-bearing rows visible in the Oct. 11 snapshot and sum to 86 using current tolls. The other seven current records sum to seven deaths and are not itemized as death-bearing rows in the visible snapshot. This does not prove they were excluded from the approximate-80 subtotal, whose incident-level membership is not fully enumerated.
+
+Two visible tolls have since increased: Solomiansky shop, 2→3, and Zaporizhia residential strike, 20→23. The Oct. 11 snapshot also includes a one-death Dnipropetrovsk-region row for which no matching record exists in the current ledger slice. This is a specific coverage gap for follow-up, not grounds to create an unidentified incident.
+
+The visible rows sum mechanically to 83, but the snapshot explicitly warns of possible overlap between citywide Kyiv aggregates and incident-level entries and calls the subtotal approximate. Accordingly, 83 and the current raw ledger sum of 93 are not treated as comparable exact totals. The Oct. 6 Kherson doctor's death was reported only on Nov. 17 and is retained as a delayed death, not retroactively attributed to the Oct. 11 snapshot.
+
+No incident data, effective dates or public counters changed.

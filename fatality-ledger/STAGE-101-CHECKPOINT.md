@@ -32,6 +32,7 @@ This dates public inclusion, not the time the death occurred. The incident date 
 - Revisions with confirmed `ledger_effective_at`: 198
 - Null revisions overall: 33
 - Pre-Oct. 29 null revisions: 26, net +82
+- Pre-Oct. 29 revisions still unresolved after Stage 101: 14, net +19
 - Post-Oct. 29 null revisions: 7, net +8
 - Total net arithmetic change across null revisions: +90
 - Published minimum: 421, unchanged

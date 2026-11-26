@@ -6952,18 +6952,18 @@
         "recorded_at": "2026-11-11",
         "old_value": null,
         "new_value": 1,
-        "reason": "The first death was already included in the ≈282 subtotal through Nov. 11. The subsequent 282→283 update explicitly adds the separate Chornomorsk market death, and the 283→284 update for Saltivsky says the first death was already in the preceding subtotal. The first confirmed inclusion date for this revision is therefore 2026-11-11; the second death is the later Nov. 11 increment.",
+        "reason": "The first death was reported by Terekhov at 13:37 UTC on Nov. 11, after the ≈283 baseline commit `9a8a5b44430108fdb04e4744a1ff2dc8a88db799` at 11:17:07 UTC. The second death was reported at 13:43 UTC. Commit `26a44c4287b2429832fc9f2fc26087cfe45c7e12` at 13:58:46 UTC is titled “Add second Kharkiv strike death and update dashboard” and raises the subtotal only 283→284 (+1). The first death therefore was not in the 282 or 283 baseline; the 283→284 increment is assigned to REV-002 (the second death). REV-001 remains null and is not included in the 421 subtotal.",
         "source_ids": [
           "SALTIVSKY-TEREKHOV-2026-11-11"
         ],
-        "ledger_effective_at": "2026-11-11"
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-002",
         "recorded_at": "2026-11-11T16:16:00+02:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "The mayor later reported two fatalities. The incident's final count is two; the project subtotal had already included the first death before this update.",
+        "reason": "The second death was reported by Terekhov at 13:43 UTC on Nov. 11. Commit `26a44c4287b2429832fc9f2fc26087cfe45c7e12` at 13:58:46 UTC is titled “Add second Kharkiv strike death and update dashboard” and raises the subtotal 283→284 (+1). This increment is assigned to the 1→2 revision. The first death was reported only after the ≈283 baseline and has no separate increment; see Stage 97.",
         "source_ids": [
           "SALTIVSKY-IFAX-2026-11-11",
           "SALTIVSKY-UP-2026-11-11"

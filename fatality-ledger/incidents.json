@@ -6952,11 +6952,11 @@
         "recorded_at": "2026-11-11",
         "old_value": null,
         "new_value": 1,
-        "reason": "The method page's Nov. 11 sequence adds only one death at the 283→284 update and says the first death was already in the preceding subtotal. The exact earlier inclusion point is not isolated, so this initial report is not assigned as a new increment here; the second death remains the Nov. 11 increment.",
+        "reason": "The first death was already included in the ≈282 subtotal through Nov. 11. The subsequent 282→283 update explicitly adds the separate Chornomorsk market death, and the 283→284 update for Saltivsky says the first death was already in the preceding subtotal. The first confirmed inclusion date for this revision is therefore 2026-11-11; the second death is the later Nov. 11 increment.",
         "source_ids": [
           "SALTIVSKY-TEREKHOV-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       },
       {
         "revision_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-002",

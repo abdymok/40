@@ -1,7 +1,7 @@
 # Nov. 23–26 fatality reconciliation
 
 **Status:** Stage 6 — dated subtotal chain checked against the current methodology and chronology  
-**Scope:** The incremental sequence after the Nov. 22 reconciled baseline of 391.  
+**Scope:** The incremental sequence after the Nov. 22 reconciled baseline of 391. Updated through the Nov. 26 public minimum of 421.  
 **Public pages unchanged.**
 
 ## Reconciled cumulative sequence
@@ -25,8 +25,10 @@ The methodology page's incident paragraphs form this continuous arithmetic seque
 | Nov. 25 | One killed in Sumy community and one delayed hospital death from Seredyno-Budska attack | +2 | 415 |
 | Nov. 25 | One killed in attack on vehicle parking area in Malyn community | +1 | 416 |
 | Nov. 26 | Two killed in Shahed strike on residential building in Novobavarsky district, Kharkiv | +2 | 418 |
+| Nov. 26 | One killed in separate Nov. 25 FAB-500 strike in Sloviansk | +1 | 419 |
+| Nov. 26 | Two killed on a road near Dovzhyk, Kharkiv region, on Nov. 25 | +2 | 421 |
 
-**Arithmetic check:** 391 + 4 + 3 + 3 + 2 + 2 + 2 + 1 + 1 + 1 + 2 + 1 + 2 + 1 + 2 = 418. The Nov. 23–26 subtotal chain is internally continuous once the corrected Nov. 22 baseline of 391 is used.
+**Arithmetic check:** 391 + 4 + 3 + 3 + 2 + 2 + 2 + 1 + 1 + 1 + 2 + 1 + 2 + 1 + 2 = 421. The Nov. 23–26 subtotal chain is internally continuous once the corrected Nov. 22 baseline of 391 is used and the two final Nov. 26 updates are included.
 
 ## Incident separation and duplicate safeguards
 
@@ -64,4 +66,13 @@ The methodology page's incident paragraphs form this continuous arithmetic seque
 
 ## Current conclusion
 
-The methodology's Nov. 23–26 additions reconcile arithmetically from 391 to 418. This validates the *sequence of stated additions*, not yet the full incident-level completeness of the entire October–November ledger. No public figure should be regenerated from the partial pilot ledger.
+The methodology's Nov. 23–26 additions reconcile arithmetically from 391 to 421. This validates the *sequence of stated additions*, not yet the full incident-level completeness of the entire October–November ledger. No public figure should be regenerated from the partial pilot ledger.
+
+
+## Stage 52 update — Nov. 26 final three deaths
+
+The earlier 418 stopping point has been extended by three documented deaths:
+- One man killed in a separate Nov. 25 FAB-500 strike in central Sloviansk, confirmed by Interfax-Ukraine and Ukrinform.
+- Two people killed on a road near Dovzhyk on Nov. 25, confirmed by Kharkiv Regional Military Administration.
+
+These are separate incidents and are represented by separate records in the incident ledger. The current public minimum is 421, not 418.

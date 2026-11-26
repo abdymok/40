@@ -4,9 +4,9 @@ Date: 2026-11-26
 
 ## Finding
 
-The infrastructure dashboard was first published on **Oct. 10, 2026, at 16:05 Kyiv time**, in commit `27776283f345cdeb7d6803af49b8267fa022c68b` (“Publish infrastructure dashboard and provisional October 10 update”).
+The first dashboard draft was committed on Oct. 10 at 09:15 Kyiv time (`58946fd`) and reverted at 09:17 Kyiv time (`a00616c`) pending review. The final public dashboard was committed at **16:32 Kyiv time** in commit `27776283f345cdeb7d6803af49b8267fa022c68b` (“Publish infrastructure dashboard and provisional October 10 update”).
 
-The first dashboard contained five measures:
+The final published dashboard's page timestamp read 16:05 Kyiv time, 27 minutes before the publication commit. It contained five measures:
 - Sites hit: 20+
 - Civilians killed: approximately 100
 - Injured: approximately 600
@@ -42,7 +42,9 @@ No changes to `fatality-ledger/incidents.json`, incident records, revision histo
 
 ## Source commits
 
-- First dashboard, Oct. 10 16:05: `27776283f345cdeb7d6803af49b8267fa022c68b`
+- First dashboard draft, Oct. 10 09:15: `58946fdeb45e330948d31166eb7e292e99df3898`
+- Draft reverted pending review, Oct. 10 09:17: `a00616cc8af8df8398b958bd8ba2c92111842fd6`
+- Final public dashboard commit, Oct. 10 16:32: `27776283f345cdeb7d6803af49b8267fa022c68b` (page's internal last-updated timestamp: 16:05 Kyiv time)
 - Oct. 11 ≈80 baseline: `733a9b45892d232c5e0e2f2ac120f659ef58002b`
 - Oct. 11 interim 90+ tile: `b915a945a1d932a41cb7291a051de8b8be863bca`
 - Oct. 11 90+ explanation: `1b09f0d430a820ecfa5057569dae8a8f3e4d7ea9` and `11f63c34ecc63cb1253ea7d12d00d10fad4e25c8`

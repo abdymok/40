@@ -4,16 +4,16 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 
 ## Summary
 
-- Null revision entries: 34
-- Net sum of count changes across these entries: 91
-- Legacy pre-Oct. 29 entries: 27 entries, 83 net count changes
+- Null revision entries: 33
+- Net sum of count changes across these entries: 90
+- Legacy pre-Oct. 29 entries: 26 entries, 82 net count changes
 - Nov. 11 Saltivsky first death: 1 entry, 1 death (not included in 421)
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths (later inclusion in 421 unproven)
 - Oct. 31 Sloviansk: 1 entry, 1 death (174-baseline membership unverified)
 - Nov. 3 Dnipro second death: 1 entry, 1 death (not in mapped Nov. 3 increment)
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 27 remaining pre-Oct. 29 entries carry 83 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The seven remaining post-Oct. 29 entries account for eight further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and two later Chornomorsk revisions. Together with the seven post-Oct. 29 entries, the 27 legacy entries bring the unresolved revisions to a net arithmetic change of 91. This is not 89 additional deaths to be added to the public total as a block.
+The 26 remaining pre-Oct. 29 entries carry 82 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The seven remaining post-Oct. 29 entries account for eight further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and two later Chornomorsk revisions. Together with the seven post-Oct. 29 entries, the 26 legacy entries bring the unresolved revisions to a net arithmetic change of 90. This is not 89 additional deaths to be added to the public total as a block.
 
 ## Stage 76 adjudication
 
@@ -105,6 +105,12 @@ The Oct. 25 death of DTEK driver Vitaliy Shcherbyna is a distinct incident: DTEK
 
 The Oct. 22 ≈123 baseline predates Shcherbyna's death. The mapped Oct. 25–28 increments identify other incidents and do not include him. A separate incident record has therefore been added to `incidents.json` with one documented death, regional-level location and two sources. Its `ledger_effective_at` remains null because the death is not evidenced in the historical 148 baseline or published 421 minimum. The incident ledger now contains 176 records, 430 source records and 452 final documented deaths; 34 revision entries remain null. The public subtotal remains 421. See `STAGE-99-CHECKPOINT.md` and `UNRESOLVED-DTEK-SHCHERBYNA-OCT25.md`.
 
+## Stage 101 adjudication
+
+The Kyiv ballistic attack that began late on Oct. 21 killed one person. The State Emergency Service confirmed the death in its Oct. 22 morning report. The Oct. 22 dashboard snapshot explicitly lists one person killed in the overnight attack on Kyiv and raises the selected-incident subtotal to approximately 118. Revision `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001` is therefore dated `ledger_effective_at: 2026-10-22`, the first confirmed public inclusion date. This is the same attack recorded in the Oct. 21 incident record, not a second incident. See `STAGE-101-CHECKPOINT.md` and dashboard commit `4ada778321c66b570c73f8d5353617a076db8ee`.
+
+The overall null inventory falls from 34 to 33. The pre-Oct. 29 null inventory falls from 27 (+83 net) to 26 (+82 net). The public 421 minimum is unchanged.
+
 ## Stage 100 adjudication
 
 Stage 100 classified 12 of the 27 pre-Oct. 29 null revisions without assigning invented effective dates. Nine are interim or superseded tolls for Pryluky, the Kramatorsk two-bus strike, Sloviansk (Oct. 17) and Nova Vodolaha; their final tolls are represented by separately dated revisions and the interim values are not independent death batches. Two deaths (Uman and DTEK driver Vitaliy Shcherbyna) are not evidenced in the Oct. 28 148 baseline; Uman's later inclusion in 421 remains unproven, while Shcherbyna is not evidenced in the mapped public sequence. One Kharkiv market correction (3→2) was not subtracted from the public count: the Oct. 16 dashboard added three and the subsequent public sequence contains no -1 correction. These 12 entries carry a net arithmetic change of +63, but this is not an amount to add to the public subtotal.
@@ -147,7 +153,6 @@ The remaining 15 pre-Oct. 29 null revisions carry a net +20 and still require in
 | 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-001` | — → 3 | +3 | Initial toll not separately included |
 | 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002` | 3 → 6 | +3 | Preliminary six superseded; no separate increment |
 | 2026-10-21 | `UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE` | `UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
-| 2026-10-21 | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC` | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-22 | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET` | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002` | 2 → 3 | +1 | Legacy 148 membership unresolved |
 | 2026-10-24 | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE` | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-25 | `UA-DNE-DNIPROPETROVSK-2026-10-25-DTEK-DRIVER` | `UA-DNE-DNIPROPETROVSK-2026-10-25-DTEK-DRIVER-REV-001` | — → 1 | +1 | Distinct DTEK mine lorry strike; not evidenced in 148 or 421 |

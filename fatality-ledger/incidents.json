@@ -1,0 +1,210 @@
+[
+  {
+    "incident_id": "UA-KYI-DYMER-2026-11-22-RESIDENTIAL",
+    "incident_date": "2026-11-22",
+    "location": {
+      "settlement": "Dymer",
+      "district": "Vyshhorod district",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone strike on a five-storey residential apartment building, collapsing an entrance section and causing a fire. Rescue operations recovered 11 bodies by the conclusion of the operation on Nov. 23. A 79-year-old woman rescued alive on Nov. 23 died in hospital on Nov. 24.",
+    "documented_deaths": 12,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DYMER-DSNS-2026-11-22-81212",
+        "publisher": "State Emergency Service of Ukraine",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dsns_telegram/81212",
+        "supports": ["incident_identity", "death_count", "incident_date"],
+        "notes": "Official emergency-service report confirming the initial recovered bodies. The chronology identifies the report as current through Nov. 22."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-22-3129",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/s/tkachenkotymur/3129",
+        "supports": ["death_count", "count_revision"],
+        "notes": "Official updates through 21:53 on Nov. 22, recording the rise to five deaths at 19:56 and six at 21:53."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-22-3138",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-22T22:52:00+02:00",
+        "url": "https://t.me/tkachenkotymur/3138",
+        "supports": ["death_count", "count_revision"],
+        "notes": "Reports recovery of the seventh body at 22:52 on Nov. 22."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-23-3139",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3139",
+        "supports": ["death_count", "count_revision"],
+        "notes": "Reports recovery of the eighth body at 02:15 on Nov. 23."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-23-3140",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3140",
+        "supports": ["death_count", "count_revision"],
+        "notes": "Reports recovery of the ninth body at 02:38 on Nov. 23."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-23-3141",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3141",
+        "supports": ["victim_status"],
+        "notes": "Reports that a 79-year-old woman was rescued alive at 03:28 and hospitalized. This is specifically a survivor update, not a death-count increment."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-23-3142",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3142",
+        "supports": ["death_count", "count_revision"],
+        "notes": "Reports recovery of the tenth body at 05:51 on Nov. 23."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-23-3143",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3143",
+        "supports": ["death_count", "count_revision"],
+        "notes": "Reports recovery of the eleventh body at 07:23 on Nov. 23."
+      },
+      {
+        "source_id": "DYMER-TKACHENKO-2026-11-24-3145",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3145",
+        "supports": ["death_count", "count_revision"],
+        "notes": "Reports that the 79-year-old woman rescued alive on Nov. 23 died in hospital on Nov. 24."
+      },
+      {
+        "source_id": "DYMER-UP-2026-11-23",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T12:39:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/23/8064175/",
+        "supports": ["incident_identity", "death_count", "incident_date", "corroboration"],
+        "notes": "Reports 11 deaths in Dymer by Nov. 23 and explains the rescue operation and changing missing-person figures. Does not count the woman rescued alive as dead."
+      },
+      {
+        "source_id": "DYMER-HROMADSKE-2026-11-23-24",
+        "publisher": "Hromadske",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://hromadske.ua/en/war/274826-russian-drone-strike-on-apartment-building-near-kyiv-kills-11-rescuers-pull-two-survivors-from-rubble",
+        "supports": ["death_count", "count_revision", "victim_status", "corroboration"],
+        "notes": "Reports 11 deaths on Nov. 23 and updates to 12 after the woman rescued from the rubble dies in hospital on Nov. 24."
+      },
+      {
+        "source_id": "DYMER-UP-2026-11-24",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/24/8064333/index.amp",
+        "supports": ["death_count", "count_revision", "victim_status", "corroboration"],
+        "notes": "Explicitly identifies the hospital death as the twelfth victim."
+      },
+      {
+        "source_id": "DYMER-INTERFAX-2026-11-24",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://interfax.com.ua/news/general/1241250-amp.html",
+        "supports": ["death_count", "count_revision", "corroboration"],
+        "notes": "Reports the woman's death after the 11 deaths reported at the conclusion of the rescue operation."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "DYMER-REV-001",
+        "recorded_at": "2026-11-22T14:52:00+02:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Two bodies had been recovered and confirmed by DSNS. This establishes the initial documented count used in the project subtotal.",
+        "source_ids": ["DYMER-DSNS-2026-11-22-81212"]
+      },
+      {
+        "revision_id": "DYMER-REV-002",
+        "recorded_at": "2026-11-22T19:56:00+02:00",
+        "old_value": 2,
+        "new_value": 5,
+        "reason": "Three further bodies were recovered during the search operation.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-22-3129"]
+      },
+      {
+        "revision_id": "DYMER-REV-003",
+        "recorded_at": "2026-11-22T21:53:00+02:00",
+        "old_value": 5,
+        "new_value": 6,
+        "reason": "A sixth body was recovered.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-22-3129"]
+      },
+      {
+        "revision_id": "DYMER-REV-004",
+        "recorded_at": "2026-11-22T22:52:00+02:00",
+        "old_value": 6,
+        "new_value": 7,
+        "reason": "A seventh body was recovered.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-22-3138"]
+      },
+      {
+        "revision_id": "DYMER-REV-005",
+        "recorded_at": "2026-11-23T00:15:00+02:00",
+        "old_value": 7,
+        "new_value": 8,
+        "reason": "An eighth body was recovered.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3139"]
+      },
+      {
+        "revision_id": "DYMER-REV-006",
+        "recorded_at": "2026-11-23T00:38:00+02:00",
+        "old_value": 8,
+        "new_value": 9,
+        "reason": "A ninth body was recovered.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3140"]
+      },
+      {
+        "revision_id": "DYMER-REV-007",
+        "recorded_at": "2026-11-23T05:51:00+02:00",
+        "old_value": 9,
+        "new_value": 10,
+        "reason": "A tenth body was recovered.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3142"]
+      },
+      {
+        "revision_id": "DYMER-REV-008",
+        "recorded_at": "2026-11-23T07:23:00+02:00",
+        "old_value": 10,
+        "new_value": 11,
+        "reason": "An eleventh body was recovered. The rescue operation subsequently concluded with 11 deaths.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3143", "DYMER-UP-2026-11-23"]
+      },
+      {
+        "revision_id": "DYMER-REV-009",
+        "recorded_at": "2026-11-24T08:23:00+02:00",
+        "old_value": 11,
+        "new_value": 12,
+        "reason": "The 79-year-old woman rescued alive and hospitalized on Nov. 23 died in hospital. This is a new death in the same incident, not a revision to the number of bodies recovered during the rescue operation.",
+        "source_ids": ["DYMER-TKACHENKO-2026-11-24-3145", "DYMER-HROMADSKE-2026-11-23-24", "DYMER-UP-2026-11-24", "DYMER-INTERFAX-2026-11-24"]
+      }
+    ]
+  }
+]

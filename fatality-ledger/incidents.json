@@ -3862,7 +3862,7 @@
         "recorded_at": "2026-10-31T11:27:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Ukrainska Pravda first identified this separate death on Oct. 31. It is not listed in the historical 173 snapshot's four-death Izium airstrike increment; its inclusion in any later public subtotal remains unverified.",
+        "reason": "Ukrainska Pravda first identified this separate death on Oct. 31. The Nov. 2 174 baseline's itemized Izium entries are four people killed in the Oct. 29 airstrike and one person killed in a separate Nov. 2 morning attack; this Oct. 29 death in a different attack is not named. The later 421 reconciliation identifies no separate addition for this incident. Its inclusion in a later, non-itemized subtotal is unproven; keep ledger_effective_at null.",
         "source_ids": [
           "IZIUM-UP-2026-10-31-INITIAL",
           "KHARKIV-REGION-SYNEHUBOV-2026-10-29"
@@ -3940,7 +3940,7 @@
         "recorded_at": "2026-10-30T20:16:00+02:00",
         "old_value": 4,
         "new_value": 5,
-        "reason": "Interfax-Ukraine, citing the regional administration, confirmed five employees of the local Center for Disease Control and Prevention were killed.",
+        "reason": "The historical Oct. 30 dashboard and Nov. 2 174 baseline explicitly include four deaths in the Oct. 29 Izium airstrike. Interfax-Ukraine later reported the fifth death, raising the incident from four to five, but the 174 baseline's itemized entry remains four. The later 421 reconciliation identifies no separate addition for this fifth death. Its inclusion in a later, non-itemized subtotal is unproven; keep ledger_effective_at null.",
         "source_ids": [
           "IZIUM-IFAX-2026-10-30",
           "IZIUM-UKRINFORM-2026-10-30"

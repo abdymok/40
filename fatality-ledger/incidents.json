@@ -3672,5 +3672,665 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-SOLOMIANSKY-2026-11-12-RESIDENTIAL-DRONE",
+    "incident_date": "2026-11-12",
+    "location": {
+      "settlement": "Kyiv",
+      "district": "Solomiansky district",
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone strike hit a nine-storey residential building in Kyiv's Solomiansky district, killing one woman and injuring five people.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SOLOMIANSKY-KLYCHKO-2026-11-12-8105",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/vitaliy_klitschko/8105",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial mayoral report of the strike and fatality."
+      },
+      {
+        "source_id": "SOLOMIANSKY-KLYCHKO-2026-11-12-8107",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/vitaliy_klitschko/8107",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Follow-up casualty update, including five injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-SOLOMIANSKY-2026-11-12-RESIDENTIAL-DRONE-REV-001",
+        "recorded_at": "2026-11-12",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SOLOMIANSKY-KLYCHKO-2026-11-12-8105",
+          "SOLOMIANSKY-KLYCHKO-2026-11-12-8107"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-11-12-ATTACKS",
+    "incident_date": "2026-11-12",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strikes across Kramatorsk during Nov. 12 killed four people and injured at least six. The city administration reported attacks involving FPV drones and FAB-250 aerial bombs; the available report does not allocate the four deaths to individual strikes.",
+    "documented_deaths": 4,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-12-UKRINFORM-2026-11-12",
+        "publisher": "Ukrinform, citing Kramatorsk City Military Administration head Oleksandr Honcharenko",
+        "source_type": "news_report",
+        "published_at": "2026-11-12T23:25:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4184107-four-killed-six-injured-in-russian-strikes-on-kramatorsk.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports four people killed and at least six injured in attacks across Kramatorsk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-11-12-ATTACKS-REV-001",
+        "recorded_at": "2026-11-12",
+        "old_value": null,
+        "new_value": 4,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-12-UKRINFORM-2026-11-12"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ODE-ODESA-2026-11-13-RESIDENTIAL-STRIKE",
+    "incident_date": "2026-11-13",
+    "location": {
+      "settlement": "Odesa",
+      "district": null,
+      "region": "Odesa region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack on a private residential area in Odesa killed two people and injured five. This is separate from the Nov. 9 warehouse strike.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ODESA-13-ODESKAODA-2026-11-13-22676",
+        "publisher": "Odesa Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/odeskaODA/22676",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional report of two deaths in the Nov. 13 attack."
+      },
+      {
+        "source_id": "ODESA-13-REUTERS-2026-11-13",
+        "publisher": "Reuters",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T19:00:00+02:00",
+        "url": "https://www.reuters.com/world/russian-strikes-kill-one-zaporizhzhia-two-odesa-2026-11-13/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two deaths in Odesa and one rescuer killed in Zaporizhia."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ODE-ODESA-2026-11-13-RESIDENTIAL-STRIKE-REV-001",
+        "recorded_at": "2026-11-13",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ODESA-13-ODESKAODA-2026-11-13-22676",
+          "ODESA-13-REUTERS-2026-11-13"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-2026-11-13-PRIVATE-SECTOR-TEEN",
+    "incident_date": "2026-11-13",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Two Russian strikes hit a residential area of private houses in Zaporizhia at about 06:30, killing a 17-year-old boy and injuring four people, including a 10-year-old boy.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-13-IFAX-2026-11-13",
+        "publisher": "Interfax-Ukraine, citing Ivan Fedorov and Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T09:04:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1235856.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 17-year-old killed in the morning attack at about 06:30."
+      },
+      {
+        "source_id": "ZAP-13-UP-2026-11-13",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T08:00:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/13/8062645/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one teenager killed and four people rescued injured from the rubble."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-13-PRIVATE-SECTOR-TEEN-REV-001",
+        "recorded_at": "2026-11-13",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ZAP-13-IFAX-2026-11-13",
+          "ZAP-13-UP-2026-11-13"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-DISTRICT-2026-11-12-PASSENGER-BUS",
+    "incident_date": "2026-11-12",
+    "location": {
+      "settlement": null,
+      "district": "Zaporizhia district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone struck a regular passenger bus in Zaporizhia district on Nov. 12, injuring three women. One woman who was critically injured died in hospital on Nov. 13.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-BUS-IFAX-2026-11-12",
+        "publisher": "Interfax-Ukraine, citing Zaporizhia Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://en.interfax.com.ua/news/general/1235506-amp.html",
+        "supports": [
+          "incident_identity",
+          "incident_date",
+          "victim_status"
+        ],
+        "notes": "Reports the Nov. 12 bus strike and three women injured."
+      },
+      {
+        "source_id": "ZAP-BUS-UP-2026-11-12",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-12T15:07:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/12/8062534/",
+        "supports": [
+          "incident_identity",
+          "incident_date"
+        ],
+        "notes": "Reports the drone strike on the passenger bus and three women injured."
+      },
+      {
+        "source_id": "ZAP-BUS-UP-DEATH-2026-11-13",
+        "publisher": "Ukrainska Pravda, citing acting regional administration head Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T11:19:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/13/8062674/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports that the critically injured woman died in hospital on Nov. 13."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-DISTRICT-2026-11-12-PASSENGER-BUS-REV-001",
+        "recorded_at": "2026-11-12",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ZAP-BUS-IFAX-2026-11-12",
+          "ZAP-BUS-UP-2026-11-12",
+          "ZAP-BUS-UP-DEATH-2026-11-13"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-KOSMICHNY-2026-11-13-INDUSTRIAL-FACILITY",
+    "incident_date": "2026-11-13",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Kosmichny district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian strike on an industrial facility in Zaporizhia's Kosmichny district caused a fire. A man was found dead under the rubble.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-KOSMICHNY-IFAX-2026-11-13",
+        "publisher": "Interfax-Ukraine, citing acting regional administration head Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T11:11:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1235972-amp.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports a man found dead under rubble after the strike on the industrial facility."
+      },
+      {
+        "source_id": "ZAP-KOSMICHNY-UKRINFORM-2026-11-13",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T10:55:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4184236-vorog-atakuvav-zaporizza-pid-zavalami-budivli-opinivsa-colovik.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the man found under rubble at the industrial facility."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-KOSMICHNY-2026-11-13-INDUSTRIAL-FACILITY-REV-001",
+        "recorded_at": "2026-11-13",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ZAP-KOSMICHNY-IFAX-2026-11-13",
+          "ZAP-KOSMICHNY-UKRINFORM-2026-11-13"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-ZOLOTA-BALKA-2026-11-13-DRONE-ATTACK",
+    "incident_date": "2026-11-13",
+    "location": {
+      "settlement": "Zolota Balka",
+      "district": "Berislav district",
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack in Zolota Balka killed two local residents, a 56-year-old man and a woman. A separate Berislav district report confirmed the same two victims; they are counted once.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZOLOTA-BALKA-SUSPILNE-2026-11-13",
+        "publisher": "Suspilne Kherson",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T00:00:00+02:00",
+        "url": "https://suspilne.media/kherson/1452475-na-hersonsini-cerez-ataku-rosijskogo-drona-zaginuli-dvoe-ziteliv-zolotoi-balki/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two residents killed in a Russian drone attack in Zolota Balka."
+      },
+      {
+        "source_id": "ZOLOTA-BALKA-BERISLAV-2026-11-14",
+        "publisher": "Berislav District Military Administration",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://suspilne.media/kherson/1452733-berislavskij-rajon-pid-atakami-rf-dvoe-ludej-zaginuli-se-dvoe-pidirvalisa-na-mini/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Next-day district report confirms the same two Zolota Balka deaths; it is not an additional two."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-ZOLOTA-BALKA-2026-11-13-DRONE-ATTACK-REV-001",
+        "recorded_at": "2026-11-13",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ZOLOTA-BALKA-SUSPILNE-2026-11-13",
+          "ZOLOTA-BALKA-BERISLAV-2026-11-14"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-YASNA-POLYANA-2026-11-13-ATTACK",
+    "incident_date": "2026-11-13",
+    "location": {
+      "settlement": "Yasna Polyana",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack in Yasna Polyana killed one resident on Nov. 13.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "YASNA-POLYANA-FILASHKIN-2026-11-14",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/19259",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional casualty update reports one person killed in Yasna Polyana on Nov. 13."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-YASNA-POLYANA-2026-11-13-ATTACK-REV-001",
+        "recorded_at": "2026-11-13",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "YASNA-POLYANA-FILASHKIN-2026-11-14"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-KOSMICHNY-2026-11-13-RESIDENTIAL-RESCUER",
+    "incident_date": "2026-11-13",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Kosmichny district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "During emergency work at a five-storey residential building damaged by a Russian strike on Nov. 13, a concrete slab fell on 33-year-old Vladyslav, an employee of the Cobra rescue service, killing him. This is a responder fatality at the residential-building strike site, distinct from the man found dead at the industrial facility.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "COBRA-IFAX-2026-11-13",
+        "publisher": "Interfax-Ukraine, citing acting regional administration head Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T19:41:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1236403-amp.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the rescuer killed while clearing rubble at the five-storey building."
+      },
+      {
+        "source_id": "COBRA-UP-2026-11-13",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T19:30:00+02:00",
+        "url": "https://www.pravda.com.ua/news/2026/11/13/8062793/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the rescuer killed when a concrete slab fell during rubble-clearing."
+      },
+      {
+        "source_id": "COBRA-INFORM-2026-11-13",
+        "publisher": "Inform.zp.ua",
+        "source_type": "news_report",
+        "published_at": "2026-11-13T19:57:00+02:00",
+        "url": "https://www.inform.zp.ua/uk/2026/11/13/405972_u-zaporizhzhi-pid-chas-rozbyrannya-zavaliv-zagynuv-ryatuvalnyk-kobry/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Identifies the rescuer as 33-year-old Vladyslav."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-KOSMICHNY-2026-11-13-RESIDENTIAL-RESCUER-REV-001",
+        "recorded_at": "2026-11-13",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "COBRA-IFAX-2026-11-13",
+          "COBRA-UP-2026-11-13",
+          "COBRA-INFORM-2026-11-13"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-PAVLOHRAD-2026-11-14-MISSILE-STRIKE",
+    "incident_date": "2026-11-14",
+    "location": {
+      "settlement": "Pavlohrad",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian missile strike damaged apartment buildings, a school and a kindergarten in Pavlohrad, killing one person and injuring ten.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "PAVLOHRAD-ODA-2026-11-14",
+        "publisher": "Dnipropetrovsk Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA/33335",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional administration casualty report."
+      },
+      {
+        "source_id": "PAVLOHRAD-UKRINFORM-2026-11-14",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-14T17:24:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4184713-strike-on-pavlohrad-one-killed-injury-toll-rises-to-ten.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed and ten injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-PAVLOHRAD-2026-11-14-MISSILE-STRIKE-REV-001",
+        "recorded_at": "2026-11-14",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "PAVLOHRAD-ODA-2026-11-14",
+          "PAVLOHRAD-UKRINFORM-2026-11-14"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-CHN-MENA-2026-11-14-CRITICAL-INFRASTRUCTURE",
+    "incident_date": "2026-11-14",
+    "location": {
+      "settlement": "Mena",
+      "district": null,
+      "region": "Chernihiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck a critical infrastructure facility in Mena at about 16:00, killing two local men aged 42 and 45 and injuring a 33-year-old man.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "MENA-CENSOR-2026-11-14",
+        "publisher": "Censor.NET, citing Koriukivka District Military Administration head Pavlo Miroshnychenko",
+        "source_type": "news_report",
+        "published_at": "2026-11-14T22:00:00+02:00",
+        "url": "https://censor.net/en/news/4033745/russia-has-attacked-critical-infrastructure-in-mena-there-have-been-fatalities",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two men killed in the Nov. 14 drone strike."
+      },
+      {
+        "source_id": "MENA-CHAUS-2026-11-15",
+        "publisher": "Chernihiv Regional Military Administration head Viacheslav Chaus",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-15T08:00:00+02:00",
+        "url": "https://t.me/chernigivskaODA/32777",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Next-morning official confirmation of the two deaths."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-CHN-MENA-2026-11-14-CRITICAL-INFRASTRUCTURE-REV-001",
+        "recorded_at": "2026-11-14",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "MENA-CENSOR-2026-11-14",
+          "MENA-CHAUS-2026-11-15"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-BOROVA-2026-11-14-STRIKE",
+    "incident_date": "2026-11-14",
+    "location": {
+      "settlement": "Borova",
+      "district": "Izium district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike on Borova at about 12:20 killed a 67-year-old man.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "BOROVA-PROSECUTOR-2026-11-14",
+        "publisher": "Kharkiv Regional Prosecutor's Office",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-14T00:00:00+02:00",
+        "url": "https://t.me/prokuratura_kharkiv/31327",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official prosecutor's report of the 67-year-old man's death."
+      },
+      {
+        "source_id": "BOROVA-UP-2026-11-14",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-14T00:00:00+02:00",
+        "url": "https://www.pravda.com.ua/news/2026/11/14/8062897/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the man killed in the Nov. 14 attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-BOROVA-2026-11-14-STRIKE-REV-001",
+        "recorded_at": "2026-11-14",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "BOROVA-PROSECUTOR-2026-11-14",
+          "BOROVA-UP-2026-11-14"
+        ]
+      }
+    ]
   }
 ]

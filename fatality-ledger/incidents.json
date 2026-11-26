@@ -4947,11 +4947,11 @@
         "recorded_at": "2026-11-02T11:31:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "The initial one-death report was a preliminary figure and is superseded by the 18-death Nov. 2 update. It was not a separate increment in the 174 baseline.",
+        "reason": "The initial one-death report is part of the final 18-death Komyshuvakha figure included in the Nov. 2 opening subtotal of 192. The 1→18 revision sequence is one cumulative count, not 1+18.",
         "source_ids": [
           "KOMYSH-UKRINFORM-2026-11-02-INITIAL"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-02"
       },
       {
         "revision_id": "KOMYSH-REV-002",
@@ -6861,11 +6861,11 @@
         "recorded_at": "2026-11-11",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial mayoral report said one person had been killed.",
+        "reason": "The method page's Nov. 11 sequence adds only one death at the 283→284 update and says the first death was already in the preceding subtotal. The exact earlier inclusion point is not isolated, so this initial report is not assigned as a new increment here; the second death remains the Nov. 11 increment.",
         "source_ids": [
           "SALTIVSKY-TEREKHOV-2026-11-11"
         ],
-        "ledger_effective_at": "2026-11-11"
+        "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-002",

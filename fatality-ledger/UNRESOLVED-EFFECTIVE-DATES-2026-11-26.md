@@ -1,6 +1,6 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 103. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 104. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
@@ -13,7 +13,11 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 - Nov. 3 Dnipro second death: 1 entry, 1 death (not in mapped Nov. 3 increment)
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 26 remaining pre-Oct. 29 entries carry 82 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The seven remaining post-Oct. 29 entries account for eight further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and two later Chornomorsk revisions. Together with the seven post-Oct. 29 entries, the 26 legacy entries bring the unresolved revisions to a net arithmetic change of 90. This is not 89 additional deaths to be added to the public total as a block.
+The 26 remaining pre-Oct. 29 entries carry 82 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The seven remaining post-Oct. 29 entries account for eight further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and two later Chornomorsk revisions. Together with the seven post-Oct. 29 entries, the 26 legacy entries bring the unresolved revisions to a net arithmetic change of 90. This is not an additional-deaths adjustment to be added to the public total.
+
+## Stage 104 final closeout
+
+All 33 null revisions have now been reviewed and categorized. The 26 pre-Oct. 29 entries carry a net arithmetic change of +82, including one -1 correction. Fourteen of those entries, net +19, still lack a confirmed public-subtotal inclusion date. The seven post-Oct. 29 entries carry a net +8. Two are established exclusions from the public 421 subtotal: the first Saltivsky death and the second Dnipro death. Five others have unverified inclusion in carried-forward aggregates. The combined net arithmetic of +90 is not an adjustment to the public total and must not be added to 421. The public minimum remains 421, distinct from the 452 final documented deaths in the incident ledger. See `STAGE-104-CHECKPOINT.md`.
 
 ## Stage 76 adjudication
 

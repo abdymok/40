@@ -6651,48 +6651,6 @@
     ]
   },
   {
-    "incident_id": "UA-KHA-KHARKIV-REGION-2026-10-29-ATTACK-ROUNDUP",
-    "incident_date": "2026-10-29",
-    "location": {
-      "settlement": null,
-      "district": "Kharkiv region",
-      "region": "Kharkiv region",
-      "country": "Ukraine"
-    },
-    "incident_description": "Russian attacks on Kharkiv and 19 other settlements in the region over the preceding day killed one person and injured eight. The regional administration's roundup did not identify the victim's exact settlement or strike site.",
-    "documented_deaths": 1,
-    "scope_classification": "civilian",
-    "evidence_classification": "official_and_independent",
-    "sources": [
-      {
-        "source_id": "KHARKIV-REGION-SYNEHUBOV-2026-10-29",
-        "publisher": "Kharkiv Regional Military Administration head Oleh Synehubov",
-        "source_type": "official_social_post",
-        "published_at": null,
-        "url": "https://t.me/synegubov/11766",
-        "supports": [
-          "incident_identity",
-          "death_count",
-          "incident_date"
-        ],
-        "notes": "Official regional casualty roundup reports one person killed and eight injured on Oct. 29."
-      }
-    ],
-    "last_verified_date": "2026-11-26",
-    "revision_history": [
-      {
-        "revision_id": "UA-KHA-KHARKIV-REGION-2026-10-29-ATTACK-ROUNDUP-REV-001",
-        "recorded_at": "2026-10-29",
-        "old_value": null,
-        "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
-        "source_ids": [
-          "KHARKIV-REGION-SYNEHUBOV-2026-10-29"
-        ]
-      }
-    ]
-  },
-  {
     "incident_id": "UA-KHA-KHARKIV-OSNOVIANSKY-2026-10-28-DRONE",
     "incident_date": "2026-10-28",
     "location": {
@@ -7608,16 +7566,38 @@
           "corroboration"
         ],
         "notes": "Reports five women killed and 14 injured."
+      },
+      {
+        "source_id": "IZIUM-UP-2026-10-31-INITIAL",
+        "publisher": "Ukrainska Pravda, citing Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-31T11:27:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/31/8060604/index.amp",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Earlier Oct. 31 report identified one 59-year-old woman killed in the Oct. 29 Izium attack; later reports established that five women were killed in the same public-health institution strike."
       }
     ],
     "last_verified_date": "2026-11-26",
     "revision_history": [
       {
         "revision_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-001",
-        "recorded_at": "2026-10-30T20:16:00+02:00",
+        "recorded_at": "2026-10-31T11:27:00+02:00",
         "old_value": null,
+        "new_value": 1,
+        "reason": "An initial casualty report identified one 59-year-old woman killed in the Oct. 29 Izium attack.",
+        "source_ids": [
+          "IZIUM-UP-2026-10-31-INITIAL"
+        ]
+      },
+      {
+        "revision_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002",
+        "recorded_at": "2026-10-30T20:16:00+02:00",
+        "old_value": 1,
         "new_value": 5,
-        "reason": "The regional administration confirmed five employees of the public health institution were killed in the Oct. 29 strike.",
+        "reason": "Later official reporting identified the incident as a strike on the public-health institution and confirmed five female employees killed. The earlier one-death report was partial, not a separate incident.",
         "source_ids": [
           "IZIUM-IFAX-2026-10-30",
           "IZIUM-UKRINFORM-2026-10-30"
@@ -8788,6 +8768,336 @@
         "reason": "The State Emergency Service confirmed the final toll of 22 deaths, including five children.",
         "source_ids": [
           "PRYLUKY-UP-2026-10-08"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-10-30-ATTACKS",
+    "incident_date": "2026-10-30",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian aerial bombs struck two parts of Sloviansk on Oct. 30, damaging about 30 private houses, an apartment building, a post office and a petrol station. A Russian FPV drone also struck a car carrying a 16-year-old railway-college student and his parents. Two people were killed: the boy and a 73-year-old man. Twelve people were injured.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-30-EVIDENCEHUB-2026-10-31",
+        "publisher": "Ukraine Evidence Hub",
+        "source_type": "case_file",
+        "published_at": null,
+        "url": "https://ukraine-evidence.org/case-files/cf-30",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Case file records two deaths on Oct. 30, a 16-year-old boy and a 73-year-old man, and describes the separate aerial-bomb and FPV strikes."
+      },
+      {
+        "source_id": "SLOVIANSK-30-UP-2026-10-31",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-10-31T11:27:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/31/8060604/index.amp",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two people killed in Sloviansk on Oct. 30."
+      },
+      {
+        "source_id": "SLOVIANSK-30-LB-2026-10-31",
+        "publisher": "LB.ua, citing Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "news_report",
+        "published_at": "2026-10-31T08:33:00+02:00",
+        "url": "https://en.lb.ua/news/2026/10/31/47398_russian_occupiers_kill_two.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms two deaths in Sloviansk on Oct. 30."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-10-30-ATTACKS-REV-001",
+        "recorded_at": "2026-10-30",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SLOVIANSK-30-EVIDENCEHUB-2026-10-31",
+          "SLOVIANSK-30-UP-2026-10-31",
+          "SLOVIANSK-30-LB-2026-10-31"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-SUM-SHOSTKA-2026-10-30-CIVILIAN-ENTERPRISE",
+    "incident_date": "2026-10-30",
+    "location": {
+      "settlement": "Shostka",
+      "district": null,
+      "region": "Sumy region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike drones attacked a civilian enterprise in Shostka on Oct. 30, killing a 43-year-old woman and injuring eight people.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SHOSTKA-UP-2026-10-30",
+        "publisher": "Ukrainska Pravda, citing Shostka Mayor Mykola Noha",
+        "source_type": "news_report",
+        "published_at": "2026-10-30T13:31:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/30/8060443/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 43-year-old woman killed in the drone attack on a civilian enterprise."
+      },
+      {
+        "source_id": "SHOSTKA-UKRINFORM-2026-10-30",
+        "publisher": "Ukrinform, citing Sumy Regional Military Administration head Oleh Hryhorov",
+        "source_type": "news_report",
+        "published_at": "2026-10-30T15:40:00+03:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4179779-russian-drone-strikes-enterprise-in-shostka-killing-one-and-injuring-eight.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms one killed and eight injured in the Shostka community."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-SUM-SHOSTKA-2026-10-30-CIVILIAN-ENTERPRISE-REV-001",
+        "recorded_at": "2026-10-30",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SHOSTKA-UP-2026-10-30",
+          "SHOSTKA-UKRINFORM-2026-10-30"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-NIKOPOL-DISTRICT-2026-10-30-ATTACK",
+    "incident_date": "2026-10-30",
+    "location": {
+      "settlement": null,
+      "district": "Nikopol district",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Nikopol district on Oct. 30 killed one person. The regional administration reported attacks on Nikopol, Marhanets, Pokrov and Chervonohryhorivka communities; the victim's exact settlement was not identified.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NIKOPOL-30-LB-2026-10-30",
+        "publisher": "LB.ua, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-30T18:51:00+03:00",
+        "url": "https://en.lb.ua/news/2026/10/30/47350_killed_three_injured_russian.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in Nikopol district and a separate 60-year-old man injured."
+      },
+      {
+        "source_id": "NIKOPOL-30-N911-2026-10-30",
+        "publisher": "N-911, citing Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-30T19:09:00+03:00",
+        "url": "https://dnipro.n-911.com/en/news/u-dnipri-ta-oblasti-vnochi-lunaly-vybukhy-ye-zahybli-ta-poraneni-1680",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the fatality in Nikopol district in the Oct. 30 regional attack roundup."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-NIKOPOL-DISTRICT-2026-10-30-ATTACK-REV-001",
+        "recorded_at": "2026-10-30",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "NIKOPOL-30-LB-2026-10-30",
+          "NIKOPOL-30-N911-2026-10-30"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-DISTRICT-2026-10-31-OVERNIGHT-ATTACK",
+    "incident_date": "2026-10-31",
+    "location": {
+      "settlement": null,
+      "district": "Dnipro district",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian overnight drone attacks on Dnipro district communities on Oct. 31 killed one person. The regional administration reported strikes on Slobozhanske, Petrykivka and Tsarychanka communities; the victim's exact settlement was not identified.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-DISTRICT-UKRINFORM-2026-10-31",
+        "publisher": "Ukrinform, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-31T08:20:00+03:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4179952-casualties-reported-as-russian-forces-attack-dnipropetrovsk-region-overnight.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in Dnipro district in the overnight Oct. 31 attacks."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-DISTRICT-2026-10-31-OVERNIGHT-ATTACK-REV-001",
+        "recorded_at": "2026-10-31",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-DISTRICT-UKRINFORM-2026-10-31"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ORIKHIV-2026-10-30-FPV-STRIKE",
+    "incident_date": "2026-10-30",
+    "location": {
+      "settlement": "Orikhiv",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian FPV drone struck Orikhiv, killing a 53-year-old man and injuring two people in attacks on Zaporizhia and Polohy districts.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ORIKHIV-IFAX-2026-10-31",
+        "publisher": "Interfax-Ukraine, citing National Police of Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-10-31T11:29:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1229124-amp.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports a 53-year-old man killed in Orikhiv by an FPV drone strike."
+      },
+      {
+        "source_id": "ORIKHIV-LOCAL-2026-10-31",
+        "publisher": "Orikhiv.com.ua",
+        "source_type": "news_report",
+        "published_at": "2026-10-31T09:14:00+03:00",
+        "url": "https://orihiv.com.ua/ukr/novini/31.10.2026/zaginuv-v-orixovi-u-prifrontovomu-misti-vorozii-dron-vbiv-53-ricnogo-colovika",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the same 53-year-old man killed in the Orikhiv FPV strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ORIKHIV-2026-10-30-FPV-STRIKE-REV-001",
+        "recorded_at": "2026-10-30",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ORIKHIV-IFAX-2026-10-31",
+          "ORIKHIV-LOCAL-2026-10-31"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-PAVLOHRAD-2026-10-26-DTEK-MINER",
+    "incident_date": "2026-10-26",
+    "location": {
+      "settlement": "Pavlohrad",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack on Pavlohrad killed DTEK miner Valentyn Kotelevskyi, 41. DTEK confirmed the death on Oct. 26; the project methodology says this corresponds to the Pavlohrad death already reported by the regional administration and included in the baseline.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "PAVLOHRAD-KOTELEVSKYI-DTEK-2026-10-26",
+        "publisher": "DTEK Group",
+        "source_type": "official_company_statement",
+        "published_at": null,
+        "url": "https://dtek.com/en/media-center/news/russian-drone-attack-kills-dtek-miner-in-eastern-ukraine/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "DTEK confirms 41-year-old miner Valentyn Kotelevskyi was killed in Pavlohrad on Oct. 26."
+      },
+      {
+        "source_id": "PAVLOHRAD-KOTELEVSKYI-DTEK-UA-2026-10-26",
+        "publisher": "DTEK Energo",
+        "source_type": "official_company_statement",
+        "published_at": null,
+        "url": "https://energo.dtek.com/media-center/press/vnaslidok-vorozhoi-ataki-na-pavlograd-zaginuv-shakhtar-vugilnogo-pidpriemstva-dtek-energo-valentin-kotelevsk/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Ukrainian-language company statement confirms the fatal drone attack on Oct. 26."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-PAVLOHRAD-2026-10-26-DTEK-MINER-REV-001",
+        "recorded_at": "2026-10-26",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "PAVLOHRAD-KOTELEVSKYI-DTEK-2026-10-26",
+          "PAVLOHRAD-KOTELEVSKYI-DTEK-UA-2026-10-26"
         ]
       }
     ]

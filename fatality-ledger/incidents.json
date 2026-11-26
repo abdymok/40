@@ -5693,5 +5693,505 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-ZAP-KUSHUHUM-2026-11-18-FPV-ATTACK",
+    "incident_date": "2026-11-18",
+    "location": {
+      "settlement": "Kushuhum",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drone struck an open area in Kushuhum, killing a woman and injuring a man. This is separate from the Nov. 16 attack in Kushuhum that killed a 70-year-old man.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KUSHUHUM-18-SUSPILNE-2026-11-18",
+        "publisher": "Suspilne Zaporizhia",
+        "source_type": "news_report",
+        "published_at": "2026-11-18T21:00:00+02:00",
+        "url": "https://suspilne.media/zaporizhzhia/1454375-rosijski-obstrili-zaporizza-ta-oblasti-18-listopada-e-zagibla-ta-poranenij/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one woman killed in the Nov. 18 FPV strike."
+      },
+      {
+        "source_id": "KUSHUHUM-18-INFORM-2026-11-18",
+        "publisher": "Inform.zp.ua",
+        "source_type": "news_report",
+        "published_at": "2026-11-18T20:00:00+02:00",
+        "url": "https://www.inform.zp.ua/uk/2026/11/18/406544_na-zaporizhzhi-v-kushugumi-fpv-dron-ubyv-zhinku-ova/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the same fatal FPV strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-KUSHUHUM-2026-11-18-FPV-ATTACK-REV-001",
+        "recorded_at": "2026-11-18",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KUSHUHUM-18-SUSPILNE-2026-11-18",
+          "KUSHUHUM-18-INFORM-2026-11-18"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-HORENYCHI-2026-11-19-DRONE-HOUSE",
+    "incident_date": "2026-11-19",
+    "location": {
+      "settlement": "Horenychi",
+      "district": "Bucha district",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone strike partially destroyed a private house in Horenychi. Rescuers found a woman born in 1982 dead under the rubble; a man born in 1977 was injured.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "HORENYCHI-TKACHENKO-2026-11-19",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3115",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report of the woman's death under rubble on Nov. 19."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-HORENYCHI-2026-11-19-DRONE-HOUSE-REV-001",
+        "recorded_at": "2026-11-19",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "HORENYCHI-TKACHENKO-2026-11-19"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-PODILSKY-2026-11-19-DRONE",
+    "incident_date": "2026-11-19",
+    "location": {
+      "settlement": "Kyiv",
+      "district": "Podilsky district",
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack on Kyiv's Podilsky district killed one person. The preliminary report said four people were injured, three hospitalized.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "PODILSKY-KLYCHKO-2026-11-19-8180",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/vitaliy_klitschko/8180",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official mayoral update at 16:39 reported one death in Podilsky district."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-PODILSKY-2026-11-19-DRONE-REV-001",
+        "recorded_at": "2026-11-19",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "PODILSKY-KLYCHKO-2026-11-19-8180"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-CHN-CHERNIHIV-REGION-2026-11-19-ENERGY-ATTACK",
+    "incident_date": "2026-11-19",
+    "location": {
+      "settlement": null,
+      "district": "Chernihiv region",
+      "region": "Chernihiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "One person was killed in overnight Russian attacks on energy facilities, civilian businesses and residential buildings across 12 regions. Prime Minister Serhiy Koretsky's report did not identify the victim's settlement or tie the death to a specific facility.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "CHERNIHIV-ENERGY-IFAX-2026-11-19",
+        "publisher": "Interfax-Ukraine, citing Prime Minister Serhiy Koretsky",
+        "source_type": "news_report",
+        "published_at": "2026-11-19T11:46:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1239083-amp.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in Chernihiv region in the overnight attacks."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-CHN-CHERNIHIV-REGION-2026-11-19-ENERGY-ATTACK-REV-001",
+        "recorded_at": "2026-11-19",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "CHERNIHIV-ENERGY-IFAX-2026-11-19"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK",
+    "incident_date": "2026-11-20",
+    "location": {
+      "settlement": "Kyiv",
+      "district": null,
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian ballistic-missile attack on Kyiv on Nov. 20 killed seven people. The initial report said three people had been killed, Prime Minister Serhiy Koretsky's 10:32 update raised the city toll to six, and Kyiv Mayor Vitali Klitschko's 15:32 update raised it to seven. The three, six and seven figures are successive totals, not separate additions.",
+    "documented_deaths": 7,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KYIV-BALLISTIC-KLYCHKO-2026-11-20-0727",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/vitaliy_klitschko",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial mayoral report at 07:27 said three people had been killed."
+      },
+      {
+        "source_id": "KYIV-BALLISTIC-KORETSKY-2026-11-20-1032",
+        "publisher": "Prime Minister Serhiy Koretsky, relayed by Ukraine Сейчас",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://t.me/+kR-aDD3bVXpmNDY6",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "10:32 update reported six deaths in Kyiv within eight deaths nationwide. The two Lviv deaths and first three Kyiv deaths were already counted."
+      },
+      {
+        "source_id": "KYIV-BALLISTIC-IFAX-2026-11-20-1532",
+        "publisher": "Interfax-Ukraine, citing Kyiv Mayor Vitali Klitschko",
+        "source_type": "news_report",
+        "published_at": "2026-11-20T15:32:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1239968.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "15:32 update raised the Kyiv death toll from six to seven."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK-REV-001",
+        "recorded_at": "2026-11-20T07:27:00+02:00",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial Kyiv mayoral update reported three deaths in the ballistic attack.",
+        "source_ids": [
+          "KYIV-BALLISTIC-KLYCHKO-2026-11-20-0727"
+        ]
+      },
+      {
+        "revision_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK-REV-002",
+        "recorded_at": "2026-11-20T10:32:00+02:00",
+        "old_value": 3,
+        "new_value": 6,
+        "reason": "Prime Minister's update raised the Kyiv death toll to six. The first three deaths had already been counted in the running subtotal.",
+        "source_ids": [
+          "KYIV-BALLISTIC-KORETSKY-2026-11-20-1032"
+        ]
+      },
+      {
+        "revision_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK-REV-003",
+        "recorded_at": "2026-11-20T15:32:00+02:00",
+        "old_value": 6,
+        "new_value": 7,
+        "reason": "Kyiv Mayor Klitschko reported a seventh death. The six previously reported deaths were already counted.",
+        "source_ids": [
+          "KYIV-BALLISTIC-IFAX-2026-11-20-1532"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-LVI-LVIV-SKNYLIV-2026-11-20-RAILWAY-STATION",
+    "incident_date": "2026-11-20",
+    "location": {
+      "settlement": "Lviv",
+      "district": "Sknyliv railway station",
+      "region": "Lviv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike on Sknyliv railway station in Lviv killed two people and injured at least four. The strike hit the station's ticket terminal.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "LVIV-SKNYLIV-IFAX-2026-11-20",
+        "publisher": "Interfax-Ukraine, citing Lviv Regional Military Administration head Maksym Kozytsky",
+        "source_type": "news_report",
+        "published_at": "2026-11-20T09:10:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1239621-amp.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two killed and at least four injured at Sknyliv railway station."
+      },
+      {
+        "source_id": "LVIV-SKNYLIV-UKRINFORM-2026-11-20",
+        "publisher": "Ukrinform, citing Lviv Mayor Andriy Sadovy",
+        "source_type": "news_report",
+        "published_at": "2026-11-20T09:24:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4186672-u-lvovi-cerez-rankovoi-ataky-rosijskoi-armii-zaginuli-dvoe-liudej-e-postrazdali.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms two deaths and a strike on the ticket terminal."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-LVI-LVIV-SKNYLIV-2026-11-20-RAILWAY-STATION-REV-001",
+        "recorded_at": "2026-11-20",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "LVIV-SKNYLIV-IFAX-2026-11-20",
+          "LVIV-SKNYLIV-UKRINFORM-2026-11-20"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-KRYVYI-RIH-2026-11-20-BALLISTIC-STRIKE",
+    "incident_date": "2026-11-20",
+    "location": {
+      "settlement": "Kryvyi Rih",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian ballistic-missile strike on Kryvyi Rih killed a seven-year-old boy and a 20-year-old woman paramedic, and injured 60 people. The two deaths were counted once after reconciliation of the regional updates.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRYVYI-RIH-IFAX-2026-11-20",
+        "publisher": "Interfax-Ukraine, citing Kryvyi Rih Defence Council head Oleksandr Vilkul",
+        "source_type": "news_report",
+        "published_at": "2026-11-20T23:04:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1240136.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the seven-year-old boy and 20-year-old paramedic killed."
+      },
+      {
+        "source_id": "KRYVYI-RIH-UKRINFORM-2026-11-20",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-20T23:58:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4187003-two-killed-including-child-in-russian-strike-on-kryvyi-rih-injury-toll-rises-to-42.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two killed, including a child."
+      },
+      {
+        "source_id": "KRYVYI-RIH-ODA-2026-11-21-33506",
+        "publisher": "Dnipropetrovsk Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA/33506",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional administration updates the injury toll on Nov. 21; the two deaths are unchanged."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-KRYVYI-RIH-2026-11-20-BALLISTIC-STRIKE-REV-001",
+        "recorded_at": "2026-11-20",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRYVYI-RIH-IFAX-2026-11-20",
+          "KRYVYI-RIH-UKRINFORM-2026-11-20",
+          "KRYVYI-RIH-ODA-2026-11-21-33506"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-NIKOPOL-DISTRICT-2026-11-20-ATTACK",
+    "incident_date": "2026-11-20",
+    "location": {
+      "settlement": null,
+      "district": "Nikopol district",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Nikopol district on Nov. 20 killed one person. The regional administration reported attacks on Nikopol city and the Marhanets, Myrove, Pokrovske and Chervonohryhorivka communities but did not identify the victim's exact settlement or strike site.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NIKOPOL-20-UP-2026-11-20",
+        "publisher": "Ukrainska Pravda, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-11-20T19:37:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/20/8063864/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in Nikopol district during the Nov. 20 attacks."
+      },
+      {
+        "source_id": "NIKOPOL-20-LB-2026-11-20",
+        "publisher": "LB.ua, citing Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-11-20T20:26:00+02:00",
+        "url": "https://en.lb.ua/news/2026/11/20/50818_russian_forces_strike.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms one death in Nikopol district."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-NIKOPOL-DISTRICT-2026-11-20-ATTACK-REV-001",
+        "recorded_at": "2026-11-20",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "NIKOPOL-20-UP-2026-11-20",
+          "NIKOPOL-20-LB-2026-11-20"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-REGION-2026-11-20-ATTACK-CLUSTER",
+    "incident_date": "2026-11-20",
+    "location": {
+      "settlement": "Zaporizhia city and district",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks across Zaporizhia city and Zaporizhia district during the 24 hours before the Nov. 21 regional bulletin killed two people and injured 22. The regional report covered 489 strikes on 48 settlements and did not allocate the two deaths to individual locations or strikes; this record preserves that source-defined attack cluster.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-20-21-UP-2026-11-21",
+        "publisher": "Ukrainska Pravda, citing Ivan Fedorov",
+        "source_type": "news_report",
+        "published_at": "2026-11-21T07:10:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/21/8063909/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two deaths and 22 injured in attacks on Zaporizhia city and district over the preceding 24 hours."
+      },
+      {
+        "source_id": "ZAP-20-21-LB-2026-11-21",
+        "publisher": "LB.ua, citing Ivan Fedorov",
+        "source_type": "news_report",
+        "published_at": "2026-11-21T14:18:00+02:00",
+        "url": "https://en.lb.ua/news/2026/11/21/50858_two_killed_22_injured_shelling.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms two deaths in the regional attack cluster."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-REGION-2026-11-20-ATTACK-CLUSTER-REV-001",
+        "recorded_at": "2026-11-20",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ZAP-20-21-UP-2026-11-21",
+          "ZAP-20-21-LB-2026-11-21"
+        ]
+      }
+    ]
   }
 ]

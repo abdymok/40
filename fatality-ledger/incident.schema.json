@@ -68,6 +68,7 @@
       "enum": [
         "civilian",
         "non_combatant_emergency_personnel",
+        "non_combatant_security_personnel",
         "mixed_non_combatant",
         "unresolved"
       ]
@@ -75,11 +76,12 @@
     "evidence_classification": {
       "type": "string",
       "enum": [
-        "official_primary",
-        "official_and_independent",
-        "independent_multi_source",
-        "single_attributed_report",
-        "provisional_unverified"
+        "official_and_media",
+        "official_only",
+        "media_reported",
+        "monitoring_or_case_file",
+        "project_record_only",
+        "unverified"
       ]
     },
     "sources": {
@@ -111,15 +113,26 @@
               "official_social_post",
               "news_report",
               "eyewitness",
-              "project_record"
+              "project_record",
+              "case_file",
+              "official_company_statement",
+              "international_monitoring_report"
             ]
           },
           "published_at": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "format": "date-time"
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "string",
+                "format": "date"
+              }
+            ]
           },
           "url": {
             "type": "string",
@@ -161,7 +174,8 @@
           "old_value",
           "new_value",
           "reason",
-          "source_ids"
+          "source_ids",
+          "ledger_effective_at"
         ],
         "properties": {
           "revision_id": {
@@ -200,6 +214,21 @@
               "type": "string"
             },
             "minItems": 1
+          },
+          "ledger_effective_at": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "string",
+                "format": "date-time"
+              }
+            ]
           }
         }
       }

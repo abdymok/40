@@ -1,6 +1,6 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 99. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 101. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
@@ -109,7 +109,7 @@ The Oct. 22 ≈123 baseline predates Shcherbyna's death. The mapped Oct. 25–28
 
 The Kyiv ballistic attack that began late on Oct. 21 killed one person. The State Emergency Service confirmed the death in its Oct. 22 morning report. The Oct. 22 dashboard snapshot explicitly lists one person killed in the overnight attack on Kyiv and raises the selected-incident subtotal to approximately 118. Revision `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001` is therefore dated `ledger_effective_at: 2026-10-22`, the first confirmed public inclusion date. This is the same attack recorded in the Oct. 21 incident record, not a second incident. See `STAGE-101-CHECKPOINT.md` and dashboard commit `4ada778321c66b570c73f8d5353617a076db8ee`.
 
-The overall null inventory falls from 34 to 33. The pre-Oct. 29 null inventory falls from 27 (+83 net) to 26 (+82 net). The public 421 minimum is unchanged.
+The overall null inventory falls from 34 to 33. The pre-Oct. 29 null inventory falls from 27 (+83 net) to 26 (+82 net). Fourteen pre-Oct. 29 revisions remain unresolved, carrying a net +19. The public 421 minimum is unchanged.
 
 ## Stage 100 adjudication
 

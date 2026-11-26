@@ -100,9 +100,62 @@ The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage
 ## Required next work
 
 1. Reconstruct membership of the legacy 148 and 192 snapshots from the original commits and change-log entries, including source publication date and the date the project actually counted each death.
-2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Twenty-three revision entries now have dates; all others remain null. Do not infer dates from incident date alone.
+2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. Thirty-six revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
 3. Continue mapping historical subtotal increments to individual records. The post-192 +5 is now accounted for by Chornomorsk (+3), Dnipro Nov. 3 (+1) and Saltivsky (+1).
 4. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until source/duplicate questions are settled.
 5. Do not force the ledger to 418. The current total is a calculated pilot sum and may change if source-level deduplication or additional incident verification changes any record.
 
 No public totals are to be changed until the incident dataset and method arithmetic reconcile or the discrepancy is explicitly explained and approved.
+
+
+## Stage 43 — Oct. 29 cohort and the 192 opening baseline
+
+The original repository snapshots now establish the historical sequence more precisely:
+
+| Snapshot / update | Historical minimum | Evidence |
+|---|---:|---|
+| Oct. 28 | 148 | Dashboard snapshot in commit fb0d8ae4d5c0c27af974ce7a20e1672b28454c05 |
+| Oct. 29, 22:10 | 167 | Dashboard snapshot in commit e42ba88524f1ca9a23dffd13ae26e8875d1d257d |
+| Oct. 30 | 173 | The change history records the late Kyiv death, the delayed Dnipro railway-station death and four deaths in Izium |
+| Nov. 2, before Komyshuvakha | 174 | The method history records one further death in the Nov. 2 Izium attack |
+| Nov. 2, after Komyshuvakha update | 192 | The regional administration's initial Komyshuvakha count of 18 is added to 174 |
+
+### Oct. 29 incident cohort: 25 historical deaths
+
+The historical 148→173 transition is now mapped as follows:
+
+| Incident | Deaths included in historical 173 | Effective date(s) |
+|---|---:|---|
+| Dnipro railway station | 15 | 13 and 14 on Oct. 29; 15th death on Oct. 30 |
+| Chernihiv central drone strike | 2 | Oct. 29 |
+| Kremenchuk apartment-building strike | 3 | Two initially, then three on Oct. 29 |
+| Kyiv late-evening ballistic attack | 1 | Oct. 30 |
+| Izium public-health institution strike | 4 | Oct. 30 |
+| **Total** | **25** | |
+
+This matches the historical 148→167 movement by Oct. 29 (+19), followed by six deaths in the Oct. 30 167→173 update (+1 Kyiv, +1 delayed Dnipro hospital death and +4 Izium). The chronology's Oct. 30 entry explicitly records the four-death Izium increment. The later official report of five employees killed is preserved as a source-supported final count, but the fifth employee is not in the historical 173 snapshot.
+
+The current incident-date inventory for Oct. 29 is 27, not 25. The two additional deaths are:
+- the fifth employee in the Izium public-health institution strike, reported after the dashboard's four-death update;
+- a 59-year-old woman killed in a separate Izium attack, first specifically identified in the Oct. 31 reporting.
+
+The separate Izium death is not to be merged into the public-health institution incident. Neither of these two additional deaths is included in the historical 173 breakdown. Their inclusion in a later public subtotal is not yet established, so their ledger_effective_at fields remain null.
+
+### Revision-history changes made
+
+The incident dataset now records the historical progression rather than only the final toll:
+- Dnipro railway station: 13 → 14 on Oct. 29 → 15 on Oct. 30.
+- Kremenchuk: 2 → 3 on Oct. 29.
+- Chernihiv: two deaths entered on Oct. 29.
+- Kyiv ballistic attack: one death entered on Oct. 30.
+- Izium public-health institution: four deaths entered on Oct. 30; the fifth death remains a later final-count revision with no proven dashboard inclusion date.
+
+The dataset now has 36 revision entries with non-null ledger_effective_at and 187 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
+
+### 192 baseline interpretation
+
+The original Nov. 2 dashboard snapshot shows 192 after an increase from approximately 174 to 192 for the initial 18 deaths reported in Komyshuvakha. The 174 baseline therefore precedes that +18. The method page also identifies one further Nov. 2 death in Izium before the Komyshuvakha increment. The 192 snapshot arithmetic is consequently 173 + 1 + 18 = 192.
+
+The incident-level identity and effective date of that additional Nov. 2 Izium death must be matched to its record in the next stage. The 18 Komyshuvakha deaths are a baseline allocation, not an additional incident-date subtotal to be added again later.
+
+No public chronology, methodology page, dashboard figure or live running total was changed.

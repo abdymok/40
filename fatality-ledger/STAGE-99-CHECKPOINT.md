@@ -11,7 +11,7 @@ The earlier duplicate hypothesis was based on a mistaken description of the Oct.
 ## Historical subtotal test
 
 - The ≈123 baseline on Oct. 22 predates Shcherbyna's death.
-- The Oct. 25 123→132 batch is itemized and maps to the Oct. 23 Dnipro death, the four-death Synelnykove strike, and six other named deaths. It does not identify the DTEK incident.
+- The Oct. 25 123→132 batch is itemized and maps to the Oct. 23 Dnipro death, the four-death Synelnykove strike, and four other named deaths. It does not identify the DTEK incident.
 - The Oct. 26 132→137 batch maps to Marhanets, Lozova, Konotop and Yarova.
 - The subsequent 137→148 increments map to other identified incidents, including the separate Oct. 26 Pavlohrad death of DTEK miner Valentyn Kotelevskyi.
 - No mapped Oct. 25–28 increment includes Shcherbyna.

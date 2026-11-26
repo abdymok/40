@@ -4,7 +4,7 @@ Date: 26 November 2026
 
 ## Direct snapshot comparison
 
-The Oct. 21 commit `84c0c691e7114fc1295fa2b33933a4ef9b330aa` explicitly changes the dashboard from 103 to 105 while adding the two Sviatoshynsky deaths to the chronology and method paragraph. The subsequent 09:16 snapshot, commit `679cd4c4e1541842a3794c72b7d583e5deea1f1a`, retains 105. Fetching the HTML at that exact 09:16 snapshot gives:
+The Oct. 21 commit `84c0c691e7114fc1295fa2b339976cfb276c487b` explicitly changes the dashboard from 103 to 105 while adding the two Sviatoshynsky deaths to the chronology and method paragraph. The subsequent 09:16 snapshot, commit `679cd4c4e1541842a3794c72b7d583e5deea1f1a`, retains 105. Fetching the HTML at that exact 09:16 snapshot gives:
 
 - Dashboard subtotal: approximately 105.
 - Method paragraph: approximately 105.
@@ -14,6 +14,10 @@ The Oct. 21 commit `84c0c691e7114fc1295fa2b33933a4ef9b330aa` explicitly changes 
 The next relevant count commit, `3c205e7cb516ca3a9843c1234b23ff05408bf6dc`, changes the dashboard from approximately 105 to approximately 107. Its diff changes only the dashboard value and does not change the method paragraph. Fetching the HTML at this commit confirms the mismatch: dashboard 107, method 105, with the same two Sviatoshynsky deaths still explicitly included in the method text.
 
 This is strong evidence that the 105→107 intermediate step counted the same two Sviatoshynsky deaths a second time.
+
+## Parent-chain verification
+
+The commits are sequential, not sibling snapshots: `84c0c691e7114fc1295fa2b339976cfb276c487b` (103→105) is the parent of `679cd4c4e1541842a3794c72b7d583e5deea1f1a` (09:16 snapshot); `679cd4` is the parent of `5fa8898b9b948d012f685aecfef552889d587361`; `5fa8898` is the parent of `3c205e7cb516ca3a9843c1234b23ff05408bf6dc` (105→107); and `3c205e7` is the parent of `deed5ac0c64b453223ea33b24457322d80532bf1`, followed by `1cdeb119645e32bde16e6cbf3907eea47c8a90ba` and `46a3feb1b3430a7e58185dbca864de617f72aa28` (107→116). This confirms the 105, 107 and 116 snapshots belong to one commit chain.
 
 ## The 107→116 transition
 

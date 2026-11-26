@@ -951,6 +951,8 @@ body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-value{
   min-height:1em;
   margin:0;
 }
+body.infrastructure-page .dashboard + .ballistic-warning{border-top:0;padding-top:0}
+
 body.infrastructure-page .dashboard-period{
   margin:12px 0 0;
   padding-top:9px;
@@ -1050,7 +1052,7 @@ body.infrastructure-page .dashboard-row-detail{display:none}
   body.infrastructure-page .dashboard-grid.dashboard-leads .dashboard-item[data-measure="alert-hours"] .dashboard-value{
     font-size:18px;
   }
-  body.infrastructure-page .dashboard-period{display:none}
+  body.infrastructure-page .dashboard-period{display:block}
 }
 
 

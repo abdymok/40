@@ -54,10 +54,10 @@ Do not assign these two deaths to incidents by inference. They remain part of th
 - 137 → 138: +1, mapped.
 - 138 → 141: +3, mapped.
 - 141 → 146: +5 across three successive updates, mapped.
-- 121 → 123: +2, not mapped.
+- 121 → 123: not an incident-level +2. Stage 63 establishes that this was a scope/method switch from an approximately 121 selected-incident subtotal to an approximately 123 nationwide documented minimum; no two deaths were itemized.
 
-The Oct. 25–27 mapping does not resolve the full legacy 148 membership. The 121→123 gap and other historical inclusion/overlap questions remain open. No effective dates were added in this stage because the mapped Oct. 25–27 dates were already present in the ledger and the +2 is unallocated.
+The Oct. 25–27 mapping does not resolve the full legacy 148 membership. The 121→123 transition is addressed in Stage 63 as a change of scope, not an incident-level addition. Other historical inclusion/overlap questions remain open. No effective dates were added in this stage.
 
 ## Next priority
 
-Continue backwards from the 121 subtotal and establish the incident membership and source trail behind the Oct. 22 updates. Keep the Chabany exclusion from the current structured ledger unchanged. Do not alter the public 421 subtotal.
+Continue backwards through the selected-incident subtotal before Oct. 22 and establish its incident membership and source trail. Keep the Chabany exclusion from the current structured ledger unchanged. Do not alter the public 421 subtotal.

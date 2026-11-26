@@ -100,7 +100,7 @@ The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage
 ## Required next work
 
 1. Reconstruct membership of the legacy 148 and 192 snapshots from the original commits and change-log entries, including source publication date and the date the project actually counted each death.
-2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. One hundred twenty-nine revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
+2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. One hundred thirty-six revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
 3. Continue mapping historical subtotal increments to individual records. The post-192 +5 is now accounted for by Chornomorsk (+3), Dnipro Nov. 3 (+1) and Saltivsky (+1).
 4. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until source/duplicate questions are settled.
 5. Do not force the ledger to 418. The current total is a calculated pilot sum and may change if source-level deduplication or additional incident verification changes any record.
@@ -150,7 +150,7 @@ The incident dataset now records the historical progression rather than only the
 - Kyiv ballistic attack: one death entered on Oct. 30.
 - Izium public-health institution: four deaths entered on Oct. 30; the fifth death remains a later final-count revision with no proven dashboard inclusion date.
 
-The dataset now has 129 revision entries with non-null ledger_effective_at and 96 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
+The dataset now has 136 revision entries with non-null ledger_effective_at and 90 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
 
 ### 192 baseline interpretation
 
@@ -276,3 +276,25 @@ The Chernihiv incident is now split into two deaths at the scene on Nov. 16 and 
 The four Nov. 16 Donetsk deaths later identified in Sloviansk (2), Yasnohirka (1) and Shabelkivka (1) are assigned to Nov. 18 and will be reconciled against the next subtotal. They are not part of the 345→350 five-death group.
 
 The ledger remains 173 incidents, 420 source records and 446 final deaths. It now has 129 revision entries with confirmed effective dates and 96 still null. No final incident counts changed.
+
+
+## Stage 49 — Nov. 18–19 additions mapped to 363
+
+The next running-subtotal sequence is now allocated:
+
+| Historical subtotal | Increment | Incident mapping |
+|---|---:|---|
+| 350→353, Nov. 18 | +3 | Initial reported deaths in the central Odesa strikes |
+| 353→357, Nov. 18 | +4 | Donetsk region: Sloviansk (2), Yasnohirka (1), Shabelkivka (1) |
+| 357→358, Nov. 18 | +1 | Fourth death in the central Odesa strikes |
+| 358→359, Nov. 18 | +1 | Ploske, Kharkiv region |
+| 359→360, Nov. 18 | +1 | Woman killed in a separate FPV-drone attack in Kushuhum |
+| 360→361, Nov. 19 | +1 | Horenychi, Bucha district |
+| 361→362, Nov. 19 | +1 | Kyiv, Podilsky district |
+| 362→363, Nov. 19 | +1 | Unallocated Chernihiv-region fatality in the overnight energy-attack roundup |
+
+The Odesa incident now records three deaths in the initial update and the fourth in a later revision. The four Donetsk deaths are distinct from the earlier Sloviansk and Yasnohirka incidents. The Nov. 18 Kushuhum woman is distinct from the 70-year-old man killed there on Nov. 16.
+
+A Nov. 19 National Police daily summary separately reported a 59-year-old woman killed by an FPV drone in Zaporizhia district. The available report did not identify the settlement. Because the Nov. 18 Kushuhum entry already records a woman killed by an FPV drone in Zaporizhia district, the later summary is not added as another death pending location-level identification.
+
+The ledger remains 173 incidents, 420 source records and 446 final deaths. It now has 136 revision entries with confirmed effective dates and 90 still null. No final incident counts changed.

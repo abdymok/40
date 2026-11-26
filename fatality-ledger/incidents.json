@@ -2749,5 +2749,928 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-2026-11-08-SUBURB-DRONE",
+    "incident_date": "2026-11-08",
+    "location": {
+      "settlement": "Dnipro",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack on a residential area in a suburb of Dnipro destroyed a private house and killed one person. A later regional roundup counted this same death once in the two-death regional total.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-08-UP-2026-11-08",
+        "publisher": "Ukrainska Pravda, citing Dnipropetrovsk Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-08T12:48:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061782/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in the morning drone attack on a Dnipro suburb."
+      },
+      {
+        "source_id": "DNIPRO-08-UKRINFORM-2026-11-08",
+        "publisher": "Ukrinform, citing Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-11-08T20:33:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4182728-two-killed-seven-injured-in-russian-attacks-on-dnipropetrovsk-region.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional roundup confirms one death in Dnipro, counted once alongside the separate Nikopol-district death."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-11-08-SUBURB-DRONE-REV-001",
+        "recorded_at": "2026-11-08",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-08-UP-2026-11-08",
+          "DNIPRO-08-UKRINFORM-2026-11-08"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-NIKOPOL-DISTRICT-2026-11-08-ATTACK",
+    "incident_date": "2026-11-08",
+    "location": {
+      "settlement": null,
+      "district": "Nikopol district",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "One person was killed in Russian attacks in Nikopol district on Nov. 8. The regional summary covers attacks across Nikopol city and several communities but does not specify the victim's exact settlement or strike site.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NIKOPOL-08-HANZHA-2026-11-08",
+        "publisher": "Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional report of one person killed in Nikopol district on Nov. 8."
+      },
+      {
+        "source_id": "NIKOPOL-08-UKRINFORM-2026-11-08",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-08T20:33:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4182728-two-killed-seven-injured-in-russian-attacks-on-dnipropetrovsk-region.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one death in Nikopol district, separate from the Dnipro fatality."
+      },
+      {
+        "source_id": "NIKOPOL-08-UP-2026-11-08",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-08T22:52:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/08/8061854/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms one person killed in Nikopol district in the Nov. 8 regional attack roundup."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-NIKOPOL-DISTRICT-2026-11-08-ATTACK-REV-001",
+        "recorded_at": "2026-11-08",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "NIKOPOL-08-HANZHA-2026-11-08",
+          "NIKOPOL-08-UKRINFORM-2026-11-08",
+          "NIKOPOL-08-UP-2026-11-08"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ODE-ODESA-2026-11-09-FOOD-WAREHOUSE",
+    "incident_date": "2026-11-09",
+    "location": {
+      "settlement": "Odesa",
+      "district": null,
+      "region": "Odesa region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian jet-powered drone struck a warehouse storing food for local kindergartens and schools, killing three people: two women and one man. Another woman was seriously injured.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ODESA-WAREHOUSE-UP-2026-11-09",
+        "publisher": "Ukrainska Pravda, citing Odesa City and Regional Military Administrations",
+        "source_type": "news_report",
+        "published_at": "2026-11-09T13:55:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/09/8061916/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports three deaths in the warehouse strike, two women and one man."
+      },
+      {
+        "source_id": "ODESA-WAREHOUSE-IFAX-2026-11-09",
+        "publisher": "Interfax-Ukraine, citing Odesa Regional Military Administration head Oleh Kiper",
+        "source_type": "news_report",
+        "published_at": "2026-11-09T14:20:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1233425.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms the toll remained three and identifies the warehouse as storing food products."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ODE-ODESA-2026-11-09-FOOD-WAREHOUSE-REV-001",
+        "recorded_at": "2026-11-09",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ODESA-WAREHOUSE-UP-2026-11-09",
+          "ODESA-WAREHOUSE-IFAX-2026-11-09"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-11-09-ATTACKS",
+    "incident_date": "2026-11-09",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Kramatorsk on Nov. 9 killed two people. The regional administration's next-morning report describes seven strikes, including FPV-drone attacks. The source does not allocate the two deaths to individual strikes.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-09-DON-ODA-2026-11-10",
+        "publisher": "Donetsk Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-10T09:50:00+02:00",
+        "url": "https://dn.gov.ua/en/news/operatyvna-sytuatsiia-po-oblasti-stanom-na-ranok-10-lystopada-10-11",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official morning report says two people were killed in Kramatorsk on Nov. 9."
+      },
+      {
+        "source_id": "KRAMATORSK-09-UKRANEWS-2026-11-10",
+        "publisher": "Ukrainian News Agency",
+        "source_type": "news_report",
+        "published_at": "2026-11-10T10:00:00+02:00",
+        "url": "https://ukranews.com/en/news/1186593-the-russians-attacked-four-towns-in-the-donetsk-region-over-the-past-24-hours-there-are-fatalities",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports three deaths across Donetsk region on Nov. 9, with Kramatorsk and Sloviansk casualty details."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-11-09-ATTACKS-REV-001",
+        "recorded_at": "2026-11-09",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-09-DON-ODA-2026-11-10",
+          "KRAMATORSK-09-UKRANEWS-2026-11-10"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-11-09-ATTACKS",
+    "incident_date": "2026-11-09",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Sloviansk on Nov. 9 killed one person and injured one. The regional administration's next-morning report identifies this death separately from two deaths in Kramatorsk.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-09-DON-ODA-2026-11-10",
+        "publisher": "Donetsk Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-10T09:50:00+02:00",
+        "url": "https://dn.gov.ua/en/news/operatyvna-sytuatsiia-po-oblasti-stanom-na-ranok-10-lystopada-10-11",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official morning report says one person was killed in Sloviansk on Nov. 9."
+      },
+      {
+        "source_id": "SLOVIANSK-09-UKRANEWS-2026-11-10",
+        "publisher": "Ukrainian News Agency",
+        "source_type": "news_report",
+        "published_at": "2026-11-10T10:00:00+02:00",
+        "url": "https://ukranews.com/en/news/1186593-the-russians-attacked-four-towns-in-the-donetsk-region-over-the-past-24-hours-there-are-fatalities",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the three-death regional total and identifies Sloviansk as an affected settlement."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-11-09-ATTACKS-REV-001",
+        "recorded_at": "2026-11-09",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SLOVIANSK-09-DON-ODA-2026-11-10",
+          "SLOVIANSK-09-UKRANEWS-2026-11-10"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-VYSHHOROD-DISTRICT-2026-11-09-RESIDENTIAL",
+    "incident_date": "2026-11-09",
+    "location": {
+      "settlement": null,
+      "district": "Vyshhorod district",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack destroyed a two-storey private house and garage in Vyshhorod district, killing an 82-year-old woman who was on the second floor. Two other people were injured.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "VYSHHOROD-TKACHENKO-2026-11-09",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3085",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report of the elderly woman's death."
+      },
+      {
+        "source_id": "VYSHHOROD-UKRINFORM-2026-11-09",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-09T15:44:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4182969-woman-killed-in-russian-attack-in-kyiv-regions-vyshhorod-district.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the 82-year-old woman killed in the attack."
+      },
+      {
+        "source_id": "VYSHHOROD-UP-2026-11-09",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-09T14:43:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/09/8061956/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Corroborates one death and two injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-VYSHHOROD-DISTRICT-2026-11-09-RESIDENTIAL-REV-001",
+        "recorded_at": "2026-11-09",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "VYSHHOROD-TKACHENKO-2026-11-09",
+          "VYSHHOROD-UKRINFORM-2026-11-09",
+          "VYSHHOROD-UP-2026-11-09"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-VIN-LADYZHYN-2026-11-09-10-CIVILIAN-ENTERPRISE",
+    "incident_date": "2026-11-09",
+    "location": {
+      "settlement": "Ladyzhyn",
+      "district": null,
+      "region": "Vinnytsia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian overnight attack on a civilian enterprise in Ladyzhyn on the night of Nov. 9–10 killed two people and damaged the facility and energy infrastructure.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "LADYZHYN-ZABOLOTNA-2026-11-10",
+        "publisher": "Vinnytsia Regional Military Administration head Natalia Zabolotna",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VinnytskaODA",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report of two deaths in the overnight attack."
+      },
+      {
+        "source_id": "LADYZHYN-UP-2026-11-10",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-10T10:38:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/10/8062091/",
+        "supports": [
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
+        "notes": "Reports two killed at a civilian enterprise in Ladyzhyn on the night of Nov. 9–10."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-VIN-LADYZHYN-2026-11-09-10-CIVILIAN-ENTERPRISE-REV-001",
+        "recorded_at": "2026-11-09",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "LADYZHYN-ZABOLOTNA-2026-11-10",
+          "LADYZHYN-UP-2026-11-10"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-11-10-ATTACKS",
+    "incident_date": "2026-11-10",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Sloviansk on Nov. 10 killed one person. The Donetsk Regional Military Administration reported one death in Sloviansk and one in Kramatorsk over the preceding 24 hours.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-10-DON-ODA-2026-11-11",
+        "publisher": "Donetsk Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-11T09:52:00+02:00",
+        "url": "https://dn.gov.ua/en/news/operatyvna-sytuatsiia-po-oblasti-stanom-na-ranok-11-lystopada-11-11",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report says one person was killed in Sloviansk on Nov. 10."
+      },
+      {
+        "source_id": "SLOVIANSK-10-FILASHKIN-2026-11-11",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/19205?single",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Filashkin's Nov. 11 casualty update reports one death in Sloviansk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-11-10-ATTACKS-REV-001",
+        "recorded_at": "2026-11-10",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SLOVIANSK-10-DON-ODA-2026-11-11",
+          "SLOVIANSK-10-FILASHKIN-2026-11-11"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-11-10-ATTACKS",
+    "incident_date": "2026-11-10",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Kramatorsk on Nov. 10 killed one person. The Donetsk Regional Military Administration reported one death in Kramatorsk and one in Sloviansk over the preceding 24 hours.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-10-DON-ODA-2026-11-11",
+        "publisher": "Donetsk Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-11T09:52:00+02:00",
+        "url": "https://dn.gov.ua/en/news/operatyvna-sytuatsiia-po-oblasti-stanom-na-ranok-11-lystopada-11-11",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report says one person was killed in Kramatorsk on Nov. 10."
+      },
+      {
+        "source_id": "KRAMATORSK-10-FILASHKIN-2026-11-11",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/19205?single",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Filashkin's Nov. 11 casualty update reports one death in Kramatorsk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-11-10-ATTACKS-REV-001",
+        "recorded_at": "2026-11-10",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-10-DON-ODA-2026-11-11",
+          "KRAMATORSK-10-FILASHKIN-2026-11-11"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-2026-11-10-ATTACK-CLUSTER",
+    "incident_date": "2026-11-10",
+    "location": {
+      "settlement": "Dnipro",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Dnipro city on Nov. 10 killed three people and injured others. National Police reported damage to enterprises, infrastructure and a private house; the available summary does not allocate the three deaths to individual strikes.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-10-NPU-2026-11-11",
+        "publisher": "National Police of Ukraine, Dnipropetrovsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-11T10:40:00+02:00",
+        "url": "https://npu.gov.ua/news/chotyry-liudyny-zahynuly-vnaslidok-vorozhykh-udariv-poshkodzheno-infrastrukturu-politsiia-fiksuie-naslidky-rosiiskykh-atak-po-dnipropetrovshchyni",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official police report says three people died in Dnipro city on Nov. 10."
+      },
+      {
+        "source_id": "DNIPRO-10-UKRINFORM-2026-11-10",
+        "publisher": "Ukrinform, citing Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-11-10T19:22:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4183486-russian-forces-attack-dnipropetrovsk-region-more-than-30-times-in-one-day-killing-three-and-injuring-five.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports all three fatalities in Dnipro city from the Nov. 10 attack sequence."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-11-10-ATTACK-CLUSTER-REV-001",
+        "recorded_at": "2026-11-10",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-10-NPU-2026-11-11",
+          "DNIPRO-10-UKRINFORM-2026-11-10"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-MARGANETS-COMMUNITY-2026-11-10-DRONE-HOME",
+    "incident_date": "2026-11-10",
+    "location": {
+      "settlement": null,
+      "district": "Marhanets community",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone-dropped munition struck a private home in a village in Marhanets community. A 43-year-old man died in hospital from severe shrapnel injuries.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "MARGANETS-NPU-2026-11-11",
+        "publisher": "National Police of Ukraine, Dnipropetrovsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-11T10:40:00+02:00",
+        "url": "https://npu.gov.ua/news/chotyry-liudyny-zahynuly-vnaslidok-vorozhykh-udariv-poshkodzheno-infrastrukturu-politsiia-fiksuie-naslidky-rosiiskykh-atak-po-dnipropetrovshchyni",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Police report says a 43-year-old man died in hospital after a drone munition hit a private home in Marhanets community."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-MARGANETS-COMMUNITY-2026-11-10-DRONE-HOME-REV-001",
+        "recorded_at": "2026-11-10",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "MARGANETS-NPU-2026-11-11"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ODE-CHORNOMORSK-2026-11-11-MARKET",
+    "incident_date": "2026-11-11",
+    "location": {
+      "settlement": "Chornomorsk",
+      "district": null,
+      "region": "Odesa region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike on a crowded market in central Chornomorsk killed four people: one at the scene and three who later died in hospital. The initial casualty report recorded one death; subsequent hospital deaths raised the final toll to four.",
+    "documented_deaths": 4,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "CHORNOMORSK-IFAX-2026-11-11-INITIAL",
+        "publisher": "Interfax-Ukraine, citing Odesa Regional Military Administration head Oleh Kiper",
+        "source_type": "news_report",
+        "published_at": "2026-11-11T13:34:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1234718.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial report at 13:34 recorded one death and 11 injured."
+      },
+      {
+        "source_id": "CHORNOMORSK-UP-2026-11-11-FINAL",
+        "publisher": "Ukrainska Pravda, citing Oleh Kiper and DSNS",
+        "source_type": "news_report",
+        "published_at": "2026-11-11T19:27:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062304/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports the final toll of four after two people died in hospital by 14:06 and a fourth death was later confirmed."
+      },
+      {
+        "source_id": "CHORNOMORSK-KI-2026-11-11",
+        "publisher": "The Kyiv Independent",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://kyivindependent.com/russian-strike-on-crowded-market-in-odesa-oblast-kills-at-least-3-injures-8/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports the rise to four deaths and explains the two earlier hospital deaths and a later third hospital death."
+      },
+      {
+        "source_id": "CHORNOMORSK-EVIDENCEHUB-2026-11-11",
+        "publisher": "Ukraine Evidence Hub",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://ukraine-evidence.org/case-files/cf-36",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Case file records four killed, one at the scene and three in hospital."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-001",
+        "recorded_at": "2026-11-11T13:34:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial regional administration update reported one person killed at the scene.",
+        "source_ids": [
+          "CHORNOMORSK-IFAX-2026-11-11-INITIAL"
+        ]
+      },
+      {
+        "revision_id": "UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-002",
+        "recorded_at": "2026-11-11T14:06:00+02:00",
+        "old_value": 1,
+        "new_value": 3,
+        "reason": "Two people hospitalized with severe injuries died in hospital, raising the toll to three.",
+        "source_ids": [
+          "CHORNOMORSK-UP-2026-11-11-FINAL",
+          "CHORNOMORSK-KI-2026-11-11"
+        ]
+      },
+      {
+        "revision_id": "UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-003",
+        "recorded_at": "2026-11-11",
+        "old_value": 3,
+        "new_value": 4,
+        "reason": "A further hospitalized victim died, and Kiper confirmed the final toll of four.",
+        "source_ids": [
+          "CHORNOMORSK-UP-2026-11-11-FINAL",
+          "CHORNOMORSK-EVIDENCEHUB-2026-11-11"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE",
+    "incident_date": "2026-11-11",
+    "location": {
+      "settlement": "Kharkiv",
+      "district": "Saltivsky district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone strike in Saltivsky district killed two people and set a car on fire. The mayor first reported one death, then updated the toll to two.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SALTIVSKY-TEREKHOV-2026-11-11",
+        "publisher": "Kharkiv Mayor Ihor Terekhov",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/ihor_terekhov/4988",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Mayor's updates: initial report of one death, later revised to two."
+      },
+      {
+        "source_id": "SALTIVSKY-IFAX-2026-11-11",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-11T16:16:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1234901.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports the mayor's final toll of two after an earlier one-death update."
+      },
+      {
+        "source_id": "SALTIVSKY-UP-2026-11-11",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-11T15:58:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062306/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports two people killed in the Saltivsky district strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-11-11",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial mayoral report said one person had been killed.",
+        "source_ids": [
+          "SALTIVSKY-TEREKHOV-2026-11-11"
+        ]
+      },
+      {
+        "revision_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-002",
+        "recorded_at": "2026-11-11T16:16:00+02:00",
+        "old_value": 1,
+        "new_value": 2,
+        "reason": "The mayor later reported two fatalities. The incident's final count is two; the project subtotal had already included the first death before this update.",
+        "source_ids": [
+          "SALTIVSKY-IFAX-2026-11-11",
+          "SALTIVSKY-UP-2026-11-11"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-YAHOTYN-2026-11-11-INITIAL-DRONE-STRIKE",
+    "incident_date": "2026-11-11",
+    "location": {
+      "settlement": "Yahotyn",
+      "district": "Boryspil district",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack drones struck Yahotyn, killing one person and damaging two kindergartens, homes, a vehicle and a non-residential building. A later repeat strike during firefighting killed two rescuers and is recorded separately.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "YAHOTYN-TKACHENKO-2026-11-11",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur/3088",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report of one person killed in the initial Yahotyn attack."
+      },
+      {
+        "source_id": "YAHOTYN-UP-2026-11-11",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-11T17:29:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/11/8062380/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed in the initial attack on Yahotyn."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-YAHOTYN-2026-11-11-INITIAL-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-11-11",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "YAHOTYN-TKACHENKO-2026-11-11",
+          "YAHOTYN-UP-2026-11-11"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-YAHOTYN-2026-11-11-REPEAT-STRIKE-RESCUERS",
+    "incident_date": "2026-11-11",
+    "location": {
+      "settlement": "Yahotyn",
+      "district": "Boryspil district",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A repeat Russian drone strike during firefighting in Yahotyn killed two State Emergency Service rescuers, Oleksandr Bondarenko and Yurii Lytovchenko. Two other rescuers were injured. This is a separate incident from the initial attack that killed one civilian.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "YAHOTYN-DSNS-2026-11-11",
+        "publisher": "State Emergency Service of Ukraine, Kyiv region",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dsns_kyiv_region/20355",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report says two rescuers were killed during the repeat strike while extinguishing the fire."
+      },
+      {
+        "source_id": "YAHOTYN-SUSPILNE-2026-11-11",
+        "publisher": "Suspilne Kyiv",
+        "source_type": "news_report",
+        "published_at": "2026-11-11T22:14:00+02:00",
+        "url": "https://suspilne.media/kyiv/1450797-vnaslidok-povtornih-rosijskih-udariv-pid-cas-likvidacii-pozezi-v-agotini-zaginulo-dvoe-ratuvalnikiv/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two rescuers killed by the repeat strike during firefighting."
+      },
+      {
+        "source_id": "YAHOTYN-LB-2026-11-11",
+        "publisher": "LB.ua",
+        "source_type": "news_report",
+        "published_at": "2026-11-11T22:14:00+02:00",
+        "url": "https://en.lb.ua/news/2026/11/11/49392_two_state_emergency_service.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Identifies the two rescuers and confirms they were killed in the second wave of strikes."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-YAHOTYN-2026-11-11-REPEAT-STRIKE-RESCUERS-REV-001",
+        "recorded_at": "2026-11-11",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "YAHOTYN-DSNS-2026-11-11",
+          "YAHOTYN-SUSPILNE-2026-11-11",
+          "YAHOTYN-LB-2026-11-11"
+        ]
+      }
+    ]
   }
 ]

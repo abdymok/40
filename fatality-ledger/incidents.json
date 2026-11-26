@@ -58,7 +58,7 @@
         "recorded_at": "2026-10-05",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Oct.  5 Kramatorsk death was reported on Oct. 6, before the Oct. 11 ≈80 snapshot, but it is not one of the snapshot's named incident rows. Stage 62 confirms that the visible rows do not form a complete membership list, and the later 148 baseline is a carried-forward aggregate. No dated dashboard increment or method snapshot identifies this incident. Keep ledger_effective_at null; historical inclusion remains unverified.",
         "source_ids": [
           "KRAMATORSK-05-UKRINFORM-2026-10-06",
           "KRAMATORSK-05-UP-2026-10-06",
@@ -473,7 +473,7 @@
         "recorded_at": "2026-10-08",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Oct. 8 Ivano-Frankivsk drone-debris death was reported on Oct. 9, before the Oct. 11 ≈80 snapshot, but it is not itemized in that snapshot or the mapped 80→92 increments. The later 148 baseline is a carried-forward aggregate without complete incident membership. No specific update establishes inclusion or exclusion. Keep ledger_effective_at null.",
         "source_ids": [
           "IFR-08-UKRINFORM-2026-10-09",
           "IFR-08-UP-2026-10-09",
@@ -530,7 +530,7 @@
         "recorded_at": "2026-10-08T10:52:00+03:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Mayor's early morning update reported one death in the attacks on Kyiv; the specific incident was not identified. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Kyiv's Oct. 8 morning report records one death without identifying the specific incident. The Oct. 11 snapshot contains a broad one-death Kyiv citywide row, but its method warns that citywide totals may overlap with incident-level reports and should not be added separately. The record cannot safely be matched to an independent increment or treated as an additional death. Keep ledger_effective_at null pending resolution of the overlap and historical membership.",
         "source_ids": [
           "KYIV-08-MORNING-UP-2026-10-08"
         ],
@@ -609,7 +609,7 @@
         "recorded_at": "2026-10-08T18:20:00+03:00",
         "old_value": 2,
         "new_value": 3,
-        "reason": "Kyiv police later confirmed three people killed in the shop strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Oct. 11 ≈80 snapshot explicitly includes two deaths in the Solomiansky shop strike. Kyiv police later confirmed a third death. The mapped Oct. 22→28 increments do not identify this additional death, and the ≈148 baseline is a carried-forward aggregate rather than a complete incident list. The third death's later inclusion cannot be confirmed or ruled out. Keep ledger_effective_at null; the dated Oct. 11 inclusion applies only to the initial two.",
         "source_ids": [
           "SOLOMIANSKY-SHOP-UKRINFORM-2026-10-08"
         ],
@@ -664,7 +664,7 @@
         "recorded_at": "2026-10-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Dnipropetrovsk Regional Military Administration reported one person killed in attacks on Zaitseve and Petropavlivka communities on Oct. 9. The Oct. 11 ≈80 snapshot does not itemize this incident; its one Dnipropetrovsk-region row is matched in Stage 62 to the separate 11-year-old boy killed in Pokrovske. The later Oct. 25 123→132 update's four Synelnykove deaths concern a distinct Oct. 24 residential-area drone strike, not this Oct. 9 incident. The Oct. 22 ≈123 nationwide-minimum baseline does not provide a complete incident membership list. Inclusion of this Oct. 9 death in the 123 or 148 baseline cannot be confirmed or ruled out; keep ledger_effective_at null.",
+        "reason": "The Oct. 9 Synelnykove-district death is not the one-death Dnipropetrovsk row in the Oct. 11 ≈80 snapshot; Stage 62 matches that row to the separate Pokrovske child death. The Oct. 25 four-death Synelnykove update concerns a distinct Oct. 24 attack. The later ≈123 and ≈148 figures are carried-forward aggregates without complete incident membership. No specific increment establishes this Oct. 9 death's inclusion. Keep ledger_effective_at null.",
         "source_ids": [
           "DNE-09-UP-2026-10-09",
           "DNE-09-UKRINFORM-2026-10-09"
@@ -720,7 +720,7 @@
         "recorded_at": "2026-10-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Zaporizhia's Oct. 9 guided-bomb strike killed one man, as reported by the regional prosecutor and acting regional administration head. The Oct. 11 ≈80 snapshot's Zaporizhia row concerns the separate Oct. 10 residential strike, for which it records 20 deaths; it does not itemize this Oct. 9 incident. The later 148 baseline carries forward an aggregate and does not provide complete incident membership. No named 80→92 or 148→173 increment establishes this death's inclusion. Keep ledger_effective_at null.",
+        "reason": "The Oct. 9 guided-bomb death is distinct from the Oct. 10 Zaporizhia residential strike, whose 20-death toll is explicitly included in the Oct. 11 ≈80 snapshot. The 80→92 increments and 148→173 breakdown do not itemize the Oct. 9 incident. The later 148 baseline is a carried-forward aggregate, so inclusion cannot be confirmed or ruled out. Keep ledger_effective_at null.",
         "source_ids": [
           "ZAP-09-UKRINFORM-2026-10-09",
           "ZAP-09-RBC-2026-10-09"

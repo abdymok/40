@@ -9692,11 +9692,11 @@
         "recorded_at": "2026-11-23T10:00:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-23.",
         "source_ids": [
           "STEPANIIVKA-NPU-2026-11-23"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       }
     ]
   },
@@ -9803,12 +9803,12 @@
         "recorded_at": "2026-11-22T23:59:00+02:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-23.",
         "source_ids": [
           "SLOVIANSK-NPU-2026-11-22",
           "SLOVIANSK-NPU-2026-11-23"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       }
     ]
   },
@@ -10383,13 +10383,13 @@
         "recorded_at": "2026-11-24T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting.",
+        "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting. Historical running subtotal includes this death on 2026-11-23.",
         "source_ids": [
           "NIKOPOL-45YO-INFORMATOR-2026-11-24",
           "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-45YO",
           "NIKOPOL-REGION-IFAX-2026-11-23-45YO"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       }
     ]
   },
@@ -10452,13 +10452,13 @@
         "recorded_at": "2026-11-24T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting.",
+        "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting. Historical running subtotal includes this death on 2026-11-23.",
         "source_ids": [
           "NIKOPOL-62YO-INFORMATOR-2026-11-24",
           "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-62YO",
           "NIKOPOL-REGION-IFAX-2026-11-23-62YO"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       }
     ]
   },
@@ -10521,13 +10521,13 @@
         "recorded_at": "2026-11-23T23:59:00+02:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-24.",
         "source_ids": [
           "KRAMATORSK-UKRINFORM-2026-11-23",
           "KRAMATORSK-IFAX-2026-11-23",
           "KRAMATORSK-NPU-2026-11-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-24"
       }
     ]
   },
@@ -10580,12 +10580,12 @@
         "recorded_at": "2026-11-25T06:45:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-25.",
         "source_ids": [
           "SEREDYNO-BUDSKA-NPU-2026-11-25",
           "SEREDYNO-BUDSKA-INTERFAX-2026-11-25"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-25"
       }
     ]
   },
@@ -10649,13 +10649,13 @@
         "recorded_at": "2026-11-23T23:59:00+02:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-23.",
         "source_ids": [
           "CLINIC-ZOVA-2026-11-23-69242",
           "CLINIC-INTERFAX-2026-11-23",
           "CLINIC-UP-2026-11-23"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       }
     ]
   },
@@ -10719,13 +10719,13 @@
         "recorded_at": "2026-11-24T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-25.",
         "source_ids": [
           "ODESA-REGION-UKRINFORM-2026-11-24",
           "ODESA-REGION-UP-2026-11-24",
           "ODESA-PODILSK-EVIDENCEHUB-2026-11-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-25"
       }
     ]
   },
@@ -10777,12 +10777,12 @@
         "recorded_at": "2026-11-24T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-25.",
         "source_ids": [
           "PODILSK-UKRINFORM-2026-11-24",
           "PODILSK-EVIDENCEHUB-2026-11-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-25"
       }
     ]
   },
@@ -10846,13 +10846,13 @@
         "recorded_at": "2026-11-24T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-25.",
         "source_ids": [
           "SUMY-NPU-2026-11-25",
           "SUMY-UP-2026-11-24",
           "SUMY-INTERFAX-2026-11-25"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-25"
       }
     ]
   },
@@ -10904,12 +10904,12 @@
         "recorded_at": "2026-11-24T08:13:00+02:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-24.",
         "source_ids": [
           "ZAP-2026-11-24-ZOVA-69275",
           "ZAP-2026-11-24-CHRONOLOGY"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-24"
       }
     ]
   },
@@ -10972,13 +10972,13 @@
         "recorded_at": "2026-11-24T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-24.",
         "source_ids": [
           "KOROSTEN-NPU-2026-11-24",
           "KOROSTEN-ODA-2026-11-24",
           "KOROSTEN-UZ-2026-11-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-24"
       }
     ]
   },
@@ -11140,13 +11140,13 @@
         "recorded_at": "2026-11-25T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-25.",
         "source_ids": [
           "FEDORIVKA-SYNEHUBOV-2026-11-25",
           "FEDORIVKA-UKRINFORM-2026-11-25",
           "FEDORIVKA-UP-2026-11-25"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-25"
       }
     ]
   },
@@ -11209,13 +11209,13 @@
         "recorded_at": "2026-11-25T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-25.",
         "source_ids": [
           "BILA-TSERKVA-TKACHENKO-2026-11-25",
           "BILA-TSERKVA-UP-2026-11-25",
           "BILA-TSERKVA-CENSOR-2026-11-25"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-25"
       }
     ]
   },
@@ -11278,13 +11278,13 @@
         "recorded_at": "2026-11-25T23:59:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-25.",
         "source_ids": [
           "MALYN-ODA-2026-11-25",
           "MALYN-ODA-WEB-2026-11-25",
           "MALYN-UKRINFORM-2026-11-25"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-25"
       }
     ]
   },
@@ -11335,12 +11335,12 @@
         "recorded_at": "2026-11-26T05:12:00+02:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch. Historical running subtotal includes this death on 2026-11-26.",
         "source_ids": [
           "KHARKIV-TEREKHOV-2026-11-26",
           "KHARKIV-UP-2026-11-26"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-26"
       }
     ]
   }

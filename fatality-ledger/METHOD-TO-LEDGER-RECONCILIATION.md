@@ -1,11 +1,12 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 20 analysis, amended through Stage 41 on Nov. 26  
-**Current ledger sum:** 446  
-**Published method-page minimum:** 418  
-**Current difference:** +28 raw in the pilot incident dataset  
+**Working status:** Stage 52, updated Nov. 26, 2026  
+**Current ledger sum:** 449  
+**Published method-page minimum:** 421  
+**Raw difference:** +28 in the pilot incident dataset
 
-> **Stage 41 amendment:** The current dataset contains 173 incidents, 419 source records and 446 deaths. A further pre-Oct. 29 incident has been added: 86-year-old Tamara Yasynska died in hospital on Oct. 26 after being injured in the Oct. 21 Uman attack. Its historical subtotal inclusion date remains null because the Oct. 22–28 update history does not identify it. The pre-Oct. 29 incident-date inventory now sums to 169 (21 above the legacy 148); Oct. 29 sums to 27 (two above the historical 25); and post-192 additions sum to 231 (five above the method's 226). Raw arithmetic: +21 +2 +5 = +28. The historical 148 includes three Chabany deaths excluded from the current ledger and appears to retain three deaths in the Oct. 16 Kharkiv market incident, while the current ledger keeps the later official final count of two. Adjusting only for those two known scope differences gives a provisional like-for-like pre-Oct. 29 comparison of 173 versus 148 (+25), and a provisional like-for-like overall comparison of 450 versus 418 (+32). The Uman death's inclusion in 148 remains unestablished and could shift the comparison by one. These are comparison adjustments, not proposed public totals. Twenty-nine revisions have confirmed `ledger_effective_at` dates; 191 revision entries remain null pending evidence.
+> **Stage 52 amendment:** The current dataset contains 175 incidents, 423 source records and 449 final documented deaths. The current public chronology and method page both stand at 421 through Nov. 26. The pre-Oct. 29 incident-date inventory sums to 169 (21 above the legacy 148); the Oct. 29 cohort sums to 27 (two above the historical 25); and post-192 incident-date additions sum to 234 (five above the method's 229). Raw arithmetic: +21 +2 +5 = +28. The historical 148 includes three Chabany deaths excluded from the current ledger and appears to retain three deaths in the Oct. 16 Kharkiv market incident, while the current ledger keeps the later official final count of two. Adjusting only for those two known scope differences gives a provisional like-for-like pre-Oct. 29 comparison of 173 versus 148 (+25), and a provisional like-for-like overall comparison of 453 versus 421 (+32). The Uman death's inclusion in 148 remains unestablished and could shift the comparison by one. These are comparison adjustments, not proposed public totals. The ledger has 175 revision entries with confirmed ledger_effective_at dates and 53 still null. The dated historical sequence now reconciles the public 421 as 148 + 19 (Oct. 29) + 25 (Oct. 30–Nov. 2) + 229 (Nov. 3–26).
+
 ## What is established
 
 The method page's cumulative sequence starts from an opening subtotal of approximately 192. It explicitly says this subtotal already included 18 deaths from the Nov. 2 Komyshuvakha strike. Subsequent increases in that incident were therefore increments from 18, not a fresh addition of the full 72.
@@ -29,7 +30,7 @@ The method's Nov. 4–6 source audit identified eight further deaths:
 - one in Kramatorsk;
 - one in Sarny district.
 
-Those eight now have incident records and are already included in the method-page total of 418.
+Those eight now have incident records and are already included in the current method-page total of 421.
 
 ## Scope mismatches in the pre-Oct. 29 baseline
 
@@ -336,3 +337,32 @@ The Dymer incident's revision chain is now dated and reconciled:
 The initial two Dymer deaths are not added again to the 379→391 transition. The Nov. 22 update adds only five more Dymer deaths to the baseline, then the other seven incident groups in the table complete the +12. The Nov. 23 and Nov. 24 Dymer revisions are mapped to later subtotals, not the Nov. 22 update.
 
 The ledger remains 173 incidents, 420 source records and 446 final deaths. It now has 157 revision entries with confirmed effective dates and 69 still null. No final incident counts changed.
+
+
+## Stage 52 — Nov. 23–26 additions mapped to the current 421 total
+
+The final public sequence is now reconstructed:
+
+| Historical subtotal | Increment | Incident mapping |
+|---|---:|---|
+| 391→395, Nov. 23 | +4 | Dymer: eighth through eleventh bodies recovered |
+| 395→398, Nov. 23 | +3 | Sloviansk (2), Stepaniivka (1) |
+| 398→401, Nov. 23 | +3 | Zaporizhia non-operating private clinic (3) |
+| 401→403, Nov. 23 | +2 | Nikopol (two separate deaths in separate attacks) |
+| 403→407, Nov. 24 | +4 | Zaporizhia overnight residential strike (2), Kramatorsk civilian evacuation vehicle (2) |
+| 407→408, Nov. 24 | +1 | Dymer survivor rescued alive on Nov. 23 died in hospital |
+| 408→409, Nov. 24 | +1 | Korosten railway station |
+| 409→410, Nov. 25 | +1 | Bila Tserkva overnight drone attack |
+| 410→412, Nov. 25 | +2 | Odesa district (1), Podilsk (1) |
+| 412→413, Nov. 25 | +1 | Fedorivka passenger minibus |
+| 413→415, Nov. 25 | +2 | Sumy civilian car (1), delayed hospital death in Seredyno-Budska (1) |
+| 415→416, Nov. 25 | +1 | Malyn vehicle-parking-area strike |
+| 416→418, Nov. 26 | +2 | Kharkiv, Novobavarsky district |
+| 418→419, Nov. 26 | +1 | Separate Nov. 25 FAB-500 strike in Sloviansk |
+| 419→421, Nov. 26 | +2 | Two people killed on a road near Dovzhyk on Nov. 25 |
+
+The Dovzhyk and Sloviansk deaths were absent from the prior structured ledger and have now been added as separate incident records with official or corroborating sources. The 418→421 increment is therefore fully represented in the current 175-incident dataset.
+
+The public 421 total now reconciles as 148 + 19 + 25 + 229. The current incident ledger remains 28 higher in raw final-count arithmetic. The remaining raw difference is not to be erased by changing the public total: it reflects the identified scope differences and unresolved later-count inclusions, including the three later Chornomorsk deaths, the second death in the Nov. 3 Dnipro incident, the Saltivsky overlap, and the two additional Oct. 29 Izium deaths.
+
+Current ledger status: 175 incidents, 423 source records, 449 final documented deaths, 228 revision entries, 175 with confirmed effective dates and 53 still null. No public chronology or method-page figure was changed by this audit.

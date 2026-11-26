@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 87, updated Nov. 26, 2026  
+**Working status:** Stage 88, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -636,3 +636,10 @@ Checkpoint: `fatality-ledger/STAGE-87-CHECKPOINT.md`
 A fresh pass over all 230 revision entries confirms 198 dated and 32 null. The 32 null revisions comprise 26 pre-Oct. 29 entries with net +82 and six later entries with net +7, for a combined arithmetic net of +89. The inventory summary had incorrectly retained the Saltivsky first-death revision after Stage 86 dated it, and consequently overstated the null-revision net as +100. The inventory and master classification are corrected; the incident ledger and public minimum are unchanged.
 
 The six later null revisions are the two additional Oct. 29 Izium revisions, Oct. 31 Sloviansk, the second Nov. 3 Dnipro death and two Chornomorsk hospital revisions (three deaths in total). Chornomorsk's first death is explicitly included at 282→283; the later three deaths are in the final incident toll of four but are not individually established in the 421 public subtotal. No later inclusion date is inferred.
+
+
+## Stage 88 — Nov. 3 Dnipro and Oct. 31 Sloviansk inclusion status
+
+Checkpoint: `fatality-ledger/STAGE-88-CHECKPOINT.md`
+
+The Nov. 3 historical sequence maps 203→207 to four deaths in Donetsk region from Nov. 2 (including a Nov. 2 Sloviansk incident distinct from the Oct. 31 Sloviansk death). The first Dnipro death is the 207→208 increment; the subsequent 208→211 changes are Komyshuvakha 29→31 (+2) and Hotiv (+1). The Dnipro incident's second final death is not part of that mapped sequence; it remains null. The Oct. 31 Sloviansk death is not itemized in the 174 baseline, but the baseline carries forward earlier totals without exhaustive incident membership. Its inclusion there cannot be confirmed or ruled out; it remains null. No effective dates or public totals changed.

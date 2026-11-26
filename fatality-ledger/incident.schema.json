@@ -95,7 +95,8 @@
           "publisher",
           "source_type",
           "url",
-          "supports"
+          "supports",
+          "notes"
         ],
         "properties": {
           "source_id": {

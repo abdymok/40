@@ -19,4 +19,4 @@ The Oct. 26 weekly citywide figure does **not** establish that all three people 
 3. Cross-check the 36-attack weekly report against the individual Oct. 19–25 chronology entries to avoid counting the Novobavarsky death twice.
 4. Only create incident records when the underlying incident and count can be supported.
 
-**Current treatment:** One confirmed Nov. 24 incident death remains in the ledger. The additional two deaths in the weekly total are unallocated and are not added as a separate incident or as two extra deaths.
+**Current treatment:** The Oct. 24 Novobavarsky district death is already represented by `UA-KHA-KHARKIV-NOVOBAVARSKY-2026-10-24-DRONE`. The additional two deaths in the Oct. 19–25 citywide weekly total remain unallocated. The Oct. 28 historical subtotal does not establish whether they were included separately, and they are not added as a new incident or as two extra deaths without source-level identification.

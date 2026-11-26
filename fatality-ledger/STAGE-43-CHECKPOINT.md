@@ -8,7 +8,7 @@ The original repository commits establish:
 - Oct. 28 dashboard: 148.
 - Oct. 29, 22:10 dashboard: 167.
 - Oct. 30 dashboard: 173.
-- Nov. 2 pre-Kom yshuvakha baseline: 174.
+- Nov. 2 pre-Komyshuvakha baseline: 174.
 - Nov. 2 after the initial Komyshuvakha update: 192.
 
 The 148→167 movement by Oct. 29 is +19. The Oct. 30 movement from 167→173 is +6: one late Kyiv ballistic death, one delayed Dnipro railway-station hospital death and four deaths in Izium.
@@ -48,7 +48,7 @@ The dataset now contains 36 revisions with non-null ledger_effective_at and 187 
 
 ## 192 opening baseline
 
-The 192 snapshot is 174 + 18 Komyshuvakha deaths. The 174 pre-Kom yshuvakha subtotal is 173 plus one death in a further Nov. 2 Izium attack. The exact incident record for that Izium death is identified as UA-KHA-IZIUM-2026-11-02-GUIDED-BOMBS, but its effective date still needs to be assigned and validated in the next stage.
+The 192 snapshot is 174 + 18 Komyshuvakha deaths. The 174 pre-Komyshuvakha subtotal is 173 plus one death in a further Nov. 2 Izium attack. The exact incident record for that Izium death is identified as UA-KHA-IZIUM-2026-11-02-GUIDED-BOMBS, but its effective date still needs to be assigned and validated in the next stage.
 
 ## Current ledger
 

@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 89, updated Nov. 26, 2026  
+**Working status:** Stage 90, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -650,3 +650,10 @@ The Nov. 3 historical sequence maps 203→207 to four deaths in Donetsk region f
 Checkpoint: `fatality-ledger/STAGE-89-CHECKPOINT.md`
 
 The Nov. 2 174 baseline itemizes four deaths in the Oct. 29 Izium airstrike and one death in a separate Nov. 2 morning attack. It does not itemize the fifth death in the Oct. 29 airstrike, reported later on Oct. 30, or the separate 59-year-old victim killed in another Oct. 29 attack, first identified Oct. 31. The later 421 reconciliation names no separate additions for either revision. Their inclusion in a later, non-itemized subtotal is unproven, so both revisions remain null. The current Oct. 29 incident-date cohort exceeds the historical 25-count cohort by two, consistent with these two unresolved deaths, but this arithmetic comparison alone does not establish the precise inclusion date. No incident counts, effective dates or public totals changed.
+
+
+## Stage 90 — Oct. 12 Kharkiv four-death inclusion question
+
+Checkpoint: `fatality-ledger/STAGE-90-CHECKPOINT.md`
+
+The Oct. 12 Kharkiv residential-building strike killed four people; the fourth body was recovered on Oct. 13. The archived 80→82 increments are explicitly attributed to the separate Kyiv ballistic strike, and 82→85 adds three deaths in the Oct. 13–14 Kyiv overnight attack. The 148→173 breakdown does not itemize this Kharkiv incident, but the 148 baseline is a carried-forward aggregate, not a complete incident list. Its inclusion in 148 or a later subtotal remains unproven. REV-001 remains null; this is a potential four-death inclusion gap, not a confirmed omission. No incident count, effective date or public total changed.

@@ -6471,5 +6471,448 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-10-31-ATTACK",
+    "incident_date": "2026-10-31",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Sloviansk on Oct. 31 killed one person and injured two, according to the Donetsk Regional Military Administration's Nov. 1 morning report.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-31-FILASHKIN-2026-11-01",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-01T10:05:00+02:00",
+        "url": "https://t.me/VadymFilashkin/19012",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Nov. 1 morning report says one person was killed in Sloviansk over the previous 24 hours."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-10-31-ATTACK-REV-001",
+        "recorded_at": "2026-10-31",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SLOVIANSK-31-FILASHKIN-2026-11-01"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-2026-10-29-RAILWAY-STATION-STRIKE",
+    "incident_date": "2026-10-29",
+    "location": {
+      "settlement": "Dnipro",
+      "district": "Railway station",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian jet-powered UAV struck a platform at Dnipro railway station while passenger train No. 866 was standing there, killing 15 people. The first update reported 13 deaths, the toll rose to 14 on Oct. 29, and a 40-year-old man wounded in the attack died in hospital on Oct. 30, raising the final toll to 15.",
+    "documented_deaths": 15,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-STATION-HANZHA-2026-10-29-32901",
+        "publisher": "Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA/32901",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial official update at 11:29 reported 13 killed."
+      },
+      {
+        "source_id": "DNIPRO-STATION-REUTERS-2026-10-29",
+        "publisher": "Reuters",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.reuters.com/world/europe/russian-drone-attack-train-station-kills-13-ukraines-dnipro-2026-10-29/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports 13 killed in the station strike."
+      },
+      {
+        "source_id": "DNIPRO-STATION-IFAX-2026-10-29",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-10-29T00:00:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1228317.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports the 14-death toll and day-of-mourning declaration."
+      },
+      {
+        "source_id": "DNIPRO-STATION-DAY-OF-MOURNING-2026-10-30",
+        "publisher": "Dnipropetrovsk Regional Military Administration / city mourning report",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "On Oct. 30, reports the death of a 40-year-old man in hospital, raising the toll from 14 to 15."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-10-29-RAILWAY-STATION-STRIKE-REV-001",
+        "recorded_at": "2026-10-29",
+        "old_value": null,
+        "new_value": 15,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-STATION-HANZHA-2026-10-29-32901",
+          "DNIPRO-STATION-REUTERS-2026-10-29",
+          "DNIPRO-STATION-IFAX-2026-10-29",
+          "DNIPRO-STATION-DAY-OF-MOURNING-2026-10-30"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-POL-KREMENCHUK-2026-10-29-APARTMENT-BUILDING",
+    "incident_date": "2026-10-29",
+    "location": {
+      "settlement": "Kremenchuk",
+      "district": null,
+      "region": "Poltava region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck a multi-storey residential building in Kremenchuk, killing three people and injuring 32. The regional administration initially reported two deaths; later reports raised the toll to three.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KREMENCHUK-OVA-2026-10-29-35193",
+        "publisher": "Poltava Regional Military Administration head Vitaliy Diakivnych",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/poltavskaOVA/35193",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial 12:19 report said two people had been killed."
+      },
+      {
+        "source_id": "KREMENCHUK-SUSPILNE-2026-10-29",
+        "publisher": "Suspilne Poltava",
+        "source_type": "news_report",
+        "published_at": "2026-10-29T20:00:00+02:00",
+        "url": "https://suspilne.media/poltava/1440039-rosiani-vdarili-po-kremencuku-raketami-banderol-troe-zagiblih-19-poranenih/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Later report raised the death toll to three and injury toll to 32."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-POL-KREMENCHUK-2026-10-29-APARTMENT-BUILDING-REV-001",
+        "recorded_at": "2026-10-29",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KREMENCHUK-OVA-2026-10-29-35193",
+          "KREMENCHUK-SUSPILNE-2026-10-29"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-KHARKIV-REGION-2026-10-29-ATTACK-ROUNDUP",
+    "incident_date": "2026-10-29",
+    "location": {
+      "settlement": null,
+      "district": "Kharkiv region",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Kharkiv and 19 other settlements in the region over the preceding day killed one person and injured eight. The regional administration's roundup did not identify the victim's exact settlement or strike site.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHARKIV-REGION-SYNEHUBOV-2026-10-29",
+        "publisher": "Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/synegubov/11766",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional casualty roundup reports one person killed and eight injured on Oct. 29."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KHARKIV-REGION-2026-10-29-ATTACK-ROUNDUP-REV-001",
+        "recorded_at": "2026-10-29",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KHARKIV-REGION-SYNEHUBOV-2026-10-29"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-KHARKIV-OSNOVIANSKY-2026-10-28-DRONE",
+    "incident_date": "2026-10-28",
+    "location": {
+      "settlement": "Kharkiv",
+      "district": "Osnoviansky district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian combat drone struck Kharkiv's Osnoviansky district, starting a fire and killing one person.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHARKIV-OSNOVIANSKY-TEREKHOV-2026-10-28",
+        "publisher": "Kharkiv Mayor Ihor Terekhov",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/ihor_terekhov/4902",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Mayor confirmed one person killed at 13:23."
+      },
+      {
+        "source_id": "KHARKIV-OSNOVIANSKY-UP-2026-10-28",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/28/8060077/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the one fatality in the Osnoviansky district drone strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KHARKIV-OSNOVIANSKY-2026-10-28-DRONE-REV-001",
+        "recorded_at": "2026-10-28",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KHARKIV-OSNOVIANSKY-TEREKHOV-2026-10-28",
+          "KHARKIV-OSNOVIANSKY-UP-2026-10-28"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-NOVODONETSKE-2026-10-28-ATTACK",
+    "incident_date": "2026-10-28",
+    "location": {
+      "settlement": "Novodonetske",
+      "district": "Kramatorsk district",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks in Donetsk region killed one person in Novodonetske on Oct. 28. A separate death reported in Iverske was already included in the Oct. 27 record and is not counted again.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NOVODONETSKE-FILASHKIN-2026-10-28-18948",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/18948?single",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report says one person was killed in Novodonetske. The same report mentions an Iverske death already recorded on Oct. 27."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-NOVODONETSKE-2026-10-28-ATTACK-REV-001",
+        "recorded_at": "2026-10-28",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "NOVODONETSKE-FILASHKIN-2026-10-28-18948"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SUKHANIVKA-2026-10-27-ATTACK",
+    "incident_date": "2026-10-27",
+    "location": {
+      "settlement": "Sukhanivka",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Donetsk region killed one person in Sukhanivka on Oct. 27.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SUKHANIVKA-FILASHKIN-2026-10-27-18922",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/18922",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official morning report records one death in Sukhanivka."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SUKHANIVKA-2026-10-27-ATTACK-REV-001",
+        "recorded_at": "2026-10-27",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SUKHANIVKA-FILASHKIN-2026-10-27-18922"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-27-ATTACK",
+    "incident_date": "2026-10-27",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Donetsk region killed one person in Kramatorsk on Oct. 27.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-FILASHKIN-2026-10-27-18922",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/18922",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official morning report records one death in Kramatorsk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-27-ATTACK-REV-001",
+        "recorded_at": "2026-10-27",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-FILASHKIN-2026-10-27-18922"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-IVERSKE-2026-10-27-ATTACK",
+    "incident_date": "2026-10-27",
+    "location": {
+      "settlement": "Iverske",
+      "district": "Kramatorsk district",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Donetsk region killed one person in Iverske on Oct. 27. A Nov. 28 regional update repeated this death in a daily roundup; it is counted once here.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "IVERSKE-FILASHKIN-2026-10-27-18922",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/18922",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official morning report records one death in Iverske on Oct. 27."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-IVERSKE-2026-10-27-ATTACK-REV-001",
+        "recorded_at": "2026-10-27",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "IVERSKE-FILASHKIN-2026-10-27-18922"
+        ]
+      }
+    ]
   }
 ]

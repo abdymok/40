@@ -1,9 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
 **Working status:** Stage 104 final closeout, updated Nov. 26, 2026  
-**Current ledger sum:** 452  
-**Published method-page minimum:** 421  
+**Current ledger sum:** 457  
+**Published method-page minimum:** 426  
 **Raw difference:** +31 in the pilot incident dataset
+
+> **Post-audit incident update — Nov. 26:** Five newly verified incidents were added after the Stage 104 historical reconciliation was closed: the Maslii road attack, Bylbasivka post-office strike, Nov. 26 Sloviansk airstrike, Komyshany drone attack and Kharkiv university strike. The current ledger now contains 181 incidents, 441 source records, 457 documented deaths and 236 revisions. Of these revisions, 203 have confirmed `ledger_effective_at` dates and the original 33 unresolved historical dates remain null. The five new revisions are dated Nov. 26 for the current public subtotal. The public provisional minimum is 426. The raw difference remains +31. The Stage 104 reconciliation is not reopened and none of its historical inclusion decisions has been changed. A further female fatality described in a later Kharkiv update is not added separately because the available reports do not establish whether it is the same woman reported killed in the university strike. A Kherson regional daily-roundup death remains unallocated and is not added pending an incident-level match.
 
 > **Stage 104 final closeout — Nov. 26:** The post-Oct. 29 review is complete. The ledger contains 176 incidents, 430 source records, 452 final documented deaths and 231 revisions. Of the revisions, 198 have confirmed `ledger_effective_at` dates and 33 remain null. The 33 null revisions comprise 26 pre-Oct. 29 entries with a net arithmetic change of +82 and seven post-Oct. 29 entries with a net +8, for a combined arithmetic net of +90. This arithmetic is not a block of deaths to add to the public subtotal. Two post-Oct. 29 revisions are established exclusions from the public 421: the first Saltivsky death and the second Dnipro death. Five other post-Oct. 29 revisions have unresolved inclusion in carried-forward aggregates. Fourteen pre-Oct. 29 revisions, net +19, still lack a confirmed public-subtotal inclusion date after review. The public provisional minimum remains 421. The 452 incident-ledger sum and 421 public minimum are distinct measures with different historical scope; neither is a correction of the other. No public chronology, dashboard, methodology figure or live running total was changed. See `STAGE-104-CHECKPOINT.md` and `UNRESOLVED-EFFECTIVE-DATES-2026-11-26.md`.
 

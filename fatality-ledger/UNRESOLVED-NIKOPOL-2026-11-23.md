@@ -1,31 +1,35 @@
-# Unresolved incident boundary: Nikopol district deaths, Nov. 23
+# Nikopol district deaths, Nov. 23 — incident boundary resolved
 
-**Status:** Two deaths reported by official regional administration; incident-level allocation not yet established.  
-**Do not create final incident IDs or merge these deaths into another record until the underlying source trail is resolved.**
+**Status:** Resolved to two separately documented Nikopol-city fatal incidents.  
+**Resolution date:** 2026-11-26  
+**Ledger records:**  
+- `UA-DNE-NIKOPOL-2026-11-23-ARTILLERY-45YO`
+- `UA-DNE-NIKOPOL-2026-11-23-DRONE-ARTILLERY-62YO`
 
-## What is established
+## What the official regional report established
 
-On Nov. 23, Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha reported two people killed in Russian attacks in Nikopol district. The same regional summary described attacks affecting Nikopol city and the Marhanets, Chervonohryhorivka and Pokrovske communities. It reported two women aged 68 and 67 injured, but did not identify the two fatalities by settlement or state whether they were killed in one strike or separate incidents.
+On Nov. 23, Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha reported two people killed in Russian attacks in Nikopol district. The summary described attacks in Nikopol and the Marhanets, Chervonohryhorivka and Pokrovske communities. Interfax-Ukraine's 18:51 report confirms the two deaths but does not identify the victims or locations.
 
 Sources:
-- [Interfax-Ukraine, Nov. 23, 18:51](https://en.interfax.com.ua/news/general/1241155-amp.html) — says more than 40 attacks across six districts, two killed and three injured; locates the two deaths in Nikopol district but does not give settlement-level attribution.
-- [Ukrinform, Nov. 23, 20:25](https://www.ukrinform.net/rubric-ato/4187828-russian-forces-launch-40-strikes-on-dnipropetrovsk-region-in-one-day-killing-two-and-injuring-three.html) — repeats the official regional summary and lists the affected Nikopol-area settlements.
-- [Regional administration Telegram channel](https://t.me/s/dnipropetrovskaODA) — official source channel. The methodology currently links the channel root rather than a specific post.
+- [Interfax-Ukraine, Nov. 23, 18:51](https://en.interfax.com.ua/news/general/1241155-amp.html)
+- [Ukrinform, Nov. 23, 20:25](https://www.ukrinform.net/rubric-ato/4187828-russian-forces-launch-40-strikes-on-dnipropetrovsk-region-in-one-day-killing-two-and-injuring-three.html)
 
-## Why this remains unresolved
+## Local source follow-up identifies both victims and separates the attacks
 
-The project requires one unique incident ID per incident, not one ID per regional casualty roundup. The currently cited report establishes two deaths but does not tell us whether:
-- both people died in one attack at one location;
-- they died in separate attacks within the district; or
-- the two deaths were part of a broader multi-location attack sequence.
+Two Nov. 24 reports by Informator Nikopol, each citing Nikopol Mayor Oleksandr Saiuk, establish two distinct fatal incidents in Nikopol on Nov. 23:
 
-Assigning one combined incident ID would risk conflating separate events. Assigning two IDs would invent locations and incident boundaries not present in the source.
+1. **45-year-old Natalia Samoilova:** killed in a heavy-artillery attack on the shoreline of Nikopol. Her 67-year-old mother was injured. [Informator Nikopol, Nov. 24](https://nikopol.informator.ua/2026/11/24/pid-chas-artobstrilu-zagynula-45-richna-meshkanka-nikopolya/).
+2. **62-year-old Iryna Kuznetsova:** killed in Russian attacks on Nikopol on Nov. 23. The local report identifies her as a separate victim and describes the broader drone-and-artillery attack context. [Informator Nikopol, Nov. 24](https://nikopol.informator.ua/2026/11/24/nikogo-z-ridnyh-ne-zalyshylosya-vorozha-ataka-zabrala-zhyttya-meshkanky-nikopolya/).
 
-## Next source checks
+The regional daily roundup independently records two women aged 45 and 62 killed in Nikopol on Nov. 23:
+[Informator Nikopol, Nov. 23](https://nikopol.informator.ua/2026/11/23/dvoye-zagyblyh-pozhezhi-ta-rujnuvannya-vorog-vdaryv-dronamy-j-artyleriyeyu-po-nikopolyu/).
 
-1. Find the exact Hanzha Telegram post published for the 18:30 Nov. 23 situation update.
-2. Check the district/community authorities and local police for victim locations or incident-level descriptions.
-3. If the sources never establish separate locations or attack boundaries, preserve a clearly labelled regional incident cluster with unresolved boundary status rather than fabricating two precise incident records.
-4. Keep the two deaths in the reconciled arithmetic (401 → 403) while withholding final incident-record allocation.
+The local reporting therefore resolves the regional aggregate into two victim-specific incident records. The records retain only the attack detail actually established by the source. No exact street or time is invented for the 62-year-old woman's death.
 
-**Current ledger treatment:** not yet included in `incidents.json`. The pilot data therefore remains incomplete and must not be used to generate the public total.
+## Reconciliation
+
+The two deaths remain the same two deaths in the Nov. 23 regional subtotal. Splitting them into two incident records changes no cumulative arithmetic: the subtotal remains **401 → 403**.
+
+The two records have been added to `fatality-ledger/incidents.json` with separate permanent IDs, source links, incident dates, evidence classifications and revision entries.
+
+**Status:** No unresolved Nikopol death allocation remains for this two-death report.

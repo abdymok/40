@@ -434,3 +434,15 @@ Commit: `97f5e110bf9b070bda91280ac76d0e1ff50bf984`
 The apparent 121→123 transition is not documented as two newly identified incident deaths. Commit `0f4dda082aba94f4f6c4a5b9279953cb4a0d17ac` had raised the selected-incident subtotal from approximately 118 to 121 after adding the three corroborated Chabany deaths. Commit `93499a33c356c6766545f03e12dabf513025cc56` then changed the displayed figure to approximately 123 while simultaneously changing its label from a selected-incident subtotal to a nationwide documented minimum and rewriting the methodology accordingly. It added no incident records and did not identify two additional deaths. A later update-history correction and SOP change confirm the nationwide-minimum framing.
 
 The two-death numerical difference is therefore unallocated. Treat it as a historical scope/method transition, not an incident-level +2. Do not invent records or assign an effective date. The Chabany inclusion in the earlier 121 and its later exclusion from the current structured ledger are separate matters. No current ledger data or public counter changed.
+
+
+## Stage 64 — explicit membership in the Oct. 22 selected-incident subtotal
+
+Checkpoint: `fatality-ledger/STAGE-64-CHECKPOINT.md`  
+Commit: `8888e4cb22beb58ecfa1d3c2fe70082bf02db468`
+
+The Oct. 22 snapshot at `9a4749285ace80c3c9931aeb25869b4532457655` displayed approximately 118 and explicitly named 37 deaths in its method paragraph (using five for the phrase “at least five earlier deaths in Kyiv”). The named cases were Lymanivka (1), Kyiv Oct. 22 (1), Sloviansk Oct. 17 (9), Korotych (2), Sviatoshynsky Oct. 21 (2), Kramatorsk heating workers (3), Holosiivsky Oct. 20 (1), Kyiv Oct. 19 (1), Kharkiv Oct. 16 (3), earlier Kyiv deaths (at least 5), Lutsk (6) and Kirovohrad region (3). This is an explanatory partial list, not a complete itemization of the 118; the remaining approximately 81 cannot be assigned by subtraction.
+
+The snapshot explicitly excluded three Chabany deaths as unverified. Commit `0f4dda082aba94f4f6c4a5b9279953cb4a0d17ac` later revised the evidence classification and included them, producing 118→121 (+3). That intermediate inclusion was subsequently removed from the current ledger on verification grounds. Stage 63 separately establishes that 121→123 was a change from a selected-incident subtotal to a nationwide documented minimum, not two identified incident additions.
+
+The current ledger's 31 records through Oct. 21 sum to 142 using final recorded tolls, but this is not comparable to the historical approximate 118: the ledger includes later-known toll revisions and delayed deaths, while the historical subtotal was selective and warned about overlap. No current incident data, effective dates or public totals changed.

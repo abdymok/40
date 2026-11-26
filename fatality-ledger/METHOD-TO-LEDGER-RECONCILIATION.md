@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 92, updated Nov. 26, 2026  
+**Working status:** Stage 93, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -671,3 +671,10 @@ The Oct. 12 Darnytsky residential-building strike killed two people. Neither dea
 Checkpoint: `fatality-ledger/STAGE-92-CHECKPOINT.md`
 
 The Oct. 11 ≈80 snapshot explicitly records 20 deaths in the Oct. 10 Zaporizhia strike. The final 23-death toll was reported at 15:23 Kyiv time on Oct. 11. A subsequent 17:01 Kyiv-time page update still displayed ≈80 and did not say that the additional three deaths had entered the subtotal. The archived 80→92 increments and the 148→173 breakdown do not itemize the +3 revision. Later inclusion in the 148 carried-forward aggregate cannot be confirmed or ruled out. REV-002 remains null. No incident count, effective date or public total changed.
+
+
+## Stage 93 — Oct. 9 Synelnykove death and the later Oct. 24 attack
+
+Checkpoint: `fatality-ledger/STAGE-93-CHECKPOINT.md`
+
+The Oct. 9 Synelnykove-district death is not itemized in the Oct. 11 ≈80 snapshot. Its one Dnipropetrovsk-region row is matched in Stage 62 to the separate Pokrovske child death. The Oct. 25 123→132 update's four Synelnykove deaths concern a distinct Oct. 24 residential-area drone strike. The Oct. 22 ≈123 baseline does not enumerate every incident, so the Oct. 9 death's inclusion in 123 or 148 cannot be established. REV-001 remains null. No incident count, effective date or public total changed.

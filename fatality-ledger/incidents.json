@@ -4471,12 +4471,12 @@
         "recorded_at": "2026-11-10",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-11.",
         "source_ids": [
           "DNIPRO-10-NPU-2026-11-11",
           "DNIPRO-10-UKRINFORM-2026-11-10"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       }
     ]
   },
@@ -4515,11 +4515,11 @@
         "recorded_at": "2026-11-10",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-11.",
         "source_ids": [
           "MARGANETS-NPU-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       }
     ]
   },
@@ -4570,12 +4570,12 @@
         "recorded_at": "2026-11-10",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-11.",
         "source_ids": [
           "KRAMATORSK-10-DON-ODA-2026-11-11",
           "KRAMATORSK-10-FILASHKIN-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       }
     ]
   },
@@ -4626,12 +4626,12 @@
         "recorded_at": "2026-11-10",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-11.",
         "source_ids": [
           "SLOVIANSK-10-DON-ODA-2026-11-11",
           "SLOVIANSK-10-FILASHKIN-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       }
     ]
   },
@@ -4682,12 +4682,12 @@
         "recorded_at": "2026-11-09",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-10.",
         "source_ids": [
           "KRAMATORSK-09-DON-ODA-2026-11-10",
           "KRAMATORSK-09-UKRANEWS-2026-11-10"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-10"
       }
     ]
   },
@@ -4738,12 +4738,12 @@
         "recorded_at": "2026-11-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-10.",
         "source_ids": [
           "SLOVIANSK-09-DON-ODA-2026-11-10",
           "SLOVIANSK-09-UKRANEWS-2026-11-10"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-10"
       }
     ]
   },
@@ -4806,13 +4806,13 @@
         "recorded_at": "2026-11-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-10.",
         "source_ids": [
           "VYSHHOROD-TKACHENKO-2026-11-09",
           "VYSHHOROD-UKRINFORM-2026-11-09",
           "VYSHHOROD-UP-2026-11-09"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-10"
       }
     ]
   },
@@ -4863,12 +4863,12 @@
         "recorded_at": "2026-11-09",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-09.",
         "source_ids": [
           "ODESA-WAREHOUSE-UP-2026-11-09",
           "ODESA-WAREHOUSE-IFAX-2026-11-09"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-09"
       }
     ]
   },
@@ -4920,12 +4920,12 @@
         "recorded_at": "2026-11-09",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-10.",
         "source_ids": [
           "LADYZHYN-ZABOLOTNA-2026-11-10",
           "LADYZHYN-UP-2026-11-10"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-10"
       }
     ]
   },
@@ -4976,12 +4976,12 @@
         "recorded_at": "2026-11-08",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-08.",
         "source_ids": [
           "DNIPRO-08-UP-2026-11-08",
           "DNIPRO-08-UKRINFORM-2026-11-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-08"
       }
     ]
   },
@@ -5044,13 +5044,13 @@
         "recorded_at": "2026-11-08",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-08.",
         "source_ids": [
           "NIKOPOL-08-HANZHA-2026-11-08",
           "NIKOPOL-08-UKRINFORM-2026-11-08",
           "NIKOPOL-08-UP-2026-11-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-08"
       }
     ]
   },
@@ -5101,12 +5101,12 @@
         "recorded_at": "2026-11-07",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-08.",
         "source_ids": [
           "BILENKE-DON-ODA-2026-11-08",
           "BILENKE-UP-2026-11-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-08"
       }
     ]
   },
@@ -5157,12 +5157,12 @@
         "recorded_at": "2026-11-07",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-08.",
         "source_ids": [
           "DRUZHKIVKA-DON-ODA-2026-11-08",
           "DRUZHKIVKA-UP-2026-11-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-08"
       }
     ]
   },
@@ -5213,12 +5213,12 @@
         "recorded_at": "2026-11-07",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-08.",
         "source_ids": [
           "KRAMATORSK-ODA-2026-11-08",
           "KRAMATORSK-UP-2026-11-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-08"
       }
     ]
   },
@@ -5269,12 +5269,12 @@
         "recorded_at": "2026-11-07",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-08.",
         "source_ids": [
           "BEZRUKY-PROSECUTOR-2026-11-07",
           "BEZRUKY-SUSPILNE-2026-11-07"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-08"
       }
     ]
   },
@@ -5325,12 +5325,12 @@
         "recorded_at": "2026-11-07",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-08.",
         "source_ids": [
           "ODESA-MVA-2026-11-07-3626",
           "ODESA-UP-2026-11-07"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-08"
       }
     ]
   },
@@ -5381,12 +5381,12 @@
         "recorded_at": "2026-11-07",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-07.",
         "source_ids": [
           "LYPOVA-SUSPILNE-2026-11-07",
           "LYPOVA-INTERFAX-2026-11-07"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-07"
       }
     ]
   },
@@ -5438,12 +5438,12 @@
         "recorded_at": "2026-11-06",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-07.",
         "source_ids": [
           "BROVARY-TKACHENKO-2026-11-07",
           "BROVARY-UKRINFORM-2026-11-07"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-07"
       }
     ]
   },
@@ -6801,12 +6801,12 @@
         "recorded_at": "2026-11-07",
         "old_value": 53,
         "new_value": 55,
-        "reason": "DSNS reported the toll had risen to 55. The regional administration confirmed 55 recovered bodies on Nov. 8.",
+        "reason": "On Nov. 7, DSNS reported the toll had risen to 55. The Nov. 8 regional administration confirmation is the point at which the running subtotal increased by two, from approximately 263 to 265.",
         "source_ids": [
           "KOMYSH-DSNS-2026-11-07-55",
           "KOMYSH-ZOVA-2026-11-08-68891"
         ],
-        "ledger_effective_at": "2026-11-07"
+        "ledger_effective_at": "2026-11-08"
       },
       {
         "revision_id": "KOMYSH-REV-015",

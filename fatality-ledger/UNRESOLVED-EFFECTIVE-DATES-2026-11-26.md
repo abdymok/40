@@ -66,6 +66,10 @@ The Nov. 3 dashboard sequence maps 203→207 to four deaths in Donetsk region fr
 
 The Nov. 2 174 baseline itemizes four deaths in the Oct. 29 Izium airstrike and one death in a separate Nov. 2 morning attack. It does not itemize the fifth death in the Oct. 29 airstrike, reported later on Oct. 30, or the separate 59-year-old victim killed in another Oct. 29 attack, first identified Oct. 31. The later 421 reconciliation names no separate additions for either revision. Their inclusion in a later, non-itemized subtotal is unproven, so both remain null. See `STAGE-89-CHECKPOINT.md`.
 
+## Stage 90 adjudication
+
+The Oct. 12 Kharkiv strike killed four people, with the fourth body recovered on Oct. 13. The archived 80→82 increments are explicitly attributed to the separate Kyiv ballistic strike, and 82→85 adds three deaths in the Oct. 13–14 Kyiv overnight attack. The 148→173 breakdown does not itemize this Kharkiv incident, but the 148 baseline is a carried-forward aggregate, not a complete incident list. Its inclusion in 148 or a later subtotal remains unproven. REV-001 remains null; this is a potential four-death inclusion gap, not a confirmed omission. See `STAGE-90-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -81,7 +85,7 @@ The Nov. 2 174 baseline itemizes four deaths in the Oct. 29 Izium airstrike and 
 |---|---|---|---:|---:|---|
 | 2026-10-05 | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE` | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE-REV-001` | — → 1 | +1 | Public subtotal retained three; -1 correction not reflected |
 | 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-001` | — → 14 | +14 | Not in 148; later 421 inclusion unproven |
-| 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-002` | 14 → 16 | +2 | Legacy 148 membership unresolved |
+| 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-002` | 14 → 16 | +2 | Potential four-death gap; 148 membership unverified |
 | 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-003` | 16 → 20 | +4 | Legacy 148 membership unresolved |
 | 2026-10-08 | `UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE` | `UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-001` | — → 12 | +12 | Legacy 148 membership unresolved |
 | 2026-10-08 | `UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE` | `UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-002` | 12 → 30 | +18 | Legacy 148 membership unresolved |

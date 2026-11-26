@@ -61,7 +61,7 @@ The Oct. 26 Uman death is not included in the Oct. 28 ≈148 baseline: the 138�
 | Incident date | Incident ID | Revision | Count change | Delta | Unresolved category |
 |---|---|---|---:|---:|---|
 | 2026-10-05 | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE` | `UA-DON-KRAMATORSK-2026-10-05-AMBULANCE-AND-HIGHRISE-REV-001` | — → 1 | +1 | Public subtotal retained three; -1 correction not reflected |
-| 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-001` | — → 14 | +14 | Legacy 148 membership unresolved |
+| 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-001` | — → 14 | +14 | Not in 148; later 421 inclusion unproven |
 | 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-002` | 14 → 16 | +2 | Legacy 148 membership unresolved |
 | 2026-10-07 | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE` | `UA-CHN-PRYLUKY-2026-10-07-RESIDENTIAL-MISSILE-STRIKE-REV-003` | 16 → 20 | +4 | Legacy 148 membership unresolved |
 | 2026-10-08 | `UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE` | `UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-001` | — → 12 | +12 | Legacy 148 membership unresolved |

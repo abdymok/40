@@ -2215,12 +2215,12 @@
         "recorded_at": "2026-11-17",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "CHERVONA-KHVYLIA-PROSECUTOR-2026-11-17",
           "CHERVONA-KHVYLIA-IFAX-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -2326,13 +2326,13 @@
         "recorded_at": "2026-11-17T10:10:00+02:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "The State Emergency Service reported two people killed and one injured in the Obolonsky district attack.",
+        "reason": "The State Emergency Service reported two people killed and one injured in the Obolonsky district attack. Historical running subtotal includes this death on 2026-11-17.",
         "source_ids": [
           "OBOLON-IFAX-2026-11-17",
           "OBOLON-UP-2026-11-17",
           "OBOLON-UKRINFORM-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -2395,13 +2395,13 @@
         "recorded_at": "2026-11-17",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-17.",
         "source_ids": [
           "VINNYTSIA-UKRINFORM-2026-11-17",
           "VINNYTSIA-UP-2026-11-17",
           "VINNYTSIA-IFAX-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -2468,7 +2468,7 @@
         "source_ids": [
           "ZAP-INDUSTRIAL-SEMikin-2026-11-17-69100"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       },
       {
         "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-17-INDUSTRIAL-STRIKE-CLUSTER-REV-002",
@@ -2480,7 +2480,7 @@
           "ZAP-INDUSTRIAL-SEMikin-2026-11-17-FOLLOWUPS",
           "ZAP-INDUSTRIAL-CHANGELOG-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -2640,12 +2640,12 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "DNIPRO-16-HANZHA-1830-33400",
           "DNIPRO-16-HANZHA-0629-33413"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -2696,12 +2696,12 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-17.",
         "source_ids": [
           "KRAMATORSK-16-IFAX-2026-11-17",
           "KRAMATORSK-16-DON-ODA-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -2740,11 +2740,11 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "SHABELKIVKA-16-NPU-2026-11-18"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -2795,12 +2795,12 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "SLOVIANSK-16-NPU-2026-11-18",
           "SLOVIANSK-16-CENSOR-2026-11-18"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -2839,11 +2839,11 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "YASNOHIRKA-16-NPU-2026-11-18"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -2925,11 +2925,11 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "KHERSON-SOROKA-SUSPILNE-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -3023,12 +3023,12 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-17.",
         "source_ids": [
           "SVITLOVODSK-UP-2026-11-17",
           "SVITLOVODSK-UKRINFORM-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -3080,12 +3080,12 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-17.",
         "source_ids": [
           "MYKOLAIV-KORABELOV-2026-11-17",
           "MYKOLAIV-LB-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -3204,13 +3204,13 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-17.",
         "source_ids": [
           "KUSHUHUM-IFAX-2026-11-16",
           "KUSHUHUM-UP-2026-11-16",
           "KUSHUHUM-ZOVA-2026-11-16-69096"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -3305,11 +3305,11 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-17.",
         "source_ids": [
           "KOSMICHNY-CAR-IFAX-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -11155,14 +11155,14 @@
     "revision_history": [
       {
         "revision_id": "UA-KHE-KHERSON-2026-10-06-DOCTOR-ZIMIN-DRONE-CAR-REV-001",
-        "recorded_at": "2026-10-06",
+        "recorded_at": "2026-11-17T00:00:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "The doctor died in hospital on Nov. 16 from injuries sustained in the Oct. 6 drone attack. The death was identified and entered in the running minimum on Nov. 18; it was not part of the Oct. 28 historical subtotal.",
         "source_ids": [
           "KHERSON-ZIMIN-SUSPILNE-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },

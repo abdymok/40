@@ -35,7 +35,7 @@ The methodology page's incident paragraphs form this continuous arithmetic seque
 - The two Nov. 24 Odesa-region deaths are described as a late-evening wave and explicitly separated in the chronology from the morning attack on Odesa city. The underlying report identifies victims/locations in Odesa district and Podilsk. The eventual ledger should preserve the source-defined incident boundaries and avoid merging this with the morning infrastructure strike.
 - The two Sumy deaths reported on Nov. 25 are not one event: one man was killed in a car in Sumy community on Nov. 25; the other died in hospital after being wounded in a separate Seredyno-Budska community attack on Nov. 23. They require separate incident IDs.
 - The three Sloviansk/Stepaniivka deaths also span separate places and incident dates. They require separate incident IDs, even though the National Police reported them in one update.
-- The two Nikopol-district deaths are currently described only in a regional administration update about attacks across the district. The source must be checked for exact locations and whether these were one or multiple incidents before assigning final incident IDs.
+- The two Nikopol-district deaths were resolved through local reporting: two women, aged 45 and 62, were killed in separate reported attacks in Nikopol city. The 45-year-old woman was killed in a heavy-artillery attack on the shoreline. The 62-year-old woman's report identifies her as a separate victim in the Nov. 23 drone-and-artillery attack sequence. They now have separate incident IDs. See `UNRESOLVED-NIKOPOL-2026-11-23.md` for the source reconciliation.
 
 ## Source links carried by the current methodology
 
@@ -56,9 +56,9 @@ The methodology page's incident paragraphs form this continuous arithmetic seque
 
 ## Outstanding source work before records are finalized
 
-1. Retrieve the full National Police report for the Sloviansk/Stepaniivka deaths and split it into two incident records with the correct incident dates.
-2. Open the Zaporizhia clinic and Nikopol source posts to identify settlement-level locations and event boundaries.
-3. Check whether the late-Nov. 24 Odesa report describes one combined attack event or two separate incidents in Odesa district and Podilsk.
+1. The National Police report for the Sloviansk/Stepaniivka deaths has been retrieved and split into two incident records with their correct incident dates.
+2. The Zaporizhia clinic is identified in Voznesenivsky district. The Nikopol aggregate has been split into two victim-specific records using local reporting.
+3. The late-Nov. 24 Odesa report is separated into two incident records: one death in Odesa district and one in Podilsk.
 4. Verify precise publication times for the delayed hospital death in Seredyno-Budska and the two Nov. 24 Odesa deaths.
 5. Inspect the current change log: the method's continuous subtotal chain is clear, but some historical change-log entries still preserve stale pre-correction baselines (notably 392 → 394 for Dymer's 9 → 11 step).
 

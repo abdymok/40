@@ -941,7 +941,7 @@
         "recorded_at": "2026-10-13T08:30:00+03:00",
         "old_value": null,
         "new_value": 4,
-        "reason": "The fourth body was recovered from the rubble after overnight rescue operations. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Interfax-Ukraine and Suspilne reported four deaths after the fourth body was recovered on Oct. 13. The archived 80→82 dashboard increments are explicitly attributed to two deaths in the separate Kyiv ballistic strike; 82→85 adds three deaths in the Oct. 13–14 Kyiv overnight attack. No Kharkiv increment appears in that sequence. The historical 148→173 breakdown also does not itemize this Oct. 12 Kharkiv incident, although 148 is a carried-forward aggregate rather than a complete incident list. Its presence in the 148 baseline, or any later subtotal, cannot be confirmed or ruled out. Keep ledger_effective_at null; treat the four deaths as a potential inclusion gap, not a confirmed omission.",
         "source_ids": [
           "KHARKIV-12-IFAX-2026-10-13",
           "KHARKIV-12-SUSPILNE-2026-10-13"

@@ -6914,5 +6914,532 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-2026-10-26-ATTACK",
+    "incident_date": "2026-10-26",
+    "location": {
+      "settlement": "Kyiv",
+      "district": null,
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strikes across Kyiv on the evening of Oct. 26 killed one person and injured 10. One person was found dead near a supermarket; the citywide casualty update is recorded once as this incident.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KYIV-26-KLYCHKO-2026-10-26",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/s/vitaliy_klitschko",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Mayor's updates from 22:03 to 23:24 report one death and 10 injured."
+      },
+      {
+        "source_id": "KYIV-26-REUTERS-2026-10-26",
+        "publisher": "Reuters",
+        "source_type": "news_report",
+        "published_at": "2026-10-26T23:30:00+02:00",
+        "url": "https://www.reuters.com/world/kyiv-under-attack-mayor-says-strike-near-underground-station-2026-10-26/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed and 10 injured in the Kyiv attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-2026-10-26-ATTACK-REV-001",
+        "recorded_at": "2026-10-26",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KYIV-26-KLYCHKO-2026-10-26",
+          "KYIV-26-REUTERS-2026-10-26"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-26-ATTACK",
+    "incident_date": "2026-10-26",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Kramatorsk on Oct. 26 killed one person and wounded three, according to Donetsk Regional Military Administration head Vadym Filashkin.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-26-FILASHKIN-2026-10-26-18902",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin/18902",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official morning report of one person killed and three wounded in Kramatorsk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-26-ATTACK-REV-001",
+        "recorded_at": "2026-10-26",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-26-FILASHKIN-2026-10-26-18902"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-SYNELNYKOVE-2026-10-24-DRONE-STRIKE",
+    "incident_date": "2026-10-24",
+    "location": {
+      "settlement": "Synelnykove",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck a residential area in Synelnykove on Oct. 24, killing four people and injuring 13. Three people died at the scene; a 62-year-old man died in hospital on Oct. 25, raising the toll to four.",
+    "documented_deaths": 4,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SYNELNYKOVE-HANZHA-2026-10-24-32827",
+        "publisher": "Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA/32827",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial official report of three people killed in the drone strike."
+      },
+      {
+        "source_id": "SYNELNYKOVE-HANZHA-2026-10-25-32831",
+        "publisher": "Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA/32831",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "At 08:52 on Oct. 25, Hanzha reported that a 62-year-old man had died in hospital, raising the toll to four."
+      },
+      {
+        "source_id": "SYNELNYKOVE-UP-2026-10-25",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-10-25T09:00:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/25/8059602/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports four people killed and 13 injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-SYNELNYKOVE-2026-10-24-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-10-24",
+        "old_value": null,
+        "new_value": 4,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SYNELNYKOVE-HANZHA-2026-10-24-32827",
+          "SYNELNYKOVE-HANZHA-2026-10-25-32831",
+          "SYNELNYKOVE-UP-2026-10-25"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-KHARKIV-NOVOBAVARSKY-2026-10-24-DRONE",
+    "incident_date": "2026-10-24",
+    "location": {
+      "settlement": "Kharkiv",
+      "district": "Novobavarsky district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian jet-powered drone struck a single-storey building in Novobavarsky district late on Oct. 24, killing one person and injuring four.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHARKIV-NOVOBAVARSKY-RBC-2026-10-24",
+        "publisher": "RBC-Ukraine, citing Kharkiv Mayor Ihor Terekhov and regional administration head Oleh Synehobov",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://newsukraine.rbc.ua/news/russia-strikes-shopping-mall-in-kharkiv-1792860472.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in the late-night strike in Novobavarsky district."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KHARKIV-NOVOBAVARSKY-2026-10-24-DRONE-REV-001",
+        "recorded_at": "2026-10-24",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KHARKIV-NOVOBAVARSKY-RBC-2026-10-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-KHARKIV-OSNOVIANSKY-EPICENTR-2026-10-24-DRONE",
+    "incident_date": "2026-10-24",
+    "location": {
+      "settlement": "Kharkiv",
+      "district": "Osnoviansky district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian jet-powered drones attacked Kharkiv's last operating Epicenter hypermarket on Oct. 24, destroying the store and killing three people. The attack was separate from the one-death Novobavarsky district strike later that night.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHARKIV-EPICENTR-TEREKHOV-2026-10-26-4872",
+        "publisher": "Kharkiv Mayor Ihor Terekhov",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/ihor_terekhov/4872",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Mayor's Oct. 26 update says three people were killed and 28 injured in the Oct. 24 attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KHARKIV-OSNOVIANSKY-EPICENTR-2026-10-24-DRONE-REV-001",
+        "recorded_at": "2026-10-24",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KHARKIV-EPICENTR-TEREKHOV-2026-10-26-4872"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-LYMANIVKA-2026-10-22-ATTACK",
+    "incident_date": "2026-10-22",
+    "location": {
+      "settlement": "Lymanivka",
+      "district": "Lozova community",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack killed a 42-year-old woman in Lymanivka, Lozova community, and damaged four private houses.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "LYMANIVKA-KHARKIV-ODA-2026-10-22",
+        "publisher": "Kharkiv Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://kharkivoda.gov.ua/news/137640",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional administration report of the woman's death."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-LYMANIVKA-2026-10-22-ATTACK-REV-001",
+        "recorded_at": "2026-10-22",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "LYMANIVKA-KHARKIV-ODA-2026-10-22"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-SVIATOSHYNSKY-2026-10-21-DRONE-HIGHRISE",
+    "incident_date": "2026-10-21",
+    "location": {
+      "settlement": "Kyiv",
+      "district": "Sviatoshynsky district",
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck a 24-storey residential building in Sviatoshynsky district overnight on Oct. 20–21, killing two people and injuring two. A separate drone strike on transport infrastructure in Solomiansky district is not counted as an additional death.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KYIV-SVIATOSHYNSKY-KLYCHKO-2026-10-21",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/vitaliy_klitschko",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "At 09:16, the mayor reported two people killed and two injured in the high-rise strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-SVIATOSHYNSKY-2026-10-21-DRONE-HIGHRISE-REV-001",
+        "recorded_at": "2026-10-21",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KYIV-SVIATOSHYNSKY-KLYCHKO-2026-10-21"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC",
+    "incident_date": "2026-10-21",
+    "location": {
+      "settlement": "Kyiv",
+      "district": "Dniprovsky district",
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian ballistic attack on Kyiv on Oct. 21 killed one person and injured 22 across six districts. The State Emergency Service's next-morning citywide report confirmed one death.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KYIV-BALLISTIC-REUTERS-2026-10-21",
+        "publisher": "Reuters",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.streetinsider.com/Reuters/Ukrainian%2Bcapital%2Bunder%2Bmissile%2Battack%2C%2Bexplosions%2Bseen%2Bin%2Bcity/27216445.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the ballistic attack and mayoral updates."
+      },
+      {
+        "source_id": "KYIV-BALLISTIC-DSNS-2026-10-22-78447",
+        "publisher": "State Emergency Service of Ukraine",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-22T07:55:00+02:00",
+        "url": "https://t.me/dsns_telegram/78447",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Next-morning report gives the final citywide toll of one killed and 22 injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001",
+        "recorded_at": "2026-10-21",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KYIV-BALLISTIC-REUTERS-2026-10-21",
+          "KYIV-BALLISTIC-DSNS-2026-10-22-78447"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-HOLOSIIVSKY-2026-10-20-UAV-FALL",
+    "incident_date": "2026-10-20",
+    "location": {
+      "settlement": "Kyiv",
+      "district": "Holosiivsky district",
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "A UAV fell near a filling station in Holosiivsky district, killing one person and injuring four. The mayor's later citywide casualty update also reported one death; it is the same fatality and is not counted again.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "HOLOSIIVSKY-KLYCHKO-2026-10-20-7914",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/vitaliy_klitschko/7914",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Mayor reported one killed and four injured at 10:18 on Oct. 20."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-HOLOSIIVSKY-2026-10-20-UAV-FALL-REV-001",
+        "recorded_at": "2026-10-20",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "HOLOSIIVSKY-KLYCHKO-2026-10-20-7914"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-20-HEATING-WORKERS",
+    "incident_date": "2026-10-20",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian guided aerial bombs struck Kramatorsk, killing three municipal heating-network workers who were inspecting heating infrastructure ahead of winter: Andriy Dorosh, Yuriy Biriukov and Dmytro Sidorov.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-COUNCIL-2026-10-20-28367",
+        "publisher": "Kramatorsk City Council",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/kramatorsk_rada/28367",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official city council report identifies the three municipal heating workers killed on Oct. 20."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-20-HEATING-WORKERS-REV-001",
+        "recorded_at": "2026-10-20",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-COUNCIL-2026-10-20-28367"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-2026-10-19-BALLISTIC",
+    "incident_date": "2026-10-19",
+    "location": {
+      "settlement": "Kyiv",
+      "district": null,
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian overnight ballistic attack on Kyiv killed a 21-year-old woman and injured at least eight. The victim was identified by Kyiv Mayor Vitali Klitschko at 01:11 on Oct. 19.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KYIV-19-KLYCHKO-2026-10-19",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/vitaliy_klitschko",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Mayor's updates at 00:15 and 01:11 reported one death and identified the victim as a 21-year-old woman."
+      },
+      {
+        "source_id": "KYIV-19-CENSOR-2026-10-19",
+        "publisher": "Censor.NET, citing the State Emergency Service",
+        "source_type": "news_report",
+        "published_at": "2026-10-19T10:47:00+02:00",
+        "url": "https://censor.net/ua/news/4029119/rosiya-vdaryla-balistykoyu-po-kyyevu-zagyblyyi-i-8-postrajdalyh",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed and eight injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-2026-10-19-BALLISTIC-REV-001",
+        "recorded_at": "2026-10-19",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KYIV-19-KLYCHKO-2026-10-19",
+          "KYIV-19-CENSOR-2026-10-19"
+        ]
+      }
+    ]
   }
 ]

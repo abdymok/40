@@ -28,12 +28,31 @@
     "location": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["settlement", "region"],
+      "required": [
+        "settlement",
+        "region"
+      ],
       "properties": {
-        "settlement": { "type": "string", "minLength": 1 },
-        "district": { "type": ["string", "null"] },
-        "region": { "type": "string", "minLength": 1 },
-        "country": { "type": "string", "const": "Ukraine" }
+        "settlement": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "district": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "region": {
+          "type": "string",
+          "minLength": 1
+        },
+        "country": {
+          "type": "string",
+          "const": "Ukraine"
+        }
       }
     },
     "incident_description": {
@@ -69,10 +88,22 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["source_id", "publisher", "source_type", "url", "supports"],
+        "required": [
+          "source_id",
+          "publisher",
+          "source_type",
+          "url",
+          "supports"
+        ],
         "properties": {
-          "source_id": { "type": "string", "minLength": 1 },
-          "publisher": { "type": "string", "minLength": 1 },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
           "source_type": {
             "type": "string",
             "enum": [
@@ -83,8 +114,17 @@
               "project_record"
             ]
           },
-          "published_at": { "type": ["string", "null"], "format": "date-time" },
-          "url": { "type": "string", "format": "uri" },
+          "published_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
           "supports": {
             "type": "array",
             "items": {
@@ -100,7 +140,9 @@
             },
             "minItems": 1
           },
-          "notes": { "type": "string" }
+          "notes": {
+            "type": "string"
+          }
         }
       }
     },
@@ -122,14 +164,34 @@
           "source_ids"
         ],
         "properties": {
-          "revision_id": { "type": "string", "minLength": 1 },
-          "recorded_at": { "type": "string", "format": "date-time" },
-          "old_value": { "type": ["integer", "null"], "minimum": 0 },
-          "new_value": { "type": "integer", "minimum": 0 },
-          "reason": { "type": "string", "minLength": 1 },
+          "revision_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "recorded_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "old_value": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "new_value": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
           "source_ids": {
             "type": "array",
-            "items": { "type": "string" },
+            "items": {
+              "type": "string"
+            },
             "minItems": 1
           }
         }

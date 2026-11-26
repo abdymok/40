@@ -19,7 +19,7 @@ The archived dashboard commits establish this sequence before the 123 baseline:
 
 The Oct. 21 update-history text says the subtotal rose from 107 to 116 after the Sloviansk toll reached nine, and that the two Korotych deaths were included. The earlier 107→116 dashboard change is +9. The current Sloviansk incident record has a revision history of 1→6→9, but that alone does not reveal how much of its toll was already carried in the 107 subtotal. The original 107 baseline's membership is not individually itemized. Do not assume +7 Sloviansk plus +2 Korotych until the earlier 105→107 allocation and initial Sloviansk subtotal are reconciled from the archived Oct. 17–21 changes.
 
-The 105→107 commit is explicitly titled as a Kyiv casualty update and the following Oct. 21 history says two people were killed in Sviatoshynsky district. This identifies the +2 as that incident. It does not, by itself, establish all the other incident membership in 107.
+The 105→107 commit is explicitly titled as a Kyiv casualty update, and the contemporaneous chronology identifies two people killed in Sviatoshynsky district. This supports attributing the displayed +2 to that incident. However, the method paragraph at the 107 snapshot still displayed “approximately 105” while already naming those two deaths. The following commit changed only the dashboard value from 105 to 107 and left the method paragraph untouched. The method paragraph is therefore stale/internally inconsistent at this point, not independent proof of whether the two deaths were already in the 105 baseline. Stage 56 records this qualification.
 
 ## 123 baseline implication
 

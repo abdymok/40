@@ -1771,33 +1771,33 @@
         "recorded_at": "2026-11-20T07:27:00+02:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial Kyiv mayoral update reported three deaths in the ballistic attack.",
+        "reason": "Initial Kyiv mayoral update reported three deaths in the ballistic attack. Included in the historical running subtotal on Nov. 20.",
         "source_ids": [
           "KYIV-BALLISTIC-KLYCHKO-2026-11-20-0727"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-20"
       },
       {
         "revision_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK-REV-002",
         "recorded_at": "2026-11-20T10:32:00+02:00",
         "old_value": 3,
         "new_value": 6,
-        "reason": "Prime Minister's update raised the Kyiv death toll to six. The first three deaths had already been counted in the running subtotal.",
+        "reason": "Prime Minister's update raised the Kyiv death toll to six. The first three deaths had already been counted in the running subtotal. Included in the historical running subtotal on Nov. 20.",
         "source_ids": [
           "KYIV-BALLISTIC-KORETSKY-2026-11-20-1032"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-20"
       },
       {
         "revision_id": "UA-KYI-KYIV-2026-11-20-BALLISTIC-ATTACK-REV-003",
         "recorded_at": "2026-11-20T15:32:00+02:00",
         "old_value": 6,
         "new_value": 7,
-        "reason": "Kyiv Mayor Klitschko reported a seventh death. The six previously reported deaths were already counted.",
+        "reason": "Kyiv Mayor Klitschko reported a seventh death. The six previously reported deaths were already counted. Included in the historical running subtotal on Nov. 20.",
         "source_ids": [
           "KYIV-BALLISTIC-IFAX-2026-11-20-1532"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-20"
       }
     ]
   },
@@ -1848,12 +1848,12 @@
         "recorded_at": "2026-11-20",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Included in the historical running subtotal on Nov. 20.",
         "source_ids": [
           "LVIV-SKNYLIV-IFAX-2026-11-20",
           "LVIV-SKNYLIV-UKRINFORM-2026-11-20"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-20"
       }
     ]
   },

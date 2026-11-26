@@ -19,7 +19,11 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/dsns_telegram/81212",
-        "supports": ["incident_identity", "death_count", "incident_date"],
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
         "notes": "Official emergency-service report confirming the initial recovered bodies. The chronology identifies the report as current through Nov. 22."
       },
       {
@@ -28,7 +32,10 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/s/tkachenkotymur/3129",
-        "supports": ["death_count", "count_revision"],
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
         "notes": "Official updates through 21:53 on Nov. 22, recording the rise to five deaths at 19:56 and six at 21:53."
       },
       {
@@ -37,7 +44,10 @@
         "source_type": "official_social_post",
         "published_at": "2026-11-22T22:52:00+02:00",
         "url": "https://t.me/tkachenkotymur/3138",
-        "supports": ["death_count", "count_revision"],
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
         "notes": "Reports recovery of the seventh body at 22:52 on Nov. 22."
       },
       {
@@ -46,7 +56,10 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/tkachenkotymur/3139",
-        "supports": ["death_count", "count_revision"],
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
         "notes": "Reports recovery of the eighth body at 02:15 on Nov. 23."
       },
       {
@@ -55,7 +68,10 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/tkachenkotymur/3140",
-        "supports": ["death_count", "count_revision"],
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
         "notes": "Reports recovery of the ninth body at 02:38 on Nov. 23."
       },
       {
@@ -64,7 +80,9 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/tkachenkotymur/3141",
-        "supports": ["victim_status"],
+        "supports": [
+          "victim_status"
+        ],
         "notes": "Reports that a 79-year-old woman was rescued alive at 03:28 and hospitalized. This is specifically a survivor update, not a death-count increment."
       },
       {
@@ -73,7 +91,10 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/tkachenkotymur/3142",
-        "supports": ["death_count", "count_revision"],
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
         "notes": "Reports recovery of the tenth body at 05:51 on Nov. 23."
       },
       {
@@ -82,7 +103,10 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/tkachenkotymur/3143",
-        "supports": ["death_count", "count_revision"],
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
         "notes": "Reports recovery of the eleventh body at 07:23 on Nov. 23."
       },
       {
@@ -91,7 +115,10 @@
         "source_type": "official_social_post",
         "published_at": null,
         "url": "https://t.me/tkachenkotymur/3145",
-        "supports": ["death_count", "count_revision"],
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
         "notes": "Reports that the 79-year-old woman rescued alive on Nov. 23 died in hospital on Nov. 24."
       },
       {
@@ -100,7 +127,12 @@
         "source_type": "news_report",
         "published_at": "2026-11-23T12:39:00+02:00",
         "url": "https://www.pravda.com.ua/eng/news/2026/11/23/8064175/",
-        "supports": ["incident_identity", "death_count", "incident_date", "corroboration"],
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
         "notes": "Reports 11 deaths in Dymer by Nov. 23 and explains the rescue operation and changing missing-person figures. Does not count the woman rescued alive as dead."
       },
       {
@@ -109,7 +141,12 @@
         "source_type": "news_report",
         "published_at": null,
         "url": "https://hromadske.ua/en/war/274826-russian-drone-strike-on-apartment-building-near-kyiv-kills-11-rescuers-pull-two-survivors-from-rubble",
-        "supports": ["death_count", "count_revision", "victim_status", "corroboration"],
+        "supports": [
+          "death_count",
+          "count_revision",
+          "victim_status",
+          "corroboration"
+        ],
         "notes": "Reports 11 deaths on Nov. 23 and updates to 12 after the woman rescued from the rubble dies in hospital on Nov. 24."
       },
       {
@@ -118,7 +155,12 @@
         "source_type": "news_report",
         "published_at": null,
         "url": "https://www.pravda.com.ua/eng/news/2026/11/24/8064333/index.amp",
-        "supports": ["death_count", "count_revision", "victim_status", "corroboration"],
+        "supports": [
+          "death_count",
+          "count_revision",
+          "victim_status",
+          "corroboration"
+        ],
         "notes": "Explicitly identifies the hospital death as the twelfth victim."
       },
       {
@@ -127,7 +169,11 @@
         "source_type": "news_report",
         "published_at": null,
         "url": "https://interfax.com.ua/news/general/1241250-amp.html",
-        "supports": ["death_count", "count_revision", "corroboration"],
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
         "notes": "Reports the woman's death after the 11 deaths reported at the conclusion of the rescue operation."
       }
     ],
@@ -139,7 +185,9 @@
         "old_value": null,
         "new_value": 2,
         "reason": "Two bodies had been recovered and confirmed by DSNS. This establishes the initial documented count used in the project subtotal.",
-        "source_ids": ["DYMER-DSNS-2026-11-22-81212"]
+        "source_ids": [
+          "DYMER-DSNS-2026-11-22-81212"
+        ]
       },
       {
         "revision_id": "DYMER-REV-002",
@@ -147,7 +195,9 @@
         "old_value": 2,
         "new_value": 5,
         "reason": "Three further bodies were recovered during the search operation.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-22-3129"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-22-3129"
+        ]
       },
       {
         "revision_id": "DYMER-REV-003",
@@ -155,7 +205,9 @@
         "old_value": 5,
         "new_value": 6,
         "reason": "A sixth body was recovered.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-22-3129"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-22-3129"
+        ]
       },
       {
         "revision_id": "DYMER-REV-004",
@@ -163,7 +215,9 @@
         "old_value": 6,
         "new_value": 7,
         "reason": "A seventh body was recovered.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-22-3138"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-22-3138"
+        ]
       },
       {
         "revision_id": "DYMER-REV-005",
@@ -171,7 +225,9 @@
         "old_value": 7,
         "new_value": 8,
         "reason": "An eighth body was recovered.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3139"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-23-3139"
+        ]
       },
       {
         "revision_id": "DYMER-REV-006",
@@ -179,7 +235,9 @@
         "old_value": 8,
         "new_value": 9,
         "reason": "A ninth body was recovered.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3140"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-23-3140"
+        ]
       },
       {
         "revision_id": "DYMER-REV-007",
@@ -187,7 +245,9 @@
         "old_value": 9,
         "new_value": 10,
         "reason": "A tenth body was recovered.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3142"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-23-3142"
+        ]
       },
       {
         "revision_id": "DYMER-REV-008",
@@ -195,7 +255,10 @@
         "old_value": 10,
         "new_value": 11,
         "reason": "An eleventh body was recovered. The rescue operation subsequently concluded with 11 deaths.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-23-3143", "DYMER-UP-2026-11-23"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-23-3143",
+          "DYMER-UP-2026-11-23"
+        ]
       },
       {
         "revision_id": "DYMER-REV-009",
@@ -203,7 +266,880 @@
         "old_value": 11,
         "new_value": 12,
         "reason": "The 79-year-old woman rescued alive and hospitalized on Nov. 23 died in hospital. This is a new death in the same incident, not a revision to the number of bodies recovered during the rescue operation.",
-        "source_ids": ["DYMER-TKACHENKO-2026-11-24-3145", "DYMER-HROMADSKE-2026-11-23-24", "DYMER-UP-2026-11-24", "DYMER-INTERFAX-2026-11-24"]
+        "source_ids": [
+          "DYMER-TKACHENKO-2026-11-24-3145",
+          "DYMER-HROMADSKE-2026-11-23-24",
+          "DYMER-UP-2026-11-24",
+          "DYMER-INTERFAX-2026-11-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-11-22-AIRSTRIKE",
+    "incident_date": "2026-11-22",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": "",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian aerial-bomb attack on several streets in Sloviansk. The National Police reported two people killed, a man and a woman, and five injured.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-NPU-2026-11-22",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-22T20:40:00+02:00",
+        "url": "https://npu.gov.ua/news/viiska-rf-obstrilialy-sloviansk-shchonaimenshe-dvi-liudyny-zahynuly-shche-try-distaly-poranen",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report published Nov. 22 at 20:40; identifies the attack and two deaths."
+      },
+      {
+        "source_id": "SLOVIANSK-NPU-2026-11-23",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-23T10:00:00+02:00",
+        "url": "https://npu.gov.ua/news/shchonaimenshe-dvi-liudyny-zahynuly-shche-piatero-zaznaly-poranen-unaslidok-obstriliv-donechchyny",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Next-day regional roundup confirms the two deaths in Sloviansk and distinguishes the Stepaniivka death."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-11-22-AIRSTRIKE-REV-001",
+        "recorded_at": "2026-11-22T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "SLOVIANSK-NPU-2026-11-22",
+          "SLOVIANSK-NPU-2026-11-23"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-STEPANIIVKA-2026-11-21-CIVILIAN",
+    "incident_date": "2026-11-21",
+    "location": {
+      "settlement": "Stepaniivka",
+      "district": "",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "One civilian death in Stepaniivka, reported retrospectively by the National Police in its Nov. 23 casualty roundup. The source does not provide a more specific strike description in that roundup.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_primary",
+    "sources": [
+      {
+        "source_id": "STEPANIIVKA-NPU-2026-11-23",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-23T10:00:00+02:00",
+        "url": "https://npu.gov.ua/news/shchonaimenshe-dvi-liudyny-zahynuly-shche-piatero-zaznaly-poranen-unaslidok-obstriliv-donechchyny",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "The Nov. 23 official report explicitly attributes one civilian death to Stepaniivka on Nov. 21."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-STEPANIIVKA-2026-11-21-CIVILIAN-REV-001",
+        "recorded_at": "2026-11-23T10:00:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "STEPANIIVKA-NPU-2026-11-23"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-2026-11-23-PRIVATE-CLINIC",
+    "incident_date": "2026-11-23",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Voznesenivsky district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike on a non-operating private clinic building. Three people were killed. A later strike on an open area in central Zaporizhia is a separate event and is not part of this record.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "CLINIC-ZOVA-2026-11-23-69242",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-23T12:45:00+02:00",
+        "url": "https://t.me/zoda_gov_ua/69242",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional administration report of three deaths at the non-operating clinic."
+      },
+      {
+        "source_id": "CLINIC-INTERFAX-2026-11-23",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T12:53:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1240845.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports three deaths in the clinic strike, published 12:53."
+      },
+      {
+        "source_id": "CLINIC-UP-2026-11-23",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T12:45:00+02:00",
+        "url": "https://www.pravda.com.ua/news/2026/11/23/8064178/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports three deaths and identifies the clinic as non-operational, in Voznesenivsky district."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-23-PRIVATE-CLINIC-REV-001",
+        "recorded_at": "2026-11-23T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "CLINIC-ZOVA-2026-11-23-69242",
+          "CLINIC-INTERFAX-2026-11-23",
+          "CLINIC-UP-2026-11-23"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-11-23-EVACUATION-VEHICLE",
+    "incident_date": "2026-11-23",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": "",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drone strike on a clearly marked civilian evacuation vehicle leaving Kramatorsk, killing a 77-year-old woman and a 68-year-old man.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-UKRINFORM-2026-11-23",
+        "publisher": "Ukrinform, citing Donetsk Regional Prosecutor's Office",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T09:18:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4187659-two-killed-two-injured-as-russian-drone-hits-evacuation-vehicle-in-kramatorsk.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two fatalities in the marked evacuation vehicle."
+      },
+      {
+        "source_id": "KRAMATORSK-IFAX-2026-11-23",
+        "publisher": "Interfax-Ukraine, citing Prime Minister Serhiy Koretsky",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T00:00:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1240921.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Prime Minister's casualty confirmation."
+      },
+      {
+        "source_id": "KRAMATORSK-NPU-2026-11-24",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-24T10:15:00+02:00",
+        "url": "https://npu.gov.ua/news/dvoie-zahyblykh-i-piat-poranenykh-politsiia-donechchyny-zadokumentuvala-naslidky-rosiiskykh-atak?v=6b0547a3365e7",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Next-day official regional report explicitly says an FPV drone struck an evacuation car in Kramatorsk, killing two."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-11-23-EVACUATION-VEHICLE-REV-001",
+        "recorded_at": "2026-11-23T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "KRAMATORSK-UKRINFORM-2026-11-23",
+          "KRAMATORSK-IFAX-2026-11-23",
+          "KRAMATORSK-NPU-2026-11-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-2026-11-24-VOZNESENIVSKY-RESIDENTIAL",
+    "incident_date": "2026-11-24",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Voznesenivsky district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Overnight Russian attack on a residential area in Voznesenivsky district. Two people were killed. A private house and apartment building were damaged.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_primary",
+    "sources": [
+      {
+        "source_id": "ZAP-2026-11-24-ZOVA-69275",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-24T08:13:00+02:00",
+        "url": "https://t.me/zoda_gov_ua/69275",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional administration casualty update, Nov. 24."
+      },
+      {
+        "source_id": "ZAP-2026-11-24-CHRONOLOGY",
+        "publisher": "ukraine@war chronology source audit",
+        "source_type": "project_record",
+        "published_at": null,
+        "url": "https://abdymok.github.io/40/articles/critical-infrastructure-damage.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Chronology records the two deaths and the residential damage, citing regional administration updates."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-24-VOZNESENIVSKY-RESIDENTIAL-REV-001",
+        "recorded_at": "2026-11-24T08:13:00+02:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "ZAP-2026-11-24-ZOVA-69275",
+          "ZAP-2026-11-24-CHRONOLOGY"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZHY-KOROSTEN-2026-11-24-RAILWAY-STATION",
+    "incident_date": "2026-11-24",
+    "location": {
+      "settlement": "Korosten",
+      "district": "",
+      "region": "Zhytomyr region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone strike on Korosten railway station killed a 33-year-old resident of Horschykivska community. Police and the regional administration reported three injured; injuries are excluded.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KOROSTEN-NPU-2026-11-24",
+        "publisher": "Zhytomyr Regional Police",
+        "source_type": "official_statement",
+        "published_at": "2026-11-24T12:47:00+02:00",
+        "url": "https://zt.npu.gov.ua/news/na-zhytomyrshchyni-vnaslidok-vorozhoi-ataky-zahynuv-cholovik-politsiia-dokumentuie-naslidky",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Police report of one fatality at the railway station."
+      },
+      {
+        "source_id": "KOROSTEN-ODA-2026-11-24",
+        "publisher": "Zhytomyr Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-24T13:37:00+02:00",
+        "url": "https://oda.zht.gov.ua/news/vorog-zavdav-udariv-po-tsyvilnij-infrastrukturi-vnaslidok-chogo-ye-zagyblyj-ta-travmovani-vitalij-bunechko/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional administration casualty update."
+      },
+      {
+        "source_id": "KOROSTEN-UZ-2026-11-24",
+        "publisher": "Ukrzaliznytsia",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/UkrzalInfo/8695",
+        "supports": [
+          "incident_identity",
+          "incident_date"
+        ],
+        "notes": "Railway operator's initial account; reports two injured, superseded by police and regional administration's three-injury update."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZHY-KOROSTEN-2026-11-24-RAILWAY-STATION-REV-001",
+        "recorded_at": "2026-11-24T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "KOROSTEN-NPU-2026-11-24",
+          "KOROSTEN-ODA-2026-11-24",
+          "KOROSTEN-UZ-2026-11-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-BILA-TSERKVA-2024-2025-OVERNIGHT",
+    "incident_date": "2026-11-25",
+    "location": {
+      "settlement": "Bila Tserkva",
+      "district": "",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack overnight on Nov. 24–25 killed a man born in 1974 and damaged commercial/logistics facilities and a vehicle parking area.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "BILA-TSERKVA-TKACHENKO-2026-11-25",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-25T06:29:00+02:00",
+        "url": "https://t.me/tkachenkotymur",
+        "supports": [
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report of the death and parking-area fire."
+      },
+      {
+        "source_id": "BILA-TSERKVA-UP-2026-11-25",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-25T06:00:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/25/8064520/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed in Bila Tserkva during the overnight attack."
+      },
+      {
+        "source_id": "BILA-TSERKVA-CENSOR-2026-11-25",
+        "publisher": "Censor.NET",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://censor.net/ua/news/4035469/rashysty-vdaryly-dronamy-po-kyivshchyni-zahynuv-cholovik-horila-avtostoianka-poshkodzheno-zaklad",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Corroborating report cited by the methodology."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-BILA-TSERKVA-2024-2025-OVERNIGHT-REV-001",
+        "recorded_at": "2026-11-25T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "BILA-TSERKVA-TKACHENKO-2026-11-25",
+          "BILA-TSERKVA-UP-2026-11-25",
+          "BILA-TSERKVA-CENSOR-2026-11-25"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ODE-ODESA-DISTRICT-2026-11-24-EVENING",
+    "incident_date": "2026-11-24",
+    "location": {
+      "settlement": "Odesa district",
+      "district": "",
+      "region": "Odesa region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Evening Nov. 24 Russian jet-powered drone attack on civilian infrastructure in Odesa district killed a 41-year-old man. This is one of two deaths in the regional evening attack wave; the other victim in Podilsk is recorded separately because the source identifies a distinct location and strike site.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ODESA-REGION-UKRINFORM-2026-11-24",
+        "publisher": "Ukrinform, citing Odesa Regional Military Administration and regional prosecutor's office",
+        "source_type": "news_report",
+        "published_at": "2026-11-24T22:58:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4188254-russian-strikes-on-odesa-region-kill-two-including-17year-old-boy-injure-three.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two deaths in separate Odesa-district and Podilsk locations during the evening wave."
+      },
+      {
+        "source_id": "ODESA-REGION-UP-2026-11-24",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-24T21:52:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/24/8064502/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the regional two-death toll."
+      },
+      {
+        "source_id": "ODESA-PODILSK-EVIDENCEHUB-2026-11-24",
+        "publisher": "Ukraine Evidence Hub",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://ukraine-evidence.org/case-files/cf-49",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Case file separates the 41-year-old man killed in Odesa district from the 17-year-old boy killed in Podilsk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ODE-ODESA-DISTRICT-2026-11-24-EVENING-REV-001",
+        "recorded_at": "2026-11-24T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "ODESA-REGION-UKRINFORM-2026-11-24",
+          "ODESA-REGION-UP-2026-11-24",
+          "ODESA-PODILSK-EVIDENCEHUB-2026-11-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ODE-PODILSK-2026-11-24-DRONE",
+    "incident_date": "2026-11-24",
+    "location": {
+      "settlement": "Podilsk",
+      "district": "",
+      "region": "Odesa region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Evening Nov. 24 Russian jet-powered drone strike in Podilsk killed a 17-year-old boy, an eleventh-grade student. This is a separate incident from the attack in Odesa district that killed a 41-year-old man.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "PODILSK-UKRINFORM-2026-11-24",
+        "publisher": "Ukrinform, citing Odesa Regional Military Administration and regional prosecutor's office",
+        "source_type": "news_report",
+        "published_at": "2026-11-24T22:58:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4188254-russian-strikes-on-odesa-region-kill-two-including-17year-old-boy-injure-three.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two deaths in separate Odesa-district and Podilsk locations during the evening wave."
+      },
+      {
+        "source_id": "PODILSK-EVIDENCEHUB-2026-11-24",
+        "publisher": "Ukraine Evidence Hub",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://ukraine-evidence.org/case-files/cf-49",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Case file identifies the 17-year-old victim and distinguishes the Podilsk strike from the Odesa-district fatality."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ODE-PODILSK-2026-11-24-DRONE-REV-001",
+        "recorded_at": "2026-11-24T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "PODILSK-UKRINFORM-2026-11-24",
+          "PODILSK-EVIDENCEHUB-2026-11-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-FEDORIVKA-2026-11-25-PASSENGER-BUS",
+    "incident_date": "2026-11-25",
+    "location": {
+      "settlement": "Fedorivka",
+      "district": "Chuhuiv district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone strike on a scheduled passenger minibus on a road near Fedorivka killed one person and injured seven.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "FEDORIVKA-SYNEHUBOV-2026-11-25",
+        "publisher": "Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/synegubov/28015",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report of one death in the bus strike."
+      },
+      {
+        "source_id": "FEDORIVKA-UKRINFORM-2026-11-25",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-25T08:30:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4188311-one-killed-seven-injured-as-russian-drone-hits-minibus-in-kharkiv-region.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one killed and seven injured."
+      },
+      {
+        "source_id": "FEDORIVKA-UP-2026-11-25",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-25T07:06:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/25/8064526/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one death in the bus attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-FEDORIVKA-2026-11-25-PASSENGER-BUS-REV-001",
+        "recorded_at": "2026-11-25T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "FEDORIVKA-SYNEHUBOV-2026-11-25",
+          "FEDORIVKA-UKRINFORM-2026-11-25",
+          "FEDORIVKA-UP-2026-11-25"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-SUM-SUMY-2026-11-24-CAR-FPV",
+    "incident_date": "2026-11-24",
+    "location": {
+      "settlement": "Sumy",
+      "district": "Kovpakivsky district",
+      "region": "Sumy region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian fibre-optic FPV drone struck a civilian car, killing a 76-year-old passenger. The driver's son survived and was hospitalized.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SUMY-NPU-2026-11-25",
+        "publisher": "National Police of Ukraine, Sumy region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-25T06:45:00+02:00",
+        "url": "https://npu.gov.ua/news/dvoie-liudei-zahynulo-troie-poraneno-politseiski-sumshchyny-pratsiuiut-na-mistsiakh-vorozhykh-obstriliv",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Police report published Nov. 25; identifies the death in Sumy community."
+      },
+      {
+        "source_id": "SUMY-UP-2026-11-24",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-24T20:42:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/24/8064493/",
+        "supports": [
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
+        "notes": "Reports the 76-year-old man's death and locates the strike in Kovpakivsky district."
+      },
+      {
+        "source_id": "SUMY-INTERFAX-2026-11-25",
+        "publisher": "Interfax-Ukraine, citing National Police",
+        "source_type": "news_report",
+        "published_at": "2026-11-25T09:03:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1241893.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Corroborates the two separate Sumy-region deaths."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-SUM-SUMY-2026-11-24-CAR-FPV-REV-001",
+        "recorded_at": "2026-11-24T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "SUMY-NPU-2026-11-25",
+          "SUMY-UP-2026-11-24",
+          "SUMY-INTERFAX-2026-11-25"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-SUM-SEREDYNO-BUDSKA-2026-11-23-DRONE",
+    "incident_date": "2026-11-23",
+    "location": {
+      "settlement": "Seredyno-Budska community",
+      "district": "",
+      "region": "Sumy region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A 69-year-old man died in hospital on Nov. 25 after being wounded in a Russian drone attack in Seredyno-Budska community on Nov. 23.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SEREDYNO-BUDSKA-NPU-2026-11-25",
+        "publisher": "National Police of Ukraine, Sumy region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-25T06:45:00+02:00",
+        "url": "https://npu.gov.ua/news/dvoie-liudei-zahynulo-troie-poraneno-politseiski-sumshchyny-pratsiuiut-na-mistsiakh-vorozhykh-obstriliv",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "count_revision"
+        ],
+        "notes": "Police report distinguishes the delayed hospital death from the separate Nov. 24 Sumy car fatality."
+      },
+      {
+        "source_id": "SEREDYNO-BUDSKA-INTERFAX-2026-11-25",
+        "publisher": "Interfax-Ukraine, citing National Police",
+        "source_type": "news_report",
+        "published_at": "2026-11-25T07:39:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1241846.html",
+        "supports": [
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
+        "notes": "Reports the 69-year-old man's death in hospital from injuries sustained Nov. 23."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-SUM-SEREDYNO-BUDSKA-2026-11-23-DRONE-REV-001",
+        "recorded_at": "2026-11-25T06:45:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "SEREDYNO-BUDSKA-NPU-2026-11-25",
+          "SEREDYNO-BUDSKA-INTERFAX-2026-11-25"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZHY-MALYN-2026-11-25-PARKING-AREA",
+    "incident_date": "2026-11-25",
+    "location": {
+      "settlement": "Malyn",
+      "district": "",
+      "region": "Zhytomyr region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack on a vehicle parking area in Malyn community killed one man. A separate strike on a civilian enterprise injured one person and is not part of this fatality record.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "MALYN-ODA-2026-11-25",
+        "publisher": "Zhytomyr Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-25T10:53:00+02:00",
+        "url": "https://t.me/zhytomyrskaODA/19119",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional report of one fatality in the parking-area attack."
+      },
+      {
+        "source_id": "MALYN-ODA-WEB-2026-11-25",
+        "publisher": "Zhytomyr Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-25T11:32:00+02:00",
+        "url": "https://oda.zht.gov.ua/news/z-samogo-ranku-vorog-teroryzuye-malynsku-gromadu-vitalij-bunechko/",
+        "supports": [
+          "death_count",
+          "incident_identity"
+        ],
+        "notes": "Official web report states one killed in the parking-area strike and separates the enterprise injury."
+      },
+      {
+        "source_id": "MALYN-UKRINFORM-2026-11-25",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-25T14:11:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4188481-russian-attack-on-industrial-facility-and-parking-lot-in-zhytomyr-region-kills-one-injures-five.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one death and separates the injured person at the enterprise."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZHY-MALYN-2026-11-25-PARKING-AREA-REV-001",
+        "recorded_at": "2026-11-25T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "MALYN-ODA-2026-11-25",
+          "MALYN-ODA-WEB-2026-11-25",
+          "MALYN-UKRINFORM-2026-11-25"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-KHARKIV-NOVOBAVARSKY-2026-11-26-RESIDENTIAL",
+    "incident_date": "2026-11-26",
+    "location": {
+      "settlement": "Kharkiv",
+      "district": "Novobavarsky district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian Shahed drone struck a multi-storey residential building, setting an apartment on the 15th floor on fire. Two people were killed and three injured.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHARKIV-TEREKHOV-2026-11-26",
+        "publisher": "Kharkiv Mayor Ihor Terekhov",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/s/ihor_terekhov/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official mayoral updates at 04:56 and 05:12 report two deaths and three injured."
+      },
+      {
+        "source_id": "KHARKIV-UP-2026-11-26",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-26T07:09:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/26/8064721/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the two deaths in the Novobavarsky district strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KHARKIV-NOVOBAVARSKY-2026-11-26-RESIDENTIAL-REV-001",
+        "recorded_at": "2026-11-26T05:12:00+02:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident-level record created from the cited official report and corroborating coverage. No later count revision is currently recorded in this pilot batch.",
+        "source_ids": [
+          "KHARKIV-TEREKHOV-2026-11-26",
+          "KHARKIV-UP-2026-11-26"
+        ]
       }
     ]
   }

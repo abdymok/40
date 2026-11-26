@@ -280,7 +280,7 @@
     "incident_date": "2026-11-22",
     "location": {
       "settlement": "Sloviansk",
-      "district": "",
+      "district": null,
       "region": "Donetsk region",
       "country": "Ukraine"
     },
@@ -335,7 +335,7 @@
     "incident_date": "2026-11-21",
     "location": {
       "settlement": "Stepaniivka",
-      "district": "",
+      "district": null,
       "region": "Donetsk region",
       "country": "Ukraine"
     },
@@ -446,7 +446,7 @@
     "incident_date": "2026-11-23",
     "location": {
       "settlement": "Kramatorsk",
-      "district": "",
+      "district": null,
       "region": "Donetsk region",
       "country": "Ukraine"
     },
@@ -570,7 +570,7 @@
     "incident_date": "2026-11-24",
     "location": {
       "settlement": "Korosten",
-      "district": "",
+      "district": null,
       "region": "Zhytomyr region",
       "country": "Ukraine"
     },
@@ -638,7 +638,7 @@
     "incident_date": "2026-11-25",
     "location": {
       "settlement": "Bila Tserkva",
-      "district": "",
+      "district": null,
       "region": "Kyiv region",
       "country": "Ukraine"
     },
@@ -705,8 +705,8 @@
     "incident_id": "UA-ODE-ODESA-DISTRICT-2026-11-24-EVENING",
     "incident_date": "2026-11-24",
     "location": {
-      "settlement": "Odesa district",
-      "district": "",
+      "settlement": null,
+      "district": "Odesa district",
       "region": "Odesa region",
       "country": "Ukraine"
     },
@@ -775,7 +775,7 @@
     "incident_date": "2026-11-24",
     "location": {
       "settlement": "Podilsk",
-      "district": "",
+      "district": null,
       "region": "Odesa region",
       "country": "Ukraine"
     },
@@ -968,7 +968,7 @@
     "incident_date": "2026-11-23",
     "location": {
       "settlement": "Seredyno-Budska community",
-      "district": "",
+      "district": null,
       "region": "Sumy region",
       "country": "Ukraine"
     },
@@ -1025,7 +1025,7 @@
     "incident_date": "2026-11-25",
     "location": {
       "settlement": "Malyn",
-      "district": "",
+      "district": null,
       "region": "Zhytomyr region",
       "country": "Ukraine"
     },

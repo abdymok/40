@@ -1513,6 +1513,30 @@
           "corroboration"
         ],
         "notes": "Reports the final toll of 72 after the two-week rescue operation and describes the categories of non-combatant victims."
+      },
+      {
+        "source_id": "KOMYSH-INTERFAX-2026-11-02-18",
+        "publisher": "Interfax-Ukraine, citing Zaporizhia Regional Military Administration head Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-11-02T19:55:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1230015.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Official regional update reported 18 deaths at 19:55 on Nov. 2."
+      },
+      {
+        "source_id": "KOMYSH-UKRINFORM-2026-11-02-24",
+        "publisher": "Ukrinform, citing State Emergency Service",
+        "source_type": "news_report",
+        "published_at": "2026-11-02T22:54:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4180689-death-toll-from-russian-strikes-on-school-in-komyshuvakha-rises-to-24.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Official DSNS update reported 24 deaths at 22:54 on Nov. 2, including two rescuers and four police officers."
       }
     ],
     "last_verified_date": "2026-11-26",
@@ -1529,10 +1553,10 @@
       },
       {
         "revision_id": "KOMYSH-REV-002",
-        "recorded_at": "2026-11-02",
+        "recorded_at": "2026-11-02T19:55:00+02:00",
         "old_value": 1,
         "new_value": 18,
-        "reason": "Later Nov. 2 reporting raised the incident toll to 18. This interim count was already included in the project's earlier running subtotal.",
+        "reason": "Later Nov. 2 regional administration update raised the incident toll to 18.",
         "source_ids": [
           "KOMYSH-REUTERS-2026-11-02",
           "KOMYSH-AP-2026-11-02"
@@ -1540,17 +1564,28 @@
       },
       {
         "revision_id": "KOMYSH-REV-003",
-        "recorded_at": "2026-11-02",
+        "recorded_at": "2026-11-02T22:54:00+02:00",
         "old_value": 18,
-        "new_value": 29,
-        "reason": "Regional administration updates raised the incident toll to 29.",
+        "new_value": 24,
+        "reason": "The State Emergency Service reported 24 deaths later on Nov. 2, including two rescuers and four police officers.",
         "source_ids": [
-          "KOMYSH-ZOVA-2026-11-02-68783",
-          "KOMYSH-SUSPILNE-2026-11-03"
+          "KOMYSH-UKRINFORM-2026-11-02-24"
         ]
       },
       {
         "revision_id": "KOMYSH-REV-004",
+        "recorded_at": "2026-11-03T07:40:00+02:00",
+        "old_value": 24,
+        "new_value": 29,
+        "reason": "The Nov. 3 morning update raised the incident toll from 24 to 29. The earlier Nov. 2 DSNS update had reported 24.",
+        "source_ids": [
+          "KOMYSH-ZOVA-2026-11-02-68783",
+          "KOMYSH-SUSPILNE-2026-11-03",
+          "KOMYSH-UKRINFORM-2026-11-02-24"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-005",
         "recorded_at": "2026-11-03T11:40:00+02:00",
         "old_value": 29,
         "new_value": 31,
@@ -1560,7 +1595,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-005",
+        "revision_id": "KOMYSH-REV-006",
         "recorded_at": "2026-11-03T15:52:00+02:00",
         "old_value": 31,
         "new_value": 33,
@@ -1570,7 +1605,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-006",
+        "revision_id": "KOMYSH-REV-007",
         "recorded_at": "2026-11-04T11:52:00+02:00",
         "old_value": 33,
         "new_value": 37,
@@ -1580,7 +1615,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-007",
+        "revision_id": "KOMYSH-REV-008",
         "recorded_at": "2026-11-04",
         "old_value": 37,
         "new_value": 40,
@@ -1591,7 +1626,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-008",
+        "revision_id": "KOMYSH-REV-009",
         "recorded_at": "2026-11-05T11:00:00+02:00",
         "old_value": 40,
         "new_value": 42,
@@ -1602,7 +1637,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-009",
+        "revision_id": "KOMYSH-REV-010",
         "recorded_at": "2026-11-05T14:15:00+02:00",
         "old_value": 42,
         "new_value": 43,
@@ -1613,7 +1648,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-010",
+        "revision_id": "KOMYSH-REV-011",
         "recorded_at": "2026-11-06T11:13:00+02:00",
         "old_value": 43,
         "new_value": 53,
@@ -1624,7 +1659,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-011",
+        "revision_id": "KOMYSH-REV-012",
         "recorded_at": "2026-11-07",
         "old_value": 53,
         "new_value": 55,
@@ -1635,7 +1670,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-012",
+        "revision_id": "KOMYSH-REV-013",
         "recorded_at": "2026-11-16",
         "old_value": 55,
         "new_value": 72,
@@ -1643,6 +1678,75 @@
         "source_ids": [
           "KOMYSH-UKRINFORM-2026-11-16-72",
           "KOMYSH-UP-2026-11-16-72"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-KOMYSHUVAKHA-2026-11-01-POLICE-VEHICLE",
+    "incident_date": "2026-11-01",
+    "location": {
+      "settlement": "Near Komyshuvakha",
+      "district": "Zaporizhia district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone struck a police service vehicle near Komyshuvakha on Nov. 1, seriously injuring two police officers, Oleh Dubetskyi and Serhii Berezhko. Both officers died in hospital on Nov. 4. This is a separate incident from the Nov. 2 humanitarian-hub strike in Komyshuvakha and is not included in that incident's 72 deaths.",
+    "documented_deaths": 2,
+    "scope_classification": "non_combatant_emergency_personnel",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KOMYSH-POLICE-VEHICLE-UP-2026-11-05",
+        "publisher": "Ukrainska Pravda, citing Zaporizhia Regional Police chief Artem Kysko",
+        "source_type": "news_report",
+        "published_at": "2026-11-05T11:24:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/05/8061366/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "victim_status"
+        ],
+        "notes": "Reports that both officers, seriously wounded in the Nov. 1 drone strike on their service vehicle, died in hospital on Nov. 4."
+      },
+      {
+        "source_id": "KOMYSH-POLICE-VEHICLE-LB-2026-11-05",
+        "publisher": "LB.ua, citing National Police",
+        "source_type": "news_report",
+        "published_at": "2026-11-05T10:12:00+02:00",
+        "url": "https://en.lb.ua/news/2026/11/05/48100_two_police_officers_wounded.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms both police officers died on Nov. 4 after the Nov. 1 drone strike."
+      },
+      {
+        "source_id": "KOMYSH-POLICE-VEHICLE-UKRINFORM-2026-11-18",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-18T13:00:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-factcheck/4185957-russians-manipulate-ukrinform-publication-to-cover-up-war-crime-in-komyshuvakha.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Ukrinform fact-check explicitly distinguishes the two Nov. 1 police deaths from the Nov. 2 strike victims."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-KOMYSHUVAKHA-2026-11-01-POLICE-VEHICLE-REV-001",
+        "recorded_at": "2026-11-04",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Both police officers died in hospital on Nov. 4 from injuries sustained in the Nov. 1 drone strike on their service vehicle.",
+        "source_ids": [
+          "KOMYSH-POLICE-VEHICLE-UP-2026-11-05",
+          "KOMYSH-POLICE-VEHICLE-LB-2026-11-05"
         ]
       }
     ]

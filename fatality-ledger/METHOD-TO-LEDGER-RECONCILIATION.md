@@ -1,9 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 99, updated Nov. 26, 2026  
+**Working status:** Stage 100, updated Nov. 26, 2026  
 **Current ledger sum:** 452  
 **Published method-page minimum:** 421  
 **Raw difference:** +31 in the pilot incident dataset
+
+> **Stage 100 amendment — historical 148 baseline:** The Oct. 22→28 dashboard commit sequence now provides a dated bridge: ≈123 on Oct. 22; 123→132 on Oct. 25; 132→137 and 137→138 on Oct. 26; 138→141 later Oct. 26; 141→142, 142→143 and 143→146 on Oct. 27; then 146→147 and 147→148 on Oct. 28. Stage 100 classified 12 of the 27 pre-Oct. 29 null revisions: nine interim/superseded toll revisions are not independent batches; the Uman and DTEK Shcherbyna deaths are not evidenced in the 148 baseline; and the Oct. 16 Kharkiv market correction from three to two was not subtracted from the public sequence. The remaining 15 pre-Oct. 29 revisions carry a net +20 and still need membership adjudication. All 27 pre-Oct. 29 null revisions still total +83 arithmetically; no effective dates were invented and the public 421 remains unchanged. See `STAGE-100-CHECKPOINT.md`.
 
 > **Stage 99 amendment — DTEK driver Vitaliy Shcherbyna:** A separate incident record has been added for the driver killed when a Russian drone struck a lorry at a DTEK coal-mining enterprise in Dnipropetrovsk region overnight on Oct. 25. DTEK and Interfax-Ukraine confirm the fatality. The earlier duplicate concern conflated the DTEK strike with the regional administration's separate Synelnykove residential-strike toll; the regional post attributes its three deaths, later revised to four, to that incident. The Oct. 22 ≈123 baseline predates Shcherbyna's death, and the mapped Oct. 25–28 increments do not identify him. His death is therefore recorded in the incident ledger but is not evidenced in the historical 148 baseline or published 421 minimum. The ledger now contains 176 incidents, 430 source records, 452 final documented deaths and 231 revision entries, of which 197 have confirmed effective dates and 34 remain null. The raw ledger-to-public difference is now +31. No public page or public total changed. See `STAGE-99-CHECKPOINT.md` and `UNRESOLVED-DTEK-SHCHERBYNA-OCT25.md`.
 

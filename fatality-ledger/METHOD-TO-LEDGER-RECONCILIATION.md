@@ -11,6 +11,8 @@
 
 > **Stage 54 amendment:** The Oct. 25–27 transitions are now mapped to existing incident records: 123→132 (+9), 132→137 (+5), 137→138 (+1), 138→141 (+3), and 141→146 (+5 across two updates). The Oct. 22 transition from 121→123 (+2) remains unidentified: the contemporaneous commit changes the displayed number but supplies no incident-level allocation. No ledger effective dates or public figures were changed. See `STAGE-54-CHECKPOINT.md`.
 
+> **Stage 55 amendment:** The archived Oct. 21–22 commits now establish the sequence 105→107 (+2 Sviatoshynsky), 107→116 (+9; Sloviansk final toll and two Korotych deaths, but internal allocation remains to be reconciled), 116→117 (+1 Lymanivka), 117→118 (+1 Kyiv Dniprovsky district), and 118→121 (+3 Chabany). The 121→123 increment remains unidentified. No effective dates or public figures were changed. See STAGE-55-CHECKPOINT.md.
+
 ## What is established
 
 The method page's cumulative sequence starts from an opening subtotal of approximately 192. It explicitly says this subtotal already included 18 deaths from the Nov. 2 Komyshuvakha strike. Subsequent increases in that incident were therefore increments from 18, not a fresh addition of the full 72.

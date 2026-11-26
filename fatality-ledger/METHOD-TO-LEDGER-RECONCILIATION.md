@@ -1,12 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 20 analysis, amended through Stage 37 on Nov. 26  
-**Current ledger sum:** 443  
+**Working status:** Stage 20 analysis, amended through Stage 39 on Nov. 26  
+**Current ledger sum:** 445  
 **Published method-page minimum:** 418  
-**Current difference:** +25 raw in the pilot incident dataset  
+**Current difference:** +27 raw in the pilot incident dataset  
 
-> **Stage 37 amendment:** The current dataset contains 170 incidents, 401 source records and 443 deaths. Two further missing historical records have been added: the Oct. 25 Kherson minibus fatality and the Oct. 26 Yasnohirka fatality. The Oct. 26 history explicitly included one death each in Pavlohrad, Kherson and Yasnohirka; the ledger now contains all three. The pre-Oct. 29 incident-date inventory sums to 166 (18 above the legacy 148); Oct. 29 sums to 27 (two above the historical 25); and post-192 additions sum to 231 (five above the method's 226). Raw arithmetic: +18 +2 +5 = +25. The historical 148 includes three Chabany deaths excluded from the current ledger and appears to retain three deaths in the Oct. 16 Kharkiv market incident, while the current ledger keeps the later official final count of two. Adjusting only for those two scope differences gives a like-for-like pre-Oct. 29 comparison of 170 versus 148 (+22), and a like-for-like overall comparison of 447 versus 418 (+29). These are comparison adjustments, not proposed ledger additions. Twenty-five revisions now have confirmed `ledger_effective_at` dates; the remainder stay null pending evidence.
-
+> **Stage 39 amendment:** The current dataset contains 172 incidents, 409 source records and 445 deaths. Two more historical records have been added from the Oct. 23 reporting batch: one death in Chernihiv and one in Sloviansk. Together with the Dnipro and Kramatorsk records already present, these map the four-death Oct. 23 update. The pre-Oct. 29 incident-date inventory now sums to 168 (20 above the legacy 148); Oct. 29 sums to 27 (two above the historical 25); and post-192 additions sum to 231 (five above the method's 226). Raw arithmetic: +20 +2 +5 = +27. The historical 148 includes three Chabany deaths excluded from the current ledger and appears to retain three deaths in the Oct. 16 Kharkiv market incident, while the current ledger keeps the later official final count of two. Adjusting only for those two scope differences gives a like-for-like pre-Oct. 29 comparison of 172 versus 148 (+24), and a like-for-like overall comparison of 449 versus 418 (+31). These are comparison adjustments, not proposed ledger additions. Twenty-nine revisions now have confirmed `ledger_effective_at` dates; 190 revision entries remain null pending evidence.
 ## What is established
 
 The method page's cumulative sequence starts from an opening subtotal of approximately 192. It explicitly says this subtotal already included 18 deaths from the Nov. 2 Komyshuvakha strike. Subsequent increases in that incident were therefore increments from 18, not a fresh addition of the full 72.
@@ -34,20 +33,37 @@ Those eight now have incident records and are already included in the method-pag
 
 ## Scope mismatches in the pre-Oct. 29 baseline
 
-Three historical incidents/counts were absent or differently represented in the structured ledger and have now been adjudicated:
+Five historical records that were absent from the structured ledger have now been added:
 
-1. **Korotych, Oct. 21 — two deaths.** The Oct. 22 methodology note included both victims. The current ledger initially omitted the incident; it has now been added.
-2. **Kherson minibus, Oct. 25 — one death.** The Oct. 26 historical change entry included one death in Kherson. The current ledger initially omitted the incident; the 67-year-old passenger who died in hospital is now represented.
-3. **Yasnohirka, Oct. 26 — one death.** The Oct. 26 historical change entry included one death in Yasnohirka. The current ledger initially omitted the incident; it is now represented.
+1. **Korotych, Oct. 21 — two deaths.** The Oct. 22 methodology note included both victims.
+2. **Kherson minibus, Oct. 25 — one death.** The Oct. 26 historical update included one death in Kherson. The 67-year-old passenger who died in hospital is now represented.
+3. **Yasnohirka, Oct. 26 — one death.** The Oct. 26 historical update included one death in Yasnohirka.
+4. **Chernihiv enterprise, Oct. 23 — one death.** The Oct. 25 update's four-death Oct. 23 batch included the Chernihiv fatality.
+5. **Sloviansk, Oct. 23 — one death.** The same Oct. 23 batch included the 62-year-old woman who died in hospital on Oct. 24.
 
 Two count-scope differences remain:
 - **Chabany, Oct. 20 — three deaths.** The Oct. 28 historical chronology snapshot explicitly says these three deaths were included in the dashboard subtotal. The current structured ledger has no Chabany record, consistent with the later working exclusion. They remain excluded and have not been reintroduced.
 - **Kharkiv market, Oct. 16 — three versus two.** The Oct. 22 method note listed three deaths in Kharkiv on Oct. 16. The current ledger retains the later official final count of two. No corresponding downward adjustment was found in the Oct. 28 change log, so the historical subtotal is provisionally treated as still carrying three.
 
-After adding Korotych, Kherson and Yasnohirka, the raw pre-Oct. 29 comparison is 166 current ledger deaths versus 148 historically published, a net +18. For a like-for-like comparison only, add the three Chabany deaths that remain in the historical subtotal and the one Kharkiv market death that the current ledger has corrected downward: 166 + 3 + 1 = 170 versus 148, or +22. These comparison adjustments are not proposed ledger additions. The ledger remains at 443 overall and the Chabany exclusion remains in force unless the user changes that instruction.
+After adding Korotych, Kherson, Yasnohirka, Chernihiv and Sloviansk, the raw pre-Oct. 29 comparison is 168 current ledger deaths versus 148 historically published, a net +20. For a like-for-like comparison only, add the three Chabany deaths that remain in the historical subtotal and the one Kharkiv market death that the current ledger has corrected downward: 168 + 3 + 1 = 172 versus 148, or +24. These comparison adjustments are not proposed ledger additions. The ledger remains at 445 overall and the Chabany exclusion remains in force unless the user changes that instruction.
 
-The same scope adjustments carry forward into the published 418 total. The raw current-ledger difference is +25 (443 versus 418). A like-for-like comparison is 447 versus 418, or +29. Do not interpret 447 as an approved count. The current ledger remains 443.
+The same scope adjustments carry forward into the published 418 total. The raw current-ledger difference is +27 (445 versus 418). A like-for-like comparison is 449 versus 418, or +31. Do not interpret 449 as an approved count. The current ledger remains 445.
 
+
+## Historical subtotal sequence now mapped
+
+The old update history can now be mapped more completely to individual records:
+
+| Historical update | Increment | Current incident mapping |
+|---|---:|---|
+| Oct. 25, 123→132 | +9 | Synelnykove 4, Kharkiv Novobavarsky 1, Dnipro 1, Kramatorsk 1, Chernihiv 1, Sloviansk 1 |
+| Oct. 26, 132→137 | +5 | Marhanets 1, Lozova, Konotop 1, Yarova 1. The precise split within the Lozova revision chain remains under review; the third Lozova death has no confirmed public inclusion date. |
+| Oct. 26, 137→138 | +1 | Kramatorsk 1 |
+| Oct. 26, 138→141 | +3 | Pavlohrad 1, Kherson 1, Yasnohirka 1 |
+| Oct. 27, 141→146 | +5 | Kyiv 1, Nova Vodolaha 1, Donetsk region 3 |
+| Oct. 28, 146→148 | +2 | Kharkiv 1, Novodonetske 1 |
+
+The Oct. 23 batch is now mapped to four localities. The Dnipro and Kramatorsk records were already present. Chernihiv and Sloviansk were added in Stage 39. The Nova Vodolaha revision chain now shows five deaths in the 141 subtotal and the sixth death entering on Oct. 27.
 
 ## Known method/record differences
 
@@ -73,11 +89,11 @@ The historical sequence is now explicit:
 - Oct. 28 legacy subtotal: 148.
 - Oct. 29 additions: 25, producing the Oct. 30 snapshot of 173.
 - Nov. 2 Komyshuvakha opening count: 18, plus the Nov. 2 Izium death, producing the 192 opening subtotal used by the method page.
-- The Stage 20 snapshot of the current incident inventory through Oct. 28 was 161. The Stage 24–29 refresh raised this to 162, Stage 34 to 164, and Stage 37 to 166 after adding the missing Korotych, Kherson and Yasnohirka incidents. The current raw difference is 18 above the legacy 148; after the two known scope adjustments, the like-for-like difference is 22. The exact membership of the remaining difference is still being reconstructed; incident date alone is insufficient because several deaths were reported or revised later.
+- The Stage 20 snapshot of the current incident inventory through Oct. 28 was 161. The Stage 24–29 refresh raised this to 162, Stage 34 to 164, Stage 37 to 166 and Stage 39 to 168 after adding the missing Korotych, Kherson, Yasnohirka, Chernihiv and Sloviansk incidents. The current raw difference is 20 above the legacy 148; after the two known scope adjustments, the like-for-like difference is 24. The exact membership of the remaining difference is still being reconstructed; incident date alone is insufficient because several deaths were reported or revised later.
 - The Stage 20 snapshot's Oct. 29 total of 27 is now reproduced by the current dataset, but its composition is corrected. The current incident-date sum is 27: Dnipro railway station (15), Kremenchuk (3), Chernihiv (2), Kyiv's late-evening ballistic attack (1), the Izium public-health institution (5) and a separate Izium attack (1). The historical 173 transition totals 25: 14 initially reported at Dnipro, the subsequent Dnipro hospital death (+1), Kremenchuk (3), Chernihiv (2), Kyiv (1) and four in the Izium airstrike. The two-death difference is the institution's fifth employee death plus the separate 59-year-old woman killed in Izium, neither of which appears in the 173 snapshot breakdown. The Kyiv death was missing from the structured ledger and has now been added.
 - The current post-192 additions sum to 231, five above the method's 226. The five-death difference is now accounted for by three known incident-level differences: Chornomorsk (four final deaths against the method's one-death increment, +3); Dnipro on Nov. 3 (two final deaths against the method's one-death increment, +1); and Saltivsky district on Nov. 11 (two final deaths, but the first death was already in the preceding subtotal, so the method correctly adds only one; counting both as new produces +1). These explain the +5 arithmetic, subject to explicit effective-date fields still being completed.
 
-The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage 29 +20, Stage 31 +21, Stage 34 +23) are superseded by Stage 37. The current raw arithmetic is **+18 +2 +5 = +25**: 166 versus 148 through Oct. 28; 27 versus 25 for Oct. 29; and 231 versus 226 in post-192 additions. On a like-for-like basis after the Chabany and Kharkiv market adjustments, the arithmetic is **+22 +2 +5 = +29**. The pre-Oct. 29 difference still requires source-by-source allocation of revisions and historical inclusion dates. The +2 Oct. 29 difference is the fifth death in the public-health institution strike plus the separately reported 59-year-old woman killed in Izium; the historical 173 snapshot listed four Izium airstrike deaths. The Kyiv fatality is now included and is part of the historical 25. Do not infer `ledger_effective_at` from incident date or report date.
+The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage 29 +20, Stage 31 +21, Stage 34 +23) are superseded by Stage 37. The current raw arithmetic is **+20 +2 +5 = +27**: 168 versus 148 through Oct. 28; 27 versus 25 for Oct. 29; and 231 versus 226 in post-192 additions. On a like-for-like basis after the Chabany and Kharkiv market adjustments, the arithmetic is **+24 +2 +5 = +31**. The pre-Oct. 29 difference still requires source-by-source allocation of revisions and historical inclusion dates. The +2 Oct. 29 difference is the fifth death in the public-health institution strike plus the separately reported 59-year-old woman killed in Izium; the historical 173 snapshot listed four Izium airstrike deaths. The Kyiv fatality is now included and is part of the historical 25. Do not infer `ledger_effective_at` from incident date or report date.
 
 ## Required next work
 

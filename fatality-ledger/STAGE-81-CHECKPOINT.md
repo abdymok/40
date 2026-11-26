@@ -21,7 +21,7 @@ The Oct. 21 dashboard update at commit `46a3feb1b3430a7e58185dbca864de617f72aa28
 - Revision entries: 230
 - Revisions with confirmed effective dates: 192
 - Revisions still null: 38
-- Remaining pre-Oct. 29 null revisions: 31, net +92
+- Remaining pre-Oct. 29 null revisions: 31, net +90
 - Later null revisions: 7, net +8
-- Total net change across null revisions: +100
+- Total net change across null revisions: +98
 - Public method-page minimum: 421 (unchanged)

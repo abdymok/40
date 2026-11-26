@@ -54,7 +54,7 @@ Never overwrite a prior count silently. A later death in hospital is a new incre
 
 ## Historical snapshots
 
-Historical totals such as 123, 148, 192 and 418 are retained as legacy snapshots in audit notes. The current public method-page snapshot is 421 through Nov. 26, 2026. They are not authoritative data and must not be used as current totals. Historical membership and ledger-effective dates are being reconstructed separately. The raw incident-ledger sum and the public running subtotal must be displayed as separate measures until their difference is fully reconciled.
+Historical totals such as 123, 148, 192 and 418 are retained as legacy snapshots in audit notes. Historical totals such as 123, 148, 192, 418 and the superseded 421 snapshot are retained in audit notes. The current public method-page subtotal is 427 through Nov. 26, 2026. Historical membership and ledger-effective dates are being reconstructed separately. The raw incident-ledger sum and the public running subtotal must be displayed as separate measures until their difference is fully reconciled. Historical membership and ledger-effective dates are being reconstructed separately. The raw incident-ledger sum and the public running subtotal must be displayed as separate measures until their difference is fully reconciled.
 
 ## Validation
 

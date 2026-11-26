@@ -664,7 +664,7 @@
         "recorded_at": "2026-10-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Dnipropetrovsk Regional Military Administration reported one person killed in attacks on Zaitseve and Petropavlivka communities on Oct. 9. The Oct. 11 ≈80 snapshot does not itemize this incident; its one Dnipropetrovsk-region row is matched in Stage 62 to the separate 11-year-old boy killed in Pokrovske. The later Oct. 25 123→132 update's four Synelnykove deaths concern a distinct Oct. 24 residential-area drone strike, not this Oct. 9 incident. The Oct. 22 ≈123 nationwide-minimum baseline does not provide a complete incident membership list. Inclusion of this Oct. 9 death in the 123 or 148 baseline cannot be confirmed or ruled out; keep ledger_effective_at null.",
         "source_ids": [
           "DNE-09-UP-2026-10-09",
           "DNE-09-UKRINFORM-2026-10-09"

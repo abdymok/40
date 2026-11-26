@@ -5069,6 +5069,109 @@
     ]
   },
   {
+    "incident_id": "UA-CHN-CHERNIHIV-2026-10-29-CENTRAL-DRONE-STRIKE",
+    "incident_date": "2026-10-29",
+    "location": {
+      "settlement": "Chernihiv",
+      "district": null,
+      "region": "Chernihiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian Banderol drone-launched cruise missile struck central Chernihiv, killing two 15-year-old girls. The strike damaged shops and vehicles and caused fires. Later reports raised the injury toll to 31; injuries are excluded.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "CHERNIHIV-CMA-BRYZHINSKY-2026-10-29-4420",
+        "publisher": "Chernihiv City Military Administration head Dmytro Bryzhynsky",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-29T12:02:00+03:00",
+        "url": "https://t.me/bryzynskyi/4420",
+        "supports": [
+          "incident_identity",
+          "death_count"
+        ],
+        "notes": "Reports two people killed and two injured in a UAV strike in Chernihiv, with fires in shops. The later city and regional updates identify the two fatalities as 15-year-old girls."
+      },
+      {
+        "source_id": "CHERNIHIV-CHAUS-UKRINFORM-2026-10-29",
+        "publisher": "Ukrinform, citing Chernihiv Regional Military Administration head Viacheslav Chaus",
+        "source_type": "news_report",
+        "published_at": "2026-10-29T14:00:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4179356-russian-drone-attack-on-central-chernihiv-kills-two-teenage-girls-injures-11.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Reports two 15-year-old girls killed in the central Chernihiv drone strike and traces the evolving injury toll."
+      },
+      {
+        "source_id": "CHERNIHIV-UP-2026-10-29",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-10-29T12:08:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/29/8060232/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Reports two 15-year-old girls killed in the central Chernihiv attack, citing the city council, city administration, regional administration and National Police. Later update records 31 injured."
+      },
+      {
+        "source_id": "CHERNIHIV-INTERFAX-2026-10-29",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-10-29T12:25:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1227940.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the two deaths announced by Bryzhynskyi after the UAV strike on Chernihiv."
+      },
+      {
+        "source_id": "CHERNIHIV-LB-2026-10-29",
+        "publisher": "LB.ua",
+        "source_type": "news_report",
+        "published_at": "2026-10-29T13:18:00+03:00",
+        "url": "https://en.lb.ua/news/2026/10/29/47154_enemy_drone_hits_central.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Identifies the victims as two underage girls and reports 22 injured as of 13:38."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "CHERNIHIV-CENTRAL-REV-001",
+        "recorded_at": "2026-10-29T12:02:00+03:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial official update reported two fatalities. Later official and media reporting identified the victims as two 15-year-old girls. The date on which this incident entered the project's running subtotal remains unverified.",
+        "source_ids": [
+          "CHERNIHIV-CMA-BRYZHINSKY-2026-10-29-4420",
+          "CHERNIHIV-CHAUS-UKRINFORM-2026-10-29",
+          "CHERNIHIV-UP-2026-10-29",
+          "CHERNIHIV-INTERFAX-2026-10-29",
+          "CHERNIHIV-LB-2026-10-29"
+        ],
+        "ledger_effective_at": null
+      }
+    ]
+  },
+  {
     "incident_id": "UA-KHE-KHERSON-2026-10-06-DOCTOR-ZIMIN-DRONE-CAR",
     "incident_date": "2026-10-06",
     "location": {

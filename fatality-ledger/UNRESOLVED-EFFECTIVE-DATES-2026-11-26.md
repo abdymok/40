@@ -206,3 +206,10 @@ Stage 104 reviewed all seven post-Oct. 29 null revisions, net +8. The first Salt
 The historical reconciliation audit is complete to the limit of surviving evidence. All 33 null revisions have been reviewed: 26 pre-Oct. 29 entries, net +82, and seven later entries, net +8. Of the legacy entries, 12 are classified as interim/superseded tolls, a public-count correction not reflected in the subtotal, or separately categorized cases; 14 remain without a confirmed inclusion date, net +19. Of the seven later entries, two are established exclusions from 421 and five have unverified inclusion in a carried-forward aggregate. Null dates are retained where evidence does not establish a first public inclusion date. The arithmetic net +90 is not a correction to the public total.
 
 The ledger remains 176 incidents, 430 sources, 452 final documented deaths and 231 revisions (198 dated, 33 null). The public provisional minimum remains 421. No public-facing files or figures were changed.
+
+
+## Stage 106 amendment — post-Oct. 29 revisions reclassified
+
+The historical inventory and Stage 104 closeout above are retained as a record of the earlier review. Stage 106 has now completed a further reconstruction of the 174 baseline and the full 192→421 increment sequence (Stages 44–52). All seven post-Oct. 29 null revisions listed above are established exclusions from the historical 421 subtotal: the two additional Oct. 29 Izium deaths, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and the three later Chornomorsk hospital deaths. Their `ledger_effective_at` fields remain null because they were not included. The initial Chornomorsk death remains included at 282→283.
+
+The seven post-Oct. 29 entries therefore no longer represent unresolved inclusion questions. The only unresolved historical inclusion questions are the 14 pre-Oct. 29 legacy revisions, net +19, identified in Stage 103. The overall null field count remains 33 because it also includes established exclusions, interim/superseded toll stages and the Kharkiv market correction. See `STAGE-106-CHECKPOINT.md` and Stage 61 in `AUDIT-2026-11-26.md`.

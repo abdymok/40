@@ -55,10 +55,12 @@ Historical totals such as 123, 148, 192 and 418 are retained as legacy snapshots
 
 ## Validation
 
+`incident.schema.json` defines the machine-readable record contract. Keep its field definitions and enumerations aligned with `scripts/validate_fatality_ledger.py` whenever the ledger structure changes.
+
 Run:
 
 ```bash
 python scripts/validate_fatality_ledger.py fatality-ledger/incidents.json
 ```
 
-The validator checks IDs, required fields, date formats, revision continuity, final count consistency and source references. It prints the calculated total.
+The validator checks unique incident and source IDs, required fields, location structure, evidence and scope classifications, source types and support labels, URL and date formats, revision continuity, ledger-effective dates, final count consistency and source references. It prints the calculated total.

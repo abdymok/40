@@ -7,7 +7,7 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 - Null revision entries: 32
 - Net sum of count changes across these entries: 89
 - Legacy pre-Oct. 29 entries: 26 entries, 82 net count changes
-- Oct. 29 additional Izium revisions: 2 entries, 2 deaths
+- Oct. 29 additional Izium revisions: 2 entries, 2 deaths (later inclusion in 421 unproven)
 - Oct. 31 Sloviansk: 1 entry, 1 death (174-baseline membership unverified)
 - Nov. 3 Dnipro second death: 1 entry, 1 death (not in mapped Nov. 3 increment)
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
@@ -61,6 +61,10 @@ The first Saltivsky death is now dated Nov. 11. The ≈282 snapshot precedes the
 ## Stage 88 adjudication
 
 The Nov. 3 dashboard sequence maps 203→207 to four deaths in Donetsk region from Nov. 2, including a Nov. 2 Sloviansk incident distinct from the Oct. 31 death. The first Dnipro death is the 207→208 increment; the subsequent 208→211 changes are Komyshuvakha 29→31 (+2) and Hotiv (+1). The second Dnipro death is not part of the mapped sequence. The Oct. 31 Sloviansk death is not named in the 174 baseline's incident-level list, and its carry-forward membership cannot be established. Both revisions remain null. See `STAGE-88-CHECKPOINT.md`.
+
+## Stage 89 adjudication
+
+The Nov. 2 174 baseline itemizes four deaths in the Oct. 29 Izium airstrike and one death in a separate Nov. 2 morning attack. It does not itemize the fifth death in the Oct. 29 airstrike, reported later on Oct. 30, or the separate 59-year-old victim killed in another Oct. 29 attack, first identified Oct. 31. The later 421 reconciliation names no separate additions for either revision. Their inclusion in a later, non-itemized subtotal is unproven, so both remain null. See `STAGE-89-CHECKPOINT.md`.
 
 ## Adjudication rules
 

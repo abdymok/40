@@ -184,7 +184,7 @@
         "recorded_at": "2026-10-07",
         "old_value": null,
         "new_value": 14,
-        "reason": "Initial official report counted 14 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Initial 14-death interim toll. The final 22-death toll is explicitly represented in the Oct. 11 ≈80 selected-incident snapshot (REV-004, dated Oct. 11). No contemporaneous project update establishes a separate subtotal addition for this interim value. Keep ledger_effective_at null; do not treat 14 as an additional death batch on top of the final 22.",
         "source_ids": [
           "PRYLUKY-CHAUS-2026-10-07-32184"
         ],
@@ -195,7 +195,7 @@
         "recorded_at": "2026-10-07T16:47:00+03:00",
         "old_value": 14,
         "new_value": 16,
-        "reason": "Further bodies were recovered, raising the toll to 16. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Interim 16-death toll after further recovery. The final 22-death toll is explicitly represented in the Oct. 11 ≈80 selected-incident snapshot (REV-004, dated Oct. 11). No contemporaneous project update establishes a separate subtotal addition for this interim value. Keep ledger_effective_at null; do not treat the 14→16 revision as an independent batch.",
         "source_ids": [
           "PRYLUKY-HROMADSKE-2026-10-07"
         ],
@@ -206,7 +206,7 @@
         "recorded_at": "2026-10-07T21:55:00+03:00",
         "old_value": 16,
         "new_value": 20,
-        "reason": "Further recovery work raised the toll to 20. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Interim 20-death toll after further recovery. The final 22-death toll is explicitly represented in the Oct. 11 ≈80 selected-incident snapshot (REV-004, dated Oct. 11). No contemporaneous project update establishes a separate subtotal addition for this interim value. Keep ledger_effective_at null; do not treat the 16→20 revision as an independent batch.",
         "source_ids": [
           "PRYLUKY-UP-2026-10-07"
         ],
@@ -384,7 +384,7 @@
         "recorded_at": "2026-10-08T10:00:00+02:00",
         "old_value": null,
         "new_value": 12,
-        "reason": "Initial report at the scene confirmed 12 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Initial 12-death interim toll. The final 33-death toll is explicitly represented in the Oct. 11 ≈80 selected-incident snapshot (REV-003, dated Oct. 11). No contemporaneous project update establishes a separate subtotal addition for this interim value. Keep ledger_effective_at null; do not add 12 on top of the final 33.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
@@ -395,7 +395,7 @@
         "recorded_at": "2026-10-08T12:36:00+02:00",
         "old_value": 12,
         "new_value": 30,
-        "reason": "Donetsk Regional Prosecutor's Office update raised the death toll to 30. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Interim 30-death toll. The final 33-death toll is explicitly represented in the Oct. 11 ≈80 selected-incident snapshot (REV-003, dated Oct. 11). No contemporaneous project update establishes a separate subtotal addition for this interim value. Keep ledger_effective_at null; do not treat 12→30 as a separate addition after the final 33 is counted.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
@@ -1458,7 +1458,7 @@
         "recorded_at": "2026-10-16T13:12:00+02:00",
         "old_value": 3,
         "new_value": 2,
-        "reason": "The regional administration later confirmed two deaths, identifying a 71-year-old woman and a 58-year-old man; Interfax-Ukraine and Ukrinform reported the revised official count. The Oct. 16 dashboard snapshot continued to show approximately 98 and still identified three deaths in Kharkiv. No archived subtotal update deducts the one-death correction, so this -1 revision remains null rather than being assigned an unsupported effective date.",
+        "reason": "Downward correction from three to two after the regional administration clarified that the initially reported third victim had been resuscitated. The Oct. 16 dashboard increment was 95→98 (+3); the contemporaneous public sequence contains no -1 subtraction. The public running subtotal therefore retained the initial three-death figure through the Oct. 28 148 baseline, while the incident ledger correctly retains the final local toll of two. Keep ledger_effective_at null to record that the correction was not applied to the public subtotal.",
         "source_ids": [
           "KHARKIV-16-UKRINFORM-2026-10-16",
           "KHARKIV-16-IFAX-2026-10-16"
@@ -1538,7 +1538,7 @@
         "recorded_at": "2026-10-17T12:27:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "The initial Oct. 17 report recorded one person killed. The Oct. 20 ≈100/103 snapshot's method paragraph does not identify this incident, and the Oct. 21 ≈105 method snapshot also does not name it. The later 105→116 update explicitly adds the final nine-death toll together with two Korotych deaths; the net +11 matches those 11 deaths. No separate inclusion of the initial one-death toll is established. Keep this interim revision's ledger_effective_at null.",
+        "reason": "Initial one-death interim toll. The Oct. 21 105→116 update explicitly adds the final nine-death toll together with two Korotych deaths. No separate inclusion of the interim one-death value is established. Keep ledger_effective_at null; do not add this interim value on top of the final nine.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-17"
         ],
@@ -1549,7 +1549,7 @@
         "recorded_at": "2026-10-18T12:34:00+02:00",
         "old_value": 1,
         "new_value": 6,
-        "reason": "The Oct. 18 update raised the Oct. 17 Sloviansk incident toll from one to six. The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify this incident or the six-death interim toll. The Oct. 21 105→116 update explicitly adds the final nine-death toll, with the net +11 matching nine Sloviansk deaths and two Korotych deaths. No separate inclusion of the six-death interim toll is established. Keep this interim revision's ledger_effective_at null.",
+        "reason": "Interim six-death toll. The Oct. 21 105→116 update explicitly adds the final nine-death toll together with two Korotych deaths. No separate inclusion of the interim six-death value is established. Keep ledger_effective_at null; do not add this interim value on top of the final nine.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-18"
         ],
@@ -1763,7 +1763,7 @@
         "recorded_at": "2026-10-19T18:16:00+03:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "The initial three-death toll was reported on Oct. 19. The later preliminary six-death report was corrected to five the same evening. The Oct. 20 ≈100/103 and Oct. 21 ≈105/116 snapshots do not name this incident. By the Oct. 26 ≈138 baseline, the corrected five-death toll was already carried; the Oct. 27 142→143 update explicitly adds the sixth death after a 12-year-old boy died in hospital. No separate subtotal increment establishes inclusion of the initial three-death revision. Keep ledger_effective_at null.",
+        "reason": "Initial three-death report, superseded the same evening by a preliminary six and corrected five. The Oct. 26 ≈138 baseline carries the corrected five-death toll (REV-003), with the sixth death added explicitly on Oct. 27 (REV-004). No separate subtotal addition for the initial three is established. Keep ledger_effective_at null; this is not an additional three-death batch.",
         "source_ids": [
           "NOVA-VODOLAHA-HROMADSKE-2026-10-19",
           "NOVA-VODOLAHA-RBC-2026-10-19"
@@ -1775,7 +1775,7 @@
         "recorded_at": "2026-10-19T18:36:00+03:00",
         "old_value": 3,
         "new_value": 6,
-        "reason": "The preliminary six-death report on Oct. 19 was corrected to five later that evening. The Oct. 20 ≈100/103 and Oct. 21 ≈105/116 snapshots do not name the incident or the preliminary six-death toll. The corrected five-death toll is present by the Oct. 26 ≈138 baseline; the Oct. 27 142→143 update adds the sixth death. The preliminary 3→6 report was superseded and has no separate subtotal increment. Keep ledger_effective_at null.",
+        "reason": "Preliminary six-death report, corrected to five later the same evening. The Oct. 26 ≈138 baseline carries the corrected five-death toll (REV-003), with the sixth death added explicitly on Oct. 27 (REV-004). No separate subtotal addition for the superseded preliminary six is established. Keep ledger_effective_at null; do not count this preliminary toll separately.",
         "source_ids": [
           "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
           "NOVA-VODOLAHA-UP-2026-10-19"
@@ -2078,7 +2078,7 @@
         "recorded_at": "2026-10-26T11:54:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Cherkasy Regional Military Administration head Ihor Taburets reported on Oct. 26 that 86-year-old Tamara Yasynska had died in hospital from injuries sustained in the Oct. 21 Uman strike. The Oct. 28 ≈148 snapshot excludes this death: the Oct. 26 138→141 update explicitly adds three other deaths (Pavlohrad, Kherson and Yasnohirka), and the subsequent increments to 148 are separately itemized without Uman. The Nov. 2 174 baseline's listed additions and the 174→192 Komyshuvakha update also do not identify Uman. The current dashboard update history contains no Uman/Tamara Yasynska entry. Whether the death was later incorporated into the 421 minimum remains unproven; keep ledger_effective_at null.",
+        "reason": "Confirmed death on Oct. 26 after injuries sustained Oct. 21. It is excluded from the Oct. 28 ≈148 baseline: the Oct. 26 138→141 update names three other deaths, later increments to 148 are itemized without Uman, and the Nov. 2 174 baseline does not identify it. Later inclusion in the 421 minimum is unproven. Keep ledger_effective_at null; this is a documented incident-level death outside the established 148 baseline.",
         "source_ids": [
           "UMAN-TAMARA-CHERKASKA-ODA-2026-10-26",
           "UMAN-TAMARA-CHERKASKA-ODA-TELEGRAM-2026-10-26",
@@ -11484,7 +11484,7 @@
         "recorded_at": "2026-11-26",
         "old_value": null,
         "new_value": 1,
-        "reason": "Added as a distinct, source-backed DTEK coal-mine lorry-strike fatality. The Oct. 25 regional administration report identifies its three deaths with the separate Synelnykove residential strike; DTEK identifies a separate lorry strike at a coal-mining enterprise. The Oct. 22 baseline predates this death, and the mapped Oct. 25–28 increments identify other incidents. No historical inclusion in the 148 baseline or published 421 minimum is established. ledger_effective_at remains null because this death is not evidenced as part of the public subtotal.",
+        "reason": "Distinct DTEK coal-mine lorry-strike fatality confirmed by DTEK and Interfax-Ukraine. The Oct. 22 ≈123 baseline predates the death; mapped Oct. 25–28 increments identify other incidents and do not include it. No evidence places the death in the 148 baseline or the published 421 minimum. Keep ledger_effective_at null; documented in the incident ledger, not in the established public subtotal.",
         "source_ids": [
           "DTEK-SHCHERBYNA-ENERGO-2026-10-25",
           "DTEK-SHCHERBYNA-INTERFAX-2026-10-25"

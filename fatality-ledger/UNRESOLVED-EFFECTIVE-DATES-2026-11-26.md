@@ -1,4 +1,6 @@
-# Unresolved ledger-effective dates — Nov. 26, 2026
+# Unresolved ledger-effective dates — Nov. 26, 2026 (historical snapshot)
+
+> Historical inventory generated against the earlier Stage 104 ledger and 421 public subtotal. It is superseded by later Nov. 26 incident-ledger updates. The 33-entry count and its classifications are not asserted as the current unresolved-revision inventory; re-audit against the current 182-incident ledger before relying on them.
 
 This inventory lists every revision whose `ledger_effective_at` remains null after Stage 104. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 

@@ -4,16 +4,16 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 
 ## Summary
 
-- Null revision entries: 45
-- Net sum of count changes across these entries: 112
-- Legacy pre-Oct. 29 entries: 38 entries, 104 net count changes
+- Null revision entries: 41
+- Net sum of count changes across these entries: 103
+- Legacy pre-Oct. 29 entries: 34 entries, 95 net count changes
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths
 - Oct. 31 Sloviansk: 1 entry, 1 death
 - Nov. 3 Dnipro second death: 1 entry, 1 death
 - Nov. 11 Saltivsky first death: 1 entry, 1 death
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 38 remaining pre-Oct. 29 entries carry 104 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
+The 34 remaining pre-Oct. 29 entries carry 95 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
 
 ## Stage 76 adjudication
 
@@ -22,6 +22,10 @@ The Oct. 11 snapshot explicitly supports the final counts for seven selected inc
 ## Stage 77 adjudication
 
 The Oct. 14 Kyiv overnight-attack record now reflects the successive official tolls of three, four and five. Its three revisions have `ledger_effective_at: 2026-10-14`, supported by the Oct. 14 dashboard sequence and method text. The initial three-death revision was previously in the null inventory and is now removed; the two later revisions were created with confirmed effective dates. See `STAGE-77-CHECKPOINT.md`.
+
+## Stage 78 adjudication
+
+The Oct. 14–15 method-page sequence explicitly establishes inclusion of the Lutsk revisions and the Kirovohrad incident: Lutsk's three- and four-death revisions entered the selected subtotal on Oct. 14 (85→89 adds four); the later four-to-six revision entered on Oct. 15 (90→92 adds two); and the Kirovohrad three-death incident entered on Oct. 15 (92→95 adds three). These four revisions now have `ledger_effective_at` dates of Oct. 14 or Oct. 15. See `STAGE-78-CHECKPOINT.md`.
 
 ## Adjudication rules
 
@@ -54,10 +58,6 @@ The Oct. 14 Kyiv overnight-attack record now reflects the successive official to
 | 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-002` | 1 → 2 | +1 | Legacy 148 membership unresolved |
 | 2026-10-13 | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC` | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-13 | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC` | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-002` | 1 → 2 | +1 | Legacy 148 membership unresolved |
-| 2026-10-14 | `UA-KIR-KROPYVNYTSKYI-2026-10-14-DRONE-ATTACK` | `UA-KIR-KROPYVNYTSKYI-2026-10-14-DRONE-ATTACK-REV-001` | — → 3 | +3 | Legacy 148 membership unresolved |
-| 2026-10-14 | `UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE` | `UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-001` | — → 3 | +3 | Legacy 148 membership unresolved |
-| 2026-10-14 | `UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE` | `UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-002` | 3 → 4 | +1 | Legacy 148 membership unresolved |
-| 2026-10-14 | `UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE` | `UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-003` | 4 → 6 | +2 | Legacy 148 membership unresolved |
 | 2026-10-16 | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE` | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE-REV-002` | 3 → 2 | -1 | Legacy 148 membership unresolved |
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002` | 1 → 6 | +5 | Legacy 148 membership unresolved |

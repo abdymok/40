@@ -1425,6 +1425,19 @@
           "corroboration"
         ],
         "notes": "Later official update confirms two killed, a 71-year-old woman and a 58-year-old man."
+      },
+      {
+        "source_id": "KHARKIV-16-IFAX-2026-10-16",
+        "publisher": "Interfax-Ukraine, citing Kharkiv Regional Military Administration head Oleh Syniehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-16T11:09:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1221246.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Updated information reported two people, not three, killed in Shevchenkivsky district; Syniehubov said a man initially reported dead had been resuscitated."
       }
     ],
     "last_verified_date": "2026-11-26",
@@ -1434,20 +1447,21 @@
         "recorded_at": "2026-10-16T06:49:00+02:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "An early report relayed the regional governor's preliminary count of three deaths.",
+        "reason": "An early report relayed the regional governor's preliminary count of three deaths. The Oct. 16 dashboard update explicitly raised the selected-incident subtotal from approximately 95 to approximately 98 and named three deaths in Kharkiv. First documented inclusion date: 2026-10-16.",
         "source_ids": [
           "KHARKIV-16-REUTERS-2026-10-16"
         ],
-        "ledger_effective_at": "2026-10-22"
+        "ledger_effective_at": "2026-10-16"
       },
       {
         "revision_id": "UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE-REV-002",
         "recorded_at": "2026-10-16T13:12:00+02:00",
         "old_value": 3,
         "new_value": 2,
-        "reason": "The regional administration later confirmed two deaths, identifying the victims. The earlier figure of three was superseded. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The regional administration later confirmed two deaths, identifying a 71-year-old woman and a 58-year-old man; Interfax-Ukraine and Ukrinform reported the revised official count. The Oct. 16 dashboard snapshot continued to show approximately 98 and still identified three deaths in Kharkiv. No archived subtotal update deducts the one-death correction, so this -1 revision remains null rather than being assigned an unsupported effective date.",
         "source_ids": [
-          "KHARKIV-16-UKRINFORM-2026-10-16"
+          "KHARKIV-16-UKRINFORM-2026-10-16",
+          "KHARKIV-16-IFAX-2026-10-16"
         ],
         "ledger_effective_at": null
       }

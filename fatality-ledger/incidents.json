@@ -843,7 +843,7 @@
         "recorded_at": "2026-10-11T15:23:00+02:00",
         "old_value": 20,
         "new_value": 23,
-        "reason": "The Oct. 11 ≈80 snapshot explicitly records 20 deaths in the Oct. 10 Zaporizhia residential strike, and REV-001 is dated Oct. 11. The later 23-death toll was reported at 15:23 Kyiv time on Oct. 11. A subsequent 17:01 Kyiv-time page update still displayed ≈80 and did not state that the additional three deaths had entered the subtotal. The archived 80→92 increments do not name this revision, and the 148→173 breakdown does not itemize it. The 148 baseline is a carried-forward aggregate, so later inclusion cannot be confirmed or ruled out. Keep ledger_effective_at null.",
+        "reason": "Stage 103 final legacy-baseline review: the Oct.  11 ≈80 snapshot explicitly includes the first 20 deaths. The revised 23-death toll was reported at 15:23 Kyiv time; the 17:01 page still displayed ≈80. Neither the 80→92 sequence nor the 148→173 breakdown identifies the additional three. No later dated dashboard item establishes their inclusion, while the 148 baseline remains a carried-forward aggregate without complete incident membership. Keep ledger_effective_at null; do not add +3 to the public subtotal.",
         "source_ids": [
           "ZAP-10-UP-2026-10-11"
         ],
@@ -886,7 +886,7 @@
         "recorded_at": "2026-10-12",
         "old_value": null,
         "new_value": 1,
-        "reason": "Donetsk Regional Military Administration reported one woman killed in Sloviansk on Oct. 11, in a report published Oct. 12. This is distinct from the Oct. 17 nine-death Sloviansk airstrike, the Oct. 30 attacks and the Nov. 2 Sloviansk death. The Oct. 11 ≈80 baseline predates the report, and the 80→92 increments do not name this incident. Later method snapshots are carried-forward aggregates without complete incident membership; no explicit later increment establishes its inclusion. Keep ledger_effective_at null.",
+        "reason": "Stage 103 final legacy-baseline review: the death was reported on Oct. 12, after the Oct. 11 ≈80 snapshot. The 80→92 increments do not identify this incident, and the later 123 and 148 figures are carried-forward aggregates without complete incident membership. No dated update establishes inclusion or exclusion. Keep ledger_effective_at null; do not infer an effective date from incident or report date.",
         "source_ids": [
           "SLOVIANSK-11-FILASHKIN-2026-10-12-18660"
         ],
@@ -941,7 +941,7 @@
         "recorded_at": "2026-10-13T08:30:00+03:00",
         "old_value": null,
         "new_value": 4,
-        "reason": "Interfax-Ukraine and Suspilne reported four deaths after the fourth body was recovered on Oct. 13. The archived 80→82 dashboard increments are explicitly attributed to two deaths in the separate Kyiv ballistic strike; 82→85 adds three deaths in the Oct. 13–14 Kyiv overnight attack. No Kharkiv increment appears in that sequence. The historical 148→173 breakdown also does not itemize this Oct. 12 Kharkiv incident, although 148 is a carried-forward aggregate rather than a complete incident list. Its presence in the 148 baseline, or any later subtotal, cannot be confirmed or ruled out. Keep ledger_effective_at null; treat the four deaths as a potential inclusion gap, not a confirmed omission.",
+        "reason": "Stage 103 final legacy-baseline review: four deaths were confirmed on Oct. 13. The 80→82 increment is explicitly the separate Kyiv ballistic strike, and 82→85 is the Oct. 13–14 Kyiv overnight attack; neither includes Kharkiv. The 148→173 breakdown also does not itemize this incident. Because 148 is a carried-forward aggregate rather than a complete membership list, absence from those named increments does not prove exclusion from 148 or the later 421. Keep ledger_effective_at null; classify as a potential four-death inclusion gap, not a confirmed omission.",
         "source_ids": [
           "KHARKIV-12-IFAX-2026-10-13",
           "KHARKIV-12-SUSPILNE-2026-10-13"
@@ -997,7 +997,7 @@
         "recorded_at": "2026-10-12T20:27:00+03:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial city update reported one death. The Oct. 12 attack killed two people in Darnytsky district, with the second death confirmed by the Kyiv City Prosecutor's Office. The archived 80→82 increments are explicitly attributed to the separate Oct. 13 Kyiv ballistic strike; 82→85 and 89→90 concern the distinct Oct. 13–14 Kyiv overnight attack, while 85→89 and 90→92 are Lutsk additions. The 148→173 breakdown does not itemize this Oct. 12 Darnytsky incident, although 148 is a carried-forward aggregate rather than a complete incident list. Inclusion in 148 or a later subtotal cannot be confirmed or ruled out. Keep both revisions' ledger_effective_at fields null.",
+        "reason": "Stage 103 final legacy-baseline review: this initial one-death report and the later second-death confirmation form one two-death incident. Neither revision is named in the 80→92 increments or the 148→173 breakdown. Those are partial change lists and the 148 figure is a carried-forward aggregate, not a complete incident roster. Inclusion of either death in 148 or the later 421 cannot be confirmed or ruled out. Keep ledger_effective_at null for both revisions; do not count the two revision steps as separate incidents.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
         ],
@@ -1008,7 +1008,7 @@
         "recorded_at": "2026-10-12T21:19:00+03:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "Kyiv City Prosecutor's Office later confirmed a second death. The Oct. 12 attack killed two people in Darnytsky district, with the second death confirmed by the Kyiv City Prosecutor's Office. The archived 80→82 increments are explicitly attributed to the separate Oct. 13 Kyiv ballistic strike; 82→85 and 89→90 concern the distinct Oct. 13–14 Kyiv overnight attack, while 85→89 and 90→92 are Lutsk additions. The 148→173 breakdown does not itemize this Oct. 12 Darnytsky incident, although 148 is a carried-forward aggregate rather than a complete incident list. Inclusion in 148 or a later subtotal cannot be confirmed or ruled out. Keep both revisions' ledger_effective_at fields null.",
+        "reason": "Stage 103 final legacy-baseline review: this second-death confirmation completes the same two-death Darnytsky incident. Neither revision is named in the 80→92 increments or the 148→173 breakdown. Those are partial change lists and the 148 figure is a carried-forward aggregate, not a complete incident roster. Inclusion of either death in 148 or the later 421 cannot be confirmed or ruled out. Keep ledger_effective_at null for both revisions; do not count the two revision steps as separate incidents.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
         ],
@@ -1628,7 +1628,7 @@
         "recorded_at": "2026-10-17T06:26:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Official city and regional reporting confirmed the ambulance driver killed by the second strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Stage 103 final legacy-baseline review: official city and regional reporting confirmed one ambulance driver killed in the Oct. 17 double-tap strike. The Oct. 21 ≈116 snapshot explicitly identifies nine Sloviansk deaths and two Korotych deaths, not this Kherson incident; later Oct. 25–28 increments are itemized and do not name it. The 148 baseline is nevertheless a carried-forward aggregate, so absence from the listed increments does not prove exclusion. Keep ledger_effective_at null; inclusion in 148 or 421 remains unverified.",
         "source_ids": [
           "KHERSON-17-UP-2026-10-17",
           "KHERSON-17-UKRINFORM-2026-10-17",
@@ -2413,7 +2413,7 @@
         "recorded_at": "2026-10-23T09:58:00+02:00",
         "old_value": 2,
         "new_value": 3,
-        "reason": "A third woman injured in the market strike died in hospital. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Stage 103 final legacy-baseline review: the Oct. 26 132→137 update explicitly includes the market's first two deaths. The third woman died in hospital and was reported on Oct. 23, but that +5 update does not include her, and no later mapped Oct. 26–28 increment identifies the third death. The carried-forward 148 baseline does not provide complete incident membership. Keep ledger_effective_at null; do not add this death to the public subtotal without a dated inclusion source.",
         "source_ids": [
           "LOZOVA-IFAX-2026-10-23",
           "LOZOVA-EVIDENCEHUB-2026-10-22"
@@ -2957,7 +2957,7 @@
         "recorded_at": "2026-10-24",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Stage 103 final legacy-baseline review: the Oct. 24 warehouse death is separate from the Oct. 22 central-market incident. The Oct. 25 123→132 update itemizes nine deaths from Synelnykove, Kharkiv and four other regional incidents on Oct. 23; it does not name the Oct. 24 warehouse strike. The Oct. 26–28 mapped increments do not identify it either. The 148 baseline remains a carried-forward aggregate, so exclusion cannot be proven. Keep ledger_effective_at null; inclusion in 148 or 421 remains unverified.",
         "source_ids": [
           "LOZOVA-WAREHOUSE-IFAX-2026-10-24",
           "LOZOVA-WAREHOUSE-UKRINFORM-2026-10-24"

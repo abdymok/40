@@ -7399,5 +7399,535 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE",
+    "incident_date": "2026-10-19",
+    "location": {
+      "settlement": "Nova Vodolaha",
+      "district": null,
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck the central park in Nova Vodolaha at about 16:30 while families with children were present, killing six people: three women, a man and two girls aged 14 months and 11 years. The mother of the 14-month-old girl died in hospital. The initial report listed three deaths; later updates raised the toll to six.",
+    "documented_deaths": 6,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NOVA-VODOLAHA-UP-2026-10-19",
+        "publisher": "Ukrainska Pravda, citing Interior Minister Ivan Vyhivskyi, the regional prosecutor and Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-19T20:33:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/19/8058772/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "count_revision"
+        ],
+        "notes": "Reports the attack, initial three deaths and final update to six."
+      },
+      {
+        "source_id": "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
+        "publisher": "Ukrinform, citing Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-19T18:36:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4176027-udar-po-parku-na-harkivsini-kilkist-zagiblih-zrosla-do-sesti-troe-z-nih-diti.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "At 18:36 reports the toll rose to six, including three children."
+      },
+      {
+        "source_id": "NOVA-VODOLAHA-RBC-2026-10-19",
+        "publisher": "RBC-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-10-19T18:30:00+02:00",
+        "url": "https://newsukraine.rbc.ua/news/russian-drone-strike-on-kharkiv-region-park-1792423658.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the initial three deaths and the park strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-001",
+        "recorded_at": "2026-10-19",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial reports confirmed two women and an infant killed at the scene.",
+        "source_ids": [
+          "NOVA-VODOLAHA-RBC-2026-10-19",
+          "NOVA-VODOLAHA-UP-2026-10-19"
+        ]
+      },
+      {
+        "revision_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002",
+        "recorded_at": "2026-10-19T18:36:00+02:00",
+        "old_value": 3,
+        "new_value": 6,
+        "reason": "The regional administration confirmed the toll had risen to six, including three children. The mother of the infant died in hospital.",
+        "source_ids": [
+          "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
+          "NOVA-VODOLAHA-UP-2026-10-19"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET",
+    "incident_date": "2026-10-22",
+    "location": {
+      "settlement": "Lozova",
+      "district": null,
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike hit the crowded central market in Lozova at lunchtime, killing two women at the scene. A third woman later died in hospital on Oct. 23, raising the final locally reported toll to three. A later OHCHR October report listed four deaths; no fourth victim has been identified in the Ukrainian regional or local reporting reviewed.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "LOZOVA-UKRINFORM-2026-10-22",
+        "publisher": "Ukrinform, citing Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.ukrinform.net/rubric-ato/4177082-russian-forces-strike-market-in-lozova-casualties-reported.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial update reported two people killed."
+      },
+      {
+        "source_id": "LOZOVA-IFAX-2026-10-23",
+        "publisher": "Interfax-Ukraine, citing Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-23T09:58:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1225020-amp.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports a third woman died in hospital, bringing the final local toll to three."
+      },
+      {
+        "source_id": "LOZOVA-UP-2026-10-22",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/22/8059213/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two women killed at the scene and later updates the injury toll."
+      },
+      {
+        "source_id": "LOZOVA-EVIDENCEHUB-2026-10-22",
+        "publisher": "Ukraine Evidence Hub",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://ukraine-evidence.org/case-files/cf-24",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Case file records three women killed, two at the scene and one in hospital."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-001",
+        "recorded_at": "2026-10-22T12:33:00+02:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial regional administration report confirmed two people killed at the market.",
+        "source_ids": [
+          "LOZOVA-UKRINFORM-2026-10-22",
+          "LOZOVA-UP-2026-10-22"
+        ]
+      },
+      {
+        "revision_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002",
+        "recorded_at": "2026-10-23T09:58:00+02:00",
+        "old_value": 2,
+        "new_value": 3,
+        "reason": "A third woman injured in the market strike died in hospital.",
+        "source_ids": [
+          "LOZOVA-IFAX-2026-10-23",
+          "LOZOVA-EVIDENCEHUB-2026-10-22"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION",
+    "incident_date": "2026-10-29",
+    "location": {
+      "settlement": "Izium",
+      "district": null,
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian guided aerial bombs struck a building housing the Izium branch of the Kharkiv Center for Disease Control and Prevention, killing five female employees and injuring 14 people.",
+    "documented_deaths": 5,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "IZIUM-IFAX-2026-10-30",
+        "publisher": "Interfax-Ukraine, citing Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-30T20:16:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1229008.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports five employees killed in the Oct. 29 guided-bomb strike."
+      },
+      {
+        "source_id": "IZIUM-UKRINFORM-2026-10-30",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-10-30T20:30:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-regions/4179271-russian-airstrike-on-izium-kills-five-employees-of-public-health-center.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports five women killed and 14 injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-001",
+        "recorded_at": "2026-10-30T20:16:00+02:00",
+        "old_value": null,
+        "new_value": 5,
+        "reason": "The regional administration confirmed five employees of the public health institution were killed in the Oct. 29 strike.",
+        "source_ids": [
+          "IZIUM-IFAX-2026-10-30",
+          "IZIUM-UKRINFORM-2026-10-30"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP",
+    "incident_date": "2026-10-17",
+    "location": {
+      "settlement": "Kherson",
+      "district": "Korabelnyi district",
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian aircraft carried out two strikes on the same location in Korabelnyi district within an hour. The second strike killed a 64-year-old emergency medical services driver while he was responding to the first strike. Official Ukrainian reporting confirms one death; OHCHR's October report lists two men killed in Kherson on this date, and the second death remains unallocated pending source verification.",
+    "documented_deaths": 1,
+    "scope_classification": "non_combatant_emergency_personnel",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHERSON-17-UP-2026-10-17",
+        "publisher": "Ukrainska Pravda, citing Kherson City Military Administration head Yaroslav Shanko",
+        "source_type": "news_report",
+        "published_at": "2026-10-17T06:28:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/17/8058453/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 64-year-old ambulance driver killed in the second strike."
+      },
+      {
+        "source_id": "KHERSON-17-UKRINFORM-2026-10-17",
+        "publisher": "Ukrinform, citing Yaroslav Shanko",
+        "source_type": "news_report",
+        "published_at": "2026-10-17T07:08:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4175320-family-with-infant-injured-in-morning-airstrike-in-kherson-another-person-killed.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms one person killed in the morning airstrike."
+      },
+      {
+        "source_id": "KHERSON-17-IFAX-2026-10-17",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-10-17T06:26:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1221781.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one ambulance driver killed in the double-tap airstrike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP-REV-001",
+        "recorded_at": "2026-10-17T06:26:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Official city and regional reporting confirmed the ambulance driver killed by the second strike.",
+        "source_ids": [
+          "KHERSON-17-UP-2026-10-17",
+          "KHERSON-17-UKRINFORM-2026-10-17",
+          "KHERSON-17-IFAX-2026-10-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES",
+    "incident_date": "2026-10-17",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FAB-250 airstrikes destroyed two five-storey residential buildings in Sloviansk on Oct. 17. After five days of rescue work, the local city administration confirmed nine deaths and 12 injured. Seven bodies were recovered from the rubble, including a State Emergency Service employee; the local administration's final toll was nine. OHCHR's October report lists 12 civilian deaths in Sloviansk on this date, a three-death discrepancy that remains open.",
+    "documented_deaths": 9,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-17-UP-2026-10-17",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/17/8058460/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial report said one person killed and 10 injured; rescue operations continued."
+      },
+      {
+        "source_id": "SLOVIANSK-17-UP-2026-10-18",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/18/8058595/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports the toll rose to six on Oct. 18."
+      },
+      {
+        "source_id": "SLOVIANSK-17-IFAX-2026-10-21",
+        "publisher": "Interfax-Ukraine, citing Sloviansk City Military Administration head Vadym Liakh",
+        "source_type": "news_report",
+        "published_at": "2026-10-21T11:54:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1223742-amp.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports the final local toll of nine after rescue operations concluded."
+      },
+      {
+        "source_id": "SLOVIANSK-17-UKRINFORM-2026-10-21",
+        "publisher": "Ukrinform, citing the State Emergency Service",
+        "source_type": "news_report",
+        "published_at": "2026-10-21T12:39:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4176644-seven-killed-in-sloviansk-as-rescue-workers-spend-five-days-clearing-rubble.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports seven bodies recovered from rubble and the local administration's nine-death final toll."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-001",
+        "recorded_at": "2026-10-17T12:27:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial city administration report confirmed one person killed and 10 injured.",
+        "source_ids": [
+          "SLOVIANSK-17-UP-2026-10-17"
+        ]
+      },
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002",
+        "recorded_at": "2026-10-18T12:34:00+02:00",
+        "old_value": 1,
+        "new_value": 6,
+        "reason": "As rescue work continued, the local city administration raised the toll to six.",
+        "source_ids": [
+          "SLOVIANSK-17-UP-2026-10-18"
+        ]
+      },
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-003",
+        "recorded_at": "2026-10-21T11:54:00+02:00",
+        "old_value": 6,
+        "new_value": 9,
+        "reason": "After five days of rescue work, Sloviansk City Military Administration head Vadym Liakh confirmed nine deaths. OHCHR's October report lists 12; the additional three are not added without an identifiable local incident/source.",
+        "source_ids": [
+          "SLOVIANSK-17-IFAX-2026-10-21",
+          "SLOVIANSK-17-UKRINFORM-2026-10-21"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS",
+    "incident_date": "2026-10-10",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian guided aerial bombs struck residential areas of Zaporizhia on Oct. 10. The initial rescue-operation update reported 20 deaths; later President Volodymyr Zelenskyy and the regional State Emergency Service confirmed a final toll of 23, including four children.",
+    "documented_deaths": 23,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-10-DSNS-2026-10-11",
+        "publisher": "State Emergency Service of Ukraine, Zaporizhia region",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dsns_telegram",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial rescue-operation update on Oct. 11 reported 20 deaths, including four children."
+      },
+      {
+        "source_id": "ZAP-10-UP-2026-10-11",
+        "publisher": "Ukrainska Pravda, citing the State Emergency Service and President Volodymyr Zelenskyy",
+        "source_type": "news_report",
+        "published_at": "2026-10-11T15:23:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/11/8057459/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports the final death toll rose from 20 to 23 after the regional DSNS spokesperson confirmed the updated figure."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS-REV-001",
+        "recorded_at": "2026-10-11",
+        "old_value": null,
+        "new_value": 20,
+        "reason": "Initial rescue-operation report counted 20 deaths.",
+        "source_ids": [
+          "ZAP-10-DSNS-2026-10-11"
+        ]
+      },
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS-REV-002",
+        "recorded_at": "2026-10-11T15:23:00+02:00",
+        "old_value": 20,
+        "new_value": 23,
+        "reason": "President Zelenskyy reported 23 deaths; the regional DSNS spokesperson confirmed the final toll was 23.",
+        "source_ids": [
+          "ZAP-10-UP-2026-10-11"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE",
+    "incident_date": "2026-10-08",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": "Bilenke and Kramatorsk city",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian UMPB D-30 SN guided bomb struck a street as two passenger buses were carrying civilians in Kramatorsk, killing 33 people and injuring 18. The local State Emergency Service and regional prosecutor reported the final toll of 33. OHCHR's October report separately states that 11 civilian deaths were verified and 19 additional reported deaths remained under verification; that verification difference is retained as a source note and does not automatically replace the official local toll.",
+    "documented_deaths": 33,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-BUS-UKRINFORM-2026-10-08",
+        "publisher": "Ukrinform, citing Donetsk Regional Prosecutor's Office and State Emergency Service",
+        "source_type": "news_report",
+        "published_at": "2026-10-08T14:14:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4172298-death-toll-from-russian-strike-on-two-buses-in-kramatorsk-rises-to-33-18-injured.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the final toll of 33 killed and 18 injured; initial reports included 12 killed, then 30, then 33."
+      },
+      {
+        "source_id": "KRAMATORSK-BUS-OHCHR-2026-10",
+        "publisher": "UN Human Rights Monitoring Mission in Ukraine",
+        "source_type": "international_monitoring_report",
+        "published_at": null,
+        "url": "https://ukraine.un.org/sites/default/files/2026-11/Ukraine%20-%20protection%20of%20civilians%20in%20armed%20conflict%20%28October%29_ENG_0.pdf",
+        "supports": [
+          "evidence_classification",
+          "verification_status"
+        ],
+        "notes": "October report says at least 11 civilian deaths were verified and 19 additional reported deaths were still under verification. This is a verification-status note, not an automatic replacement of the local final toll."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-001",
+        "recorded_at": "2026-10-08T10:00:00+02:00",
+        "old_value": null,
+        "new_value": 12,
+        "reason": "Initial report at the scene confirmed 12 deaths.",
+        "source_ids": [
+          "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
+        ]
+      },
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-002",
+        "recorded_at": "2026-10-08T12:36:00+02:00",
+        "old_value": 12,
+        "new_value": 30,
+        "reason": "Donetsk Regional Prosecutor's Office update raised the death toll to 30.",
+        "source_ids": [
+          "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
+        ]
+      },
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-003",
+        "recorded_at": "2026-10-08T14:14:00+02:00",
+        "old_value": 30,
+        "new_value": 33,
+        "reason": "State Emergency Service reported the final local toll of 33 deaths.",
+        "source_ids": [
+          "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
+        ]
+      }
+    ]
   }
 ]

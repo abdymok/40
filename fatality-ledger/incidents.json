@@ -9456,5 +9456,309 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-DON-YASNOHIRKA-2026-11-04-GUIDED-BOMBS",
+    "incident_date": "2026-11-04",
+    "location": {
+      "settlement": "Yasnohirka",
+      "district": "Kramatorsk community",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian forces dropped two KAB-250 guided bombs on Yasnohirka on Nov. 4, killing two residents and injuring one. These deaths are separate from the woman killed in a separate Yasnohirka attack on Nov. 3.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "YASNOHIRKA-04-DONETSK-POLICE-2026-11-05",
+        "publisher": "Donetsk Regional Police",
+        "source_type": "official_statement",
+        "published_at": "2026-11-05T09:55:00+02:00",
+        "url": "https://dn.npu.gov.ua/news/chotyry-liudyny-zahynuly-piatero-zaznaly-poranen-naslidky-masovanykh-obstriliv-donechchyny",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two people killed in Yasnohirka by two KAB-250 bombs; separate from the Nov. 3 death."
+      },
+      {
+        "source_id": "YASNOHIRKA-04-UKRINFORM-2026-11-05",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-05T09:30:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4181599-rosiani-minuloi-dobi-vbili-cotiroh-ziteliv-doneccini.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two deaths in Yasnohirka and two in Serhiivka on Nov. 4."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-YASNOHIRKA-2026-11-04-GUIDED-BOMBS-REV-001",
+        "recorded_at": "2026-11-04",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "YASNOHIRKA-04-DONETSK-POLICE-2026-11-05",
+          "YASNOHIRKA-04-UKRINFORM-2026-11-05"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SERHIIVKA-2026-11-04-AIRSTRIKE",
+    "incident_date": "2026-11-04",
+    "location": {
+      "settlement": "Serhiivka",
+      "district": "Kramatorsk district",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian airstrike on Serhiivka on Nov. 4 killed two civilians and injured others. These deaths are separate from the two people killed in Yasnohirka on the same date.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SERHIIVKA-04-DONETSK-POLICE-2026-11-05",
+        "publisher": "Donetsk Regional Police",
+        "source_type": "official_statement",
+        "published_at": "2026-11-05T09:55:00+02:00",
+        "url": "https://dn.npu.gov.ua/news/chotyry-liudyny-zahynuly-piatero-zaznaly-poranen-naslidky-masovanykh-obstriliv-donechchyny",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two people killed in an airstrike on Serhiivka."
+      },
+      {
+        "source_id": "SERHIIVKA-04-UKRINFORM-2026-11-05",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-05T09:30:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4181599-rosiani-minuloi-dobi-vbili-cotiroh-ziteliv-doneccini.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two deaths in Serhiivka on Nov. 4."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SERHIIVKA-2026-11-04-AIRSTRIKE-REV-001",
+        "recorded_at": "2026-11-04",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SERHIIVKA-04-DONETSK-POLICE-2026-11-05",
+          "SERHIIVKA-04-UKRINFORM-2026-11-05"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-SUM-PUTYVL-2026-11-04-DRONE-STRIKE",
+    "incident_date": "2026-11-04",
+    "location": {
+      "settlement": "Putyvl",
+      "district": "Putyvl community",
+      "region": "Sumy region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike drone hit a private house in the Putyvl community on the evening of Nov. 4, killing a 69-year-old woman and injuring her husband. The house was destroyed and caught fire; rescuers freed the injured man from the rubble.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "PUTYVL-UP-2026-11-04",
+        "publisher": "Ukrainska Pravda, citing the State Emergency Service",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/rus/news/2026/11/04/8061316/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports a 69-year-old woman killed in the drone strike on a private house."
+      },
+      {
+        "source_id": "PUTYVL-UNN-2026-11-04",
+        "publisher": "UNN",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://unn.ua/en/news/russian-drone-attacks-house-in-sumy-region-woman-killed-her-husband-injured",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the woman killed and her husband injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-SUM-PUTYVL-2026-11-04-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-11-04",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "PUTYVL-UP-2026-11-04",
+          "PUTYVL-UNN-2026-11-04"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-ANTONIVKA-2026-11-04-DRONE-ATTACK",
+    "incident_date": "2026-11-04",
+    "location": {
+      "settlement": "Antonivka",
+      "district": null,
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack killed a man in Antonivka at about 16:00 on Nov. 4, according to Kherson City Military Administration head Yaroslav Shanko. The man's identity was being established.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ANTONIVKA-UKRINFORM-2026-11-04",
+        "publisher": "Ukrinform, citing Kherson City Military Administration head Yaroslav Shanko",
+        "source_type": "news_report",
+        "published_at": "2026-11-04T20:31:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4181527-vorozij-dron-vdariv-po-antonivci-na-hersonsini-zaginuv-colovik.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one man killed in Antonivka at about 16:00."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-ANTONIVKA-2026-11-04-DRONE-ATTACK-REV-001",
+        "recorded_at": "2026-11-04",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ANTONIVKA-UKRINFORM-2026-11-04"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-11-05-FPV-CIVILIAN-CAR",
+    "incident_date": "2026-11-05",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drone attacked a civilian car in Kramatorsk at about 11:45 on Nov. 5, killing a man. The attack damaged the car and a residential apartment building.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-05-SUSPILNE-2026-11-05",
+        "publisher": "Suspilne Donbas, citing Donetsk Regional Prosecutor's Office spokeswoman Anastasiia Medvedieva",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://suspilne.media/donbas/1445899-rosijski-vijska-atakuvali-avtivku-u-kramatorsku-5-listopada-zaginula-ludina/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one man killed in the Nov. 5 FPV attack on a civilian car."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-11-05-FPV-CIVILIAN-CAR-REV-001",
+        "recorded_at": "2026-11-05",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-05-SUSPILNE-2026-11-05"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-RIV-SARNY-DISTRICT-2026-11-06-DRONE-ATTACK",
+    "incident_date": "2026-11-06",
+    "location": {
+      "settlement": null,
+      "district": "Sarny district",
+      "region": "Rivne region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack on a village in Sarny district on the morning of Nov. 6 killed a man and damaged a house and a lorry.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SARNY-06-IFAX-2026-11-06",
+        "publisher": "Interfax-Ukraine, citing Rivne Regional Military Administration head Oleksandr Koval",
+        "source_type": "news_report",
+        "published_at": "2026-11-06T08:58:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1232132.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports a man killed in a Russian attack on a village in Sarny district."
+      },
+      {
+        "source_id": "SARNY-06-UKRINFORM-2026-11-06",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-06T09:11:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4181989-na-rivnensini-cerez-rankovu-ataku-rf-zaginuv-colovik-e-poskodzenna.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one man killed in the morning attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-RIV-SARNY-DISTRICT-2026-11-06-DRONE-ATTACK-REV-001",
+        "recorded_at": "2026-11-06",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SARNY-06-IFAX-2026-11-06",
+          "SARNY-06-UKRINFORM-2026-11-06"
+        ]
+      }
+    ]
   }
 ]

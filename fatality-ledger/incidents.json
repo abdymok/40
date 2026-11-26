@@ -7283,7 +7283,7 @@
         "recorded_at": "2026-10-29T12:02:00+03:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial official update reported two fatalities. Later official and media reporting identified the victims as two 15-year-old girls. The date on which this incident entered the project's running subtotal remains unverified.",
+        "reason": "The historical dashboard's Oct. 29 update raised the nationwide minimum from approximately 161 to 163 after the city administration reported two people killed in central Chernihiv.",
         "source_ids": [
           "CHERNIHIV-CMA-BRYZHINSKY-2026-10-29-4420",
           "CHERNIHIV-CHAUS-UKRINFORM-2026-10-29",
@@ -7291,7 +7291,7 @@
           "CHERNIHIV-INTERFAX-2026-10-29",
           "CHERNIHIV-LB-2026-10-29"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-29"
       }
     ]
   },
@@ -7363,17 +7363,37 @@
     "revision_history": [
       {
         "revision_id": "UA-DNE-DNIPRO-2026-10-29-RAILWAY-STATION-STRIKE-REV-001",
-        "recorded_at": "2026-10-29",
+        "recorded_at": "2026-10-29T11:29:00+03:00",
         "old_value": null,
-        "new_value": 15,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "new_value": 13,
+        "reason": "Initial Dnipropetrovsk Regional Military Administration update reported 13 people killed at Dnipro railway station.",
         "source_ids": [
           "DNIPRO-STATION-HANZHA-2026-10-29-32901",
-          "DNIPRO-STATION-REUTERS-2026-10-29",
-          "DNIPRO-STATION-IFAX-2026-10-29",
+          "DNIPRO-STATION-REUTERS-2026-10-29"
+        ],
+        "ledger_effective_at": "2026-10-29"
+      },
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-10-29-RAILWAY-STATION-STRIKE-REV-002",
+        "recorded_at": "2026-10-29",
+        "old_value": 13,
+        "new_value": 14,
+        "reason": "The toll rose to 14 on Oct. 29. This increment is reflected in the historical 148-to-167 transition.",
+        "source_ids": [
+          "DNIPRO-STATION-IFAX-2026-10-29"
+        ],
+        "ledger_effective_at": "2026-10-29"
+      },
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-10-29-RAILWAY-STATION-STRIKE-REV-003",
+        "recorded_at": "2026-10-30",
+        "old_value": 14,
+        "new_value": 15,
+        "reason": "A 40-year-old man wounded in the station attack died in hospital on Oct. 30. The historical dashboard's 167-to-173 transition includes this delayed death.",
+        "source_ids": [
           "DNIPRO-STATION-DAY-OF-MOURNING-2026-10-30"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-30"
       }
     ]
   },
@@ -7424,7 +7444,7 @@
         "recorded_at": "2026-10-31T11:27:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Ukrainska Pravda reported one 59-year-old woman killed in a separate attack on Izium on Oct. 29.",
+        "reason": "Ukrainska Pravda first identified this separate death on Oct. 31. It is not listed in the historical 173 snapshot's four-death Izium airstrike increment; its inclusion in any later public subtotal remains unverified.",
         "source_ids": [
           "IZIUM-UP-2026-10-31-INITIAL",
           "KHARKIV-REGION-SYNEHUBOV-2026-10-29"
@@ -7491,11 +7511,11 @@
         "recorded_at": "2026-10-30",
         "old_value": null,
         "new_value": 4,
-        "reason": "The project dashboard recorded four people killed in the Oct. 29 airstrike on Izium as of Oct. 30.",
+        "reason": "The historical dashboard's Oct. 30 update included four deaths in the Oct. 29 Izium airstrike, raising the nationwide minimum from approximately 169 to 173.",
         "source_ids": [
           "IZIUM-PROJECT-CHRONOLOGY-2026-10-30-4"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-30"
       },
       {
         "revision_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002",
@@ -7642,13 +7662,23 @@
         "revision_id": "UA-POL-KREMENCHUK-2026-10-29-APARTMENT-BUILDING-REV-001",
         "recorded_at": "2026-10-29",
         "old_value": null,
-        "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "new_value": 2,
+        "reason": "The initial Poltava Regional Military Administration update reported two people killed in the apartment-building strike.",
         "source_ids": [
-          "KREMENCHUK-OVA-2026-10-29-35193",
+          "KREMENCHUK-OVA-2026-10-29-35193"
+        ],
+        "ledger_effective_at": "2026-10-29"
+      },
+      {
+        "revision_id": "UA-POL-KREMENCHUK-2026-10-29-APARTMENT-BUILDING-REV-002",
+        "recorded_at": "2026-10-29T20:00:00+02:00",
+        "old_value": 2,
+        "new_value": 3,
+        "reason": "Suspilne Poltava reported that the toll had risen to three. The final three-death figure is included in the historical 148-to-167 transition.",
+        "source_ids": [
           "KREMENCHUK-SUSPILNE-2026-10-29"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-29"
       }
     ]
   },

@@ -78,6 +78,10 @@ The Oct. 12 Darnytsky residential-building strike killed two people. Neither dea
 
 The Oct. 11 ≈80 snapshot explicitly records 20 deaths in the Oct. 10 Zaporizhia strike. The final 23-death toll was reported at 15:23 Kyiv time on Oct. 11. A subsequent 17:01 Kyiv-time page update still displayed ≈80 and did not say that the additional three deaths had entered the subtotal. The archived 80→92 increments and the 148→173 breakdown do not itemize the +3 revision. Later inclusion in the 148 carried-forward aggregate cannot be confirmed or ruled out. REV-002 remains null. See `STAGE-92-CHECKPOINT.md`.
 
+## Stage 93 adjudication
+
+The Oct. 9 Synelnykove-district death is not itemized in the Oct. 11 ≈80 snapshot. Its one Dnipropetrovsk-region row is matched in Stage 62 to the separate Pokrovske child death. The Oct. 25 123→132 update's four Synelnykove deaths concern a distinct Oct. 24 attack. The Oct. 22 ≈123 baseline does not enumerate every incident, so the Oct. 9 death's inclusion in 123 or 148 cannot be established. REV-001 remains null. See `STAGE-93-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -100,7 +104,7 @@ The Oct. 11 ≈80 snapshot explicitly records 20 deaths in the Oct. 10 Zaporizhi
 | 2026-10-08 | `UA-IFR-IVANO-FRANKIVSK-2026-10-08-DRONE-DEBRIS` | `UA-IFR-IVANO-FRANKIVSK-2026-10-08-DRONE-DEBRIS-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-08 | `UA-KYI-KYIV-2026-10-08-MORNING-ATTACK-UNALLOCATED` | `UA-KYI-KYIV-2026-10-08-MORNING-ATTACK-UNALLOCATED-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-08 | `UA-KYI-KYIV-SOLOMIANSKY-2026-10-08-SHOP-STRIKE` | `UA-KYI-KYIV-SOLOMIANSKY-2026-10-08-SHOP-STRIKE-REV-002` | 2 → 3 | +1 | Legacy 148 membership unresolved |
-| 2026-10-09 | `UA-DNE-SYNELNYKOVE-DISTRICT-2026-10-09-ATTACKS` | `UA-DNE-SYNELNYKOVE-DISTRICT-2026-10-09-ATTACKS-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
+| 2026-10-09 | `UA-DNE-SYNELNYKOVE-DISTRICT-2026-10-09-ATTACKS` | `UA-DNE-SYNELNYKOVE-DISTRICT-2026-10-09-ATTACKS-REV-001` | — → 1 | +1 | Not in visible ≈80 rows; 123/148 inclusion unverified |
 | 2026-10-09 | `UA-ZAP-ZAPORIZHIA-2026-10-09-GUIDED-BOMB-STRIKE` | `UA-ZAP-ZAPORIZHIA-2026-10-09-GUIDED-BOMB-STRIKE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-10 | `UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS` | `UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS-REV-002` | 20 → 23 | +3 | 20 in Oct. 11 baseline; later +3 inclusion unverified |
 | 2026-10-11 | `UA-DON-SLOVIANSK-2026-10-11-ATTACK` | `UA-DON-SLOVIANSK-2026-10-11-ATTACK-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |

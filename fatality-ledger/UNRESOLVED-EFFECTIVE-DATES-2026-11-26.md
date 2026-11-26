@@ -105,6 +105,12 @@ The Oct. 25 death of DTEK driver Vitaliy Shcherbyna is a distinct incident: DTEK
 
 The Oct. 22 ≈123 baseline predates Shcherbyna's death. The mapped Oct. 25–28 increments identify other incidents and do not include him. A separate incident record has therefore been added to `incidents.json` with one documented death, regional-level location and two sources. Its `ledger_effective_at` remains null because the death is not evidenced in the historical 148 baseline or published 421 minimum. The incident ledger now contains 176 records, 430 source records and 452 final documented deaths; 34 revision entries remain null. The public subtotal remains 421. See `STAGE-99-CHECKPOINT.md` and `UNRESOLVED-DTEK-SHCHERBYNA-OCT25.md`.
 
+## Stage 100 adjudication
+
+Stage 100 classified 12 of the 27 pre-Oct. 29 null revisions without assigning invented effective dates. Nine are interim or superseded tolls for Pryluky, the Kramatorsk two-bus strike, Sloviansk (Oct. 17) and Nova Vodolaha; their final tolls are represented by separately dated revisions and the interim values are not independent death batches. Two deaths (Uman and DTEK driver Vitaliy Shcherbyna) are not evidenced in the Oct. 28 148 baseline; Uman's later inclusion in 421 remains unproven, while Shcherbyna is not evidenced in the mapped public sequence. One Kharkiv market correction (3→2) was not subtracted from the public count: the Oct. 16 dashboard added three and the subsequent public sequence contains no -1 correction. These 12 entries carry a net arithmetic change of +63, but this is not an amount to add to the public subtotal.
+
+The remaining 15 pre-Oct. 29 null revisions carry a net +20 and still require incident-level membership checks against the Oct. 22–28 snapshots and updates. See `STAGE-100-CHECKPOINT.md`. The total pre-Oct. 29 null inventory remains 27 entries / +83; the overall null count remains 34 / +91.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.

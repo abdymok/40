@@ -843,7 +843,7 @@
         "recorded_at": "2026-10-11T15:23:00+02:00",
         "old_value": 20,
         "new_value": 23,
-        "reason": "President Zelenskyy reported 23 deaths; the regional DSNS spokesperson confirmed the final toll was 23. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Oct. 11 ≈80 snapshot explicitly records 20 deaths in the Oct. 10 Zaporizhia residential strike, and REV-001 is dated Oct. 11. The later 23-death toll was reported at 15:23 Kyiv time on Oct. 11. A subsequent 17:01 Kyiv-time page update still displayed ≈80 and did not state that the additional three deaths had entered the subtotal. The archived 80→92 increments do not name this revision, and the 148→173 breakdown does not itemize it. The 148 baseline is a carried-forward aggregate, so later inclusion cannot be confirmed or ruled out. Keep ledger_effective_at null.",
         "source_ids": [
           "ZAP-10-UP-2026-10-11"
         ],

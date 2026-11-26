@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 53, updated Nov. 26, 2026  
+**Working status:** Stage 72, updated Nov. 26, 2026  
 **Current ledger sum:** 449  
 **Published method-page minimum:** 421  
 **Raw difference:** +28 in the pilot incident dataset
@@ -518,3 +518,12 @@ Commit: `45e4f4121a8ac2702c240e17eb3038a14132cbf7`
 The Oct. 11 ≈80 figure was a deliberate scope-and-method reset, not a downward correction establishing that approximately 20 people had not died. The Oct. 10 dashboard used a broad `~100` killed / approximately 600 injured order-of-magnitude estimate and expressly said it was not a reconciled incident-by-incident sum. An Oct. 11 interim method described 90+ as an editorial estimate, explicitly distinguishing it from the approximately 80 deaths then identified in selected chronology incidents; the extra margin was judgement about incomplete reporting, not ten separately verified deaths. The Oct. 11 casualty/site-count review replaced that broad estimate with a provisional incident-level subtotal of approximately 80 killed and at least 100 injured. The final ≈80 snapshot defines it as a selected-incident subtotal, not a comprehensive national count.
 
 That ≈80 baseline explicitly names six Kyiv deaths: Darnytsky 2, Desniansky 2 and Solomiansky shop 2, while warning that broader citywide totals may overlap and are not added separately. The third Solomiansky shop victim's later hospital death must not be projected backwards. Stage 70 reconstructs the subsequent ≈80→≈90 sequence from this baseline. No ledger records, effective dates, chronology entries or public counters changed; public method-page minimum remains 421.
+
+
+## Stage 72 — dashboard introduction and first casualty-method reset
+
+Checkpoint: `fatality-ledger/STAGE-72-CHECKPOINT.md`
+
+The infrastructure dashboard was first published on Oct. 10, 2026, at 16:05 Kyiv time in commit `27776283f345cdeb7d6803af49b8267fa022c68b`. Its five measures included a broad working estimate of approximately 100 civilians killed and approximately 600 injured. The initial method did not present this as a reconciled incident-by-incident sum. On Oct. 11, the methodology review distinguished a provisional 90+ editorial estimate from approximately 80 deaths identified in selected chronology incidents; the additional margin was judgement about incomplete reporting, not ten individually verified deaths. The subsequent casualty/site-count review replaced the broad estimate with an approximately-80 selected-incident subtotal and at least 100 injured. This was a scope-and-method correction, not proof that approximately 20 deaths were disproven or removed.
+
+Stage 72 also corrects the Stage 59 summary: the Oct. 14 89→90 increment is the fifth death in the Oct. 14 Kyiv attack, revising the method paragraph's prior four-death toll to at least five. The ≈85 snapshot had incorporated the first three deaths; the ≈89 snapshot had the method paragraph already listing four Kyiv deaths plus four in Lutsk; the next update raised the Kyiv toll to five and the dashboard to 90. No incident records, effective dates, chronology entries, public dashboard figures or public minimum changed. The public method-page minimum remains 421.

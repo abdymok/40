@@ -2,35 +2,16 @@
 
 Date: 26 November 2026
 
-## New finding
+## Correction from Stage 57
 
-The Oct. 21 dashboard transition from 105 to 107 is attributable to the two deaths in Kyiv's Sviatoshynsky district, based on the commit titled “Update civilian death count after Kyiv drone attack report” and the contemporaneous chronology.
+The direct HTML snapshot comparison has refined the finding. At the Oct. 21 09:16 snapshot, commit `679cd4c4e1541842a3794c72b7d583e5deea1f1a`, both the dashboard and the method paragraph say approximately 105, and the method paragraph explicitly includes the two Sviatoshynsky deaths.
 
-However, the method paragraph fetched at that same 107 snapshot still says “approximately 105” while already naming the two Sviatoshynsky deaths. The commit that changes the dashboard from 105 to 107 modifies only the dashboard value and does not update the method paragraph.
+The later `3c205e7cb516ca3a9843c1234b23ff05408bf6dc` commit changes the dashboard alone from approximately 105 to approximately 107. It leaves the method paragraph at 105 and leaves its Sviatoshynsky attribution untouched. Thus the prior Stage 56 statement that the 107-snapshot method paragraph could not prove baseline membership was incomplete: the 105 snapshot itself proves those deaths were already included before the +2 dashboard-only change.
 
-This is a clear contemporaneous dashboard/method inconsistency. The method paragraph is stale at that snapshot and cannot independently prove whether the two deaths were already included in the 105 baseline. The +2 attribution is supported by the commit and chronology, but the exact membership of the 105 baseline remains unproven.
+The likely interpretation is that the intermediate 105→107 step duplicated the two Sviatoshynsky deaths. The following 107→116 step is +9 even though the updated method paragraph adds nine Sloviansk deaths and two Korotych deaths (+11). The two anomalies offset, making the overall 105→116 endpoint increase +11, equal to the Sloviansk and Korotych deaths together.
 
-## 107 → 116 remains unresolved
+## What remains unresolved
 
-The Oct. 21 update history says the subtotal rose from 107 to 116 after the Sloviansk toll reached nine and says the two Korotych deaths were included. The arithmetic increase is +9. The later method paragraph lists nine Sloviansk deaths and two Korotych deaths, but that list does not establish how many Sloviansk deaths were already included in 107.
+The evidence strongly suggests an erroneous intermediate dashboard transition rather than an incorrect 116 endpoint. It does not yet establish why the +9 step was recorded as nine rather than eleven, or whether the original update arithmetic was deliberately netted against the prior duplicate. Do not change the public 421 or ledger effective dates on this basis alone.
 
-The current Sloviansk incident record has a revision history of 1→6→9. That revision chain is not enough to infer the public baseline's membership. Do not assume +7 Sloviansk plus +2 Korotych without a dated historical snapshot proving the earlier Sloviansk allocation.
-
-## Historical evidence checked
-
-- Commit `3c205e7cb516ca3a9843c1234b23ff05408bf6dc`: dashboard changes from approximately 105 to approximately 107; the diff contains no method-paragraph change.
-- Commit `46a3feb1b3430a7e58185dbca864de617f72aa28`: dashboard changes from approximately 107 to approximately 116; update history explicitly names Sloviansk and Korotych but does not provide an arithmetic split.
-- The HTML fetched at commit `3c205e7cb516ca3a9843c1234b23ff05408bf6dc` displays approximately 107 in the dashboard while its method paragraph says approximately 105 and names the Sviatoshynsky deaths.
-- The HTML fetched at commit `46a3feb1b3430a7e58185dbca864de617f72aa28` displays approximately 116 and lists nine Sloviansk deaths and two Korotych deaths.
-
-## Data handling
-
-No `ledger_effective_at` fields changed. No incident final counts changed. Chabany remains excluded from the current ledger. The public 421 subtotal remains untouched.
-
-## Next work
-
-1. Continue reconstructing the pre-Oct. 21 subtotal and its exact incident membership from earlier dashboard commits.
-2. Establish whether the two Sviatoshynsky deaths were genuinely new to the 105→107 transition or whether the earlier method paragraph was prematurely updated.
-3. Find an earlier Sloviansk toll snapshot and determine how much, if any, was included in 107.
-4. Only then allocate the 107→116 increment between Sloviansk and Korotych, if the evidence supports it.
-5. Keep the 121→123 +2 unidentified unless an archived source provides an incident allocation.
+See `STAGE-57-CHECKPOINT.md` for the complete snapshot comparison.

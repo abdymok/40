@@ -217,11 +217,11 @@
         "recorded_at": "2026-10-08T07:40:00+03:00",
         "old_value": 20,
         "new_value": 22,
-        "reason": "The State Emergency Service confirmed the final toll of 22 deaths, including five children. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
         "source_ids": [
           "PRYLUKY-UP-2026-10-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       }
     ]
   },
@@ -272,12 +272,12 @@
         "recorded_at": "2026-10-07",
         "old_value": null,
         "new_value": 2,
-        "reason": "Official city and independent reports confirmed two deaths in Darnytsky district. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
         "source_ids": [
           "DARNYTSKY-07-UP-2026-10-07",
           "DARNYTSKY-07-UKRINFORM-2026-10-07"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       }
     ]
   },
@@ -328,12 +328,12 @@
         "recorded_at": "2026-10-07",
         "old_value": null,
         "new_value": 2,
-        "reason": "State Emergency Service confirmed two deaths in the residential-building strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
         "source_ids": [
           "DESNIANSKY-DSNS-2026-10-07-76916",
           "DESNIANSKY-DSNS-2026-10-07-76920"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       }
     ]
   },
@@ -406,11 +406,11 @@
         "recorded_at": "2026-10-08T14:14:00+02:00",
         "old_value": 30,
         "new_value": 33,
-        "reason": "State Emergency Service reported the final local toll of 33 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       }
     ]
   },
@@ -597,12 +597,12 @@
         "recorded_at": "2026-10-08T12:08:00+03:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial recovery update found two bodies at the shop building. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
         "source_ids": [
           "SOLOMIANSKY-SHOP-UP-2026-10-08",
           "SOLOMIANSKY-SHOP-IFAX-2026-10-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       },
       {
         "revision_id": "UA-KYI-KYIV-SOLOMIANSKY-2026-10-08-SHOP-STRIKE-REV-002",
@@ -776,12 +776,12 @@
         "recorded_at": "2026-10-10",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
         "source_ids": [
           "NIKOPOL-BOY-UP-2026-10-10",
           "NIKOPOL-BOY-UKRINFORM-2026-10-10"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       }
     ]
   },
@@ -832,11 +832,11 @@
         "recorded_at": "2026-10-11",
         "old_value": null,
         "new_value": 20,
-        "reason": "Initial rescue-operation report counted 20 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
         "source_ids": [
           "ZAP-10-DSNS-2026-10-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       },
       {
         "revision_id": "UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS-REV-002",

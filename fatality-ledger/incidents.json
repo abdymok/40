@@ -967,12 +967,12 @@
         "recorded_at": "2026-11-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-22.",
         "source_ids": [
           "DNIPRO-22-UKRINFORM-2026-11-22",
           "DNIPRO-22-UP-2026-11-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       }
     ]
   },
@@ -1079,12 +1079,12 @@
         "recorded_at": "2026-11-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-22.",
         "source_ids": [
           "BILA-22-UKRINFORM-2026-11-22",
           "BILA-22-TKACHENKO-2026-11-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       }
     ]
   },
@@ -1273,103 +1273,103 @@
         "recorded_at": "2026-11-22T14:52:00+02:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Two bodies had been recovered and confirmed by DSNS. This establishes the initial documented count used in the project subtotal.",
+        "reason": "Two bodies had been recovered and confirmed by DSNS. These initial two deaths were already included in the 379 subtotal before the later Nov. 22 increments.",
         "source_ids": [
           "DYMER-DSNS-2026-11-22-81212"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       },
       {
         "revision_id": "DYMER-REV-002",
         "recorded_at": "2026-11-22T19:56:00+02:00",
         "old_value": 2,
         "new_value": 5,
-        "reason": "Three further bodies were recovered during the search operation.",
+        "reason": "Three further bodies were recovered during the search operation. This raises the Dymer toll from two to five and adds three deaths to the Nov. 22 running subtotal.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-22-3129"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       },
       {
         "revision_id": "DYMER-REV-003",
         "recorded_at": "2026-11-22T21:53:00+02:00",
         "old_value": 5,
         "new_value": 6,
-        "reason": "A sixth body was recovered.",
+        "reason": "A sixth body was recovered on Nov. 22, adding one death to the running subtotal.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-22-3129"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       },
       {
         "revision_id": "DYMER-REV-004",
         "recorded_at": "2026-11-22T22:52:00+02:00",
         "old_value": 6,
         "new_value": 7,
-        "reason": "A seventh body was recovered.",
+        "reason": "A seventh body was recovered on Nov. 22, bringing the incident toll to seven and adding the fifth death after the two already counted in the 379 baseline.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-22-3138"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       },
       {
         "revision_id": "DYMER-REV-005",
         "recorded_at": "2026-11-23T00:15:00+02:00",
         "old_value": 7,
         "new_value": 8,
-        "reason": "An eighth body was recovered.",
+        "reason": "An eighth body was recovered at 02:15 on Nov. 23, adding one death to the running subtotal.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3139"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       },
       {
         "revision_id": "DYMER-REV-006",
         "recorded_at": "2026-11-23T00:38:00+02:00",
         "old_value": 8,
         "new_value": 9,
-        "reason": "A ninth body was recovered.",
+        "reason": "A ninth body was recovered at 02:38 on Nov. 23, adding one death to the running subtotal.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3140"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       },
       {
         "revision_id": "DYMER-REV-007",
         "recorded_at": "2026-11-23T05:51:00+02:00",
         "old_value": 9,
         "new_value": 10,
-        "reason": "A tenth body was recovered.",
+        "reason": "A tenth body was recovered at 05:51 on Nov. 23, adding one death to the running subtotal.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3142"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       },
       {
         "revision_id": "DYMER-REV-008",
         "recorded_at": "2026-11-23T07:23:00+02:00",
         "old_value": 10,
         "new_value": 11,
-        "reason": "An eleventh body was recovered. The rescue operation subsequently concluded with 11 deaths.",
+        "reason": "An eleventh body was recovered at 07:23 on Nov. 23, adding one death to the running subtotal.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-23-3143",
           "DYMER-UP-2026-11-23"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-23"
       },
       {
         "revision_id": "DYMER-REV-009",
         "recorded_at": "2026-11-24T08:23:00+02:00",
         "old_value": 11,
         "new_value": 12,
-        "reason": "The 79-year-old woman rescued alive and hospitalized on Nov. 23 died in hospital. This is a new death in the same incident, not a revision to the number of bodies recovered during the rescue operation.",
+        "reason": "The 79-year-old woman rescued alive and hospitalized on Nov. 23 died on Nov. 24. This later hospital death is separate from the 11 bodies recovered during rescue operations.",
         "source_ids": [
           "DYMER-TKACHENKO-2026-11-24-3145",
           "DYMER-HROMADSKE-2026-11-23-24",
           "DYMER-UP-2026-11-24",
           "DYMER-INTERFAX-2026-11-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-24"
       }
     ]
   },
@@ -1421,12 +1421,12 @@
         "recorded_at": "2026-11-22",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-22.",
         "source_ids": [
           "VYSHNEVE-UP-2026-11-22",
           "VYSHNEVE-TKACHENKO-2026-11-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       }
     ]
   },
@@ -1478,12 +1478,12 @@
         "recorded_at": "2026-11-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-22.",
         "source_ids": [
           "MAZIVKA-UP-2026-11-22",
           "MAZIVKA-EVIDENCEHUB-2026-11-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       }
     ]
   },
@@ -1535,12 +1535,12 @@
         "recorded_at": "2026-11-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-22.",
         "source_ids": [
           "ZAP-ENTERPRISE-NPU-2026-11-23",
           "ZAP-ENTERPRISE-UKRINFORM-2026-11-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       }
     ]
   },
@@ -1646,13 +1646,13 @@
         "recorded_at": "2026-11-20",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-21.",
         "source_ids": [
           "KRYVYI-RIH-IFAX-2026-11-20",
           "KRYVYI-RIH-UKRINFORM-2026-11-20",
           "KRYVYI-RIH-ODA-2026-11-21-33506"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-21"
       }
     ]
   },
@@ -1703,12 +1703,12 @@
         "recorded_at": "2026-11-20",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-22.",
         "source_ids": [
           "NIKOPOL-20-UP-2026-11-20",
           "NIKOPOL-20-LB-2026-11-20"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       }
     ]
   },
@@ -1904,12 +1904,12 @@
         "recorded_at": "2026-11-20",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-22.",
         "source_ids": [
           "ZAP-20-21-UP-2026-11-21",
           "ZAP-20-21-LB-2026-11-21"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-22"
       }
     ]
   },

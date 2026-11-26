@@ -8657,6 +8657,102 @@
     ]
   },
   {
+    "incident_id": "UA-KHA-KOROTYCH-2026-10-21-MASS-DRONE-STRIKE",
+    "incident_date": "2026-10-21",
+    "location": {
+      "settlement": "Korotych",
+      "district": "Kharkiv district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A mass Russian drone attack on Korotych overnight on Oct. 21 killed an 81-year-old woman and an 83-year-old man. The attack damaged at least 21 private houses, a vehicle and power lines. Eleven people suffered acute stress reactions, including a two-month-old boy and an eight-year-old girl; injuries and stress reactions are excluded from the death count.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "KOROTYCH-KHOVA-2026-10-21",
+        "publisher": "Kharkiv Regional Military Administration head Oleh Syniehubov",
+        "source_type": "official_statement",
+        "published_at": "2026-10-21T06:00:00+03:00",
+        "url": "https://t.me/synegubov/11715",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Regional administration reported that Russian drones attacked Korotych overnight, killing an 81-year-old woman and an 83-year-old man."
+      },
+      {
+        "source_id": "KOROTYCH-POLICE-2026-10-21",
+        "publisher": "Kharkiv Regional Police",
+        "source_type": "official_statement",
+        "published_at": "2026-10-21T10:08:00+03:00",
+        "url": "https://npu.gov.ua/news/dvoie-liudei-zahynuly-shche-24-postrazhdaly-sered-yakykh-dity-politseiski-zadokumentuvaly-naslidky-voiennykh-zlochyniv-voroha-na-kharkivshchyni",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Police report confirms two deaths in the mass drone attack on Korotych and identifies the victims as an 81-year-old woman and an 83-year-old man."
+      },
+      {
+        "source_id": "KOROTYCH-INTERFAX-2026-10-21",
+        "publisher": "Interfax-Ukraine, citing Kharkiv Regional Military Administration head Oleh Syniehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-21T07:21:00+03:00",
+        "url": "https://interfax.com.ua/news/general/1223556-amp.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two people killed in the overnight drone attack on Korotych, citing the regional administration."
+      },
+      {
+        "source_id": "KOROTYCH-UKRINFORM-2026-10-21",
+        "publisher": "Ukrinform, citing Kharkiv Regional Military Administration head Oleh Syniehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-21T06:23:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4176518-russian-drones-attack-settlement-in-kharkiv-region-killing-two.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the deaths of an 81-year-old woman and an 83-year-old man in Korotych."
+      },
+      {
+        "source_id": "KOROTYCH-SUSPILNE-2026-10-21",
+        "publisher": "Suspilne Kharkiv, citing Kharkiv Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-10-21T06:30:00+03:00",
+        "url": "https://suspilne.media/kharkiv/1432687-korotic-unoci-buv-pid-masovanim-udarom-zaginuli-dvoe-ludej-ponad-10-postrazdali/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two deaths and identifies the victims' ages as 81 and 83."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KOROTYCH-2026-10-21-MASS-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-10-21T06:23:00+03:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial official casualty reporting confirmed two people killed in the overnight drone attack on Korotych.",
+        "source_ids": [
+          "KOROTYCH-KHOVA-2026-10-21",
+          "KOROTYCH-POLICE-2026-10-21",
+          "KOROTYCH-INTERFAX-2026-10-21",
+          "KOROTYCH-UKRINFORM-2026-10-21",
+          "KOROTYCH-SUSPILNE-2026-10-21"
+        ],
+        "ledger_effective_at": null
+      }
+    ]
+  },
+  {
     "incident_id": "UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC",
     "incident_date": "2026-10-21",
     "location": {

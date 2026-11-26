@@ -167,3 +167,8 @@ The remaining 15 pre-Oct. 29 null revisions carry a net +20 and still require in
 ## Next audit
 
 Reconstruct the legacy 148 membership from the archived chronology and change log, beginning with the 123 baseline and the Oct. 25–28 increments. Resolve the Oct. 31 Sloviansk inclusion separately. Do not change public totals until the incident-level membership and overlap questions are closed.
+
+
+## Stage 102 adjudication
+
+Stage 102 reviewed six pre-Oct. 29 revisions: the Oct. 5 Kramatorsk death, Oct. 8 Ivano-Frankivsk drone-debris death, unallocated Oct. 8 Kyiv morning death, third death in the Oct. 8 Solomiansky shop strike, Oct. 9 Synelnykove-district death and Oct. 9 Zaporizhia guided-bomb death. None receives a new effective date. The Oct. 11 ≈80 snapshot explicitly includes only the first two Solomiansky shop deaths; the third death's later inclusion remains unverified. The Oct. 11 broad Kyiv citywide row may overlap incident-level reports and is not treated as an independent additional death. The Dnipropetrovsk row is matched to the separate Pokrovske child death, not Oct. 9 Synelnykove. The Oct. 9 Zaporizhia death is distinct from the Oct. 10 strike whose 20 deaths are in the snapshot. The other cases are not individually itemized, and later carried-forward aggregates do not establish membership. Six incident-revision reasons were clarified; counts and null effective dates remain unchanged. See `STAGE-102-CHECKPOINT.md`.

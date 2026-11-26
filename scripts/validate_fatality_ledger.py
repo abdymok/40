@@ -23,6 +23,7 @@ ALLOWED_SOURCE_TYPES = {
 ALLOWED_SUPPORTS = {
     "incident_identity", "death_count", "count_revision",
     "incident_date", "victim_status", "corroboration",
+    "evidence_classification", "verification_status",
 }
 
 def fail(message):

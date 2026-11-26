@@ -26,7 +26,7 @@ The current ledger groups by incident date as follows:
 - Oct. 29: 27, versus the historical 25 (+2).
 - Post-192 additions: 231, versus the method's 226 (+5).
 
-Arithmetic: 162 + 27 + 231 = 420? No. The post-192 figure is calculated after allocating the 19 deaths already included in the 192 opening subtotal (18 Komyshuvakha and one Nov. 2 Izium death) from the 250 deaths attached to Oct. 30 onward. The 162 through Oct. 28 and 27 on Oct. 29 sum to 189; adding the 19 opening-subtotal deaths gives 208; adding 231 post-baseline deaths gives the current 439. The historical equivalent is 148 + 25 + 19 + 226 = 418. Difference: +14 +2 +5 = +21.
+Arithmetic: 162 through Oct. 28 + 27 on Oct. 29 + 250 attached to Oct. 30 onward = 439. The post-192 figure is calculated after allocating the 19 deaths already included in the 192 opening subtotal (18 Komyshuvakha and one Nov. 2 Izium death) from the 250 deaths attached to Oct. 30 onward. Thus 162 + 27 + 19 opening-subtotal deaths + 231 post-baseline deaths = 439. The historical equivalent is 148 + 25 + 19 + 226 = 418. Difference: +14 +2 +5 = +21.
 
 This is a final-inventory arithmetic comparison, not proof that every record in the first two incident-date groups had already entered the public subtotal on those dates. Historical inclusion timestamps remain to be assigned from commit and source chronology.
 

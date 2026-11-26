@@ -4,7 +4,7 @@ Date: 26 November 2026
 
 ## Direct snapshot comparison
 
-The Oct. 21 09:16 snapshot is commit `679cd4c4e1541842a3794c72b7d583e5deea1f1a`. Fetching the HTML at that exact commit gives:
+The Oct. 21 commit `84c0c691e7114fc1295fa2b33933a4ef9b330aa` explicitly changes the dashboard from 103 to 105 while adding the two Sviatoshynsky deaths to the chronology and method paragraph. The subsequent 09:16 snapshot, commit `679cd4c4e1541842a3794c72b7d583e5deea1f1a`, retains 105. Fetching the HTML at that exact 09:16 snapshot gives:
 
 - Dashboard subtotal: approximately 105.
 - Method paragraph: approximately 105.
@@ -51,7 +51,7 @@ This is a strong reconciliation hypothesis supported by the exact archived snaps
 
 Commit `43be9fb8bd3ebdab20092917f13d1a50fd1fe028` changes the selected-incident dashboard from approximately 100 to 103 after adding three Kramatorskteploenergo worker deaths. Its method paragraph identifies the three workers, the Holosiivsky death, the Oct. 19 Kyiv death, three Kharkiv deaths, at least five earlier Kyiv deaths, six Lutsk deaths and three Kirovohrad deaths. Three Chabany deaths are separately attributed and explicitly excluded.
 
-The later Oct. 21 09:16 snapshot is 105 and explicitly adds the two Sviatoshynsky deaths to the method paragraph. The exact intermediate commit that first set 105 is not yet identified, but the 09:16 snapshot confirms the inclusion by that point.
+The 103→105 commit itself explicitly adds the two Sviatoshynsky deaths and raises the subtotal to 105. The 09:16 snapshot retains that count.
 
 ## Data handling
 

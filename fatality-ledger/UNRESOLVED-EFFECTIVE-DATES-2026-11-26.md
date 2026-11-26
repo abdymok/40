@@ -1,19 +1,19 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 79. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 80. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
-- Null revision entries: 41
-- Net sum of count changes across these entries: 103
-- Legacy pre-Oct. 29 entries: 34 entries, 95 net count changes
+- Null revision entries: 39
+- Net sum of count changes across these entries: 101
+- Legacy pre-Oct. 29 entries: 32 entries, 93 net count changes
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths
 - Oct. 31 Sloviansk: 1 entry, 1 death
 - Nov. 3 Dnipro second death: 1 entry, 1 death
 - Nov. 11 Saltivsky first death: 1 entry, 1 death
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 34 remaining pre-Oct. 29 entries carry 95 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
+The 32 remaining pre-Oct. 29 entries carry 93 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
 
 ## Stage 76 adjudication
 
@@ -30,6 +30,10 @@ The Oct. 14–15 method-page sequence explicitly establishes inclusion of the Lu
 ## Stage 79 adjudication
 
 For the Oct. 16 Kharkiv market incident, REV-001 (—→3) is now dated Oct. 16 because the archived dashboard update explicitly raised the selected subtotal 95→98 and named three deaths in Kharkiv. REV-002 (3→2) remains null: the regional administration later confirmed two, but the Oct. 16 dashboard snapshot continued to show ≈98 and the historical public sequence contains no documented -1 subtraction. The ledger keeps the final incident toll at two. See `STAGE-79-CHECKPOINT.md`.
+
+## Stage 80 adjudication
+
+The two revisions to the Oct. 13 Kyiv ballistic residential-building strike are now dated Oct. 14. The archived dashboard commits explicitly move the selected subtotal 80→81 for the first reported death and 81→82 for the second body recovered. The commits are timestamped just after midnight Kyiv time on Oct. 14, although GitHub records them on Oct. 13 UTC. See `STAGE-80-CHECKPOINT.md`.
 
 ## Adjudication rules
 
@@ -60,8 +64,6 @@ For the Oct. 16 Kharkiv market incident, REV-001 (—→3) is now dated Oct. 16 
 | 2026-10-12 | `UA-KHA-KHARKIV-2026-10-12-KHOLODNOGIRSKY-RESIDENTIAL-STRIKE` | `UA-KHA-KHARKIV-2026-10-12-KHOLODNOGIRSKY-RESIDENTIAL-STRIKE-REV-001` | — → 4 | +4 | Legacy 148 membership unresolved |
 | 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-002` | 1 → 2 | +1 | Legacy 148 membership unresolved |
-| 2026-10-13 | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC` | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
-| 2026-10-13 | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC` | `UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-002` | 1 → 2 | +1 | Legacy 148 membership unresolved |
 | 2026-10-16 | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE` | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE-REV-002` | 3 → 2 | -1 | Legacy 148 membership unresolved |
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002` | 1 → 6 | +5 | Legacy 148 membership unresolved |

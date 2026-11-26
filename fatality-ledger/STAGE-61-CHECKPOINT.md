@@ -22,13 +22,13 @@ The method paragraph says it counts each incident once, excludes broader citywid
 | Pryluky residential strike, Oct. 7 | 22 |
 | **Gross row sum** | **83** |
 
-The gross sum is not a defensible incident total because the method explicitly says the citywide Kyiv figure may overlap with the district/incident-level entries and must not be added separately. Removing the one citywide row would yield 82 from these rows, but the page still displays approximately 80 and does not provide a complete item-by-item membership ledger. Do not silently convert the approximate 80 into 82 or treat the row sum as proof of a counter error.
+The gross 83 includes the separate Kyiv citywide report of one death. The method paragraph explicitly says broader citywide totals may overlap with incident-level reports and are not added separately. Excluding that citywide line leaves seven selected incident/region rows summing to 82: Pryluky 22 + Kramatorsk 33 + Zaporizhia 20 + Pokrovske/Dnipropetrovsk region 1 + Darnytsky 2 + Desniansky 2 + Solomiansky shop 2. This is a coherent arithmetic reconstruction of the displayed rounded ≈80, not grounds to replace the original approximate label with an exact public figure. See Stage 73 for the record-by-record comparison and the Solomiansky discrepancy.
 
 ## Comparison with the current ledger
 
 The current ledger has 14 incident records dated on or before Oct. 11, with a raw final documented-death sum of 93. This is not a like-for-like comparison with the historical approximate 80 because:
-- the current ledger uses later final tolls, including the Zaporizhia revision from 20 to 23 and Solomiansky shop revision from two to three;
-- it contains incidents that are not individually itemized in the Oct. 11 method note, including later-added records and delayed deaths;
+- the seven selected records now total 86, after Zaporizhia rose from 20 to 23 and Solomiansky shop from two to three;
+- the ledger contains seven other records not individually itemized in the Oct. 11 selected subtotal;
 - the historical page warns against adding overlapping citywide and incident-level reports;
 - the 80 baseline is an approximate selected-report subtotal, not a complete national or incident census.
 

@@ -997,7 +997,7 @@
         "recorded_at": "2026-10-12T20:27:00+03:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial city update reported one death. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Initial city update reported one death. The Oct. 12 attack killed two people in Darnytsky district, with the second death confirmed by the Kyiv City Prosecutor's Office. The archived 80→82 increments are explicitly attributed to the separate Oct. 13 Kyiv ballistic strike; 82→85 and 89→90 concern the distinct Oct. 13–14 Kyiv overnight attack, while 85→89 and 90→92 are Lutsk additions. The 148→173 breakdown does not itemize this Oct. 12 Darnytsky incident, although 148 is a carried-forward aggregate rather than a complete incident list. Inclusion in 148 or a later subtotal cannot be confirmed or ruled out. Keep both revisions' ledger_effective_at fields null.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
         ],
@@ -1008,7 +1008,7 @@
         "recorded_at": "2026-10-12T21:19:00+03:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "Kyiv City Prosecutor's Office later confirmed two deaths, including a second person in a car near the building. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Kyiv City Prosecutor's Office later confirmed a second death. The Oct. 12 attack killed two people in Darnytsky district, with the second death confirmed by the Kyiv City Prosecutor's Office. The archived 80→82 increments are explicitly attributed to the separate Oct. 13 Kyiv ballistic strike; 82→85 and 89→90 concern the distinct Oct. 13–14 Kyiv overnight attack, while 85→89 and 90→92 are Lutsk additions. The 148→173 breakdown does not itemize this Oct. 12 Darnytsky incident, although 148 is a carried-forward aggregate rather than a complete incident list. Inclusion in 148 or a later subtotal cannot be confirmed or ruled out. Keep both revisions' ledger_effective_at fields null.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
         ],

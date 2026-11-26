@@ -1560,12 +1560,12 @@
         "recorded_at": "2026-10-21T11:54:00+02:00",
         "old_value": 6,
         "new_value": 9,
-        "reason": "After five days of rescue work, Sloviansk City Military Administration head Vadym Liakh confirmed nine deaths. OHCHR's October report lists 12; the additional three are not added without an identifiable local incident/source. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "After five days of rescue work, Sloviansk City Military Administration head Vadym Liakh confirmed nine deaths. The Oct. 21 dashboard update 107→116 explicitly added the nine-death Sloviansk toll; the Oct. 22 method snapshot names all nine. First documented inclusion date: 2026-10-21. OHCHR's higher figure of 12 remains a separate unresolved source discrepancy.",
         "source_ids": [
           "SLOVIANSK-17-IFAX-2026-10-21",
           "SLOVIANSK-17-UKRINFORM-2026-10-21"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-21"
       }
     ]
   },
@@ -2164,14 +2164,14 @@
         "recorded_at": "2026-10-21T06:23:00+03:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial official casualty reporting confirmed two people killed in the overnight drone attack on Korotych.",
+        "reason": "Kharkiv Regional Military Administration reported two people killed in Korotych on Oct. 21. The Oct. 21 dashboard update to approximately 116 and the corresponding method paragraph include the two Korotych deaths alongside the nine Sloviansk deaths. First documented inclusion date: 2026-10-21.",
         "source_ids": [
           "KOROTYCH-POLICE-2026-10-21",
           "KOROTYCH-INTERFAX-2026-10-21",
           "KOROTYCH-UKRINFORM-2026-10-21",
           "KOROTYCH-SUSPILNE-2026-10-21"
         ],
-        "ledger_effective_at": "2026-10-22"
+        "ledger_effective_at": "2026-10-21"
       }
     ]
   },

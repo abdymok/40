@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 91, updated Nov. 26, 2026  
+**Working status:** Stage 92, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -664,3 +664,10 @@ The Oct. 12 Kharkiv residential-building strike killed four people; the fourth b
 Checkpoint: `fatality-ledger/STAGE-91-CHECKPOINT.md`
 
 The Oct. 12 Darnytsky residential-building strike killed two people. Neither death is named in the 80→92 dashboard increments: those changes concern the Oct. 13 ballistic strike, the separate Oct. 13–14 Kyiv overnight attack and Lutsk. The 148→173 breakdown also does not itemize this incident, but the 148 baseline is not a complete incident list. Both revisions remain null; this is a potential two-death inclusion gap, not a confirmed omission. No incident count, effective date or public total changed.
+
+
+## Stage 92 — Oct. 10 Zaporizhia 20→23 revision
+
+Checkpoint: `fatality-ledger/STAGE-92-CHECKPOINT.md`
+
+The Oct. 11 ≈80 snapshot explicitly records 20 deaths in the Oct. 10 Zaporizhia strike. The final 23-death toll was reported at 15:23 Kyiv time on Oct. 11. A subsequent 17:01 Kyiv-time page update still displayed ≈80 and did not say that the additional three deaths had entered the subtotal. The archived 80→92 increments and the 148→173 breakdown do not itemize the +3 revision. Later inclusion in the 148 carried-forward aggregate cannot be confirmed or ruled out. REV-002 remains null. No incident count, effective date or public total changed.

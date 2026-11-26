@@ -1278,5 +1278,373 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-ZAP-KOMYSHUVAKHA-2026-11-02-HUMANITARIAN-HUB",
+    "incident_date": "2026-11-02",
+    "location": {
+      "settlement": "Komyshuvakha",
+      "district": "Zaporizhia district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian guided aerial bombs struck a former school in Komyshuvakha used as a humanitarian aid distribution point and shelter. A second strike hit the shelter after emergency services arrived. The final confirmed toll after a two-week search-and-rescue operation was 72 deaths. The victims included civilians, police officers, rescuers, school and administrative-services-centre staff, municipal workers and medical personnel. Four people remained missing at the conclusion of the operation and are excluded.",
+    "documented_deaths": 72,
+    "scope_classification": "mixed_non_combatant",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KOMYSH-UKRINFORM-2026-11-02-INITIAL",
+        "publisher": "Ukrinform, citing Zaporizhia Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-02T11:31:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4180451-rosiani-vdarili-po-komisuvasi-e-zagiblij-dvoe-poranenih.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial official update reported one person killed and two injured in the Nov. 2 attack."
+      },
+      {
+        "source_id": "KOMYSH-REUTERS-2026-11-02",
+        "publisher": "Reuters",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.reuters.com/world/ukraines-zelenskiy-russian-bombing-kills-18-southeastern-zaporizhzhia-region-2026-11-02/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports 18 deaths in the Komyshuvakha strike; used for the interim 18-death count."
+      },
+      {
+        "source_id": "KOMYSH-AP-2026-11-02",
+        "publisher": "Associated Press",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://apnews.com/article/717372f7bbf4e8a805bc918f06f9730f",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Independent report of the 18-death toll on Nov. 2."
+      },
+      {
+        "source_id": "KOMYSH-ZOVA-2026-11-02-68783",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/68783",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Official regional administration update used for the increase to 29 deaths."
+      },
+      {
+        "source_id": "KOMYSH-SUSPILNE-2026-11-03",
+        "publisher": "Suspilne Zaporizhia",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://suspilne.media/Zaporizhzhia/1443285-rosiani-udarili-kabami-po-skoli-u-komisuvasi-de-rozdavali-gumanitarnu-dopomogu-18-zaginuli-sonajmense-5-poraneni/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports 29 at 07:40 and 31 at 11:40 on Nov. 3; preserves both interim updates."
+      },
+      {
+        "source_id": "KOMYSH-UP-2026-11-03-33",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/news/2026/11/03/8061054/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports President Zelenskyy's Nov. 3 update raising the toll to 33; this interim count is retained in revision history."
+      },
+      {
+        "source_id": "KOMYSH-UP-2026-11-04-37",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/news/2026/11/04/8061205/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports 37 deaths on Nov. 4 and cites acting regional administration head Mykhailo Semikin."
+      },
+      {
+        "source_id": "KOMYSH-ZOVA-2026-11-04-68789",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/68789",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Official regional administration update later on Nov. 4 raises the toll to 40."
+      },
+      {
+        "source_id": "KOMYSH-INTERFAX-2026-11-05-42",
+        "publisher": "Interfax-Ukraine, citing National Police",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://en.interfax.com.ua/news/general/1231534-amp.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports 42 bodies recovered by Nov. 5; distinguishes this incident from the separate deaths of two police officers wounded in a Nov. 1 attack."
+      },
+      {
+        "source_id": "KOMYSH-UKRINFORM-2026-11-05-42",
+        "publisher": "Ukrinform, citing National Police",
+        "source_type": "news_report",
+        "published_at": "2026-11-05T11:21:00+02:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4181666-death-toll-from-airstrike-on-komyshuvakha-rises-to-42-search-operations-continue.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports 42 bodies recovered on Nov. 5."
+      },
+      {
+        "source_id": "KOMYSH-UP-2026-11-05-43",
+        "publisher": "Ukrainska Pravda, citing Zaporizhia Police and the president",
+        "source_type": "news_report",
+        "published_at": "2026-11-05T14:52:00+02:00",
+        "url": "https://www.pravda.com.ua/news/2026/11/05/8061362/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports 43 bodies recovered and notes the president's confirmation of one further death at 14:15."
+      },
+      {
+        "source_id": "KOMYSH-ZELENSKYY-2026-11-05",
+        "publisher": "President Volodymyr Zelenskyy",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/V_Zelenskiy_official/21668",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Confirms the toll of 43 on Nov. 5."
+      },
+      {
+        "source_id": "KOMYSH-INTERFAX-2026-11-06-53",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-06T11:13:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1232268.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports regional administration's Nov. 6 toll of 53. It notes the contemporaneous DSNS report of 50 and treats 53 as the later/higher official figure."
+      },
+      {
+        "source_id": "KOMYSH-NV-2026-11-06-53",
+        "publisher": "The New Voice of Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-06T12:37:00+02:00",
+        "url": "https://english.nv.ua/russian-war/russian-airstrike-death-toll-in-komyshuvakha-rises-to-53-50656916.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the regional administration's 53-death count on Nov. 6."
+      },
+      {
+        "source_id": "KOMYSH-DSNS-2026-11-07-55",
+        "publisher": "State Emergency Service of Ukraine",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dsns_telegram/79884",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports the Nov. 7 increase from 53 to 55."
+      },
+      {
+        "source_id": "KOMYSH-ZOVA-2026-11-08-68891",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/68891",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms 55 bodies recovered, 29 people identified and 45 still listed as missing on Nov. 8. Missing persons are not counted."
+      },
+      {
+        "source_id": "KOMYSH-UKRINFORM-2026-11-16-72",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4185328-search-and-rescue-operations-completed-in-komyshuvakha-death-toll-rises-to-72.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "victim_status"
+        ],
+        "notes": "Reports conclusion of search-and-rescue operations and final confirmed toll of 72; four people remained missing and were excluded."
+      },
+      {
+        "source_id": "KOMYSH-UP-2026-11-16-72",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/16/8063170/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Reports the final toll of 72 after the two-week rescue operation and describes the categories of non-combatant victims."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "KOMYSH-REV-001",
+        "recorded_at": "2026-11-02",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial regional administration update reported one person killed in the attack.",
+        "source_ids": [
+          "KOMYSH-UKRINFORM-2026-11-02-INITIAL"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-002",
+        "recorded_at": "2026-11-02",
+        "old_value": 1,
+        "new_value": 18,
+        "reason": "Later Nov. 2 reporting raised the incident toll to 18. This interim count was already included in the project's earlier running subtotal.",
+        "source_ids": [
+          "KOMYSH-REUTERS-2026-11-02",
+          "KOMYSH-AP-2026-11-02"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-003",
+        "recorded_at": "2026-11-02",
+        "old_value": 18,
+        "new_value": 29,
+        "reason": "Regional administration updates raised the incident toll to 29.",
+        "source_ids": [
+          "KOMYSH-ZOVA-2026-11-02-68783",
+          "KOMYSH-SUSPILNE-2026-11-03"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-004",
+        "recorded_at": "2026-11-03T11:40:00+02:00",
+        "old_value": 29,
+        "new_value": 31,
+        "reason": "Acting regional administration head Mykhailo Semikin reported 31 deaths at 11:40. This was a new higher incident count, not an additional 31 deaths.",
+        "source_ids": [
+          "KOMYSH-SUSPILNE-2026-11-03"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-005",
+        "recorded_at": "2026-11-03T15:52:00+02:00",
+        "old_value": 31,
+        "new_value": 33,
+        "reason": "President Volodymyr Zelenskyy reported 33 deaths later on Nov. 3. This interim update is retained even though subsequent recoveries raised the count further.",
+        "source_ids": [
+          "KOMYSH-UP-2026-11-03-33"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-006",
+        "recorded_at": "2026-11-04T11:52:00+02:00",
+        "old_value": 33,
+        "new_value": 37,
+        "reason": "Acting regional administration head Mykhailo Semikin reported 37 deaths on Nov. 4.",
+        "source_ids": [
+          "KOMYSH-UP-2026-11-04-37"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-007",
+        "recorded_at": "2026-11-04",
+        "old_value": 37,
+        "new_value": 40,
+        "reason": "Later Nov. 4 update raised the toll to 40. This is the revised incident total, not a second addition of 40.",
+        "source_ids": [
+          "KOMYSH-ZOVA-2026-11-04-68789",
+          "KOMYSH-UP-2026-11-04-37"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-008",
+        "recorded_at": "2026-11-05T11:00:00+02:00",
+        "old_value": 40,
+        "new_value": 42,
+        "reason": "National Police reported 42 bodies recovered on the fourth day of search operations.",
+        "source_ids": [
+          "KOMYSH-INTERFAX-2026-11-05-42",
+          "KOMYSH-UKRINFORM-2026-11-05-42"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-009",
+        "recorded_at": "2026-11-05T14:15:00+02:00",
+        "old_value": 42,
+        "new_value": 43,
+        "reason": "The president confirmed one further death, bringing the incident toll to 43. A separate pair of police officers who died in hospital from a Nov. 1 attack near Komyshuvakha are not included in this incident record.",
+        "source_ids": [
+          "KOMYSH-UP-2026-11-05-43",
+          "KOMYSH-ZELENSKYY-2026-11-05"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-010",
+        "recorded_at": "2026-11-06T11:13:00+02:00",
+        "old_value": 43,
+        "new_value": 53,
+        "reason": "The regional administration reported 53 deaths. DSNS had reported 50 at 10:49, but Semikin's later update at 10:51 gave the higher count of 53. The two simultaneous reports are not added together.",
+        "source_ids": [
+          "KOMYSH-INTERFAX-2026-11-06-53",
+          "KOMYSH-NV-2026-11-06-53"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-011",
+        "recorded_at": "2026-11-07",
+        "old_value": 53,
+        "new_value": 55,
+        "reason": "DSNS reported the toll had risen to 55. The regional administration confirmed 55 recovered bodies on Nov. 8.",
+        "source_ids": [
+          "KOMYSH-DSNS-2026-11-07-55",
+          "KOMYSH-ZOVA-2026-11-08-68891"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-012",
+        "recorded_at": "2026-11-16",
+        "old_value": 55,
+        "new_value": 72,
+        "reason": "The search-and-rescue operation concluded after two weeks. The final confirmed toll was 72, including non-combatant emergency personnel and municipal/public-service workers. Four people remained missing and are not counted.",
+        "source_ids": [
+          "KOMYSH-UKRINFORM-2026-11-16-72",
+          "KOMYSH-UP-2026-11-16-72"
+        ]
+      }
+    ]
   }
 ]

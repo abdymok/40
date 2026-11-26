@@ -30,11 +30,18 @@ The method's Nov. 4–6 source audit identified eight further deaths:
 
 Those eight now have incident records and are already included in the method-page total of 418.
 
-## Scope mismatch: Chabany deaths
+## Scope mismatches in the pre-Oct. 29 baseline
 
-The Oct. 28 historical chronology snapshot explicitly says that the three deaths in the Oct. 20 Chabany drone attack were included in the dashboard's selected-incident subtotal. The current structured ledger has no Chabany incident record, consistent with the later working exclusion of those three deaths. This means the raw pre-Oct. 29 comparison (162 current ledger deaths versus 148 historically published, +14) is net of a three-death scope difference. On a like-for-like arithmetic basis, adding those three historical Chabany deaths to the current inventory would produce 165 versus 148, a +17 difference. This is a comparison adjustment only; the three deaths are not being added to the ledger or reintroduced into the working count.
+Three differences between the historical 148 snapshot and the current structured ledger are now visible:
 
-The same scope differences carry forward into the published 418 total. The raw current-ledger difference is +23 (441 versus 418). If the three Chabany deaths and the one Kharkiv market death still embedded in the historical running subtotal are added solely for like-for-like comparison, the adjusted ledger comparison is 445 versus 418, or +27. Do not interpret 442 as an approved count. The ledger remains at 439 and the Chabany exclusion remains in force unless the user changes that instruction.
+1. **Korotych, Oct. 21 — two deaths.** The Oct. 22 methodology note included the two people killed in Korotych. The current ledger initially omitted the incident; it has now been added as a two-death record.
+2. **Chabany, Oct. 20 — three deaths.** The Oct. 28 historical chronology snapshot explicitly says these three deaths were included in the dashboard subtotal. The current structured ledger has no Chabany record, consistent with the later working exclusion of those deaths. They remain excluded and have not been reintroduced.
+3. **Kharkiv market, Oct. 16 — three versus two.** The Oct. 22 method note listed three deaths in Kharkiv on Oct. 16. The current incident ledger retains the later official final count of two, superseding the preliminary report of three. No corresponding downward adjustment was found in the Oct. 28 change log, so the historical subtotal is provisionally treated as still carrying three.
+
+After adding Korotych, the raw pre-Oct. 29 comparison is 164 current ledger deaths versus 148 historically published, a net +16. For a like-for-like comparison only, add the three Chabany deaths that remain in the historical subtotal and the one Kharkiv market death that the current ledger has corrected downward: 164 + 3 + 1 = 168 versus 148, or +20. These are comparison adjustments, not proposed ledger additions. The ledger remains at 441 overall and the Chabany exclusion remains in force unless the user changes that instruction.
+
+The same scope adjustments carry forward into the published 418 total. The raw current-ledger difference is +23 (441 versus 418). A like-for-like comparison is 445 versus 418, or +27. Do not interpret 445 as an approved count. The current ledger remains 441.
+
 
 ## Known method/record differences
 

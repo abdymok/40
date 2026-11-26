@@ -4332,5 +4332,918 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-ZAP-BILENKE-2026-11-16-FPV",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Bilenke",
+      "district": "Zaporizhia district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drone struck civilian infrastructure in Bilenke, killing a 59-year-old man.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "BILENKE-ZOVA-2026-11-16-69069",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/69069",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional administration report of the man's death."
+      },
+      {
+        "source_id": "BILENKE-UKRINFORM-2026-11-16",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-16T06:17:00+02:00",
+        "url": "https://www.ukrinform.ua/amp/rubric-regions/4184998-na-zaporizzi-vnaslidok-dronovoi-ataki-zaginuv-colovik.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the 59-year-old man killed in Bilenke."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-BILENKE-2026-11-16-FPV-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "BILENKE-ZOVA-2026-11-16-69069",
+          "BILENKE-UKRINFORM-2026-11-16"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-2026-11-16-MORNING-ROAD-STRIKE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Dnipro",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack on a road in Dnipro on the morning of Nov. 16 killed one person and injured three.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-16-HANZHA-0819",
+        "publisher": "Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official morning update at 08:19 reports one death and three injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-11-16-MORNING-ROAD-STRIKE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-16-HANZHA-0819"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-KHORTYTSKY-2026-11-16-DRONE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Khortytsky district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone strike in Khortytsky district killed a 64-year-old woman and injured two people. This was separate from the Nov. 15 strike in the same district, which injured one man.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHORTYTSKY-PROSECUTOR-2026-11-16",
+        "publisher": "Zaporizhia Regional Prosecutor's Office",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://zap.gp.gov.ua/ua/news.html?_m=publications&_c=view&_t=rec&id=435198",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official prosecutor report of the woman's death."
+      },
+      {
+        "source_id": "KHORTYTSKY-ZOVA-2026-11-16-69071",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/69071",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional administration casualty update."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-KHORTYTSKY-2026-11-16-DRONE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KHORTYTSKY-PROSECUTOR-2026-11-16",
+          "KHORTYTSKY-ZOVA-2026-11-16-69071"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-SADOVE-2026-11-16-MOPED-DRONE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Near Sadove",
+      "district": "Kherson community",
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone struck a local man riding a moped near Sadove at about 10:20. He died of his injuries; his identity was being established.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SADOVE-PROKUDIN-2026-11-16",
+        "publisher": "Kherson Regional Military Administration head Oleksandr Prokudin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/olexandrprokudin/16451",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official report of the man killed by a drone near Sadove."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-SADOVE-2026-11-16-MOPED-DRONE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SADOVE-PROKUDIN-2026-11-16"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-DRUZHKIVKA-2026-11-15-ATTACKS",
+    "incident_date": "2026-11-15",
+    "location": {
+      "settlement": "Druzhkivka",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Druzhkivka on Nov. 15 killed three people. The regional administration's next-day update reported three deaths in Druzhkivka and one in Lvivka.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DRUZHKIVKA-FILASHKIN-2026-11-16",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official casualty update reports three people killed in Druzhkivka on Nov. 15."
+      },
+      {
+        "source_id": "DRUZHKIVKA-IFAX-2026-11-16",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-16T10:41:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1236999.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports four deaths in Donetsk region: three in Druzhkivka and one in Lvivka."
+      },
+      {
+        "source_id": "DRUZHKIVKA-UKRINFORM-2026-11-16",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-16T08:30:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4185022-rosiani-minuloi-dobi-vbili-cotiroh-ziteliv-doneccini.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the same regional four-death toll."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-DRUZHKIVKA-2026-11-15-ATTACKS-REV-001",
+        "recorded_at": "2026-11-15",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DRUZHKIVKA-FILASHKIN-2026-11-16",
+          "DRUZHKIVKA-IFAX-2026-11-16",
+          "DRUZHKIVKA-UKRINFORM-2026-11-16"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-LVIVKA-2026-11-15-ATTACK",
+    "incident_date": "2026-11-15",
+    "location": {
+      "settlement": "Lvivka",
+      "district": "Kramatorsk district",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack in Lvivka killed one person on Nov. 15.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "LVIVKA-FILASHKIN-2026-11-16",
+        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/VadymFilashkin",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official casualty update reports one person killed in Lvivka."
+      },
+      {
+        "source_id": "LVIVKA-IFAX-2026-11-16",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-16T10:41:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1236999.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the one Lvivka death in the regional total."
+      },
+      {
+        "source_id": "LVIVKA-UKRINFORM-2026-11-16",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-11-16T08:30:00+02:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4185022-rosiani-minuloi-dobi-vbili-cotiroh-ziteliv-doneccini.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the same regional total."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-LVIVKA-2026-11-15-ATTACK-REV-001",
+        "recorded_at": "2026-11-15",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "LVIVKA-FILASHKIN-2026-11-16",
+          "LVIVKA-IFAX-2026-11-16",
+          "LVIVKA-UKRINFORM-2026-11-16"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-CHN-CHERNIHIV-2026-11-16-ENTERPRISE-STRIKE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Chernihiv",
+      "district": null,
+      "region": "Chernihiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack on two businesses in Chernihiv on Nov. 16 killed two men at the scene. A third man later died in hospital on Nov. 17 from injuries sustained in the same attack.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "CHERNIHIV-SUSPILNE-2026-11-16",
+        "publisher": "Suspilne Chernihiv",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://suspilne.media/chernihiv/1453582-poperedno-odna-ludina-postrazdala-rosiani-atakuvali-dva-pidpriemstva-u-cernihovi/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial report on the attack on two businesses; later reporting confirmed two deaths at the scene."
+      },
+      {
+        "source_id": "CHERNIHIV-CHAUS-2026-11-17",
+        "publisher": "Chernihiv Regional Military Administration head Viacheslav Chaus",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-17T09:11:00+02:00",
+        "url": "https://t.me/chernigivskaODA",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "At 09:11 on Nov. 17, Chaus reported that a third man had died in hospital. The first two deaths were already counted."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-CHN-CHERNIHIV-2026-11-16-ENTERPRISE-STRIKE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "CHERNIHIV-SUSPILNE-2026-11-16",
+          "CHERNIHIV-CHAUS-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-BALAKLIIA-2026-11-16-CITY-CENTRE-STRIKE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Balakliia",
+      "district": null,
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian strike on the centre of Balakliia killed at least one person and injured others.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "BALAKLIIA-SUSPILNE-2026-11-16",
+        "publisher": "Suspilne Kharkiv",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://suspilne.media/kharkiv/1453576-rosia-vdarila-po-centralnij-castini-balaklii-e-zagibla-ludina-ta-poraneni/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in the strike on Balakliia city centre."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-BALAKLIIA-2026-11-16-CITY-CENTRE-STRIKE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "BALAKLIIA-SUSPILNE-2026-11-16"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-KUSHUHUM-2026-11-16-FPV-70YO",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Kushuhum",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drone killed a 70-year-old man in Kushuhum. This is separate from the Sept. 1 attack in Kushuhum, which killed two people before the dashboard's Oct. 1 start date.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KUSHUHUM-IFAX-2026-11-16",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-16T20:18:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1237403.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 70-year-old man killed in the Nov. 16 attack."
+      },
+      {
+        "source_id": "KUSHUHUM-UP-2026-11-16",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-16T20:49:00+02:00",
+        "url": "https://www.pravda.com.ua/news/2026/11/16/8063167/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the same fatal FPV attack."
+      },
+      {
+        "source_id": "KUSHUHUM-ZOVA-2026-11-16-69096",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/69096",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official regional update."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-KUSHUHUM-2026-11-16-FPV-70YO-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KUSHUHUM-IFAX-2026-11-16",
+          "KUSHUHUM-UP-2026-11-16",
+          "KUSHUHUM-ZOVA-2026-11-16-69096"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-KOSMICHNY-2026-11-16-FPV-CAR",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Kosmichny district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drone struck a car in Kosmichny district, killing the driver.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KOSMICHNY-CAR-IFAX-2026-11-17",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T00:08:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1237477.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the driver killed in an FPV drone strike on a car."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-KOSMICHNY-2026-11-16-FPV-CAR-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KOSMICHNY-CAR-IFAX-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-2026-11-16-UNIDENTIFIED-SECOND-DEATH",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Dnipro",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "The regional administration's Nov. 16 evening citywide update reported two people killed in Russian attacks on Dnipro. The morning road-strike fatality is recorded separately. This record preserves the additional death in the evening total; the victim and specific strike were not identified in the cited update.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-16-HANZHA-1830-33400",
+        "publisher": "Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA/33400",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "incident_date"
+        ],
+        "notes": "Evening update reported two deaths in Dnipro; the morning road-strike death had already been included."
+      },
+      {
+        "source_id": "DNIPRO-16-HANZHA-0629-33413",
+        "publisher": "Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dnipropetrovskaODA/33413",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Follow-up update on the regional casualty total."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-11-16-UNIDENTIFIED-SECOND-DEATH-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-16-HANZHA-1830-33400",
+          "DNIPRO-16-HANZHA-0629-33413"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-KHERSON-2026-11-16-WATER-UTILITY-DRONE",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Kherson",
+      "district": "",
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone attack killed 51-year-old water utility pump-station operator Oleksandr Soroka in Kherson.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHERSON-SOROKA-SUSPILNE-2026-11-17",
+        "publisher": "Suspilne Kherson",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T00:00:00+02:00",
+        "url": "https://suspilne.media/kherson/1453932-cerez-ataku-drona-rf-zaginuv-pracivnik-hersonskogo-vodokanalu-oleksandr-soroka/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the death of the water utility worker in a Russian drone attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-KHERSON-2026-11-16-WATER-UTILITY-DRONE-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KHERSON-SOROKA-SUSPILNE-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-KHERSON-2026-10-06-DOCTOR-ZIMIN-DRONE-CAR",
+    "incident_date": "2026-10-06",
+    "location": {
+      "settlement": "Kherson",
+      "district": null,
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Doctor Yuriy Zimin died in hospital on Nov. 16 from injuries sustained in a Russian drone attack on a car in Kherson on Oct. 6. This delayed death is assigned to the original incident date, not the date of hospital death.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KHERSON-ZIMIN-SUSPILNE-2026-11-17",
+        "publisher": "Suspilne Kherson",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T00:00:00+02:00",
+        "url": "https://suspilne.media/kherson/1453910-buv-ludinou-z-velikim-sercem-vnaslidok-ataki-rosijskogo-drona-u-hersoni-zaginuv-likar-urij-zimin/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "count_revision"
+        ],
+        "notes": "Reports the doctor's death in hospital on Nov. 16 from injuries sustained in the Oct. 6 drone attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-KHERSON-2026-10-06-DOCTOR-ZIMIN-DRONE-CAR-REV-001",
+        "recorded_at": "2026-10-06",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KHERSON-ZIMIN-SUSPILNE-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-CHERVONA-KHVYLIA-2026-11-17-DRONE",
+    "incident_date": "2026-11-17",
+    "location": {
+      "settlement": "Chervona Khvylia",
+      "district": "Kupiansk district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian UAV, preliminarily identified as a Geran-2 type, struck Chervona Khvylia at about 02:00, killing a 58-year-old man and a 56-year-old woman.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "CHERVONA-KHVYLIA-PROSECUTOR-2026-11-17",
+        "publisher": "Kharkiv Regional Prosecutor's Office",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/prokuratura_kharkiv/31364",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official prosecutor report of two deaths in the overnight UAV strike."
+      },
+      {
+        "source_id": "CHERVONA-KHVYLIA-IFAX-2026-11-17",
+        "publisher": "Interfax-Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T00:00:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1237781-amp.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the two residents killed in the UAV attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-CHERVONA-KHVYLIA-2026-11-17-DRONE-REV-001",
+        "recorded_at": "2026-11-17",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "CHERVONA-KHVYLIA-PROSECUTOR-2026-11-17",
+          "CHERVONA-KHVYLIA-IFAX-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-11-16-ATTACKS",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Sloviansk on Nov. 16 killed two people. The National Police's Nov. 18 regional report identifies two deaths in Sloviansk, one in Yasnohirka and one in Shabelkivka.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-16-NPU-2026-11-18",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://censor.net/ua/n4034334",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "National Police report relayed by Censor.NET; two deaths in Sloviansk on Nov. 16."
+      },
+      {
+        "source_id": "SLOVIANSK-16-CENSOR-2026-11-18",
+        "publisher": "Censor.NET",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://censor.net/ua/n4034334",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the four deaths across Sloviansk, Yasnohirka and Shabelkivka."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-11-16-ATTACKS-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SLOVIANSK-16-NPU-2026-11-18",
+          "SLOVIANSK-16-CENSOR-2026-11-18"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-YASNOHIRKA-2026-11-16-ATTACK",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Yasnohirka",
+      "district": "Kramatorsk community",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack in Yasnohirka killed one person on Nov. 16. This is separate from the earlier Nov. 3 Yasnohirka fatality.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "YASNOHIRKA-16-NPU-2026-11-18",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://censor.net/ua/n4034334",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "National Police report relayed by Censor.NET; one death in Yasnohirka on Nov. 16."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-YASNOHIRKA-2026-11-16-ATTACK-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "YASNOHIRKA-16-NPU-2026-11-18"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SHABELKIVKA-2026-11-16-ATTACK",
+    "incident_date": "2026-11-16",
+    "location": {
+      "settlement": "Shabelkivka",
+      "district": "Kramatorsk community",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack in Shabelkivka killed one person on Nov. 16.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SHABELKIVKA-16-NPU-2026-11-18",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://censor.net/ua/n4034334",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "National Police report relayed by Censor.NET; one death in Shabelkivka on Nov. 16."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SHABELKIVKA-2026-11-16-ATTACK-REV-001",
+        "recorded_at": "2026-11-16",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SHABELKIVKA-16-NPU-2026-11-18"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-PLOSKE-2026-11-17-DRONE",
+    "incident_date": "2026-11-17",
+    "location": {
+      "settlement": "Ploske",
+      "district": "Velykyi Burluk community",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on 16 settlements in Kharkiv region killed an 81-year-old woman in Ploske on Nov. 17. Two private houses in the village were damaged.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "PLOSKE-KHARKIV-ODA-2026-11-18",
+        "publisher": "Kharkiv Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://kharkivoda.gov.ua/news/137984",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional report of the 81-year-old woman's death."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-PLOSKE-2026-11-17-DRONE-REV-001",
+        "recorded_at": "2026-11-17",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "PLOSKE-KHARKIV-ODA-2026-11-18"
+        ]
+      }
+    ]
   }
 ]

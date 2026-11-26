@@ -1,9 +1,9 @@
 # Method-page to incident-ledger reconciliation
 
 **Working status:** Stage 20  
-**Current ledger sum:** 430  
+**Current ledger sum:** 436  
 **Published method-page minimum:** 418  
-**Difference:** +12 in the pilot incident dataset
+**Difference:** +18 in the pilot incident dataset
 
 ## What is established
 
@@ -45,12 +45,24 @@ Those eight now have incident records and are already included in the method-pag
 
 These entries are not yet a complete reconciliation. The table distinguishes known count differences from unresolved baseline membership; it does not assume that every difference is an error in the method.
 
+## Reconciliation arithmetic and open allocation
+
+The historical sequence is now explicit:
+- Oct. 28 legacy subtotal: 148.
+- Oct. 29 additions: 25, producing the Oct. 30 snapshot of 173.
+- Nov. 2 Komyshuvakha opening count: 18, plus the Nov. 2 Izium death, producing the 192 opening subtotal used by the method page.
+- The current incident inventory through Oct. 28 sums to 161, 13 above the legacy 148. The exact membership of those 13 deaths in the old subtotal is still being reconstructed; incident date alone is insufficient because several deaths were reported or revised later.
+- The current Oct. 29 incident records sum to 27, two above the 25 in the 173 snapshot: four rather than five at the public-health institution at the first snapshot, later corrected to five, plus a separate 59-year-old woman killed in another Izium attack.
+- The current post-192 additions sum to 229, three above the method's 226. The clearly identified upward revisions are Chornomorsk (+3 beyond the method's one) and Dnipro on Nov. 3 (+1 beyond the method's one). One death elsewhere in the post-baseline comparison remains to be reconciled downward or identified as a missing method increment.
+
+These components produce the current difference: +13 +2 +3 = **+18**. This is a working decomposition, not yet a final sign-off.
+
 ## Required next work
 
-1. Retrieve the original Oct. 30–Nov. 2 dashboard snapshots and identify which final incident counts were actually included in the 192 baseline.
-2. Build an explicit baseline-membership field for incidents that were partly counted before later revisions. At minimum, Komyshuvakha must show 18 deaths in the opening subtotal and 54 subsequent additions; Dymer must show two deaths already included in the 379 subtotal and ten later additions.
-3. Compare each method-page increment from Nov. 2 through Nov. 26 against the matching incident record and its revision history.
-4. Explain the remaining 12-death difference without forcing the ledger to 418.
-5. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until the source/duplicate questions are settled.
+1. Reconstruct membership of the legacy 148 and 192 snapshots from the original commits and change-log entries, including source publication date and the date the project actually counted each death.
+2. Add an explicit `ledger_effective_at` to every revision once the historical inclusion date is established. Do not infer it from incident date.
+3. Compare every method-page increment from Nov. 2 through Nov. 26 against the matching incident record and revision history; identify the one-death offset in the post-baseline comparison.
+4. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until source/duplicate questions are settled.
+5. Do not force the ledger to 418. The current total is a calculated pilot sum and may change if source-level deduplication or additional incident verification changes any record.
 
 No public totals are to be changed until the incident dataset and method arithmetic reconcile or the discrepancy is explicitly explained and approved.

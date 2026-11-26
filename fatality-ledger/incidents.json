@@ -4178,7 +4178,7 @@
         "source_ids": [
           "SALTIVSKY-TEREKHOV-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       },
       {
         "revision_id": "UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-002",
@@ -4190,7 +4190,7 @@
           "SALTIVSKY-IFAX-2026-11-11",
           "SALTIVSKY-UP-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       }
     ]
   },
@@ -4396,7 +4396,7 @@
         "source_ids": [
           "CHORNOMORSK-IFAX-2026-11-11-INITIAL"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       },
       {
         "revision_id": "UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-002",
@@ -5934,7 +5934,7 @@
           "DNIPRO-2026-11-03-HANZHA-0928",
           "DNIPRO-2026-11-03-INTERFAX"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       },
       {
         "revision_id": "UA-DNE-DNIPRO-2026-11-03-MORNING-STRIKE-REV-002",
@@ -7592,7 +7592,7 @@
           "KYIV-BALLISTIC-UKRINFORM-2026-10-30",
           "KYIV-BALLISTIC-REUTERS-2026-10-29"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-30"
       }
     ]
   },
@@ -7691,7 +7691,7 @@
         "source_ids": [
           "NOVODONETSKE-FILASHKIN-2026-10-28-18948"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-28"
       }
     ]
   },
@@ -7785,7 +7785,7 @@
           "KHARKIV-OSNOVIANSKY-TEREKHOV-2026-10-28",
           "KHARKIV-OSNOVIANSKY-UP-2026-10-28"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-28"
       }
     ]
   },
@@ -7828,7 +7828,7 @@
         "source_ids": [
           "IVERSKE-FILASHKIN-2026-10-27-18922"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-27"
       }
     ]
   },
@@ -7871,7 +7871,7 @@
         "source_ids": [
           "KRAMATORSK-FILASHKIN-2026-10-27-18922"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-27"
       }
     ]
   },
@@ -7914,7 +7914,7 @@
         "source_ids": [
           "SUKHANIVKA-FILASHKIN-2026-10-27-18922"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-27"
       }
     ]
   },
@@ -7970,7 +7970,7 @@
           "PAVLOHRAD-KOTELEVSKYI-DTEK-2026-10-26",
           "PAVLOHRAD-KOTELEVSKYI-DTEK-UA-2026-10-26"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-26"
       }
     ]
   },
@@ -8013,7 +8013,76 @@
         "source_ids": [
           "KRAMATORSK-26-FILASHKIN-2026-10-26-18902"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-26"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-YASNOHIRKA-2026-10-26-STRIKES",
+    "incident_date": "2026-10-26",
+    "location": {
+      "settlement": "Yasnohirka",
+      "district": "Kramatorsk community",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian forces launched four strikes on Yasnohirka on Oct. 26, killing one person and injuring 10, including a 13-year-old girl. The Kramatorsk City Military Administration and Donetsk Regional Military Administration reported the fatality.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "YASNOHIRKA-UKRINFORM-2026-10-26",
+        "publisher": "Ukrinform, citing Kramatorsk City Military Administration head Oleksandr Honcharenko",
+        "source_type": "news_report",
+        "published_at": "2026-10-26T15:40:00+03:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4178293-russian-strikes-on-kramatorsk-community-kill-one-injure-10.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports four strikes on Yasnohirka and confirms at least one person killed and 10 injured."
+      },
+      {
+        "source_id": "YASNOHIRKA-HROMADSKE-2026-10-26",
+        "publisher": "Hromadske, citing Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "news_report",
+        "published_at": "2026-10-26T15:10:00+03:00",
+        "url": "https://hromadske.ua/en/war/273207-russian-strikes-on-donetsk-oblast-kill-one-injure-10-including-13-year-old-girl",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed and 10 injured in four strikes on Yasnohirka, including a 13-year-old girl among the injured."
+      },
+      {
+        "source_id": "YASNOHIRKA-EUROMAIDAN-2026-10-26",
+        "publisher": "Euromaidan Press, citing the State Emergency Service and Donetsk Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://euromaidanpress.com/2026/10/26/guided-bombs-on-izium-strikes-on-zaporizhzhia-russian-overnight-attacks-wound-six-later-strikes-kill-three/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed and 10 wounded in the strikes on Yasnohirka."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-YASNOHIRKA-2026-10-26-STRIKES-REV-001",
+        "recorded_at": "2026-10-26T15:40:00+03:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "The Kramatorsk City Military Administration and Donetsk Regional Military Administration reported one person killed in the strikes on Yasnohirka.",
+        "source_ids": [
+          "YASNOHIRKA-UKRINFORM-2026-10-26",
+          "YASNOHIRKA-HROMADSKE-2026-10-26",
+          "YASNOHIRKA-EUROMAIDAN-2026-10-26"
+        ],
+        "ledger_effective_at": "2026-10-26"
       }
     ]
   },
@@ -8069,7 +8138,105 @@
           "KYIV-26-KLYCHKO-2026-10-26",
           "KYIV-26-REUTERS-2026-10-26"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-KHERSON-2026-10-25-MINIBUS-DRONE-STRIKE",
+    "incident_date": "2026-10-25",
+    "location": {
+      "settlement": "Kherson",
+      "district": "Tsentralnyi district",
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone struck a passenger minibus in Kherson's Tsentralnyi district at about 15:11 on Oct. 25, injuring six passengers. A 67-year-old man later died in hospital. The other five passengers were injured.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "KHERSON-MINIBUS-KHOVA-2026-10-25",
+        "publisher": "Kherson Regional Military Administration, official Telegram",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-25T14:03:00+03:00",
+        "url": "https://t.me/s/khersonskaODA?before=70291",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional channel reported the minibus attack and forwarded the city administration head's update that the 67-year-old man had died in hospital."
+      },
+      {
+        "source_id": "KHERSON-MINIBUS-PROKUDIN-2026-10-25",
+        "publisher": "Kherson Regional Military Administration head Oleksandr Prokudin, official Telegram",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-25T14:03:00+03:00",
+        "url": "https://t.me/s/olexandrprokudin?before=16067",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official post says a 67-year-old man injured in the drone attack on the minibus in Tsentralnyi district died in hospital."
+      },
+      {
+        "source_id": "KHERSON-MINIBUS-UKRINFORM-2026-10-25",
+        "publisher": "Ukrinform, citing Kherson City Military Administration head Yaroslav Shanko",
+        "source_type": "news_report",
+        "published_at": "2026-10-25T18:00:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4178031-man-injured-in-russian-drone-attack-on-minibus-dies-in-kherson-hospital.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
+        "notes": "Reports that a 67-year-old man died in hospital after the Oct. 25 drone strike on a minibus in Tsentralnyi district."
+      },
+      {
+        "source_id": "KHERSON-MINIBUS-UP-2026-10-25",
+        "publisher": "Ukrainska Pravda, citing Kherson City Military Administration and its head Yaroslav Shanko",
+        "source_type": "news_report",
+        "published_at": "2026-10-25T16:30:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/25/8059643/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports six passengers initially injured and one 67-year-old man later dying in hospital."
+      },
+      {
+        "source_id": "KHERSON-MINIBUS-EVIDENCEHUB-2026-10-25",
+        "publisher": "Ukraine Evidence Hub",
+        "source_type": "case_file",
+        "published_at": null,
+        "url": "https://ukraine-evidence.org/case-files/cf-26",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Case file identifies one civilian killed, a 67-year-old man, and five other passengers injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-KHERSON-2026-10-25-MINIBUS-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-10-25T18:00:00+03:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "A 67-year-old passenger injured in the drone attack died in hospital; official city and regional reports confirmed the death.",
+        "source_ids": [
+          "KHERSON-MINIBUS-KHOVA-2026-10-25",
+          "KHERSON-MINIBUS-PROKUDIN-2026-10-25",
+          "KHERSON-MINIBUS-UKRINFORM-2026-10-25",
+          "KHERSON-MINIBUS-UP-2026-10-25",
+          "KHERSON-MINIBUS-EVIDENCEHUB-2026-10-25"
+        ],
+        "ledger_effective_at": "2026-10-26"
       }
     ]
   },
@@ -8138,7 +8305,7 @@
           "SYNELNYKOVE-HANZHA-2026-10-25-32831",
           "SYNELNYKOVE-UP-2026-10-25"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-25"
       }
     ]
   },
@@ -8194,7 +8361,7 @@
           "YAROVA-LB-2026-10-25",
           "YAROVA-HUA-2026-10-25"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-26"
       }
     ]
   },
@@ -8237,7 +8404,7 @@
         "source_ids": [
           "KHARKIV-NOVOBAVARSKY-RBC-2026-10-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-25"
       }
     ]
   },
@@ -8349,7 +8516,7 @@
           "SUMY-FARM-UKRINFORM-2026-10-24",
           "SUMY-FARM-UP-2026-10-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-26"
       }
     ]
   },
@@ -8517,7 +8684,7 @@
           "NIKOPOL-22-IFAX-2026-10-22",
           "NIKOPOL-22-ZMINA-2026-10-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-26"
       }
     ]
   },
@@ -8597,7 +8764,7 @@
           "LOZOVA-UKRINFORM-2026-10-22",
           "LOZOVA-UP-2026-10-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-26"
       },
       {
         "revision_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002",
@@ -8734,7 +8901,7 @@
           "KOROTYCH-UKRINFORM-2026-10-21",
           "KOROTYCH-SUSPILNE-2026-10-21"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-22"
       }
     ]
   },
@@ -9284,7 +9451,7 @@
         "source_ids": [
           "KHARKIV-16-REUTERS-2026-10-16"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-22"
       },
       {
         "revision_id": "UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE-REV-002",

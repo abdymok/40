@@ -733,3 +733,14 @@ Stage 103 reviewed the final eight pre-Oct. 29 null revisions: the additional th
 Stages 100, 102 and 103 have now reviewed all 26 pre-Oct. 29 null revision entries. Twelve were categorized in Stage 100, six received additional overlap and incident-matching findings in Stage 102, and the final eight are adjudicated in Stage 103. Fourteen entries, net +19, still lack a confirmed historical inclusion date. The other 12 are interim or superseded toll revisions, a correction not reflected in the public subtotal, or separately classified cases. The surviving Git history and public method snapshots do not support further date assignments. These are unresolved historical membership facts, not permission to add the arithmetic net to the public minimum.
 
 The ledger remains 176 incidents, 430 sources, 452 final documented deaths and 231 revisions. The unresolved inventory remains 33 null revisions, net +90, of which 26 predate Oct. 29 (net +82) and seven are later (net +8). The public provisional minimum remains 421. No public chronology, method-page figure or dashboard counter was changed.
+
+
+## Stage 104 — post-Oct. 29 and 421-baseline closeout
+
+Stage 104 reviewed the seven remaining post-Oct. 29 null revisions, net +8. The timestamped Nov. 11 dashboard sequence establishes that the first Saltivsky death was not included in the 421 subtotal: the 283→284 increment adds only the second death. The mapped Nov. 3 sequence likewise includes one Dnipro death; the following +3 is fully allocated to Komyshuvakha (+2) and Hotiv (+1), leaving the second Dnipro death outside the established 421 subtotal. The two additional Oct. 29 Izium deaths, the Oct. 31 Sloviansk death and the two later Chornomorsk hospital deaths have no confirmed inclusion date in the carried-forward subtotal. All seven remain null. See `STAGE-104-CHECKPOINT.md`.
+
+### Final historical audit closeout
+
+All 33 null revisions have now been reviewed and categorized. The 26 pre-Oct. 29 entries carry a net +82; 12 are classified in Stage 100 and 14 still lack a confirmed historical inclusion date after Stages 102–103 (net +19). The seven later entries carry a net +8; two are established exclusions from the 421 subtotal and five remain unverified within carried-forward aggregates. No effective date has been inferred where the public record does not establish one. The net +90 arithmetic across null revisions is not an amount to add to the public minimum.
+
+The final ledger remains 176 incidents, 430 sources, 452 documented deaths and 231 revisions (198 with confirmed effective dates, 33 null). The public provisional minimum remains 421. The historical reconciliation audit is complete to the limit of surviving evidence; reopen only if new contemporaneous evidence is recovered.

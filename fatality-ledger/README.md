@@ -5,8 +5,8 @@ This directory contains the working incident-level dataset for the provisional n
 ## Source of truth
 
 - `incidents.json` is the authoritative incident dataset.
-- `incidents.json` is authoritative for the incident-level documented-death inventory. Its current raw sum is 449 across 175 incident records.
-- The current public method-page subtotal is 421 as of Nov. 26, 2026. It is a historical running subtotal, not yet identical to the raw incident-ledger sum because 28 deaths remain subject to scope, overlap or historical-inclusion reconciliation.
+- `incidents.json` is authoritative for the incident-level documented-death inventory. Its current raw sum is 458 across 182 incident records.
+- The current public method-page subtotal is 427 as of Nov. 26, 2026. It is a historical running subtotal, not yet identical to the raw incident-ledger sum because 31 deaths remain subject to scope, overlap or historical-inclusion reconciliation.
 - `ledger_effective_at` records when a revision entered the historical running subtotal. A null value means the inclusion date is not established or the revision is not counted separately pending overlap/scope review.
 - Do not derive a public dashboard number by summing all `documented_deaths` until the remaining eligibility and overlap differences are resolved.
 - A regional or citywide month-to-date subtotal is not a separate incident and must not be added alongside the incidents it summarizes.

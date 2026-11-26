@@ -6398,16 +6398,16 @@
         "notes": "Independent report of the 18-death toll on Nov. 2."
       },
       {
-        "source_id": "KOMYSH-ZOVA-2026-11-02-68783",
+        "source_id": "KOMYSH-ZOVA-2026-11-03-68783",
         "publisher": "Zaporizhia Regional Military Administration",
         "source_type": "official_social_post",
-        "published_at": null,
+        "published_at": "2026-11-03",
         "url": "https://t.me/zoda_gov_ua/68783",
         "supports": [
           "death_count",
           "count_revision"
         ],
-        "notes": "Official regional administration update used for the increase to 29 deaths."
+        "notes": "Official regional administration update used for the increase to 29 deaths, reported on Nov. 3."
       },
       {
         "source_id": "KOMYSH-SUSPILNE-2026-11-03",
@@ -6696,7 +6696,7 @@
         "new_value": 29,
         "reason": "The Nov. 3 morning update raised the incident toll from 26 to 29. This revision follows the 18→24→26 source sequence and the Nov. 3 dashboard count of 26.",
         "source_ids": [
-          "KOMYSH-ZOVA-2026-11-02-68783",
+          "KOMYSH-ZOVA-2026-11-03-68783",
           "KOMYSH-SUSPILNE-2026-11-03",
           "KOMYSH-UKRINFORM-2026-11-02-24"
         ],

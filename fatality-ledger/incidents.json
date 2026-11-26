@@ -8989,6 +8989,150 @@
     ]
   },
   {
+    "incident_id": "UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE",
+    "incident_date": "2026-10-21",
+    "location": {
+      "settlement": "Uman",
+      "district": null,
+      "region": "Cherkasy region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone struck a private house in Uman on Oct. 21, injuring 86-year-old Tamara Yasynska. She was hospitalized with burns and died in hospital on Oct. 26. Cherkasy Regional Military Administration and Uman city authorities confirmed her death.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "UMAN-TAMARA-CHERKASKA-ODA-2026-10-26",
+        "publisher": "Cherkasy Regional Military Administration, official website",
+        "source_type": "official_statement",
+        "published_at": "2026-10-26T11:54:00+02:00",
+        "url": "https://ck-oda.gov.ua/novyny-cherkaskoyi-oblasti/rosijskyj-obstril-zabrav-zhyttya-zhytelky-umani/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "victim_status"
+        ],
+        "notes": "Official statement says 86-year-old Tamara Yasynska died after being hospitalized with burns on Oct. 21 following the Russian attack on Uman."
+      },
+      {
+        "source_id": "UMAN-TAMARA-CHERKASKA-ODA-TELEGRAM-2026-10-26",
+        "publisher": "Cherkasy Regional Military Administration head Ihor Taburets, official Telegram",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-26T09:32:00+02:00",
+        "url": "https://t.me/s/cherkaskaODA?before=24520",
+        "supports": [
+          "death_count",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Official Telegram post identifies the deceased as 86-year-old Tamara Yasynska and links her death to the Oct. 21 attack."
+      },
+      {
+        "source_id": "UMAN-TAMARA-UMAN-CITY-COUNCIL-2026-10-26",
+        "publisher": "Uman City Council, official Telegram",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-26",
+        "url": "https://t.me/s/vykonkomumr?before=48112",
+        "supports": [
+          "death_count",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Mayor Iryna Pletnyova's statement confirms the death of 86-year-old Uman resident Tamara Yasynska after injuries sustained in the Oct. 21 attack."
+      },
+      {
+        "source_id": "UMAN-TAMARA-SUSPILNE-2026-10-26",
+        "publisher": "Suspilne Cherkasy, citing Cherkasy Regional Military Administration head Ihor Taburets",
+        "source_type": "news_report",
+        "published_at": "2026-10-26",
+        "url": "https://suspilne.media/amp/cherkasy/1436937-pomerla-zitelka-umani-aka-otrimala-travmi-unaslidok-ataki-rf-21-zovtna/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Reports that 86-year-old Tamara Yasynska died after suffering burns in the Oct. 21 attack on Uman."
+      },
+      {
+        "source_id": "UMAN-TAMARA-RADIOSVOBODA-2026-10-26",
+        "publisher": "Radio Svoboda, citing Cherkasy Regional Military Administration head Ihor Taburets",
+        "source_type": "news_report",
+        "published_at": "2026-10-26T13:05:00+02:00",
+        "url": "https://www.radiosvoboda.org/a/news/33884421.html",
+        "supports": [
+          "death_count",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Reports the death in hospital of 86-year-old Tamara Yasynska, injured in the Oct. 21 attack."
+      },
+      {
+        "source_id": "UMAN-TAMARA-INTERFAX-2026-10-26",
+        "publisher": "Interfax-Ukraine, citing Cherkasy Regional Military Administration head Ihor Taburets",
+        "source_type": "news_report",
+        "published_at": "2026-10-26T12:33:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1226041.html",
+        "supports": [
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
+        "notes": "Reports that the 86-year-old woman died in hospital after the Oct. 21 Russian attack on Uman."
+      },
+      {
+        "source_id": "UMAN-PRIVATE-HOUSE-CHERKASKA-ODA-2026-10-21",
+        "publisher": "Cherkasy Regional Military Administration, official website",
+        "source_type": "official_statement",
+        "published_at": "2026-10-21T10:46:00+03:00",
+        "url": "https://ck-oda.gov.ua/novyny-cherkaskoyi-oblasti/naslidky-rosijskyh-atak-na-uman-postrazhdala-czyvilna-infrastruktura/",
+        "supports": [
+          "incident_identity",
+          "incident_date",
+          "victim_status"
+        ],
+        "notes": "Initial official account says a Russian drone struck a private house in Uman and injured a woman who was hospitalized."
+      },
+      {
+        "source_id": "UMAN-PRIVATE-HOUSE-INTERFAX-2026-10-21",
+        "publisher": "Interfax-Ukraine, citing Cherkasy Regional Military Administration head Ihor Taburets",
+        "source_type": "news_report",
+        "published_at": "2026-10-21T11:12:00+03:00",
+        "url": "https://interfax.com.ua/news/general/1223704.html",
+        "supports": [
+          "incident_identity",
+          "incident_date",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "Reports that a woman was injured and hospitalized after a Russian drone struck a private house in Uman."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-10-26T11:54:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Cherkasy Regional Military Administration and Uman city authorities confirmed that 86-year-old Tamara Yasynska died in hospital from injuries sustained in the Oct. 21 drone strike.",
+        "source_ids": [
+          "UMAN-TAMARA-CHERKASKA-ODA-2026-10-26",
+          "UMAN-TAMARA-CHERKASKA-ODA-TELEGRAM-2026-10-26",
+          "UMAN-TAMARA-UMAN-CITY-COUNCIL-2026-10-26",
+          "UMAN-TAMARA-SUSPILNE-2026-10-26",
+          "UMAN-TAMARA-RADIOSVOBODA-2026-10-26",
+          "UMAN-TAMARA-INTERFAX-2026-10-26",
+          "UMAN-PRIVATE-HOUSE-CHERKASKA-ODA-2026-10-21",
+          "UMAN-PRIVATE-HOUSE-INTERFAX-2026-10-21"
+        ],
+        "ledger_effective_at": null
+      }
+    ]
+  },
+  {
     "incident_id": "UA-KHA-KOROTYCH-2026-10-21-MASS-DRONE-STRIKE",
     "incident_date": "2026-10-21",
     "location": {

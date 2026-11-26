@@ -6896,7 +6896,7 @@
       "region": "Kharkiv region",
       "country": "Ukraine"
     },
-    "incident_description": "Russian combat drone struck Kharkiv's Osnoviansky district, starting a fire and killing one person.",
+    "incident_description": "A Russian Geran-3 jet-powered drone struck a postal operator's branch in Kharkiv's Osnoviansky district at about 12:55 on Oct. 28, killing one man and injuring four. The Kharkiv Regional Prosecutor's Office and the regional administration's Oct. 29 24-hour report identify the victim as 38 years old. An earlier regional update, repeated by several outlets on Oct. 28, gave his age as 60. This is one incident and one documented death; the age discrepancy does not indicate a second victim.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
     "evidence_classification": "official_and_media",
@@ -6925,6 +6925,44 @@
           "corroboration"
         ],
         "notes": "Reports the one fatality in the Osnoviansky district drone strike."
+      },
+      {
+        "source_id": "KHARKIV-OSNOVIANSKY-PROSECUTOR-2026-10-28",
+        "publisher": "Kharkiv Regional Prosecutor's Office, reported by ArmyInform",
+        "source_type": "news_report",
+        "published_at": "2026-10-28T17:04:00+03:00",
+        "url": "https://armyinform.com.ua/2026/10/28/rosiya-vdaryla-po-harkovu-ye-zagyblyj-chetvero-porანenyh/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the prosecutor's findings: a Geran-3 struck a postal operator's branch in Osnoviansky district at about 12:55; one 38-year-old man was killed and four people injured. This identifies the same incident as the earlier city and regional reports."
+      },
+      {
+        "source_id": "KHARKIV-OSNOVIANSKY-KHOVA-2026-10-29",
+        "publisher": "Kharkiv Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-10-29T08:54:00+03:00",
+        "url": "https://kharkivoda.gov.ua/news/137725",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official 24-hour report says one 38-year-old man was killed in Kharkiv during the previous day. This is consistent with the Oct. 28 postal-branch strike and confirms the 38-year-old identification."
+      },
+      {
+        "source_id": "KHARKIV-OSNOVIANSKY-INTERFAX-2026-10-29",
+        "publisher": "Interfax-Ukraine, citing Kharkiv Regional Military Administration head Oleh Syniehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-29T08:58:00+03:00",
+        "url": "https://interfax.com.ua/news/general/1227728-amp.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the regional administration's Oct. 29 24-hour accounting: one 38-year-old man killed in Kharkiv during the previous day."
       }
     ],
     "last_verified_date": "2026-11-26",

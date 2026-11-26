@@ -6193,5 +6193,283 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-KYI-VYSHNEVE-2026-11-22-NOVUS-STRIKE",
+    "incident_date": "2026-11-22",
+    "location": {
+      "settlement": "Vyshneve",
+      "district": "Bucha district",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian Shahed drone struck a NOVUS supermarket in Vyshneve, killing three people and injuring at least 15. Earlier updates reported one death and then two; the final reported toll was three. The incident is counted once at three deaths.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "VYSHNEVE-UP-2026-11-22",
+        "publisher": "Ukrainska Pravda, citing President Volodymyr Zelenskyy and Vyshneve Mayor Illia Dikov",
+        "source_type": "news_report",
+        "published_at": "2026-11-22T20:44:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/22/8064090/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision",
+          "incident_date"
+        ],
+        "notes": "Reports the final toll of three and explains that earlier updates reported one and then two deaths."
+      },
+      {
+        "source_id": "VYSHNEVE-TKACHENKO-2026-11-22",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official regional reporting on the supermarket strike and casualty updates."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-VYSHNEVE-2026-11-22-NOVUS-STRIKE-REV-001",
+        "recorded_at": "2026-11-22",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "VYSHNEVE-UP-2026-11-22",
+          "VYSHNEVE-TKACHENKO-2026-11-22"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-BILA-TSERKVA-DISTRICT-2026-11-22-DRONE-HOUSE",
+    "incident_date": "2026-11-22",
+    "location": {
+      "settlement": null,
+      "district": "Bila Tserkva district",
+      "region": "Kyiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack damaged a private house in Bila Tserkva district and killed a man whose body was recovered from beneath the rubble. Four other people were injured. This is separate from the Nov. 25 fatal drone attack elsewhere in the district.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "BILA-22-UKRINFORM-2026-11-22",
+        "publisher": "Ukrinform, citing Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "news_report",
+        "published_at": "2026-11-22T20:54:00+02:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4187458-man-killed-in-russian-attack-in-bila-tserkva-district.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one man killed in the Nov. 22 attack and distinguishes the separate Nov. 25 fatality."
+      },
+      {
+        "source_id": "BILA-22-TKACHENKO-2026-11-22",
+        "publisher": "Kyiv Regional Military Administration head Tymur Tkachenko",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/tkachenkotymur",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official report of the death and rescue from rubble."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-BILA-TSERKVA-DISTRICT-2026-11-22-DRONE-HOUSE-REV-001",
+        "recorded_at": "2026-11-22",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "BILA-22-UKRINFORM-2026-11-22",
+          "BILA-22-TKACHENKO-2026-11-22"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-2026-11-22-ATTACKS-WOMAN",
+    "incident_date": "2026-11-22",
+    "location": {
+      "settlement": "Dnipro",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attacks on Dnipro on Nov. 22 killed a woman and damaged residential buildings and infrastructure. This is separate from the Nov. 3, Nov. 10 and Nov. 16 Dnipro incidents.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-22-UKRINFORM-2026-11-22",
+        "publisher": "Ukrinform, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-11-22T19:30:00+02:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4187442-russian-forces-pound-dnipropetrovsk-region-with-over-40-attacks-one-killed-several-injured.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports a woman killed in Dnipro during the Nov. 22 attacks."
+      },
+      {
+        "source_id": "DNIPRO-22-UP-2026-11-22",
+        "publisher": "Ukrainska Pravda",
+        "source_type": "news_report",
+        "published_at": "2026-11-22T20:10:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/22/8064088/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one woman killed in Dnipro and nine injured across the region."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-11-22-ATTACKS-WOMAN-REV-001",
+        "recorded_at": "2026-11-22",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-22-UKRINFORM-2026-11-22",
+          "DNIPRO-22-UP-2026-11-22"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-SUM-NOVOSLOBIDSKA-MAZIVKA-2026-11-22-DRONE-EXPLOSION",
+    "incident_date": "2026-11-22",
+    "location": {
+      "settlement": "Mazivka",
+      "district": "Novoslobidska community",
+      "region": "Sumy region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian FPV drone exploded after two local residents encountered it near Mazivka, killing 15-year-old Kyrylo Kozburh at the scene. The regional administration initially reported the boy as 14; the community head later confirmed he was 15.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "MAZIVKA-UP-2026-11-22",
+        "publisher": "Ukrainska Pravda, citing Sumy Regional Military Administration head Oleh Hryhorov and community head Olha Harkavenko",
+        "source_type": "news_report",
+        "published_at": "2026-11-22T16:39:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/22/8064062/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "victim_status"
+        ],
+        "notes": "Identifies the boy as 15 and records the initial official age discrepancy."
+      },
+      {
+        "source_id": "MAZIVKA-EVIDENCEHUB-2026-11-22",
+        "publisher": "Ukraine Evidence Hub",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://ukraine-evidence.org/case-files/cf-47",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Case file documents the drone explosion and notes the 14/15-year-old age discrepancy."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-SUM-NOVOSLOBIDSKA-MAZIVKA-2026-11-22-DRONE-EXPLOSION-REV-001",
+        "recorded_at": "2026-11-22",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "MAZIVKA-UP-2026-11-22",
+          "MAZIVKA-EVIDENCEHUB-2026-11-22"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-ZAVODSKY-2026-11-22-ENTERPRISE-GUIDED-BOMB",
+    "incident_date": "2026-11-22",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Zavodskyi district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian guided aerial bomb struck an enterprise in Zaporizhia, killing a 40-year-old man and injuring a 36-year-old man. This is the fatality reported in the separate Zavodskyi-district update and is counted once, not as an additional sixth incident.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-ENTERPRISE-NPU-2026-11-23",
+        "publisher": "Zaporizhia Regional Police",
+        "source_type": "official_statement",
+        "published_at": "2026-11-23T09:43:00+02:00",
+        "url": "https://npu.gov.ua/news/na-zaporizhzhi-cherez-ataky-okupantiv-zahynuv-cholovik-chetvero-liudei-otrymaly-poranennia-politseiski-dokumentuiut-naslidky-voiennykh-zlochyniv-armii-rf",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Police report says a guided aerial bomb struck an enterprise in Zaporizhia, killing a 40-year-old man and injuring a 36-year-old man."
+      },
+      {
+        "source_id": "ZAP-ENTERPRISE-UKRINFORM-2026-11-22",
+        "publisher": "Ukrinform, citing acting regional administration head Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-11-22T13:39:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4187359-russians-attack-zaporizhzhia-leaving-one-killed.html",
+        "supports": [
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
+        "notes": "Reports one man killed in an attack on Zavodskyi district on Nov. 22."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-ZAVODSKY-2026-11-22-ENTERPRISE-GUIDED-BOMB-REV-001",
+        "recorded_at": "2026-11-22",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "ZAP-ENTERPRISE-NPU-2026-11-23",
+          "ZAP-ENTERPRISE-UKRINFORM-2026-11-22"
+        ]
+      }
+    ]
   }
 ]

@@ -466,3 +466,11 @@ Commit: `e4496f8b1c7137883d17041b50a925018143221b`
 The Oct. 26 132→137 update explicitly itemizes two initial deaths at Lozova central market, not the third woman who died in hospital on Oct. 23. The current ledger cites an Interfax-Ukraine report of the revised market toll on Oct. 23, 09:58. The separate Oct. 24 Lozova warehouse strike killed one man, with Interfax-Ukraine and Ukrinform reports published that afternoon. Neither the Oct. 25 123→132 transition nor the Oct. 26 132→137 and later transitions mapped in Stage 54 explicitly itemize these two additional deaths.
 
 They are therefore two candidate historical inclusion gaps, not confirmed omissions: the approximate nationwide-minimum updates are not exhaustive incident-level lists, and neither death can yet be shown to have been excluded from every subtotal. Do not add +2 to a historical figure or assign effective dates by inference. Current ledger records, public subtotal 421 and chronology remain unchanged.
+
+
+## Stage 67 — ambiguous grouped Kyiv deaths in the 105/116/118 snapshots
+
+Checkpoint: `fatality-ledger/STAGE-67-CHECKPOINT.md`  
+Commit: `301a8ea0c60389e9d016d898e72d70ba1d33f25c`
+
+The historical method paragraphs describe “at least five earlier deaths reported in Kyiv” without identifying incidents. The current ledger has two Oct. 7 Kyiv incidents with two deaths each and an Oct. 8 morning citywide report of one death before the later Solomiansky shop strike. These three records sum to five and are a plausible mapping, but the historical wording does not prove it. The separate Oct. 8 Solomiansky shop incident has three final deaths (two initially reported); it is not named in the 105/116/118 method paragraphs. That omission is not proof of exclusion because those paragraphs are not exhaustive. Keep the shop incident separate from the earlier citywide death and leave historical membership unresolved. No ledger data, effective dates or public totals changed.

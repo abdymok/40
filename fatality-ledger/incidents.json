@@ -58,7 +58,7 @@
         "recorded_at": "2026-10-05",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KRAMATORSK-05-UKRINFORM-2026-10-06",
           "KRAMATORSK-05-UP-2026-10-06",
@@ -184,7 +184,7 @@
         "recorded_at": "2026-10-07",
         "old_value": null,
         "new_value": 14,
-        "reason": "Initial official report counted 14 deaths.",
+        "reason": "Initial official report counted 14 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "PRYLUKY-CHAUS-2026-10-07-32184"
         ],
@@ -195,7 +195,7 @@
         "recorded_at": "2026-10-07T16:47:00+03:00",
         "old_value": 14,
         "new_value": 16,
-        "reason": "Further bodies were recovered, raising the toll to 16.",
+        "reason": "Further bodies were recovered, raising the toll to 16. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "PRYLUKY-HROMADSKE-2026-10-07"
         ],
@@ -206,7 +206,7 @@
         "recorded_at": "2026-10-07T21:55:00+03:00",
         "old_value": 16,
         "new_value": 20,
-        "reason": "Further recovery work raised the toll to 20.",
+        "reason": "Further recovery work raised the toll to 20. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "PRYLUKY-UP-2026-10-07"
         ],
@@ -217,7 +217,7 @@
         "recorded_at": "2026-10-08T07:40:00+03:00",
         "old_value": 20,
         "new_value": 22,
-        "reason": "The State Emergency Service confirmed the final toll of 22 deaths, including five children.",
+        "reason": "The State Emergency Service confirmed the final toll of 22 deaths, including five children. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "PRYLUKY-UP-2026-10-08"
         ],
@@ -272,7 +272,7 @@
         "recorded_at": "2026-10-07",
         "old_value": null,
         "new_value": 2,
-        "reason": "Official city and independent reports confirmed two deaths in Darnytsky district.",
+        "reason": "Official city and independent reports confirmed two deaths in Darnytsky district. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "DARNYTSKY-07-UP-2026-10-07",
           "DARNYTSKY-07-UKRINFORM-2026-10-07"
@@ -328,7 +328,7 @@
         "recorded_at": "2026-10-07",
         "old_value": null,
         "new_value": 2,
-        "reason": "State Emergency Service confirmed two deaths in the residential-building strike.",
+        "reason": "State Emergency Service confirmed two deaths in the residential-building strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "DESNIANSKY-DSNS-2026-10-07-76916",
           "DESNIANSKY-DSNS-2026-10-07-76920"
@@ -384,7 +384,7 @@
         "recorded_at": "2026-10-08T10:00:00+02:00",
         "old_value": null,
         "new_value": 12,
-        "reason": "Initial report at the scene confirmed 12 deaths.",
+        "reason": "Initial report at the scene confirmed 12 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
@@ -395,7 +395,7 @@
         "recorded_at": "2026-10-08T12:36:00+02:00",
         "old_value": 12,
         "new_value": 30,
-        "reason": "Donetsk Regional Prosecutor's Office update raised the death toll to 30.",
+        "reason": "Donetsk Regional Prosecutor's Office update raised the death toll to 30. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
@@ -406,7 +406,7 @@
         "recorded_at": "2026-10-08T14:14:00+02:00",
         "old_value": 30,
         "new_value": 33,
-        "reason": "State Emergency Service reported the final local toll of 33 deaths.",
+        "reason": "State Emergency Service reported the final local toll of 33 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
@@ -473,7 +473,7 @@
         "recorded_at": "2026-10-08",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "IFR-08-UKRINFORM-2026-10-09",
           "IFR-08-UP-2026-10-09",
@@ -530,7 +530,7 @@
         "recorded_at": "2026-10-08T10:52:00+03:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Mayor's early morning update reported one death in the attacks on Kyiv; the specific incident was not identified.",
+        "reason": "Mayor's early morning update reported one death in the attacks on Kyiv; the specific incident was not identified. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-08-MORNING-UP-2026-10-08"
         ],
@@ -597,7 +597,7 @@
         "recorded_at": "2026-10-08T12:08:00+03:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial recovery update found two bodies at the shop building.",
+        "reason": "Initial recovery update found two bodies at the shop building. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "SOLOMIANSKY-SHOP-UP-2026-10-08",
           "SOLOMIANSKY-SHOP-IFAX-2026-10-08"
@@ -609,7 +609,7 @@
         "recorded_at": "2026-10-08T18:20:00+03:00",
         "old_value": 2,
         "new_value": 3,
-        "reason": "Kyiv police later confirmed three people killed in the shop strike.",
+        "reason": "Kyiv police later confirmed three people killed in the shop strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "SOLOMIANSKY-SHOP-UKRINFORM-2026-10-08"
         ],
@@ -664,7 +664,7 @@
         "recorded_at": "2026-10-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "DNE-09-UP-2026-10-09",
           "DNE-09-UKRINFORM-2026-10-09"
@@ -720,7 +720,7 @@
         "recorded_at": "2026-10-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "ZAP-09-UKRINFORM-2026-10-09",
           "ZAP-09-RBC-2026-10-09"
@@ -776,7 +776,7 @@
         "recorded_at": "2026-10-10",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "NIKOPOL-BOY-UP-2026-10-10",
           "NIKOPOL-BOY-UKRINFORM-2026-10-10"
@@ -832,7 +832,7 @@
         "recorded_at": "2026-10-11",
         "old_value": null,
         "new_value": 20,
-        "reason": "Initial rescue-operation report counted 20 deaths.",
+        "reason": "Initial rescue-operation report counted 20 deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "ZAP-10-DSNS-2026-10-11"
         ],
@@ -843,7 +843,7 @@
         "recorded_at": "2026-10-11T15:23:00+02:00",
         "old_value": 20,
         "new_value": 23,
-        "reason": "President Zelenskyy reported 23 deaths; the regional DSNS spokesperson confirmed the final toll was 23.",
+        "reason": "President Zelenskyy reported 23 deaths; the regional DSNS spokesperson confirmed the final toll was 23. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "ZAP-10-UP-2026-10-11"
         ],
@@ -886,7 +886,7 @@
         "recorded_at": "2026-10-12",
         "old_value": null,
         "new_value": 1,
-        "reason": "Regional administration confirmed one woman killed in the Oct. 11 attack.",
+        "reason": "Regional administration confirmed one woman killed in the Oct. 11 attack. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "SLOVIANSK-11-FILASHKIN-2026-10-12-18660"
         ],
@@ -941,7 +941,7 @@
         "recorded_at": "2026-10-13T08:30:00+03:00",
         "old_value": null,
         "new_value": 4,
-        "reason": "The fourth body was recovered from the rubble after overnight rescue operations.",
+        "reason": "The fourth body was recovered from the rubble after overnight rescue operations. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KHARKIV-12-IFAX-2026-10-13",
           "KHARKIV-12-SUSPILNE-2026-10-13"
@@ -997,7 +997,7 @@
         "recorded_at": "2026-10-12T20:27:00+03:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial city update reported one death.",
+        "reason": "Initial city update reported one death. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
         ],
@@ -1008,7 +1008,7 @@
         "recorded_at": "2026-10-12T21:19:00+03:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "Kyiv City Prosecutor's Office later confirmed two deaths, including a second person in a car near the building.",
+        "reason": "Kyiv City Prosecutor's Office later confirmed two deaths, including a second person in a car near the building. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
         ],
@@ -1075,7 +1075,7 @@
         "recorded_at": "2026-10-13",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial mayoral update reported one person killed.",
+        "reason": "Initial mayoral update reported one person killed. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-13-KLYCHKO-2026-10-13"
         ],
@@ -1086,7 +1086,7 @@
         "recorded_at": "2026-10-13T20:00:00+03:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "Later updates confirmed a second person killed in the same residential-building strike.",
+        "reason": "Later updates confirmed a second person killed in the same residential-building strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-13-REUTERS-2026-10-13",
           "KYIV-13-IFAX-2026-10-13"
@@ -1142,7 +1142,7 @@
         "recorded_at": "2026-10-15T07:58:00+02:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Regional administration and DSNS confirmed three people killed in the overnight attack.",
+        "reason": "Regional administration and DSNS confirmed three people killed in the overnight attack. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KROPYVNYTSKYI-UP-2026-10-15",
           "KROPYVNYTSKYI-ODA-2026-10-15"
@@ -1210,7 +1210,7 @@
         "recorded_at": "2026-10-14T07:31:00+03:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "State Emergency Service confirmed three people killed in the overnight attack.",
+        "reason": "State Emergency Service confirmed three people killed in the overnight attack. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-14-UP-2026-10-14",
           "KYIV-14-RED-CROSS-2026-10-14"
@@ -1279,7 +1279,7 @@
         "recorded_at": "2026-10-14",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial regional administration update reported three deaths.",
+        "reason": "Initial regional administration update reported three deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "LUTSK-OVA-11356"
         ],
@@ -1290,7 +1290,7 @@
         "recorded_at": "2026-10-14",
         "old_value": 3,
         "new_value": 4,
-        "reason": "A later update raised the toll to four.",
+        "reason": "A later update raised the toll to four. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "LUTSK-OVA-11357"
         ],
@@ -1301,7 +1301,7 @@
         "recorded_at": "2026-10-14T23:10:00+02:00",
         "old_value": 4,
         "new_value": 6,
-        "reason": "The final official casualty update confirmed six deaths.",
+        "reason": "The final official casualty update confirmed six deaths. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "LUTSK-UP-2026-10-14"
         ],
@@ -1368,7 +1368,7 @@
         "recorded_at": "2026-10-16T13:12:00+02:00",
         "old_value": 3,
         "new_value": 2,
-        "reason": "The regional administration later confirmed two deaths, identifying the victims. The earlier figure of three was superseded.",
+        "reason": "The regional administration later confirmed two deaths, identifying the victims. The earlier figure of three was superseded. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KHARKIV-16-UKRINFORM-2026-10-16"
         ],
@@ -1447,7 +1447,7 @@
         "recorded_at": "2026-10-17T12:27:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial city administration report confirmed one person killed and 10 injured.",
+        "reason": "Initial city administration report confirmed one person killed and 10 injured. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-17"
         ],
@@ -1458,7 +1458,7 @@
         "recorded_at": "2026-10-18T12:34:00+02:00",
         "old_value": 1,
         "new_value": 6,
-        "reason": "As rescue work continued, the local city administration raised the toll to six.",
+        "reason": "As rescue work continued, the local city administration raised the toll to six. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-18"
         ],
@@ -1469,7 +1469,7 @@
         "recorded_at": "2026-10-21T11:54:00+02:00",
         "old_value": 6,
         "new_value": 9,
-        "reason": "After five days of rescue work, Sloviansk City Military Administration head Vadym Liakh confirmed nine deaths. OHCHR's October report lists 12; the additional three are not added without an identifiable local incident/source.",
+        "reason": "After five days of rescue work, Sloviansk City Military Administration head Vadym Liakh confirmed nine deaths. OHCHR's October report lists 12; the additional three are not added without an identifiable local incident/source. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "SLOVIANSK-17-IFAX-2026-10-21",
           "SLOVIANSK-17-UKRINFORM-2026-10-21"
@@ -1537,7 +1537,7 @@
         "recorded_at": "2026-10-17T06:26:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Official city and regional reporting confirmed the ambulance driver killed by the second strike.",
+        "reason": "Official city and regional reporting confirmed the ambulance driver killed by the second strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KHERSON-17-UP-2026-10-17",
           "KHERSON-17-UKRINFORM-2026-10-17",
@@ -1672,7 +1672,7 @@
         "recorded_at": "2026-10-19T18:16:00+03:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial reports confirmed two women and an infant killed at the scene.",
+        "reason": "Initial reports confirmed two women and an infant killed at the scene. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "NOVA-VODOLAHA-HROMADSKE-2026-10-19",
           "NOVA-VODOLAHA-RBC-2026-10-19"
@@ -1684,7 +1684,7 @@
         "recorded_at": "2026-10-19T18:36:00+03:00",
         "old_value": 3,
         "new_value": 6,
-        "reason": "The regional administration initially reported six deaths, including three children. This preliminary figure was later corrected.",
+        "reason": "The regional administration initially reported six deaths, including three children. This preliminary figure was later corrected. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
           "NOVA-VODOLAHA-UP-2026-10-19"
@@ -1763,7 +1763,7 @@
         "recorded_at": "2026-10-19",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-19-KLYCHKO-2026-10-19",
           "KYIV-19-CENSOR-2026-10-19"
@@ -1807,7 +1807,7 @@
         "recorded_at": "2026-10-20",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KRAMATORSK-COUNCIL-2026-10-20-28367"
         ],
@@ -1850,7 +1850,7 @@
         "recorded_at": "2026-10-20",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "HOLOSIIVSKY-KLYCHKO-2026-10-20-7914"
         ],
@@ -1987,7 +1987,7 @@
         "recorded_at": "2026-10-26T11:54:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Cherkasy Regional Military Administration and Uman city authorities confirmed that 86-year-old Tamara Yasynska died in hospital from injuries sustained in the Oct. 21 drone strike.",
+        "reason": "Cherkasy Regional Military Administration and Uman city authorities confirmed that 86-year-old Tamara Yasynska died in hospital from injuries sustained in the Oct. 21 drone strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "UMAN-TAMARA-CHERKASKA-ODA-2026-10-26",
           "UMAN-TAMARA-CHERKASKA-ODA-TELEGRAM-2026-10-26",
@@ -2131,7 +2131,7 @@
         "recorded_at": "2026-10-21",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-BALLISTIC-REUTERS-2026-10-21",
           "KYIV-BALLISTIC-DSNS-2026-10-22-78447"
@@ -2175,7 +2175,7 @@
         "recorded_at": "2026-10-21",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "KYIV-SVIATOSHYNSKY-KLYCHKO-2026-10-21"
         ],
@@ -2322,7 +2322,7 @@
         "recorded_at": "2026-10-23T09:58:00+02:00",
         "old_value": 2,
         "new_value": 3,
-        "reason": "A third woman injured in the market strike died in hospital.",
+        "reason": "A third woman injured in the market strike died in hospital. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "LOZOVA-IFAX-2026-10-23",
           "LOZOVA-EVIDENCEHUB-2026-10-22"
@@ -2366,7 +2366,7 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "LYMANIVKA-KHARKIV-ODA-2026-10-22"
         ],
@@ -2866,7 +2866,7 @@
         "recorded_at": "2026-10-24",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
         "source_ids": [
           "LOZOVA-WAREHOUSE-IFAX-2026-10-24",
           "LOZOVA-WAREHOUSE-UKRINFORM-2026-10-24"
@@ -4324,7 +4324,7 @@
         "recorded_at": "2026-10-31",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Regional reporting confirmed one death in the Oct. 31 Sloviansk attack. Its inclusion in the Nov. 2 174 baseline or the 192 opening subtotal has not been isolated from the archived change log; effective date remains null pending snapshot membership verification.",
         "source_ids": [
           "SLOVIANSK-31-FILASHKIN-2026-11-01"
         ],
@@ -5192,7 +5192,7 @@
         "recorded_at": "2026-11-03T13:38:00+02:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "After the search-and-rescue operation, the regional administration reported two deaths. This later official count supersedes the initial one-death update.",
+        "reason": "The final local count is two, but the historical Nov. 3 running subtotal added only one Dnipro death. The second death is documented in the incident record but is not assigned to the 421 public subtotal without evidence of a later inclusion.",
         "source_ids": [
           "DNIPRO-2026-11-03-UP-FINAL"
         ],
@@ -7090,7 +7090,7 @@
         "recorded_at": "2026-11-11T14:06:00+02:00",
         "old_value": 1,
         "new_value": 3,
-        "reason": "Two people hospitalized with severe injuries died in hospital, raising the toll to three.",
+        "reason": "Two people hospitalized with severe injuries died in hospital, raising the toll to three. The later hospital death is documented in the final incident count, but the 421 public subtotal's historical change log only establishes the initial death; no later inclusion date is proven.",
         "source_ids": [
           "CHORNOMORSK-UP-2026-11-11-FINAL",
           "CHORNOMORSK-KI-2026-11-11"
@@ -7102,7 +7102,7 @@
         "recorded_at": "2026-11-11",
         "old_value": 3,
         "new_value": 4,
-        "reason": "A further hospitalized victim died, and Kiper confirmed the final toll of four.",
+        "reason": "A further hospitalized victim died, and Kiper confirmed the final toll of four. The later hospital death is documented in the final incident count, but the 421 public subtotal's historical change log only establishes the initial death; no later inclusion date is proven.",
         "source_ids": [
           "CHORNOMORSK-UP-2026-11-11-FINAL",
           "CHORNOMORSK-EVIDENCEHUB-2026-11-11"

@@ -720,7 +720,7 @@
         "recorded_at": "2026-10-09",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Zaporizhia's Oct. 9 guided-bomb strike killed one man, as reported by the regional prosecutor and acting regional administration head. The Oct. 11 ≈80 snapshot's Zaporizhia row concerns the separate Oct. 10 residential strike, for which it records 20 deaths; it does not itemize this Oct. 9 incident. The later 148 baseline carries forward an aggregate and does not provide complete incident membership. No named 80→92 or 148→173 increment establishes this death's inclusion. Keep ledger_effective_at null.",
         "source_ids": [
           "ZAP-09-UKRINFORM-2026-10-09",
           "ZAP-09-RBC-2026-10-09"
@@ -886,7 +886,7 @@
         "recorded_at": "2026-10-12",
         "old_value": null,
         "new_value": 1,
-        "reason": "Regional administration confirmed one woman killed in the Oct. 11 attack. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Donetsk Regional Military Administration reported one woman killed in Sloviansk on Oct. 11, in a report published Oct. 12. This is distinct from the Oct. 17 nine-death Sloviansk airstrike, the Oct. 30 attacks and the Nov. 2 Sloviansk death. The Oct. 11 ≈80 baseline predates the report, and the 80→92 increments do not name this incident. Later method snapshots are carried-forward aggregates without complete incident membership; no explicit later increment establishes its inclusion. Keep ledger_effective_at null.",
         "source_ids": [
           "SLOVIANSK-11-FILASHKIN-2026-10-12-18660"
         ],

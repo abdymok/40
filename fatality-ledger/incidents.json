@@ -9346,6 +9346,31 @@
           "victim_status"
         ],
         "notes": "Reports that 12-year-old Artem Koval died in a Kyiv hospital, raising the toll from five to six."
+      },
+      {
+        "source_id": "NOVA-VODOLAHA-OHCHR-OCTOBER-2026",
+        "publisher": "UN Human Rights Monitoring Mission in Ukraine, Protection of Civilians in Armed Conflict: October 2026",
+        "source_type": "international_monitoring_report",
+        "published_at": "2026-11-23",
+        "url": "https://ukraine.un.org/sites/default/files/2026-11/Ukraine%20-%20protection%20of%20civilians%20in%20armed%20conflict%20%28October%29_UKR.pdf",
+        "supports": [
+          "death_count",
+          "victim_status",
+          "corroboration"
+        ],
+        "notes": "The October monitoring report lists six civilians killed in Nova Vodolaha on Oct. 19: three women, two girls and one boy. It independently corroborates the final count of six."
+      },
+      {
+        "source_id": "NOVA-VODOLAHA-EVIDENCEHUB-CASEFILE-V3",
+        "publisher": "Ukraine Evidence Hub, Nova Vodolaha case file v3",
+        "source_type": "case_file",
+        "published_at": "2026-10-26",
+        "url": "https://ukraine-evidence.org/case-files/cf-15",
+        "supports": [
+          "death_count",
+          "victim_status"
+        ],
+        "notes": "The v3 case-file headline and narrative state seven killed, while contemporaneous regional updates and the OHCHR October report support six. Retained as a conflicting secondary case-file figure, not used to increase the ledger count."
       }
     ],
     "last_verified_date": "2026-11-26",
@@ -9390,9 +9415,10 @@
         "recorded_at": "2026-10-26T17:22:00+03:00",
         "old_value": 5,
         "new_value": 6,
-        "reason": "A 12-year-old boy died in a Kyiv hospital from injuries sustained in the Oct. 19 park strike, raising the final toll to six.",
+        "reason": "A 12-year-old boy died in a Kyiv hospital on Oct. 26, raising the final toll to six. The October OHCHR monitoring report independently confirms six civilian deaths.",
         "source_ids": [
-          "NOVA-VODOLAHA-UKRINFORM-2026-10-26-BOY-DIES"
+          "NOVA-VODOLAHA-UKRINFORM-2026-10-26-BOY-DIES",
+          "NOVA-VODOLAHA-OHCHR-OCTOBER-2026"
         ],
         "ledger_effective_at": "2026-10-27"
       }

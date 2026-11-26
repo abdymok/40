@@ -8,8 +8,8 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 - Net sum of count changes across these entries: 89
 - Legacy pre-Oct. 29 entries: 26 entries, 82 net count changes
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths
-- Oct. 31 Sloviansk: 1 entry, 1 death
-- Nov. 3 Dnipro second death: 1 entry, 1 death
+- Oct. 31 Sloviansk: 1 entry, 1 death (174-baseline membership unverified)
+- Nov. 3 Dnipro second death: 1 entry, 1 death (not in mapped Nov. 3 increment)
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
 The 26 remaining pre-Oct. 29 entries carry 82 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The six remaining post-Oct. 29 entries account for seven further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death and two later Chornomorsk revisions. Together with the 26 legacy entries, the unresolved revisions have a net arithmetic change of 89. This is not 89 additional deaths to be added to the public total as a block.
@@ -58,12 +58,16 @@ The Oct. 21 ≈116 method snapshot explicitly includes one death in Holosiivsky 
 
 The first Saltivsky death is now dated Nov. 11. The ≈282 snapshot precedes the separate Chornomorsk 282→283 increment; the subsequent 283→284 Saltivsky update explicitly says the first death was already in the preceding subtotal. The first death was therefore present by the Nov. 11 ≈282 snapshot; the second death is the later Nov. 11 increment. See `STAGE-86-CHECKPOINT.md`.
 
+## Stage 88 adjudication
+
+The Nov. 3 dashboard sequence maps 203→207 to four deaths in Donetsk region from Nov. 2, including a Nov. 2 Sloviansk incident distinct from the Oct. 31 death. The first Dnipro death is the 207→208 increment; the subsequent 208→211 changes are Komyshuvakha 29→31 (+2) and Hotiv (+1). The second Dnipro death is not part of the mapped sequence. The Oct. 31 Sloviansk death is not named in the 174 baseline's incident-level list, and its carry-forward membership cannot be established. Both revisions remain null. See `STAGE-88-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
 2. The two additional Oct. 29 Izium deaths remain separate from the historical 25-death cohort. Do not add them to a later subtotal without a dated source-to-dashboard link.
 3. The Oct. 31 Sloviansk death must be checked against the 174 pre-Komуshuvakha baseline and 192 opening snapshot.
-4. The second Nov. 3 Dnipro death is documented in the incident record, but the method's Nov. 3 update adds only one.
+4. The second Nov. 3 Dnipro death is documented in the incident record, but the mapped Nov. 3 sequence includes only one Dnipro death. The first death is the 207→208 increment; subsequent 208→211 changes are Komyshuvakha (+2) and Hotiv (+1).
 5. The initial Saltivsky death is not assigned as a new increment because the method's 283→284 step adds only one and says the first was already in the preceding subtotal.
 6. The two later Chornomorsk revisions add three deaths to the incident's final count of four, but the public 421 change history only establishes the initial death.
 

@@ -9760,5 +9760,335 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-DNE-DNIPRO-2026-10-23-CIVILIAN-ATTACK",
+    "incident_date": "2026-10-23",
+    "location": {
+      "settlement": "Dnipro",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack on Dnipro on Oct. 23 damaged infrastructure, businesses, private homes and cars, killing one person and injuring eight. The regional administration confirmed the death in its Oct. 23 casualty update.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "DNIPRO-23-LB-2026-10-23",
+        "publisher": "LB.ua, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-23T18:45:00+03:00",
+        "url": "https://en.lb.ua/news/2026/10/23/46374_russian_attacks_dnipropetrovsk.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in Dnipro and eight injured in hospital."
+      },
+      {
+        "source_id": "DNIPRO-23-LB-2026-10-24",
+        "publisher": "LB.ua, citing Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T08:19:00+03:00",
+        "url": "https://en.lb.ua/news/2026/10/24/46422_occupiers_launch_nearly_10_drone.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Next-day regional roundup reiterates one death in Dnipro from the Oct. 23 attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-DNIPRO-2026-10-23-CIVILIAN-ATTACK-REV-001",
+        "recorded_at": "2026-10-23",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "DNIPRO-23-LB-2026-10-23",
+          "DNIPRO-23-LB-2026-10-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-23-FAB-250-STRIKE",
+    "incident_date": "2026-10-23",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian forces dropped three FAB-250 guided aerial bombs on a residential neighbourhood in Kramatorsk at 15:44 on Oct. 23, killing one person and injuring six, including three children.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-23-UKRINFORM-2026-10-24",
+        "publisher": "Ukrinform, citing Donetsk Regional Prosecutor's Office",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T06:58:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4177691-one-killed-six-injured-in-russian-airstrike-on-kramatorsk.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed and six injured in the Oct. 23 FAB-250 strike."
+      },
+      {
+        "source_id": "KRAMATORSK-23-DONETSK-ODA-2026-10-23",
+        "publisher": "Donetsk Regional Prosecutor's Office",
+        "source_type": "official_statement",
+        "published_at": null,
+        "url": "https://dn.gov.ua/en/news/operatyvna-sytuatsiia-po-oblasti-stanom-na-ranok-23-zhovtnia",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional casualty update includes one person killed in Kramatorsk; detailed prosecutor report identifies the Oct. 23 airstrike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-23-FAB-250-STRIKE-REV-001",
+        "recorded_at": "2026-10-23",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "KRAMATORSK-23-UKRINFORM-2026-10-24",
+          "KRAMATORSK-23-DONETSK-ODA-2026-10-23"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-NIKOPOL-MARHANETS-2026-10-22-RESIDENTIAL-SHELLING",
+    "incident_date": "2026-10-22",
+    "location": {
+      "settlement": null,
+      "district": "Marhanets community, Nikopol district",
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian shelling in the Marhanets community of Nikopol district on Oct. 22 killed a 43-year-old man in a residential area. A separate 51-year-old man was seriously injured in another attack in the region.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NIKOPOL-22-IFAX-2026-10-22",
+        "publisher": "Interfax-Ukraine, citing Dnipropetrovsk Regional Military Administration head Oleksandr Hanzha",
+        "source_type": "news_report",
+        "published_at": "2026-10-22T20:44:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1224812.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in the region and a 51-year-old man hospitalized; the detailed locality and age are corroborated by ZMINA."
+      },
+      {
+        "source_id": "NIKOPOL-22-ZMINA-2026-10-22",
+        "publisher": "ZMINA",
+        "source_type": "news_report",
+        "published_at": "2026-10-23",
+        "url": "https://zmina.info/en/news-en/at-least-10-killed-and-over-100-injured-in-widespread-russian-attacks-across-ukraine-on-22-october-2026/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Identifies a 43-year-old man killed by shelling in a village of Marhanets community."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-NIKOPOL-MARHANETS-2026-10-22-RESIDENTIAL-SHELLING-REV-001",
+        "recorded_at": "2026-10-22",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "NIKOPOL-22-IFAX-2026-10-22",
+          "NIKOPOL-22-ZMINA-2026-10-22"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE",
+    "incident_date": "2026-10-24",
+    "location": {
+      "settlement": "Lozova",
+      "district": null,
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian missile strike hit a warehouse building in Lozova on Oct. 24, killing a 45-year-old man and injuring two men aged 26 and 43. A 37-year-old woman also required medical attention for an acute stress reaction.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "LOZOVA-WAREHOUSE-IFAX-2026-10-24",
+        "publisher": "Interfax-Ukraine, citing Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T14:47:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1225605.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 45-year-old man killed in the warehouse strike."
+      },
+      {
+        "source_id": "LOZOVA-WAREHOUSE-UKRINFORM-2026-10-24",
+        "publisher": "Ukrinform",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T14:35:00+03:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4177789-russian-missile-strike-on-lozova-kills-one-person-and-injures-two-others.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one man killed and two injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE-REV-001",
+        "recorded_at": "2026-10-24",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "LOZOVA-WAREHOUSE-IFAX-2026-10-24",
+          "LOZOVA-WAREHOUSE-UKRINFORM-2026-10-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-SUM-KONOTOP-2026-10-24-FARM-DRONE-STRIKE",
+    "incident_date": "2026-10-24",
+    "location": {
+      "settlement": null,
+      "district": "Konotop district",
+      "region": "Sumy region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone attack struck a cattle-breeding farm in Konotop district on Oct. 24, killing a 31-year-old female farm worker and injuring four other people. The body was recovered from beneath the rubble.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "SUMY-FARM-UKRINFORM-2026-10-24",
+        "publisher": "Ukrinform, citing Sumy Regional State Emergency Service",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T17:37:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4177835-russian-drones-attack-farm-in-sumy-region-one-killed-four-injured.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one woman killed and four injured in the attack on a cattle-breeding enterprise."
+      },
+      {
+        "source_id": "SUMY-FARM-UP-2026-10-24",
+        "publisher": "Ukrainska Pravda, citing Sumy Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T16:00:00+03:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/24/8059548/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Identifies the victim as a 31-year-old female farm worker."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-SUM-KONOTOP-2026-10-24-FARM-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-10-24",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "SUMY-FARM-UKRINFORM-2026-10-24",
+          "SUMY-FARM-UP-2026-10-24"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-YAROVA-2026-10-24-SHELLING",
+    "incident_date": "2026-10-24",
+    "location": {
+      "settlement": "Yarova",
+      "district": "Lyman community",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian shelling killed one person in Yarova, in Lyman community, on Oct. 24. Donetsk Regional Military Administration head Vadym Filashkin reported the death in his Oct. 25 morning casualty update.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "YAROVA-LB-2026-10-25",
+        "publisher": "LB.ua, citing Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "news_report",
+        "published_at": "2026-10-25T13:37:00+03:00",
+        "url": "https://en.lb.ua/news/2026/10/25/46618_killed_six_wounded_russian.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed in Yarova and six injured across Donetsk region."
+      },
+      {
+        "source_id": "YAROVA-HUA-2026-10-25",
+        "publisher": "h.ua",
+        "source_type": "news_report",
+        "published_at": "2026-10-25",
+        "url": "https://en.h.ua/2026/10/25/russian-attacks-donetsk-region-casualties-evacuations",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one Yarova resident killed on Oct. 24."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-YAROVA-2026-10-24-SHELLING-REV-001",
+        "recorded_at": "2026-10-24",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "source_ids": [
+          "YAROVA-LB-2026-10-25",
+          "YAROVA-HUA-2026-10-25"
+        ]
+      }
+    ]
   }
 ]

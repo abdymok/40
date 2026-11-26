@@ -149,7 +149,9 @@
                 "count_revision",
                 "incident_date",
                 "victim_status",
-                "corroboration"
+                "corroboration",
+                "evidence_classification",
+                "verification_status"
               ]
             },
             "minItems": 1

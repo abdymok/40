@@ -2222,12 +2222,12 @@
         "recorded_at": "2026-10-21",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "First documented inclusion in the selected-incident subtotal is the Oct. 22 ≈118 dashboard snapshot. The contemporaneous method paragraph explicitly includes one person killed in the overnight Russian attack on Kyiv on Oct. 22; the incident began late on Oct. 21 and the State Emergency Service confirmed the death in its Oct. 22 morning report. This is the same ballistic attack recorded in this incident, not a separate Oct. 22 incident. See the Oct. 22 dashboard commit 4ada778321c66b570c73f8d5353617a076db8ee.",
         "source_ids": [
           "KYIV-BALLISTIC-REUTERS-2026-10-21",
           "KYIV-BALLISTIC-DSNS-2026-10-22-78447"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-22"
       }
     ]
   },

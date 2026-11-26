@@ -722,3 +722,14 @@ The Oct. 19 Nova Vodolaha toll progressed 3→preliminary 6→corrected 5. The O
 
 
 > **Stage 102 amendment — early legacy cohort:** Six pre-Oct. 29 revisions were re-audited: Oct. 5 Kramatorsk (+1), Oct. 8 Ivano-Frankivsk (+1), the unallocated Oct. 8 Kyiv morning report (+1), the third Oct. 8 Solomiansky shop death (+1), Oct. 9 Synelnykove (+1) and Oct. 9 Zaporizhia (+1). No effective dates were assigned. The Oct. 11 ≈80 snapshot explicitly includes only the first two Solomiansky deaths; its broad Kyiv citywide row may overlap incident-level reports; its Dnipropetrovsk row is the separate Pokrovske child death; and its 20-death Zaporizhia row is the Oct. 10 residential strike, not the Oct. 9 guided-bomb death. The later ≈148 aggregate does not provide complete incident membership. Six reason fields were clarified, with no count, public subtotal or effective-date change. See `STAGE-102-CHECKPOINT.md`.
+
+
+## Stage 103 — final pre-Oct. 29 legacy inclusion review
+
+Stage 103 reviewed the final eight pre-Oct. 29 null revisions: the additional three deaths in the Oct. 10 Zaporizhia strike, the Oct. 11 Sloviansk death, four deaths in the Oct. 12 Kharkiv residential strike, two Darnytsky revisions representing one two-death incident, the Oct. 17 Kherson ambulance-driver death, the third Oct. 22 Lozova market death and the separate Oct. 24 Lozova warehouse death. The contemporaneous dashboard changes and method snapshots do not establish inclusion dates for these revisions. In particular, the Oct. 11 ≈80 snapshot includes the first 20 Zaporizhia deaths; the Oct. 26 132→137 transition includes only the first two Lozova market deaths; and the Oct. 25 123→132 transition does not name the warehouse incident. The Kharkiv and Darnytsky cases remain potential inclusion gaps, not confirmed omissions. All eight remain `ledger_effective_at: null`. See `STAGE-103-CHECKPOINT.md`.
+
+### Legacy review closeout
+
+Stages 100, 102 and 103 have now reviewed all 26 pre-Oct. 29 null revision entries. Twelve were categorized in Stage 100, six received additional overlap and incident-matching findings in Stage 102, and the final eight are adjudicated in Stage 103. Fourteen entries, net +19, still lack a confirmed historical inclusion date. The other 12 are interim or superseded toll revisions, a correction not reflected in the public subtotal, or separately classified cases. The surviving Git history and public method snapshots do not support further date assignments. These are unresolved historical membership facts, not permission to add the arithmetic net to the public minimum.
+
+The ledger remains 176 incidents, 430 sources, 452 final documented deaths and 231 revisions. The unresolved inventory remains 33 null revisions, net +90, of which 26 predate Oct. 29 (net +82) and seven are later (net +8). The public provisional minimum remains 421. No public chronology, method-page figure or dashboard counter was changed.

@@ -5,7 +5,7 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 ## Summary
 
 - Null revision entries: 53
-- Sum of positive count changes across these entries: 147
+- Net sum of count changes across these entries: 147
 - Legacy pre-Oct. 29 entries: 46 entries, 139 deaths
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths
 - Oct. 31 Sloviansk: 1 entry, 1 death
@@ -13,7 +13,7 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 - Nov. 11 Saltivsky first death: 1 entry, 1 death
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 46 pre-Oct. 29 entries carry 140 deaths. Their inclusion in the historical 148 baseline is not individually mapped. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 148 additional deaths and must not be added to the public total as a block.
+The 46 pre-Oct. 29 entries carry 139 net count changes, including one -1 correction in the Kharkiv market incident. Their inclusion in the historical 148 baseline is not individually mapped. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
 
 ## Adjudication rules
 

@@ -1142,5 +1142,141 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-DNE-NIKOPOL-2026-11-23-ARTILLERY-45YO",
+    "incident_date": "2026-11-23",
+    "location": {
+      "settlement": "Nikopol",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian heavy-artillery attack on the shoreline of Nikopol killed a 45-year-old woman, Natalia Samoilova. Her 67-year-old mother was injured. Local reporting identifies this fatal attack separately from the death of a 62-year-old woman elsewhere in Nikopol on the same date.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NIKOPOL-45YO-INFORMATOR-2026-11-24",
+        "publisher": "Informator Nikopol, citing Nikopol Mayor Oleksandr Saiuk",
+        "source_type": "news_report",
+        "published_at": "2026-11-24T22:48:00+02:00",
+        "url": "https://nikopol.informator.ua/2026/11/24/pid-chas-artobstrilu-zagynula-45-richna-meshkanka-nikopolya/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the 45-year-old woman's death in a heavy-artillery attack on Nov. 23 and describes the shoreline strike."
+      },
+      {
+        "source_id": "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
+        "publisher": "Informator Nikopol, citing Nikopol District Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T23:59:00+02:00",
+        "url": "https://nikopol.informator.ua/2026/11/23/dvoye-zagyblyh-pozhezhi-ta-rujnuvannya-vorog-vdaryv-dronamy-j-artyleriyeyu-po-nikopolyu/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional daily roundup reports two women, aged 45 and 62, killed in Nikopol on Nov. 23."
+      },
+      {
+        "source_id": "NIKOPOL-REGION-IFAX-2026-11-23",
+        "publisher": "Interfax-Ukraine, citing Dnipropetrovsk Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T18:51:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1241155-amp.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official regional summary confirms two deaths in Nikopol district."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-NIKOPOL-2026-11-23-ARTILLERY-45YO-REV-001",
+        "recorded_at": "2026-11-24T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting.",
+        "source_ids": [
+          "NIKOPOL-45YO-INFORMATOR-2026-11-24",
+          "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
+          "NIKOPOL-REGION-IFAX-2026-11-23"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DNE-NIKOPOL-2026-11-23-DRONE-ARTILLERY-62YO",
+    "incident_date": "2026-11-23",
+    "location": {
+      "settlement": "Nikopol",
+      "district": null,
+      "region": "Dnipropetrovsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian drone and artillery attacks on Nikopol on Nov. 23 killed a 62-year-old woman, Iryna Kuznetsova. Local reporting identifies her separately from the 45-year-old woman killed in a heavy-artillery attack elsewhere in the city.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "NIKOPOL-62YO-INFORMATOR-2026-11-24",
+        "publisher": "Informator Nikopol, citing Nikopol Mayor Oleksandr Saiuk",
+        "source_type": "news_report",
+        "published_at": "2026-11-24T17:23:00+02:00",
+        "url": "https://nikopol.informator.ua/2026/11/24/nikogo-z-ridnyh-ne-zalyshylosya-vorozha-ataka-zabrala-zhyttya-meshkanky-nikopolya/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports the death of 62-year-old Iryna Kuznetsova following Russian attacks on Nikopol on Nov. 23."
+      },
+      {
+        "source_id": "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
+        "publisher": "Informator Nikopol, citing Nikopol District Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T23:59:00+02:00",
+        "url": "https://nikopol.informator.ua/2026/11/23/dvoye-zagyblyh-pozhezhi-ta-rujnuvannya-vorog-vdaryv-dronamy-j-artyleriyeyu-po-nikopolyu/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional daily roundup reports two women, aged 45 and 62, killed in Nikopol on Nov. 23."
+      },
+      {
+        "source_id": "NIKOPOL-REGION-IFAX-2026-11-23",
+        "publisher": "Interfax-Ukraine, citing Dnipropetrovsk Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-23T18:51:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1241155-amp.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Official regional summary confirms two deaths in Nikopol district."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DNE-NIKOPOL-2026-11-23-DRONE-ARTILLERY-62YO-REV-001",
+        "recorded_at": "2026-11-24T23:59:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting.",
+        "source_ids": [
+          "NIKOPOL-62YO-INFORMATOR-2026-11-24",
+          "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
+          "NIKOPOL-REGION-IFAX-2026-11-23"
+        ]
+      }
+    ]
   }
 ]

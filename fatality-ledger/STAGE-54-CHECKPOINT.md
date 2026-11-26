@@ -53,7 +53,7 @@ Do not assign these two deaths to incidents by inference. They remain part of th
 - 132 → 137: +5, mapped.
 - 137 → 138: +1, mapped.
 - 138 → 141: +3, mapped.
-- 141 → 146: +5 across two updates, mapped.
+- 141 → 146: +5 across three successive updates, mapped.
 - 121 → 123: +2, not mapped.
 
 The Oct. 25–27 mapping does not resolve the full legacy 148 membership. The 121→123 gap and other historical inclusion/overlap questions remain open. No effective dates were added in this stage because the mapped Oct. 25–27 dates were already present in the ledger and the +2 is unallocated.

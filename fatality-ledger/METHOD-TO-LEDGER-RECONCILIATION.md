@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 93, updated Nov. 26, 2026  
+**Working status:** Stage 94, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -678,3 +678,10 @@ The Oct. 11 ≈80 snapshot explicitly records 20 deaths in the Oct. 10 Zaporizhi
 Checkpoint: `fatality-ledger/STAGE-93-CHECKPOINT.md`
 
 The Oct. 9 Synelnykove-district death is not itemized in the Oct. 11 ≈80 snapshot. Its one Dnipropetrovsk-region row is matched in Stage 62 to the separate Pokrovske child death. The Oct. 25 123→132 update's four Synelnykove deaths concern a distinct Oct. 24 residential-area drone strike. The Oct. 22 ≈123 baseline does not enumerate every incident, so the Oct. 9 death's inclusion in 123 or 148 cannot be established. REV-001 remains null. No incident count, effective date or public total changed.
+
+
+## Stage 94 — Oct. 9 Zaporizhia and Oct. 11 Sloviansk baseline membership
+
+Checkpoint: `fatality-ledger/STAGE-94-CHECKPOINT.md`
+
+The Oct. 9 Zaporizhia guided-bomb death is distinct from the Oct. 10 residential strike whose 20-death toll appears in the ≈80 baseline. It is not itemized in that snapshot or the 80→92 changes. The Oct. 11 Sloviansk death was reported on Oct. 12, after the ≈80 cutoff, and is also absent from the 80→92 changes. Neither is individually identified in the carried-forward 148 baseline. Later inclusion remains unverified; both revisions remain null. No incident counts, effective dates or public totals changed.

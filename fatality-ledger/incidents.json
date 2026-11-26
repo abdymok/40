@@ -4415,7 +4415,7 @@
         "recorded_at": "2026-10-31",
         "old_value": null,
         "new_value": 1,
-        "reason": "Regional reporting confirmed one death in the Oct. 31 Sloviansk attack. Its inclusion in the Nov. 2 174 baseline or the 192 opening subtotal has not been isolated from the archived change log; effective date remains null pending snapshot membership verification.",
+        "reason": "Donetsk Regional Military Administration's Nov. 1 morning report confirmed one death in the Oct. 31 Sloviansk attacks. The Nov. 3 203→207 dashboard increment explicitly names four separate deaths from Nov. 2 in Sloviansk, Kramatorsk, Druzhkivka and Bilenke; that Sloviansk death is not this Oct. 31 incident. The Nov. 2 174 baseline carries forward earlier counts but does not itemize this incident. Inclusion in the 174 baseline, or any later subtotal, is therefore unproven; keep ledger_effective_at null.",
         "source_ids": [
           "SLOVIANSK-31-FILASHKIN-2026-11-01"
         ],
@@ -5283,7 +5283,7 @@
         "recorded_at": "2026-11-03T13:38:00+02:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "The final local count is two, but the historical Nov. 3 running subtotal added only one Dnipro death. The second death is documented in the incident record but is not assigned to the 421 public subtotal without evidence of a later inclusion.",
+        "reason": "The Nov. 3 dashboard sequence includes one death in Dnipro: the initial update moves 207→208, and the later combined 208→211 update accounts for Komyshuvakha 29→31 (+2) and the Hotiv child (+1). The master reconciliation groups the same sequence as 207→211 (+4), including one Dnipro death. The incident's later local final count is two, but no second Dnipro increment appears in the mapped sequence. No later inclusion in the 421 minimum is proven, so keep ledger_effective_at null.",
         "source_ids": [
           "DNIPRO-2026-11-03-UP-FINAL"
         ],

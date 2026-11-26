@@ -446,3 +446,13 @@ The Oct. 22 snapshot at `9a4749285ace80c3c9931aeb25869b4532457655` displayed app
 The snapshot explicitly excluded three Chabany deaths as unverified. Commit `0f4dda082aba94f4f6c4a5b9279953cb4a0d17ac` later revised the evidence classification and included them, producing 118→121 (+3). That intermediate inclusion was subsequently removed from the current ledger on verification grounds. Stage 63 separately establishes that 121→123 was a change from a selected-incident subtotal to a nationwide documented minimum, not two identified incident additions.
 
 The current ledger's 31 records through Oct. 21 sum to 142 using final recorded tolls, but this is not comparable to the historical approximate 118: the ledger includes later-known toll revisions and delayed deaths, while the historical subtotal was selective and warned about overlap. No current incident data, effective dates or public totals changed.
+
+
+## Stage 65 — final additions to the Oct. 22 selected-incident subtotal
+
+Checkpoint: `fatality-ledger/STAGE-65-CHECKPOINT.md`  
+Commit: `288a47bc2ff931dcd536f7799de0c1507f0f99c3`
+
+Historical diffs establish 116→117 (+1) when the Oct. 22 Lymanivka fatality was added (`3513193d093e5166b216f9112bd25da39f8dbb41)); 117→118 (+1) when the later report of one person killed in the overnight Kyiv attack was added (`4ada778321c66b570c73f8d5353617a076db8ee6)); and 118→121 (+3) when the three Chabany deaths were reclassified after corroboration (`0f4dda082aba94f4f6c4a5b9279953cb4a0d17ac`). The 118 snapshot explicitly includes Lymanivka and the Kyiv death, and separately excludes Chabany before the corroboration update.
+
+Stage 57 explains the earlier 105→107 dashboard duplication and the subsequent 107→116 update: the duplicate +2 was offset by a later +9 dashboard change accompanying nine Sloviansk deaths plus two Korotych deaths in the method paragraph. The net 105→116 change is +11. Stage 63 establishes that 121→123 is a change of scope to a nationwide documented minimum, not another incident-level addition. No current incident data, effective dates or public counters changed.

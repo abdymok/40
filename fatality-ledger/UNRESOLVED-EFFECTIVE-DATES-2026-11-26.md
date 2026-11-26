@@ -86,6 +86,10 @@ The Oct. 9 Synelnykove-district death is not itemized in the Oct. 11 ≈80 snaps
 
 The Oct. 9 Zaporizhia guided-bomb death is distinct from the Oct. 10 residential strike whose 20-death toll appears in the ≈80 baseline. It is not itemized in that snapshot or the 80→92 changes. The Oct. 11 Sloviansk death was reported on Oct. 12, after the ≈80 cutoff, and is also absent from the 80→92 changes. Neither is individually identified in the carried-forward 148 baseline. Later inclusion remains unverified; both revisions remain null. See `STAGE-94-CHECKPOINT.md`.
 
+## Stage 96 adjudication
+
+The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify the Oct. 17 Sloviansk incident or its interim tolls of one and six. The Oct. 21 105→116 update explicitly adds the final nine-death toll; the net +11 from 105 to 116 matches nine Sloviansk deaths and two Korotych deaths. No separate inclusion of the one- or six-death interim toll is established. REV-001 and REV-002 remain null; REV-003 (6→9) remains dated Oct. 21. See `STAGE-96-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -116,8 +120,8 @@ The Oct. 9 Zaporizhia guided-bomb death is distinct from the Oct. 10 residential
 | 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-001` | — → 1 | +1 | Potential two-death gap; 148 membership unverified |
 | 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-002` | 1 → 2 | +1 | Potential two-death gap; 148 membership unverified |
 | 2026-10-16 | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE` | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE-REV-002` | 3 → 2 | -1 | Legacy 148 membership unresolved |
-| 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
-| 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002` | 1 → 6 | +5 | Legacy 148 membership unresolved |
+| 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-001` | — → 1 | +1 | Interim toll not independently included |
+| 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002` | 1 → 6 | +5 | Interim toll not independently included |
 | 2026-10-17 | `UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP` | `UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-001` | — → 3 | +3 | Legacy 148 membership unresolved |
 | 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002` | 3 → 6 | +3 | Legacy 148 membership unresolved |

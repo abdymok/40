@@ -1537,13 +1537,37 @@
           "count_revision"
         ],
         "notes": "Official DSNS update reported 24 deaths at 22:54 on Nov. 2, including two rescuers and four police officers."
+      },
+      {
+        "source_id": "KOMYSH-ARMYINFORM-2026-11-06-50",
+        "publisher": "ArmyInform, citing State Emergency Service of Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-11-06T11:21:00+02:00",
+        "url": "https://armyinform.com.ua/2026/11/06/u-komyshuvasi-z-pid-zavaliv-distaly-tila-shhe-vosmy-zagyblyh-kilkist-zhertv-aviaudaru-zrosla-do-50/",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports the DSNS update that the toll reached 50 after eight more bodies were recovered."
+      },
+      {
+        "source_id": "KOMYSH-INTERFAX-2026-11-06-50-53",
+        "publisher": "Interfax-Ukraine, citing DSNS and Zaporizhia Regional Military Administration",
+        "source_type": "news_report",
+        "published_at": "2026-11-06T11:12:00+02:00",
+        "url": "https://interfax.com.ua/news/general/1232264-amp.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Precisely timestamps the DSNS count of 50 at 10:49 and Semikin's later count of 53 at 10:51."
       }
     ],
     "last_verified_date": "2026-11-26",
     "revision_history": [
       {
         "revision_id": "KOMYSH-REV-001",
-        "recorded_at": "2026-11-02",
+        "recorded_at": "2026-11-02T11:31:00+02:00",
         "old_value": null,
         "new_value": 1,
         "reason": "Initial regional administration update reported one person killed in the attack.",
@@ -1649,17 +1673,29 @@
       },
       {
         "revision_id": "KOMYSH-REV-011",
-        "recorded_at": "2026-11-06T11:13:00+02:00",
+        "recorded_at": "2026-11-06T10:49:00+02:00",
         "old_value": 43,
-        "new_value": 53,
-        "reason": "The regional administration reported 53 deaths. DSNS had reported 50 at 10:49, but Semikin's later update at 10:51 gave the higher count of 53. The two simultaneous reports are not added together.",
+        "new_value": 50,
+        "reason": "DSNS reported 50 deaths at 10:49 after recovering eight additional bodies.",
         "source_ids": [
+          "KOMYSH-ARMYINFORM-2026-11-06-50",
+          "KOMYSH-INTERFAX-2026-11-06-50-53"
+        ]
+      },
+      {
+        "revision_id": "KOMYSH-REV-012",
+        "recorded_at": "2026-11-06T10:51:00+02:00",
+        "old_value": 50,
+        "new_value": 53,
+        "reason": "Semikin's 10:51 update raised the toll from the DSNS figure of 50 at 10:49 to 53. These are sequential updates, not numbers to be added together.",
+        "source_ids": [
+          "KOMYSH-INTERFAX-2026-11-06-50-53",
           "KOMYSH-INTERFAX-2026-11-06-53",
           "KOMYSH-NV-2026-11-06-53"
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-012",
+        "revision_id": "KOMYSH-REV-013",
         "recorded_at": "2026-11-07",
         "old_value": 53,
         "new_value": 55,
@@ -1670,7 +1706,7 @@
         ]
       },
       {
-        "revision_id": "KOMYSH-REV-013",
+        "revision_id": "KOMYSH-REV-014",
         "recorded_at": "2026-11-16",
         "old_value": 55,
         "new_value": 72,

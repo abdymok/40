@@ -5929,7 +5929,7 @@
         "recorded_at": "2026-11-03T09:28:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "The regional administration's initial update reported one person killed.",
+        "reason": "The regional administration's initial update reported one person killed. The historical dashboard includes this death in the Nov. 3 running minimum.",
         "source_ids": [
           "DNIPRO-2026-11-03-HANZHA-0928",
           "DNIPRO-2026-11-03-INTERFAX"
@@ -6039,12 +6039,12 @@
         "recorded_at": "2026-11-03",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. The historical dashboard includes this death in the Nov. 3 running minimum.",
         "source_ids": [
           "YASNOHIRKA-DON-ODA-2026-11-03",
           "YASNOHIRKA-UKRINFORM-2026-11-03"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       }
     ]
   },
@@ -6095,12 +6095,12 @@
         "recorded_at": "2026-11-03",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. The historical dashboard includes this death in the Nov. 3 running minimum.",
         "source_ids": [
           "HOTIV-KODA-2026-11-03",
           "HOTIV-UKRINFORM-2026-11-03"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       }
     ]
   },
@@ -6139,11 +6139,11 @@
         "recorded_at": "2026-11-02",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. The historical dashboard includes this death in the Nov. 3 running minimum.",
         "source_ids": [
           "DON-BILENKE-NPU-2026-11-03"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       }
     ]
   },
@@ -6182,11 +6182,11 @@
         "recorded_at": "2026-11-02",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. The historical dashboard includes this death in the Nov. 3 running minimum.",
         "source_ids": [
           "DON-DRUZHKIVKA-NPU-2026-11-03"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       }
     ]
   },
@@ -6225,11 +6225,11 @@
         "recorded_at": "2026-11-02",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. The historical dashboard includes this death in the Nov. 3 running minimum.",
         "source_ids": [
           "DON-KRAMATORSK-NPU-2026-11-03"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       }
     ]
   },
@@ -6268,11 +6268,11 @@
         "recorded_at": "2026-11-02",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. The historical dashboard includes this death in the Nov. 3 running minimum.",
         "source_ids": [
           "DON-SLOVIANSK-NPU-2026-11-03"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       }
     ]
   },
@@ -6628,6 +6628,18 @@
           "count_revision"
         ],
         "notes": "Precisely timestamps the DSNS count of 50 at 10:49 and Semikin's later count of 53 at 10:51."
+      },
+      {
+        "source_id": "KOMYSH-ZOVA-2026-11-03-68774",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": "2026-11-03",
+        "url": "https://t.me/zoda_gov_ua/68774",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Official regional administration update reports 26 people killed in the Komyshuvakha strike, including two State Emergency Service rescuers and four police officers. The Nov. 3 dashboard update replaced the prior 18-death subtotal with 26."
       }
     ],
     "last_verified_date": "2026-11-26",
@@ -6660,14 +6672,25 @@
         "recorded_at": "2026-11-02T22:54:00+02:00",
         "old_value": 18,
         "new_value": 24,
-        "reason": "The State Emergency Service reported 24 deaths later on Nov. 2, including two rescuers and four police officers.",
+        "reason": "The 24-death DSNS update was part of the source sequence reviewed on Nov. 3. The dashboard's next published revision replaced the 18-death subtotal with 26, rather than separately publishing 24.",
         "source_ids": [
           "KOMYSH-UKRINFORM-2026-11-02-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       },
       {
         "revision_id": "KOMYSH-REV-004",
+        "recorded_at": "2026-11-03",
+        "old_value": 24,
+        "new_value": 26,
+        "reason": "The regional administration reported 26 deaths. The Nov. 3 dashboard raised the national minimum from 192 to 200, replacing the 18-death baseline with the final 26-death update.",
+        "source_ids": [
+          "KOMYSH-ZOVA-2026-11-03-68774"
+        ],
+        "ledger_effective_at": "2026-11-03"
+      },
+      {
+        "revision_id": "KOMYSH-REV-005",
         "recorded_at": "2026-11-03T07:40:00+02:00",
         "old_value": 24,
         "new_value": 29,
@@ -6677,10 +6700,10 @@
           "KOMYSH-SUSPILNE-2026-11-03",
           "KOMYSH-UKRINFORM-2026-11-02-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       },
       {
-        "revision_id": "KOMYSH-REV-005",
+        "revision_id": "KOMYSH-REV-006",
         "recorded_at": "2026-11-03T11:40:00+02:00",
         "old_value": 29,
         "new_value": 31,
@@ -6688,10 +6711,10 @@
         "source_ids": [
           "KOMYSH-SUSPILNE-2026-11-03"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-03"
       },
       {
-        "revision_id": "KOMYSH-REV-006",
+        "revision_id": "KOMYSH-REV-007",
         "recorded_at": "2026-11-03T15:52:00+02:00",
         "old_value": 31,
         "new_value": 33,
@@ -6699,10 +6722,10 @@
         "source_ids": [
           "KOMYSH-UP-2026-11-03-33"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-04"
       },
       {
-        "revision_id": "KOMYSH-REV-007",
+        "revision_id": "KOMYSH-REV-008",
         "recorded_at": "2026-11-04T11:52:00+02:00",
         "old_value": 33,
         "new_value": 37,
@@ -6710,10 +6733,10 @@
         "source_ids": [
           "KOMYSH-UP-2026-11-04-37"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-04"
       },
       {
-        "revision_id": "KOMYSH-REV-008",
+        "revision_id": "KOMYSH-REV-009",
         "recorded_at": "2026-11-04",
         "old_value": 37,
         "new_value": 40,
@@ -6722,10 +6745,10 @@
           "KOMYSH-ZOVA-2026-11-04-68789",
           "KOMYSH-UP-2026-11-04-37"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-04"
       },
       {
-        "revision_id": "KOMYSH-REV-009",
+        "revision_id": "KOMYSH-REV-010",
         "recorded_at": "2026-11-05T11:00:00+02:00",
         "old_value": 40,
         "new_value": 42,
@@ -6734,10 +6757,10 @@
           "KOMYSH-INTERFAX-2026-11-05-42",
           "KOMYSH-UKRINFORM-2026-11-05-42"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       },
       {
-        "revision_id": "KOMYSH-REV-010",
+        "revision_id": "KOMYSH-REV-011",
         "recorded_at": "2026-11-05T14:15:00+02:00",
         "old_value": 42,
         "new_value": 43,
@@ -6746,10 +6769,10 @@
           "KOMYSH-UP-2026-11-05-43",
           "KOMYSH-ZELENSKYY-2026-11-05"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       },
       {
-        "revision_id": "KOMYSH-REV-011",
+        "revision_id": "KOMYSH-REV-012",
         "recorded_at": "2026-11-06T10:49:00+02:00",
         "old_value": 43,
         "new_value": 50,
@@ -6758,10 +6781,10 @@
           "KOMYSH-ARMYINFORM-2026-11-06-50",
           "KOMYSH-INTERFAX-2026-11-06-50-53"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       },
       {
-        "revision_id": "KOMYSH-REV-012",
+        "revision_id": "KOMYSH-REV-013",
         "recorded_at": "2026-11-06T10:51:00+02:00",
         "old_value": 50,
         "new_value": 53,
@@ -6771,10 +6794,10 @@
           "KOMYSH-INTERFAX-2026-11-06-53",
           "KOMYSH-NV-2026-11-06-53"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       },
       {
-        "revision_id": "KOMYSH-REV-013",
+        "revision_id": "KOMYSH-REV-014",
         "recorded_at": "2026-11-07",
         "old_value": 53,
         "new_value": 55,
@@ -6783,10 +6806,10 @@
           "KOMYSH-DSNS-2026-11-07-55",
           "KOMYSH-ZOVA-2026-11-08-68891"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-07"
       },
       {
-        "revision_id": "KOMYSH-REV-014",
+        "revision_id": "KOMYSH-REV-015",
         "recorded_at": "2026-11-16",
         "old_value": 55,
         "new_value": 72,
@@ -6795,7 +6818,7 @@
           "KOMYSH-UKRINFORM-2026-11-16-72",
           "KOMYSH-UP-2026-11-16-72"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },

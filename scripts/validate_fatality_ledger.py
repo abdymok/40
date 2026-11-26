@@ -11,6 +11,19 @@ ALLOWED_EVIDENCE = {
     "official_and_media", "official_only", "media_reported",
     "monitoring_or_case_file", "project_record_only", "unverified",
 }
+ALLOWED_SCOPE = {
+    "civilian", "non_combatant_emergency_personnel",
+    "non_combatant_security_personnel", "mixed_non_combatant", "unresolved",
+}
+ALLOWED_SOURCE_TYPES = {
+    "official_statement", "official_social_post", "news_report",
+    "eyewitness", "project_record", "case_file",
+    "official_company_statement", "international_monitoring_report",
+}
+ALLOWED_SUPPORTS = {
+    "incident_identity", "death_count", "count_revision",
+    "incident_date", "victim_status", "corroboration",
+}
 
 def fail(message):
     print(f"ERROR: {message}", file=sys.stderr)
@@ -66,6 +79,19 @@ def validate(path):
         if not valid_date(record.get("last_verified_date")):
             errors.append(f"{label}: invalid last_verified_date")
 
+        location = record.get("location")
+        if not isinstance(location, dict):
+            errors.append(f"{label}: location must be an object")
+        else:
+            if "settlement" not in location or not (
+                location.get("settlement") is None or isinstance(location.get("settlement"), str)
+            ):
+                errors.append(f"{label}: location.settlement must be a string or null")
+            if not isinstance(location.get("region"), str) or not location.get("region"):
+                errors.append(f"{label}: location.region must be a non-empty string")
+            if location.get("country", "Ukraine") != "Ukraine":
+                errors.append(f"{label}: location.country must be Ukraine")
+
         deaths = record.get("documented_deaths")
         if not isinstance(deaths, int) or isinstance(deaths, bool) or deaths < 0:
             errors.append(f"{label}: documented_deaths must be a non-negative integer")
@@ -74,6 +100,8 @@ def validate(path):
 
         if record.get("evidence_classification") not in ALLOWED_EVIDENCE:
             errors.append(f"{label}: invalid evidence_classification")
+        if record.get("scope_classification") not in ALLOWED_SCOPE:
+            errors.append(f"{label}: invalid scope_classification")
 
         sources = record.get("sources")
         if not isinstance(sources, list) or not sources:
@@ -95,12 +123,21 @@ def validate(path):
             for field in ("publisher", "source_type", "url", "supports", "notes"):
                 if field not in source:
                     errors.append(f"{label}/{sid}: missing {field}")
+            if source.get("source_type") not in ALLOWED_SOURCE_TYPES:
+                errors.append(f"{label}/{sid}: invalid source_type")
+            supports = source.get("supports")
+            if not isinstance(supports, list) or not supports:
+                errors.append(f"{label}/{sid}: supports must be a non-empty array")
+            else:
+                for claim in supports:
+                    if claim not in ALLOWED_SUPPORTS:
+                        errors.append(f"{label}/{sid}: invalid supports value: {claim}")
             url = source.get("url", "")
             if not isinstance(url, str) or not url.startswith("https://"):
                 errors.append(f"{label}/{sid}: URL must use https://")
             published = source.get("published_at")
-            if published is not None and not valid_date(published[:10], allow_datetime=False):
-                errors.append(f"{label}/{sid}: invalid published_at date")
+            if published is not None and not valid_date(published, allow_datetime=True):
+                errors.append(f"{label}/{sid}: invalid published_at date/time")
 
         history = record.get("revision_history")
         if not isinstance(history, list) or not history:

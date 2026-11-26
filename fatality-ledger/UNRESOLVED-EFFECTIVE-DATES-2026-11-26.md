@@ -1,6 +1,6 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 101. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 103. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
@@ -172,3 +172,20 @@ Reconstruct the legacy 148 membership from the archived chronology and change lo
 ## Stage 102 adjudication
 
 Stage 102 reviewed six pre-Oct. 29 revisions: the Oct. 5 Kramatorsk death, Oct. 8 Ivano-Frankivsk drone-debris death, unallocated Oct. 8 Kyiv morning death, third death in the Oct. 8 Solomiansky shop strike, Oct. 9 Synelnykove-district death and Oct. 9 Zaporizhia guided-bomb death. None receives a new effective date. The Oct. 11 ≈80 snapshot explicitly includes only the first two Solomiansky shop deaths; the third death's later inclusion remains unverified. The Oct. 11 broad Kyiv citywide row may overlap incident-level reports and is not treated as an independent additional death. The Dnipropetrovsk row is matched to the separate Pokrovske child death, not Oct. 9 Synelnykove. The Oct. 9 Zaporizhia death is distinct from the Oct. 10 strike whose 20 deaths are in the snapshot. The other cases are not individually itemized, and later carried-forward aggregates do not establish membership. Six incident-revision reasons were clarified; counts and null effective dates remain unchanged. See `STAGE-102-CHECKPOINT.md`.
+
+
+## Stage 103 adjudication and legacy closeout
+
+Stage 103 completed the review of the final eight pre-Oct. 29 revision entries: Zaporizhia Oct. 10 (20→23, +3), Sloviansk Oct. 11 (+1), Kharkiv Kholodnohirsky Oct. 12 (+4), Kyiv Darnytsky Oct. 12 (two revisions, one incident, +2), Kherson Korabelny Oct. 17 (+1), Lozova central market Oct. 22 (+1) and the separate Lozova warehouse strike Oct. 24 (+1). All eight remain null because no surviving dashboard update or method snapshot establishes their inclusion date. The Oct. 11 Zaporizhia baseline includes the first 20, not a dated addition of the later three. The Oct. 26 +5 includes the first two Lozova market deaths, not the third; the warehouse is separate. The Kharkiv and Darnytsky cases remain potential inclusion gaps, not confirmed omissions. See `STAGE-103-CHECKPOINT.md`.
+
+Stages 100, 102 and 103 now account for all 26 pre-Oct. 29 null revisions: 12 classified in Stage 100, six audited in Stage 102 and eight audited in Stage 103. The review is closed to the limit of the surviving evidence. Fourteen legacy revisions, net +19, still have no confirmed inclusion date; the other 12 are interim/superseded tolls, the unreflected Kharkiv market correction or separately classified cases. No date was inferred and no public subtotal was changed.
+
+## Final inventory integrity after Stage 103
+
+- Total null revisions: 33, net +90.
+- Pre-Oct. 29 null revisions: 26, net +82.
+- Post-Oct. 29 null revisions: 7, net +8.
+- Incident ledger: 176 incidents, 430 sources, 452 final documented deaths, 231 revisions.
+- Public provisional minimum: 421, unchanged.
+
+The remaining seven post-Oct. 29 revisions are outside this legacy-baseline closeout and retain their separate inclusion/overlap questions. No further pre-Oct. 29 audit work is pending unless new contemporaneous evidence is recovered.

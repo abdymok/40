@@ -6,7 +6,7 @@ Date: 2026-11-26
 
 The Oct. 11 historical snapshot at commit `733a9b45892d232c5e0e2f2ac120f659ef58002b` explicitly supports a selected-incident subtotal of approximately 80. Stage 73 reconstructs the seven selected incident/region rows as 82, excluding the separate one-death Kyiv citywide aggregate. The current ledger contains the same seven incident records, and their snapshot counts are established.
 
-The first documented inclusion date for the seven revisions below is therefore set to **2026-10-11** in `ledger_effective_at`:
+The first documented inclusion date for the seven snapshot-count revisions below is therefore set to **2026-10-11** in `ledger_effective_at`:
 
 | Incident | Revision dated | Count at the Oct. 11 snapshot |
 |---|---|---:|

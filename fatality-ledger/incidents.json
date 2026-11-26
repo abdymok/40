@@ -11492,5 +11492,300 @@
         "ledger_effective_at": null
       }
     ]
+  },
+  {
+    "incident_id": "UA-KHA-MASLII-2026-11-25-ROAD-ATTACK",
+    "incident_date": "2026-11-25",
+    "location": {
+      "settlement": "Near Maslii",
+      "district": "Kharkiv district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone struck a Volkswagen Crafter travelling on the Derhachi–Zolochiv road near the turn to Fesky, killing the 42-year-old driver. This is separate from the two people killed in a different attack on a car near Dovzhyk.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "MASLII-NPU-KHARKIV-2026-11-26",
+        "publisher": "National Police of Ukraine, Kharkiv region",
+        "source_type": "official_statement",
+        "published_at": "2026-11-26T09:42:00+02:00",
+        "url": "https://npu.gov.ua/news/piatero-liudei-zahynuly-shche-shestero-postrazhdaly-politseiski-dokumentuiut-naslidky-zbroinoi-ahresii-rf-na-kharkivshchyni",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Police report distinguishes the death of a 42-year-old driver near Maslii from the two deaths in the separate attack on a car near Dovzhyk."
+      },
+      {
+        "source_id": "MASLII-SUSPILNE-2026-11-26",
+        "publisher": "Suspilne Kharkiv, citing the Kharkiv Regional Prosecutor's Office",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://suspilne.media/amp/kharkiv/1457557-na-avtodorozi-dergaci-zolociv-cerez-udar-rf-zaginuv-colovik/",
+        "supports": [
+          "death_count",
+          "corroboration",
+          "incident_identity"
+        ],
+        "notes": "Identifies the 42-year-old driver killed at about 11:30 near the turn to Fesky and separately identifies the two deaths near Dovzhyk."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-MASLII-2026-11-25-ROAD-ATTACK-REV-001",
+        "recorded_at": "2026-11-26T09:42:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "The Nov. 26 police update identifies a 42-year-old driver killed in a distinct drone strike near Maslii on Nov. 25. The two deaths near Dovzhyk are a separate incident. The driver was not part of the additions that raised the public minimum from 419 to 421; this separately documented death raises it by one.",
+        "source_ids": [
+          "MASLII-NPU-KHARKIV-2026-11-26",
+          "MASLII-SUSPILNE-2026-11-26"
+        ],
+        "ledger_effective_at": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-BYLBASIVKA-2026-11-25-POST-OFFICE-DRONE",
+    "incident_date": "2026-11-25",
+    "location": {
+      "settlement": "Bylbasivka",
+      "district": "Sloviansk community",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone struck a post office in Bylbasivka on the evening of Nov. 25, killing a woman and injuring three people. The strike caused a fire that damaged the building.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "BYLBASIVKA-DSNS-2026-11-26",
+        "publisher": "State Emergency Service of Ukraine",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/dsns_telegram/81619",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "DSNS reports a drone strike on the post office in Bylbasivka, one woman killed and three people injured."
+      },
+      {
+        "source_id": "BYLBASIVKA-UP-2026-11-26",
+        "publisher": "Ukrainska Pravda, citing the State Emergency Service",
+        "source_type": "news_report",
+        "published_at": "2026-11-26T10:56:00+02:00",
+        "url": "https://www.pravda.com.ua/news/2026/11/26/8064746/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the fatal drone strike on the Bylbasivka post office on the evening of Nov. 25."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-BYLBASIVKA-2026-11-25-POST-OFFICE-DRONE-REV-001",
+        "recorded_at": "2026-11-26T10:56:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "DSNS confirmed one woman killed in a separate Nov. 25 drone strike on the post office in Bylbasivka. This incident is distinct from the Nov. 25 central Sloviansk airstrike and the Nov. 26 Sloviansk airstrike. The death was reported after the 421 public-minimum update and raises the minimum by one.",
+        "source_ids": [
+          "BYLBASIVKA-DSNS-2026-11-26",
+          "BYLBASIVKA-UP-2026-11-26"
+        ],
+        "ledger_effective_at": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-11-26-FAB-250-STRIKE",
+    "incident_date": "2026-11-26",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": "Residential neighbourhoods",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian forces dropped two FAB-250 aerial bombs on residential neighbourhoods in Sloviansk on the morning of Nov. 26, killing a 37-year-old man and injuring another man. The strike partially destroyed an apartment building and completely destroyed a private house.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-LIAKH-2026-11-26",
+        "publisher": "Sloviansk City Military Administration head Vadym Liakh",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://www.facebook.com/Vadym.Liakh",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Liakh reported that two FAB-250 bombs killed a 37-year-old man and injured another person in Sloviansk on Nov. 26."
+      },
+      {
+        "source_id": "SLOVIANSK-UKRINFORM-2026-11-26",
+        "publisher": "Ukrinform, citing Sloviansk City Military Administration head Vadym Liakh",
+        "source_type": "news_report",
+        "published_at": "2026-11-26T12:38:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4188825-russian-forces-drop-two-aerial-bombs-on-sloviansk-killing-one-person-injuring-another.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the two FAB-250 strikes, one man killed and another injured."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-11-26-FAB-250-STRIKE-REV-001",
+        "recorded_at": "2026-11-26T12:38:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "The Sloviansk City Military Administration confirmed one man killed in a separate Nov. 26 morning attack. This is distinct from the Nov. 25 central Sloviansk strike and the Nov. 25 Bylbasivka post-office strike. The death was reported after the 421 public-minimum update and raises the minimum by one.",
+        "source_ids": [
+          "SLOVIANSK-LIAKH-2026-11-26",
+          "SLOVIANSK-UKRINFORM-2026-11-26"
+        ],
+        "ledger_effective_at": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHE-KOMYSHANY-2026-11-26-CIVILIAN-DRONE-STRIKE",
+    "incident_date": "2026-11-26",
+    "location": {
+      "settlement": "Komyshany",
+      "district": "Kherson community",
+      "region": "Kherson region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian drone struck a civilian vehicle in Komyshany on Nov. 26, killing a man at the scene. His identity and age were still being established in the regional administration's initial report.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "KOMYSHANY-PROKUDIN-INTERFAX-2026-11-26",
+        "publisher": "Interfax-Ukraine, citing Kherson Regional Military Administration head Oleksandr Prokudin",
+        "source_type": "news_report",
+        "published_at": "2026-11-26T11:49:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1242736.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Prokudin reported that a resident of Komyshany was killed in a drone attack on Nov. 26; identity and age were being established."
+      },
+      {
+        "source_id": "KOMYSHANY-PROKUDIN-TELEGRAM-2026-11-26",
+        "publisher": "Kherson Regional Military Administration head Oleksandr Prokudin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/s/olexandrprokudin",
+        "supports": [
+          "death_count",
+          "incident_identity"
+        ],
+        "notes": "Prokudin's official Telegram channel reported the fatal drone attack in Komyshany on Nov. 26."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHE-KOMYSHANY-2026-11-26-CIVILIAN-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-11-26T11:49:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Prokudin confirmed a man killed in a distinct Nov. 26 drone attack in Komyshany. This is a new same-day incident, separate from the previous-day regional casualty roundup. The death was reported after the 421 public-minimum update and raises the minimum by one.",
+        "source_ids": [
+          "KOMYSHANY-PROKUDIN-INTERFAX-2026-11-26",
+          "KOMYSHANY-PROKUDIN-TELEGRAM-2026-11-26"
+        ],
+        "ledger_effective_at": "2026-11-26"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-KHARKIV-KYIVSKY-2026-11-26-UNIVERSITY-DRONE-STRIKE",
+    "incident_date": "2026-11-26",
+    "location": {
+      "settlement": "Kharkiv",
+      "district": "Kyivskyi district",
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian jet-powered drone struck a university building in Kharkiv's Kyivskyi district on Nov. 26, killing an 86-year-old woman. Mayor Ihor Terekhov and regional administration head Oleh Syniehubov reported the death. A later regional update described a woman killed at a private house, but the available reports do not establish whether that is the same fatality or a separate death; no additional death is counted from that later description pending clarification.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "KHARKIV-KYIVSKY-TEREKHOV-2026-11-26",
+        "publisher": "Kharkiv Mayor Ihor Terekhov",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/s/ihor_terekhov",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Terekhov reported a jet-powered drone strike on a university building in Kyivskyi district and said a woman had been killed."
+      },
+      {
+        "source_id": "KHARKIV-KYIVSKY-UKRINFORM-2026-11-26",
+        "publisher": "Ukrinform, citing Kharkiv Mayor Ihor Terekhov and regional administration head Oleh Syniehubov",
+        "source_type": "news_report",
+        "published_at": "2026-11-26T13:20:00+02:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4188843-russian-drone-hits-university-building-in-kharkiv-killing-woman.html",
+        "supports": [
+          "death_count",
+          "corroboration",
+          "incident_identity"
+        ],
+        "notes": "Reports the university strike and identifies the woman killed as 86 years old."
+      },
+      {
+        "source_id": "KHARKIV-PRIVATE-HOUSE-OVA-2026-11-26",
+        "publisher": "Kharkiv Regional Military Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-11-26T13:49:00+02:00",
+        "url": "https://kharkivoda.gov.ua/news/138099",
+        "supports": [
+          "death_count",
+          "incident_identity"
+        ],
+        "notes": "A later OVA update says a woman was killed after a strike on a private house, alongside the deaths of a couple in a 16-storey building. The available reporting does not establish whether this woman is the same as the woman reported killed in the university strike or a separate victim; no second additional death is counted from this description pending clarification."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-KHARKIV-KYIVSKY-2026-11-26-UNIVERSITY-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-11-26T13:49:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "The mayor and regional administration reported a woman killed in a jet-powered drone strike on a university building in Kyivskyi district. The 86-year-old victim is confirmed by Ukrinform. A later OVA statement attributes one additional female death to a strike on a private house, but the available sources do not establish whether that is the same woman or a separate death. Count one confirmed death and hold the possible second pending location-level clarification.",
+        "source_ids": [
+          "KHARKIV-KYIVSKY-TEREKHOV-2026-11-26",
+          "KHARKIV-KYIVSKY-UKRINFORM-2026-11-26",
+          "KHARKIV-PRIVATE-HOUSE-OVA-2026-11-26"
+        ],
+        "ledger_effective_at": "2026-11-26"
+      }
+    ]
   }
 ]

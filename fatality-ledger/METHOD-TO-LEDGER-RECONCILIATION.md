@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 97, updated Nov. 26, 2026  
+**Working status:** Stage 98, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -706,3 +706,10 @@ The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify the O
 Checkpoint: `fatality-ledger/STAGE-97-CHECKPOINT.md`
 
 The ≈283 snapshot commit `9a8a5b44430108fdb04e4744a1ff2dc8a88db799` is timestamped 11:17:07 UTC (13:17 Kyiv). Terekhov's first death report is timestamped 13:37 UTC and the second-death update 13:43 UTC. Commit `26a44c4287b2429832fc9f2fc26087cfe45c7e12` at 13:58:46 UTC is titled “Add second Kharkiv strike death and update dashboard” and raises the subtotal 283→284 (+1). The first death therefore postdates the ≈283 baseline and has no separate dashboard increment; it is not included in 421. REV-001 returns to null; REV-002 remains dated Nov. 11 as the +1 increment. The unresolved inventory is now 33 entries: 26 pre-Oct. 29 (+82) and seven later (+8), net +90. No incident count or public total changed.
+
+
+## Stage 98 — Nova Vodolaha interim tolls and final inclusion
+
+Checkpoint: `fatality-ledger/STAGE-98-CHECKPOINT.md`
+
+The Oct. 19 Nova Vodolaha toll progressed 3→preliminary 6→corrected 5. The Oct. 20 ≈100/103 and Oct. 21 ≈105/116 snapshots do not name the incident. The corrected five-death toll is carried by the Oct. 26 ≈138 baseline; the Oct. 27 142→143 increment explicitly adds the sixth death after a 12-year-old boy died in hospital. The initial three and preliminary six revisions were not separately added to the subtotal. REV-001 and REV-002 remain null; REV-003 (6→5) remains dated Oct. 26 and REV-004 (5→6) Oct. 27. No incident count, effective date or public total changed.

@@ -1538,7 +1538,7 @@
         "recorded_at": "2026-10-17T12:27:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial city administration report confirmed one person killed and 10 injured. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The initial Oct. 17 report recorded one person killed. The Oct. 20 ≈100/103 snapshot's method paragraph does not identify this incident, and the Oct. 21 ≈105 method snapshot also does not name it. The later 105→116 update explicitly adds the final nine-death toll together with two Korotych deaths; the net +11 matches those 11 deaths. No separate inclusion of the initial one-death toll is established. Keep this interim revision's ledger_effective_at null.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-17"
         ],
@@ -1549,7 +1549,7 @@
         "recorded_at": "2026-10-18T12:34:00+02:00",
         "old_value": 1,
         "new_value": 6,
-        "reason": "As rescue work continued, the local city administration raised the toll to six. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Oct. 18 update raised the Oct. 17 Sloviansk incident toll from one to six. The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify this incident or the six-death interim toll. The Oct. 21 105→116 update explicitly adds the final nine-death toll, with the net +11 matching nine Sloviansk deaths and two Korotych deaths. No separate inclusion of the six-death interim toll is established. Keep this interim revision's ledger_effective_at null.",
         "source_ids": [
           "SLOVIANSK-17-UP-2026-10-18"
         ],

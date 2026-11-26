@@ -5245,5 +5245,150 @@
         ]
       }
     ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-2026-11-17-INDUSTRIAL-STRIKE-CLUSTER",
+    "incident_date": "2026-11-17",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": null,
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian combined attack on industrial facilities in three districts of Zaporizhia killed a man and a woman. The regional administration's first update at 08:35 reported one death; subsequent updates at 08:52 and 09:47 confirmed a second death and raised the injury toll to 18. The sources do not allocate the two victims to individual facilities, so this record preserves the source-defined citywide attack cluster.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "ZAP-INDUSTRIAL-SEMikin-2026-11-17-69100",
+        "publisher": "Zaporizhia Regional Military Administration, acting head Mykhailo Semikin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/69100",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial update at 08:35 reported a man killed in the combined attack."
+      },
+      {
+        "source_id": "ZAP-INDUSTRIAL-SEMikin-2026-11-17-FOLLOWUPS",
+        "publisher": "Zaporizhia Regional Military Administration, acting head Mykhailo Semikin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Follow-up updates at 08:52 and 09:47 reported a second death, a woman, and raised the injury toll from nine to 18."
+      },
+      {
+        "source_id": "ZAP-INDUSTRIAL-CHANGELOG-2026-11-17",
+        "publisher": "ukraine@war change log",
+        "source_type": "project_record",
+        "published_at": null,
+        "url": "https://abdymok.github.io/40/articles/changes.html",
+        "supports": [
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Change log states that the first death was already counted and the second raised the minimum from 337 to 338."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-17-INDUSTRIAL-STRIKE-CLUSTER-REV-001",
+        "recorded_at": "2026-11-17T08:35:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Initial regional administration update reported one man killed.",
+        "source_ids": [
+          "ZAP-INDUSTRIAL-SEMikin-2026-11-17-69100"
+        ]
+      },
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-17-INDUSTRIAL-STRIKE-CLUSTER-REV-002",
+        "recorded_at": "2026-11-17T09:47:00+02:00",
+        "old_value": 1,
+        "new_value": 2,
+        "reason": "Subsequent regional administration updates confirmed a second death, a woman. The first death had already been counted in the running subtotal.",
+        "source_ids": [
+          "ZAP-INDUSTRIAL-SEMikin-2026-11-17-FOLLOWUPS",
+          "ZAP-INDUSTRIAL-CHANGELOG-2026-11-17"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KYI-KYIV-OBOLONSKY-2026-11-17-NONRESIDENTIAL-STRIKE",
+    "incident_date": "2026-11-17",
+    "location": {
+      "settlement": "Kyiv",
+      "district": "Obolonsky district",
+      "region": "Kyiv city",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian attack on a non-residential building in Kyiv's Obolonsky district killed two people and injured one. Rescuers freed a person trapped under the rubble. This incident is separate from the Nov. 16 ballistic attack on Kyiv's bridges and from the later Nov. 20 ballistic strike.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "OBOLON-IFAX-2026-11-17",
+        "publisher": "Interfax-Ukraine, citing the Ministry of Internal Affairs",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T10:57:00+02:00",
+        "url": "https://en.interfax.com.ua/news/general/1237668.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports two people killed and one injured in the Obolonsky district strike."
+      },
+      {
+        "source_id": "OBOLON-UP-2026-11-17",
+        "publisher": "Ukrainska Pravda, citing the State Emergency Service of Kyiv",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T10:26:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/11/17/8063228/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two killed and one injured; rescuers freed a person trapped under rubble."
+      },
+      {
+        "source_id": "OBOLON-UKRINFORM-2026-11-17",
+        "publisher": "Ukrinform, citing the State Emergency Service",
+        "source_type": "news_report",
+        "published_at": "2026-11-17T10:35:00+02:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4185451-russian-attack-on-kyiv-kills-two-injures-one.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms two deaths and one injured in Obolonsky district."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KYI-KYIV-OBOLONSKY-2026-11-17-NONRESIDENTIAL-STRIKE-REV-001",
+        "recorded_at": "2026-11-17T10:10:00+02:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "The State Emergency Service reported two people killed and one injured in the Obolonsky district attack.",
+        "source_ids": [
+          "OBOLON-IFAX-2026-11-17",
+          "OBOLON-UP-2026-11-17",
+          "OBOLON-UKRINFORM-2026-11-17"
+        ]
+      }
+    ]
   }
 ]

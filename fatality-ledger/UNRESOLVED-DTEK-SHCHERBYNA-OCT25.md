@@ -1,38 +1,26 @@
-# DTEK driver Vitaliy Shcherbyna — unresolved duplicate check
+# DTEK driver Vitaliy Shcherbyna — separate fatality record
 
-**Status:** Confirmed fatality, not yet counted as a separate incident record.
+**Status:** Resolved as a distinct, source-backed incident; not included in the published 421 minimum.
 
-DTEK reported that driver Vitaliy Shcherbyna was killed in a Russian attack on Oct. 25. The methodology page explicitly says the public reports reviewed do not establish whether his death was already included in the Dnipropetrovsk Regional Military Administration's Oct. 25 casualty total carried into the 192 baseline. The method therefore did not add him separately and noted that the displayed minimum might be understated by one.
+DTEK reported that driver Vitaliy Shcherbyna was killed when a Russian drone struck a lorry at one of its coal-mining enterprises in Dnipropetrovsk region overnight on Oct. 25. Interfax-Ukraine reported DTEK's statement at 14:38 on Oct. 25. The company does not identify the settlement or district, so the ledger records the location at regional level only.
 
 Sources:
-- [DTEK official report](https://dtek.com/en/media-center/news/dtek-driver-vitaliy-shcherbyna-killed-in-russian-attack/)
-- [DTEK Energo Ukrainian report](https://energo.dtek.com/media-center/press/zaginuv-vodiy-dtek-vitaliy-shcherbyna-vnaslidok-vorozhoi-ataki/)
-- [Dnipropetrovsk Regional Military Administration, Oct. 25 casualty update](https://www.ukrinform.net/rubric-ato/4175347-russian-forces-attack-dnipropetrovsk-region-killing-one-person.html)
-
-## Why it is not in the incident dataset yet
-
-The regional Oct. 25 report says one person was killed in a strike on an enterprise in Dnipro. The DTEK statement confirms Shcherbyna's death in an attack on a DTEK vehicle, but the currently available public reporting does not establish whether these are the same death or whether the DTEK driver is an additional victim.
-
-The Oct. 25 Dnipropetrovsk regional roundup reports one death in Dnipro, while the DTEK statement does not identify a precise settlement or site in enough detail to prove the two reports describe separate incidents.
-
-
-## Additional source findings checked on Nov. 26
-
-DTEK's English and Ukrainian company statements identify the incident more precisely as a drone strike on a lorry at one of the company's coal-mining enterprises in Dnipropetrovsk region overnight on Oct. 25. Interfax-Ukraine reported the statement at 14:38 on Oct. 25. The victim is named as driver Vitalii Shcherbyna. The company still does not identify the enterprise by name, settlement or district.
-
-- [DTEK English statement, Oct. 26](https://dtek.com/en/media-center/news/russian-drone-attack-kills-dtek-driver-in-dnipropetrovsk-region/)
-- [DTEK Ukrainian statement, Oct. 25](https://energo.dtek.com/media-center/press/vnaslidok-ataki-na-vugledobuvne-pidpriemstvo-dtek-energo-zaginuv-pratsivnik/)
+- [DTEK Energo official statement, Oct. 25](https://energo.dtek.com/media-center/press/vnaslidok-ataki-na-vugledobuvne-pidpriemstvo-dtek-energo-zaginuv-pratsivnik/)
 - [Interfax-Ukraine, Oct. 25, 14:38](https://interfax.com.ua/news/general/1225739.html)
+- [DTEK English statement, Oct. 26](https://dtek.com/en/media-center/news/russian-drone-attack-kills-dtek-driver-in-dnipropetrovsk-region/)
 
-The regional administration's Oct. 25 morning casualty report, as summarized in the chronology, described three deaths and 15 injuries across three districts, specifying three deaths and 14 injuries in Synelnykove district. That breakdown does not identify Shcherbyna by name or establish the DTEK mine's district. The later DTEK statement confirms his death but does not establish whether the regional report's incident window and geography included him.
+## Duplicate check
 
-The available evidence therefore confirms Shcherbyna's death and the DTEK mine attack, but does not yet establish a source-supported location precise enough to prove whether he is one of the regional total's three deaths or an additional fourth death. Do not add a separate incident or increment until the mine's location or the original regional casualty post resolves the overlap.
+The earlier working note conflated this case with a supposed Oct. 25 Dnipro-city fatality. The source trail does not support that description. The one-death Dnipro incident in the ledger occurred on Oct. 23 and is a separate event.
 
-## Required resolution
+The Dnipropetrovsk Regional Military Administration's Oct. 25, 07:30 report attributes three deaths to the Oct. 24 residential strike in Synelnykove. Its subsequent update says a 62-year-old man wounded in that same strike died in hospital, raising that incident's toll to four. Those reports identify the Synelnykove victims and do not identify Shcherbyna. DTEK, meanwhile, identifies a separate drone strike on a lorry at a coal-mining enterprise. The exact mine settlement and district remain undisclosed, but the two source trails describe distinct incidents.
 
-1. Obtain the original DTEK statement with the precise attack location and time.
-2. Retrieve the full Oct. 25 Dnipropetrovsk Regional Military Administration casualty post and determine whether it names the DTEK vehicle/driver.
-3. Compare with the existing Oct. 25 Dnipro incident/source inventory.
-4. If the deaths are the same, attach DTEK as corroboration to the existing incident. If distinct, create a separate one-death incident record with a source-supported location.
+- [Dnipropetrovsk Regional Military Administration public Telegram archive, Oct. 25 updates](https://t.me/s/dnipropetrovskaoda?before=32847)
+- [Ukrainska Pravda, Oct. 25, four killed in Synelnykove](https://www.pravda.com.ua/eng/news/2026/10/25/8059602/)
 
-**Current treatment:** Do not add a separate death until the possible overlap is resolved. The confirmed death remains visible here as an unresolved candidate, not a silent omission.
+## Historical subtotal check
+
+The Oct. 22 baseline of approximately 123 predates Shcherbyna's death. The mapped 123→132 update adds the Oct. 23 Dnipro death and eight other identified deaths; it does not identify the DTEK incident. The 132→137 update is mapped to Marhanets, Lozova, Konotop and Yarova. The subsequent 137→148 increments are mapped to other identified incidents, including the separate Oct. 26 Pavlohrad death of DTEK miner Valentyn Kotelevskyi. No Oct. 25–28 increment identifies Shcherbyna.
+
+**Adjudication:** Shcherbyna is a distinct documented fatality and has been added to `fatality-ledger/incidents.json` as a regional-level incident. His revision has `ledger_effective_at: null`: the historical public 148 baseline and the published 421 minimum do not evidence his inclusion. The incident-ledger total rises by one; the public subtotal remains unchanged pending completion of the wider reconciliation.
+

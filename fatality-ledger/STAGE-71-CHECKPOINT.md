@@ -1,32 +1,39 @@
-# Stage 71 checkpoint — Oct. 10–11 methodology reset and the ≈80 baseline
+# Stage 71 checkpoint — Oct. 10–11 methodology transition and ≈80 baseline
 
 Date: 2026-11-26
 
 ## Finding
-The approximately-80 figure established on Oct. 11 was not a simple continuation of the earlier approximately-100 dashboard estimate. It was a deliberate methodological reset from a broad editorial estimate to a selected-incident subtotal.
+
+The first dashboard's ≈100 was a broad order-of-magnitude estimate. The ≈80 selected-incident subtotal was established on Oct. 11, but the dashboard tile temporarily switched to 90+ before returning to ≈80 later that afternoon. The 90+ was a separate editorial estimate, not an exact incident subtotal and not ten additional verified deaths.
 
 ## Historical sequence
 
-1. **Oct. 10 initial dashboard.** Commit `27776283f345cdeb7d6803af49b8267fa022c68b` published the first infrastructure dashboard with a rounded `~100` civilian-death estimate and approximately 600 injuries. Its method text explicitly called both order-of-magnitude estimates, not a reconciled incident-by-incident sum, and warned that regional and citywide totals might overlap.
+1. **Oct. 10 first dashboard.** Commit `27776283f345cdeb7d6803af49b8267fa022c68b` published the dashboard with approximately 100 civilians killed and approximately 600 injured. Its method text explicitly called both order-of-magnitude estimates, not a reconciled incident-by-incident sum.
 
-2. **Oct. 11 interim 90+ editorial estimate.** Commit `1b09f0d430a820ecfa5057569dae8a8f3e4d7ea9` described 90+ as a provisional editorial estimate, not a count of 90 individually documented deaths. It stated that the chronology then identified about 80 deaths in selected incidents and that the additional margin reflected editorial judgement about incomplete reporting, not ten separately verified deaths. This explicitly distinguishes the broad estimate from the incident-linked count.
+2. **Oct. 11 ≈80 selected-incident snapshot, 12:00 Kyiv time.** Commit `733a9b45892d232c5e0e2f2ac120f659ef58002b` (09:00:05 UTC) displays ≈80 and defines it as a provisional incident-level subtotal for selected reports in the chronology. Its method excludes broad citywide/nationwide aggregates where they may overlap. Stage 73 reconstructs the seven selected rows as 82.
 
-3. **Oct. 11 formal reset to approximately 80.** Commit `b915a945a1d932a41cb7291a051de8b8be863bca` changed the dashboard label to “Estimated civilian deaths” and value to 90+ in one intermediate diff, but its correction text documents the casualty/site-count review replacing the earlier broad estimate of approximately 100 killed and 600 injured with a provisional incident-level subtotal of approximately 80 killed and at least 100 injured across selected incidents. The final snapshot at commit `733a9b45892d232c5e0e2f2ac120f659ef58002b` presents ≈80 and method text defining it as a selected-incident subtotal, not a comprehensive national count.
+3. **Oct. 11 90+ editorial estimate, 12:18 Kyiv time.** Commit `b915a945a1d932a41cb7291a051de8b8be863bca` (09:18:49 UTC) changes the dashboard tile from ≈80 to 90+. Its method describes 90+ as a provisional editorial estimate based on available reporting, not a precise count of individually documented deaths. The update log also contains a casualty/site-count review describing the approximately-80 selected-incident subtotal, creating a distinction between the broad headline estimate and the incident-linked subtotal.
 
-4. **Oct. 11 baseline composition.** The ≈80 method paragraph explicitly names six Kyiv deaths in the Oct. 7–8 reports: Darnytsky 2, Desniansky 2 and Solomiansky shop 2. It cautions that broader citywide totals may overlap and are not added separately. The later third Solomiansky shop death is not part of this contemporaneous two-death snapshot.
+4. **Oct. 11 clarification, 12:50 Kyiv time.** Commit `1b09f0d430a820ecfa5057569dae8a8f3e4d7ea9` (09:51:40 UTC), followed by `11f63c34ecc63cb1253ea7d12d00d10fad4e25c8` (09:51:47 UTC), retains the 90+ tile but clarifies in the method that the chronology identifies about 80 deaths in selected incidents. The additional margin is editorial judgement about incomplete reporting, not ten separately verified deaths or deaths assigned to particular incidents.
+
+5. **Return to ≈80, 15:18 Kyiv time.** Commit `bed64256d24c70e0f2c71835fb3dd4c1133842bb` (12:18:47 UTC) changes the tile back to “Deaths documented in selected incidents” at ≈80. Its parent snapshot, `2a234dc5c373ece2435b14a32f839fe8c48291ae`, still shows 90+. The following commits preserve the ≈80 tile.
 
 ## Interpretation
-- The change from ≈100 / 90+ to ≈80 is a scope-and-method correction, not evidence that 20 people were later determined not to have died.
-- The approximately-80 selected subtotal is not a complete itemized ledger: the method names some incidents and gives a rule for avoiding overlap, but does not enumerate every component.
-- The 90+ editorial margin was explicitly not ten individually verified deaths. It should not be carried into the selected-incident subtotal or converted into incident records.
-- The Oct. 11 ≈80 baseline is the appropriate starting point for the subsequent historical sequence reconstructed in Stage 70.
-- The Oct. 10 Zaporizhia toll was still changing during this period. By the Oct. 11 review it was reported as 20 killed and 32 injured; do not substitute earlier casualty snapshots into later totals without date-specific evidence.
+
+- The Oct. 10 ≈100 and Oct. 11 90+ were broad editorial estimates, not reconciled incident sums.
+- The Oct. 11 ≈80 was the selected-incident subtotal. It was visible before the 90+ interim headline, remained identified in the 90+ method note, and returned as the dashboard headline at 15:18 Kyiv time.
+- The changes among ≈100, 90+ and ≈80 are changes in scope and presentation. They do not establish that approximately 20 or 10 deaths were disproven, removed or newly verified.
+- The Oct. 11 ≈80 baseline explicitly names six Kyiv deaths: Darnytsky 2, Desniansky 2 and Solomiansky shop 2. Stage 73 reconstructs the seven selected rows at 82 while excluding the separate citywide Kyiv death.
+- The third Solomiansky shop death is not named in the Oct. 11 method or chronology snapshot; its historical inclusion remains unresolved.
 
 ## Changes made
+
 No changes to `fatality-ledger/incidents.json`, incident records, effective dates, chronology entries, public dashboard or public method-page minimum. The public method-page minimum remains 421.
 
 ## Source commits
-- Initial Oct. 10 dashboard: `27776283f345cdeb7d6803af49b8267fa022c68b`
-- Oct. 11 interim method wording: `1b09f0d430a820ecfa5057569dae8a8f3e4d7ea9`
-- Oct. 11 casualty/site-count review: `b915a945a1d932a41cb7291a051de8b8be863bca`
-- Oct. 11 ≈80 baseline snapshot: `733a9b45892d232c5e0e2f2ac120f659ef58002b`
+
+- First dashboard: `27776283f345cdeb7d6803af49b8267fa022c68b`
+- Oct. 11 ≈80 snapshot: `733a9b45892d232c5e0e2f2ac120f659ef58002b`
+- 90+ tile: `b915a945a1d932a41cb7291a051de8b8be863bca`
+- 90+ clarification: `1b09f0d430a820ecfa5057569dae8a8f3e4d7ea9` and `11f63c34ecc63cb1253ea7d12d00d10fad4e25c8`
+- Return to ≈80: `bed64256d24c70e0f2c71835fb3dd4c1133842bb`

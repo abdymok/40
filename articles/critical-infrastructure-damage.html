@@ -91,7 +91,7 @@ body.infrastructure-page .fun-fact-figure{margin:18px 0 8px}
 body.infrastructure-page .fun-fact-image-toggle{display:block;width:100%;padding:0;border:0;background:transparent;color:inherit;cursor:pointer;text-align:left}
 body.infrastructure-page .fun-fact-image-toggle img{display:block;width:100%;height:auto;max-height:70vh;object-fit:contain;object-position:left center}
 body.infrastructure-page .fun-fact-image-toggle:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
-body.infrastructure-page #fun-fact-caption{display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:8px;font-size:13px;line-height:1.5;color:var(--muted);text-wrap:wrap}
+body.infrastructure-page #fun-fact-caption:not(.visually-hidden){display:block;width:100%;max-width:720px;box-sizing:border-box;margin-top:8px;font-size:13px;line-height:1.5;color:var(--muted);text-wrap:wrap}
 body.infrastructure-page .fun-fact-toggle-hint{font-size:12px!important;color:var(--muted)}
 body.infrastructure-page .fun-fact .source{font-size:13px}
 body.infrastructure-page details.monday-madness>summary,body.infrastructure-page details.tuesday-turmoil>summary,body.infrastructure-page details.wacko-wednesday>summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;cursor:pointer;list-style-position:outside}
@@ -151,8 +151,7 @@ body.infrastructure-page .day-photo figcaption a{color:inherit;text-decoration:u
 <body class="infrastructure-page"><main id="top">
 <h1>Kyiv infrastructure chronology</h1>
 <p class="dek">Confirmed reports, operator reports, attributed accounts and eyewitness reports, September 30–November&nbsp;26, 2026</p>
-<p class="scope-note">The chronology includes context from September 30. Dashboard reporting begins October 10. <a href="../method/">Methodology, evidence labels and corrections policy.</a></p>
-<p class="scope-note timezone-note">All times are Kyiv local time. Clocks change from summer to standard time on October 25, 2026. Entries retain local clock times.</p>
+<p class="scope-note">Context begins Sept. 30. Dashboard reporting begins Oct. 10. All times are Kyiv local time (standard time from Oct. 25). <a href="../method/">Methodology, evidence labels and corrections policy.</a></p>
 <div class="appearance-control" role="group" aria-label="Colour theme">
 <button type="button" data-theme-choice="auto" aria-pressed="true">Auto</button>
 <button type="button" data-theme-choice="white" aria-pressed="false">White</button>
@@ -165,25 +164,23 @@ body.infrastructure-page .day-photo figcaption a{color:inherit;text-decoration:u
 
 
 
+<nav class="tracker-nav" aria-label="Navigation"><span class="tracker-pages" aria-label="Site pages"><a href="/">Home</a><a href="../articles/critical-infrastructure-damage.html" aria-current="page">Infrastructure</a><a href="../method/">Method</a><a href="../articles/data-center-damage.html">Data center</a><a href="/collection/">Collection</a><a href="https://abdymok.github.io/bibliography/">Bibliography</a></span><span class="tracker-sections" aria-label="Chronology sections and records"><a href="#chronology" aria-current="location">Chronology</a><a href="critical-infrastructure-archive.html">Archive</a><a href="#nuclear">Nuclear</a><a href="changes.html">Changes</a></span></nav>
 <section class="dashboard" aria-label="Infrastructure dashboard">
 <div class="dashboard-grid dashboard-leads">
 <div class="dashboard-item is-lead" data-measure="civilian-deaths">
 <p class="dashboard-label">Documented deaths</p>
-<p class="dashboard-row-detail">Through Nov. 26</p>
 <p class="dashboard-value">≥427</p>
 </div>
 <div class="dashboard-item" data-measure="alerts">
 <p class="dashboard-label">Kyiv air alerts</p>
-<p class="dashboard-row-detail">Through Nov. 26</p>
 <p class="dashboard-value">400</p>
 </div>
 <div class="dashboard-item" data-measure="alert-hours">
 <p class="dashboard-label">Alert duration</p>
-<p class="dashboard-row-detail">Through Nov. 26</p>
 <p class="dashboard-value">13<span class="u">d</span> 2<span class="u">h</span> 53<span class="u">m</span></p>
 </div>
 </div>
-<p class="dashboard-period">Deaths, alerts and duration through Nov. 26</p>
+<p class="dashboard-period">All figures through Nov. 26</p>
 <p class="dashboard-audits"><a href="../method/#fatality-reconciliation">Fatality audit</a><a href="../method/#alert-statistics-audit">Alert interval audit</a></p>
 <details class="dashboard-method-note">
 <summary>What the death count includes</summary>
@@ -196,7 +193,6 @@ body.infrastructure-page .day-photo figcaption a{color:inherit;text-decoration:u
 <details class="note ballistic-warning" id="ballistic-warning-note"><summary>Ballistic warning timing</summary><p>A general Kyiv air alert does not establish that a ballistic threat was identified with useful lead time. On October 18–19, the Air Force said partners gave no warning before the first ballistic strike. Information for the second arrived with roughly one minute to react, according to <a href="https://www.pravda.com.ua/eng/news/2026/10/19/8058700/index.amp" target="_blank" rel="noopener">Ukrainska Pravda, Oct. 19</a>. Follow official <a href="https://t.me/kpszsu/86369" target="_blank" rel="noopener">Air Force alerts</a>. The tracker records alert intervals, not a guarantee of advance ballistic warning.</p></details>
 
 
-<nav class="tracker-nav" aria-label="Navigation"><span class="tracker-pages" aria-label="Site pages"><a href="/">Home</a><a href="../articles/critical-infrastructure-damage.html" aria-current="page">Infrastructure</a><a href="../method/">Method</a><a href="../articles/data-center-damage.html">Data center</a><a href="/collection/">Collection</a><a href="https://abdymok.github.io/bibliography/">Bibliography</a></span><span class="tracker-sections" aria-label="Chronology sections and records"><a href="#chronology" aria-current="location">Chronology</a><a href="critical-infrastructure-archive.html">Archive</a><a href="#nuclear">Nuclear</a><a href="changes.html">Changes</a></span></nav>
 <details class="update-history" aria-label="Recent updates">
 <summary><span class="update-history-preview">Nov.&nbsp;26 — Added six verified deaths, updated the provisional minimum to 427, and reconciled Kyiv’s air-alert total to 400 completed alerts and 314 hours 53 minutes. Two casualty reports remain pending incident-level clarification.</span></summary>
 <div class="update-history-content">

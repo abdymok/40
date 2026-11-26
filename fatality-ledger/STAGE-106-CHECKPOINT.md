@@ -39,7 +39,7 @@ For Chornomorsk, the independent method-to-ledger comparison also identifies the
 
 ## Change control
 
-- Updated only the explanatory reason strings for the four revisions newly classified here; Stage 105 had already updated the Oct. 31 Sloviansk reason.
+- Updated explanatory reason strings for six revisions: four newly classified exclusions (the two Izium revisions and two Chornomorsk revisions) and two previously established exclusions (the second Dnipro death and first Saltivsky death). Stage 105 had already updated the Oct. 31 Sloviansk reason.
 - No incident final death count, revision value, incident count or source count changed.
 - No `ledger_effective_at` value was filled.
 - Public minimum remains 427; raw incident-ledger sum remains 458.

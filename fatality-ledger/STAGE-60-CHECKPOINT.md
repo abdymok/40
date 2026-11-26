@@ -14,7 +14,7 @@ Date: 26 November 2026
 
 The Oct. 12 Kharkiv evening strike initially had three bodies recovered. On Oct. 13 at 11:41, Mayor Ihor Terekhov reported recovery of a fourth body. Commit `fe3278d0874258aa5e073ce1ca77dd348dcdbca3` updates the chronology entry from three to four deaths but leaves the dashboard at approximately 80.
 
-The later 80, 81 and 82 snapshots retain the four-death Kharkiv chronology entry. However, the method paragraph at the 80 baseline does not itemize this incident. The evidence therefore confirms that the chronology toll was corrected before the 80→81 and 81→82 updates, but does not independently prove whether the fourth Kharkiv death was already included in the 80 subtotal or whether the counter failed to move when it should have. Do not assign a separate effective date from the chronology update alone.
+The Oct. 11 ≈80 baseline predates the Oct. 12 Kharkiv attack, so the four Kharkiv deaths cannot have been part of that baseline. The later Oct. 13 snapshots still display ≈80 after the Kharkiv incident was added to the chronology and its toll was updated to four. The 80→81 and 81→82 dashboard commits then explicitly attribute their +1 increments to the Oct. 13 Kyiv ballistic strike and the further body recovered after that strike; neither mentions Kharkiv. This establishes that no separate Kharkiv increment is visible in the dashboard change history. Because the displayed total is approximate and the method does not enumerate all incident membership, we cannot prove whether a rounded recalculation absorbed some or all of the four deaths, or whether they were omitted. Treat this as a potential four-death inclusion gap, not a confirmed +4 adjustment. Do not assign a separate effective date from the chronology update alone.
 
 ## Oct. 14 Kyiv casualty revision
 
@@ -30,5 +30,5 @@ The 82→85 update initially described three deaths in the consolidated overnigh
 ## Next work
 
 1. Reconstruct the 80 baseline's incident membership from the Oct. 11 snapshot and earlier change history.
-2. Resolve whether the fourth Kharkiv Oct. 12 death entered the 80 baseline or was omitted from the dashboard arithmetic.
+2. Resolve whether the four Kharkiv Oct. 12 deaths were incorporated into the later ≈80 display after the incident was added, or remained outside the running subtotal.
 3. Continue backward through the 80 subtotal only where the historical dashboard and source records establish inclusion.

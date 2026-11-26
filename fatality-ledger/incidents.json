@@ -1171,7 +1171,7 @@
         "notes": "Reports the 45-year-old woman's death in a heavy-artillery attack on Nov. 23 and describes the shoreline strike."
       },
       {
-        "source_id": "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
+        "source_id": "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-45YO",
         "publisher": "Informator Nikopol, citing Nikopol District Military Administration",
         "source_type": "news_report",
         "published_at": "2026-11-23T23:59:00+02:00",
@@ -1183,7 +1183,7 @@
         "notes": "Regional daily roundup reports two women, aged 45 and 62, killed in Nikopol on Nov. 23."
       },
       {
-        "source_id": "NIKOPOL-REGION-IFAX-2026-11-23",
+        "source_id": "NIKOPOL-REGION-IFAX-2026-11-23-45YO",
         "publisher": "Interfax-Ukraine, citing Dnipropetrovsk Regional Military Administration",
         "source_type": "news_report",
         "published_at": "2026-11-23T18:51:00+02:00",
@@ -1205,8 +1205,8 @@
         "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting.",
         "source_ids": [
           "NIKOPOL-45YO-INFORMATOR-2026-11-24",
-          "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
-          "NIKOPOL-REGION-IFAX-2026-11-23"
+          "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-45YO",
+          "NIKOPOL-REGION-IFAX-2026-11-23-45YO"
         ]
       }
     ]
@@ -1239,7 +1239,7 @@
         "notes": "Reports the death of 62-year-old Iryna Kuznetsova following Russian attacks on Nikopol on Nov. 23."
       },
       {
-        "source_id": "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
+        "source_id": "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-62YO",
         "publisher": "Informator Nikopol, citing Nikopol District Military Administration",
         "source_type": "news_report",
         "published_at": "2026-11-23T23:59:00+02:00",
@@ -1251,7 +1251,7 @@
         "notes": "Regional daily roundup reports two women, aged 45 and 62, killed in Nikopol on Nov. 23."
       },
       {
-        "source_id": "NIKOPOL-REGION-IFAX-2026-11-23",
+        "source_id": "NIKOPOL-REGION-IFAX-2026-11-23-62YO",
         "publisher": "Interfax-Ukraine, citing Dnipropetrovsk Regional Military Administration",
         "source_type": "news_report",
         "published_at": "2026-11-23T18:51:00+02:00",
@@ -1273,8 +1273,8 @@
         "reason": "Initial incident-level record created from the mayor's casualty confirmation and local reporting.",
         "source_ids": [
           "NIKOPOL-62YO-INFORMATOR-2026-11-24",
-          "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23",
-          "NIKOPOL-REGION-IFAX-2026-11-23"
+          "NIKOPOL-2DEATHS-INFORMATOR-2026-11-23-62YO",
+          "NIKOPOL-REGION-IFAX-2026-11-23-62YO"
         ]
       }
     ]

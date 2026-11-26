@@ -5,7 +5,10 @@ This directory contains the working incident-level dataset for the provisional n
 ## Source of truth
 
 - `incidents.json` is the authoritative incident dataset.
-- The current cumulative total is the sum of `documented_deaths` across eligible incident records. No page or dashboard should maintain its own total.
+- `incidents.json` is authoritative for the incident-level documented-death inventory. Its current raw sum is 449 across 175 incident records.
+- The current public method-page subtotal is 421 as of Nov. 26, 2026. It is a historical running subtotal, not yet identical to the raw incident-ledger sum because 28 deaths remain subject to scope, overlap or historical-inclusion reconciliation.
+- `ledger_effective_at` records when a revision entered the historical running subtotal. A null value means the inclusion date is not established or the revision is not counted separately pending overlap/scope review.
+- Do not derive a public dashboard number by summing all `documented_deaths` until the remaining eligibility and overlap differences are resolved.
 - A regional or citywide month-to-date subtotal is not a separate incident and must not be added alongside the incidents it summarizes.
 - Injuries and people merely listed as missing are excluded.
 - Military personnel are excluded. Police, rescuers and other non-combatant emergency personnel are included.
@@ -51,7 +54,7 @@ Never overwrite a prior count silently. A later death in hospital is a new incre
 
 ## Historical snapshots
 
-Historical totals such as 123, 148, 192 and 418 are retained as legacy snapshots in audit notes. They are not authoritative data and must not be used as current totals. Historical membership and ledger-effective dates are being reconstructed separately. The final current total must always be calculated from the incident records.
+Historical totals such as 123, 148, 192 and 418 are retained as legacy snapshots in audit notes. The current public method-page snapshot is 421 through Nov. 26, 2026. They are not authoritative data and must not be used as current totals. Historical membership and ledger-effective dates are being reconstructed separately. The raw incident-ledger sum and the public running subtotal must be displayed as separate measures until their difference is fully reconciled.
 
 ## Validation
 

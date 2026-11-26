@@ -1,19 +1,19 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 83. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 84. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
-- Null revision entries: 37
+- Null revision entries: 35
 - Net sum of count changes across these entries: 100
-- Legacy pre-Oct. 29 entries: 30 entries, 89 net count changes
+- Legacy pre-Oct. 29 entries: 28 entries, 84 net count changes
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths
 - Oct. 31 Sloviansk: 1 entry, 1 death
 - Nov. 3 Dnipro second death: 1 entry, 1 death
 - Nov. 11 Saltivsky first death: 1 entry, 1 death
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 30 remaining pre-Oct. 29 entries carry 89 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
+The 28 remaining pre-Oct. 29 entries carry 84 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
 
 ## Stage 76 adjudication
 
@@ -46,6 +46,10 @@ Lymanivka REV-001 (—→1) is now dated Oct. 22. Commit `3513193d093e5166b216f9
 ## Stage 83 adjudication
 
 The Oct. 26 Uman death is not included in the Oct. 28 ≈148 baseline: the 138→141 update names three other deaths, and subsequent increments to 148 are separately itemized without Uman. The 174→192 transition on Nov. 2 is explicitly the Komyshuvakha revision; the 174 baseline's itemized additions also do not identify Uman. The current dashboard update history contains no Uman reference. Later inclusion in the 421 minimum is not proven, so Uman REV-001 remains null. See `STAGE-83-CHECKPOINT.md`.
+
+## Stage 84 adjudication
+
+The Oct. 21 ≈105 method snapshot explicitly includes two Sviatoshynsky deaths and three Kramatorsk heating-supply workers. Both revisions are now dated Oct. 21, the first documented inclusion date. The Oct. 22 ≈118 method snapshot independently repeats both items. See `STAGE-84-CHECKPOINT.md`.
 
 ## Adjudication rules
 
@@ -83,11 +87,9 @@ The Oct. 26 Uman death is not included in the Oct. 28 ≈148 baseline: the 138�
 | 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-001` | — → 3 | +3 | Legacy 148 membership unresolved |
 | 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002` | 3 → 6 | +3 | Legacy 148 membership unresolved |
 | 2026-10-19 | `UA-KYI-KYIV-2026-10-19-BALLISTIC` | `UA-KYI-KYIV-2026-10-19-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
-| 2026-10-20 | `UA-DON-KRAMATORSK-2026-10-20-HEATING-WORKERS` | `UA-DON-KRAMATORSK-2026-10-20-HEATING-WORKERS-REV-001` | — → 3 | +3 | Legacy 148 membership unresolved |
 | 2026-10-20 | `UA-KYI-KYIV-HOLOSIIVSKY-2026-10-20-UAV-FALL` | `UA-KYI-KYIV-HOLOSIIVSKY-2026-10-20-UAV-FALL-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-21 | `UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE` | `UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-21 | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC` | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
-| 2026-10-21 | `UA-KYI-KYIV-SVIATOSHYNSKY-2026-10-21-DRONE-HIGHRISE` | `UA-KYI-KYIV-SVIATOSHYNSKY-2026-10-21-DRONE-HIGHRISE-REV-001` | — → 2 | +2 | Legacy 148 membership unresolved |
 | 2026-10-22 | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET` | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002` | 2 → 3 | +1 | Legacy 148 membership unresolved |
 | 2026-10-24 | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE` | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-29 | `UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO` | `UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO-REV-001` | — → 1 | +1 | Oct. 29 extra death; inclusion after 173 unverified |

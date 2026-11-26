@@ -5283,7 +5283,7 @@
         "recorded_at": "2026-11-03T13:38:00+02:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "The Nov. 3 dashboard sequence includes one death in Dnipro: the initial update moves 207→208, and the later combined 208→211 update accounts for Komyshuvakha 29→31 (+2) and the Hotiv child (+1). The master reconciliation groups the same sequence as 207→211 (+4), including one Dnipro death. The incident's later local final count is two, but no second Dnipro increment appears in the mapped sequence. No later inclusion in the 421 minimum is proven, so keep ledger_effective_at null.",
+        "reason": "The Nov. 3 dashboard sequence includes only the first Dnipro death: 207→208. The subsequent 208→211 increment is fully allocated to Komyshuvakha 29→31 (+2) and the Hotiv child (+1). The full 192→421 historical sequence is mapped in Stages 44–52 and contains no second Dnipro death. This 1→2 revision is therefore an established exclusion from the historical 421 public subtotal. Keep ledger_effective_at null. See STAGE-106-CHECKPOINT.md.",
         "source_ids": [
           "DNIPRO-2026-11-03-UP-FINAL"
         ],
@@ -6952,7 +6952,7 @@
         "recorded_at": "2026-11-11",
         "old_value": null,
         "new_value": 1,
-        "reason": "The first death was reported by Terekhov at 13:37 UTC on Nov. 11, after the ≈283 baseline commit `9a8a5b44430108fdb04e4744a1ff2dc8a88db799` at 11:17:07 UTC. The second death was reported at 13:43 UTC. Commit `26a44c4287b2429832fc9f2fc26087cfe45c7e12` at 13:58:46 UTC is titled “Add second Kharkiv strike death and update dashboard” and raises the subtotal only 283→284 (+1). The first death therefore was not in the 282 or 283 baseline; the 283→284 increment is assigned to REV-002 (the second death). REV-001 remains null and is not included in the 421 subtotal.",
+        "reason": "The first death was reported after the ≈283 baseline. The 283→284 increment adds only the second death, as confirmed by the timestamped reports and dashboard commit. The full subsequent 283→421 sequence is mapped in Stages 47–52 and contains no separate increment for the first death. This initial —→1 revision is therefore an established exclusion from the historical 421 public subtotal. Keep ledger_effective_at null. See STAGE-106-CHECKPOINT.md.",
         "source_ids": [
           "SALTIVSKY-TEREKHOV-2026-11-11"
         ],

@@ -11787,5 +11787,48 @@
         "ledger_effective_at": "2026-11-26"
       }
     ]
+  },
+  {
+    "incident_id": "UA-ZAP-ZAPORIZHIA-2026-11-26-DNIPRO-DISTRICT-ATTACK",
+    "incident_date": "2026-11-26",
+    "location": {
+      "settlement": "Zaporizhia",
+      "district": "Dnipro district",
+      "region": "Zaporizhia region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian attack on Zaporizhia's Dnipro district on Nov. 26 killed one person and injured another, according to regional military administration head Mykhailo Semikin.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_only",
+    "sources": [
+      {
+        "source_id": "ZAPORIZHIA-SEMIIKIN-2026-11-26-69360",
+        "publisher": "Zaporizhia Regional Military Administration, citing head Mykhailo Semikin",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/zoda_gov_ua/69360",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Semikin reported one person killed and one injured in the attack on Dnipro district. The report did not identify the victim or give an age."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-11-26-DNIPRO-DISTRICT-ATTACK-REV-001",
+        "recorded_at": "2026-11-26",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "A distinct Nov. 26 attack in Zaporizhia's Dnipro district was reported by the regional military administration. This newly reported death is added to the running public subtotal on Nov. 26; the injured person is excluded.",
+        "source_ids": [
+          "ZAPORIZHIA-SEMIIKIN-2026-11-26-69360"
+        ],
+        "ledger_effective_at": "2026-11-26"
+      }
+    ]
   }
 ]

@@ -4,7 +4,7 @@ Date: 2026-11-26
 
 ## First dashboard snapshot
 
-The first dashboard commit, `27776283f345cdeb7d6803af49b8267fa022c68b`, was published Oct. 10, 2026, at 16:05 Kyiv time. It displayed approximately 100 civilians killed and approximately 600 injured. Its method paragraph explicitly described both figures as provisional order-of-magnitude estimates, not a reconciled incident-by-incident sum. It warned that totals might overlap and that the Oct. 7 Kyiv reports in Darnytsky and Desniansky might not represent separate groups of victims.
+The first dashboard draft was committed Oct. 10 at 09:15 Kyiv time (`58946fdeb45e330948d31166eb7e292e99df3898`) and reverted at 09:17 pending review (`a00616cc8af8df8398b958bd8ba2c92111842fd6`). The final public dashboard was committed at 16:32 Kyiv time (`27776283f345cdeb7d6803af49b8267fa022c68b`); the page's own last-updated timestamp read 16:05 Kyiv time. It displayed approximately 100 civilians killed and approximately 600 injured. Its method paragraph explicitly described both figures as provisional order-of-magnitude estimates, not a reconciled incident-by-incident sum. It warned that totals might overlap and that the Oct. 7 Kyiv reports in Darnytsky and Desniansky might not represent separate groups of victims.
 
 The visible death-bearing chronology rows in that snapshot were:
 - Pryluky: 22

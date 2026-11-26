@@ -1,19 +1,19 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 81. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 82. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
-- Null revision entries: 38
+- Null revision entries: 37
 - Net sum of count changes across these entries: 100
-- Legacy pre-Oct. 29 entries: 31 entries, 90 net count changes
+- Legacy pre-Oct. 29 entries: 30 entries, 89 net count changes
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths
 - Oct. 31 Sloviansk: 1 entry, 1 death
 - Nov. 3 Dnipro second death: 1 entry, 1 death
 - Nov. 11 Saltivsky first death: 1 entry, 1 death
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 31 remaining pre-Oct. 29 entries carry 90 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
+The 30 remaining pre-Oct. 29 entries carry 89 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The remaining seven entries account for eight further deaths with specific inclusion/overlap questions. These are not 147 additional deaths and must not be added to the public total as a block.
 
 ## Stage 76 adjudication
 
@@ -38,6 +38,10 @@ The two revisions to the Oct. 13 Kyiv ballistic residential-building strike are 
 ## Stage 81 adjudication
 
 The Oct. 21 dashboard/method update establishes inclusion of the final nine-death Sloviansk toll and the two Korotych deaths in the approximately-116 subtotal. Sloviansk REV-003 is dated Oct. 21; its earlier 1- and 6-death interim revisions remain null because their separate entry into the running subtotal is not established. Korotych REV-001's date is corrected from Oct. 22 to Oct. 21. See `STAGE-81-CHECKPOINT.md`.
+
+## Stage 82 adjudication
+
+Lymanivka REV-001 (—→1) is now dated Oct. 22. Commit `3513193d093e5166b216f9112bd25da39f8dbb41` adds the fatal incident and explicitly raises the selected subtotal 116→117; the Oct. 22 method snapshot includes the death. See `STAGE-82-CHECKPOINT.md`.
 
 ## Adjudication rules
 
@@ -81,7 +85,6 @@ The Oct. 21 dashboard/method update establishes inclusion of the final nine-deat
 | 2026-10-21 | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC` | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-21 | `UA-KYI-KYIV-SVIATOSHYNSKY-2026-10-21-DRONE-HIGHRISE` | `UA-KYI-KYIV-SVIATOSHYNSKY-2026-10-21-DRONE-HIGHRISE-REV-001` | — → 2 | +2 | Legacy 148 membership unresolved |
 | 2026-10-22 | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET` | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002` | 2 → 3 | +1 | Legacy 148 membership unresolved |
-| 2026-10-22 | `UA-KHA-LYMANIVKA-2026-10-22-ATTACK` | `UA-KHA-LYMANIVKA-2026-10-22-ATTACK-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-24 | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE` | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-29 | `UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO` | `UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO-REV-001` | — → 1 | +1 | Oct. 29 extra death; inclusion after 173 unverified |
 | 2026-10-29 | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION` | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002` | 4 → 5 | +1 | Oct. 29 extra death; inclusion after 173 unverified |

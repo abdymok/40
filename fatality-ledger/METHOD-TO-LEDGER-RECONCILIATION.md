@@ -100,7 +100,7 @@ The earlier working decompositions (+13 +2 +3 = +18, then +14 +1 +3 = +18, Stage
 ## Required next work
 
 1. Reconstruct membership of the legacy 148 and 192 snapshots from the original commits and change-log entries, including source publication date and the date the project actually counted each death.
-2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. One hundred forty revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
+2. Continue populating `ledger_effective_at` only where the old dashboard history confirms inclusion. One hundred fifty-seven revision entries now have confirmed ledger_effective_at dates after the Oct. 29 cohort reconstruction; all others remain null. Do not infer dates from incident date alone.
 3. Continue mapping historical subtotal increments to individual records. The post-192 +5 is now accounted for by Chornomorsk (+3), Dnipro Nov. 3 (+1) and Saltivsky (+1).
 4. Keep the DTEK driver and Kramatorsk Oct. 9 OHCHR lead unresolved until source/duplicate questions are settled.
 5. Do not force the ledger to 418. The current total is a calculated pilot sum and may change if source-level deduplication or additional incident verification changes any record.
@@ -150,7 +150,7 @@ The incident dataset now records the historical progression rather than only the
 - Kyiv ballistic attack: one death entered on Oct. 30.
 - Izium public-health institution: four deaths entered on Oct. 30; the fifth death remains a later final-count revision with no proven dashboard inclusion date.
 
-The dataset now has 140 revision entries with non-null ledger_effective_at and 86 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
+The dataset now has 157 revision entries with non-null ledger_effective_at and 69 entries still null. The total remains 173 incident records, 419 source records and 446 final documented deaths. No final incident count was changed by this stage.
 
 ### 192 baseline interpretation
 
@@ -314,3 +314,25 @@ The 363→372 transition is now fully allocated:
 The Kyiv incident's revision chain is 3→6→7, not 3+6+7. The two Lviv deaths are separate. Other Nov. 20 incident records, including the Nikopol-district death and the later Zaporizhia regional daily aggregate, remain outside this 363→372 mapping until their later inclusion dates are established.
 
 The ledger remains 173 incidents, 420 source records and 446 final deaths. It now has 140 revision entries with confirmed effective dates and 86 still null. No final incident counts changed.
+
+
+## Stage 51 — Nov. 21–22 subtotal and Dymer sequence mapped
+
+The 372→391 progression is now allocated:
+
+| Historical subtotal | Increment | Incident mapping |
+|---|---:|---|
+| 372→374, Nov. 21 | +2 | Kryvyi Rih ballistic strike: a seven-year-old boy and a 20-year-old woman paramedic |
+| 374→379, by Nov. 22 | +5 | Dymer's first two recovered bodies (2), Nikopol district (1), Zaporizhia city/district aggregate (2) |
+| 379→391, Nov. 22 | +12 | Dymer 2→7 (+5), Vyshneve supermarket (3), Bila Tserkva district (1), Dnipro (1), Novoslobidska community (1), Zaporizhia enterprise (1) |
+
+The Dymer incident's revision chain is now dated and reconciled:
+- two initial recovered bodies entered the 379 baseline;
+- three further recoveries raised the toll from two to five;
+- the sixth and seventh bodies brought the Nov. 22 incident toll to seven;
+- the eighth through eleventh bodies were recovered on Nov. 23;
+- the 79-year-old woman rescued alive on Nov. 23 died in hospital on Nov. 24, bringing the final incident count to 12.
+
+The initial two Dymer deaths are not added again to the 379→391 transition. The Nov. 22 update adds only five more Dymer deaths to the baseline, then the other seven incident groups in the table complete the +12. The Nov. 23 and Nov. 24 Dymer revisions are mapped to later subtotals, not the Nov. 22 update.
+
+The ledger remains 173 incidents, 420 source records and 446 final deaths. It now has 157 revision entries with confirmed effective dates and 69 still null. No final incident counts changed.

@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 95, updated Nov. 26, 2026  
+**Working status:** Stage 96, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -692,3 +692,10 @@ The Oct. 9 Zaporizhia guided-bomb death is distinct from the Oct. 10 residential
 Checkpoint: `fatality-ledger/STAGE-95-CHECKPOINT.md`
 
 A consistency review found two errors in Stage 62: the Pokrovske child death was listed both as the match for the Dnipropetrovsk-region row and among the six records not itemized in the Oct. 11 snapshot; and the Kyiv citywide one-death row was omitted from the visible-record list. The corrected comparison has eight current ledger records corresponding to the eight visible death-bearing rows (87 deaths at current tolls, including the broad citywide row), six other records not itemized in the snapshot (six deaths), and 14 records/93 final deaths overall. The seven selected incident/region records excluding the broad Kyiv aggregate sum to 86. The Dnipropetrovsk row is matched to Pokrovske; no separate unidentified incident is outstanding. No incident data, effective dates or public totals changed.
+
+
+## Stage 96 — Oct. 17 Sloviansk interim toll revisions
+
+Checkpoint: `fatality-ledger/STAGE-96-CHECKPOINT.md`
+
+The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify the Oct. 17 Sloviansk incident or its interim tolls of one and six. The Oct. 21 105→116 update explicitly adds the final nine-death toll; the net +11 from 105 to 116 matches nine Sloviansk deaths and two Korotych deaths. No separate inclusion of the one- or six-death interim toll is established. REV-001 and REV-002 remain null; REV-003 (6→9) remains dated Oct. 21. No incident count, effective date or public total changed.

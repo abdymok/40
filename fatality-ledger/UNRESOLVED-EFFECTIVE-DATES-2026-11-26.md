@@ -4,16 +4,16 @@ This inventory lists every revision whose `ledger_effective_at` remains null aft
 
 ## Summary
 
-- Null revision entries: 33
-- Net sum of count changes across these entries: 90
-- Legacy pre-Oct. 29 entries: 26 entries, 82 net count changes
+- Null revision entries: 34
+- Net sum of count changes across these entries: 91
+- Legacy pre-Oct. 29 entries: 27 entries, 83 net count changes
 - Nov. 11 Saltivsky first death: 1 entry, 1 death (not included in 421)
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths (later inclusion in 421 unproven)
 - Oct. 31 Sloviansk: 1 entry, 1 death (174-baseline membership unverified)
 - Nov. 3 Dnipro second death: 1 entry, 1 death (not in mapped Nov. 3 increment)
 - Nov. 11 Chornomorsk later hospital revisions: 2 entries, 3 deaths
 
-The 26 remaining pre-Oct. 29 entries carry 82 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The seven remaining post-Oct. 29 entries account for eight further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and two later Chornomorsk revisions. Together with the 26 legacy entries, the unresolved revisions have a net arithmetic change of 90. This is not 89 additional deaths to be added to the public total as a block.
+The 27 remaining pre-Oct. 29 entries carry 83 net count changes, including one -1 correction in the Kharkiv market incident. Seven final-count revisions in the Oct. 11 ≈80 selected-incident baseline are now dated Oct. 11; see Stage 76. The other legacy revisions remain unresolved. The seven remaining post-Oct. 29 entries account for eight further deaths with specific inclusion/overlap questions: two additional Oct. 29 Izium revisions, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Nov. 11 Saltivsky death and two later Chornomorsk revisions. Together with the seven post-Oct. 29 entries, the 27 legacy entries bring the unresolved revisions to a net arithmetic change of 91. This is not 89 additional deaths to be added to the public total as a block.
 
 ## Stage 76 adjudication
 
@@ -99,6 +99,12 @@ The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify the O
 
 The Oct. 19 Nova Vodolaha toll progressed 3→preliminary 6→corrected 5. The Oct. 20 ≈100/103 and Oct. 21 ≈105/116 snapshots do not name the incident. The corrected five-death toll is carried by the Oct. 26 ≈138 baseline; the Oct. 27 142→143 increment explicitly adds the sixth death after a 12-year-old boy died in hospital. The initial three and preliminary six revisions were not separately added to the subtotal. REV-001 and REV-002 remain null; REV-003 (6→5) remains dated Oct. 26 and REV-004 (5→6) Oct. 27. See `STAGE-98-CHECKPOINT.md`.
 
+## Stage 99 adjudication
+
+The Oct. 25 death of DTEK driver Vitaliy Shcherbyna is a distinct incident: DTEK and Interfax-Ukraine identify a drone strike on a lorry at a coal-mining enterprise in Dnipropetrovsk region. The regional administration's Oct. 25 casualty update identifies the three deaths in Synelnykove, later revised to four after a wounded man died in hospital. The earlier working note's reference to a one-death Dnipro enterprise incident was incorrect; the ledger's one-death Dnipro incident occurred on Oct. 23.
+
+The Oct. 22 ≈123 baseline predates Shcherbyna's death. The mapped Oct. 25–28 increments identify other incidents and do not include him. A separate incident record has therefore been added to `incidents.json` with one documented death, regional-level location and two sources. Its `ledger_effective_at` remains null because the death is not evidenced in the historical 148 baseline or published 421 minimum. The incident ledger now contains 176 records, 430 source records and 452 final documented deaths; 34 revision entries remain null. The public subtotal remains 421. See `STAGE-99-CHECKPOINT.md` and `UNRESOLVED-DTEK-SHCHERBYNA-OCT25.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -138,6 +144,7 @@ The Oct. 19 Nova Vodolaha toll progressed 3→preliminary 6→corrected 5. The O
 | 2026-10-21 | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC` | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-22 | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET` | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002` | 2 → 3 | +1 | Legacy 148 membership unresolved |
 | 2026-10-24 | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE` | `UA-KHA-LOZOVA-2026-10-24-WAREHOUSE-MISSILE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
+| 2026-10-25 | `UA-DNE-DNIPROPETROVSK-2026-10-25-DTEK-DRIVER` | `UA-DNE-DNIPROPETROVSK-2026-10-25-DTEK-DRIVER-REV-001` | — → 1 | +1 | Distinct DTEK mine lorry strike; not evidenced in 148 or 421 |
 | 2026-10-29 | `UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO` | `UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO-REV-001` | — → 1 | +1 | Oct. 29 extra death; inclusion after 173 unverified |
 | 2026-10-29 | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION` | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002` | 4 → 5 | +1 | Oct. 29 extra death; inclusion after 173 unverified |
 | 2026-10-31 | `UA-DON-SLOVIANSK-2026-10-31-ATTACK` | `UA-DON-SLOVIANSK-2026-10-31-ATTACK-REV-001` | — → 1 | +1 | Nov. 2 baseline inclusion unverified |

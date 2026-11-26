@@ -1,9 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 100, updated Nov. 26, 2026  
+**Working status:** Stage 101, updated Nov. 26, 2026  
 **Current ledger sum:** 452  
 **Published method-page minimum:** 421  
 **Raw difference:** +31 in the pilot incident dataset
+
+> **Stage 101 amendment — Kyiv ballistic death dated:** The Oct. 21 Kyiv ballistic attack killed one person. The State Emergency Service confirmed the death on Oct. 22, and the Oct. 22 ≈118 dashboard/method snapshot explicitly includes one person killed in the overnight attack on Kyiv. The incident revision is now dated `ledger_effective_at: 2026-10-22`. The ledger remains at 176 incidents, 452 final documented deaths and 231 revisions; confirmed effective dates rise from 197 to 198, and null revisions fall from 34 to 33. The pre-Oct. 29 null inventory falls from 27 (+83 net) to 26 (+82 net). Public minimum 421 unchanged. See `STAGE-101-CHECKPOINT.md`.
 
 > **Stage 100 amendment — historical 148 baseline:** The Oct. 22→28 dashboard commit sequence now provides a dated bridge: ≈123 on Oct. 22; 123→132 on Oct. 25; 132→137 and 137→138 on Oct. 26; 138→141 later Oct. 26; 141→142, 142→143 and 143→146 on Oct. 27; then 146→147 and 147→148 on Oct. 28. Stage 100 classified 12 of the 27 pre-Oct. 29 null revisions: nine interim/superseded toll revisions are not independent batches; the Uman and DTEK Shcherbyna deaths are not evidenced in the 148 baseline; and the Oct. 16 Kharkiv market correction from three to two was not subtracted from the public sequence. The remaining 15 pre-Oct. 29 revisions carry a net +20 and still need membership adjudication. All 27 pre-Oct. 29 null revisions still total +83 arithmetically; no effective dates were invented and the public 421 remains unchanged. See `STAGE-100-CHECKPOINT.md`.
 

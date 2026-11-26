@@ -2457,11 +2457,11 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Kharkiv Regional Military Administration reported the 42-year-old woman killed in Lymanivka. Commit 3513193 added the incident to the chronology and raised the selected subtotal 116→117 on Oct. 22; the Oct. 22 method snapshot includes the death. First documented inclusion date: 2026-10-22.",
         "source_ids": [
           "LYMANIVKA-KHARKIV-ODA-2026-10-22"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-22"
       }
     ]
   },

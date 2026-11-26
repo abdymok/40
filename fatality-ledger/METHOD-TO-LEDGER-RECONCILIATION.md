@@ -1,9 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 101, updated Nov. 26, 2026  
+**Working status:** Stage 104 final closeout, updated Nov. 26, 2026  
 **Current ledger sum:** 452  
 **Published method-page minimum:** 421  
 **Raw difference:** +31 in the pilot incident dataset
+
+> **Stage 104 final closeout — Nov. 26:** The post-Oct. 29 review is complete. The ledger contains 176 incidents, 430 source records, 452 final documented deaths and 231 revisions. Of the revisions, 198 have confirmed `ledger_effective_at` dates and 33 remain null. The 33 null revisions comprise 26 pre-Oct. 29 entries with a net arithmetic change of +82 and seven post-Oct. 29 entries with a net +8, for a combined arithmetic net of +90. This arithmetic is not a block of deaths to add to the public subtotal. Two post-Oct. 29 revisions are established exclusions from the public 421: the first Saltivsky death and the second Dnipro death. Five other post-Oct. 29 revisions have unresolved inclusion in carried-forward aggregates. Fourteen pre-Oct. 29 revisions, net +19, still lack a confirmed public-subtotal inclusion date after review. The public provisional minimum remains 421. The 452 incident-ledger sum and 421 public minimum are distinct measures with different historical scope; neither is a correction of the other. No public chronology, dashboard, methodology figure or live running total was changed. See `STAGE-104-CHECKPOINT.md` and `UNRESOLVED-EFFECTIVE-DATES-2026-11-26.md`.
 
 > **Stage 101 amendment — Kyiv ballistic death dated:** The Oct. 21 Kyiv ballistic attack killed one person. The State Emergency Service confirmed the death on Oct. 22, and the Oct. 22 ≈118 dashboard/method snapshot explicitly includes one person killed in the overnight attack on Kyiv. The incident revision is now dated `ledger_effective_at: 2026-10-22`. The ledger remains at 176 incidents, 452 final documented deaths and 231 revisions; confirmed effective dates rise from 197 to 198, and null revisions fall from 34 to 33. The pre-Oct. 29 null inventory falls from 27 (+83 net) to 26 (+82 net). Public minimum 421 unchanged. See `STAGE-101-CHECKPOINT.md`.
 

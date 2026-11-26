@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abdymok.github.io/40/fatality-ledger/incident.schema.json",
+  "title": "Documented non-combatant fatality incident",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "incident_id",
+    "incident_date",
+    "location",
+    "incident_description",
+    "documented_deaths",
+    "scope_classification",
+    "evidence_classification",
+    "sources",
+    "last_verified_date",
+    "revision_history"
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string",
+      "pattern": "^[A-Z0-9][A-Z0-9-]+$"
+    },
+    "incident_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["settlement", "region"],
+      "properties": {
+        "settlement": { "type": "string", "minLength": 1 },
+        "district": { "type": ["string", "null"] },
+        "region": { "type": "string", "minLength": 1 },
+        "country": { "type": "string", "const": "Ukraine" }
+      }
+    },
+    "incident_description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "documented_deaths": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "scope_classification": {
+      "type": "string",
+      "enum": [
+        "civilian",
+        "non_combatant_emergency_personnel",
+        "mixed_non_combatant",
+        "unresolved"
+      ]
+    },
+    "evidence_classification": {
+      "type": "string",
+      "enum": [
+        "official_primary",
+        "official_and_independent",
+        "independent_multi_source",
+        "single_attributed_report",
+        "provisional_unverified"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "publisher", "source_type", "url", "supports"],
+        "properties": {
+          "source_id": { "type": "string", "minLength": 1 },
+          "publisher": { "type": "string", "minLength": 1 },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "official_statement",
+              "official_social_post",
+              "news_report",
+              "eyewitness",
+              "project_record"
+            ]
+          },
+          "published_at": { "type": ["string", "null"], "format": "date-time" },
+          "url": { "type": "string", "format": "uri" },
+          "supports": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "incident_identity",
+                "death_count",
+                "count_revision",
+                "incident_date",
+                "victim_status",
+                "corroboration"
+              ]
+            },
+            "minItems": 1
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "last_verified_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "revision_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "revision_id",
+          "recorded_at",
+          "old_value",
+          "new_value",
+          "reason",
+          "source_ids"
+        ],
+        "properties": {
+          "revision_id": { "type": "string", "minLength": 1 },
+          "recorded_at": { "type": "string", "format": "date-time" },
+          "old_value": { "type": ["integer", "null"], "minimum": 0 },
+          "new_value": { "type": "integer", "minimum": 0 },
+          "reason": { "type": "string", "minLength": 1 },
+          "source_ids": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          }
+        }
+      }
+    }
+  }
+}

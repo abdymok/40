@@ -1,11 +1,11 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 20 analysis, amended through Stage 31 on Nov. 26  
-**Current ledger sum:** 439  
+**Working status:** Stage 20 analysis, amended through Stage 34 on Nov. 26  
+**Current ledger sum:** 441  
 **Published method-page minimum:** 418  
-**Current difference:** +21 in the pilot incident dataset  
+**Current difference:** +23 raw in the pilot incident dataset  
 
-> **Stage 31 amendment:** The current dataset contains 167 incidents, 386 source records and 439 deaths. The missing Kyiv fatality from the late-evening Oct. 29 ballistic attack has been added. The current incident-date inventory through Oct. 28 sums to 162 (14 above the legacy 148); the Oct. 29 incident-date group sums to 27 (two above the historical 25-death transition to 173); and current post-192 additions sum to 231, five above the method's 226. The resulting arithmetic difference is +14 +2 +5 = +21. This is an incident-inventory comparison, not proof of when each death entered the public subtotal. Exact inclusion dates remain unresolved.
+> **Stage 34 amendment:** The current dataset contains 168 incidents, 390 source records and 441 deaths. The missing Korotych Oct. 21 incident (two deaths) has been added after confirming that the Oct. 22 historical method note included both victims. The pre-Oct. 29 incident-date inventory now sums to 164 (16 above the legacy 148); Oct. 29 sums to 27 (two above the historical 25); and post-192 additions sum to 231 (five above the method's 226). Raw arithmetic: +16 +2 +5 = +23. The pre-Oct. 29 comparison has two known scope differences: the historical 148 includes three Chabany deaths excluded from the current ledger, and the Oct. 22 method note still listed three Kharkiv deaths on Oct. 16 while the current ledger retains the later official final count of two. Adjusting only for those differences gives a like-for-like pre-Oct. 29 comparison of 168 versus 148 (+20), and a like-for-like overall comparison of 445 versus 418 (+27). These are comparison adjustments, not proposed ledger additions. Exact historical inclusion dates remain unresolved.
 
 ## What is established
 
@@ -34,7 +34,7 @@ Those eight now have incident records and are already included in the method-pag
 
 The Oct. 28 historical chronology snapshot explicitly says that the three deaths in the Oct. 20 Chabany drone attack were included in the dashboard's selected-incident subtotal. The current structured ledger has no Chabany incident record, consistent with the later working exclusion of those three deaths. This means the raw pre-Oct. 29 comparison (162 current ledger deaths versus 148 historically published, +14) is net of a three-death scope difference. On a like-for-like arithmetic basis, adding those three historical Chabany deaths to the current inventory would produce 165 versus 148, a +17 difference. This is a comparison adjustment only; the three deaths are not being added to the ledger or reintroduced into the working count.
 
-The same scope issue carries forward into the published 418 total. The raw current-ledger difference is +21 (439 versus 418). If the three Chabany deaths still embedded in the historical running subtotal are added solely for like-for-like comparison, the adjusted ledger comparison is 442 versus 418, or +24. Do not interpret 442 as an approved count. The ledger remains at 439 and the Chabany exclusion remains in force unless the user changes that instruction.
+The same scope differences carry forward into the published 418 total. The raw current-ledger difference is +23 (441 versus 418). If the three Chabany deaths and the one Kharkiv market death still embedded in the historical running subtotal are added solely for like-for-like comparison, the adjusted ledger comparison is 445 versus 418, or +27. Do not interpret 442 as an approved count. The ledger remains at 439 and the Chabany exclusion remains in force unless the user changes that instruction.
 
 ## Known method/record differences
 

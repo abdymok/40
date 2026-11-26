@@ -3,19 +3,21 @@
 **Status:** Stage 4 — reconciliation finding, no public data changed  
 **Repository state:** The three earlier audit files remain saved. This checkpoint adds the next set of discrepancies.
 
-## 1. The 374 → 377 → 379 gap
+## 1. The 374 → 377 → 379 progression is now explained
 
-The methodology page's dated narrative says the running documented minimum was **374 through Nov. 21** after adding two deaths in Kryvyi Rih to the 372 subtotal through Nov. 20.
+The methodology history resolves the apparent gap. The sequence is:
 
-The change log separately says it added:
-- one death in Nikopol district, reported by Dnipropetrovsk Regional Military Administration; and
-- two deaths in Zaporizhia and Zaporizhia district, reported by Ivan Fedorov.
+- **374 through Nov. 21:** after adding two deaths in Kryvyi Rih to the 372 subtotal through Nov. 20.
+- **377 through Nov. 21:** add one death in Nikopol district and two deaths in Zaporizhia/Zaporizhia district, as reported by the two regional administrations.
+- **378 through Nov. 22:** the first confirmed Dymer death, a woman whose body was recovered from the rubble.
+- **379 through Nov. 22:** the second confirmed Dymer death, an 18-year-old man whose body DSNS reported recovered at 14:52 on Nov. 22.
 
-It describes those three deaths as moving the minimum **374 → 377 through Nov. 21**.
+This is preserved in the historical methodology commits:
+- `53ad3461608b` contains the 374 → 377 update.
+- `5152843e599f` contains the first Dymer death, 377 → 378.
+- `ec4d6af92df0` contains the second Dymer death, 378 → 379.
 
-The next methodology paragraph begins the Nov. 22 reconciliation from **379**, not 377. No explanation for the additional two deaths (377 → 379) is present in the dated methodology paragraph or the corresponding change-log entries located in this audit.
-
-**Finding:** the 379 starting point is not yet supported by the visible reconciliation narrative. There is an unexplained +2 gap after the explicitly documented 377 subtotal. The 379 baseline must not be treated as verified until those two deaths are identified or the baseline corrected.
+**Finding:** the 379 baseline is supported. It already includes exactly two Dymer deaths, as the later reconciliation assumes. The prior apparent +2 gap was caused by reading the Nov. 21 subtotal without the two subsequent Dymer updates.
 
 ## 2. Nov. 22 +12 reconciliation: what is actually listed
 
@@ -38,7 +40,9 @@ This explains one missing death in the change log's first subtotal:
 - A separate update raises Dymer from six to seven: **+1**, giving 389 → 390.
 - The separately recorded Zaporizhia enterprise fatality contributes the remaining **+1**, giving 390 → 391.
 
-The methodology paragraph instead groups Dymer's full rise from two to seven (+5) and the enterprise death with the other incidents, presenting the consolidated 379 → 391 total. That arithmetic is internally sound, but only if the 379 baseline is itself correct.
+The methodology paragraph instead groups Dymer's full rise from two to seven (+5) and the enterprise death with the other incidents, presenting the consolidated 379 → 391 total. The historical edit that established this corrected total is commit `1a24eec76281`. Its patch explicitly adds the Zaporizhia enterprise fatality and revises the Nov. 22 subtotal from 390 to 391, then revises the subsequent Dymer progression from 390 → 394 to 391 → 395.
+
+This identifies the source of the stale one-death difference in the change log: the 40-year-old worker killed in the Zaporizhia enterprise strike was missing from the earlier Nov. 22 change-log enumeration. The methodology later incorporated him, but the change log's intermediate arithmetic was not fully updated.
 
 ## 3. Dymer intermediate arithmetic in the change log
 
@@ -61,10 +65,9 @@ The change log's 392 → 394 line is one below the methodology/chronology baseli
 
 ## 5. What remains to be done
 
-1. Identify the unexplained **+2 from 377 to 379**. Search the dated source trail and the project history around Nov. 21–22.
-2. Confirm whether the 379 baseline included exactly two Dymer deaths and no other Nov. 22 incidents.
-3. Confirm the Zaporizhia enterprise death's exact source/time and whether it was included in any earlier baseline or added only in the Nov. 22 reconciliation.
-4. Reconcile the 392 → 394 change-log statement with the 391 → 393 → 395 sequence.
-5. Continue the incident-by-incident reconciliation forward from the Nov. 23 subtotal of 405, before calculating any project-wide sum.
+1. Retain the 379 baseline as supported: it includes the two initial Dymer deaths.
+2. Retain the Zaporizhia enterprise worker as a separate +1 incident addition on Nov. 22. The method history incorporates him in commit `1a24eec76281`, while the earlier change-log breakdown omits him.
+3. Correct the change-log's stale Dymer intermediate arithmetic in the eventual synchronized display update. Given the 391 subtotal through Nov. 22, the 7 → 9 update should be 391 → 393 and the 9 → 11 update should be 393 → 395, not 392 → 394.
+4. Continue the incident-by-incident reconciliation forward from the Nov. 23 subtotal of 405, before calculating any project-wide sum.
 
-**No live totals, chronology entries, method text or published change-log text have been edited.** This checkpoint records audit findings only.
+**No live totals, chronology entries, method text or published change-log text have been edited.** This checkpoint records audit findings only. The historical repository commits were inspected to resolve the previously open 377 → 379 question.

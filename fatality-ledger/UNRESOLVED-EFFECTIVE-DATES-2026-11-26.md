@@ -95,6 +95,10 @@ The Oct. 9 Zaporizhia guided-bomb death is distinct from the Oct. 10 residential
 
 The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify the Oct. 17 Sloviansk incident or its interim tolls of one and six. The Oct. 21 105→116 update explicitly adds the final nine-death toll; the net +11 from 105 to 116 matches nine Sloviansk deaths and two Korotych deaths. No separate inclusion of the one- or six-death interim toll is established. REV-001 and REV-002 remain null; REV-003 (6→9) remains dated Oct. 21. See `STAGE-96-CHECKPOINT.md`.
 
+## Stage 98 adjudication
+
+The Oct. 19 Nova Vodolaha toll progressed 3→preliminary 6→corrected 5. The Oct. 20 ≈100/103 and Oct. 21 ≈105/116 snapshots do not name the incident. The corrected five-death toll is carried by the Oct. 26 ≈138 baseline; the Oct. 27 142→143 increment explicitly adds the sixth death after a 12-year-old boy died in hospital. The initial three and preliminary six revisions were not separately added to the subtotal. REV-001 and REV-002 remain null; REV-003 (6→5) remains dated Oct. 26 and REV-004 (5→6) Oct. 27. See `STAGE-98-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -128,8 +132,8 @@ The Oct. 20 ≈100/103 and Oct. 21 ≈105 method snapshots do not identify the O
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-001` | — → 1 | +1 | Interim toll not independently included |
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002` | 1 → 6 | +5 | Interim toll not independently included |
 | 2026-10-17 | `UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP` | `UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
-| 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-001` | — → 3 | +3 | Legacy 148 membership unresolved |
-| 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002` | 3 → 6 | +3 | Legacy 148 membership unresolved |
+| 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-001` | — → 3 | +3 | Initial toll not separately included |
+| 2026-10-19 | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE` | `UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002` | 3 → 6 | +3 | Preliminary six superseded; no separate increment |
 | 2026-10-21 | `UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE` | `UA-CHE-UMAN-2026-10-21-PRIVATE-HOUSE-DRONE-STRIKE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-21 | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC` | `UA-KYI-KYIV-DNIPROVSKY-2026-10-21-BALLISTIC-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-22 | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET` | `UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-002` | 2 → 3 | +1 | Legacy 148 membership unresolved |

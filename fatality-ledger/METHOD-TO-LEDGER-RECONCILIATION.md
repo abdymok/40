@@ -474,3 +474,17 @@ Checkpoint: `fatality-ledger/STAGE-67-CHECKPOINT.md`
 Commit: `301a8ea0c60389e9d016d898e72d70ba1d33f25c`
 
 The historical method paragraphs describe “at least five earlier deaths reported in Kyiv” without identifying incidents. The current ledger has two Oct. 7 Kyiv incidents with two deaths each and an Oct. 8 morning citywide report of one death before the later Solomiansky shop strike. These three records sum to five and are a plausible mapping, but the historical wording does not prove it. The separate Oct. 8 Solomiansky shop incident has three final deaths (two initially reported); it is not named in the 105/116/118 method paragraphs. That omission is not proof of exclusion because those paragraphs are not exhaustive. Keep the shop incident separate from the earlier citywide death and leave historical membership unresolved. No ledger data, effective dates or public totals changed.
+
+
+## Stage 68 — Solomiansky shop deaths in the Oct. 11 selected subtotal
+
+Checkpoint: `fatality-ledger/STAGE-68-CHECKPOINT.md`  
+Commit: `a00ca80544728e97765c3aab13cfbd540432e25e`
+
+The Oct. 11 snapshot at commit `733a9b45892d232c5e0e2f2ac120f659ef58002b` (approximately 80 selected-incident deaths) explicitly says the subtotal includes two deaths in the Solomiansky shop-building strike, alongside two Darnytsky and two Desniansky deaths. It warns that broader citywide totals may overlap and are not added separately. This confirms that the shop incident's initial two deaths were included in the Oct. 11 subtotal.
+
+The current ledger has three final deaths for the shop incident after a third victim later died in hospital. Do not project that later revision backwards into the Oct. 11 snapshot.
+
+The later approximately-105/116/118 snapshots use “at least five earlier deaths reported in Kyiv,” plausibly corresponding to Darnytsky 2 + Desniansky 2 + the earlier Oct. 8 citywide report 1. This mapping remains unproven. Although the shop deaths are not separately named in those later explanatory paragraphs, the paragraphs are selective, so their omission does not establish exclusion. Whether the initial two shop deaths remained in the later 105/116/118 subtotals is unresolved. No historical arithmetic adjustment is justified.
+
+Stage 67's mapping remains a candidate, not a proven identity. No ledger records, effective dates, chronology entries or public totals changed. The public method-page minimum remains 421.

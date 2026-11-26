@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 94, updated Nov. 26, 2026  
+**Working status:** Stage 95, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -414,7 +414,7 @@ Commit: `78eedede057c9385b1b563218a059c24df6927de`
 
 The current ledger contains 14 records dated through Oct. 11, with a raw sum of 93. Seven records correspond to death-bearing rows visible in the Oct. 11 snapshot and sum to 86 using current tolls. The other seven current records sum to seven deaths and are not itemized as death-bearing rows in the visible snapshot. This does not prove they were excluded from the approximate-80 subtotal, whose incident-level membership is not fully enumerated.
 
-Two visible tolls have since increased: Solomiansky shop, 2→3, and Zaporizhia residential strike, 20→23. The Oct. 11 snapshot also includes a one-death Dnipropetrovsk-region row for which no matching record exists in the current ledger slice. This is a specific coverage gap for follow-up, not grounds to create an unidentified incident.
+Two visible tolls have since increased: Solomiansky shop, 2→3, and Zaporizhia residential strike, 20→23. The Oct. 11 snapshot's one-death Dnipropetrovsk-region row is matched to the current ledger's Oct. 10 Pokrovske child incident. There is no separate unidentified Dnipropetrovsk fatality row or outstanding ledger-coverage gap on this point.
 
 The visible rows sum mechanically to 83, but the snapshot explicitly warns of possible overlap between citywide Kyiv aggregates and incident-level entries and calls the subtotal approximate. Accordingly, 83 and the current raw ledger sum of 93 are not treated as comparable exact totals. The Oct. 6 Kherson doctor's death was reported only on Nov. 17 and is retained as a delayed death, not retroactively attributed to the Oct. 11 snapshot.
 
@@ -685,3 +685,10 @@ The Oct. 9 Synelnykove-district death is not itemized in the Oct. 11 ≈80 snaps
 Checkpoint: `fatality-ledger/STAGE-94-CHECKPOINT.md`
 
 The Oct. 9 Zaporizhia guided-bomb death is distinct from the Oct. 10 residential strike whose 20-death toll appears in the ≈80 baseline. It is not itemized in that snapshot or the 80→92 changes. The Oct. 11 Sloviansk death was reported on Oct. 12, after the ≈80 cutoff, and is also absent from the 80→92 changes. Neither is individually identified in the carried-forward 148 baseline. Later inclusion remains unverified; both revisions remain null. No incident counts, effective dates or public totals changed.
+
+
+## Stage 95 — correct the Oct. 11 baseline comparison inventory
+
+Checkpoint: `fatality-ledger/STAGE-95-CHECKPOINT.md`
+
+A consistency review found two errors in Stage 62: the Pokrovske child death was listed both as the match for the Dnipropetrovsk-region row and among the six records not itemized in the Oct. 11 snapshot; and the Kyiv citywide one-death row was omitted from the visible-record list. The corrected comparison has eight current ledger records corresponding to the eight visible death-bearing rows (87 deaths at current tolls, including the broad citywide row), six other records not itemized in the snapshot (six deaths), and 14 records/93 final deaths overall. The seven selected incident/region records excluding the broad Kyiv aggregate sum to 86. The Dnipropetrovsk row is matched to Pokrovske; no separate unidentified incident is outstanding. No incident data, effective dates or public totals changed.

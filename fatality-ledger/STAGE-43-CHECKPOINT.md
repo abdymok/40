@@ -44,11 +44,11 @@ These incidents remain separate. Their later inclusion in any public subtotal is
 - Kyiv's late ballistic death remains assigned to Oct. 30.
 - Four Izium public-health institution deaths are assigned to Oct. 30; the fifth remains undated for public-subtotal inclusion.
 
-The dataset now contains 36 revisions with non-null ledger_effective_at and 187 with null. Final incident totals are unchanged.
+The dataset now contains 38 revisions with non-null ledger_effective_at and 185 with null. Final incident totals are unchanged.
 
 ## 192 opening baseline
 
-The 192 snapshot is 174 + 18 Komyshuvakha deaths. The 174 pre-Komyshuvakha subtotal is 173 plus one death in a further Nov. 2 Izium attack. The exact incident record for that Izium death is identified as UA-KHA-IZIUM-2026-11-02-GUIDED-BOMBS, but its effective date still needs to be assigned and validated in the next stage.
+The 192 snapshot is 174 + 18 Komyshuvakha deaths. The 174 pre-Komyshuvakha subtotal is 173 plus one death in a further Nov. 2 Izium attack. The exact incident record for that Izium death is identified as UA-KHA-IZIUM-2026-11-02-GUIDED-BOMBS, and its effective date is assigned to Nov. 2. The Komyshuvakha 1→18 revision is also assigned to Nov. 2, with the preliminary one-death figure retained as superseded rather than added separately.
 
 ## Current ledger
 

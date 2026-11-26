@@ -2078,7 +2078,7 @@
         "recorded_at": "2026-10-26T11:54:00+02:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Cherkasy Regional Military Administration and Uman city authorities confirmed that 86-year-old Tamara Yasynska died in hospital from injuries sustained in the Oct. 21 drone strike. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "Cherkasy Regional Military Administration head Ihor Taburets reported on Oct. 26 that 86-year-old Tamara Yasynska had died in hospital from injuries sustained in the Oct. 21 Uman strike. The Oct. 28 ≈148 snapshot excludes this death: the Oct. 26 138→141 update explicitly adds three other deaths (Pavlohrad, Kherson and Yasnohirka), and the subsequent increments to 148 are separately itemized without Uman. The Nov. 2 174 baseline's listed additions and the 174→192 Komyshuvakha update also do not identify Uman. The current dashboard update history contains no Uman/Tamara Yasynska entry. Whether the death was later incorporated into the 421 minimum remains unproven; keep ledger_effective_at null.",
         "source_ids": [
           "UMAN-TAMARA-CHERKASKA-ODA-2026-10-26",
           "UMAN-TAMARA-CHERKASKA-ODA-TELEGRAM-2026-10-26",

@@ -9,6 +9,8 @@
 
 > **Null-revision classification:** The 53 null `ledger_effective_at` revisions are now inventoried and classified. Forty-six pre-Oct. 29 legacy revisions carry a net +139 count change, including one −1 correction. Seven later revisions carry a net +8 and concern two additional Oct. 29 Izium deaths, the Oct. 31 Sloviansk death, the second Nov. 3 Dnipro death, the first Saltivsky death and three later Chornomorsk hospital deaths. Their inclusion or overlap remains unresolved. The 53 entries are not 147 additional deaths and do not change the public 421 subtotal. See `UNRESOLVED-EFFECTIVE-DATES-2026-11-26.md` and `STAGE-53-CHECKPOINT.md`.
 
+> **Stage 54 amendment:** The Oct. 25–27 transitions are now mapped to existing incident records: 123→132 (+9), 132→137 (+5), 137→138 (+1), 138→141 (+3), and 141→146 (+5 across two updates). The Oct. 22 transition from 121→123 (+2) remains unidentified: the contemporaneous commit changes the displayed number but supplies no incident-level allocation. No ledger effective dates or public figures were changed. See `STAGE-54-CHECKPOINT.md`.
+
 ## What is established
 
 The method page's cumulative sequence starts from an opening subtotal of approximately 192. It explicitly says this subtotal already included 18 deaths from the Nov. 2 Komyshuvakha strike. Subsequent increases in that incident were therefore increments from 18, not a fresh addition of the full 72.

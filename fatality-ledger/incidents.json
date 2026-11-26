@@ -5494,12 +5494,12 @@
         "recorded_at": "2026-11-06",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-06.",
         "source_ids": [
           "SARNY-06-IFAX-2026-11-06",
           "SARNY-06-UKRINFORM-2026-11-06"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       }
     ]
   },
@@ -5538,11 +5538,11 @@
         "recorded_at": "2026-11-05",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-06.",
         "source_ids": [
           "KRAMATORSK-05-SUSPILNE-2026-11-05"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       }
     ]
   },
@@ -5593,12 +5593,12 @@
         "recorded_at": "2026-11-04",
         "old_value": null,
         "new_value": 2,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-06.",
         "source_ids": [
           "SERHIIVKA-04-DONETSK-POLICE-2026-11-05",
           "SERHIIVKA-04-UKRINFORM-2026-11-05"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       }
     ]
   },
@@ -5649,12 +5649,12 @@
         "recorded_at": "2026-11-04",
         "old_value": null,
         "new_value": 2,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-06.",
         "source_ids": [
           "YASNOHIRKA-04-DONETSK-POLICE-2026-11-05",
           "YASNOHIRKA-04-UKRINFORM-2026-11-05"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       }
     ]
   },
@@ -5693,11 +5693,11 @@
         "recorded_at": "2026-11-04",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-06.",
         "source_ids": [
           "ANTONIVKA-UKRINFORM-2026-11-04"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       }
     ]
   },
@@ -5748,12 +5748,12 @@
         "recorded_at": "2026-11-04",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-06.",
         "source_ids": [
           "PUTYVL-UP-2026-11-04",
           "PUTYVL-UNN-2026-11-04"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-06"
       }
     ]
   },
@@ -5804,12 +5804,12 @@
         "recorded_at": "2026-11-04",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "BILENKE-ZP-NPU-2026-11-05",
           "BILENKE-1NEWS-2026-11-05"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },
@@ -5860,12 +5860,12 @@
         "recorded_at": "2026-11-04",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "VILNIANSK-ZP-NPU-2026-11-05",
           "VILNIANSK-1NEWS-2026-11-05"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },
@@ -5984,11 +5984,11 @@
         "recorded_at": "2026-11-03",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record based on the cited official report and corroborating coverage.",
+        "reason": "Initial incident record based on the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-04.",
         "source_ids": [
           "KRAMATORSK-FPV-NPU-2026-11-04"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-04"
       }
     ]
   },
@@ -6883,12 +6883,12 @@
         "recorded_at": "2026-11-04",
         "old_value": null,
         "new_value": 2,
-        "reason": "Both police officers died in hospital on Nov. 4 from injuries sustained in the Nov. 1 drone strike on their service vehicle.",
+        "reason": "Both police officers died in hospital on Nov. 4 from injuries sustained in the Nov. 1 drone strike on their service vehicle. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "KOMYSH-POLICE-VEHICLE-UP-2026-11-05",
           "KOMYSH-POLICE-VEHICLE-LB-2026-11-05"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },
@@ -6927,11 +6927,11 @@
         "recorded_at": "2026-10-31",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "DNIPRO-DISTRICT-UKRINFORM-2026-10-31"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },
@@ -7025,12 +7025,12 @@
         "recorded_at": "2026-10-30",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "NIKOPOL-30-LB-2026-10-30",
           "NIKOPOL-30-N911-2026-10-30"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },
@@ -7093,13 +7093,13 @@
         "recorded_at": "2026-10-30",
         "old_value": null,
         "new_value": 2,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "SLOVIANSK-30-EVIDENCEHUB-2026-10-31",
           "SLOVIANSK-30-UP-2026-10-31",
           "SLOVIANSK-30-LB-2026-10-31"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },
@@ -7150,12 +7150,12 @@
         "recorded_at": "2026-10-30",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "SHOSTKA-UP-2026-10-30",
           "SHOSTKA-UKRINFORM-2026-10-30"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },
@@ -7206,12 +7206,12 @@
         "recorded_at": "2026-10-30",
         "old_value": null,
         "new_value": 1,
-        "reason": "Incident record entered from the cited official report and corroborating coverage.",
+        "reason": "Incident record entered from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-05.",
         "source_ids": [
           "ORIKHIV-IFAX-2026-10-31",
           "ORIKHIV-LOCAL-2026-10-31"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-05"
       }
     ]
   },

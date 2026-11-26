@@ -1,6 +1,8 @@
-# Stage 104 checkpoint — post-Oct. 29 and 421-baseline closeout
+# Stage 104 checkpoint — historical 421-baseline snapshot
 
 Date: 26 November 2026
+
+> Historical snapshot, superseded by later Nov. 26 ledger and public-subtotal updates. This checkpoint describes the earlier 176-incident, 452-death ledger and 421 public subtotal. Its counts and closeout status are not current and must not be used as the present ledger inventory or public total.
 
 ## Scope
 

@@ -1,10 +1,10 @@
 # Unresolved ledger-effective dates — Nov. 26, 2026
 
-This inventory lists every revision whose `ledger_effective_at` remains null after Stage 85. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
+This inventory lists every revision whose `ledger_effective_at` remains null after Stage 86. A null date does not mean the death is unverified or excluded from the incident-level ledger. It means the date on which the project included that revision in the historical public subtotal has not been established, or the revision may overlap with an earlier subtotal.
 
 ## Summary
 
-- Null revision entries: 33
+- Null revision entries: 32
 - Net sum of count changes across these entries: 100
 - Legacy pre-Oct. 29 entries: 26 entries, 82 net count changes
 - Oct. 29 additional Izium revisions: 2 entries, 2 deaths
@@ -55,6 +55,10 @@ The Oct. 21 ≈105 method snapshot explicitly includes two Sviatoshynsky deaths 
 
 The Oct. 21 ≈116 method snapshot explicitly includes one death in Holosiivsky district on Oct. 20 and the 21-year-old woman killed in Kyiv on Oct. 19. Both revisions are now dated Oct. 21, the first documented inclusion date in the selected subtotal. See `STAGE-85-CHECKPOINT.md`.
 
+## Stage 86 adjudication
+
+The first Saltivsky death is now dated Nov. 11. The ≈282 snapshot precedes the separate Chornomorsk 282→283 increment; the subsequent 283→284 Saltivsky update explicitly says the first death was already in the preceding subtotal. The first death was therefore present by the Nov. 11 ≈282 snapshot; the second death is the later Nov. 11 increment. See `STAGE-86-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -98,7 +102,6 @@ The Oct. 21 ≈116 method snapshot explicitly includes one death in Holosiivsky 
 | 2026-10-29 | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION` | `UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002` | 4 → 5 | +1 | Oct. 29 extra death; inclusion after 173 unverified |
 | 2026-10-31 | `UA-DON-SLOVIANSK-2026-10-31-ATTACK` | `UA-DON-SLOVIANSK-2026-10-31-ATTACK-REV-001` | — → 1 | +1 | Nov. 2 baseline inclusion unverified |
 | 2026-11-03 | `UA-DNE-DNIPRO-2026-11-03-MORNING-STRIKE` | `UA-DNE-DNIPRO-2026-11-03-MORNING-STRIKE-REV-002` | 1 → 2 | +1 | Second death not established in 421 subtotal |
-| 2026-11-11 | `UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE` | `UA-KHA-KHARKIV-SALTIVSKY-2026-11-11-DRONE-STRIKE-REV-001` | — → 1 | +1 | First death may be included in preceding subtotal; overlap unresolved |
 | 2026-11-11 | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET` | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-002` | 1 → 3 | +2 | Later hospital deaths not established in 421 subtotal |
 | 2026-11-11 | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET` | `UA-ODE-CHORNOMORSK-2026-11-11-MARKET-REV-003` | 3 → 4 | +1 | Later hospital deaths not established in 421 subtotal |
 

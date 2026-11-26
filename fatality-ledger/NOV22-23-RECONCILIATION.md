@@ -19,9 +19,9 @@ The method page says the running minimum moved from **379 to 391**, a net increa
 
 The arithmetic adds up: 5 + 3 + 1 + 1 + 1 + 1 = 12. The method paragraph says the two Dymer deaths already counted were part of the 379 baseline. Therefore the Dymer addition on Nov. 22 is five, not seven.
 
-### Unresolved source question: Vyshneve
+### Vyshneve count verified
 
-The method paragraph says three people were killed at a supermarket in Vyshneve. Its cited Ukrainska Pravda report and the regional administration's Telegram archive need to be checked against the exact incident count and update sequence. The channel archive snippet currently surfaced in the source search shows an early report of one death and a later update to two. Do not silently assume three, and do not revise the subtotal until the underlying official updates are checked. If the final incident count is two rather than three, the Nov. 22 six-incident sum would be +11, not +12, unless another death or incident is missing from the summary.
+The three-death figure is supported by Ukrainska Pravda's Nov. 22 report, published at 20:44. It explicitly says the death toll at the Novus supermarket had risen to three, citing President Volodymyr Zelenskyy and Vyshneve Mayor Illia Dikov. The same report's background notes an earlier update of two deaths, explaining the apparent lower count in earlier reports. The later three-death update resolves this discrepancy; retain **three** as the incident total, not two.
 
 The method page also says a separate Cherkasy residential fire involving four children is excluded because the source available at the time did not connect it to Russia's war. Keep that exclusion distinct from the incident arithmetic.
 
@@ -54,10 +54,9 @@ The two intermediate +2 increments should reconcile to 391 → 393 → 395 if th
 
 ## C. Why this does not yet certify the total
 
-1. The Nov. 22 +12 subtotal depends on the stated three deaths in Vyshneve. The source archive surfaced so far appears to show a progression from one to two, so this needs direct verification.
-2. The Nov. 22 baseline of 379 is described as already including two Dymer deaths. We need the dated source and ledger state establishing when those two were added.
-3. The Nov. 23 391 → 405 sequence is internally arithmetical, but it must be cross-checked against each source and against duplicate incident coverage in the chronology and change log.
-4. The Nov. 24 entries then show 405 → 407 for two deaths in Zaporizhia, 407 → 408 for the delayed Dymer hospital death, and 408 → 409 for the Korosten railway-station death. These are the next reconciliation steps; do not conflate them with the Nov. 22–23 incident subtotal.
+1. The Nov. 22 baseline of 379 is described as already including two Dymer deaths. We need the dated source and ledger state establishing when those two were added.
+2. The Nov. 23 391 → 405 sequence is internally arithmetical, but it must be cross-checked against each source and against duplicate incident coverage in the chronology and change log.
+3. The Nov. 24 entries then show 405 → 407 for two deaths in Zaporizhia, 407 → 408 for the delayed Dymer hospital death, and 408 → 409 for the Korosten railway-station death. These are the next reconciliation steps; do not conflate them with the Nov. 22–23 incident subtotal.
 
 ## D. Next checks
 
@@ -66,4 +65,4 @@ The two intermediate +2 increments should reconcile to 391 → 393 → 395 if th
 - Reconcile all Nov. 23 change-log entries against the 391 → 395 → 398 → 401 → 403 → 405 method sequence.
 - Only after these checks, create incident records and calculate the authoritative sum.
 
-**Working conclusion:** The Dymer incident itself is supported at 12 documented deaths. The method page's Nov. 23 arithmetic is internally coherent at 391 → 405. The Nov. 22 +12 subtotal remains conditional on the Vyshneve count and the provenance of the 379 baseline.
+**Working conclusion:** The Dymer incident itself is supported at 12 documented deaths. The Nov. 22 +12 subtotal is arithmetically consistent, including three deaths at Vyshneve as confirmed by Ukrainska Pravda at 20:44. The method page's Nov. 23 arithmetic is internally coherent at 391 → 405. The provenance and timing of the 379 baseline still need confirmation.

@@ -2530,13 +2530,23 @@
         "revision_id": "UA-CHN-CHERNIHIV-2026-11-16-ENTERPRISE-STRIKE-REV-001",
         "recorded_at": "2026-11-16",
         "old_value": null,
-        "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "new_value": 2,
+        "reason": "Two men were killed at the scene in the Nov. 16 attack on businesses in Chernihiv. The two deaths entered the running minimum by Nov. 16.",
         "source_ids": [
-          "CHERNIHIV-SUSPILNE-2026-11-16",
+          "CHERNIHIV-SUSPILNE-2026-11-16"
+        ],
+        "ledger_effective_at": "2026-11-16"
+      },
+      {
+        "revision_id": "UA-CHN-CHERNIHIV-2026-11-16-ENTERPRISE-STRIKE-REV-002",
+        "recorded_at": "2026-11-17T09:11:00+02:00",
+        "old_value": 2,
+        "new_value": 3,
+        "reason": "A third man died in hospital on Nov. 17 from injuries sustained in the Nov. 16 attack. The first two deaths were already included in the running minimum.",
+        "source_ids": [
           "CHERNIHIV-CHAUS-2026-11-17"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-17"
       }
     ]
   },
@@ -2575,11 +2585,11 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-16.",
         "source_ids": [
           "DNIPRO-16-HANZHA-0819"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },
@@ -2872,11 +2882,11 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-16.",
         "source_ids": [
           "BALAKLIIA-SUSPILNE-2026-11-16"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },
@@ -2958,11 +2968,11 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-16.",
         "source_ids": [
           "SADOVE-PROKUDIN-2026-11-16"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },
@@ -3126,12 +3136,12 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-16.",
         "source_ids": [
           "BILENKE-ZOVA-2026-11-16-69069",
           "BILENKE-UKRINFORM-2026-11-16"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },
@@ -3251,12 +3261,12 @@
         "recorded_at": "2026-11-16",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-16.",
         "source_ids": [
           "KHORTYTSKY-PROSECUTOR-2026-11-16",
           "KHORTYTSKY-ZOVA-2026-11-16-69071"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },
@@ -3362,13 +3372,13 @@
         "recorded_at": "2026-11-15",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-16.",
         "source_ids": [
           "DRUZHKIVKA-FILASHKIN-2026-11-16",
           "DRUZHKIVKA-IFAX-2026-11-16",
           "DRUZHKIVKA-UKRINFORM-2026-11-16"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },
@@ -3431,13 +3441,13 @@
         "recorded_at": "2026-11-15",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-16.",
         "source_ids": [
           "LVIVKA-FILASHKIN-2026-11-16",
           "LVIVKA-IFAX-2026-11-16",
           "LVIVKA-UKRINFORM-2026-11-16"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-16"
       }
     ]
   },
@@ -3488,12 +3498,12 @@
         "recorded_at": "2026-11-14",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-15.",
         "source_ids": [
           "MENA-CENSOR-2026-11-14",
           "MENA-CHAUS-2026-11-15"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-15"
       }
     ]
   },
@@ -3544,12 +3554,12 @@
         "recorded_at": "2026-11-14",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-14.",
         "source_ids": [
           "PAVLOHRAD-ODA-2026-11-14",
           "PAVLOHRAD-UKRINFORM-2026-11-14"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-14"
       }
     ]
   },
@@ -3600,12 +3610,12 @@
         "recorded_at": "2026-11-14",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-15.",
         "source_ids": [
           "BOROVA-PROSECUTOR-2026-11-14",
           "BOROVA-UP-2026-11-14"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-15"
       }
     ]
   },
@@ -3644,11 +3654,11 @@
         "recorded_at": "2026-11-13",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-14.",
         "source_ids": [
           "YASNA-POLYANA-FILASHKIN-2026-11-14"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-14"
       }
     ]
   },
@@ -3699,12 +3709,12 @@
         "recorded_at": "2026-11-13",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-14.",
         "source_ids": [
           "ZOLOTA-BALKA-SUSPILNE-2026-11-13",
           "ZOLOTA-BALKA-BERISLAV-2026-11-14"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-14"
       }
     ]
   },
@@ -3755,12 +3765,12 @@
         "recorded_at": "2026-11-13",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-13.",
         "source_ids": [
           "ODESA-13-ODESKAODA-2026-11-13-22676",
           "ODESA-13-REUTERS-2026-11-13"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-13"
       }
     ]
   },
@@ -3811,12 +3821,12 @@
         "recorded_at": "2026-11-13",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-13.",
         "source_ids": [
           "ZAP-13-IFAX-2026-11-13",
           "ZAP-13-UP-2026-11-13"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-13"
       }
     ]
   },
@@ -3867,12 +3877,12 @@
         "recorded_at": "2026-11-13",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-13.",
         "source_ids": [
           "ZAP-KOSMICHNY-IFAX-2026-11-13",
           "ZAP-KOSMICHNY-UKRINFORM-2026-11-13"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-13"
       }
     ]
   },
@@ -3935,13 +3945,13 @@
         "recorded_at": "2026-11-13",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-14.",
         "source_ids": [
           "COBRA-IFAX-2026-11-13",
           "COBRA-UP-2026-11-13",
           "COBRA-INFORM-2026-11-13"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-14"
       }
     ]
   },
@@ -3980,11 +3990,11 @@
         "recorded_at": "2026-11-12",
         "old_value": null,
         "new_value": 4,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-12.",
         "source_ids": [
           "KRAMATORSK-12-UKRINFORM-2026-11-12"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-12"
       }
     ]
   },
@@ -4035,12 +4045,12 @@
         "recorded_at": "2026-11-12",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-12.",
         "source_ids": [
           "SOLOMIANSKY-KLYCHKO-2026-11-12-8105",
           "SOLOMIANSKY-KLYCHKO-2026-11-12-8107"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-12"
       }
     ]
   },
@@ -4103,13 +4113,13 @@
         "recorded_at": "2026-11-12",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-13.",
         "source_ids": [
           "ZAP-BUS-IFAX-2026-11-12",
           "ZAP-BUS-UP-2026-11-12",
           "ZAP-BUS-UP-DEATH-2026-11-13"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-13"
       }
     ]
   },
@@ -4241,12 +4251,12 @@
         "recorded_at": "2026-11-11",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-11.",
         "source_ids": [
           "YAHOTYN-TKACHENKO-2026-11-11",
           "YAHOTYN-UP-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       }
     ]
   },
@@ -4309,13 +4319,13 @@
         "recorded_at": "2026-11-11",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-11.",
         "source_ids": [
           "YAHOTYN-DSNS-2026-11-11",
           "YAHOTYN-SUSPILNE-2026-11-11",
           "YAHOTYN-LB-2026-11-11"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-11"
       }
     ]
   },

@@ -366,3 +366,22 @@ The Dovzhyk and Sloviansk deaths were absent from the prior structured ledger an
 The public 421 total now reconciles as 148 + 19 + 25 + 229. The current incident ledger remains 28 higher in raw final-count arithmetic. The remaining raw difference is not to be erased by changing the public total: it reflects the identified scope differences and unresolved later-count inclusions, including the three later Chornomorsk deaths, the second death in the Nov. 3 Dnipro incident, the Saltivsky overlap, and the two additional Oct. 29 Izium deaths.
 
 Current ledger status: 175 incidents, 423 source records, 449 final documented deaths, 228 revision entries, 175 with confirmed effective dates and 53 still null. No public chronology or method-page figure was changed by this audit.
+
+
+## Stage 53 — all 53 null effective dates classified
+
+The remaining null revisions have been inventoried in `UNRESOLVED-EFFECTIVE-DATES-2026-11-26.md`. They fall into six categories:
+
+| Category | Null revision entries | Net count change |
+|---|---:|---:|
+| Pre-Oct. 29 legacy baseline membership not individually mapped | 46 | +139 |
+| Two additional Oct. 29 Izium deaths, later inclusion unverified | 2 | +2 |
+| Oct. 31 Sloviansk death, Nov. 2 baseline inclusion unverified | 1 | +1 |
+| Second death in Nov. 3 Dnipro incident, not established in the 421 subtotal | 1 | +1 |
+| First Saltivsky death, possible overlap with preceding subtotal | 1 | +1 |
+| Three later Chornomorsk hospital deaths, not established in the 421 subtotal | 2 | +3 |
+| **Total** | **53** | **+147 net** |
+
+The pre-Oct. 29 group includes a -1 correction in the Kharkiv market incident, hence 139 net rather than 140. These 53 null revisions are not 147 additional deaths to be added to the public total. They combine legacy-baseline candidates, known uncounted revisions and possible overlaps.
+
+The immediate remaining historical task is to reconstruct the 148 baseline's incident membership from the archived 123 baseline and Oct. 25–28 change log. The 46 legacy entries remain null until that membership is proven. No public figure or incident final count changed in this stage.

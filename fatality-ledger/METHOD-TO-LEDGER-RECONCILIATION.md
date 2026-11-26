@@ -488,3 +488,13 @@ The current ledger has three final deaths for the shop incident after a third vi
 The later approximately-105/116/118 snapshots use “at least five earlier deaths reported in Kyiv,” plausibly corresponding to Darnytsky 2 + Desniansky 2 + the earlier Oct. 8 citywide report 1. This mapping remains unproven. Although the shop deaths are not separately named in those later explanatory paragraphs, the paragraphs are selective, so their omission does not establish exclusion. Whether the initial two shop deaths remained in the later 105/116/118 subtotals is unresolved. No historical arithmetic adjustment is justified.
 
 Stage 67's mapping remains a candidate, not a proven identity. No ledger records, effective dates, chronology entries or public totals changed. The public method-page minimum remains 421.
+
+
+## Stage 69 — Kyiv subtotal wording, Oct. 11–21
+
+Checkpoint: `fatality-ledger/STAGE-69-CHECKPOINT.md`  
+Commit: `0b9c9d0d12a4109cb353e9758ecda96a9e8cb791`
+
+The Oct. 11 approximately-80 method explicitly itemizes six deaths in the Oct. 7–8 Kyiv group: Darnytsky 2, Desniansky 2 and the Solomiansky shop 2. Later method wording shifts to “at least five earlier deaths reported in Kyiv.” The Oct. 14 approximately-89 paragraph's “four deaths reported in Kyiv” describes the newly reported Oct. 13–14 attack toll, not an itemized restatement of the earlier group; the next approximately-90 update changes this to “at least five” as that new Kyiv toll is revised. It is not evidence that any of the earlier six deaths, including the shop deaths, were removed.
+
+The “at least five earlier deaths” wording in the Oct. 15–22 snapshots is compatible with the six explicitly itemized on Oct. 11, but it does not identify the component incidents. No reviewed commit or method paragraph documents a subtraction of the Solomiansky shop deaths. Their membership in later 105/116/118 totals remains not individually itemized, with no positive evidence of removal. The third shop victim's later hospital death must not be projected backwards into the Oct. 11 subtotal. No arithmetic adjustment or data change is justified; public method-page minimum remains 421.

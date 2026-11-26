@@ -8521,6 +8521,102 @@
     ]
   },
   {
+    "incident_id": "UA-CHE-CHERNIHIV-2026-10-23-ENTERPRISE-DRONE-STRIKE",
+    "incident_date": "2026-10-23",
+    "location": {
+      "settlement": "Chernihiv",
+      "district": null,
+      "region": "Chernihiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian forces attacked enterprises in Chernihiv on Oct. 23, killing one person and injuring 25. Chernihiv City Military Administration head Dmytro Bryzhynskyi reported the fatality. Initial reports identified a Nova Poshta terminal among the targeted facilities; later reporting described damage to an industrial enterprise. The victim's identity and exact facility are not established in the available reports.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "CHERNIHIV-ENTERPRISE-UKRINFORM-2026-10-23",
+        "publisher": "Ukrinform, citing Chernihiv City Military Administration head Dmytro Bryzhynskyi",
+        "source_type": "news_report",
+        "published_at": "2026-10-23T16:55:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4177517-russian-forces-attack-enterprise-in-chernihiv-leaving-one-killed-25-injured.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports one person killed and 25 injured in the attack on an enterprise in Chernihiv."
+      },
+      {
+        "source_id": "CHERNIHIV-ENTERPRISE-INTERFAX-2026-10-23-1603",
+        "publisher": "Interfax-Ukraine, citing Chernihiv City Military Administration head Dmytro Bryzhynskyi",
+        "source_type": "news_report",
+        "published_at": "2026-10-23T16:03:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1225311-amp.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one person killed in the attack and an injury toll that later rose to 25."
+      },
+      {
+        "source_id": "CHERNIHIV-ENTERPRISE-RBC-2026-10-23",
+        "publisher": "RBC-Ukraine, citing Chernihiv City Military Administration head Dmytro Bryzhynskyi",
+        "source_type": "news_report",
+        "published_at": "2026-10-23T14:55:00+03:00",
+        "url": "https://newsukraine.rbc.ua/news/russia-strikes-enterprise-in-ukraine-s-chernihiv-1792756325.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one fatality in the drone attack on a Chernihiv enterprise."
+      },
+      {
+        "source_id": "CHERNIHIV-ENTERPRISE-INTERFAX-2026-10-23-2102",
+        "publisher": "Interfax-Ukraine, citing Chernihiv City Council press service",
+        "source_type": "news_report",
+        "published_at": "2026-10-23T21:02:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1225502-amp.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Evening city-council update confirms one person killed and 18 injured in the attack."
+      },
+      {
+        "source_id": "CHERNIHIV-ENTERPRISE-UKRINFORM-2026-10-24",
+        "publisher": "Ukrinform, citing Chernihiv Regional Military Administration head Viacheslav Chaus",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T10:30:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4177732-one-killed-18-injured-in-russian-attacks-in-chernihiv-region-over-past-day.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "The regional next-day summary confirms one person killed in the Oct. 23 enterprise strike."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-CHE-CHERNIHIV-2026-10-23-ENTERPRISE-DRONE-STRIKE-REV-001",
+        "recorded_at": "2026-10-23T16:55:00+03:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Chernihiv City Military Administration head Dmytro Bryzhynskyi reported one person killed in the strike on an enterprise.",
+        "source_ids": [
+          "CHERNIHIV-ENTERPRISE-UKRINFORM-2026-10-23",
+          "CHERNIHIV-ENTERPRISE-INTERFAX-2026-10-23-1603",
+          "CHERNIHIV-ENTERPRISE-RBC-2026-10-23",
+          "CHERNIHIV-ENTERPRISE-INTERFAX-2026-10-23-2102",
+          "CHERNIHIV-ENTERPRISE-UKRINFORM-2026-10-24"
+        ],
+        "ledger_effective_at": "2026-10-25"
+      }
+    ]
+  },
+  {
     "incident_id": "UA-DNE-DNIPRO-2026-10-23-CIVILIAN-ATTACK",
     "incident_date": "2026-10-23",
     "location": {
@@ -8572,7 +8668,7 @@
           "DNIPRO-23-LB-2026-10-23",
           "DNIPRO-23-LB-2026-10-24"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-25"
       }
     ]
   },
@@ -8628,7 +8724,76 @@
           "KRAMATORSK-23-UKRINFORM-2026-10-24",
           "KRAMATORSK-23-DONETSK-ODA-2026-10-23"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-25"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-10-23-FAB-250-RESIDENTIAL-STRIKE",
+    "incident_date": "2026-10-23",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A Russian FAB-250 bomb struck a residential area of Sloviansk on Oct. 23, injuring three people. A 62-year-old woman died in hospital on Oct. 24. Sloviansk City Military Administration head Vadym Lyakh reported her death.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-62YO-RADIOSVOBODA-2026-10-24",
+        "publisher": "Radio Svoboda, citing Sloviansk City Military Administration head Vadym Lyakh",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T09:47:00+03:00",
+        "url": "https://www.radiosvoboda.org/amp/news-slovyansk-pomerla-poranena-zhinka/33883489.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports that a 62-year-old woman died in hospital after the Oct. 23 FAB-250 strike on a residential area of Sloviansk."
+      },
+      {
+        "source_id": "SLOVIANSK-62YO-FREERADIO-2026-10-24",
+        "publisher": "Free Radio, citing Sloviansk City Military Administration head Vadym Lyakh",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T10:36:00+03:00",
+        "url": "https://freeradio.com.ua/u-sloviansku-pomerla-zhinka-poranena-pid-chas-aviaudaru-23-zhovtnia-za-dobu-misto-atakuvaly-12-raziv/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Confirms the death of a 62-year-old woman injured in the Oct. 23 airstrike."
+      },
+      {
+        "source_id": "SLOVIANSK-62YO-KYIVINDEPENDENT-2026-10-24",
+        "publisher": "Kyiv Independent, citing Sloviansk Mayor Vadym Lyakh",
+        "source_type": "news_report",
+        "published_at": "2026-10-24T12:43:00+03:00",
+        "url": "https://kyivindependent.com/russian-attacks-kill-4-injure-78-across-ukraine-over-past-day-as-drone-strikes-kyiv-residential-building-in-the-morning/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports one 62-year-old woman killed in Sloviansk after the Oct. 23 attack."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-10-23-FAB-250-RESIDENTIAL-STRIKE-REV-001",
+        "recorded_at": "2026-10-24T09:47:00+03:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "A 62-year-old woman died in hospital after injuries sustained in the Oct. 23 FAB-250 strike; the city administration head reported the death.",
+        "source_ids": [
+          "SLOVIANSK-62YO-RADIOSVOBODA-2026-10-24",
+          "SLOVIANSK-62YO-FREERADIO-2026-10-24",
+          "SLOVIANSK-62YO-KYIVINDEPENDENT-2026-10-24"
+        ],
+        "ledger_effective_at": "2026-10-25"
       }
     ]
   },

@@ -1898,11 +1898,11 @@
         "recorded_at": "2026-10-20",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Oct. 21 ≈105 method snapshot explicitly includes three heating-supply workers killed in Kramatorsk on Oct. 20, citing Kramatorsk City Council and Energoreforma. Commit 84c0c691e7114fc1295fa2b339976cfb276c487b is timestamped 07:14 UTC (10:14 Kyiv time). First documented inclusion date: 2026-10-21.",
         "source_ids": [
           "KRAMATORSK-COUNCIL-2026-10-20-28367"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-21"
       }
     ]
   },
@@ -2266,11 +2266,11 @@
         "recorded_at": "2026-10-21",
         "old_value": null,
         "new_value": 2,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The Oct. 21 ≈105 method snapshot explicitly includes two people killed in Sviatoshynsky district on Oct. 21. Commit 84c0c691e7114fc1295fa2b339976cfb276c487b is timestamped 07:14 UTC (10:14 Kyiv time). First documented inclusion date: 2026-10-21.",
         "source_ids": [
           "KYIV-SVIATOSHYNSKY-KLYCHKO-2026-10-21"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-21"
       }
     ]
   },

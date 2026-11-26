@@ -7568,36 +7568,35 @@
         "notes": "Reports five women killed and 14 injured."
       },
       {
-        "source_id": "IZIUM-UP-2026-10-31-INITIAL",
-        "publisher": "Ukrainska Pravda, citing Kharkiv Regional Military Administration head Oleh Synehubov",
-        "source_type": "news_report",
-        "published_at": "2026-10-31T11:27:00+02:00",
-        "url": "https://www.pravda.com.ua/eng/news/2026/10/31/8060604/index.amp",
+        "source_id": "IZIUM-PROJECT-CHRONOLOGY-2026-10-30-4",
+        "publisher": "Project chronology, dashboard snapshot",
+        "source_type": "project_record",
+        "published_at": "2026-10-30",
+        "url": "https://github.com/abdymok/40/commit/2056133993",
         "supports": [
-          "death_count",
           "count_revision"
         ],
-        "notes": "Earlier Oct. 31 report identified one 59-year-old woman killed in the Oct. 29 Izium attack; later reports established that five women were killed in the same public-health institution strike."
+        "notes": "The project dashboard displayed four deaths in the Oct. 29 Izium airstrike on Oct. 30, before the later Interfax report confirmed five employees killed."
       }
     ],
     "last_verified_date": "2026-11-26",
     "revision_history": [
       {
         "revision_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-001",
-        "recorded_at": "2026-10-31T11:27:00+02:00",
+        "recorded_at": "2026-10-30",
         "old_value": null,
-        "new_value": 1,
-        "reason": "An initial casualty report identified one 59-year-old woman killed in the Oct. 29 Izium attack.",
+        "new_value": 4,
+        "reason": "The project dashboard recorded four people killed in the Oct. 29 airstrike on Izium as of Oct. 30.",
         "source_ids": [
-          "IZIUM-UP-2026-10-31-INITIAL"
+          "IZIUM-PROJECT-CHRONOLOGY-2026-10-30-4"
         ]
       },
       {
         "revision_id": "UA-KHA-IZIUM-2026-10-29-PUBLIC-HEALTH-INSTITUTION-REV-002",
         "recorded_at": "2026-10-30T20:16:00+02:00",
-        "old_value": 1,
+        "old_value": 4,
         "new_value": 5,
-        "reason": "Later official reporting identified the incident as a strike on the public-health institution and confirmed five female employees killed. The earlier one-death report was partial, not a separate incident.",
+        "reason": "Interfax-Ukraine, citing the regional administration, confirmed five employees of the local Center for Disease Control and Prevention were killed.",
         "source_ids": [
           "IZIUM-IFAX-2026-10-30",
           "IZIUM-UKRINFORM-2026-10-30"
@@ -9399,6 +9398,61 @@
         "source_ids": [
           "NIKOPOL-BOY-UP-2026-10-10",
           "NIKOPOL-BOY-UKRINFORM-2026-10-10"
+        ]
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO",
+    "incident_date": "2026-10-29",
+    "location": {
+      "settlement": "Izium",
+      "district": null,
+      "region": "Kharkiv region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A separate Russian attack on Izium on Oct. 29 killed a 59-year-old woman and injured a 57-year-old woman. This is distinct from the airstrike on the local public-health institution that killed five employees.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_independent",
+    "sources": [
+      {
+        "source_id": "IZIUM-UP-2026-10-31-INITIAL",
+        "publisher": "Ukrainska Pravda, citing Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-31T11:27:00+02:00",
+        "url": "https://www.pravda.com.ua/eng/news/2026/10/31/8060604/index.amp",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports a 59-year-old woman killed in a Russian attack on Izium on Oct. 29 and another woman, aged 57, injured. This is not the public-health institution strike."
+      },
+      {
+        "source_id": "KHARKIV-REGION-SYNEHUBOV-2026-10-29",
+        "publisher": "Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-29",
+        "url": "https://t.me/synegubov/11766",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Regional casualty roundup reports one person killed in Kharkiv region; it does not identify the settlement in the post summary."
+      }
+    ],
+    "last_verified_date": "2026-11-26",
+    "revision_history": [
+      {
+        "revision_id": "UA-KHA-IZIUM-2026-10-29-OTHER-ATTACK-59YO-REV-001",
+        "recorded_at": "2026-10-31T11:27:00+02:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "Ukrainska Pravda reported one 59-year-old woman killed in a separate attack on Izium on Oct. 29.",
+        "source_ids": [
+          "IZIUM-UP-2026-10-31-INITIAL",
+          "KHARKIV-REGION-SYNEHUBOV-2026-10-29"
         ]
       }
     ]

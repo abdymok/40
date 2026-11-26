@@ -9099,16 +9099,16 @@
       "region": "Kharkiv region",
       "country": "Ukraine"
     },
-    "incident_description": "Russian drone struck the central park in Nova Vodolaha at about 16:30 while families with children were present, killing six people: three women, a man and two girls aged 14 months and 11 years. The mother of the 14-month-old girl died in hospital. The initial report listed three deaths; later updates raised the toll to six.",
+    "incident_description": "A Russian Geran-3 drone struck the central park in Nova Vodolaha at about 16:30 on Oct. 19 while families with children were present. Five people were ultimately confirmed killed at the time: three women and two girls, one an infant. On Oct. 26, a 12-year-old boy died in a Kyiv hospital, bringing the final toll to six. Fifteen people were injured, including seven children. The initial six-death report was corrected to five on Oct. 19 before the boy's later death.",
     "documented_deaths": 6,
     "scope_classification": "civilian",
-    "evidence_classification": "media_reported",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "NOVA-VODOLAHA-UP-2026-10-19",
         "publisher": "Ukrainska Pravda, citing Interior Minister Ivan Vyhivskyi, the regional prosecutor and Kharkiv Regional Military Administration head Oleh Synehubov",
         "source_type": "news_report",
-        "published_at": "2026-10-19T20:33:00+02:00",
+        "published_at": "2026-10-19T20:33:00+03:00",
         "url": "https://www.pravda.com.ua/eng/news/2026/10/19/8058772/",
         "supports": [
           "incident_identity",
@@ -9122,7 +9122,7 @@
         "source_id": "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
         "publisher": "Ukrinform, citing Oleh Synehubov",
         "source_type": "news_report",
-        "published_at": "2026-10-19T18:36:00+02:00",
+        "published_at": "2026-10-19T18:36:00+03:00",
         "url": "https://www.ukrinform.ua/rubric-regions/4176027-udar-po-parku-na-harkivsini-kilkist-zagiblih-zrosla-do-sesti-troe-z-nih-diti.html",
         "supports": [
           "death_count",
@@ -9135,40 +9135,101 @@
         "source_id": "NOVA-VODOLAHA-RBC-2026-10-19",
         "publisher": "RBC-Ukraine",
         "source_type": "news_report",
-        "published_at": "2026-10-19T18:30:00+02:00",
+        "published_at": "2026-10-19T18:30:00+03:00",
         "url": "https://newsukraine.rbc.ua/news/russian-drone-strike-on-kharkiv-region-park-1792423658.html",
         "supports": [
           "death_count",
           "corroboration"
         ],
         "notes": "Reports the initial three deaths and the park strike."
+      },
+      {
+        "source_id": "NOVA-VODOLAHA-HROMADSKE-2026-10-19",
+        "publisher": "Hromadske, citing National Police chief Ivan Vyhivskyi",
+        "source_type": "news_report",
+        "published_at": "2026-10-19T18:16:00+03:00",
+        "url": "https://hromadske.ua/en/war/272811-russian-drone-strike-kills-baby-in-stroller-and-two-women-at-park-in-kharkiv-region",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial report confirmed two women and an infant killed at the scene."
+      },
+      {
+        "source_id": "NOVA-VODOLAHA-INTERFAX-2026-10-19-CORRECTION",
+        "publisher": "Interfax-Ukraine, citing Kharkiv Regional Military Administration head Oleh Syniehubov",
+        "source_type": "news_report",
+        "published_at": "2026-10-19T20:34:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1222801.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Updated regional-administration information corrected the preliminary toll from six to five, identifying three women and two girls."
+      },
+      {
+        "source_id": "NOVA-VODOLAHA-UKRINFORM-2026-10-26-BOY-DIES",
+        "publisher": "Ukrinform, citing Nova Vodolaha community head Oleksandr Yesin",
+        "source_type": "news_report",
+        "published_at": "2026-10-26T17:22:00+03:00",
+        "url": "https://www.ukrinform.net/rubric-ato/4178335-death-toll-from-russian-strike-on-park-in-kharkiv-region-rises-as-third-child-dies-in-hospital.html",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "victim_status"
+        ],
+        "notes": "Reports that 12-year-old Artem Koval died in a Kyiv hospital, raising the toll from five to six."
       }
     ],
     "last_verified_date": "2026-11-26",
     "revision_history": [
       {
         "revision_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-001",
-        "recorded_at": "2026-10-19",
+        "recorded_at": "2026-10-19T18:16:00+03:00",
         "old_value": null,
         "new_value": 3,
         "reason": "Initial reports confirmed two women and an infant killed at the scene.",
         "source_ids": [
-          "NOVA-VODOLAHA-RBC-2026-10-19",
-          "NOVA-VODOLAHA-UP-2026-10-19"
+          "NOVA-VODOLAHA-HROMADSKE-2026-10-19",
+          "NOVA-VODOLAHA-RBC-2026-10-19"
         ],
         "ledger_effective_at": null
       },
       {
         "revision_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-002",
-        "recorded_at": "2026-10-19T18:36:00+02:00",
+        "recorded_at": "2026-10-19T18:36:00+03:00",
         "old_value": 3,
         "new_value": 6,
-        "reason": "The regional administration confirmed the toll had risen to six, including three children. The mother of the infant died in hospital.",
+        "reason": "The regional administration initially reported six deaths, including three children. This preliminary figure was later corrected.",
         "source_ids": [
           "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
           "NOVA-VODOLAHA-UP-2026-10-19"
         ],
         "ledger_effective_at": null
+      },
+      {
+        "revision_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-003",
+        "recorded_at": "2026-10-19T20:34:00+03:00",
+        "old_value": 6,
+        "new_value": 5,
+        "reason": "Updated regional-administration information corrected the toll to five: three women and two girls.",
+        "source_ids": [
+          "NOVA-VODOLAHA-INTERFAX-2026-10-19-CORRECTION"
+        ],
+        "ledger_effective_at": "2026-10-26"
+      },
+      {
+        "revision_id": "UA-KHA-NOVA-VODOLAHA-2026-10-19-CENTRAL-PARK-DRONE-REV-004",
+        "recorded_at": "2026-10-26T17:22:00+03:00",
+        "old_value": 5,
+        "new_value": 6,
+        "reason": "A 12-year-old boy died in a Kyiv hospital from injuries sustained in the Oct. 19 park strike, raising the final toll to six.",
+        "source_ids": [
+          "NOVA-VODOLAHA-UKRINFORM-2026-10-26-BOY-DIES"
+        ],
+        "ledger_effective_at": "2026-10-27"
       }
     ]
   },

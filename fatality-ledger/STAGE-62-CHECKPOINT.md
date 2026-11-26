@@ -47,7 +47,7 @@ The current ledger's 93 is likewise a raw incident-record sum, not a like-for-li
 ## Open follow-up
 
 1. Identify the Oct. 10 Dnipropetrovsk-region death-bearing row in the historical chronology and determine whether a distinct current ledger record should exist. Do not create one until the incident can be identified and distinguished from the Synelnykove/Nikopol records.
-2. Check the Oct. 11-era source trail for the Kramatorsk Oct. 5, Ivano-Frankivsk Oct. 8, Synelnykove Oct. 9, Zaporizhia Oct. 9, Nikopol Oct. 10 and Sloviansk Oct. 11 records to determine whether each was in scope at the time of the approximate-80 snapshot.
+2. Check the Oct. 11-era source trail for the Kramatorsk Oct. 5, Ivano-Frankivsk Oct. 8, Synelnykove Oct. 9, Zaporizhia Oct. 9 and Sloviansk Oct. 11 records to determine whether each was in scope at the time of the approximate-80 snapshot.
 2. Preserve the Oct. 6 Kherson doctor death as a delayed-death case with its Nov. 17 publication date; do not backdate knowledge of the death to the Oct. 11 snapshot.
 3. Keep the Solomiansky 2→3 and Zaporizhia 20→23 revisions separately documented. Their current incident records still have unresolved/null effective dates; this stage does not assign them.
 

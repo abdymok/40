@@ -1,6 +1,6 @@
 # Method-page to incident-ledger reconciliation
 
-**Working status:** Stage 88, updated Nov. 26, 2026  
+**Working status:** Stage 89, updated Nov. 26, 2026  
 **Current ledger sum:** 451  
 **Published method-page minimum:** 421  
 **Raw difference:** +30 in the pilot incident dataset
@@ -643,3 +643,10 @@ The six later null revisions are the two additional Oct. 29 Izium revisions, Oct
 Checkpoint: `fatality-ledger/STAGE-88-CHECKPOINT.md`
 
 The Nov. 3 historical sequence maps 203→207 to four deaths in Donetsk region from Nov. 2 (including a Nov. 2 Sloviansk incident distinct from the Oct. 31 Sloviansk death). The first Dnipro death is the 207→208 increment; the subsequent 208→211 changes are Komyshuvakha 29→31 (+2) and Hotiv (+1). The Dnipro incident's second final death is not part of that mapped sequence; it remains null. The Oct. 31 Sloviansk death is not itemized in the 174 baseline, but the baseline carries forward earlier totals without exhaustive incident membership. Its inclusion there cannot be confirmed or ruled out; it remains null. No effective dates or public totals changed.
+
+
+## Stage 89 — two additional Oct. 29 Izium deaths
+
+Checkpoint: `fatality-ledger/STAGE-89-CHECKPOINT.md`
+
+The Nov. 2 174 baseline itemizes four deaths in the Oct. 29 Izium airstrike and one death in a separate Nov. 2 morning attack. It does not itemize the fifth death in the Oct. 29 airstrike, reported later on Oct. 30, or the separate 59-year-old victim killed in another Oct. 29 attack, first identified Oct. 31. The later 421 reconciliation names no separate additions for either revision. Their inclusion in a later, non-itemized subtotal is unproven, so both revisions remain null. The current Oct. 29 incident-date cohort exceeds the historical 25-count cohort by two, consistent with these two unresolved deaths, but this arithmetic comparison alone does not establish the precise inclusion date. No incident counts, effective dates or public totals changed.

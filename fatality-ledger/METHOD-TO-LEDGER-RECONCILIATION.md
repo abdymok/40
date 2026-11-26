@@ -419,3 +419,8 @@ Two visible tolls have since increased: Solomiansky shop, 2→3, and Zaporizhia 
 The visible rows sum mechanically to 83, but the snapshot explicitly warns of possible overlap between citywide Kyiv aggregates and incident-level entries and calls the subtotal approximate. Accordingly, 83 and the current raw ledger sum of 93 are not treated as comparable exact totals. The Oct. 6 Kherson doctor's death was reported only on Nov. 17 and is retained as a delayed death, not retroactively attributed to the Oct. 11 snapshot.
 
 No incident data, effective dates or public counters changed.
+
+
+### Stage 62 correction — Pokrovske row match
+
+Follow-up inspection of the Oct. 11 snapshot established that its one-death Dnipropetrovsk-region row describes the 11-year-old boy killed in the Pokrovske community. This is the same death represented by the current ledger's Nikopol-district incident record, not an unledgered incident. The current ledger therefore has eight records corresponding to visible death-bearing rows (87 deaths using current tolls) and six records not itemized as death-bearing rows in that snapshot (six deaths). The snapshot's visible row sum remains 83, with the four-death difference explained by the later Solomiansky (+1) and Zaporizhia (+3) revisions. The approximate-80 figure still cannot be forced into an exact reconciliation because of the documented possible overlap in citywide Kyiv reporting.

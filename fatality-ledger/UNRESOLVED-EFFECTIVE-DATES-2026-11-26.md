@@ -70,6 +70,10 @@ The Nov. 2 174 baseline itemizes four deaths in the Oct. 29 Izium airstrike and 
 
 The Oct. 12 Kharkiv strike killed four people, with the fourth body recovered on Oct. 13. The archived 80→82 increments are explicitly attributed to the separate Kyiv ballistic strike, and 82→85 adds three deaths in the Oct. 13–14 Kyiv overnight attack. The 148→173 breakdown does not itemize this Kharkiv incident, but the 148 baseline is a carried-forward aggregate, not a complete incident list. Its inclusion in 148 or a later subtotal remains unproven. REV-001 remains null; this is a potential four-death inclusion gap, not a confirmed omission. See `STAGE-90-CHECKPOINT.md`.
 
+## Stage 91 adjudication
+
+The Oct. 12 Darnytsky residential-building strike killed two people. Neither death is named in the 80→92 dashboard increments: those changes concern the Oct. 13 ballistic strike, the separate Oct. 13–14 Kyiv overnight attack and Lutsk. The 148→173 breakdown also does not itemize this incident, but the 148 baseline is not a complete incident list. Both revisions remain null; this is a potential two-death inclusion gap, not a confirmed omission. See `STAGE-91-CHECKPOINT.md`.
+
 ## Adjudication rules
 
 1. Do not assign Oct. 28 to every pre-Oct. 29 incident merely because the 148 snapshot exists. The 148 baseline's incident membership must be reconstructed from archived change logs and sources.
@@ -97,8 +101,8 @@ The Oct. 12 Kharkiv strike killed four people, with the fourth body recovered on
 | 2026-10-10 | `UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS` | `UA-ZAP-ZAPORIZHIA-2026-10-10-RESIDENTIAL-GLIDE-BOMBS-REV-002` | 20 → 23 | +3 | Legacy 148 membership unresolved |
 | 2026-10-11 | `UA-DON-SLOVIANSK-2026-10-11-ATTACK` | `UA-DON-SLOVIANSK-2026-10-11-ATTACK-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-12 | `UA-KHA-KHARKIV-2026-10-12-KHOLODNOGIRSKY-RESIDENTIAL-STRIKE` | `UA-KHA-KHARKIV-2026-10-12-KHOLODNOGIRSKY-RESIDENTIAL-STRIKE-REV-001` | — → 4 | +4 | Potential four-death gap; 148 membership unverified |
-| 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
-| 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-002` | 1 → 2 | +1 | Legacy 148 membership unresolved |
+| 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-001` | — → 1 | +1 | Potential two-death gap; 148 membership unverified |
+| 2026-10-12 | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE` | `UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-002` | 1 → 2 | +1 | Potential two-death gap; 148 membership unverified |
 | 2026-10-16 | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE` | `UA-KHA-KHARKIV-2026-10-16-MARKET-STRIKE-REV-002` | 3 → 2 | -1 | Legacy 148 membership unresolved |
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-001` | — → 1 | +1 | Legacy 148 membership unresolved |
 | 2026-10-17 | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES` | `UA-DON-SLOVIANSK-2026-10-17-RESIDENTIAL-AIRSTRIKES-REV-002` | 1 → 6 | +5 | Legacy 148 membership unresolved |

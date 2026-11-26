@@ -1948,11 +1948,11 @@
         "recorded_at": "2026-11-19",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-19.",
         "source_ids": [
           "CHERNIHIV-ENERGY-IFAX-2026-11-19"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-19"
       }
     ]
   },
@@ -1991,11 +1991,11 @@
         "recorded_at": "2026-11-19",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-19.",
         "source_ids": [
           "HORENYCHI-TKACHENKO-2026-11-19"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-19"
       }
     ]
   },
@@ -2034,11 +2034,11 @@
         "recorded_at": "2026-11-19",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-19.",
         "source_ids": [
           "PODILSKY-KLYCHKO-2026-11-19-8180"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-19"
       }
     ]
   },
@@ -2099,16 +2099,26 @@
     "revision_history": [
       {
         "revision_id": "UA-ODE-ODESA-2026-11-18-CENTRAL-STRIKES-REV-001",
-        "recorded_at": "2026-11-18",
+        "recorded_at": "2026-11-18T13:15:00+02:00",
         "old_value": null,
-        "new_value": 4,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "new_value": 3,
+        "reason": "The initial morning casualty update reported three people killed in three waves of strikes on central Odesa. This raised the running minimum from 350 to 353.",
         "source_ids": [
           "ODESA-18-IFAX-2026-11-18-INITIAL",
-          "ODESA-18-UP-2026-11-18",
+          "ODESA-18-UP-2026-11-18"
+        ],
+        "ledger_effective_at": "2026-11-18"
+      },
+      {
+        "revision_id": "UA-ODE-ODESA-2026-11-18-CENTRAL-STRIKES-REV-002",
+        "recorded_at": "2026-11-18T16:30:00+02:00",
+        "old_value": 3,
+        "new_value": 4,
+        "reason": "A later update confirmed a fourth person killed, raising the running minimum from 353 to 358 only when combined with the four Donetsk deaths? The fourth Odesa death itself added one, to 358.",
+        "source_ids": [
           "ODESA-18-REUTERS-2026-11-18"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -2159,12 +2169,12 @@
         "recorded_at": "2026-11-18",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "KUSHUHUM-18-SUSPILNE-2026-11-18",
           "KUSHUHUM-18-INFORM-2026-11-18"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },
@@ -2259,11 +2269,11 @@
         "recorded_at": "2026-11-17",
         "old_value": null,
         "new_value": 1,
-        "reason": "Initial incident record created from the cited official report and corroborating coverage.",
+        "reason": "Initial incident record created from the cited official report and corroborating coverage. Historical running subtotal includes this death on 2026-11-18.",
         "source_ids": [
           "PLOSKE-KHARKIV-ODA-2026-11-18"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-11-18"
       }
     ]
   },

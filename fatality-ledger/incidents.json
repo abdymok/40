@@ -1763,7 +1763,7 @@
         "recorded_at": "2026-10-19T18:16:00+03:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Initial reports confirmed two women and an infant killed at the scene. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The initial three-death toll was reported on Oct. 19. The later preliminary six-death report was corrected to five the same evening. The Oct. 20 ≈100/103 and Oct. 21 ≈105/116 snapshots do not name this incident. By the Oct. 26 ≈138 baseline, the corrected five-death toll was already carried; the Oct. 27 142→143 update explicitly adds the sixth death after a 12-year-old boy died in hospital. No separate subtotal increment establishes inclusion of the initial three-death revision. Keep ledger_effective_at null.",
         "source_ids": [
           "NOVA-VODOLAHA-HROMADSKE-2026-10-19",
           "NOVA-VODOLAHA-RBC-2026-10-19"
@@ -1775,7 +1775,7 @@
         "recorded_at": "2026-10-19T18:36:00+03:00",
         "old_value": 3,
         "new_value": 6,
-        "reason": "The regional administration initially reported six deaths, including three children. This preliminary figure was later corrected. Legacy 148 baseline membership remains unverified. This source-backed incident is retained in the current ledger, but the available historical 148 snapshot does not identify whether or when this count entered the public subtotal; effective date remains null pending incident-level baseline reconstruction.",
+        "reason": "The preliminary six-death report on Oct. 19 was corrected to five later that evening. The Oct. 20 ≈100/103 and Oct. 21 ≈105/116 snapshots do not name the incident or the preliminary six-death toll. The corrected five-death toll is present by the Oct. 26 ≈138 baseline; the Oct. 27 142→143 update adds the sixth death. The preliminary 3→6 report was superseded and has no separate subtotal increment. Keep ledger_effective_at null.",
         "source_ids": [
           "NOVA-VODOLAHA-UKRINFORM-2026-10-19",
           "NOVA-VODOLAHA-UP-2026-10-19"

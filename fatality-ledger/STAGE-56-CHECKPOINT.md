@@ -4,7 +4,7 @@ Date: 26 November 2026
 
 ## Correction from Stage 57
 
-The direct HTML snapshot comparison has refined the finding. At the Oct. 21 09:16 snapshot, commit `679cd4c4e1541842a3794c72b7d583e5deea1f1a`, both the dashboard and the method paragraph say approximately 105, and the method paragraph explicitly includes the two Sviatoshynsky deaths.
+The direct HTML snapshot comparison and the previously unidentified 103→105 commit have refined the finding. At the Oct. 21 09:16 snapshot, commit `679cd4c4e1541842a3794c72b7d583e5deea1f1a`, both the dashboard and the method paragraph say approximately 105, and the method paragraph explicitly includes the two Sviatoshynsky deaths.
 
 The later `3c205e7cb516ca3a9843c1234b23ff05408bf6dc` commit changes the dashboard alone from approximately 105 to approximately 107. It leaves the method paragraph at 105 and leaves its Sviatoshynsky attribution untouched. Thus the prior Stage 56 statement that the 107-snapshot method paragraph could not prove baseline membership was incomplete: the 105 snapshot itself proves those deaths were already included before the +2 dashboard-only change.
 

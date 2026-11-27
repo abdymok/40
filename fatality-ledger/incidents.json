@@ -12331,13 +12331,13 @@
         "recorded_at": "2026-10-08T13:14:00+03:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap, plus Suspilne Donbas citing the city military administration head, establish three deaths in the separate Bilenke strike. The Oct. 11 ≈80 selected-incident snapshot contains a Kramatorsk community row of 33. The later local breakdown reconciles that 33 as 30 bus victims plus three in Bilenke, so the Bilenke three are included in the selected subtotal on Oct. 11. This is a decomposition of the existing 33, not a new +3 addition.",
+        "reason": "Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap, plus Suspilne Donbas citing the city military administration head, establish three deaths in the separate Bilenke strike. The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the bus strike, not a Kramatorsk-wide total. Later local itemization and an Oct. 26 police response establish 30 deaths in the bus strike and three in Bilenke. The original 33 bus-strike figure may have conflated the Bilenke victims, or may have overstated the bus toll; the surviving snapshot does not establish whether these three Bilenke deaths were included in the public 33. Keep ledger_effective_at null; this is an unresolved three-death historical-inclusion question, not a confirmed omission.",
         "source_ids": [
           "KRAMATORSK-BILENKE-COUNCIL-MEMORIAL-2026-10-08",
           "KRAMATORSK-BILENKE-COUNCIL-RECAP-2026-10-09",
           "KRAMATORSK-BILENKE-SUSPILNE-2026-10-09"
         ],
-        "ledger_effective_at": "2026-10-11"
+        "ledger_effective_at": null
       }
     ]
   },
@@ -12402,7 +12402,7 @@
         "recorded_at": "2026-10-08T18:40:00+03:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "The Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap separately report two people killed when an FPV drone struck a civilian car in central Kramatorsk at 18:40. Suspilne Donbas independently reports the two deaths, citing local reporting. The Oct. 11 ≈80 selected subtotal's Kramatorsk row of 33 is reconciled as the 30 bus victims plus three Bilenke victims; it does not itemize the two later car deaths. Their inclusion in the later 148 baseline or 421 carry-forward is not established. Keep ledger_effective_at null; this is a potential two-death historical-inclusion gap, not a confirmed omission.",
+        "reason": "The Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap separately report two people killed when an FPV drone struck a civilian car in central Kramatorsk at 18:40. Suspilne Donbas independently reports the two deaths. The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the bus strike and does not mention the evening car attack. Later City Council reporting gives 30 bus deaths, three in Bilenke and two in the car attack. Whether the car deaths entered the later 148 baseline or 421 carry-forward is not established. Keep ledger_effective_at null; this is a potential two-death historical-inclusion gap, not a confirmed omission.",
         "source_ids": [
           "KRAMATORSK-CAR-COUNCIL-MEMORIAL-2026-10-08",
           "KRAMATORSK-CAR-COUNCIL-RECAP-2026-10-09",

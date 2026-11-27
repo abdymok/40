@@ -104,14 +104,14 @@ Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 incident-by-incid
 - **10:10, Bilenke:** three people killed in a separate strike. The City Council and Suspilne Donbas identify the three victims in Bilenke.
 - **18:40, central Kramatorsk:** an FPV drone struck a civilian car, killing two men.
 
-The City Council's Oct. 9 report gives a community-wide toll of 35: 30 + 3 + 2. An earlier regional report described 33 deaths in the bus attack; the later police response and local itemization support 30 for the bus strike, with the additional three deaths recorded separately in Bilenke. The Oct. 11 ≈80 selected subtotal's Kramatorsk row of 33 is now decomposed as the 30 bus victims plus three Bilenke victims. The two car deaths remain a separate possible historical-inclusion question; they are not added to the 33 row by arithmetic.
+The City Council's Oct. 9 report gives a community-wide toll of 35: 30 + 3 + 2. An earlier regional report described 33 deaths in the bus attack; the later police response and local itemization support 30 for the bus strike, with the additional three deaths recorded separately in Bilenke. The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the bus strike. Later local itemization establishes 30 bus victims and three Bilenke victims, but it does not prove that the Bilenke three were included in the public 33. The two car deaths remain a separate possible historical-inclusion question.
 
 
 ## Kramatorsk, Oct. 8 incident split — Nov. 27
 
 The City Council's Oct. 8 memorial statement and Oct. 9 incident-by-incident recap distinguish three fatal attacks in Kramatorsk community: 30 people killed in the 10:00 bus strike in central Kramatorsk; three people killed in a separate 10:10 strike in Bilenke; and two men killed when an FPV drone struck a civilian car in central Kramatorsk at 18:40. The Council's community-wide total is 35.
 
-The 30-death bus toll is corroborated by a later Kramatorsk District Police response dated Oct. 26, reported by Suspilne Donbas. OHCHR records 11 verified deaths and 19 additional reported deaths pending verification, also totalling 30. The earlier regional report of 33 deaths attributed to the bus strike is treated as an overinclusive interim report; the later police response and local incident breakdown separate the Bilenke three. The Oct. 11 ≈80 Kramatorsk row of 33 is decomposed as bus 30 + Bilenke 3. The two car deaths remain a separate historical-inclusion question.
+The 30-death bus toll is corroborated by a later Kramatorsk District Police response dated Oct. 26, reported by Suspilne Donbas. OHCHR records 11 verified deaths and 19 additional reported deaths pending verification, also totalling 30. The earlier regional report of 33 deaths attributed to the bus strike is treated as an overinclusive interim report; the later police response and local incident breakdown separate the Bilenke three. The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the bus strike. Later local itemization establishes 30 bus deaths, three in Bilenke and two in a separate car strike; the surviving snapshot does not establish whether the Bilenke three were included in the public 33. The Bilenke and car historical-inclusion questions remain open.
 
 
 ## Zaporizhia, Oct. 10 — Ukrainian UN letter corroborates 23

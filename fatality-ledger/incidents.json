@@ -12500,7 +12500,7 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "The National Police reported one person killed in this incident on Oct. 22. The same reporting window includes several other official casualty reports: two deaths in Kostiantynivka, three in Zaporizhia region, and the later Zaporizhia city strike. The Oct. 22 121→123 scope change is not uniquely attributable to any of them. Keep ledger_effective_at null.",
+        "reason": "The National Police reports one death in this incident. The Oct. 22 121→123 change is a possible but unproven match; Filashkin separately reported two deaths in Kostiantynivka, and Zaporizhia authorities reported three deaths in the region and two initial deaths in the city before or around the same change. The +2 cannot be uniquely allocated. Keep ledger_effective_at null.",
         "source_ids": [
           "DON-DRUZHKIVKA-FPV-NPU-2026-10-22"
         ],
@@ -12543,7 +12543,7 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "The National Police reported one person killed in this incident on Oct. 22. The same reporting window includes several other official casualty reports: two deaths in Kostiantynivka, three in Zaporizhia region, and the later Zaporizhia city strike. The Oct. 22 121→123 scope change is not uniquely attributable to any of them. Keep ledger_effective_at null.",
+        "reason": "The National Police reports one death in this incident. The Oct. 22 121→123 change is a possible but unproven match; Filashkin separately reported two deaths in Kostiantynivka, and Zaporizhia authorities reported three deaths in the region and two initial deaths in the city before or around the same change. The +2 cannot be uniquely allocated. Keep ledger_effective_at null.",
         "source_ids": [
           "DON-KRAMATORSK-OVERNIGHT-NPU-2026-10-22"
         ],

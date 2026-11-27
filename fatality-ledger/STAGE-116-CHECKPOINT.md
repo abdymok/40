@@ -16,17 +16,17 @@ The community-wide toll reported by the City Council is 35: 30 bus victims + 3 B
 
 An earlier Oct. 8 regional update and subsequent Ukrinform report gave 33 deaths for the bus strike. However, the later City Council itemization and Oct. 26 police response establish 30 deaths in the bus incident. The three-death difference is separately documented in Bilenke. The bus incident record is corrected to 30, and Bilenke is recorded as its own three-death incident. The earlier 30→33 bus revision is retained as a superseded, overinclusive report with null effective date; the correction 33→30 is also null and does not reduce the public subtotal.
 
-The Oct. 11 ≈80 selected-incident snapshot lists 33 deaths for Kramatorsk. The detailed local breakdown now reconciles that selected row as 30 bus deaths plus three Bilenke deaths. Both records are assigned the first documented inclusion date, Oct. 11. This is a decomposition of the existing 33, not an additional +3.
+The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the bus strike. Later local reporting and the Oct. 26 police response establish 30 bus deaths and three deaths in a separate Bilenke strike. The old 33 may have conflated the Bilenke victims with the bus toll, or may have overstated the bus toll; the surviving snapshot does not establish whether the Bilenke three were included in the public 33. The 30 bus deaths remain dated Oct. 11 as part of the reported 33; the Bilenke revision is returned to null.
 
 The two deaths in the 18:40 car strike were reported on Oct. 8 but are not itemized in the Oct. 11 Kramatorsk 33 row. The 148 baseline and later carry-forward do not provide a complete incident roster. Their historical inclusion therefore remains unproven; the car revision remains null. This is a potential two-death inclusion gap, not a confirmed omission.
 
 ## Data changes
 
 - Bus incident: final toll corrected 33→30; add REV-004. The superseded 30→33 revision remains null; the 12→30 revision is now dated Oct. 11.
-- Bilenke: add a separate three-death incident, included in the Oct. 11 Kramatorsk 33 row.
+- Bilenke: add a separate three-death incident; historical inclusion in the Oct. 11 Kramatorsk 33 row remains unproven.
 - Civilian car: add a separate two-death incident, with null historical effective date.
 - The Oct. 11 Kramatorsk selected subtotal remains 33; no public subtotal changes.
 
 ## Integrity
 
-The ledger now contains 186 incidents, 472 source records, 465 final documented deaths and 245 revision entries (205 dated, 40 null). Null-revision arithmetic is +81. Sixteen historical-inclusion questions remain open, net +24. The raw ledger sum is 38 above the public provisional minimum of 427. This difference is not an amount to add or subtract by balancing arithmetic.
+The ledger now contains 186 incidents, 472 source records, 465 final documented deaths and 245 revision entries (205 dated, 40 null). Null-revision arithmetic is +84. Seventeen historical-inclusion questions remain open, net +27. The raw ledger sum is 38 above the public provisional minimum of 427. This difference is not an amount to add or subtract by balancing arithmetic.

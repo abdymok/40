@@ -29,4 +29,4 @@ The two deaths in the 18:40 car strike were reported on Oct. 8 but are not itemi
 
 ## Integrity
 
-The ledger now contains 186 incidents, 472 source records, 465 final documented deaths and 245 revision entries (205 dated, 40 null). Null-revision arithmetic is +84. Sixteen historical-inclusion questions remain open, net +24. The raw ledger sum is 38 above the public provisional minimum of 427. This difference is not an amount to add or subtract by balancing arithmetic.
+The ledger now contains 186 incidents, 472 source records, 465 final documented deaths and 245 revision entries (205 dated, 40 null). Null-revision arithmetic is +81. Sixteen historical-inclusion questions remain open, net +24. The raw ledger sum is 38 above the public provisional minimum of 427. This difference is not an amount to add or subtract by balancing arithmetic.

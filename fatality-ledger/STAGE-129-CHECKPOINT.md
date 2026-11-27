@@ -32,7 +32,7 @@ The 121→123 commit does not cite or allocate its +2 to any of these reports. T
 
 ## The 123→132 +4 across other regions
 
-The Oct. 25 update describes four deaths across other regions reported on Oct. 23, without naming incidents. One already-recorded candidate is the Oct. 23 Kramatorsk FAB-250 strike death, whose incident-ledger inclusion date is Oct. 25. The three deaths in the Oct. 22 Zaporizhia city strike were confirmed by police on Oct. 23. Together, one Kramatorsk death plus three Zaporizhia deaths are an exact four-death candidate for this bucket. The update does not identify those incidents, so the Zaporizhia record remains null and the proposed 1+3 mapping is not treated as proven. The other three Zaporizhia-region deaths from Oct. 21 are not explicitly identified in the 123→132 allocation either.
+The Oct. 25 123→132 update's four deaths across other regions on Oct. 23 can now be mapped to four incident-ledger records, each with `ledger_effective_at: 2026-10-25`: one death in Chernihiv, one in Dnipro, one in Kramatorsk and one in Sloviansk. Their incident IDs are `UA-CHE-CHERNIHIV-2026-10-23-ENTERPRISE-DRONE-STRIKE`, `UA-DNE-DNIPRO-2026-10-23-CIVILIAN-ATTACK`, `UA-DON-KRAMATORSK-2026-10-23-FAB-250-STRIKE` and `UA-DON-SLOVIANSK-2026-10-23-FAB-250-RESIDENTIAL-STRIKE`. The full 123→132 increase is therefore accounted for: four Synelnykove deaths, one Kharkiv death in the Oct. 24 Novobavarsky drone attack, and these four Oct. 23 incidents. The three Zaporizhia city deaths are not part of this +4. Their initial two-death report preceded the 121→123 commit and could fit its +2, but the Kostiantynivka pair, the Donetsk pair and the three Zaporizhia-region deaths are competing contemporaneous reports. The third Zaporizhia city death was confirmed on Oct. 23, after 121→123. No allocation is proven; keep the Zaporizhia revision null.
 
 ## Adjudication
 
@@ -40,7 +40,7 @@ The Oct. 25 update describes four deaths across other regions reported on Oct. 2
 - Keep all five new revision entries null for historical inclusion.
 - Treat the two Kostiantynivka deaths as a plausible but unproven match to 121→123 +2; the Donetsk pair and Zaporizhia incidents remain competing contemporaneous reports.
 - Do not assign the 121→123 +2 to the Kostiantynivka daily aggregate or any Zaporizhia incident without direct evidence.
-- Treat the Kramatorsk FAB-250 death plus the three Zaporizhia city deaths as a plausible 1+3 mapping of the four deaths reported across other regions on Oct. 23 in the 123→132 update, not a proven allocation.
+- Treat the 123→132 +4 as fully allocated to Chernihiv, Dnipro, Kramatorsk and Sloviansk. The Zaporizhia city incident is not in that increment; only its initial two deaths could possibly fit 121→123, and that remains unproven.
 - Public minimum remains 427 through Nov. 26, 2026. No public subtotal changes.
 
 ## Integrity

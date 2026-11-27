@@ -5,8 +5,8 @@ This directory contains the working incident-level dataset for the provisional n
 ## Source of truth and current inventory
 
 - `incidents.json` is the authoritative incident-level dataset.
-- Current inventory: **182 incident records**, **447 source records**, **460 final documented deaths** and **239 revision entries**.
-- Of the revision entries, **204 have a confirmed `ledger_effective_at` date** and **35 remain null**.
+- Current inventory: **182 incident records**, **450 source records**, **461 final documented deaths** and **240 revision entries**.
+- Of the revision entries, **204 have a confirmed `ledger_effective_at` date** and **36 remain null**.
 - The current public method-page and chronology subtotal is **427 through Nov. 26, 2026**.
 - The raw incident-ledger sum exceeds the public subtotal by **33**. This is a disclosed reconciliation difference, not an additional batch to add to the public count and not a reason to alter either figure by balancing arithmetic.
 
@@ -18,11 +18,11 @@ The public 421 subtotal was reconstructed as:
 
 `148 + 19 + 25 + 229 = 421`
 
-The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–110.
+The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–111.
 
-The 35 null `ledger_effective_at` values do **not** represent 35 unresolved incidents or 92 additional deaths:
+The 35 null `ledger_effective_at` values do **not** represent 35 unresolved incidents or 93 additional deaths:
 
-- **12 entries** remain unresolved historical-inclusion questions, with a net arithmetic change of **+17**. Three later Lozova market revisions (the third, fourth and fifth deaths) and the separate Oct. 24 warehouse death are now classified as established exclusions from the 148 baseline and the 421 carry-forward. Their null effective dates are retained to distinguish exclusion from a dated addition. These are pre-Oct. 29 cases for which the surviving snapshots and change records do not establish whether a later carried-forward aggregate included the deaths.
+- **13 entries** remain unresolved historical-inclusion questions, with a net arithmetic change of **+18**. Three later Lozova market revisions (the third, fourth and fifth deaths) and the separate Oct. 24 warehouse death are now classified as established exclusions from the 148 baseline and the 421 carry-forward. Their null effective dates are retained to distinguish exclusion from a dated addition. These are pre-Oct. 29 cases for which the surviving snapshots and change records do not establish whether a later carried-forward aggregate included the deaths.
 - The other **23 entries** have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions from that subtotal. In particular, Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
 - Null is retained where no public-subtotal inclusion date is established. The revision's reason field and the relevant checkpoint state whether the case is unresolved, superseded, corrected or excluded. Stage 109 documents the three later market-death exclusions, the separate warehouse exclusion and the remaining 12-case review.
 

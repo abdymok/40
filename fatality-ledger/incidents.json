@@ -12480,19 +12480,6 @@
     "evidence_classification": "official_only",
     "sources": [
       {
-        "source_id": "DON-DRUZHKIVKA-21-FILASHKIN-2026-10-22",
-        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
-        "source_type": "official_social_post",
-        "published_at": "2026-10-22",
-        "url": "https://t.me/VadymFilashkin/18815",
-        "supports": [
-          "incident_identity",
-          "death_count",
-          "incident_date"
-        ],
-        "notes": "Filashkin's Oct. 22 post says one resident was killed in Druzhkivka on Oct. 21."
-      },
-      {
         "source_id": "DON-DRUZHKIVKA-FPV-NPU-2026-10-22",
         "publisher": "National Police of Ukraine, Donetsk region",
         "source_type": "official_statement",
@@ -12513,9 +12500,8 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Official regional administration and police reports establish one death in this settlement in the Oct. 21–22 reporting window. The Oct. 22 121→123 dashboard scope change is a possible numerical and temporal match, but it does not identify either incident. Other same-day official reports also record two deaths in Kostiantynivka and three in Zaporizhia region. The +2 cannot be uniquely allocated; keep ledger_effective_at null.",
+        "reason": "The National Police reported one person killed in this incident on Oct. 22. The same reporting window includes several other official casualty reports: two deaths in Kostiantynivka, three in Zaporizhia region, and the later Zaporizhia city strike. The Oct. 22 121→123 scope change is not uniquely attributable to any of them. Keep ledger_effective_at null.",
         "source_ids": [
-          "DON-DRUZHKIVKA-21-FILASHKIN-2026-10-22",
           "DON-DRUZHKIVKA-FPV-NPU-2026-10-22"
         ],
         "ledger_effective_at": null
@@ -12537,19 +12523,6 @@
     "evidence_classification": "official_only",
     "sources": [
       {
-        "source_id": "DON-KRAMATORSK-21-FILASHKIN-2026-10-22",
-        "publisher": "Donetsk Regional Military Administration head Vadym Filashkin",
-        "source_type": "official_social_post",
-        "published_at": "2026-10-22",
-        "url": "https://t.me/VadymFilashkin/18815",
-        "supports": [
-          "incident_identity",
-          "death_count",
-          "incident_date"
-        ],
-        "notes": "Filashkin's Oct. 22 post says one resident was killed in Kramatorsk on Oct. 21."
-      },
-      {
         "source_id": "DON-KRAMATORSK-OVERNIGHT-NPU-2026-10-22",
         "publisher": "National Police of Ukraine, Donetsk region",
         "source_type": "official_statement",
@@ -12570,9 +12543,8 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "The National Police reported one person killed in the private sector of Kramatorsk overnight into Oct. 22; Filashkin's regional tally grouped the death with the Oct. 21 casualties. The Oct. 22 121→123 dashboard scope change is a possible numerical and temporal match, but it does not identify this incident. Other same-day official reports also record two deaths in Kostiantynivka and three in Zaporizhia region. The +2 cannot be uniquely allocated; keep ledger_effective_at null.",
+        "reason": "The National Police reported one person killed in this incident on Oct. 22. The same reporting window includes several other official casualty reports: two deaths in Kostiantynivka, three in Zaporizhia region, and the later Zaporizhia city strike. The Oct. 22 121→123 scope change is not uniquely attributable to any of them. Keep ledger_effective_at null.",
         "source_ids": [
-          "DON-KRAMATORSK-21-FILASHKIN-2026-10-22",
           "DON-KRAMATORSK-OVERNIGHT-NPU-2026-10-22"
         ],
         "ledger_effective_at": null

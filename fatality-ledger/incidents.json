@@ -11976,5 +11976,76 @@
         "ledger_effective_at": "2026-11-26"
       }
     ]
+  },
+  {
+    "incident_id": "UA-DON-SLOVIANSK-2026-10-17-PRIVATE-SECTOR-AIRSTRIKE",
+    "incident_date": "2026-10-17",
+    "location": {
+      "settlement": "Sloviansk",
+      "district": "Private residential sector",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A separate Russian airstrike hit private homes in Sloviansk at about 09:20 on Oct. 17, several hours after the 03:40 strike on two five-storey apartment buildings. Four FAB-250 bombs struck the private sector, damaging 22 homes. The State Emergency Service reported three people killed and two injured. This is a distinct incident from the nine-death high-rise strike. Together, the two Sloviansk incidents account for the 12 deaths listed by OHCHR for Oct. 17.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "SLOVIANSK-17-PRIVATE-DSNS-2026-10-18",
+        "publisher": "State Emergency Service of Ukraine",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-18",
+        "url": "https://t.me/s/dsns_telegram?before=78039",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official DSNS channel reports three people killed and two injured after four aerial bombs struck Sloviansk's private sector the previous day; 22 homes were damaged and rescuers recovered one victim from rubble."
+      },
+      {
+        "source_id": "SLOVIANSK-17-PRIVATE-SUSPILNE-2026-10-18",
+        "publisher": "Suspilne Donbas, citing Sloviansk City Military Administration head Vadym Liakh and Donetsk regional DSNS",
+        "source_type": "news_report",
+        "published_at": "2026-10-18T12:51:00+03:00",
+        "url": "https://suspilne.media/donbas/1430075-okupanti-povtorno-atakuvali-slovansk-aviabombami-vidomo-pro-dvoh-zagiblih-ta-troh-poranenih/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date",
+          "corroboration"
+        ],
+        "notes": "Distinguishes the approximately 09:20 private-sector attack, which killed three people, from the separate 03:40 attack on two high-rise buildings."
+      },
+      {
+        "source_id": "SLOVIANSK-17-PRIVATE-UP-2026-10-18",
+        "publisher": "Ukrainska Pravda, citing Sloviansk City Military Administration head Vadym Liakh and DSNS",
+        "source_type": "news_report",
+        "published_at": "2026-10-18T12:34:00+03:00",
+        "url": "https://www.pravda.com.ua/news/2026/10/18/8058595/",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports the DSNS statement that three people were killed and two injured in the separate attack on the private sector; Liakh reported six deaths across the city at that point."
+      }
+    ],
+    "last_verified_date": "2026-11-27",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-SLOVIANSK-2026-10-17-PRIVATE-SECTOR-AIRSTRIKE-REV-001",
+        "recorded_at": "2026-10-18",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "This is a separate Oct. 17 morning attack on Sloviansk's private residential sector, around 09:20, not the 03:40 strike on two five-storey apartment buildings whose final toll was nine. The State Emergency Service reported three killed and two injured; Suspilne and Ukrainska Pravda distinguish the private-sector strike from the high-rise attack. The two distinct incidents account for the 12 deaths listed by OHCHR for Sloviansk on Oct. 17. This three-death incident occurred before the Oct. 21 ≈105 snapshot, but that snapshot is a selected-incident aggregate without a complete roster. The Oct. 21 105→116 increase is allocated to the nine deaths in the separate high-rise strike and two Korotych deaths; it does not establish whether these three private-sector deaths were already in the 105 baseline. Keep ledger_effective_at null; this is a potential three-death inclusion gap, not a confirmed omission.",
+        "source_ids": [
+          "SLOVIANSK-17-PRIVATE-DSNS-2026-10-18",
+          "SLOVIANSK-17-PRIVATE-SUSPILNE-2026-10-18",
+          "SLOVIANSK-17-PRIVATE-UP-2026-10-18"
+        ],
+        "ledger_effective_at": null
+      }
+    ]
   }
 ]

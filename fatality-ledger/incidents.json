@@ -12097,5 +12097,88 @@
         "ledger_effective_at": null
       }
     ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-09-FPV-RESIDENTIAL-BUILDINGS",
+    "incident_date": "2026-10-09",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "Russian FPV drones struck two nine-storey residential buildings in Kramatorsk on Oct. 9, causing fires. Rescuers saved a woman born in 1972 and took her to hospital. They also found the body of a man born in 1941 in one of the buildings. The Donetsk regional State Emergency Service reported the incident; Ukrainian reporting and the October UN documentation record one man killed.",
+    "documented_deaths": 1,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-09-DSNS-NOVOSTI-DON-2026-10-09",
+        "publisher": "Novosti Donbas, citing the press service of the State Emergency Service in Donetsk region",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T13:07:00+03:00",
+        "url": "https://novosti.dn.ua/vijna/401922-rosijski-bezpilotnyky-vdaryly-po-bahatopoverhivkah-u-kramatorsku-vynykly-pozhezhi-ye-zagyblyj-ta-poranena/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Reports that FPV drones struck two nine-storey residential buildings, rescuers evacuated a woman born in 1972 and found the body of a man born in 1941; attributes the information to the Donetsk regional DSNS press service."
+      },
+      {
+        "source_id": "KRAMATORSK-09-DSNS-NEWS-DN-2026-10-09",
+        "publisher": "News Donbas, citing the State Emergency Service of Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-10-09T14:51:00+03:00",
+        "url": "https://news.dn.ua/news/fpv-droni-atakuvali-kramatorsk-ta-viklikali-pozhezh-u-bagatopoverh-vkah.html",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Separately reports the two residential-building fires, rescue of the 1972-born woman and discovery of the 1941-born man's body, attributing the report to DSNS."
+      },
+      {
+        "source_id": "KRAMATORSK-09-UN-LETTER-UKRAINE-2026-10-15",
+        "publisher": "Permanent Representative of Ukraine to the United Nations, letter A/81/436–S/2026/819",
+        "source_type": "official_report_to_UN",
+        "published_at": "2026-10-15",
+        "url": "https://digitallibrary.un.org/record/4131019/files/A_81_436--S_2026_819-EN.pdf",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Ukraine's official letter to the UN states that on Oct. 9 in Kramatorsk, Russian FPV drone strikes caused fires in two nine-storey residential buildings and a man was killed. This is an official Ukrainian government submission, not an OHCHR verification or independent UN finding."
+      },
+      {
+        "source_id": "KRAMATORSK-09-OHCHR-OCT2026",
+        "publisher": "UN Human Rights Monitoring Mission in Ukraine",
+        "source_type": "international_monitoring_report",
+        "published_at": "2026-11",
+        "url": "https://ukraine.un.org/sites/default/files/2026-11/Ukraine%20-%20protection%20of%20civilians%20in%20armed%20conflict%20%28October%29_ENG_0.pdf",
+        "supports": [
+          "death_count",
+          "corroboration",
+          "evidence_classification"
+        ],
+        "notes": "OHCHR's October 2026 report identifies the Oct. 9 Kramatorsk FPV-drone strikes on two nine-storey residential buildings and records one man killed. This is the independent monitoring reference that prompted the local-source search; the local DSNS-attributed reports now corroborate the incident."
+      }
+    ],
+    "last_verified_date": "2026-11-27",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-09-FPV-RESIDENTIAL-BUILDINGS-REV-001",
+        "recorded_at": "2026-10-09T13:07:00+03:00",
+        "old_value": null,
+        "new_value": 1,
+        "reason": "The Donetsk regional State Emergency Service reported that Russian FPV drones struck two nine-storey residential buildings in Kramatorsk, causing fires; rescuers saved a woman born in 1972 and found the body of a man born in 1941. Two local outlets reported the DSNS account. Ukraine's Oct. 14 letter to the UN also describes the Oct. 9 Kramatorsk FPV strikes on two nine-storey buildings and one man killed. OHCHR's October 2026 report independently records one man killed in the same representative incident. The death was reported before the Oct. 11 ≈80 selected-incident snapshot, but the visible snapshot does not itemize it and the 80→92 change list does not identify it. The later 148 baseline is a carried-forward aggregate without a complete incident roster. No dated project update establishes inclusion or exclusion. Keep ledger_effective_at null; this is a potential one-death historical-inclusion gap, not a confirmed omission.",
+        "source_ids": [
+          "KRAMATORSK-09-DSNS-NOVOSTI-DON-2026-10-09",
+          "KRAMATORSK-09-DSNS-NEWS-DN-2026-10-09",
+          "KRAMATORSK-09-UN-LETTER-UKRAINE-2026-10-15",
+          "KRAMATORSK-09-OHCHR-OCT2026"
+        ],
+        "ledger_effective_at": null
+      }
+    ]
   }
 ]

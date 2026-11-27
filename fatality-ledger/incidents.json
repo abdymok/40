@@ -12474,7 +12474,7 @@
       "region": "Donetsk region",
       "country": "Ukraine"
     },
-    "incident_description": "A Russian FPV drone attack killed one resident in Druzhkivka on Oct. 21. Donetsk Regional Military Administration head Vadym Filashkin and the National Police reported the death.",
+    "incident_description": "A Russian attack killed one resident in Druzhkivka on Oct. 21, according to Donetsk Regional Military Administration head Vadym Filashkin.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
     "evidence_classification": "official_only",
@@ -12491,19 +12491,6 @@
           "incident_date"
         ],
         "notes": "Filashkin's Oct. 22 post says one resident was killed in Druzhkivka on Oct. 21."
-      },
-      {
-        "source_id": "DON-DRUZHKIVKA-21-NPU-2026-10-22",
-        "publisher": "National Police of Ukraine, Donetsk region",
-        "source_type": "official_statement",
-        "published_at": "2026-10-22T09:40:00+03:00",
-        "url": "https://npu.gov.ua/news/dvi-liudyny-zahynuly-sered-9-poranenykh-dity-politsiia-donechchyny-dokumentuie-naslidky-rosiiskykh-atak",
-        "supports": [
-          "incident_identity",
-          "death_count",
-          "incident_date"
-        ],
-        "notes": "The police report identifies one person killed by an FPV drone in Druzhkivka."
       }
     ],
     "last_verified_date": "2026-11-27",
@@ -12513,10 +12500,9 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Official regional administration and police reports establish one death in Druzhkivka on Oct. 21. The Oct. 22 121→123 dashboard scope change is a numerical and temporal match for two Donetsk deaths reported by Filashkin, but its commit does not identify the incidents. This is a candidate attribution only; keep ledger_effective_at null.",
+        "reason": "Donetsk Regional Military Administration head Vadym Filashkin reported two residents killed on Oct. 21, one in Druzhkivka and one in Kramatorsk. The Oct. 22 121→123 dashboard scope change is a numerical and temporal match, but its commit does not identify the incidents. This is a candidate attribution only; keep ledger_effective_at null.",
         "source_ids": [
-          "DON-DRUZHKIVKA-21-FILASHKIN-2026-10-22",
-          "DON-DRUZHKIVKA-21-NPU-2026-10-22"
+          "DON-DRUZHKIVKA-21-FILASHKIN-2026-10-22"
         ],
         "ledger_effective_at": null
       }
@@ -12531,7 +12517,7 @@
       "region": "Donetsk region",
       "country": "Ukraine"
     },
-    "incident_description": "One person was killed in the private sector of Kramatorsk overnight on Oct. 21–22. Donetsk Regional Military Administration head Vadym Filashkin included one Kramatorsk death in the Oct. 21 regional toll, and the National Police reported the death on Oct. 22.",
+    "incident_description": "Donetsk Regional Military Administration head Vadym Filashkin reported one resident killed in Kramatorsk on Oct. 21. The surviving official post does not identify the precise strike or address.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
     "evidence_classification": "official_only",
@@ -12548,19 +12534,6 @@
           "incident_date"
         ],
         "notes": "Filashkin's Oct. 22 post says one resident was killed in Kramatorsk on Oct. 21."
-      },
-      {
-        "source_id": "DON-KRAMATORSK-21-NPU-2026-10-22",
-        "publisher": "National Police of Ukraine, Donetsk region",
-        "source_type": "official_statement",
-        "published_at": "2026-10-22T09:40:00+03:00",
-        "url": "https://npu.gov.ua/news/dvi-liudyny-zahynuly-sered-9-poranenykh-dity-politsiia-donechchyny-dokumentuie-nasлідки-rosiiskykh-atak",
-        "supports": [
-          "incident_identity",
-          "death_count",
-          "incident_date"
-        ],
-        "notes": "The police report says one person died overnight in the private sector of Kramatorsk."
       }
     ],
     "last_verified_date": "2026-11-27",
@@ -12570,10 +12543,9 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Official regional administration and police reports establish one death in the private sector of Kramatorsk overnight on Oct. 21–22. The Oct. 22 121→123 dashboard scope change is a numerical and temporal match for two Donetsk deaths reported by Filashkin, but its commit does not identify the incidents. This is a candidate attribution only; keep ledger_effective_at null.",
+        "reason": "Donetsk Regional Military Administration head Vadym Filashkin reported two residents killed on Oct. 21, one in Druzhkivka and one in Kramatorsk. The Oct. 22 121→123 dashboard scope change is a numerical and temporal match, but its commit does not identify the incidents. This is a candidate attribution only; keep ledger_effective_at null.",
         "source_ids": [
-          "DON-KRAMATORSK-21-FILASHKIN-2026-10-22",
-          "DON-KRAMATORSK-21-NPU-2026-10-22"
+          "DON-KRAMATORSK-21-FILASHKIN-2026-10-22"
         ],
         "ledger_effective_at": null
       }
@@ -12609,9 +12581,9 @@
       {
         "source_id": "ZAP-KUSHUHUM-21-NPU-2026-10-22",
         "publisher": "National Police of Ukraine, Zaporizhia region",
-        "source_type": "official_statement",
-        "published_at": "2026-10-22T10:50:00+03:00",
-        "url": "https://zp.npu.gov.ua/news/na-zaporizhzhi-vnaslidok-zbroinoi-ahresii-rf-zahynulo-troie-liudei-shche-troie-otrymaly-poranennia-voienni-zlochyny-okupantiv",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-22",
+        "url": "https://t.me/s/police_zp_news/27348",
         "supports": [
           "incident_identity",
           "death_count",
@@ -12666,9 +12638,9 @@
       {
         "source_id": "ZAP-CAR-21-NPU-2026-10-22",
         "publisher": "National Police of Ukraine, Zaporizhia region",
-        "source_type": "official_statement",
-        "published_at": "2026-10-22T10:50:00+03:00",
-        "url": "https://zp.npu.gov.ua/news/na-zaporizhzhi-vnaslidok-zbroinoi-ahresii-rf-zahynulo-troie-liudei-shche-troie-otrymaly-poranennia-voienni-zlochyny-okupantiv",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-22",
+        "url": "https://t.me/s/police_zp_news/27348",
         "supports": [
           "incident_identity",
           "death_count",
@@ -12725,7 +12697,7 @@
         "publisher": "National Police of Ukraine, Zaporizhia region",
         "source_type": "official_statement",
         "published_at": "2026-10-23T09:56:00+03:00",
-        "url": "https://zp.npu.gov.ua/news/na-zaporizhzhi-cherez-rosiiski-ataky-zahynulo-troie-liudei-shche-odna-otrymala-poranennia-politseiski-dokumentuiut-nasлідки-rosiiskykh-atak",
+        "url": "https://zp.npu.gov.ua/news/na-zaporizhzhi-cherez-rosiiski-ataky-zahynulo-troie-liudei-shche-odna-otrymala-poranennia-politsiia-dokumentuie-naslidky-voiennykh-zlochyniv",
         "supports": [
           "incident_identity",
           "death_count",

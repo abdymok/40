@@ -1606,10 +1606,10 @@
       "region": "Kherson region",
       "country": "Ukraine"
     },
-    "incident_description": "Russian aircraft carried out two strikes on the same location in Korabelnyi district within an hour. The second strike killed a 64-year-old emergency medical services driver while he was responding to the first strike. Official Ukrainian reporting confirms one death; OHCHR's October report lists two men killed in Kherson on this date, and the second death remains unallocated pending source verification.",
-    "documented_deaths": 1,
+    "incident_description": "Russian aircraft carried out two strikes on residential areas in Kherson's Korabelnyi district within an hour on Oct. 17. The second strike killed a 64-year-old emergency medical services driver responding to the first strike. A 58-year-old resident who was critically injured at home in the attack died in hospital on Oct. 18. Local reporting citing the heads of the Kherson city and regional administrations confirms both deaths; OHCHR's October report also records two men killed in the Kherson airstrikes.",
+    "documented_deaths": 2,
     "scope_classification": "non_combatant_emergency_personnel",
-    "evidence_classification": "media_reported",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KHERSON-17-UP-2026-10-17",
@@ -1647,9 +1647,48 @@
           "corroboration"
         ],
         "notes": "Reports one ambulance driver killed in the double-tap airstrike."
+      },
+      {
+        "source_id": "KHERSON-17-MOST-58YO-DIED-2026-10-18",
+        "publisher": "MOST, citing Kherson City Military Administration head Yaroslav Shanko",
+        "source_type": "news_report",
+        "published_at": "2026-10-18",
+        "url": "https://most.ks.ua/en/news/url/u-likarni-pomer-cholovik-travmovanij-aviaudarom-po-korabelnomu-rajonu/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports that a 58-year-old man critically injured at home in the Oct. 17 Korabelnyi-district airstrike died in hospital; cites Shanko."
+      },
+      {
+        "source_id": "KHERSON-17-MOST-PROKUDIN-58YO-2026-10-18",
+        "publisher": "MOST, citing Kherson Regional Military Administration head Oleksandr Prokudin",
+        "source_type": "news_report",
+        "published_at": "2026-10-18",
+        "url": "https://most.ks.ua/en/news/url/u-likarni-pomer-poranenij-pislja-aviaudariv-po-korabelnomu-rajonu-hersona/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Separately reports the 58-year-old resident's death and states that two people were killed in the Oct. 17 Kherson attack; cites Prokudin."
+      },
+      {
+        "source_id": "KHERSON-17-OHCHR-OCT2026",
+        "publisher": "UN Human Rights Monitoring Mission in Ukraine",
+        "source_type": "international_monitoring_report",
+        "published_at": null,
+        "url": "https://ukraine.ohchr.org/sites/default/files/2026-11/Ukraine%20-%20protection%20of%20civilians%20in%20armed%20conflict%20%28October%29_ENG.pdf",
+        "supports": [
+          "death_count",
+          "corroboration",
+          "evidence_classification"
+        ],
+        "notes": "October 2026 update identifies the Oct. 17 Kherson aerial-glide-bomb incident as killing two men. This independently corroborates the local two-death toll; it does not establish historical inclusion in the project's earlier running subtotal."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP-REV-001",
@@ -1661,6 +1700,19 @@
           "KHERSON-17-UP-2026-10-17",
           "KHERSON-17-UKRINFORM-2026-10-17",
           "KHERSON-17-IFAX-2026-10-17"
+        ],
+        "ledger_effective_at": null
+      },
+      {
+        "revision_id": "UA-KHE-KHERSON-2026-10-17-KORABELNY-DOUBLE-TAP-REV-002",
+        "recorded_at": "2026-10-18",
+        "old_value": 1,
+        "new_value": 2,
+        "reason": "A 58-year-old Kherson resident critically injured at home in the Oct. 17 Korabelnyi-district airstrike died in hospital on Oct. 18. MOST reported the death citing Kherson City Military Administration head Yaroslav Shanko and separately citing Regional Military Administration head Oleksandr Prokudin; the latter report states that two people were killed in the attack. OHCHR's October 2026 update independently records two men killed in the Oct. 17 Kherson aerial-glide-bomb incident. This establishes the incident's final toll at two, but not whether the second death was present in the Oct. 21 ≈116 subtotal or the carried-forward 148/421 totals. The Oct. 21 105→116 increment is allocated to nine Sloviansk deaths and two Korotych deaths, but the 105 baseline is not a complete incident roster. Keep ledger_effective_at null; do not add the death to the public minimum without direct historical membership evidence.",
+        "source_ids": [
+          "KHERSON-17-MOST-58YO-DIED-2026-10-18",
+          "KHERSON-17-MOST-PROKUDIN-58YO-2026-10-18",
+          "KHERSON-17-OHCHR-OCT2026"
         ],
         "ledger_effective_at": null
       }

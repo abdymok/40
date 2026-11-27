@@ -10,7 +10,7 @@ The OHCHR October report provides a useful independent cross-check of the Octobe
 | Date | Incident | Current project inventory | OHCHR report | Required action |
 |---|---|---|---|---|
 | Oct. 8 | Kramatorsk community: bus strike, Bilenke strike and FPV car strike | 30 bus deaths + 3 in Bilenke + 2 in a central-city car strike = 35 | For the bus strike, 11 verified deaths plus 19 additional reported deaths pending verification (30 total) | Bus toll now matches OHCHR's reported total of 30. City Council and later police reporting separate the three Bilenke deaths and two car deaths from the bus strike. The two car deaths remain an unresolved historical-subtotal membership question. |
-| Oct. 10 | Zaporizhia residential strikes | Initial project report said 20; later Ukrainian official reporting confirmed 23 | 21 civilian deaths | Incident record now preserves 20 → 23. OHCHR's 21 is lower than the later Ukrainian official toll and is retained as a verification discrepancy, not used to lower the count. |
+| Oct. 10 | Zaporizhia residential strikes | Initial project report said 20; later Ukrainian official reporting confirmed 23 | 21 civilian deaths | Incident record preserves 20 → 23. Ukraine's Oct. 14 letter to the UN independently confirms 23 deaths, including four children. OHCHR's 21 is retained as a separate verification discrepancy, not used to lower the count. |
 | Oct. 17 | Sloviansk attacks | Nine deaths in the 03:40 high-rise strike plus three deaths in a separate ≈09:20 private-sector strike | 12 civilian deaths | Two separate incident records preserve 9 + 3 = 12. The OHCHR discrepancy is reconciled. |
 | Oct. 17 | Kherson airstrikes | Two men killed: a 64-year-old ambulance driver and a 58-year-old resident who died in hospital on Oct. 18 | Two men killed | Local reporting and OHCHR now agree on the final toll of two. |
 | Oct. 19 | Nova Vodolaha central-park drone strike | Six deaths confirmed by regional administration and prosecutor reporting | Six civilians killed, including a one-year-old child and the child's mother, who died later in hospital | Incident record added with 3 → 6 revision history. |
@@ -29,9 +29,9 @@ Kyiv City Prosecutor's Office and Kyiv Police reporting confirms three women kil
 
 ## Remaining review items
 
-1. **Zaporizhia, Oct. 10:** local official final toll 23 versus OHCHR's 21. The local 20→23 revision is source-supported; OHCHR's lower count is retained as a verification discrepancy, not used to reduce the incident toll.
+1. **Zaporizhia, Oct. 10:** local official final toll 23 versus OHCHR's 21. The local 20→23 revision is supported by Ukrainian official reporting and the Oct. 14 letter to the UN; OHCHR's lower count is retained as a verification discrepancy, not used to reduce the incident toll.
 2. **Lozova, Oct. 22:** local reporting establishes five market deaths (three women and two men), while OHCHR lists four (two women and two men). This is a one-death difference in the reported totals and sex breakdown, not an unidentified casualty. Preserve both figures without inventing a sixth victim.
-3. **Kramatorsk, Oct. 8:** the two deaths in the evening car strike are a separate incident. Their inclusion in the later 148/421 carry-forward remains unproven; see Stage 116.
+3. **Kramatorsk, Oct. 8:** the three Bilenke deaths may or may not be included in the Oct. 11 snapshot's 33 attributed to the bus strike. The two deaths in the separate evening car strike are also not itemized in that row. Their later 148/421 inclusion remains unproven; see Stages 116–117.
 
 No OHCHR number is imported automatically and no public subtotal is changed in this cross-check.
 

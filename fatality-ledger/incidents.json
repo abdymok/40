@@ -12711,7 +12711,7 @@
         "recorded_at": "2026-10-23",
         "old_value": null,
         "new_value": 3,
-        "reason": "Official regional administration and police reports establish three deaths in the Oct. 22 Zaporizhia missile strike. The 123→132 update later adds four deaths across other regions reported on Oct. 23, a possible temporal fit, but it does not identify the incidents. Historical inclusion remains unverified; keep ledger_effective_at null.",
+        "reason": "Official sources confirm three deaths in the Oct. 22 Zaporizhia strike. The 123→132 +4 is fully allocated to one death each in Chernihiv, Dnipro, Kramatorsk and Sloviansk, so this incident is not part of that increment. The initial two deaths were reported before the Oct. 22 121→123 change and could fit its +2, but several other official casualty reports are competing candidates; the third death was confirmed on Oct. 23. No allocation is proven. Keep ledger_effective_at null.",
         "source_ids": [
           "ZAP-ZAPORIZHIA-22-FEDOROV-2026-10-23",
           "ZAP-ZAPORIZHIA-22-NPU-2026-10-23"

@@ -5,7 +5,7 @@ This directory contains the working incident-level dataset for the provisional n
 ## Source of truth and current inventory
 
 - `incidents.json` is the authoritative incident-level dataset.
-- Current inventory: **186 incident records**, **472 source records**, **465 final documented deaths** and **245 revision entries**.
+- Current inventory: **186 incident records**, **473 source records**, **465 final documented deaths** and **245 revision entries**.
 - Of the revision entries, **205 have a confirmed `ledger_effective_at` date** and **40 remain null**.
 - The current public method-page and chronology subtotal is **427 through Nov. 26, 2026**.
 - The raw incident-ledger sum exceeds the public subtotal by **38**. This is a disclosed reconciliation difference, not an additional batch to add to the public count and not a reason to alter either figure by balancing arithmetic.
@@ -18,7 +18,7 @@ The public 421 subtotal was reconstructed as:
 
 `148 + 19 + 25 + 229 = 421`
 
-The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–116.
+The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–117.
 
 The 40 null `ledger_effective_at` values do **not** represent 40 unresolved incidents or 81 additional deaths:
 

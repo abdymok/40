@@ -32,20 +32,20 @@ The 121→123 commit does not cite or allocate its +2 to any of these reports. T
 
 ## The 123→132 +4 across other regions
 
-The Oct. 25 123→132 update's four deaths across other regions on Oct. 23 can now be mapped to four incident-ledger records, each with `ledger_effective_at: 2026-10-25`: one death in Chernihiv, one in Dnipro, one in Kramatorsk and one in Sloviansk. Their incident IDs are `UA-CHE-CHERNIHIV-2026-10-23-ENTERPRISE-DRONE-STRIKE`, `UA-DNE-DNIPRO-2026-10-23-CIVILIAN-ATTACK`, `UA-DON-KRAMATORSK-2026-10-23-FAB-250-STRIKE` and `UA-DON-SLOVIANSK-2026-10-23-FAB-250-RESIDENTIAL-STRIKE`. The full 123→132 increase is therefore accounted for: four Synelnykove deaths, one Kharkiv death in the Oct. 24 Novobavarsky drone attack, and these four Oct. 23 incidents. The three Zaporizhia city deaths are not part of this +4. Their initial two-death report preceded the 121→123 commit and could fit its +2, but the Kostiantynivka pair, the Donetsk pair and the three Zaporizhia-region deaths are competing contemporaneous reports. The third Zaporizhia city death was confirmed on Oct. 23, after 121→123. No allocation is proven; keep the Zaporizhia revision null.
+The Oct. 25 123→132 update's four deaths across other regions on Oct. 23 can now be mapped to four incident-ledger records, each with `ledger_effective_at: 2026-10-25`: one death in Chernihiv, one in Dnipro, one in Kramatorsk and one in Sloviansk. Their incident IDs are `UA-CHE-CHERNIHIV-2026-10-23-ENTERPRISE-DRONE-STRIKE`, `UA-DNE-DNIPRO-2026-10-23-CIVILIAN-ATTACK`, `UA-DON-KRAMATORSK-2026-10-23-FAB-250-STRIKE` and `UA-DON-SLOVIANSK-2026-10-23-FAB-250-RESIDENTIAL-STRIKE`. The full 123→132 increase is therefore accounted for: four Synelnykove deaths, one Kharkiv death in the Oct. 24 Novobavarsky drone attack, and these four Oct. 23 incidents. The three Zaporizhia city deaths are not part of this +4. Suspilne reported two deaths at 15:30 on Oct. 22 and the final toll of three at 18:22, both before the 121→123 commit that evening. The +2 could represent two of these three deaths, but the Kostiantynivka pair, the Donetsk pair and the three Zaporizhia-region deaths are competing contemporaneous reports. No allocation is proven; keep the Zaporizhia revision null.
 
 ## Adjudication
 
 - Add the five distinct, officially sourced incident records and preserve their final tolls: 1, 1, 1, 2 and 3.
 - Keep all five new revision entries null for historical inclusion.
-- Treat the 121→123 +2 as unallocated among several exact-two candidate groups: the Kostiantynivka pair, the Donetsk pair, or the initial two Zaporizhia city deaths. The three Zaporizhia-region deaths are another contemporaneous candidate set, but the +2 cannot cover all three without a separate adjustment.
+- Treat the 121→123 +2 as unallocated among several candidate groups: the Kostiantynivka pair, the Donetsk pair, or two of the three Zaporizhia city deaths reported before the commit. The three Zaporizhia-region deaths are another contemporaneous candidate set; no group is uniquely assigned.
 - Do not assign the 121→123 +2 to the Kostiantynivka daily aggregate or any Zaporizhia incident without direct evidence.
 - Treat the 123→132 +4 as fully allocated to Chernihiv, Dnipro, Kramatorsk and Sloviansk. The Zaporizhia city incident is not in that increment; only its initial two deaths could possibly fit 121→123, and that remains unproven.
 - Public minimum remains 427 through Nov. 26, 2026. No public subtotal changes.
 
 ## Integrity
 
-Current incident ledger: 191 incidents, 485 source records, 473 final documented deaths and 250 revision entries (204 dated, 46 null). The historical-inclusion queue now has 22 unresolved revision entries, net arithmetic +35. The raw incident-ledger sum exceeds the public minimum by 46; this is a reconciliation difference, not a batch to add or subtract.
+Current incident ledger: 191 incidents, 487 source records, 473 final documented deaths and 250 revision entries (204 dated, 46 null). The historical-inclusion queue now has 22 unresolved revision entries, net arithmetic +35. The raw incident-ledger sum exceeds the public minimum by 46; this is a reconciliation difference, not a batch to add or subtract.
 
 ## Sources
 
@@ -55,4 +55,6 @@ Current incident ledger: 191 incidents, 485 source records, 473 final documented
 - Ivan Fedorov, Zaporizhia Regional Military Administration, Oct. 22: https://t.me/ivan_fedorov_zp/49091
 - Zaporizhia regional police, Oct. 22 report: https://t.me/s/police_zp_news/27348
 - Ivan Fedorov, Zaporizhia Regional Military Administration, Oct. 23: https://t.me/ivan_fedorov_zp/49097
+- Suspilne Zaporizhia, initial two-death report at 15:30 on Oct. 22: https://t.me/s/suspilnezaporizhzhya/63838
+- Suspilne Zaporizhia, final three-death update at 18:22 on Oct. 22: https://t.me/s/suspilnezaporizhzhya/63846
 - Zaporizhia regional police, Oct. 23: https://npu.gov.ua/news/na-zaporizhzhi-cherez-rosiiski-ataky-zahynulo-troie-liudei-shche-odna-otrymala-poranennia-politsiia-dokumentuie-naslidky-voiennykh-zlochyniv

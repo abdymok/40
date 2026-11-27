@@ -40,7 +40,7 @@ No OHCHR number is imported automatically and no public subtotal is changed in t
 
 The following incident records are now represented in the pilot ledger: Nova Vodolaha (6), Lozova market (5), Izium public-health institution (5), Kherson (2), Sloviansk high-rise strike (9) and separate private-sector strike (3), Zaporizhia (23), Kramatorsk bus strike (30), separate Bilenke strike (3), separate central-city car strike (2), and Kramatorsk Oct. 9 FPV strikes on two residential buildings (1). Kyiv's Oct. 13 Desniansky residential-building strike is recorded at three deaths; the separate Holosiivsky incident on Oct. 14 is recorded at two. The remaining OHCHR differences are limited to the Zaporizhia and Lozova toll comparisons described above. No OHCHR number has been imported automatically.
 
-The Oct. 8 Kramatorsk bus record retains the local final toll of 33, with a source note that OHCHR had verified 11 and listed 19 additional reported deaths as under verification. This is a difference in verification status, not proof that the local final toll is false.
+The Oct. 8 Kramatorsk bus record now carries a final toll of 30, supported by the later City Council itemization and an Oct. 26 police response. OHCHR lists 11 verified deaths and 19 additional reported deaths pending verification, also totalling 30. The Oct. 11 ≈80 snapshot had displayed 33 for the bus strike; the three-death difference is separately documented in Bilenke, but whether those three were included in the public 33 remains unresolved.
 
 
 ## Additional October incidents recovered from official Ukrainian reporting

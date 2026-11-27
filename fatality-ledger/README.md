@@ -2,24 +2,48 @@
 
 This directory contains the working incident-level dataset for the provisional non-combatant fatality count.
 
-## Source of truth
+## Source of truth and current inventory
 
-- `incidents.json` is the authoritative incident dataset.
-- `incidents.json` is authoritative for the incident-level documented-death inventory. Its current raw sum is 458 across 182 incident records.
-- The current public method-page subtotal is 427 as of Nov. 26, 2026. It is a historical running subtotal, not yet identical to the raw incident-ledger sum because 31 deaths remain subject to scope, overlap or historical-inclusion reconciliation.
-- `ledger_effective_at` records when a revision entered the historical running subtotal. A null value means the inclusion date is not established or the revision is not counted separately pending overlap/scope review.
-- Do not derive a public dashboard number by summing all `documented_deaths` until the remaining eligibility and overlap differences are resolved.
-- A regional or citywide month-to-date subtotal is not a separate incident and must not be added alongside the incidents it summarizes.
-- Injuries and people merely listed as missing are excluded.
-- Military personnel are excluded. Police, rescuers and other non-combatant emergency personnel are included.
-- Unresolved possible duplicates and unsupported leads are kept in separate audit notes, not silently added to the total.
+- `incidents.json` is the authoritative incident-level dataset.
+- Current inventory: **182 incident records**, **442 source records**, **458 final documented deaths** and **237 revision entries**.
+- Of the revision entries, **204 have a confirmed `ledger_effective_at` date** and **33 remain null**.
+- The current public method-page and chronology subtotal is **427 through Nov. 26, 2026**.
+- The raw incident-ledger sum exceeds the public subtotal by **31**. This is a disclosed reconciliation difference, not an additional batch to add to the public count and not a reason to alter either figure by balancing arithmetic.
+
+The public subtotal is a historical running minimum built from dated project updates. It is not obtained by summing every final incident toll in `incidents.json`. The ledger includes documented final tolls and superseded interim revisions, later incident revisions, corrections and cases whose membership in the historical subtotal is not established.
+
+### Historical reconciliation status
+
+The public 421 subtotal was reconstructed as:
+
+`148 + 19 + 25 + 229 = 421`
+
+The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–106.
+
+The 33 null `ledger_effective_at` values do **not** represent 33 unresolved incidents or 90 additional deaths:
+
+- **14 entries** remain unresolved historical-inclusion questions, with a net arithmetic change of **+19**. These are pre-Oct. 29 cases for which the surviving snapshots and change records do not establish whether a later carried-forward aggregate included the deaths.
+- The other **19 entries** have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions from that subtotal. In particular, Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
+- Null is retained where no public-subtotal inclusion date is established. The revision's reason field and the relevant checkpoint state whether the case is unresolved, superseded, corrected or excluded.
+
+Do not add the net arithmetic of null revisions to the public subtotal. Do not infer inclusion from incident date, source-publication date, chronology appearance or a later aggregate whose incident membership is incomplete. Do not impose a balancing adjustment.
+
+## Scope rules
+
+- The ledger records the documented final death toll for each incident, not injuries or people merely listed as missing.
+- Military personnel are excluded.
+- Police, rescuers and other non-combatant emergency personnel are included.
+- A later death in hospital is a revision to the original incident, not a new incident.
+- A corrected preliminary estimate is a revision, not an additional death batch.
+- Regional or citywide month-to-date subtotals are not separate incidents and must not be added alongside the incidents they summarize.
+- Potential overlaps and unsupported leads remain documented for review and are not silently added.
 
 ## Incident record fields
 
 | Field | Meaning |
 |---|---|
 | `incident_id` | Permanent, unique incident identifier. Never recycle an ID. |
-| `incident_date` | Date the attack/incident occurred, not the date the report was published. |
+| `incident_date` | Date the attack or incident occurred, not the date the report was published. |
 | `location` | Settlement, district, region and country. Use null where the source does not establish a more precise location. |
 | `incident_description` | Concise description distinguishing the incident from nearby or same-day attacks. |
 | `documented_deaths` | Current final number of deaths supported by the record's sources. |
@@ -43,18 +67,15 @@ This is a source/evidence summary, not a guarantee that every claim has been ind
 ## Revision history
 
 Each revision must preserve:
+
 - `old_value`
 - `new_value`
 - `recorded_at`: the report/update time associated with the revised information, where known
-- `ledger_effective_at`: the date the project incorporated the change into its running total; null until reconstructed from the historical change log
+- `ledger_effective_at`: the date the project incorporated the change into its historical running subtotal; null when that inclusion date is not established or the revision was not counted separately
 - `reason`
 - `source_ids`
 
-Never overwrite a prior count silently. A later death in hospital is a new increment to the same incident, not a new incident. A corrected preliminary estimate is a revision, not an additional death.
-
-## Historical snapshots
-
-Historical totals such as 123, 148, 192 and 418 are retained as legacy snapshots in audit notes. Historical totals such as 123, 148, 192, 418 and the superseded 421 snapshot are retained in audit notes. The current public method-page subtotal is 427 through Nov. 26, 2026. Historical membership and ledger-effective dates are being reconstructed separately. The raw incident-ledger sum and the public running subtotal must be displayed as separate measures until their difference is fully reconciled. Historical membership and ledger-effective dates are being reconstructed separately. The raw incident-ledger sum and the public running subtotal must be displayed as separate measures until their difference is fully reconciled.
+Never overwrite a prior count silently. Preserve the distinction between the incident's final documented toll and the date, if known, on which a revision entered the public subtotal.
 
 ## Validation
 
@@ -66,4 +87,4 @@ Run:
 python scripts/validate_fatality_ledger.py fatality-ledger/incidents.json
 ```
 
-The validator checks unique incident and source IDs, required fields, location structure, evidence and scope classifications, source types and support labels, URL and date formats, revision continuity, ledger-effective dates, final count consistency and source references. It prints the calculated total.
+The validator checks unique incident and source IDs, required fields, location structure, evidence and scope classifications, source types and support labels, URL and date formats, revision continuity, effective-date formats, final count consistency and source references. It prints the calculated incident-level total.

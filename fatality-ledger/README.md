@@ -5,7 +5,7 @@ This directory contains the working incident-level dataset for the provisional n
 ## Source of truth and current inventory
 
 - `incidents.json` is the authoritative incident-level dataset.
-- Current inventory: **183 incident records**, **453 source records**, **464 final documented deaths** and **241 revision entries**.
+- Current inventory: **183 incident records**, **457 source records**, **464 final documented deaths** and **241 revision entries**.
 - Of the revision entries, **204 have a confirmed `ledger_effective_at` date** and **37 remain null**.
 - The current public method-page and chronology subtotal is **427 through Nov. 26, 2026**.
 - The raw incident-ledger sum exceeds the public subtotal by **37**. This is a disclosed reconciliation difference, not an additional batch to add to the public count and not a reason to alter either figure by balancing arithmetic.
@@ -24,7 +24,7 @@ The 37 null `ledger_effective_at` values do **not** represent 37 unresolved inci
 
 - **14 entries** remain unresolved historical-inclusion questions, with a net arithmetic change of **+21**. Three later Lozova market revisions (the third, fourth and fifth deaths) and the separate Oct. 24 warehouse death are now classified as established exclusions from the 148 baseline and the 421 carry-forward. Their null effective dates are retained to distinguish exclusion from a dated addition. These are pre-Oct. 29 cases for which the surviving snapshots and change records do not establish whether a later carried-forward aggregate included the deaths.
 - The other **23 entries** have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions from that subtotal. In particular, Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
-- Null is retained where no public-subtotal inclusion date is established. The revision's reason field and the relevant checkpoint state whether the case is unresolved, superseded, corrected or excluded. Stages 109–112 document the later Lozova exclusions, the two-death Kherson correction and the separate Sloviansk private-sector incident. The current unresolved historical-inclusion queue contains 14 revision entries.
+- Null is retained where no public-subtotal inclusion date is established. The revision's reason field and the relevant checkpoint state whether the case is unresolved, superseded, corrected or excluded. Stages 109–113 document the later Lozova exclusions, the two-death Kherson correction and the separate Sloviansk private-sector incident. The current unresolved historical-inclusion queue contains 14 revision entries.
 
 Do not add the net arithmetic of null revisions to the public subtotal. Do not infer inclusion from incident date, source-publication date, chronology appearance or a later aggregate whose incident membership is incomplete. Do not impose a balancing adjustment.
 

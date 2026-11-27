@@ -19,7 +19,7 @@ The UN letter has been added to the Zaporizhia incident's source list and the 20
 
 ## Integrity
 
-The ledger contains 186 incidents, 473 source records, 465 final documented deaths and 245 revision entries (205 dated, 40 null). Null-revision arithmetic is +81. Sixteen historical-inclusion questions remain open, net +24.
+The ledger contains 186 incidents, 473 source records, 465 final documented deaths and 245 revision entries (204 dated, 41 null). Null-revision arithmetic is +84. Seventeen historical-inclusion questions remain open, net +27.
 
 
 ## Kramatorsk historical-inclusion qualification

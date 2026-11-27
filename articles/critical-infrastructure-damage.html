@@ -1794,14 +1794,16 @@ document.querySelectorAll(".chronology-day").forEach(function(day){var summary=d
     });
     var headings=Array.from(list.querySelectorAll('.day-heading'));
     headings.forEach(function(heading){
-      var node=heading.nextElementSibling,hasEntry=false;
+      var node=heading.nextElementSibling,hasEntry=false,hasArchive=false;
       while(node&&!node.classList.contains('day-heading')){
-        if(node.classList.contains('chronology-entry')&&!node.hidden){hasEntry=true;break;}
+        if(node.classList.contains('chronology-entry')&&!node.hidden)hasEntry=true;
+        if(node.classList.contains('day-summary')||node.classList.contains('archive-pointer')||(node.matches&&node.matches('details.archive-pointers')))hasArchive=true;
         node=node.nextElementSibling;
       }
-      heading.hidden=!hasEntry;
+      var keepHeading=hasEntry||hasArchive;
+      heading.hidden=!keepHeading;
       var link=document.querySelector('.day-jump a[href="#'+heading.id+'"]');
-      if(link)link.hidden=!hasEntry;
+      if(link)link.hidden=!keepHeading;
     });
     controls.forEach(function(button){button.setAttribute('aria-pressed',String(button.getAttribute('data-scope-filter')===scope));});
   }

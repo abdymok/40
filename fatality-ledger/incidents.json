@@ -506,7 +506,7 @@
       {
         "source_id": "UKRAINE-UN-LETTER-OCT9-IFR-2026-10-15",
         "publisher": "Permanent Representative of Ukraine to the United Nations, letter A/81/436–S/2026/819",
-        "source_type": "official_report_to_UN",
+        "source_type": "official_statement",
         "published_at": "2026-10-15",
         "url": "https://digitallibrary.un.org/record/4131019/files/A_81_436--S_2026_819-EN.pdf",
         "supports": [
@@ -580,7 +580,7 @@
         "url": "https://kyiv.npu.gov.ua/news/troie-liudei-zahynuly-unaslidok-rosiiskoho-udaru-po-budivli-mahazynu-u-solomianskomu-raioni",
         "supports": [
           "death_count",
-          "incident_separation",
+          "corroboration",
           "corroboration"
         ],
         "notes": "Police reported three people killed in the Solomiansky shop strike and, in the same update, four people killed in the day's attack on Kyiv overall. This establishes that the earlier citywide one-death report is not one of the three shop victims, although the morning victim's precise incident/location remains unidentified."
@@ -723,7 +723,7 @@
       {
         "source_id": "UKRAINE-UN-LETTER-OCT9-SYNELNYKOVE-2026-10-15",
         "publisher": "Permanent Representative of Ukraine to the United Nations, letter A/81/436–S/2026/819",
-        "source_type": "official_report_to_UN",
+        "source_type": "official_statement",
         "published_at": "2026-10-15",
         "url": "https://digitallibrary.un.org/record/4131019/files/A_81_436--S_2026_819-EN.pdf",
         "supports": [
@@ -791,7 +791,7 @@
       {
         "source_id": "UKRAINE-UN-LETTER-OCT9-ZAPORIZHIA-2026-10-15",
         "publisher": "Permanent Representative of Ukraine to the United Nations, letter A/81/436–S/2026/819",
-        "source_type": "official_report_to_UN",
+        "source_type": "official_statement",
         "published_at": "2026-10-15",
         "url": "https://digitallibrary.un.org/record/4131019/files/A_81_436--S_2026_819-EN.pdf",
         "supports": [
@@ -12216,7 +12216,7 @@
       {
         "source_id": "KRAMATORSK-09-UN-LETTER-UKRAINE-2026-10-15",
         "publisher": "Permanent Representative of Ukraine to the United Nations, letter A/81/436–S/2026/819",
-        "source_type": "official_report_to_UN",
+        "source_type": "official_statement",
         "published_at": "2026-10-15",
         "url": "https://digitallibrary.un.org/record/4131019/files/A_81_436--S_2026_819-EN.pdf",
         "supports": [
@@ -12229,7 +12229,7 @@
         "source_id": "KRAMATORSK-09-OHCHR-OCT2026",
         "publisher": "UN Human Rights Monitoring Mission in Ukraine",
         "source_type": "international_monitoring_report",
-        "published_at": "2026-11",
+        "published_at": null,
         "url": "https://ukraine.un.org/sites/default/files/2026-11/Ukraine%20-%20protection%20of%20civilians%20in%20armed%20conflict%20%28October%29_ENG_0.pdf",
         "supports": [
           "death_count",

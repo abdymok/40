@@ -12702,6 +12702,18 @@
           "incident_date"
         ],
         "notes": "The police report identifies three people killed in the Oct. 22 evening missile strike near private homes in Zaporizhia."
+      },
+      {
+        "source_id": "ZAP-ZAPORIZHIA-22-SUSPILNE-INITIAL-2-2026-10-22",
+        "publisher": "Suspilne Zaporizhia, citing acting head of Zaporizhia Regional Military Administration Mykhailo Semikin",
+        "source_type": "news_report",
+        "published_at": "2026-10-22T15:30:00+03:00",
+        "url": "https://t.me/s/suspilnezaporizhzhya?before=63862",
+        "supports": [
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Initial report said two people were killed in the Oct. 22 Zaporizhia strike. Subsequent official police reporting confirmed a final toll of three."
       }
     ],
     "last_verified_date": "2026-11-27",
@@ -12714,7 +12726,8 @@
         "reason": "Official sources confirm three deaths in the Oct. 22 Zaporizhia strike. The 123→132 +4 is fully allocated to one death each in Chernihiv, Dnipro, Kramatorsk and Sloviansk, so this incident is not part of that increment. The initial two deaths were reported before the Oct. 22 121→123 change and could fit its +2, but several other official casualty reports are competing candidates; the third death was confirmed on Oct. 23. No allocation is proven. Keep ledger_effective_at null.",
         "source_ids": [
           "ZAP-ZAPORIZHIA-22-FEDOROV-2026-10-23",
-          "ZAP-ZAPORIZHIA-22-NPU-2026-10-23"
+          "ZAP-ZAPORIZHIA-22-NPU-2026-10-23",
+          "ZAP-ZAPORIZHIA-22-SUSPILNE-INITIAL-2-2026-10-22"
         ],
         "ledger_effective_at": null
       }

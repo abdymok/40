@@ -10,7 +10,7 @@
 
 > **Stage 108 amendment — Nov. 27:** The two Lozova revisions previously left open in Stages 66 and 103 are now established exclusions from the Oct. 28 148 baseline and its 421 carry-forward. The 123→132 Oct. 25 update is fully allocated to Synelnykove (4), Kharkiv Novobavarsky (1), Dnipro (1), Kramatorsk (1), Chernihiv (1) and Sloviansk (1). The 132→137 Oct. 26 update is allocated to Marhanets/Nikopol district (1), the first two deaths at Lozova central market (2), Konotop district (1) and Yarova (1). The market's third death occurred on Oct. 23 and is not in that two-death market allocation or any later mapped addition. The separate Oct. 24 warehouse death is after the 123 baseline and is not in the 123→132 allocation or any later mapped addition. Both revisions retain null `ledger_effective_at` because neither was a public-subtotal addition; their reason fields now state the exclusion. The unresolved historical-inclusion queue falls from 14 entries (+19) to 12 (+17). The Oct. 22 OHCHR report's four deaths for the market-area incident (two women, two men) versus the three women identified in local and regional reporting remains a separate, unresolved incident-level discrepancy. Do not add an unidentified fourth death or merge the warehouse victim into the market incident. See `STAGE-108-CHECKPOINT.md`.
 
-**Working status:** Stage 109 Lozova update; current ledger updated Nov. 27, 2026  
+**Working status:** Stage 112 Sloviansk reconciliation; current ledger updated Nov. 27, 2026  
 **Current ledger sum:** 461  
 **Published method-page minimum:** 427  
 **Raw difference:** +34 in the pilot incident dataset

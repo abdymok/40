@@ -102,3 +102,13 @@ The ledger now has separate records for the nine-death high-rise strike and the 
 The October OHCHR report's one-death entry for Kramatorsk on Oct. 9 has now been matched to local reporting. Novosti Donbas published a report at 13:07, citing the Donetsk regional State Emergency Service: Russian FPV drones struck two nine-storey residential buildings, fires broke out, rescuers saved a woman born in 1972 and found the body of a man born in 1941. News Donbas published a second DSNS-attributed account at 14:51. Ukraine's Oct. 14 letter to the UN also describes the same two-building incident and one man killed.
 
 A separate one-death incident record is now in the ledger. This closes the local-source identification gap, not the historical-subtotal question: the death was reported before the Oct. 11 ≈80 snapshot, but is not itemized there or in the mapped 80→92 changes. Its inclusion in the later 148/421 carry-forward is not established. The revision remains null, and the public minimum is unchanged.
+
+
+## Kramatorsk, Oct. 8 — three incidents, 35 deaths
+
+Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 incident-by-incident recap distinguish three separate fatal attacks on Oct. 8:
+- **10:00, central Kramatorsk bus strike:** 30 killed and 20 injured. The Oct. 26 response from Kramatorsk District Police, reported by Suspilne Donbas, confirms 30 killed and 20 injured in the bus-attack investigation. OHCHR records 11 verified deaths and 19 additional reported deaths pending verification, also totalling 30.
+- **10:10, Bilenke:** three people killed in a separate strike. The City Council and Suspilne Donbas identify the three victims in Bilenke.
+- **18:40, central Kramatorsk:** an FPV drone struck a civilian car, killing two men.
+
+The City Council's Oct. 9 report gives a community-wide toll of 35: 30 + 3 + 2. An earlier regional report described 33 deaths in the bus attack; the later police response and local itemization support 30 for the bus strike, with the additional three deaths recorded separately in Bilenke. The Oct. 11 ≈80 selected subtotal's Kramatorsk row of 33 is now decomposed as the 30 bus victims plus three Bilenke victims. The two car deaths remain a separate possible historical-inclusion question; they are not added to the 33 row by arithmetic.

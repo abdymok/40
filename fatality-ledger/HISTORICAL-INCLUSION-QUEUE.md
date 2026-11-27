@@ -29,7 +29,7 @@ The public provisional minimum remains **427 through Nov. 26**. No entry below i
 | 19 | Kramatorsk, overnight into Oct. 22 — private-sector death | +1 | The National Police reports one person killed overnight in the private sector. The 121→123 +2 is not uniquely attributable, given other contemporaneous official casualty reports. See [Stage 129](STAGE-129-CHECKPOINT.md). See [Stage 129](STAGE-129-CHECKPOINT.md). |
 | 20 | Kushuhum, Oct. 21 — guided-bomb death | +1 | Regional authorities and police identify a 68-year-old man killed. The Oct. 22 121→123 +2 does not identify this incident and cannot be allocated to it by arithmetic. See [Stage 129](STAGE-129-CHECKPOINT.md). |
 | 21 | Road between Komyshuvakha and Shchaslyve, Oct. 21 — FPV strike on civilian car | +2 | Regional authorities and police identify a couple killed. The Oct. 22 121→123 +2 does not identify this incident; no inclusion date is established. See [Stage 129](STAGE-129-CHECKPOINT.md). |
-| 22 | Zaporizhia, Oct. 22 — missile strike near private homes | +3 | Regional police confirmed three deaths on Oct. 23. The 123→132 update adds four deaths across other regions reported on Oct. 23, a possible fit but not an incident-level allocation. See [Stage 129](STAGE-129-CHECKPOINT.md). |
+| 22 | Zaporizhia, Oct. 22 — missile strike near private homes | +3 | Regional police confirmed three deaths on Oct. 23. Together with the already-counted Kramatorsk FAB-250 death reported that day, they are a plausible 1+3 match for the 123→132 four-death bucket, but the update does not identify the incidents. See [Stage 129](STAGE-129-CHECKPOINT.md). |
 
 ## Separate subtotal-integrity warning
 

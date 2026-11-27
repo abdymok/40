@@ -2339,10 +2339,10 @@
       "region": "Kharkiv region",
       "country": "Ukraine"
     },
-    "incident_description": "Russian strike hit the crowded central market in Lozova at lunchtime, killing two women at the scene. A third woman later died in hospital on Oct. 23, raising the final locally reported toll to three. A later OHCHR October report listed four deaths; no fourth victim has been identified in the Ukrainian regional or local reporting reviewed.",
-    "documented_deaths": 3,
+    "incident_description": "Russian strike hit the crowded central market in Lozova at lunchtime. Two women were killed at the scene. A third woman died in hospital on Oct. 23, a man died from his injuries by Oct. 24, and another injured man died by Oct. 25. The locally reported final toll is five (three women and two men). This is separate from the Oct. 24 warehouse strike, which killed another man.",
+    "documented_deaths": 5,
     "scope_classification": "civilian",
-    "evidence_classification": "media_reported",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "LOZOVA-UKRINFORM-2026-10-22",
@@ -2391,10 +2391,52 @@
           "death_count",
           "corroboration"
         ],
-        "notes": "Case file records three women killed, two at the scene and one in hospital."
+        "notes": "The earlier case-file v1 recorded three women killed. Subsequent local reporting on Oct. 24 and Oct. 25 raised the market toll to five, including two men."
+      },
+      {
+        "source_id": "LOZOVA-MARKET-SUSPILNE-FOURTH-DEATH-2026-10-24",
+        "publisher": "Suspilne Kharkiv, citing Lozova Mayor Serhii Zelensky",
+        "source_type": "news_report",
+        "published_at": "2026-10-24",
+        "url": "https://suspilne.media/kharkiv/1436119-kilkist-zagiblih-cerez-udar-po-rynku-v-lozovij-zrosla-pomer-se-odin-colovik/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision",
+          "victim_status"
+        ],
+        "notes": "Reports that a man injured in the Oct. 22 market strike died, raising the market toll to four. Cites the mayor's Oct. 24 statement."
+      },
+      {
+        "source_id": "LOZOVA-MARKET-MAYOR-TELEGRAM-12783",
+        "publisher": "Lozova Mayor Serhii Zelensky, official Telegram channel",
+        "source_type": "official_social_post",
+        "published_at": null,
+        "url": "https://t.me/Zelenskiy_Sergiy/12783",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision",
+          "victim_status"
+        ],
+        "notes": "Mayor's post distinguishes the separate Oct. 24 warehouse death from another man who had been injured at the central market. It says the Oct. 22 market attack had taken five lives."
+      },
+      {
+        "source_id": "LOZOVA-MARKET-UKRINFORM-FIFTH-DEATH-2026-10-25",
+        "publisher": "Ukrinform, citing Lozova Mayor Serhii Zelensky",
+        "source_type": "news_report",
+        "published_at": "2026-10-25T07:47:00+03:00",
+        "url": "https://www.ukrinform.ua/rubric-regions/4177908-u-likarni-pomer-colovik-akij-zaznav-poranen-unaslidok-udaru-po-rynku-v-lozovij.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision",
+          "victim_status"
+        ],
+        "notes": "Reports another man injured in the Oct. 22 central-market strike died in hospital; the mayor says the market attack had taken five lives. The article separately reports the Oct. 24 warehouse death."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-001",
@@ -2413,10 +2455,34 @@
         "recorded_at": "2026-10-23T09:58:00+02:00",
         "old_value": 2,
         "new_value": 3,
-        "reason": "Stage 108 historical reconciliation: the Oct. 22 123 baseline predates the third death, which was reported on Oct. 23. The two initial deaths at the scene were added later in the 132→137 update. The Oct.  26 132→137 update accounts for the two women killed at the scene; it does not include the third woman, who died in hospital on Oct. 23. The remaining dated additions from 137→148 are itemized and contain no later Lozova market death. The third death is therefore an established exclusion from the Oct. 28 148 baseline and its later 421 carry-forward. Keep ledger_effective_at null; do not add this death to the public subtotal. The OHCHR October 2026 update later lists four deaths for the Oct. 22 Lozova incident (two women and two men), but no fourth victim has been identified in the reviewed Ukrainian local or regional reports. Preserve that separate unresolved source discrepancy; do not infer an additional victim or merge the Oct. 24 warehouse death into the market incident.",
+        "reason": "The Oct. 22 123 baseline predates the third death, reported on Oct. 23. The two initial deaths at the scene were added later in the 132→137 update. The remaining dated additions from 137→148 are itemized and contain no later Lozova market death. The third death is therefore an established exclusion from the Oct. 28 148 baseline and its later 421 carry-forward. Local reporting subsequently confirmed two further men died from injuries sustained in the same market strike, taking the final local toll to five; their revisions are also excluded from the 148 baseline and 421 carry-forward. See STAGE-109-CHECKPOINT.md.",
         "source_ids": [
           "LOZOVA-IFAX-2026-10-23",
           "LOZOVA-EVIDENCEHUB-2026-10-22"
+        ],
+        "ledger_effective_at": null
+      },
+      {
+        "revision_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-003",
+        "recorded_at": "2026-10-24",
+        "old_value": 3,
+        "new_value": 4,
+        "reason": "A man injured in the Oct. 22 market strike died from his injuries. Suspilne Kharkiv reported the fourth death on Oct. 24, citing the mayor. The 123 baseline predates this revision; the 132→137 addition accounts for only the two initial market deaths, and no later mapped 137→148 update includes this death. Established exclusion from the 148 baseline and 421 carry-forward. Keep ledger_effective_at null. See STAGE-109-CHECKPOINT.md.",
+        "source_ids": [
+          "LOZOVA-MARKET-SUSPILNE-FOURTH-DEATH-2026-10-24",
+          "LOZOVA-MARKET-MAYOR-TELEGRAM-12783"
+        ],
+        "ledger_effective_at": null
+      },
+      {
+        "revision_id": "UA-KHA-LOZOVA-2026-10-22-CENTRAL-MARKET-REV-004",
+        "recorded_at": "2026-10-25T07:47:00+03:00",
+        "old_value": 4,
+        "new_value": 5,
+        "reason": "A further man injured in the Oct. 22 market strike died in hospital. The mayor's official Telegram post and Ukrinform reported the market toll at five by Oct. 25. The 123 baseline predates this revision; the 132→137 addition accounts for only the two initial market deaths, and no later mapped 137→148 update includes this death. Established exclusion from the 148 baseline and 421 carry-forward. Keep ledger_effective_at null. The separate Oct. 24 warehouse death is a different incident. See STAGE-109-CHECKPOINT.md.",
+        "source_ids": [
+          "LOZOVA-MARKET-MAYOR-TELEGRAM-12783",
+          "LOZOVA-MARKET-UKRINFORM-FIFTH-DEATH-2026-10-25"
         ],
         "ledger_effective_at": null
       }

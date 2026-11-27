@@ -12322,6 +12322,19 @@
           "corroboration"
         ],
         "notes": "Separately reports that a morning strike on the private sector in Bilenke killed three civilians, citing the city military administration head."
+      },
+      {
+        "source_id": "KRAMATORSK-BILENKE-RBC-2026-10-08",
+        "publisher": "RBC-Ukraine, citing Donetsk Regional Military Administration head Vadym Filashkin",
+        "source_type": "news_report",
+        "published_at": "2026-10-08T13:14:00+03:00",
+        "url": "https://www.rbc.ua/rus/news/rf-vbila-30-lyudey-udarom-avtobusu-kramatorsku-1791453837.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "The 13:14 update reports three people killed in a separate Russian strike on Bilenke, citing the Donetsk regional administration head. This is the earliest source timestamp reflected in the incident's initial revision."
       }
     ],
     "last_verified_date": "2026-11-27",
@@ -12335,7 +12348,8 @@
         "source_ids": [
           "KRAMATORSK-BILENKE-COUNCIL-MEMORIAL-2026-10-08",
           "KRAMATORSK-BILENKE-COUNCIL-RECAP-2026-10-09",
-          "KRAMATORSK-BILENKE-SUSPILNE-2026-10-09"
+          "KRAMATORSK-BILENKE-SUSPILNE-2026-10-09",
+          "KRAMATORSK-BILENKE-RBC-2026-10-08"
         ],
         "ledger_effective_at": null
       }

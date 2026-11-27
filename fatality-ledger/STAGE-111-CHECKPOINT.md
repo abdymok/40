@@ -12,7 +12,7 @@ The incident record now carries the final toll of two, adds the two local report
 
 ## Historical subtotal membership
 
-The second death occurred before the Oct. 21 ≈116 selected subtotal. The 105→116 increase is allocated to nine Sloviansk deaths and two Korotych deaths, but that does not establish whether the 58-year-old Kherson resident was already present in the 105 baseline. The 105 snapshot and the later 148 baseline are carried-forward aggregates, not complete incident rosters. No later itemized increment specifically adds or excludes this death.
+Stage 127 reconstructs the 98→105 sequence and accounts for its full net increase through other named deaths; neither Kherson death appears in those additions or in the ≈105 method paragraph. The 105→116 increase is allocated to nine Sloviansk high-rise deaths and two Korotych deaths. The 116→121 changes add Lymanivka, Kyiv and the later corroborated Chabany inclusion; none names Kherson. The two Kherson deaths are therefore not shown as included by the ≈121 subtotal. The only remaining identified transition before the ≈148 baseline that could have included them is the unallocated 121→123 nationwide-scope change. No evidence assigns either death to that +2. Their inclusion in 148/421/427 remains unresolved. See Stage 128.
 
 REV-002 therefore remains `ledger_effective_at: null`. This is an unresolved historical-inclusion question, not a confirmed omission. The public minimum remains 427 through Nov. 26, 2026.
 

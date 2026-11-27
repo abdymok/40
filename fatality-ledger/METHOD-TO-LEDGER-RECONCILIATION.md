@@ -682,14 +682,14 @@ The Nov. 2 174 baseline itemizes four deaths in the Oct. 29 Izium airstrike and 
 
 Checkpoint: `fatality-ledger/STAGE-90-CHECKPOINT.md`
 
-The Oct. 12 Kharkiv residential-building strike killed four people; the fourth body was recovered on Oct. 13. The archived 80→82 increments are explicitly attributed to the separate Kyiv ballistic strike, and 82→85 adds three deaths in the Oct. 13–14 Kyiv overnight attack. The 148→173 breakdown does not itemize this Kharkiv incident, but the 148 baseline is a carried-forward aggregate, not a complete incident list. Its inclusion in 148 or a later subtotal remains unproven. REV-001 remains null; this is a potential four-death inclusion gap, not a confirmed omission. No incident count, effective date or public total changed.
+The Oct. 12 Kharkiv residential-building strike killed four people; the fourth body was recovered on Oct. 13. The archived 80→82 increments are explicitly attributed to the separate Kyiv ballistic strike, and 82→85 was described as adding three deaths in the Oct. 13–14 Kyiv overnight attack, but Stage 115 shows that the three-death report included the first two Desniansky victims already counted in 80→81→82. The +3 transition is under review as a possible duplicate increment and is not reliable evidence of the subtotal's treatment of this Kharkiv incident. The 148→173 breakdown does not itemize this Kharkiv incident, but the 148 baseline is a carried-forward aggregate, not a complete incident list. Its inclusion in 148 or a later subtotal remains unproven. REV-001 remains null; this is a potential four-death inclusion gap, not a confirmed omission. No incident count, effective date or public total changed.
 
 
 ## Stage 91 — Oct. 12 Darnytsky two-death inclusion question
 
 Checkpoint: `fatality-ledger/STAGE-91-CHECKPOINT.md`
 
-The Oct. 12 Darnytsky residential-building strike killed two people. Neither death is named in the 80→92 dashboard increments: those changes concern the Oct. 13 ballistic strike, the separate Oct. 13–14 Kyiv overnight attack and Lutsk. The 148→173 breakdown also does not itemize this incident, but the 148 baseline is not a complete incident list. Both revisions remain null; this is a potential two-death inclusion gap, not a confirmed omission. No incident count, effective date or public total changed.
+The Oct. 12 Darnytsky residential-building strike killed two people. Neither death is named in the 80→92 dashboard increments: those changes concern the Oct. 13 ballistic strike, the Oct. 13–14 Kyiv casualty updates and Lutsk. Stage 115 has since found that the 82→85 update may have repeated the first two Desniansky deaths already counted in 80→81→82; do not treat it as a clean +3 increment. The 148→173 breakdown also does not itemize this incident, but the 148 baseline is not a complete incident list. Both revisions remain null; this is a potential two-death inclusion gap, not a confirmed omission. No incident count, effective date or public total changed.
 
 
 ## Stage 92 — Oct. 10 Zaporizhia 20→23 revision

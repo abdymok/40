@@ -906,7 +906,7 @@
     "incident_description": "Russian strike on a four-storey residential building in Kharkiv's Kholodnohirsky district on the evening of Oct. 12 killed four people. The fourth body was recovered after rescue operations continued overnight.",
     "documented_deaths": 4,
     "scope_classification": "civilian",
-    "evidence_classification": "media_reported",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KHARKIV-12-IFAX-2026-10-13",
@@ -932,19 +932,33 @@
           "corroboration"
         ],
         "notes": "Reports four people killed in the residential-building strike."
+      },
+      {
+        "source_id": "KHARKIV-12-KHARKIV-ODA-2026-10-13",
+        "publisher": "Kharkiv Regional Military Administration head Oleh Synehubov",
+        "source_type": "official_statement",
+        "published_at": "2026-10-13T12:53:00+03:00",
+        "url": "https://kharkivoda.gov.ua/news/137561",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official regional-administration report says four people were killed and their bodies recovered from the rubble after the Oct. 12 residential-building strike."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-KHA-KHARKIV-2026-10-12-KHOLODNOGIRSKY-RESIDENTIAL-STRIKE-REV-001",
         "recorded_at": "2026-10-13T08:30:00+03:00",
         "old_value": null,
         "new_value": 4,
-        "reason": "Stage 103 final legacy-baseline review: four deaths were confirmed on Oct. 13. The 80→82 increment is explicitly the separate Kyiv ballistic strike, and 82→85 is the Oct. 13–14 Kyiv overnight attack; neither includes Kharkiv. The 148→173 breakdown also does not itemize this incident. Because 148 is a carried-forward aggregate rather than a complete membership list, absence from those named increments does not prove exclusion from 148 or the later 421. Keep ledger_effective_at null; classify as a potential four-death inclusion gap, not a confirmed omission.",
+        "reason": "Stage 110 source recheck: the Kharkiv Regional Military Administration's Oct. 13 statement confirms four people killed and recovered from the rubble. The 80→82 increment is explicitly the separate Kyiv ballistic strike, and 82→85 is the Oct. 13–14 Kyiv overnight attack; neither includes Kharkiv. The 148→173 breakdown also does not itemize this incident. Because 148 is a carried-forward aggregate rather than a complete membership list, absence from those named increments does not prove exclusion from 148 or the later 421. Keep ledger_effective_at null; classify as a potential four-death inclusion gap, not a confirmed omission.",
         "source_ids": [
           "KHARKIV-12-IFAX-2026-10-13",
-          "KHARKIV-12-SUSPILNE-2026-10-13"
+          "KHARKIV-12-SUSPILNE-2026-10-13",
+          "KHARKIV-12-KHARKIV-ODA-2026-10-13"
         ],
         "ledger_effective_at": null
       }
@@ -962,7 +976,7 @@
     "incident_description": "Russian drone struck a 25-storey residential building in Kyiv's Darnytsky district on the evening of Oct. 12, killing two people, a 59-year-old woman and a person in a car near the building.",
     "documented_deaths": 2,
     "scope_classification": "civilian",
-    "evidence_classification": "media_reported",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "KYIV-DARNYTSKY-12-UP-2026-10-12",
@@ -988,16 +1002,29 @@
           "corroboration"
         ],
         "notes": "Reports two people killed in the Oct. 12 drone attacks, including the Darnytsky residential strike."
+      },
+      {
+        "source_id": "DARNYTSKY-12-UKRINFORM-2026-10-12",
+        "publisher": "Ukrinform, citing Kyiv City Prosecutor's Office",
+        "source_type": "news_report",
+        "published_at": "2026-10-12T23:17:00+03:00",
+        "url": "https://www.ukrinform.net/amp/rubric-ato/4173748-death-toll-rises-to-two-after-strike-on-25-storey-building-in-kyivs-darnytskyi-district.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Reports the prosecutor's confirmation of two deaths, including the body found in a car near the building; distinguishes the second confirmation from the earlier one-death report."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-KYI-KYIV-DARNYTSKY-2026-10-12-RESIDENTIAL-DRONE-REV-001",
         "recorded_at": "2026-10-12T20:27:00+03:00",
         "old_value": null,
         "new_value": 1,
-        "reason": "Stage 103 final legacy-baseline review: this initial one-death report and the later second-death confirmation form one two-death incident. Neither revision is named in the 80→92 increments or the 148→173 breakdown. Those are partial change lists and the 148 figure is a carried-forward aggregate, not a complete incident roster. Inclusion of either death in 148 or the later 421 cannot be confirmed or ruled out. Keep ledger_effective_at null for both revisions; do not count the two revision steps as separate incidents.",
+        "reason": "Stage 110 source recheck: the initial one-death report and the later prosecutor-confirmed second death form one two-death incident. Ukrinform's Oct. 12 report, citing the Kyiv City Prosecutor's Office, confirms both victims. Neither revision is named in the 80→92 increments or the 148→173 breakdown. Those are partial change lists and the 148 figure is a carried-forward aggregate, not a complete incident roster. Inclusion of either death in 148 or the later 421 cannot be confirmed or ruled out. Keep ledger_effective_at null for both revisions; do not count the two revision steps as separate incidents.",
         "source_ids": [
           "KYIV-DARNYTSKY-12-UP-2026-10-12"
         ],
@@ -1008,9 +1035,10 @@
         "recorded_at": "2026-10-12T21:19:00+03:00",
         "old_value": 1,
         "new_value": 2,
-        "reason": "Stage 103 final legacy-baseline review: this second-death confirmation completes the same two-death Darnytsky incident. Neither revision is named in the 80→92 increments or the 148→173 breakdown. Those are partial change lists and the 148 figure is a carried-forward aggregate, not a complete incident roster. Inclusion of either death in 148 or the later 421 cannot be confirmed or ruled out. Keep ledger_effective_at null for both revisions; do not count the two revision steps as separate incidents.",
+        "reason": "Stage 110 source recheck: the prosecutor-confirmed two-death toll is reported by Ukrinform on Oct. 12 at 23:17. This is the second death in the same Darnytsky incident, not a separate incident. Neither revision is named in the 80→92 increments or the 148→173 breakdown. Those are partial change lists and the 148 figure is a carried-forward aggregate, not a complete incident roster. Inclusion of either death in 148 or the later 421 cannot be confirmed or ruled out. Keep ledger_effective_at null for both revisions.",
         "source_ids": [
-          "KYIV-DARNYTSKY-12-UP-2026-10-12"
+          "KYIV-DARNYTSKY-12-UP-2026-10-12",
+          "DARNYTSKY-12-UKRINFORM-2026-10-12"
         ],
         "ledger_effective_at": null
       }

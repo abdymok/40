@@ -1,3 +1,5 @@
+> **Superseded in part by Stage 115 (Nov. 27, 2026):** Stage 59's interpretation of the Oct. 14 82→85 and 89→90 casualty increments is under review after separating the three Desniansky deaths from the two Holosiivsky deaths. The combined final toll is five, not seven; the early 82→85 change appears to reuse deaths already included in 80→81→82. No correction to the public 427 has been imposed. Retain the original checkpoint below as the historical state of the audit.
+
 # Stage 59 checkpoint — Oct. 14–15 Kyiv and Lutsk casualty sequence
 
 Date: 26 November 2026

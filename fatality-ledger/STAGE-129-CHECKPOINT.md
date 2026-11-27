@@ -38,7 +38,7 @@ The Oct. 25 123→132 update's four deaths across other regions on Oct. 23 can n
 
 - Add the five distinct, officially sourced incident records and preserve their final tolls: 1, 1, 1, 2 and 3.
 - Keep all five new revision entries null for historical inclusion.
-- Treat the two Kostiantynivka deaths as a plausible but unproven match to 121→123 +2; the Donetsk pair and Zaporizhia incidents remain competing contemporaneous reports.
+- Treat the 121→123 +2 as unallocated among several exact-two candidate groups: the Kostiantynivka pair, the Donetsk pair, or the initial two Zaporizhia city deaths. The three Zaporizhia-region deaths are another contemporaneous candidate set, but the +2 cannot cover all three without a separate adjustment.
 - Do not assign the 121→123 +2 to the Kostiantynivka daily aggregate or any Zaporizhia incident without direct evidence.
 - Treat the 123→132 +4 as fully allocated to Chernihiv, Dnipro, Kramatorsk and Sloviansk. The Zaporizhia city incident is not in that increment; only its initial two deaths could possibly fit 121→123, and that remains unproven.
 - Public minimum remains 427 through Nov. 26, 2026. No public subtotal changes.

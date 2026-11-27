@@ -12,7 +12,7 @@ The OHCHR October report provides a useful independent cross-check of the Octobe
 | Oct. 8 | Kramatorsk bus strike | Project chronology reports 33 deaths | At least 11 civilian deaths verified; another 19 bodies reported but verification ongoing | Reconcile the local final toll of 33 against the OHCHR verification threshold. Preserve source/evidence classification; do not automatically reduce 33 to 11 or accept 33 without source review. |
 | Oct. 10 | Zaporizhia residential strikes | Initial project report said 20; later Ukrainian official reporting confirmed 23 | 21 civilian deaths | Incident record now preserves 20 → 23. OHCHR's 21 is lower than the later Ukrainian official toll and is retained as a verification discrepancy, not used to lower the count. |
 | Oct. 17 | Sloviansk residential airstrikes | Local city administration's final toll after five days of rescue work: 9 | 12 civilian deaths | Incident record preserves 1 → 6 → 9. Three additional OHCHR deaths remain unidentified in local sources and are not added without incident-level support. |
-| Oct. 17 | Kherson double-tap airstrike | Official Ukrainian reporting confirms one ambulance driver killed | Two men killed | One death is recorded. The second OHCHR death remains unallocated pending a local source or identifiable incident. |
+| Oct. 17 | Kherson airstrikes | Local reporting confirms two men killed: a 64-year-old ambulance driver and a 58-year-old resident who died in hospital on Oct. 18 | Two men killed | Incident record now preserves 1 → 2. Two MOST reports cite the heads of the Kherson city and regional administrations; OHCHR's two-man count is corroborated. The second victim is no longer unallocated. |
 | Oct. 19 | Nova Vodolaha central-park drone strike | Six deaths confirmed by regional administration and prosecutor reporting | Six civilians killed, including a one-year-old child and the child's mother, who died later in hospital | Incident record added with 3 → 6 revision history. |
 | Oct. 22 | Lozova central-market strike | Five deaths reported locally by Oct. 25 (three women and two men) | Four civilians killed (two women and two men) | Incident record now preserves 2 → 3 → 4 → 5. Local mayoral, Suspilne and Ukrinform reporting identifies the later two men. OHCHR's four is retained as its independently verified count, not treated as an unidentified extra. The sex breakdown differs. |
 | Oct. 29 | Izium public-health institution strike | Five female employees killed; the project dashboard first displayed four | Five women killed | Incident record preserves 4 → 5. Separately, a 59-year-old woman was killed in another Izium attack on Oct. 29. |
@@ -32,16 +32,16 @@ Local mayoral and independent reporting confirms two deaths in the Oct. 13 balli
 1. Kramatorsk, Oct. 8 (33 local reports vs. OHCHR's verified/under-verification split).
 2. Sloviansk, Oct. 17 (local final toll 9 vs. OHCHR 12).
 3. Kherson, Oct. 17 (one local confirmed death vs. OHCHR two).
-4. Kyiv, Oct. 13 (two local confirmed deaths vs. OHCHR three).
-5. Lozova, Oct. 22 (five local reported deaths vs. OHCHR four).
-6. Zaporizhia, Oct. 10 (local final toll 23 vs. OHCHR 21).
+3. Kyiv, Oct. 13 (two local confirmed deaths vs. OHCHR three).
+4. Lozova, Oct. 22 (five local reported deaths vs. OHCHR four).
+5. Zaporizhia, Oct. 10 (local final toll 23 vs. OHCHR 21).
 
 These leads may explain much of the gap between the historical 192 baseline and the incident records currently recoverable from the archive. No total is revised in this file.
 
 
 ## Source-to-ledger status
 
-The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (1), Sloviansk (9), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The differences against OHCHR remain explicit review items; no OHCHR number has been imported automatically.
+The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (2), Sloviansk (9), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The differences against OHCHR remain explicit review items; no OHCHR number has been imported automatically.
 
 The Oct. 8 Kramatorsk bus record retains the local final toll of 33, with a source note that OHCHR had verified 11 and listed 19 additional reported deaths as under verification. This is a difference in verification status, not proof that the local final toll is false.
 
@@ -81,3 +81,10 @@ The Oct. 31 Ukrainska Pravda report about a 59-year-old woman killed in Izium on
 Local reporting now establishes five deaths in the Oct. 22 central-market strike. Two women died at the scene; a third woman died in hospital on Oct. 23; a man died from his injuries by Oct. 24; and another man died in hospital by Oct. 25. Suspilne Kharkiv reported the fourth death citing the mayor. The mayor's official Telegram post and Ukrinform reported the market toll at five, while separately identifying the man killed in the Oct. 24 warehouse strike. The warehouse death is a distinct incident and is not part of the market's five.
 
 The OHCHR October update lists four deaths (two women and two men). The local final count is five (three women and two men). This is a one-death difference in the reported totals and a difference in the sex breakdown, not an unidentified fourth casualty. Preserve both source records and do not force a one-to-one match between individual victims.
+
+
+## Kherson final toll update — Nov. 27
+
+The Oct. 17 Kherson airstrike sequence killed two men, not one. The first was a 64-year-old emergency medical services driver killed in the repeat strike while responding to the initial attack. A 58-year-old resident who was critically injured at home died in hospital on Oct. 18. MOST reported the death citing Kherson City Military Administration head Yaroslav Shanko; a separate report cited Kherson Regional Military Administration head Oleksandr Prokudin and stated that two people had been killed. OHCHR's October report independently records two men killed in the Kherson airstrikes.
+
+The incident record now preserves 1 → 2. This resolves the local-vs-OHCHR incident toll discrepancy, but not the separate historical-subtotal membership question: the second death occurred before the Oct. 21 ≈116 subtotal, and no surviving update establishes whether it was already in that carried-forward figure or the later 148/421 totals. Its `ledger_effective_at` remains null. No public subtotal is changed.

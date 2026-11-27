@@ -12500,7 +12500,7 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "The National Police reports one death in this incident. The Oct. 22 121→123 change is a possible but unproven match; Filashkin separately reported two deaths in Kostiantynivka, and Zaporizhia authorities reported three deaths in the region and two initial deaths in the city before or around the same change. The +2 cannot be uniquely allocated. Keep ledger_effective_at null.",
+        "reason": "The Oct. 22 121→123 increase is now directly attributed to the two Zaporizhia city victims, not this incident. The 123→132 +4 is allocated to four Oct. 23 incidents in Chernihiv, Dnipro, Kramatorsk and Sloviansk. The itemized 123→148 additions do not include this incident; the mapped 148→421 carry-forward and the six later 421→427 additions are also separate, dated incidents. This is an established exclusion from the public 427 minimum. Keep ledger_effective_at null.",
         "source_ids": [
           "DON-DRUZHKIVKA-FPV-NPU-2026-10-22"
         ],
@@ -12543,7 +12543,7 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "The National Police reports one death in this incident. The Oct. 22 121→123 change is a possible but unproven match; Filashkin separately reported two deaths in Kostiantynivka, and Zaporizhia authorities reported three deaths in the region and two initial deaths in the city before or around the same change. The +2 cannot be uniquely allocated. Keep ledger_effective_at null.",
+        "reason": "The Oct. 22 121→123 increase is now directly attributed to the two Zaporizhia city victims, not this incident. The 123→132 +4 is allocated to four Oct. 23 incidents in Chernihiv, Dnipro, Kramatorsk and Sloviansk. The itemized 123→148 additions do not include this incident; the mapped 148→421 carry-forward and the six later 421→427 additions are also separate, dated incidents. This is an established exclusion from the public 427 minimum. Keep ledger_effective_at null.",
         "source_ids": [
           "DON-KRAMATORSK-OVERNIGHT-NPU-2026-10-22"
         ],
@@ -12598,7 +12598,7 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Official regional administration and police reports establish one death in Kushuhum on Oct. 21. The 121→123 scope change and later 123→132 update do not allocate this incident; historical inclusion remains unverified. Keep ledger_effective_at null.",
+        "reason": "The Oct. 22 121→123 increase is now directly attributed to the two Zaporizhia city victims, not this incident. The 123→132 +4 is allocated to four Oct. 23 incidents in Chernihiv, Dnipro, Kramatorsk and Sloviansk. The itemized 123→148 additions do not include this incident; the mapped 148→421 carry-forward and the six later 421→427 additions are also separate, dated incidents. This is an established exclusion from the public 427 minimum. Keep ledger_effective_at null.",
         "source_ids": [
           "ZAP-KUSHUHUM-21-FEDOROV-2026-10-22",
           "ZAP-KUSHUHUM-21-NPU-2026-10-22"
@@ -12654,7 +12654,7 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 2,
-        "reason": "Official regional administration and police reports establish two deaths in a civilian car struck between Komyshuvakha and Shchaslyve on Oct. 21. The 121→123 scope change and later 123→132 update do not allocate this incident; historical inclusion remains unverified. Keep ledger_effective_at null.",
+        "reason": "The Oct. 22 121→123 increase is now directly attributed to the two Zaporizhia city victims, not this incident. The 123→132 +4 is allocated to four Oct. 23 incidents in Chernihiv, Dnipro, Kramatorsk and Sloviansk. The itemized 123→148 additions do not include this incident; the mapped 148→421 carry-forward and the six later 421→427 additions are also separate, dated incidents. This is an established exclusion from the public 427 minimum. Keep ledger_effective_at null.",
         "source_ids": [
           "ZAP-CAR-21-FEDOROV-2026-10-22",
           "ZAP-CAR-21-NPU-2026-10-22"
@@ -12675,7 +12675,7 @@
     "incident_description": "Russian forces attacked Zaporizhia with four Banderol missiles on Oct. 22. A strike near a private residential area killed a 37-year-old man, his 38-year-old wife and a 69-year-old woman, according to the regional administration and police.",
     "documented_deaths": 3,
     "scope_classification": "civilian",
-    "evidence_classification": "official_only",
+    "evidence_classification": "official_and_media",
     "sources": [
       {
         "source_id": "ZAP-ZAPORIZHIA-22-FEDOROV-2026-10-23",
@@ -12707,7 +12707,7 @@
         "source_id": "ZAP-ZAPORIZHIA-22-SUSPILNE-INITIAL-2-2026-10-22",
         "publisher": "Suspilne Zaporizhia, citing acting head of Zaporizhia Regional Military Administration Mykhailo Semikin",
         "source_type": "news_report",
-        "published_at": "2026-10-22T15:30:00+03:00",
+        "published_at": "2026-10-22T15:30:00Z",
         "url": "https://t.me/s/suspilnezaporizhzhya/63838",
         "supports": [
           "death_count",
@@ -12719,28 +12719,52 @@
         "source_id": "ZAP-ZAPORIZHIA-22-SUSPILNE-FINAL-3-2026-10-22",
         "publisher": "Suspilne Zaporizhia, citing acting head of Zaporizhia Regional Military Administration Mykhailo Semikin",
         "source_type": "news_report",
-        "published_at": "2026-10-22T18:22:00+03:00",
+        "published_at": "2026-10-22T18:22:00Z",
         "url": "https://t.me/s/suspilnezaporizhzhya/63846",
         "supports": [
           "death_count",
           "incident_date"
         ],
         "notes": "At 18:22 on Oct. 22, Suspilne reported the toll had risen to three, adding a 69-year-old woman to the two initial victims."
+      },
+      {
+        "source_id": "ZAP-ZAPORIZHIA-22-OVA-INITIAL-2-2026-10-22",
+        "publisher": "Zaporizhia Regional Military Administration",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-22",
+        "url": "https://t.me/zoda_gov_ua/68556",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "The regional administration reported two people killed in a strike on a private house: a 37-year-old man and a 38-year-old woman."
       }
     ],
     "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-ZAP-ZAPORIZHIA-2026-10-22-MISSILE-STRIKE-REV-001",
-        "recorded_at": "2026-10-23",
+        "recorded_at": "2026-10-22T16:52:18Z",
         "old_value": null,
-        "new_value": 3,
-        "reason": "Official regional police and Suspilne reporting confirm three deaths in the Oct. 22 Zaporizhia strike. Suspilne reported two deaths at 15:30 and the final toll of three at 18:22, both before the Oct. 22 121→123 dashboard change. The 123→132 +4 is fully allocated to one death each in Chernihiv, Dnipro, Kramatorsk and Sloviansk, so this incident is not part of that increment. The 121→123 +2 could represent two of these deaths, but several other official casualty reports are competing candidates and the commit does not identify any. No allocation is proven. Keep ledger_effective_at null.",
+        "new_value": 2,
+        "reason": "The Zaporizhia Regional Military Administration's Oct. 22 post reports two people killed in a strike on a private house: a 37-year-old man and a 38-year-old woman. The archived dashboard commit 93499a33c356c6766545f03e12dabf513025cc56, timestamped 16:52:18 UTC, moves the nationwide minimum from 121 to 123; the contemporaneous project update explicitly attributes that +2 to these two victims. Their inclusion in the public subtotal is established.",
         "source_ids": [
+          "ZAP-ZAPORIZHIA-22-OVA-INITIAL-2-2026-10-22",
+          "ZAP-ZAPORIZHIA-22-SUSPILNE-INITIAL-2-2026-10-22"
+        ],
+        "ledger_effective_at": "2026-10-22"
+      },
+      {
+        "revision_id": "UA-ZAP-ZAPORIZHIA-2026-10-22-MISSILE-STRIKE-REV-002",
+        "recorded_at": "2026-10-22T18:22:00Z",
+        "old_value": 2,
+        "new_value": 3,
+        "reason": "Suspilne reported at 18:22 UTC on Oct. 22 that a 69-year-old woman had also died, raising the incident toll to three. This was after the 16:52:18 UTC 121→123 commit. The 123→132 +9 is fully allocated to four Synelnykove deaths, one Kharkiv Novobavarsky death and four Oct. 23 incidents in Chernihiv, Dnipro, Kramatorsk and Sloviansk. The itemized 123→148 additions do not include this third victim; the 148→421 bridge and the six later 421→427 additions are also mapped to other incidents. This third death is an established exclusion from the public 427 minimum. Keep ledger_effective_at null.",
+        "source_ids": [
+          "ZAP-ZAPORIZHIA-22-SUSPILNE-FINAL-3-2026-10-22",
           "ZAP-ZAPORIZHIA-22-FEDOROV-2026-10-23",
-          "ZAP-ZAPORIZHIA-22-NPU-2026-10-23",
-          "ZAP-ZAPORIZHIA-22-SUSPILNE-INITIAL-2-2026-10-22",
-          "ZAP-ZAPORIZHIA-22-SUSPILNE-FINAL-3-2026-10-22"
+          "ZAP-ZAPORIZHIA-22-NPU-2026-10-23"
         ],
         "ledger_effective_at": null
       }

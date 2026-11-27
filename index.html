@@ -21,6 +21,17 @@
 <meta name="twitter:image" content="https://abdymok.github.io/monowheeler.png">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#ffffff">
+<script>
+(() => {
+  try {
+    const saved = localStorage.getItem("ukraine-at-war-theme");
+    if (saved === "auto") document.documentElement.removeAttribute("data-theme");
+    else if (saved === "white" || saved === "black") document.documentElement.dataset.theme = saved;
+    const dark = saved === "black" || (saved === "auto" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", dark ? "#111110" : "#ffffff");
+  } catch (_) {}
+})();
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' fill='none' stroke='%23111' stroke-width='3.5' stroke-linecap='square'%3E%3Cpath d='M3 32H45M7.5 32V26M18 32V26M28.5 32V26M39 32V14'/%3E%3C/svg%3E">
 <style>
   :root {
@@ -243,7 +254,7 @@
     current = choice;
     if (choice === "auto") {
       delete root.dataset.theme;
-      try { localStorage.removeItem(key); } catch (_) {}
+      try { localStorage.setItem(key, choice); } catch (_) {}
     } else {
       root.dataset.theme = choice;
       try { localStorage.setItem(key, choice); } catch (_) {}
@@ -260,7 +271,7 @@
   let current = "white";
   try {
     const saved = localStorage.getItem(key);
-    if (saved === "white" || saved === "black") current = saved;
+    if (saved === "auto" || saved === "white" || saved === "black") current = saved;
   } catch (_) {}
   buttons.forEach(button => button.addEventListener("click", () => setTheme(button.dataset.themeChoice)));
   setTheme(current);

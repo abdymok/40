@@ -14,7 +14,7 @@ The OHCHR October report provides a useful independent cross-check of the Octobe
 | Oct. 17 | Sloviansk residential airstrikes | Local city administration's final toll after five days of rescue work: 9 | 12 civilian deaths | Incident record preserves 1 → 6 → 9. Three additional OHCHR deaths remain unidentified in local sources and are not added without incident-level support. |
 | Oct. 17 | Kherson double-tap airstrike | Official Ukrainian reporting confirms one ambulance driver killed | Two men killed | One death is recorded. The second OHCHR death remains unallocated pending a local source or identifiable incident. |
 | Oct. 19 | Nova Vodolaha central-park drone strike | Six deaths confirmed by regional administration and prosecutor reporting | Six civilians killed, including a one-year-old child and the child's mother, who died later in hospital | Incident record added with 3 → 6 revision history. |
-| Oct. 22 | Lozova market-area missile strikes | Three deaths confirmed locally, including a third woman who died in hospital | Four civilians killed | Incident record added with 2 → 3 revision history. The fourth OHCHR death remains unallocated and is not added without a local source. |
+| Oct. 22 | Lozova central-market strike | Five deaths reported locally by Oct. 25 (three women and two men) | Four civilians killed (two women and two men) | Incident record now preserves 2 → 3 → 4 → 5. Local mayoral, Suspilne and Ukrinform reporting identifies the later two men. OHCHR's four is retained as its independently verified count, not treated as an unidentified extra. The sex breakdown differs. |
 | Oct. 29 | Izium public-health institution strike | Five female employees killed; the project dashboard first displayed four | Five women killed | Incident record preserves 4 → 5. Separately, a 59-year-old woman was killed in another Izium attack on Oct. 29. |
 
 ## Source
@@ -33,7 +33,7 @@ Local mayoral and independent reporting confirms two deaths in the Oct. 13 balli
 2. Sloviansk, Oct. 17 (local final toll 9 vs. OHCHR 12).
 3. Kherson, Oct. 17 (one local confirmed death vs. OHCHR two).
 4. Kyiv, Oct. 13 (two local confirmed deaths vs. OHCHR three).
-5. Lozova, Oct. 22 (three local confirmed deaths vs. OHCHR four).
+5. Lozova, Oct. 22 (five local reported deaths vs. OHCHR four).
 6. Zaporizhia, Oct. 10 (local final toll 23 vs. OHCHR 21).
 
 These leads may explain much of the gap between the historical 192 baseline and the incident records currently recoverable from the archive. No total is revised in this file.
@@ -41,7 +41,7 @@ These leads may explain much of the gap between the historical 192 baseline and 
 
 ## Source-to-ledger status
 
-The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (3), Izium (5), Kherson (1), Sloviansk (9), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The differences against OHCHR remain explicit review items; no OHCHR number has been imported automatically.
+The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (1), Sloviansk (9), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The differences against OHCHR remain explicit review items; no OHCHR number has been imported automatically.
 
 The Oct. 8 Kramatorsk bus record retains the local final toll of 33, with a source note that OHCHR had verified 11 and listed 19 additional reported deaths as under verification. This is a difference in verification status, not proof that the local final toll is false.
 
@@ -66,11 +66,18 @@ The local-source discrepancies remain open:
 - Oct. 13 Kyiv: local confirmed toll 2; OHCHR lists 3.
 - Oct. 17 Sloviansk: local final toll 9; OHCHR lists 12.
 - Oct. 17 Kherson: local confirmed toll 1; OHCHR lists 2.
-- Oct. 22 Lozova: local confirmed toll 3; OHCHR lists 4.
+- Oct. 22 Lozova: local reported final toll 5 (three women, two men); OHCHR lists 4 (two women, two men).
 
-No OHCHR figure has been automatically added to or substituted in the incident dataset.
+The local five-death toll is supported by the mayor's official Telegram post and local reporting. OHCHR's four remains a separate verified count, not an additional unidentified casualty. No OHCHR figure has been automatically added to or substituted in the incident dataset.
 
 
 ## Izium source correction
 
 The Oct. 31 Ukrainska Pravda report about a 59-year-old woman killed in Izium on Oct. 29 describes a **separate attack**, not the public-health institution strike that killed five employees. The ledger now has two records: the public-health institution strike (4 → 5) and the separate attack (one death). See CORRECTION-IZIUM-2026-10-29.md.
+
+
+## Lozova market final toll update — Nov. 27
+
+Local reporting now establishes five deaths in the Oct. 22 central-market strike. Two women died at the scene; a third woman died in hospital on Oct. 23; a man died from his injuries by Oct. 24; and another man died in hospital by Oct. 25. Suspilne Kharkiv reported the fourth death citing the mayor. The mayor's official Telegram post and Ukrinform reported the market toll at five, while separately identifying the man killed in the Oct. 24 warehouse strike. The warehouse death is a distinct incident and is not part of the market's five.
+
+The OHCHR October update lists four deaths (two women and two men). The local final count is five (three women and two men). This is a one-death difference in the reported totals and a difference in the sex breakdown, not an unidentified fourth casualty. Preserve both source records and do not force a one-to-one match between individual victims.

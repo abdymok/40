@@ -12600,7 +12600,6 @@
         "published_at": "2026-10-22",
         "url": "https://t.me/ivan_fedorov_zp/49091",
         "supports": [
-          "incident_identity",
           "death_count",
           "incident_date"
         ],
@@ -12641,7 +12640,7 @@
     "incident_date": "2026-10-21",
     "location": {
       "settlement": null,
-      "district": "Zaporizhia district",
+      "district": null,
       "region": "Zaporizhia region",
       "country": "Ukraine"
     },
@@ -12657,7 +12656,6 @@
         "published_at": "2026-10-22",
         "url": "https://t.me/ivan_fedorov_zp/49091",
         "supports": [
-          "incident_identity",
           "death_count",
           "incident_date"
         ],

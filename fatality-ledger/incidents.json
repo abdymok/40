@@ -342,11 +342,11 @@
     "incident_date": "2026-10-08",
     "location": {
       "settlement": "Kramatorsk",
-      "district": "Bilenke and Kramatorsk city",
+      "district": "Central Kramatorsk",
       "region": "Donetsk region",
       "country": "Ukraine"
     },
-    "incident_description": "Russian UMPB D-30 SN guided bomb struck a street as two passenger buses were carrying civilians in Kramatorsk, killing 33 people and injuring 18. The local State Emergency Service and regional prosecutor reported the final toll of 33. OHCHR's October report separately states that 11 civilian deaths were verified and 19 additional reported deaths remained under verification; that verification difference is retained as a source note and does not automatically replace the official local toll.",
+    "incident_description": "A Russian UMPB D-30 SN guided bomb struck a street in central Kramatorsk as two passenger buses were carrying civilians. The later Kramatorsk City Council incident-by-incident recap and an Oct. 26 police response reported 30 people killed and 20 injured in the bus strike. An earlier Oct. 8 regional report gave 33 deaths for the bus attack; the later local breakdown identifies three additional deaths in a separate strike on Bilenke, now recorded separately. The Oct. 11 selected-subtotal row of 33 for Kramatorsk is reconciled as 30 bus victims plus three in Bilenke.",
     "documented_deaths": 33,
     "scope_classification": "civilian",
     "evidence_classification": "media_reported",
@@ -362,7 +362,7 @@
           "death_count",
           "incident_date"
         ],
-        "notes": "Reports the final toll of 33 killed and 18 injured; initial reports included 12 killed, then 30, then 33."
+        "notes": "At 14:14, reports 33 deaths and 18 injured, citing the Donetsk Regional Prosecutor's Office and State Emergency Service. Later Kramatorsk City Council incident-by-incident reporting and an Oct. 26 police response establish 30 deaths in the bus strike; the three-death difference is separately documented in Bilenke."
       },
       {
         "source_id": "KRAMATORSK-BUS-OHCHR-2026-10",
@@ -375,9 +375,35 @@
           "verification_status"
         ],
         "notes": "October report says at least 11 civilian deaths were verified and 19 additional reported deaths were still under verification. This is a verification-status note, not an automatic replacement of the local final toll."
+      },
+      {
+        "source_id": "KRAMATORSK-BUS-COUNCIL-RECAP-2026-10-09",
+        "publisher": "Kramatorsk City Council",
+        "source_type": "official_statement",
+        "published_at": "2026-10-09T18:53:00+03:00",
+        "url": "https://krm.gov.ua/mynuloyi-doby-8-zhovtnya-kramatorsk-zaznav-18-obstriliv-35-zagyblyh-ta-22-poranenyh/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "The council's incident-by-incident recap lists 30 killed and 20 injured in the 10:00 UMPB D-30 SN strike on two buses. It separately lists three deaths in a 10:10 FAB strike and two deaths in an 18:40 FPV attack on a car."
+      },
+      {
+        "source_id": "KRAMATORSK-BUS-POLICE-RESPONSE-SUSPILNE-2026-10-26",
+        "publisher": "Suspilne Donbas, citing Kramatorsk District Police response dated Oct. 26",
+        "source_type": "news_report",
+        "published_at": null,
+        "url": "https://suspilne.media/donbas/1438409-sered-zagiblih-e-ne-vstanovleni-v-policii-doneccini-povidomili-dani-sodo-zertv-udaru-po-avtobusah-v-kramatorsku/",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Police response to a formal inquiry states that the bus-attack investigation established 30 killed and 20 injured. Some victims remained unidentified. This later official police figure supports 30 for the bus incident, not 33."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-001",
@@ -395,22 +421,34 @@
         "recorded_at": "2026-10-08T12:36:00+02:00",
         "old_value": 12,
         "new_value": 30,
-        "reason": "Interim 30-death toll. The final 33-death toll is explicitly represented in the Oct. 11 ≈80 selected-incident snapshot (REV-003, dated Oct. 11). No contemporaneous project update establishes a separate subtotal addition for this interim value. Keep ledger_effective_at null; do not treat 12→30 as a separate addition after the final 33 is counted.",
+        "reason": "The interim toll rose to 30. The Oct. 11 ≈80 selected-incident snapshot includes the Kramatorsk community row of 33, now reconciled from the later local incident breakdown as 30 bus victims plus three killed in a separate Bilenke strike. The 30 bus deaths are therefore included in the selected subtotal on Oct. 11.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
-        "ledger_effective_at": null
+        "ledger_effective_at": "2026-10-11"
       },
       {
         "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-003",
         "recorded_at": "2026-10-08T14:14:00+02:00",
         "old_value": 30,
         "new_value": 33,
-        "reason": "First documented inclusion in the provisional selected-incident subtotal is the Oct. 11, 2026 snapshot (≈80). The contemporaneous chronology/method records this incident and the count shown here. This dates the first confirmed selected-subtotal inclusion, not any possible earlier appearance in the broad Oct. 10 editorial estimate.",
+        "reason": "An Oct. 8 regional update reported 33 deaths in the bus attack, but the later Kramatorsk City Council incident-by-incident recap and an Oct. 26 police response establish 30 deaths in the bus strike. The three-death difference is separately documented in the Bilenke attack and is not a further bus-incident toll. This 30→33 revision is retained as a superseded, overinclusive report, not a separate casualty addition. Its effective date is null; the three Bilenke deaths are recorded in their own incident.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
-        "ledger_effective_at": "2026-10-11"
+        "ledger_effective_at": null
+      },
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-08-TWO-BUSES-STRIKE-REV-004",
+        "recorded_at": "2026-10-09T18:53:00+03:00",
+        "old_value": 33,
+        "new_value": 30,
+        "reason": "The Kramatorsk City Council's Oct. 9 incident-by-incident recap reports 30 killed and 20 injured in the 10:00 bus strike. A later police response dated Oct. 26, reported by Suspilne Donbas, independently states that the bus-attack investigation established 30 killed and 20 injured. The three deaths previously attached to the 33 figure are separately identified in the 10:10 Bilenke strike. The final bus-incident toll is therefore 30; this correction is not a subtraction from the public 33 Kramatorsk row, which is now decomposed as bus 30 plus Bilenke 3.",
+        "source_ids": [
+          "KRAMATORSK-BUS-COUNCIL-RECAP-2026-10-09",
+          "KRAMATORSK-BUS-POLICE-RESPONSE-SUSPILNE-2026-10-26"
+        ],
+        "ledger_effective_at": null
       }
     ]
   },
@@ -12214,6 +12252,148 @@
           "KRAMATORSK-09-DSNS-NEWS-DN-2026-10-09",
           "KRAMATORSK-09-UN-LETTER-UKRAINE-2026-10-15",
           "KRAMATORSK-09-OHCHR-OCT2026"
+        ],
+        "ledger_effective_at": null
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-BILENKE-2026-10-08-FAB-STRIKE",
+    "incident_date": "2026-10-08",
+    "location": {
+      "settlement": "Bilenke",
+      "district": null,
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "A separate Russian strike hit Bilenke, a settlement in Kramatorsk community, on Oct. 8. Three residents were killed. Kramatorsk City Council's Oct. 9 incident-by-incident recap lists a 10:10 strike by two FAB-250 bombs and one FAB-500 that killed two men born in 1975 and 1976 and a woman born in 1955, damaging 22 houses. The council's Oct. 8 memorial statement and Suspilne Donbas identify the three deaths as occurring in Bilenke. This is separate from the 10:00 bus strike in central Kramatorsk and the 18:40 FPV strike on a car.",
+    "documented_deaths": 3,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-BILENKE-COUNCIL-MEMORIAL-2026-10-08",
+        "publisher": "Kramatorsk City Council",
+        "source_type": "official_statement",
+        "published_at": "2026-10-08T20:42:00+03:00",
+        "url": "https://krm.gov.ua/35-lyudej-vbyla-rosiya-u-kramatorsku-8-zhovtnya-zavtra-u-gromadi-ogolosheno-den-zhaloby/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official memorial statement says three people were killed in the separate attack on Bilenke, in addition to at least 30 killed in the bus strike and two killed in a drone attack on a car in central Kramatorsk."
+      },
+      {
+        "source_id": "KRAMATORSK-BILENKE-COUNCIL-RECAP-2026-10-09",
+        "publisher": "Kramatorsk City Council",
+        "source_type": "official_statement",
+        "published_at": "2026-10-09T18:53:00+03:00",
+        "url": "https://krm.gov.ua/mynuloyi-doby-8-zhovtnya-kramatorsk-zaznav-18-obstriliv-35-zagyblyh-ta-22-poranenyh/",
+        "supports": [
+          "death_count",
+          "incident_identity",
+          "corroboration"
+        ],
+        "notes": "The incident-by-incident recap lists a separate 10:10 strike by two FAB-250 bombs and one FAB-500 that killed two men born in 1975 and 1976 and a woman born in 1955; 22 houses were damaged."
+      },
+      {
+        "source_id": "KRAMATORSK-BILENKE-SUSPILNE-2026-10-09",
+        "publisher": "Suspilne Donbas, citing Kramatorsk City Military Administration head Oleksandr Honcharenko",
+        "source_type": "news_report",
+        "published_at": "2026-10-09",
+        "url": "https://suspilne.media/donbas/1423309-fragmenti-treba-zbirati-vsi-dokupi-u-kramatorsku-trivae-identifikacia-30-zagiblih-cerez-udar-po-avtobusah/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Separately reports that a morning strike on the private sector in Bilenke killed three civilians, citing the city military administration head."
+      }
+    ],
+    "last_verified_date": "2026-11-27",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-BILENKE-2026-10-08-FAB-STRIKE-REV-001",
+        "recorded_at": "2026-10-08T13:14:00+03:00",
+        "old_value": null,
+        "new_value": 3,
+        "reason": "Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap, plus Suspilne Donbas citing the city military administration head, establish three deaths in the separate Bilenke strike. The Oct. 11 ≈80 selected-incident snapshot contains a Kramatorsk community row of 33. The later local breakdown reconciles that 33 as 30 bus victims plus three in Bilenke, so the Bilenke three are included in the selected subtotal on Oct. 11. This is a decomposition of the existing 33, not a new +3 addition.",
+        "source_ids": [
+          "KRAMATORSK-BILENKE-COUNCIL-MEMORIAL-2026-10-08",
+          "KRAMATORSK-BILENKE-COUNCIL-RECAP-2026-10-09",
+          "KRAMATORSK-BILENKE-SUSPILNE-2026-10-09"
+        ],
+        "ledger_effective_at": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-08-FPV-CAR-STRIKE",
+    "incident_date": "2026-10-08",
+    "location": {
+      "settlement": "Kramatorsk",
+      "district": "Central Kramatorsk",
+      "region": "Donetsk region",
+      "country": "Ukraine"
+    },
+    "incident_description": "At about 18:40 on Oct. 8, a Russian FPV drone struck a civilian car in central Kramatorsk, killing two men born in 1979 and 1987. Kramatorsk City Council reported the two deaths in its Oct. 8 memorial statement and Oct. 9 incident-by-incident recap; Suspilne Donbas also reported two people killed in the separate drone attack on a civilian car. This is distinct from the 10:00 bus strike and the 10:10 Bilenke attack.",
+    "documented_deaths": 2,
+    "scope_classification": "civilian",
+    "evidence_classification": "official_and_media",
+    "sources": [
+      {
+        "source_id": "KRAMATORSK-CAR-COUNCIL-MEMORIAL-2026-10-08",
+        "publisher": "Kramatorsk City Council",
+        "source_type": "official_statement",
+        "published_at": "2026-10-08T20:42:00+03:00",
+        "url": "https://krm.gov.ua/35-lyudej-vbyla-rosiya-u-kramatorsku-8-zhovtnya-zavtra-u-gromadi-ogolosheno-den-zhaloby/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "Official memorial statement separately reports two people killed when a drone struck a car in central Kramatorsk, in addition to the bus strike and the Bilenke attack."
+      },
+      {
+        "source_id": "KRAMATORSK-CAR-COUNCIL-RECAP-2026-10-09",
+        "publisher": "Kramatorsk City Council",
+        "source_type": "official_statement",
+        "published_at": "2026-10-09T18:53:00+03:00",
+        "url": "https://krm.gov.ua/mynuloyi-doby-8-zhovtnya-kramatorsk-zaznav-18-obstriliv-35-zagyblyh-ta-22-poranenyh/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "The council's detailed recap says an FPV drone struck a car at 18:40 and killed two men born in 1979 and 1987."
+      },
+      {
+        "source_id": "KRAMATORSK-CAR-SUSPILNE-2026-10-09",
+        "publisher": "Suspilne Donbas",
+        "source_type": "news_report",
+        "published_at": "2026-10-09",
+        "url": "https://suspilne.media/donbas/1423309-fragmenti-treba-zbirati-vsi-dokupi-u-kramatorsku-trivae-identifikacia-30-zagiblih-cerez-udar-po-avtobusah/",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "Reports two people killed in the separate evening FPV-drone attack on a civilian car in central Kramatorsk."
+      }
+    ],
+    "last_verified_date": "2026-11-27",
+    "revision_history": [
+      {
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-08-FPV-CAR-STRIKE-REV-001",
+        "recorded_at": "2026-10-08T18:40:00+03:00",
+        "old_value": null,
+        "new_value": 2,
+        "reason": "The Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap separately report two people killed when an FPV drone struck a civilian car in central Kramatorsk at 18:40. Suspilne Donbas independently reports the two deaths, citing local reporting. The Oct. 11 ≈80 selected subtotal's Kramatorsk row of 33 is reconciled as the 30 bus victims plus three Bilenke victims; it does not itemize the two later car deaths. Their inclusion in the later 148 baseline or 421 carry-forward is not established. Keep ledger_effective_at null; this is a potential two-death historical-inclusion gap, not a confirmed omission.",
+        "source_ids": [
+          "KRAMATORSK-CAR-COUNCIL-MEMORIAL-2026-10-08",
+          "KRAMATORSK-CAR-COUNCIL-RECAP-2026-10-09",
+          "KRAMATORSK-CAR-SUSPILNE-2026-10-09"
         ],
         "ledger_effective_at": null
       }

@@ -28,7 +28,9 @@ The public provisional minimum remains **427 through Nov. 26**. No entry below i
 
 ## Separate subtotal-integrity warning
 
-The Oct. 14 Kyiv transition from ≈82 to ≈85 is not a clean +3 of new deaths. The three-death report included two Desniansky deaths already counted in 80→81→82, plus one Holosiivsky death. Later updates establish the final combined toll as three Desniansky plus two Holosiivsky. The intermediate subtotal arithmetic remains under review. Do not subtract a guessed correction from 427.
+Stage 122 reconstructs the Oct. 14 sequence from ≈82→85→89→90→92. The 82→85 update repeated the first two Desniansky deaths already counted in 80→81→82, adding only one distinct Holosiivsky death. The 85→89 snapshot then described four deaths in Kyiv (three Desniansky, one Holosiivsky) and four in Lutsk: five distinct additions from the prior state, although the displayed subtotal rose by four. The 89→90 update added the second Holosiivsky death; 90→92 added two further Lutsk deaths. Across the full sequence, the published subtotal rose by ten while the distinct additions total nine. The Oct. 14 ≈92 snapshot is therefore one higher than the reconstructed incident arithmetic, conditional on accepting the ≈82 baseline.
+
+This is a transition-level finding, not proof that the one-death excess survived into the Oct. 28 ≈148 baseline or the later 421 carry-forward. Those aggregates are not complete incident rosters. Keep the public minimum at 427 until the carry-forward can be traced directly. Do not change `incidents.json` or subtract one from 427 by assumption. See [Stage 122](STAGE-122-CHECKPOINT.md).
 
 ## Not part of this open queue
 

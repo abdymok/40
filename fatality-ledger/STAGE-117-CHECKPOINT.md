@@ -13,7 +13,7 @@ The UN letter has been added to the Zaporizhia incident's source list and the 20
 ## Adjudication
 
 - No incident toll changed.
-- No effective date changed.
+- No effective date changed for the Zaporizhia incident.
 - No public subtotal changed. The Oct. 11 ≈80 snapshot explicitly includes the first 20; the later 23-death revision remains null because the 17:01 page update still displayed ≈80 and no later mapped addition establishes the three deaths' inclusion in 148/421.
 - Public minimum remains 427 through Nov. 26, 2026.
 

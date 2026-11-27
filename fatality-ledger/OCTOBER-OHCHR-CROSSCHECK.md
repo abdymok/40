@@ -41,7 +41,7 @@ These leads may explain much of the gap between the historical 192 baseline and 
 
 ## Source-to-ledger status
 
-The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (2), Sloviansk high-rise strike (9) and separate private-sector strike (3), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The remaining differences against OHCHR remain explicit review items; the Sloviansk 12-death discrepancy is now reconciled as two incidents. No OHCHR number has been imported automatically.
+The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (2), Sloviansk high-rise strike (9) and separate private-sector strike (3), Zaporizhia (23), Kramatorsk Oct. 8 bus strike (33) and the separate Oct. 9 FPV strikes on two residential buildings (1). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The remaining differences against OHCHR remain explicit review items; the Sloviansk 12-death discrepancy is now reconciled as two incidents. No OHCHR number has been imported automatically.
 
 The Oct. 8 Kramatorsk bus record retains the local final toll of 33, with a source note that OHCHR had verified 11 and listed 19 additional reported deaths as under verification. This is a difference in verification status, not proof that the local final toll is false.
 
@@ -56,7 +56,7 @@ The following incidents were identified while reconciling the opening 192 baseli
 - Oct. 9, Synelnykove district: one person killed in Russian attacks on Zaitseve and Petropavlivka communities.
 - Oct. 10, Pokrovske community, Nikopol district: one 11-year-old boy killed by a drone-dropped munition.
 
-The OHCHR report also lists one man killed in Kramatorsk on Oct. 9 in FPV drone strikes on two nine-storey buildings. No distinct Ukrainian local source for this incident has yet been identified. It is held in a separate unresolved file and has not been added to the ledger.
+OHCHR's October report lists one man killed in Kramatorsk on Oct. 9 in FPV drone strikes on two nine-storey buildings. Local reporting published on Oct. 9, citing the Donetsk regional State Emergency Service, now confirms the same incident: two nine-storey buildings caught fire, rescuers saved a woman born in 1972 and found the body of a man born in 1941. Ukraine's Oct. 14 letter to the UN also records one man killed in the same attack. A separate one-death incident record has now been added. Its inclusion in the Oct. 11 ≈80 subtotal or later 148/421 carry-forward remains unproven; no public subtotal changes.
 
 The OHCHR report describes three Ukrainian service members killed in Ivano-Frankivsk on Oct. 11. Those deaths are not included because the project ledger counts non-combatants, not military personnel.
 
@@ -95,3 +95,10 @@ The incident record now preserves 1 → 2. This resolves the local-vs-OHCHR inci
 The OHCHR total of 12 people killed in Sloviansk on Oct. 17 is now matched by two distinct local incidents. The 03:40 attack on two five-storey apartment buildings killed nine people. A separate attack at about 09:20 struck the private residential sector with four FAB-250 bombs, damaging 22 homes and killing three people, with two injured. The official State Emergency Service channel reported the three private-sector deaths; Suspilne and Ukrainska Pravda distinguish this attack from the earlier high-rise strike.
 
 The ledger now has separate records for the nine-death high-rise strike and the three-death private-sector strike. No death is added to the first incident's toll. The private-sector incident's inclusion in the Oct. 21 ≈105 selected subtotal remains unproven because that baseline is not a complete incident roster. Its effective date remains null. This resolves the incident-level 9-versus-12 discrepancy but not the separate historical-subtotal membership question.
+
+
+## Kramatorsk, Oct. 9 — local source recovered
+
+The October OHCHR report's one-death entry for Kramatorsk on Oct. 9 has now been matched to local reporting. Novosti Donbas published a report at 13:07, citing the Donetsk regional State Emergency Service: Russian FPV drones struck two nine-storey residential buildings, fires broke out, rescuers saved a woman born in 1972 and found the body of a man born in 1941. News Donbas published a second DSNS-attributed account at 14:51. Ukraine's Oct. 14 letter to the UN also describes the same two-building incident and one man killed.
+
+A separate one-death incident record is now in the ledger. This closes the local-source identification gap, not the historical-subtotal question: the death was reported before the Oct. 11 ≈80 snapshot, but is not itemized there or in the mapped 80→92 changes. Its inclusion in the later 148/421 carry-forward is not established. The revision remains null, and the public minimum is unchanged.

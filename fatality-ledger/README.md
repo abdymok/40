@@ -22,8 +22,8 @@ The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed
 
 The 33 null `ledger_effective_at` values do **not** represent 33 unresolved incidents or 90 additional deaths:
 
-- **14 entries** remain unresolved historical-inclusion questions, with a net arithmetic change of **+19**. These are pre-Oct. 29 cases for which the surviving snapshots and change records do not establish whether a later carried-forward aggregate included the deaths.
-- The other **19 entries** have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions from that subtotal. In particular, Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
+- **12 entries** remain unresolved historical-inclusion questions, with a net arithmetic change of **+17**. Two later Lozova revisions (the third market death and the separate Oct. 24 warehouse death) are now classified as established exclusions from the 148 baseline and the 421 carry-forward. Their null effective dates are retained to distinguish exclusion from a dated addition. These are pre-Oct. 29 cases for which the surviving snapshots and change records do not establish whether a later carried-forward aggregate included the deaths.
+- The other **21 entries** have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions from that subtotal. In particular, Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
 - Null is retained where no public-subtotal inclusion date is established. The revision's reason field and the relevant checkpoint state whether the case is unresolved, superseded, corrected or excluded.
 
 Do not add the net arithmetic of null revisions to the public subtotal. Do not infer inclusion from incident date, source-publication date, chronology appearance or a later aggregate whose incident membership is incomplete. Do not impose a balancing adjustment.

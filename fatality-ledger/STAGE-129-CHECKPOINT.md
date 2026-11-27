@@ -55,4 +55,4 @@ Current incident ledger: 191 incidents, 485 source records, 473 final documented
 - Ivan Fedorov, Zaporizhia Regional Military Administration, Oct. 22: https://t.me/ivan_fedorov_zp/49091
 - Zaporizhia regional police, Oct. 22 report: https://t.me/s/police_zp_news/27348
 - Ivan Fedorov, Zaporizhia Regional Military Administration, Oct. 23: https://t.me/ivan_fedorov_zp/49097
-- Zaporizhia regional police, Oct. 23: https://zp.npu.gov.ua/news/na-zaporizhzhi-cherez-rosiiski-ataky-zahynulo-troie-liudei-shche-odna-otrymala-poranennia-politsiia-dokumentuie-naslidky-voiennykh-zlochyniv
+- Zaporizhia regional police, Oct. 23: https://npu.gov.ua/news/na-zaporizhzhi-cherez-rosiiski-ataky-zahynulo-troie-liudei-shche-odna-otrymala-poranennia-politsiia-dokumentuie-naslidky-voiennykh-zlochyniv

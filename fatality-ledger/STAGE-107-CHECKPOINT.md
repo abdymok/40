@@ -64,7 +64,7 @@ The two casualty reports held pending overlap/incident identification are not ad
 
 ## Change control
 
-- ``incidents.json`: two revision-reason fields clarified; incident structure, final death tolls and effective dates unchanged.
+- `incidents.json`: two revision-reason fields clarified; incident structure, final death tolls and effective dates unchanged.
 - Incident count, source count, revision values, final incident tolls and effective dates: **not changed**.
 - Public fatality minimum: **remains 427**.
 - Dashboard, chronology incident entries and method-page arithmetic: **not changed**.

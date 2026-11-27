@@ -12491,6 +12491,19 @@
           "incident_date"
         ],
         "notes": "Filashkin's Oct. 22 post says one resident was killed in Druzhkivka on Oct. 21."
+      },
+      {
+        "source_id": "DON-DRUZHKIVKA-FPV-NPU-2026-10-22",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-10-22T09:40:00+03:00",
+        "url": "https://npu.gov.ua/news/dvi-liudyny-zahynuly-sered-9-poranenykh-dity-politsiia-donechchyny-dokumentuie-naslidky-rosiiskykh-atak",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "The police report says Russian forces killed one person in Druzhkivka with an FPV drone."
       }
     ],
     "last_verified_date": "2026-11-27",
@@ -12500,24 +12513,25 @@
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Donetsk Regional Military Administration head Vadym Filashkin reported two residents killed on Oct. 21, one in Druzhkivka and one in Kramatorsk. The Oct. 22 121→123 dashboard scope change is a numerical and temporal match, but its commit does not identify the incidents. This is a candidate attribution only; keep ledger_effective_at null.",
+        "reason": "Official regional administration and police reports establish one death in this settlement in the Oct. 21–22 reporting window. The Oct. 22 121→123 dashboard scope change is a possible numerical and temporal match, but it does not identify either incident. Other same-day official reports also record two deaths in Kostiantynivka and three in Zaporizhia region. The +2 cannot be uniquely allocated; keep ledger_effective_at null.",
         "source_ids": [
-          "DON-DRUZHKIVKA-21-FILASHKIN-2026-10-22"
+          "DON-DRUZHKIVKA-21-FILASHKIN-2026-10-22",
+          "DON-DRUZHKIVKA-FPV-NPU-2026-10-22"
         ],
         "ledger_effective_at": null
       }
     ]
   },
   {
-    "incident_id": "UA-DON-KRAMATORSK-2026-10-21-PRIVATE-SECTOR-STRIKE",
-    "incident_date": "2026-10-21",
+    "incident_id": "UA-DON-KRAMATORSK-2026-10-22-PRIVATE-SECTOR-STRIKE",
+    "incident_date": "2026-10-22",
     "location": {
       "settlement": "Kramatorsk",
       "district": "Kramatorsk district",
       "region": "Donetsk region",
       "country": "Ukraine"
     },
-    "incident_description": "Donetsk Regional Military Administration head Vadym Filashkin reported one resident killed in Kramatorsk on Oct. 21. The surviving official post does not identify the precise strike or address.",
+    "incident_description": "One person was killed in the private sector of Kramatorsk overnight into Oct. 22. Donetsk Regional Military Administration head Vadym Filashkin included one Kramatorsk death in his Oct. 21 regional toll; the National Police reported the overnight death on Oct. 22.",
     "documented_deaths": 1,
     "scope_classification": "civilian",
     "evidence_classification": "official_only",
@@ -12534,18 +12548,32 @@
           "incident_date"
         ],
         "notes": "Filashkin's Oct. 22 post says one resident was killed in Kramatorsk on Oct. 21."
+      },
+      {
+        "source_id": "DON-KRAMATORSK-OVERNIGHT-NPU-2026-10-22",
+        "publisher": "National Police of Ukraine, Donetsk region",
+        "source_type": "official_statement",
+        "published_at": "2026-10-22T09:40:00+03:00",
+        "url": "https://npu.gov.ua/news/dvi-liudyny-zahynuly-sered-9-poranenykh-dity-politsiia-donechchyny-dokumentuie-naslidky-rosiiskykh-atak",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "incident_date"
+        ],
+        "notes": "The police report says one person died overnight in the private sector of Kramatorsk."
       }
     ],
     "last_verified_date": "2026-11-27",
     "revision_history": [
       {
-        "revision_id": "UA-DON-KRAMATORSK-2026-10-21-PRIVATE-SECTOR-STRIKE-REV-001",
+        "revision_id": "UA-DON-KRAMATORSK-2026-10-22-PRIVATE-SECTOR-STRIKE-REV-001",
         "recorded_at": "2026-10-22",
         "old_value": null,
         "new_value": 1,
-        "reason": "Donetsk Regional Military Administration head Vadym Filashkin reported two residents killed on Oct. 21, one in Druzhkivka and one in Kramatorsk. The Oct. 22 121→123 dashboard scope change is a numerical and temporal match, but its commit does not identify the incidents. This is a candidate attribution only; keep ledger_effective_at null.",
+        "reason": "The National Police reported one person killed in the private sector of Kramatorsk overnight into Oct. 22; Filashkin's regional tally grouped the death with the Oct. 21 casualties. The Oct. 22 121→123 dashboard scope change is a possible numerical and temporal match, but it does not identify this incident. Other same-day official reports also record two deaths in Kostiantynivka and three in Zaporizhia region. The +2 cannot be uniquely allocated; keep ledger_effective_at null.",
         "source_ids": [
-          "DON-KRAMATORSK-21-FILASHKIN-2026-10-22"
+          "DON-KRAMATORSK-21-FILASHKIN-2026-10-22",
+          "DON-KRAMATORSK-OVERNIGHT-NPU-2026-10-22"
         ],
         "ledger_effective_at": null
       }

@@ -1,5 +1,7 @@
 # Stage 108 checkpoint — close two Lozova historical inclusion questions
 
+> **Superseded on Nov. 27 by Stage 109:** Subsequent local reporting confirms two further men died from injuries sustained in the Oct. 22 market strike, taking its final local toll to five. The fourth and fifth deaths are now documented as revisions 3→4 and 4→5 and are also established exclusions from the 148 baseline and 421 carry-forward. The OHCHR four-versus-three issue described below is superseded: OHCHR lists four, while local reporting now lists five (three women, two men). The separate Oct. 24 warehouse death remains distinct and excluded. See `STAGE-109-CHECKPOINT.md`.
+
 Date: 27 November 2026
 
 ## Scope

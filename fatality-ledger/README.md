@@ -18,9 +18,9 @@ The public 421 subtotal was reconstructed as:
 
 `148 + 19 + 25 + 229 = 421`
 
-The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–115.
+The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–116.
 
-The 40 null `ledger_effective_at` values do **not** represent 38 unresolved incidents or 84 additional deaths:
+The 40 null `ledger_effective_at` values do **not** represent 40 unresolved incidents or 81 additional deaths:
 
 - **16 entries** remain unresolved historical-inclusion questions, with a net arithmetic change of **+24**. Three later Lozova market revisions (the third, fourth and fifth deaths) and the separate Oct. 24 warehouse death are now classified as established exclusions from the 148 baseline and the 421 carry-forward. Their null effective dates are retained to distinguish exclusion from a dated addition. These are pre-Oct. 29 cases for which the surviving snapshots and change records do not establish whether a later carried-forward aggregate included the deaths.
 - The other **24 entries** have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions from that subtotal. In particular, Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.

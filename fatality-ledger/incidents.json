@@ -1103,8 +1103,8 @@
       "region": "Kyiv city",
       "country": "Ukraine"
     },
-    "incident_description": "Russian ballistic missiles struck Kyiv on the evening of Oct. 13, hitting a nine-storey residential building in Desniansky district and energy infrastructure. Two people were killed and 21 injured in the residential-building strike. OHCHR's October report lists three deaths in Kyiv on this date; the additional death is not identified in the local sources reviewed.",
-    "documented_deaths": 2,
+    "incident_description": "Russian ballistic missiles struck Kyiv on the evening of Oct. 13, hitting a nine-storey residential building in Desniansky district and energy infrastructure. Three women were killed in the residential building. The initial mayoral updates reported one death and then a second body recovered; the Kyiv City Prosecutor's Office and Kyiv Police later confirmed three women killed in the building. The third death is recorded as a later revision on Oct. 14.",
+    "documented_deaths": 3,
     "scope_classification": "civilian",
     "evidence_classification": "official_and_media",
     "sources": [
@@ -1144,9 +1144,35 @@
           "corroboration"
         ],
         "notes": "Official mayoral updates initially reported one death and later two."
+      },
+      {
+        "source_id": "KYIV-13-PROSECUTOR-THREE-DESNIANSKY-2026-10-14",
+        "publisher": "Kyiv City Prosecutor's Office",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-14T08:50:00+03:00",
+        "url": "https://t.me/kyiv_pro_office/11229",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Official prosecutor update at 08:50 reports three women killed in the Desniansky residential building, revising the incident toll beyond the two deaths reported overnight."
+      },
+      {
+        "source_id": "KYIV-13-POLICE-THREE-DESNIANSKY-2026-10-14",
+        "publisher": "Kyiv Police",
+        "source_type": "official_statement",
+        "published_at": "2026-10-14T11:50:00+03:00",
+        "url": "https://kyiv.npu.gov.ua/news/kilkist-zahyblykh-vnaslidok-vorozhoho-udaru-po-stolytsi-zbilshylasia-do-piaty-osib-politsiia-kyieva",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Police confirms three women aged 35, 58 and 84 killed in the Desniansky residential building. The same citywide update separately reports two deaths in Holosiivsky district."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-001",
@@ -1168,6 +1194,18 @@
         "source_ids": [
           "KYIV-13-REUTERS-2026-10-13",
           "KYIV-13-IFAX-2026-10-13"
+        ],
+        "ledger_effective_at": "2026-10-14"
+      },
+      {
+        "revision_id": "UA-KYI-KYIV-2026-10-13-EVENING-BALLISTIC-REV-003",
+        "recorded_at": "2026-10-14T08:50:00+03:00",
+        "old_value": 2,
+        "new_value": 3,
+        "reason": "The Kyiv City Prosecutor's Office reported three women killed in the Desniansky residential building in its 08:50 Oct. 14 update. Kyiv Police later confirmed the three victims, aged 35, 58 and 84. This is the third death in the same nine-storey building struck on the evening of Oct. 13, not a separate casualty group. The Oct. 14 method snapshot records three deaths in Desniansky district. First documented inclusion date: 2026-10-14.",
+        "source_ids": [
+          "KYIV-13-PROSECUTOR-THREE-DESNIANSKY-2026-10-14",
+          "KYIV-13-POLICE-THREE-DESNIANSKY-2026-10-14"
         ],
         "ledger_effective_at": "2026-10-14"
       }
@@ -1234,12 +1272,12 @@
     "incident_date": "2026-10-14",
     "location": {
       "settlement": "Kyiv",
-      "district": "Desniansky and Holosiivsky districts",
+      "district": "Holosiivsky district",
       "region": "Kyiv city",
       "country": "Ukraine"
     },
-    "incident_description": "Russian overnight attack on Kyiv from the evening of Oct. 13 into the morning of Oct. 14 killed five people: three women in a high-rise residential building in Desniansky district and two people in Holosiivsky district. The Kyiv City Prosecutor's Office initially reported four deaths (three in Desniansky and one in Holosiivsky); Kyiv Police later revised the toll to five, confirming two deaths in Holosiivsky.",
-    "documented_deaths": 5,
+    "incident_description": "During the Russian attack on Kyiv from the evening of Oct. 13 into the morning of Oct. 14, a separate strike in Holosiivsky district killed two people. Mayor Vitali Klitschko reported one death in the district at 06:46 on Oct. 14. Kyiv Police later confirmed two people killed in Holosiivsky district. The three women killed in the Desniansky high-rise are recorded separately under the Oct. 13 ballistic-strike incident.",
+    "documented_deaths": 2,
     "scope_classification": "civilian",
     "evidence_classification": "official_and_media",
     "sources": [
@@ -1332,39 +1370,39 @@
           "corroboration"
         ],
         "notes": "Reports five deaths and 36 injured, with three women killed in Desniansky district and two people in Holosiivsky district."
+      },
+      {
+        "source_id": "KYIV-14-KLYCHKO-HOLOSIIVSKY-0646-2026-10-14",
+        "publisher": "Kyiv Mayor Vitali Klitschko",
+        "source_type": "official_social_post",
+        "published_at": "2026-10-14T06:46:00+03:00",
+        "url": "https://t.me/vitaliy_klitschko/7874",
+        "supports": [
+          "incident_identity",
+          "death_count"
+        ],
+        "notes": "At 06:46, the mayor reported one person killed in Holosiivsky district during the ongoing ballistic attack. This is separate from the two initial deaths and later third death in the Desniansky residential building."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-KYI-KYIV-2026-10-14-OVERNIGHT-STRIKES-REV-001",
-        "recorded_at": "2026-10-14T07:31:00+03:00",
+        "recorded_at": "2026-10-14T06:46:00+03:00",
         "old_value": null,
-        "new_value": 3,
-        "reason": "The State Emergency Service and Red Cross initially reported three deaths (two in Desniansky district and one in Holosiivsky district). The Oct. 14 selected-subtotal update raised 82→85 by three deaths in this overnight Kyiv attack. First documented inclusion date: 2026-10-14.",
+        "new_value": 1,
+        "reason": "At 06:46, Kyiv Mayor Vitali Klitschko reported one person killed in Holosiivsky district during the ongoing attack. This death is separate from the Desniansky residential-building victims. The Oct. 14 method snapshot later explicitly reports four deaths across Kyiv: three in Desniansky and one in Holosiivsky. First documented inclusion date: 2026-10-14.",
         "source_ids": [
-          "KYIV-14-UP-2026-10-14",
-          "KYIV-14-RED-CROSS-2026-10-14"
+          "KYIV-14-KLYCHKO-HOLOSIIVSKY-0646-2026-10-14"
         ],
         "ledger_effective_at": "2026-10-14"
       },
       {
         "revision_id": "UA-KYI-KYIV-2026-10-14-OVERNIGHT-STRIKES-REV-002",
-        "recorded_at": "2026-10-14T09:19:00+03:00",
-        "old_value": 3,
-        "new_value": 4,
-        "reason": "The Kyiv City Prosecutor's Office reported four deaths as of 08:50: three women in Desniansky district and one person in Holosiivsky district. Ukrinform published the prosecutor's update at 09:19. The Oct. 14 method paragraph subsequently recorded four deaths in Kyiv. First documented inclusion date: 2026-10-14.",
-        "source_ids": [
-          "KYIV-14-PROSECUTOR-UP-2026-10-14"
-        ],
-        "ledger_effective_at": "2026-10-14"
-      },
-      {
-        "revision_id": "UA-KYI-KYIV-2026-10-14-OVERNIGHT-STRIKES-REV-003",
         "recorded_at": "2026-10-14T11:50:00+03:00",
-        "old_value": 4,
-        "new_value": 5,
-        "reason": "Kyiv Police later confirmed five deaths: three in Desniansky district and two in Holosiivsky district. Interfax-Ukraine and Ukrinform corroborated the police update. The Oct. 14 method paragraph records at least five deaths and the dashboard update history raises the subtotal from approximately 89 to approximately 90. First documented inclusion date: 2026-10-14.",
+        "old_value": 1,
+        "new_value": 2,
+        "reason": "Kyiv Police's 11:50 update confirmed two people killed in Holosiivsky district, revising the district toll from one to two. Interfax-Ukraine and Ukrinform corroborated the update. The Oct. 14 method/dashboard sequence later reports at least five deaths across Kyiv, including the two Holosiivsky victims. First documented inclusion date: 2026-10-14.",
         "source_ids": [
           "KYIV-14-POLICE-2026-10-14",
           "KYIV-14-IFAX-2026-10-14",

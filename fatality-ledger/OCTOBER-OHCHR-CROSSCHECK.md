@@ -25,7 +25,7 @@ The report also states that at least 372 civilians were killed in Ukraine during
 
 ## Additional discrepancy: Kyiv, Oct. 13
 
-Local mayoral and independent reporting confirms two deaths in the Oct. 13 ballistic strike, while OHCHR lists three. The incident record preserves the locally confirmed 1 → 2 sequence. One further OHCHR death remains unidentified in the Ukrainian sources reviewed.
+Kyiv City Prosecutor's Office and Kyiv Police reporting confirms three women killed in the Desniansky residential building struck on the evening of Oct. 13. The incident record preserves 1 → 2 → 3; the third death was reported by the prosecutor at 08:50 on Oct. 14 and confirmed by police at 11:50. OHCHR's three-death count is therefore matched by local official reporting. The two deaths in Holosiivsky district during the same overnight attack are a separate incident and are recorded separately. The earlier combined ledger record that included both the Desniansky and Holosiivsky deaths has been split to avoid counting the three Desniansky victims twice.
 
 ## Immediate research order
 
@@ -41,7 +41,7 @@ These leads may explain much of the gap between the historical 192 baseline and 
 
 ## Source-to-ledger status
 
-The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (2), Sloviansk high-rise strike (9) and separate private-sector strike (3), Zaporizhia (23), Kramatorsk Oct. 8 bus strike (33) and the separate Oct. 9 FPV strikes on two residential buildings (1). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The remaining differences against OHCHR remain explicit review items; the Sloviansk 12-death discrepancy is now reconciled as two incidents. No OHCHR number has been imported automatically.
+The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (2), Sloviansk high-rise strike (9) and separate private-sector strike (3), Zaporizhia (23), Kramatorsk Oct. 8 bus strike (33) and the separate Oct. 9 FPV strikes on two residential buildings (1). Kyiv's Oct. 13 Desniansky residential-building strike is recorded at three deaths; the separate Holosiivsky incident on Oct. 14 is recorded at two. The remaining differences against OHCHR remain explicit review items; the Sloviansk 12-death discrepancy is now reconciled as two incidents. No OHCHR number has been imported automatically.
 
 The Oct. 8 Kramatorsk bus record retains the local final toll of 33, with a source note that OHCHR had verified 11 and listed 19 additional reported deaths as under verification. This is a difference in verification status, not proof that the local final toll is false.
 

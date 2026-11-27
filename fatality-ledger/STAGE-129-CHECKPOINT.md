@@ -32,7 +32,7 @@ The 121→123 commit does not cite or allocate its +2 to any of these reports. T
 
 ## The 123→132 +4 across other regions
 
-The Oct. 25 update describes four deaths across other regions reported on Oct. 23, without naming incidents. The three deaths in the Oct. 22 Zaporizhia city strike were confirmed by police on Oct. 23 and are a possible fit. The update does not identify them, so no inclusion date is assigned. The other three Zaporizhia-region deaths from Oct. 21 are not explicitly identified in the 123→132 allocation either.
+The Oct. 25 update describes four deaths across other regions reported on Oct. 23, without naming incidents. One already-recorded candidate is the Oct. 23 Kramatorsk FAB-250 strike death, whose incident-ledger inclusion date is Oct. 25. The three deaths in the Oct. 22 Zaporizhia city strike were confirmed by police on Oct. 23. Together, one Kramatorsk death plus three Zaporizhia deaths are an exact four-death candidate for this bucket. The update does not identify those incidents, so the Zaporizhia record remains null and the proposed 1+3 mapping is not treated as proven. The other three Zaporizhia-region deaths from Oct. 21 are not explicitly identified in the 123→132 allocation either.
 
 ## Adjudication
 
@@ -40,7 +40,7 @@ The Oct. 25 update describes four deaths across other regions reported on Oct. 2
 - Keep all five new revision entries null for historical inclusion.
 - Treat the two Kostiantynivka deaths as a plausible but unproven match to 121→123 +2; the Donetsk pair and Zaporizhia incidents remain competing contemporaneous reports.
 - Do not assign the 121→123 +2 to the Kostiantynivka daily aggregate or any Zaporizhia incident without direct evidence.
-- Treat the three Zaporizhia city deaths as a possible, unproven match to the four deaths reported across other regions on Oct. 23 in the 123→132 update.
+- Treat the Kramatorsk FAB-250 death plus the three Zaporizhia city deaths as a plausible 1+3 mapping of the four deaths reported across other regions on Oct. 23 in the 123→132 update, not a proven allocation.
 - Public minimum remains 427 through Nov. 26, 2026. No public subtotal changes.
 
 ## Integrity

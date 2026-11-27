@@ -32,16 +32,16 @@ Local mayoral and independent reporting confirms two deaths in the Oct. 13 balli
 1. Kramatorsk, Oct. 8 (33 local reports vs. OHCHR's verified/under-verification split).
 2. Sloviansk, Oct. 17 (local final toll 9 vs. OHCHR 12).
 3. Kherson, Oct. 17 (one local confirmed death vs. OHCHR two).
-3. Kyiv, Oct. 13 (two local confirmed deaths vs. OHCHR three).
-4. Lozova, Oct. 22 (five local reported deaths vs. OHCHR four).
-5. Zaporizhia, Oct. 10 (local final toll 23 vs. OHCHR 21).
+2. Kyiv, Oct. 13 (two local confirmed deaths vs. OHCHR three).
+3. Lozova, Oct. 22 (five local reported deaths vs. OHCHR four).
+4. Zaporizhia, Oct. 10 (local final toll 23 vs. OHCHR 21).
 
 These leads may explain much of the gap between the historical 192 baseline and the incident records currently recoverable from the archive. No total is revised in this file.
 
 
 ## Source-to-ledger status
 
-The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (2), Sloviansk high-rise strike (9) and separate private-sector strike (3), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The differences against OHCHR remain explicit review items; no OHCHR number has been imported automatically.
+The following incident records have now been added to the pilot ledger: Nova Vodolaha (6), Lozova (5), Izium (5), Kherson (2), Sloviansk high-rise strike (9) and separate private-sector strike (3), Zaporizhia (23) and Kramatorsk (33). Kyiv's Oct. 13 ballistic attack is recorded at two deaths. The remaining differences against OHCHR remain explicit review items; the Sloviansk 12-death discrepancy is now reconciled as two incidents. No OHCHR number has been imported automatically.
 
 The Oct. 8 Kramatorsk bus record retains the local final toll of 33, with a source note that OHCHR had verified 11 and listed 19 additional reported deaths as under verification. This is a difference in verification status, not proof that the local final toll is false.
 

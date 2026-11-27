@@ -22,7 +22,7 @@ CUTOFF_PATTERN = re.compile(
     r'Chronology and reporting cutoff through <time datetime="(\d{4}-\d{2}-\d{2})"'
 )
 PERIOD_PATTERN = re.compile(
-    r"September 30–([A-Za-z]+)&nbsp;(\d{1,2}), (\d{4})"
+    r"September 30–([A-Za-z]+)\.?&nbsp;(\d{1,2}), (\d{4})"
 )
 UPDATED_PATTERN = re.compile(
     r'Updated <time datetime="(\d{4}-\d{2}-\d{2})"'

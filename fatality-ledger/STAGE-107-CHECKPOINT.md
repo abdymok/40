@@ -43,7 +43,7 @@ The Nov. 26 public updates add six separately documented deaths, taking the subt
 
 The 33 null effective-date entries are not 33 unresolved deaths and their +90 arithmetic must not be added to 427:
 
-- Fourteen pre-Oct. 29 entries remain unresolved historical-inclusion questions, net +19. The surviving snapshots and change records do not establish whether later carried-forward aggregates included these deaths.
+- Twelve pre-Oct. 29 entries remain unresolved historical-inclusion questions, net +17. The surviving snapshots and change records do not establish whether later carried-forward aggregates included these deaths. Stage 108 resolves the Lozova market third death and the separate Oct. 24 warehouse death as exclusions from the 148 baseline and 421 carry-forward.
 - The other 19 entries have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions. Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
 - A null effective date is therefore not synonymous with an unverified incident or an open inclusion question. The revision reason and relevant checkpoint record the disposition.
 

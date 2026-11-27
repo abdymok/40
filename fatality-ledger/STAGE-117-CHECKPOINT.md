@@ -20,3 +20,8 @@ The UN letter has been added to the Zaporizhia incident's source list and the 20
 ## Integrity
 
 The ledger contains 186 incidents, 473 source records, 465 final documented deaths and 245 revision entries (205 dated, 40 null). Null-revision arithmetic is +81. Sixteen historical-inclusion questions remain open, net +24.
+
+
+## Kramatorsk historical-inclusion qualification
+
+The Oct. 11 ≈80 chronology snapshot explicitly labels the 33 deaths as the Kramatorsk bus strike. Later Kramatorsk City Council itemization and an Oct. 26 police response establish 30 deaths in the bus strike and three in a separate Bilenke attack. The 33 may have conflated those three Bilenke deaths with the bus toll, or may have overstated the bus toll. The surviving snapshot does not establish whether the Bilenke deaths were included. Their `ledger_effective_at` has therefore been returned to null. The two deaths in the separate evening car strike also remain null.

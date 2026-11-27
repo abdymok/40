@@ -2,7 +2,7 @@
 
 **Position as of Nov. 27, 2026**
 
-There are **22 unresolved revision entries**, with a net arithmetic change of **+35 deaths**. These are not 17 confirmed omissions. They are the cases for which the incident toll is established but the surviving project snapshots do not establish whether the death or revision was already included in the historical public subtotal.
+There are **22 unresolved revision entries**, with a net arithmetic change of **+35 deaths**. These are not 22 confirmed omissions. They are the cases for which the incident toll is established but the surviving project snapshots do not establish whether the death or revision was already included in the historical public subtotal.
 
 The public provisional minimum remains **427 through Nov. 26**. No entry below is added to that figure. The Oct. 28 ≈148 baseline and the later 421 carry-forward are aggregates, not complete incident rosters. Absence from a partial change list does not prove exclusion.
 

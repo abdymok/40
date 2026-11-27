@@ -1,3 +1,5 @@
+> **Superseded in part by Stage 115 (Nov. 27, 2026):** Stage 60's 82→85 mapping treated the Oct. 14 three-death citywide report as a fresh +3 after the 80→81→82 increments had already counted the first two deaths in the Desniansky building. The Oct. 13 Desniansky and Oct. 14 Holosiivsky records are now separated: three deaths in Desniansky and two in Holosiivsky. The 82→85 dashboard transition is under review for duplicate inclusion; no guessed correction has been applied to the public 427. Retain the original checkpoint below as the historical state of the audit.
+
 # Stage 60 checkpoint — Oct. 12–14 Kyiv and Kharkiv sequence
 
 Date: 26 November 2026

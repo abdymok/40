@@ -8,7 +8,7 @@ The public provisional minimum remains **427 through Nov. 26**. No entry below i
 
 | # | Incident / revision | Net change | What remains unresolved |
 |---:|---|---:|---|
-| 1 | Kramatorsk, Oct. 5 — one death | +1 | Reported before the Oct. 11 ≈80 snapshot but absent from its named rows and the mapped 80→92 changes. Later 148/421 membership is not itemized. |
+| 1 | Kramatorsk, Oct. 5 — one death | +1 | Reported before the Oct. 11 ≈80 snapshot; the archived page has no Oct. 5 Kramatorsk fatality row, only the separate Oct. 8 bus strike. The approximate snapshot is not a complete membership roster, so inclusion remains unresolved. See [Stage 119](STAGE-119-CHECKPOINT.md). |
 | 2 | Ivano-Frankivsk, Oct. 8 — drone-debris death | +1 | Reported before the Oct. 11 snapshot but not itemized in it or the mapped 80→92 changes. Later carry-forward membership is unknown. |
 | 3 | Kyiv, Oct. 8 — unallocated morning death | +1 | The mayor and police establish a citywide death distinct from the three Solomiansky shop victims. The Oct. 11 snapshot has a one-death Kyiv citywide row, but its method explicitly excludes broad citywide aggregates from the selected subtotal where they may overlap incident rows. This death is therefore not in the ≈80 selected subtotal; its inclusion in the later 148/421 carry-forward remains unknown. |
 | 4 | Kyiv, Solomiansky shop, Oct. 8 — third death (2→3) | +1 | The first two shop deaths are explicitly in the Oct. 11 ≈80 snapshot. The third was confirmed later; the 148 baseline does not provide a complete roster. |

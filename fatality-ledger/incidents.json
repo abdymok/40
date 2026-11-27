@@ -2413,7 +2413,7 @@
         "recorded_at": "2026-10-23T09:58:00+02:00",
         "old_value": 2,
         "new_value": 3,
-        "reason": "Stage 103 final legacy-baseline review: the Oct. 26 132→137 update explicitly includes the market's first two deaths. The third woman died in hospital and was reported on Oct. 23, but that +5 update does not include her, and no later mapped Oct. 26–28 increment identifies the third death. The carried-forward 148 baseline does not provide complete incident membership. Keep ledger_effective_at null; do not add this death to the public subtotal without a dated inclusion source.",
+        "reason": "Stage 108 historical reconciliation: the Oct. 22 123 baseline predates the market deaths. The Oct.  26 132→137 update accounts for the two women killed at the scene; it does not include the third woman, who died in hospital on Oct. 23. The remaining dated additions from 137→148 are itemized and contain no later Lozova market death. The third death is therefore an established exclusion from the Oct. 28 148 baseline and its later 421 carry-forward. Keep ledger_effective_at null; do not add this death to the public subtotal. The OHCHR October 2026 update later lists four deaths for the Oct. 22 Lozova incident (two women and two men), but no fourth victim has been identified in the reviewed Ukrainian local or regional reports. Preserve that separate unresolved source discrepancy; do not infer an additional victim or merge the Oct. 24 warehouse death into the market incident.",
         "source_ids": [
           "LOZOVA-IFAX-2026-10-23",
           "LOZOVA-EVIDENCEHUB-2026-10-22"
@@ -2957,7 +2957,7 @@
         "recorded_at": "2026-10-24",
         "old_value": null,
         "new_value": 1,
-        "reason": "Stage 103 final legacy-baseline review: the Oct. 24 warehouse death is separate from the Oct. 22 central-market incident. The Oct. 25 123→132 update itemizes nine deaths from Synelnykove, Kharkiv and four other regional incidents on Oct. 23; it does not name the Oct. 24 warehouse strike. The Oct. 26–28 mapped increments do not identify it either. The 148 baseline remains a carried-forward aggregate, so exclusion cannot be proven. Keep ledger_effective_at null; inclusion in 148 or 421 remains unverified.",
+        "reason": "Stage 108 historical reconciliation: the Oct. 22 123 baseline predates this Oct. 24 warehouse-strike death. The Oct. 25 123→132 update itemizes the Synelnykove, Kharkiv and other regional deaths but does not include the Oct. 24 Lozova warehouse victim. The Oct. 26 132→137 update's two Lozova deaths are the two women killed at the Oct. 22 central market; the later 137→148 increments are itemized and contain no warehouse-strike death. This incident is therefore an established exclusion from the Oct. 28 148 baseline and its later 421 carry-forward. Keep ledger_effective_at null; do not add this death to the public subtotal. See STAGE-108-CHECKPOINT.md.",
         "source_ids": [
           "LOZOVA-WAREHOUSE-IFAX-2026-10-24",
           "LOZOVA-WAREHOUSE-UKRINFORM-2026-10-24"

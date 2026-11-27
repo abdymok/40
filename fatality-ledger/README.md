@@ -18,7 +18,7 @@ The public 421 subtotal was reconstructed as:
 
 `148 + 19 + 25 + 229 = 421`
 
-The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–127.
+The Nov. 26 updates then raised the public minimum from 421 to 427. The detailed dated mappings are retained in the stage checkpoints, including Stages 44–52 and 103–128.
 
 The 41 null `ledger_effective_at` values do **not** represent 41 unresolved incidents or 84 additional deaths:
 

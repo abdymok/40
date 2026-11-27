@@ -44,7 +44,7 @@ The Nov. 26 public updates add six separately documented deaths, taking the subt
 The 33 null effective-date entries are not 33 unresolved deaths and their +90 arithmetic must not be added to 427:
 
 - Twelve pre-Oct. 29 entries remain unresolved historical-inclusion questions, net +17. The surviving snapshots and change records do not establish whether later carried-forward aggregates included these deaths. Stage 108 resolves the Lozova market third death and the separate Oct. 24 warehouse death as exclusions from the 148 baseline and 421 carry-forward.
-- The other 19 entries have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions. Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
+- The other 21 entries have been categorized as interim or superseded tolls, a downward correction not reflected in the historical subtotal, or established exclusions. Stage 106 closes all seven post-Oct. 29 null revisions as established exclusions from the 421 subtotal.
 - A null effective date is therefore not synonymous with an unverified incident or an open inclusion question. The revision reason and relevant checkpoint record the disposition.
 
 The Nov. 21–26 public additions are itemized in Stages 51–52 and the Nov. 26 update record. In particular, the formerly flagged 372→374 Kryvyi Rih step is explicitly mapped in Stage 51, and the 390→391 Zaporizhia enterprise death is included in the five-death 379→391 allocation. The 391→421 sequence is itemized in Stage 52. No unexplained arithmetic jump was identified in the reviewed 372→427 sequence.
@@ -64,12 +64,12 @@ The two casualty reports held pending overlap/incident identification are not ad
 
 ## Change control
 
-- `incidents.json`: **not changed**.
+- ``incidents.json`: two revision-reason fields clarified; incident structure, final death tolls and effective dates unchanged.
 - Incident count, source count, revision values, final incident tolls and effective dates: **not changed**.
 - Public fatality minimum: **remains 427**.
 - Dashboard, chronology incident entries and method-page arithmetic: **not changed**.
-- `fatality-ledger/README.md`: clarified the current inventory, the 31-death raw-ledger/public-subtotal difference, the 14 unresolved historical-inclusion questions, and the dispositions of the other null revisions. Removed duplicated and stale explanatory text.
+- `fatality-ledger/README.md`: clarified the current inventory, the 31-death raw-ledger/public-subtotal difference, the 12 unresolved historical-inclusion questions, and the dispositions of the other null revisions. Removed duplicated and stale explanatory text.
 
 ## Closeout
 
-The current structural checks found no ledger integrity defect. Historical public-subtotal membership remains unresolved for the 14 pre-Oct. 29 entries described above; those questions are disclosed and no balancing adjustment is made. The incident-level ledger and public subtotal remain separate measures until the remaining scope, overlap and historical-membership questions are resolved with evidence.
+The current structural checks found no ledger integrity defect. Historical public-subtotal membership remains unresolved for the 12 pre-Oct. 29 entries described above; those questions are disclosed and no balancing adjustment is made. The incident-level ledger and public subtotal remain separate measures until the remaining scope, overlap and historical-membership questions are resolved with evidence.

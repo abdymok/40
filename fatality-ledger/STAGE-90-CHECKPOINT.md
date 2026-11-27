@@ -1,3 +1,5 @@
+> **Superseded in part by Stage 115 (Nov. 27, 2026):** The 82→85 update described three deaths in total across the Oct. 13–14 Kyiv attack: two Desniansky deaths already counted in 80→81→82 and one Holosiivsky death. It is not a clean +3 of new deaths. The 82→85 subtotal transition is under review for duplicate inclusion; no guessed correction has been applied to the public 427. This does not resolve the separate Kharkiv/Darnytsky membership questions.
+
 # Stage 90 checkpoint — Oct. 12 Kharkiv four-death inclusion question
 
 Date: 2026-11-26
@@ -11,7 +13,7 @@ The Oct. 12 Russian strike on a four-storey residential building in Kharkiv's Kh
 The archived selected-subtotal sequence is:
 - 80→81: one death in the separate Oct. 13 Kyiv ballistic strike.
 - 81→82: a further body recovered after that Kyiv ballistic strike.
-- 82→85: three deaths in the Oct. 13–14 Kyiv overnight attack.
+- 82→85: a three-death total was reported in the Oct. 13–14 Kyiv attack; two Desniansky deaths were already counted in 80→81→82, so the +3 is not a clean new-death increment.
 - 85→89: four deaths in Lutsk.
 - 89→90: the fifth death in the Oct. 14 Kyiv overnight attack.
 - 90→92: two further Lutsk deaths.

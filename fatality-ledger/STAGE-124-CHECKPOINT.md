@@ -12,7 +12,7 @@ Trace the historical dashboard from ≈92 on Oct. 14 through ≈148 on Oct. 28. 
 |---|---|---|
 | 92→95, Oct. 15 | Three deaths in Kirovohrad region | Three-death incident; supported and dated Oct. 15. |
 | 95→98, Oct. 16 | Three deaths reported in the Kharkiv market strike | The final incident toll is two. The later official correction did not produce a -1 dashboard subtraction. This leaves a second known one-death overstatement in the historical subtotal. |
-| 98→99, Oct. 19 | One death in Kyiv from the overnight ballistic attack | Commit `1ca051e` raises the dashboard from ≈98 to ≈99 and updates the method paragraph to include the 21-year-old woman killed in Kyiv. |
+| 98→99, Oct. 19 | One death in Kyiv from the overnight ballistic attack | Commit `ac5b47d` raises the dashboard from ≈98 to ≈99 and updates the method paragraph to include the 21-year-old woman killed in Kyiv. |
 | 99→102, Oct. 20 | Three deaths in Chabany | Commit `a2ebd83` raises the dashboard from ≈99 to ≈102 and explicitly includes the three Chabany deaths in the method paragraph. |
 | 102→103, Oct. 20 | One death in Holosiivsky district | Commit `f40e650` raises the dashboard from ≈102 to ≈103 after adding the Holosiivsky death. The method paragraph at this commit remains stale at ≈102. |
 | 103→100, Oct. 20 | Three Chabany deaths removed from the subtotal | Commit `25abf34` changes the dashboard from ≈103 to ≈100 and labels the Chabany deaths as attributed to an unverified local Telegram channel and excluded. The method paragraph in that commit remains stale at ≈103 and still says Chabany is included; the Oct. 21 method paragraph resolves the inconsistency by explicitly excluding them. |

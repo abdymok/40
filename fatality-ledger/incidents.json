@@ -362,7 +362,7 @@
           "death_count",
           "incident_date"
         ],
-        "notes": "At 14:14, reports 33 deaths and 18 injured, citing the Donetsk Regional Prosecutor's Office and State Emergency Service. Later Kramatorsk City Council incident-by-incident reporting and an Oct. 26 police response establish 30 deaths in the bus strike; the three-death difference is separately documented in Bilenke."
+        "notes": "Ukrinform's 14:14 report says the Donetsk Regional Prosecutor's Office's 12:36 update gave 30 deaths and 18 injured, while the State Emergency Service later reported 33 deaths and 18 injured in the bus strike. The same report separately notes three deaths in Bilenke. Later Kramatorsk City Council itemization and an Oct. 26 police response establish 30 bus deaths. The SES figure is retained as a superseded conflicting report, not a separate casualty addition."
       },
       {
         "source_id": "KRAMATORSK-BUS-OHCHR-2026-10",
@@ -401,6 +401,19 @@
           "corroboration"
         ],
         "notes": "Police response to a formal inquiry states that the bus-attack investigation established 30 killed and 20 injured. Some victims remained unidentified. This later official police figure supports 30 for the bus incident, not 33."
+      },
+      {
+        "source_id": "KRAMATORSK-BUS-INTERFAX-2026-10-08",
+        "publisher": "Interfax-Ukraine, citing the State Emergency Service of Ukraine",
+        "source_type": "news_report",
+        "published_at": "2026-10-08T13:21:00+03:00",
+        "url": "https://en.interfax.com.ua/news/general/1216402.html",
+        "supports": [
+          "incident_identity",
+          "death_count",
+          "count_revision"
+        ],
+        "notes": "Interfax reports the SES statement that 33 people were killed in the bus strike and separately reports three killed in Bilenke. It notes that 30 had previously been reported killed in the bus strike. Later City Council itemization and an Oct. 26 police response establish 30 bus deaths. This source documents the conflicting SES figure, not an additional casualty count."
       }
     ],
     "last_verified_date": "2026-11-27",
@@ -421,7 +434,7 @@
         "recorded_at": "2026-10-08T12:36:00+02:00",
         "old_value": 12,
         "new_value": 30,
-        "reason": "The interim toll rose to 30. The Oct. 11 ≈80 selected-incident snapshot includes the Kramatorsk community row of 33, now reconciled from the later local incident breakdown as 30 bus victims plus three killed in a separate Bilenke strike. The 30 bus deaths are therefore included in the selected subtotal on Oct. 11.",
+        "reason": "The interim toll rose to 30. The Oct. 11 ≈80 selected-incident snapshot explicitly labels 33 deaths as the Kramatorsk bus strike. Later City Council itemization and the Oct. 26 police response establish 30 bus deaths. The contemporaneous SES report also gave 33 for the bus strike, so the 30 final bus deaths are included in the reported 33. The three-person discrepancy remains unresolved and is not reassigned to Bilenke. Effective Oct. 11 for the 30 bus deaths.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
@@ -432,7 +445,7 @@
         "recorded_at": "2026-10-08T14:14:00+02:00",
         "old_value": 30,
         "new_value": 33,
-        "reason": "An Oct. 8 regional update reported 33 deaths in the bus attack, but the later Kramatorsk City Council incident-by-incident recap and an Oct. 26 police response establish 30 deaths in the bus strike. The three-death difference is separately documented in the Bilenke attack and is not a further bus-incident toll. This 30→33 revision is retained as a superseded, overinclusive report, not a separate casualty addition. Its effective date is null; the three Bilenke deaths are recorded in their own incident.",
+        "reason": "At 13:21 on Oct. 8, the State Emergency Service, as reported by Interfax, gave 33 deaths in the bus strike and separately reported three deaths in Bilenke. This differs from the Prosecutor's Office's 12:36 update of 30 bus deaths and from the later City Council recap and Oct. 26 police response, both of which establish 30 bus deaths. The three-person discrepancy between official bus figures remains unexplained and is not reassigned to Bilenke. Retain 30→33 as a superseded conflicting report, not a separate casualty addition. Its effective date is null.",
         "source_ids": [
           "KRAMATORSK-BUS-UKRINFORM-2026-10-08"
         ],
@@ -443,7 +456,7 @@
         "recorded_at": "2026-10-09T18:53:00+03:00",
         "old_value": 33,
         "new_value": 30,
-        "reason": "The Kramatorsk City Council's Oct. 9 incident-by-incident recap reports 30 killed and 20 injured in the 10:00 bus strike. A later police response dated Oct. 26, reported by Suspilne Donbas, independently states that the bus-attack investigation established 30 killed and 20 injured. The three deaths previously attached to the 33 figure are separately identified in the 10:10 Bilenke strike. The final bus-incident toll is therefore 30; this correction is not a subtraction from the public 33 Kramatorsk row, which is now decomposed as bus 30 plus Bilenke 3.",
+        "reason": "The City Council's Oct. 9 incident-by-incident recap reports 30 killed and 20 injured in the 10:00 bus strike, separately lists three deaths in the 10:10 Bilenke strike and two deaths in the 18:40 car strike. The Oct. 26 police response independently confirms 30 killed and 20 injured in the bus strike. The Oct. 11 snapshot's 33 bus-strike row may reflect the SES figure, but it does not establish whether the Bilenke or evening-car deaths were separately included in the ≈80 subtotal. Final bus toll is 30. This correction does not change the public subtotal.",
         "source_ids": [
           "KRAMATORSK-BUS-COUNCIL-RECAP-2026-10-09",
           "KRAMATORSK-BUS-POLICE-RESPONSE-SUSPILNE-2026-10-26"
@@ -12335,6 +12348,18 @@
           "corroboration"
         ],
         "notes": "The 13:14 update reports three people killed in a separate Russian strike on Bilenke, citing the Donetsk regional administration head. This is the earliest source timestamp reflected in the incident's initial revision."
+      },
+      {
+        "source_id": "KRAMATORSK-REGIONAL-ADMIN-2026-10-09",
+        "publisher": "Donetsk Regional State Administration",
+        "source_type": "official_statement",
+        "published_at": "2026-10-09T10:00:00+03:00",
+        "url": "https://dn.gov.ua/en/news/operatyvna-sytuatsiia-po-oblasti-stanom-na-ranok-9-zhovtnia-09-10-26",
+        "supports": [
+          "death_count",
+          "corroboration"
+        ],
+        "notes": "The Oct. 9 regional update reports 32 killed in Kramatorsk and three in Bilenke. This is consistent with the City Council's itemization of 30 bus deaths plus two evening-car deaths in Kramatorsk, and three separate Bilenke deaths. It is an aggregate cross-check, not an additional casualty count."
       }
     ],
     "last_verified_date": "2026-11-27",
@@ -12344,7 +12369,7 @@
         "recorded_at": "2026-10-08T13:14:00+03:00",
         "old_value": null,
         "new_value": 3,
-        "reason": "Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap, plus Suspilne Donbas citing the city military administration head, establish three deaths in the separate Bilenke strike. The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the bus strike, not a Kramatorsk-wide total. Later local itemization and an Oct. 26 police response establish 30 deaths in the bus strike and three in Bilenke. The original 33 bus-strike figure may have conflated the Bilenke victims, or may have overstated the bus toll; the surviving snapshot does not establish whether these three Bilenke deaths were included in the public 33. Keep ledger_effective_at null; this is an unresolved three-death historical-inclusion question, not a confirmed omission.",
+        "reason": "Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap, plus Suspilne Donbas, establish three deaths in the separate Bilenke strike. The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the Kramatorsk bus strike. Interfax's contemporaneous Oct. 8 report says the SES also gave 33 for the bus strike and separately reported three deaths in Bilenke. The later City Council recap and Oct. 26 police response establish 30 bus deaths. The 33 bus-strike figure remains a conflicting official report, not evidence that Bilenke victims were necessarily included. The Oct. 11 snapshot does not establish whether the three Bilenke deaths were separately included in the subtotal. Keep ledger_effective_at null; this remains an unresolved historical-inclusion question, not a confirmed omission.",
         "source_ids": [
           "KRAMATORSK-BILENKE-COUNCIL-MEMORIAL-2026-10-08",
           "KRAMATORSK-BILENKE-COUNCIL-RECAP-2026-10-09",
@@ -12416,7 +12441,7 @@
         "recorded_at": "2026-10-08T18:40:00+03:00",
         "old_value": null,
         "new_value": 2,
-        "reason": "The Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap separately report two people killed when an FPV drone struck a civilian car in central Kramatorsk at 18:40. Suspilne Donbas independently reports the two deaths. The Oct. 11 ≈80 snapshot explicitly labels 33 deaths as the bus strike and does not mention the evening car attack. Later City Council reporting gives 30 bus deaths, three in Bilenke and two in the car attack. Whether the car deaths entered the later 148 baseline or 421 carry-forward is not established. Keep ledger_effective_at null; this is a potential two-death historical-inclusion gap, not a confirmed omission.",
+        "reason": "The Kramatorsk City Council's Oct. 8 memorial statement and Oct. 9 detailed recap separately report two people killed when an FPV drone struck a civilian car in central Kramatorsk at 18:40. Suspilne Donbas independently reports the two deaths. The Oct. 9 citywide total of 32 killed in Kramatorsk is consistent with 30 bus deaths plus these two car deaths. The Oct. 11 ≈80 snapshot's named 33-death bus-strike row does not identify the evening car attack. Whether these two deaths entered the 148 baseline or 421 carry-forward remains unknown. Keep null; this is a potential historical-inclusion gap, not a confirmed omission.",
         "source_ids": [
           "KRAMATORSK-CAR-COUNCIL-MEMORIAL-2026-10-08",
           "KRAMATORSK-CAR-COUNCIL-RECAP-2026-10-09",

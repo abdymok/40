@@ -13,7 +13,7 @@ The official DSNS Telegram channel reported the three deaths. Suspilne Donbas an
 
 ## Historical subtotal membership
 
-The private-sector deaths were reported by Oct. 18, before the Oct. 21 ≈105 snapshot. The 105→116 increment is allocated to the nine deaths in the separate high-rise strike and two Korotych deaths. That allocation does not establish whether the three private-sector deaths were already in the 105 baseline. The 105 figure is a selected-incident aggregate, not a complete incident roster.
+Stage 127 reconstructs the 98→105 sequence and accounts for its full net increase through other named deaths; the private-sector strike is not among those additions or in the ≈105 method paragraph. The 105→116 increase is allocated to the nine deaths in the separate high-rise strike and two Korotych deaths. The 116→121 changes add Lymanivka, Kyiv and the later corroborated Chabany inclusion; none names the private-sector strike. The three deaths are therefore not shown as included by the ≈121 subtotal. The only remaining identified transition before the ≈148 baseline that could have included them is the unallocated 121→123 nationwide-scope change. No evidence assigns any of the three deaths to that +2. Their inclusion in 148/421/427 remains unresolved. See Stage 128.
 
 The new three-death revision remains `ledger_effective_at: null`. It is a potential three-death historical-inclusion gap, not a confirmed omission. No public subtotal changes.
 

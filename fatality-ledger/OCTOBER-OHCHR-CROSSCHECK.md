@@ -112,3 +112,8 @@ The City Council's Oct. 9 report gives a community-wide toll of 35: 30 + 3 + 2. 
 The City Council's Oct. 8 memorial statement and Oct. 9 incident-by-incident recap distinguish three fatal attacks in Kramatorsk community: 30 people killed in the 10:00 bus strike in central Kramatorsk; three people killed in a separate 10:10 strike in Bilenke; and two men killed when an FPV drone struck a civilian car in central Kramatorsk at 18:40. The Council's community-wide total is 35.
 
 The 30-death bus toll is corroborated by a later Kramatorsk District Police response dated Oct. 26, reported by Suspilne Donbas. OHCHR records 11 verified deaths and 19 additional reported deaths pending verification, also totalling 30. The earlier regional report of 33 deaths attributed to the bus strike is treated as an overinclusive interim report; the later police response and local incident breakdown separate the Bilenke three. The Oct. 11 ≈80 Kramatorsk row of 33 is decomposed as bus 30 + Bilenke 3. The two car deaths remain a separate historical-inclusion question.
+
+
+## Zaporizhia, Oct. 10 — Ukrainian UN letter corroborates 23
+
+Ukraine's Oct. 14 letter to the UN (A/81/436–S/2026/819), circulated Oct. 15, states that the Oct. 10 air strike on Zaporizhia killed 23 people, including four children, and injured at least 34. This is an official Ukrainian government submission, not an OHCHR verification. It independently corroborates the local final toll of 23. OHCHR's October report lists 21 civilian deaths. Retain both counts as a verification discrepancy; do not reduce the local incident toll to 21 or add two unidentified deaths.

@@ -1,3 +1,5 @@
+> **Superseded in part by Stage 116 (Nov. 27, 2026):** The Kramatorsk 33-death row in the Oct. 11 ≈80 snapshot is now decomposed into 30 deaths in the 10:00 bus strike plus three deaths in the separate 10:10 Bilenke strike. The two deaths in the 18:40 FPV attack on a civilian car are a third incident and are not part of the 33 selected row. The row's aggregate value remains 33; do not interpret all 33 as bus-strike victims. See `STAGE-116-CHECKPOINT.md`.
+
 # Stage 73 checkpoint — reconstructing the Oct. 11 ≈80 baseline
 
 Date: 2026-11-26
@@ -11,7 +13,7 @@ The seven incident/region rows remaining after excluding that citywide aggregate
 | Selected incident/report in the Oct. 11 snapshot | Deaths |
 |---|---:|
 | Pryluky residential strike | 22 |
-| Kramatorsk bus/residential strike | 33 |
+| Kramatorsk community: bus strike 30 + Bilenke 3 | 33 |
 | Zaporizhia residential strike | 20 |
 | Pokrovske community, Dnipropetrovsk region | 1 |
 | Darnytsky district, Kyiv | 2 |

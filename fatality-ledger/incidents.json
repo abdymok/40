@@ -1527,9 +1527,22 @@
           "corroboration"
         ],
         "notes": "Reports six killed and 11 injured in the food-processing facility strike."
+      },
+      {
+        "source_id": "LUTSK-VOLYN-COM-2026-10-14-1530",
+        "publisher": "Volyn.com.ua",
+        "source_type": "news_report",
+        "published_at": "2026-10-14T15:30:00+03:00",
+        "url": "https://www.volyn.com.ua/news/314396-u-lutsku-vzhe-shestero-ubytykh-pislia-rosiiskoi-ataky",
+        "supports": [
+          "death_count",
+          "count_revision",
+          "corroboration"
+        ],
+        "notes": "Reports six deaths and 12 injured as of 15:30 Kyiv time, quoting Lutsk City Council secretary Andriy Razumovskyi. Published before the 90→92 dashboard update."
       }
     ],
-    "last_verified_date": "2026-11-26",
+    "last_verified_date": "2026-11-27",
     "revision_history": [
       {
         "revision_id": "UA-VOL-LUTSK-2026-10-14-DRONE-STRIKE-REV-001",
@@ -1558,11 +1571,12 @@
         "recorded_at": "2026-10-14T23:10:00+02:00",
         "old_value": 4,
         "new_value": 6,
-        "reason": "The final Lutsk toll rose from four to six. The Oct. 15 dashboard update history explicitly records the 90→92 increase for this two-death revision; first documented inclusion date: 2026-10-15.",
+        "reason": "The final Lutsk toll rose from four to six. Volyn.com.ua reported six deaths and 12 injured at 15:30 Kyiv time on Oct. 14, quoting Lutsk City Council secretary Andriy Razumovskyi. Commit 203f67d at 16:48 Kyiv on Oct. 14 changed the selected subtotal 90→92 and explicitly updated the Lutsk toll to six. First documented inclusion date: 2026-10-14.",
         "source_ids": [
-          "LUTSK-UP-2026-10-14"
+          "LUTSK-UP-2026-10-14",
+          "LUTSK-VOLYN-COM-2026-10-14-1530"
         ],
-        "ledger_effective_at": "2026-10-15"
+        "ledger_effective_at": "2026-10-14"
       }
     ]
   },

@@ -12,7 +12,11 @@ Trace the historical dashboard from ≈92 on Oct. 14 through ≈148 on Oct. 28. 
 |---|---|---|
 | 92→95, Oct. 15 | Three deaths in Kirovohrad region | Three-death incident; supported and dated Oct. 15. |
 | 95→98, Oct. 16 | Three deaths reported in the Kharkiv market strike | The final incident toll is two. The later official correction did not produce a -1 dashboard subtraction. This leaves a second known one-death overstatement in the historical subtotal. |
-| 98→105, Oct. 21 | Seven deaths: two in Sviatoshynsky district, three Kramatorsk heating-supply workers, one Kyiv death from Oct. 19 and one Holosiivsky death from Oct. 20 | The ≈105 method paragraph explicitly names all seven. |
+| 98→102, Oct. 20 | Four deaths: three in Chabany and one in Kyiv from the Oct. 19 attack | The Oct. 20 snapshot explicitly displays ≈102 and its method paragraph includes all four. The Chabany deaths were later removed from the selected subtotal. |
+| 102→103, Oct. 20 | One death in Holosiivsky district | The next snapshot displays ≈103 and its method paragraph names the Holosiivsky death; the displayed increase is one. |
+| 103→100, Oct. 20 | Three Chabany deaths removed from the subtotal | Commit `25abf34` changes the dashboard from ≈103 to ≈100 and labels the Chabany deaths as attributed to an unverified local Telegram channel and excluded. The method paragraph in that commit remains stale at ≈103 and still says Chabany is included; the Oct. 21 method paragraph resolves the inconsistency by explicitly excluding them. |
+| 100→105, Oct. 21 | Five deaths: two in Sviatoshynsky district and three Kramatorsk heating-supply workers | Commit `84c0c69` raises the dashboard from ≈100 to ≈105. The revised method paragraph names these five and retains the Kyiv and Holosiivsky deaths already in the 100 baseline. |
+| 98→105 net | Seven deaths retained above the Oct. 16 baseline: one Kyiv death from Oct. 19, one Holosiivsky death from Oct. 20, two in Sviatoshynsky district and three Kramatorsk heating-supply workers | Net increase is +7, but it is not one seven-death addition: the intermediate sequence includes +3 Chabany, +1 Holosiivsky, −3 Chabany, then +5. The final ≈105 method paragraph explicitly excludes Chabany and names the seven deaths retained above 98. |
 | 105→116, Oct. 21 | Nine deaths in Sloviansk and two in Korotych | The ≈116 method paragraph explicitly itemizes the 9+2. |
 | 116→117, Oct. 22 | One death in Lymanivka, Lozova community | Explicitly added in the Oct. 22 update. |
 | 117→118, Oct. 22 | One death in Kyiv from the overnight attack | Explicitly added in the Oct. 22 update. |
@@ -34,7 +38,7 @@ The Oct. 22 118→121 and 121→123 distinctions are documented in Stage 63. The
 
 1. **The Oct. 14 discrepancy survives to the 118 snapshot.** Stage 122 reconstructs the 82→92 sequence as ten published additions but nine distinct deaths, conditional on accepting the ≈82 baseline. No later subtotal update subtracts the excess.
 2. **A second one-death overstatement enters at 95→98.** The Oct. 16 update adds three Kharkiv market deaths; the final incident toll is two, and the historical dashboard shows no -1 correction. This is documented in Stage 79.
-3. **The 118→121 step includes three Chabany deaths** that were later excluded from the current structured ledger. This is a separate scope difference, not part of the Oct. 14 duplicate.
+3. **The Oct. 20–21 bridge contains a temporary Chabany inclusion and correction.** The 98→105 net increase is seven, but the intermediate snapshots show 98→102 (+4, including three Chabany deaths and one Kyiv death), 102→103 (+1 Holosiivsky), 103→100 (−3 Chabany correction), and 100→105 (+5, two Sviatoshynsky deaths and three Kramatorsk heating workers). The Oct. 21 method paragraph confirms Chabany is excluded from 105. This correction is separate from the later 118→121 Chabany inclusion on Oct. 22, which Stage 63 documents as a renewed inclusion after corroboration.
 4. **The 121→123 step is a scope change of +2 with no incident-level allocation.** It must not be treated as two new deaths in the ledger.
 5. **The 123→148 bridge adds 25 through itemized Oct. 25–28 updates.** The Oct. 28 ≈148 baseline therefore carries forward the two known one-death overstatements unless a separate subtraction can be found. The surviving 148→421 bridge is additive and records no such subtraction.
 
